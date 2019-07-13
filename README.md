@@ -1,7 +1,7 @@
 
 # ![](EEex.png) 
 
-[eeex.readthedocs.io](eeex-docs.readthedocs.io)
+[eeex-docs.readthedocs.io](https://eeex-docs.readthedocs.io)
 
 # EEex Documentation
 EEex is an executable extender for Beamdog's Enhanced Edition of the Infinity Engine. Its goal is to externalize certain parts of the engine to grant modders a greater degree of control over otherwise hardcoded mechanics. EEex does not make any gameplay changes itself - it merely enables other mods to do so.
