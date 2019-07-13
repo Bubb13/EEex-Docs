@@ -1,0 +1,10 @@
+* text eol=crlf
+*.exe binary
+*.dll binary
+*.zip binary
+*.rar binary
+*.ttf binary
+*.ico binary
+*.bmp binary
+*.png binary
+*.jpg binary
