@@ -36,6 +36,11 @@ The real power of EEex, however, comes from its ability to change hardcoded engi
 - Edit ``UI.MENU`` directly.
 
 
+**How do I add to the documentation?**
+
+Please follow the :ref:`Contributing<Contributing>` guide for details on how to add to, or edit, the EEex documentation.
+
+
 **Bug Reporting**
 
 If you should encounter any bugs, please report them to the authors at the `EEex beamdog forum <https://forums.beamdog.com/discussion/comment/1083110>`_. In addition, EEex is available on `GitHub <https://github.com/Bubb13/EEex>`_, so fixes and changes can be submitted by the community.
