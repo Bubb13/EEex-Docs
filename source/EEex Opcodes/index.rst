@@ -12,10 +12,14 @@ Updated Opcodes
 Opcode #42
 ^^^^^^^^^^^
 
+Wizard Spell Slots Modifier
+
 * Special: Force the slot modification - If Special parameter is non-zero, the slot modification ignores access to particular spell level requirement.
 
 Opcode #62
 ^^^^^^^^^^^
+
+Priest Spell Slots Modifier
 
 * Special: Force the slot modification
 
@@ -24,12 +28,16 @@ If Special parameter is non-zero, the slot modification ignores access to partic
 Opcode #218
 ^^^^^^^^^^^
 
+Protection: Stoneskin
+
 * Resource Key: Fire spell
 
 Spell specified in resource key is fired when all layers are lost.
 
 Opcode #280
 ^^^^^^^^^^^
+
+Spell Effect: Wild Magic
 
 * Parameter #1: Surge Roll
 * Special: Show hardcoded graphical effects
@@ -39,6 +47,8 @@ If Special parameter is non-zero, all hardcoded wild surge graphical effects are
 
 Opcode #319
 ^^^^^^^^^^^
+
+Item Usability
 
 * Power: Mode
 * Parameter #1: IDS Entry / Value
@@ -55,6 +65,8 @@ If 'Mode' is set to 2 or 3, then the creature type specified by the 'Stat Type' 
 
 Opcode #324
 ^^^^^^^^^^^
+
+Immunity from Spell and Message
 
 * Special: Strref
 
