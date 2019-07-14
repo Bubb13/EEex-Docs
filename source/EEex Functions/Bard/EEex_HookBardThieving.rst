@@ -6,25 +6,28 @@ EEex_HookBardThieving
 
 EEex_HookBardThieving()
 
-
+Returns a class IDS that will be what the game engine treats the character as when they use their thieving abilities.
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+None
 
 **Return**
+
+Returns a class IDS
 
 
 **Example**
 
 ::
 
-   EEex_HookBardThieving()
+   function EEex_HookBardThieving()
+      local actorID = EEex_GetActorIDSelected()
+      local class = EEex_GetActorClass(actorID)
+      return class
+   end
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_InstallBardThievingHook<EEex_InstallBardThievingHook>`
 
