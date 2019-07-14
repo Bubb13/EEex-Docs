@@ -1,8 +1,8 @@
 .. _EEex_GetMaximumMemorizableWizardSpells:
 
-===================================
+======================================
 EEex_GetMaximumMemorizableWizardSpells 
-===================================
+======================================
 
 EEex_GetMaximumMemorizableWizardSpells()
 

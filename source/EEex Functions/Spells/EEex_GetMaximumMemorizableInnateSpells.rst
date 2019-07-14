@@ -1,8 +1,8 @@
 .. _EEex_GetMaximumMemorizableInnateSpells:
 
-===================================
+======================================
 EEex_GetMaximumMemorizableInnateSpells 
-===================================
+======================================
 
 EEex_GetMaximumMemorizableInnateSpells()
 

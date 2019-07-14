@@ -1,8 +1,8 @@
 .. _EEex_GetMaximumMemorizableClericSpells:
 
-===================================
+======================================
 EEex_GetMaximumMemorizableClericSpells 
-===================================
+======================================
 
 EEex_GetMaximumMemorizableClericSpells()
 

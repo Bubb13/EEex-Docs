@@ -10,23 +10,17 @@ EEex Functions
    2DA/index
    Action/index
    ActionBar/index
+   ActorID/index
    Actor/index
    Area/index
    Bard/index
-   Creature/index
-   CuBar/index
-   Fixes/index
-   Hotkey/index
-   Invisible/index
+   GameState/index
    Key/index
-   Lua/index
    Menu/index
    Object/index
-   Opcode/index
-   Portrait/index
-   Render/index
    Spells/index
-   Timer/index
+   Stats/index
    Tooltip/index
-   Triggers/index
+   Util/index
+   Internal/index
    Advanced/index

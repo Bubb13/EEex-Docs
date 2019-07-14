@@ -1,7 +1,7 @@
-.. _Key:
+.. _ActorID:
 
 ==========================
-Key
+Retrieving actor IDs
 ==========================
 
 .. toctree::
