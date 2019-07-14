@@ -21,7 +21,9 @@ Returns true or false, depending on the implementation of the function.
 
 ::
 
-   EEex_IsActorTooltipDisabled()
+   function EEex_IsActorTooltipDisabled()
+      return false
+   end
 
 **See Also**
 
