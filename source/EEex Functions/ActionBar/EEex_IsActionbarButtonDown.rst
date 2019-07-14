@@ -4,27 +4,25 @@
 EEex_IsActionbarButtonDown 
 ===================================
 
-EEex_IsActionbarButtonDown()
+EEex_IsActionbarButtonDown(buttonIndex)
 
-
+Determines whether a specific button in the actionbar is in the down state (being clicked)
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **buttonIndex** - the index of the button on the actionbar
 
 **Return**
 
+Returns ``true`` if the actionbar button is being clicked, otherwise returns ``false``
 
 **Example**
 
 ::
 
-   EEex_IsActionbarButtonDown()
+   EEex_IsActionbarButtonDown(1)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_SetActionbarState<EEex_SetActionbarState>`, :ref:`EEex_SetActionbarButton<EEex_SetActionbarButton>` 
 

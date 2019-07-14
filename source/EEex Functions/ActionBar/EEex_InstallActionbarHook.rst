@@ -6,17 +6,16 @@ EEex_InstallActionbarHook
 
 EEex_InstallActionbarHook()
 
-
+Install the hook for the actionbar
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
+None
 
 
 **Return**
 
+None
 
 **Example**
 
@@ -26,5 +25,5 @@ EEex_InstallActionbarHook()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_HookActionbar<EEex_HookActionbar>`, :ref:`EEex_AddActionbarListener<EEex_AddActionbarListener>`
 

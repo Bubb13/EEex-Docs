@@ -4,19 +4,17 @@
 EEex_SetActionbarState 
 ===================================
 
-EEex_SetActionbarState()
+EEex_SetActionbarState(actionbarConfig)
 
-
+Sets the state of the actionbar
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **actionbarConfig** 
 
 **Return**
 
+None
 
 **Example**
 
@@ -24,7 +22,5 @@ EEex_SetActionbarState()
 
    EEex_SetActionbarState()
 
-**See Also**
 
-:ref:``, :ref:`` 
 

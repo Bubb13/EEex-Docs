@@ -4,15 +4,13 @@
 EEex_HookActionbar 
 ===================================
 
-EEex_HookActionbar()
+EEex_HookActionbar(config)
 
-
+Begins the hook of the actionbar
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
+* **config**
 
 
 **Return**
@@ -26,5 +24,5 @@ EEex_HookActionbar()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_InstallActionbarHook<EEex_InstallActionbarHook>`, :ref:`EEex_AddActionbarListener<EEex_AddActionbarListener>`
 
