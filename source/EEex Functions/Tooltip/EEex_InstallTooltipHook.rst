@@ -6,17 +6,15 @@ EEex_InstallTooltipHook
 
 EEex_InstallTooltipHook()
 
-
+Installs a hook for whenever the game engine attempts to display a tooltip over a creature in the world screen.
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+None
 
 **Return**
 
+None
 
 **Example**
 
@@ -26,5 +24,5 @@ EEex_InstallTooltipHook()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_IsActorTooltipDisabled<EEex_IsActorTooltipDisabled>`
 
