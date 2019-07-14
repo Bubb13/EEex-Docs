@@ -10,7 +10,7 @@ Requirements
 
 EEex uses `readthedocs <https://readthedocs.org/>`_ for hosting the documentation. This requires the installation of python, and some python extensions.
 
-- Install Python
+- Install `Python <https://www.python.org/downloads/>`_
 - Open a command prompt/terminal and type :
 
    - ``pip install sphinx``
