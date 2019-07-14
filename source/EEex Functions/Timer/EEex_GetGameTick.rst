@@ -6,17 +6,15 @@ EEex_GetGameTick
 
 EEex_GetGameTick()
 
-
+Returns the game time tick (``m_gameTime``) value from ``m_pObjectGame``
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+None
 
 **Return**
 
+Returns the game time tick value
 
 **Example**
 
@@ -26,5 +24,5 @@ EEex_GetGameTick()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_GetFPS<EEex_GetFPS>`
 

@@ -6,17 +6,15 @@ EEex_GetFPS
 
 EEex_GetFPS()
 
-
+Returns the frames per second of the internal game engine, as specified by the timer updates per second value in the CChittin object (``CChitin::TIMER_UPDATES_PER_SECOND``)
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+None
 
 **Return**
 
+Returns the frames per second of the internal game engine
 
 **Example**
 
@@ -26,5 +24,5 @@ EEex_GetFPS()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_GetGameTick<EEex_GetGameTick>`
 
