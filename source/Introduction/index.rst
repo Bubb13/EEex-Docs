@@ -26,9 +26,6 @@ EEex is installed just as any other WeiDU mod. Simply extract the archive's cont
 .. note:: EEex is currently in alpha, and as such it is highly unstable. All immediate crashes are believed to be fixed, though you still risk a crash at any time. Use with care.
 
 
-.. warning:: **EEex will not work if the alternate renderer is enabled**. Turning on the alternate renderer in the Enhanced Edition games somehow lowers Lua's ability to precisely represent large numbers. This, in turn, causes all EEex calculations that involve high memory addresses to return the wrong answer, resulting in undefined behaviour that eventually leads to a crash. See `this <https://forums.beamdog.com/discussion/comment/1050505/#Comment_1050505>`_ forum post for details
-
-
 **I'm a modder, how do I use EEex?**
 
 EEex makes changes to many different parts of the engine. Accessing and making use of new opcodes, actions, triggers, and objects is as simple as installing EEex.
