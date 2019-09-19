@@ -14,6 +14,8 @@ Contents:
    Introduction/index
    EEex Functions/index
    EEex Opcodes/index
+   EE Game Lua Functions/index
+   EE Game Structures (x86)/index
    Community/index
 
 
