@@ -5,435 +5,378 @@ CG Structures
 ==========================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
+   :hidden:
+   
+   CGameEffect/index
 
 
-* :ref:`CGameAIArea<>`
-* :ref:`CGameAIBase<>`
-* :ref:`CGameAIGame<>`
-* :ref:`CGameAbilityList<>`
-* :ref:`CGameAddMapNote<>`
-* :ref:`CGameAnimation<>`
-* :ref:`CGameAnimationType<>`
-* :ref:`CGameAnimationTypeAmbient<>`
-* :ref:`CGameAnimationTypeAmbientStatic<>`
-* :ref:`CGameAnimationTypeCharacter<>`
-* :ref:`CGameAnimationTypeCharacterOld<>`
-* :ref:`CGameAnimationTypeEffect<>`
-* :ref:`CGameAnimationTypeFlying<>`
-* :ref:`CGameAnimationTypeMonster<>`
-* :ref:`CGameAnimationTypeMonsterAnkheg<>`
-* :ref:`CGameAnimationTypeMonsterIcewind<>`
-* :ref:`CGameAnimationTypeMonsterLarge<>`
-* :ref:`CGameAnimationTypeMonsterLarge16<>`
-* :ref:`CGameAnimationTypeMonsterLayered<>`
-* :ref:`CGameAnimationTypeMonsterLayeredSpell<>`
-* :ref:`CGameAnimationTypeMonsterMulti<>`
-* :ref:`CGameAnimationTypeMonsterMultiNew<>`
-* :ref:`CGameAnimationTypeMonsterOld<>`
-* :ref:`CGameAnimationTypeMonsterQuadrant<>`
-* :ref:`CGameAnimationTypeTownStatic<>`
-* :ref:`CGameArea<>`
-* :ref:`CGameAreaClairvoyanceEntry<>`
-* :ref:`CGameAreaNotes<>`
-* :ref:`CGameButtonList<>`
-* :ref:`CGameChunk<>`
-* :ref:`CGameContainer<>`
-* :ref:`CGameDialogEntry<>`
-* :ref:`CGameDialogIdentifier<>`
-* :ref:`CGameDialogReply<>`
-* :ref:`CGameDialogSprite<>`
-* :ref:`CGameDoor<>`
-* :ref:`CGameEffect<>`
-* :ref:`CGameEffectAC<>`
-* :ref:`CGameEffectAIChange<>`
-* :ref:`CGameEffectAddInnateAbility<>`
-* :ref:`CGameEffectAlignmentChange<>`
-* :ref:`CGameEffectAlignmentReversal<>`
-* :ref:`CGameEffectAnimationChange<>`
-* :ref:`CGameEffectApplyEffect<>`
-* :ref:`CGameEffectApplyEffectEquipItem<>`
-* :ref:`CGameEffectApplyEffectEquipItemType<>`
-* :ref:`CGameEffectApplySpell<>`
-* :ref:`CGameEffectApplySpellOnMove<>`
-* :ref:`CGameEffectAssassination<>`
-* :ref:`CGameEffectAttackNo<>`
-* :ref:`CGameEffectAuraCleansing<>`
-* :ref:`CGameEffectAwaken<>`
-* :ref:`CGameEffectBackStabMod<>`
-* :ref:`CGameEffectBackStabSpell<>`
-* :ref:`CGameEffectBardSong<>`
-* :ref:`CGameEffectBase<>`
-* :ref:`CGameEffectBerserk<>`
-* :ref:`CGameEffectBerserkStage1<>`
-* :ref:`CGameEffectBerserkStage2<>`
-* :ref:`CGameEffectBlindness<>`
-* :ref:`CGameEffectBlur<>`
-* :ref:`CGameEffectBounceEffect<>`
-* :ref:`CGameEffectBounceLevel<>`
-* :ref:`CGameEffectBounceLevelDecrement<>`
-* :ref:`CGameEffectBounceProjectile<>`
-* :ref:`CGameEffectBounceSchool<>`
-* :ref:`CGameEffectBounceSchoolDecrement<>`
-* :ref:`CGameEffectBounceSecondaryType<>`
-* :ref:`CGameEffectBounceSecondaryTypeDecrement<>`
-* :ref:`CGameEffectBounceSpell<>`
-* :ref:`CGameEffectCHR<>`
-* :ref:`CGameEffectCON<>`
-* :ref:`CGameEffectCalm<>`
-* :ref:`CGameEffectCannotSaveOrRest<>`
-* :ref:`CGameEffectCastSpell<>`
-* :ref:`CGameEffectCastSpellPoint<>`
-* :ref:`CGameEffectCastingFailure<>`
-* :ref:`CGameEffectCastingGlow<>`
-* :ref:`CGameEffectCastingLevelBonus<>`
-* :ref:`CGameEffectChangeStatic<>`
-* :ref:`CGameEffectChangeWeather<>`
-* :ref:`CGameEffectChaosShield<>`
-* :ref:`CGameEffectCharm<>`
-* :ref:`CGameEffectCheckForBerserk<>`
-* :ref:`CGameEffectClairvoyance<>`
-* :ref:`CGameEffectClassStringOverride<>`
-* :ref:`CGameEffectCleanAir<>`
-* :ref:`CGameEffectColorChange<>`
-* :ref:`CGameEffectColorGlowDissipate<>`
-* :ref:`CGameEffectColorGlowPulse<>`
-* :ref:`CGameEffectColorGlowSolid<>`
-* :ref:`CGameEffectColorLightSolid<>`
-* :ref:`CGameEffectColorTintSolid<>`
-* :ref:`CGameEffectConfusion<>`
-* :ref:`CGameEffectContingencyInstance<>`
-* :ref:`CGameEffectContingencyStart<>`
-* :ref:`CGameEffectCopySelf<>`
-* :ref:`CGameEffectCreateItem<>`
-* :ref:`CGameEffectCreateWeapon<>`
-* :ref:`CGameEffectCriticalHitBonus<>`
-* :ref:`CGameEffectCriticalHitSpell<>`
-* :ref:`CGameEffectCriticalMissModifier<>`
-* :ref:`CGameEffectCriticalMissSpell<>`
-* :ref:`CGameEffectCureBlindness<>`
-* :ref:`CGameEffectCureDeafness<>`
-* :ref:`CGameEffectCureDisease<>`
-* :ref:`CGameEffectCureFeebleMindedness<>`
-* :ref:`CGameEffectCurePoison<>`
-* :ref:`CGameEffectCurseApplyEffect<>`
-* :ref:`CGameEffectDEX<>`
-* :ref:`CGameEffectDamage<>`
-* :ref:`CGameEffectDamageLuck<>`
-* :ref:`CGameEffectDamageMod<>`
-* :ref:`CGameEffectDamageVisualEffect<>`
-* :ref:`CGameEffectDeafness<>`
-* :ref:`CGameEffectDeath<>`
-* :ref:`CGameEffectDefrost<>`
-* :ref:`CGameEffectDestroyItem<>`
-* :ref:`CGameEffectDestroySelf<>`
-* :ref:`CGameEffectDestroyWeapon<>`
-* :ref:`CGameEffectDetectAlignment<>`
-* :ref:`CGameEffectDetectIllusion<>`
-* :ref:`CGameEffectDetectTraps<>`
-* :ref:`CGameEffectDisableButton<>`
-* :ref:`CGameEffectDisableCircle<>`
-* :ref:`CGameEffectDisableSpellType<>`
-* :ref:`CGameEffectDisease<>`
-* :ref:`CGameEffectDisintegrate<>`
-* :ref:`CGameEffectDispelEffects<>`
-* :ref:`CGameEffectDispelInvisible<>`
-* :ref:`CGameEffectDispelSanctuary<>`
-* :ref:`CGameEffectDispelSchool<>`
-* :ref:`CGameEffectDispelSchoolOne<>`
-* :ref:`CGameEffectDispelSecondaryType<>`
-* :ref:`CGameEffectDispelSecondaryTypeOne<>`
-* :ref:`CGameEffectDisplayString<>`
-* :ref:`CGameEffectDither<>`
-* :ref:`CGameEffectDoNotDraw<>`
-* :ref:`CGameEffectDrainChargeFromAllItems<>`
-* :ref:`CGameEffectDurationCasting<>`
-* :ref:`CGameEffectEnableButton<>`
-* :ref:`CGameEffectEndNonDetection<>`
-* :ref:`CGameEffectEntangle<>`
-* :ref:`CGameEffectEquipWeapon<>`
-* :ref:`CGameEffectEvadeAreaOfEffect<>`
-* :ref:`CGameEffectExistanceDelayOverride<>`
-* :ref:`CGameEffectExplore<>`
-* :ref:`CGameEffectFamiliarBlock<>`
-* :ref:`CGameEffectFatigue<>`
-* :ref:`CGameEffectFeebleMindedness<>`
-* :ref:`CGameEffectFile<>`
-* :ref:`CGameEffectFindFamiliar<>`
-* :ref:`CGameEffectFistDamageBonus<>`
-* :ref:`CGameEffectFistTHAC0Bonus<>`
-* :ref:`CGameEffectFloatText<>`
-* :ref:`CGameEffectForceSurge<>`
-* :ref:`CGameEffectForceVisible<>`
-* :ref:`CGameEffectFreedom<>`
-* :ref:`CGameEffectGold<>`
-* :ref:`CGameEffectGreasePool<>`
-* :ref:`CGameEffectHaste<>`
-* :ref:`CGameEffectHaste2<>`
-* :ref:`CGameEffectHeal<>`
-* :ref:`CGameEffectHideInShadows<>`
-* :ref:`CGameEffectHighLevelAbility<>`
-* :ref:`CGameEffectHitMod<>`
-* :ref:`CGameEffectHitPoints<>`
-* :ref:`CGameEffectHitPointsOnDeath<>`
-* :ref:`CGameEffectHoldCreature<>`
-* :ref:`CGameEffectHoldCreatureSpell<>`
-* :ref:`CGameEffectINT<>`
-* :ref:`CGameEffectIdentify<>`
-* :ref:`CGameEffectIgnoreDialogPause<>`
-* :ref:`CGameEffectIgnoreDrainDeath<>`
-* :ref:`CGameEffectIgnoreReputationBreak<>`
-* :ref:`CGameEffectImmuneToTracking<>`
-* :ref:`CGameEffectImmuneToWeapon<>`
-* :ref:`CGameEffectImmunityLevelDecrement<>`
-* :ref:`CGameEffectImmunitySchool<>`
-* :ref:`CGameEffectImmunitySchoolDecrement<>`
-* :ref:`CGameEffectImmunitySecondaryType<>`
-* :ref:`CGameEffectImmunitySecondaryTypeDecrement<>`
-* :ref:`CGameEffectImmunitySpell<>`
-* :ref:`CGameEffectImmunitySpellIWD<>`
-* :ref:`CGameEffectImmunityToBackstab<>`
-* :ref:`CGameEffectImmunityToDisplayString<>`
-* :ref:`CGameEffectImmunityToEffect<>`
-* :ref:`CGameEffectImmunityToPortraitIcon<>`
-* :ref:`CGameEffectImmunityToProjectile<>`
-* :ref:`CGameEffectImmunityToSequester<>`
-* :ref:`CGameEffectImmunityToSpellLevel<>`
-* :ref:`CGameEffectImmunityToTimeStop<>`
-* :ref:`CGameEffectImmunityToTurnUndead<>`
-* :ref:`CGameEffectImmunityToVisualEffect<>`
-* :ref:`CGameEffectImprisonment<>`
-* :ref:`CGameEffectInfravision<>`
-* :ref:`CGameEffectInfravisionOff<>`
-* :ref:`CGameEffectIntoxication<>`
-* :ref:`CGameEffectInvisible<>`
-* :ref:`CGameEffectJumpToArea<>`
-* :ref:`CGameEffectJumpToPocketPlane<>`
-* :ref:`CGameEffectKnock<>`
-* :ref:`CGameEffectLearnSpell<>`
-* :ref:`CGameEffectLevel<>`
-* :ref:`CGameEffectLevelDrain<>`
-* :ref:`CGameEffectLevelRestoration<>`
-* :ref:`CGameEffectList<>`
-* :ref:`CGameEffectLore<>`
-* :ref:`CGameEffectLuck<>`
-* :ref:`CGameEffectMakeUnselectable<>`
-* :ref:`CGameEffectMaze<>`
-* :ref:`CGameEffectMeleeDamageBonus<>`
-* :ref:`CGameEffectMeleeEffect<>`
-* :ref:`CGameEffectMeleeTHAC0Bonus<>`
-* :ref:`CGameEffectMentalSpeed<>`
-* :ref:`CGameEffectMinHitPoints<>`
-* :ref:`CGameEffectMinorGlobe<>`
-* :ref:`CGameEffectMirrorImage<>`
-* :ref:`CGameEffectMirrorImageRun<>`
-* :ref:`CGameEffectMissileDamageBonus<>`
-* :ref:`CGameEffectMissileTHAC0Bonus<>`
-* :ref:`CGameEffectMorale<>`
-* :ref:`CGameEffectMoraleBreak<>`
-* :ref:`CGameEffectMovementRate<>`
-* :ref:`CGameEffectMovementRateModal<>`
-* :ref:`CGameEffectNPCBump<>`
-* :ref:`CGameEffectName<>`
-* :ref:`CGameEffectNoPermanentDeath<>`
-* :ref:`CGameEffectNonDetection<>`
-* :ref:`CGameEffectNon_CumulativeAid<>`
-* :ref:`CGameEffectNon_CumulativeBless<>`
-* :ref:`CGameEffectNon_CumulativeChant<>`
-* :ref:`CGameEffectNon_CumulativeChantBad<>`
-* :ref:`CGameEffectNon_CumulativeDrawUponHolyMight<>`
-* :ref:`CGameEffectNon_CumulativeLuck<>`
-* :ref:`CGameEffectOverrideAnimation<>`
-* :ref:`CGameEffectOverrideWeaponType<>`
-* :ref:`CGameEffectPanic<>`
-* :ref:`CGameEffectPauseCaster<>`
-* :ref:`CGameEffectPetrification<>`
-* :ref:`CGameEffectPhysicalSpeed<>`
-* :ref:`CGameEffectPlayMovie<>`
-* :ref:`CGameEffectPlaySound<>`
-* :ref:`CGameEffectPoison<>`
-* :ref:`CGameEffectPolymorph<>`
-* :ref:`CGameEffectPortrait<>`
-* :ref:`CGameEffectPortraitIcon<>`
-* :ref:`CGameEffectPowerWordKill<>`
-* :ref:`CGameEffectPowerWordSleep<>`
-* :ref:`CGameEffectPowerWordStun<>`
-* :ref:`CGameEffectPreventAISlowDown<>`
-* :ref:`CGameEffectPreventSpellProtectionEffects<>`
-* :ref:`CGameEffectProficiency<>`
-* :ref:`CGameEffectProtectionCircle<>`
-* :ref:`CGameEffectProtectionFromCreature<>`
-* :ref:`CGameEffectPuppetMaster<>`
-* :ref:`CGameEffectPushPull<>`
-* :ref:`CGameEffectRandomDrop<>`
-* :ref:`CGameEffectRandomPhase<>`
-* :ref:`CGameEffectRandomSummon<>`
-* :ref:`CGameEffectRandomTeleport<>`
-* :ref:`CGameEffectRangeEffect<>`
-* :ref:`CGameEffectRegeneration<>`
-* :ref:`CGameEffectRememorizeSpell<>`
-* :ref:`CGameEffectRemoveAllOfType<>`
-* :ref:`CGameEffectRemoveConfusion<>`
-* :ref:`CGameEffectRemoveCurse<>`
-* :ref:`CGameEffectRemoveEffectOfResource<>`
-* :ref:`CGameEffectRemoveHold<>`
-* :ref:`CGameEffectRemoveInnateAbility<>`
-* :ref:`CGameEffectRemoveIntoxication<>`
-* :ref:`CGameEffectRemovePanic<>`
-* :ref:`CGameEffectRemovePortraitIcon<>`
-* :ref:`CGameEffectRemoveRandomSpell<>`
-* :ref:`CGameEffectRemoveSpellImmunity<>`
-* :ref:`CGameEffectRepeatingApplyEffect<>`
-* :ref:`CGameEffectReplaceItem<>`
-* :ref:`CGameEffectReplaceSelf<>`
-* :ref:`CGameEffectReputation<>`
-* :ref:`CGameEffectResistAcid<>`
-* :ref:`CGameEffectResistCold<>`
-* :ref:`CGameEffectResistCrushing<>`
-* :ref:`CGameEffectResistElectricity<>`
-* :ref:`CGameEffectResistFire<>`
-* :ref:`CGameEffectResistMagic<>`
-* :ref:`CGameEffectResistMagicCold<>`
-* :ref:`CGameEffectResistMagicFire<>`
-* :ref:`CGameEffectResistMissile<>`
-* :ref:`CGameEffectResistPiercing<>`
-* :ref:`CGameEffectResistSlashing<>`
-* :ref:`CGameEffectResistanceToMagic<>`
-* :ref:`CGameEffectResistanceToPoison<>`
-* :ref:`CGameEffectRest<>`
-* :ref:`CGameEffectRestoreMovementRate<>`
-* :ref:`CGameEffectRestrictEquipItem<>`
-* :ref:`CGameEffectRestrictEquipItemType<>`
-* :ref:`CGameEffectResurrect<>`
-* :ref:`CGameEffectResurrectParty<>`
-* :ref:`CGameEffectRetreatFrom<>`
-* :ref:`CGameEffectRevealMagic<>`
-* :ref:`CGameEffectSTR<>`
-* :ref:`CGameEffectSTRExtra<>`
-* :ref:`CGameEffectSanctuary<>`
-* :ref:`CGameEffectSaveVsBreath<>`
-* :ref:`CGameEffectSaveVsDeath<>`
-* :ref:`CGameEffectSaveVsPoly<>`
-* :ref:`CGameEffectSaveVsSchoolMod<>`
-* :ref:`CGameEffectSaveVsSpell<>`
-* :ref:`CGameEffectSaveVsWands<>`
-* :ref:`CGameEffectSavingThrowChange<>`
-* :ref:`CGameEffectScreenShake<>`
-* :ref:`CGameEffectScriptingState<>`
-* :ref:`CGameEffectSecondaryCastList<>`
-* :ref:`CGameEffectSeeInvisible<>`
-* :ref:`CGameEffectSelectiveDamageBonus<>`
-* :ref:`CGameEffectSelectiveEnchantmentBonus<>`
-* :ref:`CGameEffectSelectiveToHitBonus<>`
-* :ref:`CGameEffectSequencerFire<>`
-* :ref:`CGameEffectSequencerFirePoint<>`
-* :ref:`CGameEffectSequencerInstance<>`
-* :ref:`CGameEffectSequencerStart<>`
-* :ref:`CGameEffectSetAIScript<>`
-* :ref:`CGameEffectSetDoNotJump<>`
-* :ref:`CGameEffectSetGlobal<>`
-* :ref:`CGameEffectSetLocalExternal<>`
-* :ref:`CGameEffectSetLocalVariable<>`
-* :ref:`CGameEffectSetSequence<>`
-* :ref:`CGameEffectSetSnare<>`
-* :ref:`CGameEffectSetSpellState<>`
-* :ref:`CGameEffectSetTrap<>`
-* :ref:`CGameEffectSevenEyes<>`
-* :ref:`CGameEffectSevenEyesRun<>`
-* :ref:`CGameEffectSexChange<>`
-* :ref:`CGameEffectShieldGlobe<>`
-* :ref:`CGameEffectShowArea<>`
-* :ref:`CGameEffectShowCreatures<>`
-* :ref:`CGameEffectSilence<>`
-* :ref:`CGameEffectSingleColorPulseAll<>`
-* :ref:`CGameEffectSkillLockPicking<>`
-* :ref:`CGameEffectSkillPickPocket<>`
-* :ref:`CGameEffectSkillStealth<>`
-* :ref:`CGameEffectSkillTracking<>`
-* :ref:`CGameEffectSkillTraps<>`
-* :ref:`CGameEffectSlay<>`
-* :ref:`CGameEffectSleep<>`
-* :ref:`CGameEffectSlow<>`
-* :ref:`CGameEffectSlowPoison<>`
-* :ref:`CGameEffectSparkle<>`
-* :ref:`CGameEffectSpecificDamageMod<>`
-* :ref:`CGameEffectSpellMemorizationCleric<>`
-* :ref:`CGameEffectSpellMemorizationMage<>`
-* :ref:`CGameEffectSpellTrapLevelDecrement<>`
-* :ref:`CGameEffectStaticCharge<>`
-* :ref:`CGameEffectStoneSkins<>`
-* :ref:`CGameEffectStoneSkinsGolem<>`
-* :ref:`CGameEffectStoneToFlesh<>`
-* :ref:`CGameEffectStun<>`
-* :ref:`CGameEffectSummon<>`
-* :ref:`CGameEffectSummonDisable<>`
-* :ref:`CGameEffectSurgeMod<>`
-* :ref:`CGameEffectSwapHitpoints<>`
-* :ref:`CGameEffectTeleport<>`
-* :ref:`CGameEffectThac0<>`
-* :ref:`CGameEffectThac0Left<>`
-* :ref:`CGameEffectThac0Right<>`
-* :ref:`CGameEffectTimeStop<>`
-* :ref:`CGameEffectTracking<>`
-* :ref:`CGameEffectTranslucent<>`
-* :ref:`CGameEffectTurnUndead<>`
-* :ref:`CGameEffectTurnUndeadModifier<>`
-* :ref:`CGameEffectUnpauseCaster<>`
-* :ref:`CGameEffectUnstun<>`
-* :ref:`CGameEffectUnsummon<>`
-* :ref:`CGameEffectUsability<>`
-* :ref:`CGameEffectUsabilityList<>`
-* :ref:`CGameEffectUseAnyItem<>`
-* :ref:`CGameEffectVisible<>`
-* :ref:`CGameEffectVisualAnimationEffect<>`
-* :ref:`CGameEffectVisualEffect<>`
-* :ref:`CGameEffectVisualRange<>`
-* :ref:`CGameEffectVisualSpellHit<>`
-* :ref:`CGameEffectVisualSpellHitIWD<>`
-* :ref:`CGameEffectVocalize<>`
-* :ref:`CGameEffectWIS<>`
-* :ref:`CGameEffectWebHold<>`
-* :ref:`CGameEffectWish<>`
-* :ref:`CGameEffectXP<>`
-* :ref:`CGameFile<>`
-* :ref:`CGameFireball3d<>`
+* :ref:`CGameAIArea<CGameAIArea>`
+* :ref:`CGameAIBase<CGameAIBase>`
+* :ref:`CGameAIGame<CGameAIGame>`
+* :ref:`CGameAbilityList<CGameAbilityList>`
+* :ref:`CGameAddMapNote<CGameAddMapNote>`
+* :ref:`CGameAnimation<CGameAnimation>`
+* :ref:`CGameAnimationType<CGameAnimationType>`
+* :ref:`CGameAnimationTypeAmbient<CGameAnimationTypeAmbient>`
+* :ref:`CGameAnimationTypeAmbientStatic<CGameAnimationTypeAmbientStatic>`
+* :ref:`CGameAnimationTypeCharacter<CGameAnimationTypeCharacter>`
+* :ref:`CGameAnimationTypeCharacterOld<CGameAnimationTypeCharacterOld>`
+* :ref:`CGameAnimationTypeEffect<CGameAnimationTypeEffect>`
+* :ref:`CGameAnimationTypeFlying<CGameAnimationTypeFlying>`
+* :ref:`CGameAnimationTypeMonster<CGameAnimationTypeMonster>`
+* :ref:`CGameAnimationTypeMonsterAnkheg<CGameAnimationTypeMonsterAnkheg>`
+* :ref:`CGameAnimationTypeMonsterIcewind<CGameAnimationTypeMonsterIcewind>`
+* :ref:`CGameAnimationTypeMonsterLarge<CGameAnimationTypeMonsterLarge>`
+* :ref:`CGameAnimationTypeMonsterLarge16<CGameAnimationTypeMonsterLarge16>`
+* :ref:`CGameAnimationTypeMonsterLayered<CGameAnimationTypeMonsterLayered>`
+* :ref:`CGameAnimationTypeMonsterLayeredSpell<CGameAnimationTypeMonsterLayeredSpell>`
+* :ref:`CGameAnimationTypeMonsterMulti<CGameAnimationTypeMonsterMulti>`
+* :ref:`CGameAnimationTypeMonsterMultiNew<CGameAnimationTypeMonsterMultiNew>`
+* :ref:`CGameAnimationTypeMonsterOld<CGameAnimationTypeMonsterOld>`
+* :ref:`CGameAnimationTypeMonsterQuadrant<CGameAnimationTypeMonsterQuadrant>`
+* :ref:`CGameAnimationTypeTownStatic<CGameAnimationTypeTownStatic>`
+* :ref:`CGameArea<CGameArea>`
+* :ref:`CGameAreaClairvoyanceEntry<CGameAreaClairvoyanceEntry>`
+* :ref:`CGameAreaNotes<CGameAreaNotes>`
+* :ref:`CGameButtonList<CGameButtonList>`
+* :ref:`CGameChunk<CGameChunk>`
+* :ref:`CGameContainer<CGameContainer>`
+* :ref:`CGameDialogEntry<CGameDialogEntry>`
+* :ref:`CGameDialogIdentifier<CGameDialogIdentifier>`
+* :ref:`CGameDialogReply<CGameDialogReply>`
+* :ref:`CGameDialogSprite<CGameDialogSprite>`
+* :ref:`CGameDoor<CGameDoor>`
+* :ref:`CGameEffect Structures<CGameEffect Structures>`
+* :ref:`CGameFile<CGameFile>`
+* :ref:`CGameFireball3d<CGameFireball3d>`
 * :ref:`CGameID<CGameID>`
 * :ref:`CGameID::GameID_t<CGameIDGameID_t>`
-* :ref:`CGameJournal<>`
-* :ref:`CGameJournalAlphabetizer<>`
-* :ref:`CGameJournalEntry<>`
+* :ref:`CGameJournal<CGameJournal>`
+* :ref:`CGameJournalAlphabetizer<CGameJournalAlphabetizer>`
+* :ref:`CGameJournalEntry<CGameJournalEntry>`
 * :ref:`CGameObject<CGameObject>`
 * :ref:`CGameObjectArray<CGameObjectArray>`
 * :ref:`CGameObjectArrayEntry<CGameObjectArrayEntry>`
 * :ref:`CGameOptions<CGameOptions>`
 * :ref:`CGamePermission<CGamePermission>`
-* :ref:`CGameRemoteObjectArray<>`
-* :ref:`CGameRemoteObjectControlChange<>`
-* :ref:`CGameRemoteObjectDeletion<>`
-* :ref:`CGameRemoteObjectListEntry<>`
-* :ref:`CGameRemoveMapNote<>`
-* :ref:`CGameSave<>`
-* :ref:`CGameSaveCharacter<>`
-* :ref:`CGameSound<>`
-* :ref:`CGameSpawning<>`
-* :ref:`CGameSprite<>`
+* :ref:`CGameRemoteObjectArray<CGameRemoteObjectArray>`
+* :ref:`CGameRemoteObjectControlChange<CGameRemoteObjectControlChange>`
+* :ref:`CGameRemoteObjectDeletion<CGameRemoteObjectDeletion>`
+* :ref:`CGameRemoteObjectListEntry<CGameRemoteObjectListEntry>`
+* :ref:`CGameRemoveMapNote<CGameRemoveMapNote>`
+* :ref:`CGameSave<CGameSave>`
+* :ref:`CGameSaveCharacter<CGameSaveCharacter>`
+* :ref:`CGameSound<CGameSound>`
+* :ref:`CGameSpawning<CGameSpawning>`
+* :ref:`CGameSprite<CGameSprite>`
 * :ref:`CGameSprite::GroundItem<CGameSpriteGroundItem>`
 * :ref:`CGameSprite::RenderHealthBar<CGameSpriteRenderHealthBar>`
-* :ref:`CGameSpriteEquipment<>`
-* :ref:`CGameSpriteLastUpdate<>`
-* :ref:`CGameStatic<>`
-* :ref:`CGameStatsRes<>`
-* :ref:`CGameStatsSprite<>`
-* :ref:`CGameTemporal<>`
-* :ref:`CGameText<>`
-* :ref:`CGameTiledObject<>`
-* :ref:`CGameTimer<>`
-* :ref:`CGameTrigger<>`
+* :ref:`CGameSpriteEquipment<CGameSpriteEquipment>`
+* :ref:`CGameSpriteLastUpdate<CGameSpriteLastUpdate>`
+* :ref:`CGameStatic<CGameStatic>`
+* :ref:`CGameStatsRes<CGameStatsRes>`
+* :ref:`CGameStatsSprite<CGameStatsSprite>`
+* :ref:`CGameTemporal<CGameTemporal>`
+* :ref:`CGameText<CGameText>`
+* :ref:`CGameTiledObject<CGameTiledObject>`
+* :ref:`CGameTimer<CGameTimer>`
+* :ref:`CGameTrigger<CGameTrigger>`
 
 
-.. _x:
+.. _CGameAIArea:
 
-x
+CGameAIArea
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 1020     | :ref:`CGameAIBase<CGameAIBase>`        | m_cGameAIBase                 |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   CGameAIArea      struct
+     m_cGameAIBase  CGameAIBase <>
+   CGameAIArea      ends
+
+
+.. _CGameAIBase:
+
+CGameAIBase
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 71       | :ref:`CGameObject<CGameObject>`        | m_cGameObject                 |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 1        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x48       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x5c       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x60       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x74       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x88       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x9C       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0xB0       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0xC4       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0xd8       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0xec       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x100      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x114      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x128      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x13C      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x150      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x164      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x178      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x18C      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1A0      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1B4      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1C8      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1DC      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1F0      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x204      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x218      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x22C      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x240      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x254      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x268      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x26C      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x270      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x274      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x278      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x27C      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x280      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x284      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x288      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x2a4      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x2c0      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x2c4      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x2c8      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x2e4      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x2e6      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x2e8      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x2ec      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x2f0      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x2f4      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x2f8      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x35c      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x360      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x362      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x364      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x384      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x388      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x38c      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x390      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x394      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 1        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x396      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x398      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 3        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x39c      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x3a0      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x3a4      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x3a8      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x3ac      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x3b0      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x3b4      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x3c8      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x3cc      |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+.. todo
+
+   CGameAIBase      struct
+     m_cGameObject  CGameObject <>
+     
+     
+   CGameAIBase      ends
+
+
+.. _CGameAIGame:
+
+CGameAIGame
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 1020     | :ref:`CGameAIBase<CGameAIBase>`        | m_cGameAIBase                 |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   CGameAIGame      struct
+     m_cGameAIBase  CGameAIBase <>
+   CGameAIGame      ends
+
+
+.. _CGameAbilityList:
+
+CGameAbilityList
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 20       | :ref:`CTypedPtrArray<CTypedPtrArray>`  | m_cTypedPtrArray              |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   CGameAbilityList     struct
+     m_cTypedPtrArray   CTypedPtrArray <>
+   CGameAbilityList     ends
+
+
+.. _CGameAddMapNote:
+
+CGameAddMapNote
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   CGameAddMapNote  struct
+     m_cGameEffect  CGameEffect <>
+   CGameAddMapNote  ends
+
+
+.. _CGameAnimation:
+
+CGameAnimation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 4        | CGameAnimationType*                    | m_animation                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | unsigned long                          | m_overrides                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 2        | short                                  | m_sequenceHighLevel           |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0A       | 1        | unsigned char                          | m_detectedByInfravision       |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0B       | 1        | unsigned char                          | m_bloodColor                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0C       | 1        | unsigned char                          | m_personalSpace               |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 3        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   CGameAnimation            struct
+     m_animation             dd ? ; CGameAnimationType* 
+     m_overrides             dd ?
+     m_sequenceHighLevel     dw ?
+     m_detectedByInfravision db ?
+     m_bloodColor            db ?
+     m_personalSpace         db ?
+                             db ? ; padding
+                             db ? ; padding
+                             db ? ; padding
+   CGameAnimation            ends
+
+
+.. _CGameAnimationType:
+
+CGameAnimationType
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
@@ -448,3 +391,1138 @@ Asm Definition
 
    x
 
+.. _CGameAnimationTypeAmbient:
+
+CGameAnimationTypeAmbient
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeAmbientStatic:
+
+CGameAnimationTypeAmbientStatic
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeCharacter:
+
+CGameAnimationTypeCharacter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeCharacterOld:
+
+CGameAnimationTypeCharacterOld
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeEffect:
+
+CGameAnimationTypeEffect
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeFlying:
+
+CGameAnimationTypeFlying
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeMonster:
+
+CGameAnimationTypeMonster
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeMonsterAnkheg:
+
+CGameAnimationTypeMonsterAnkheg
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeMonsterIcewind:
+
+CGameAnimationTypeMonsterIcewind
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeMonsterLarge:
+
+CGameAnimationTypeMonsterLarge
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeMonsterLarge16:
+
+CGameAnimationTypeMonsterLarge16
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeMonsterLayered:
+
+CGameAnimationTypeMonsterLayered
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeMonsterLayeredSpell:
+
+CGameAnimationTypeMonsterLayeredSpell
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeMonsterMulti:
+
+CGameAnimationTypeMonsterMulti
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeMonsterMultiNew:
+
+CGameAnimationTypeMonsterMultiNew
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeMonsterOld:
+
+CGameAnimationTypeMonsterOld
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeMonsterQuadrant:
+
+CGameAnimationTypeMonsterQuadrant
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAnimationTypeTownStatic:
+
+CGameAnimationTypeTownStatic
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameArea:
+
+CGameArea
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAreaClairvoyanceEntry:
+
+CGameAreaClairvoyanceEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameAreaNotes:
+
+CGameAreaNotes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameButtonList:
+
+CGameButtonList
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameChunk:
+
+CGameChunk
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameContainer:
+
+CGameContainer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameDialogEntry:
+
+CGameDialogEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameDialogIdentifier:
+
+CGameDialogIdentifier
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameDialogReply:
+
+CGameDialogReply
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameDialogSprite:
+
+CGameDialogSprite
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameDoor:
+
+CGameDoor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameFile:
+
+CGameFile
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameFireball3d:
+
+CGameFireball3d
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameID:
+
+CGameID
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+
+.. _CGameIDGameID_t:
+
+CGameID::GameID_t
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+
+.. _CGameJournal:
+
+CGameJournal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameJournalAlphabetizer:
+
+CGameJournalAlphabetizer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameJournalEntry:
+
+CGameJournalEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameObject:
+
+CGameObject
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 4        | vfptr                                  | vfptr                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 1        | unsigned char                          | m_objectType                  |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 3        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 8        | :ref:`CPoint<CPoint>`                  | m_pos                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x10       | 4        |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x14       | 4        |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x18       | 4        |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1C       | 1        |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 3        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x20       | 20       |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x34       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x38       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x3C       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x40       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x44       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x45       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x46       |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 1        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   CGameObject          struct
+     vfptr              dd ?
+     m_objectType       db ?
+                        db ? ; padding
+                        db ? ; padding
+                        db ? ; padding
+     m_pos              CPoint <>
+     m_posZ             dd ?
+     m_pArea            dd ? ; CGameArea* 
+     m_posVertList      dd ? ; __POSITION* 
+     m_listType         db ?
+                        db ? ; padding
+                        db ? ; padding
+                        db ? ; padding
+     m_typeAI           CAIObjectType <>
+     m_id               dd ?
+     m_canBeSeen        dw ?
+                        dw ? ; padding
+     m_remotePlayerID   dd ?
+     m_remoteObjectID   dd ?
+     m_AISpeed          db ?
+     m_bLocalControl    db ?
+     m_AIInhibitor      db ?
+                        db ? ; padding
+   CGameObject          ends
+
+
+.. _CGameObjectArray:
+
+CGameObjectArray
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameObjectArrayEntry:
+
+CGameObjectArrayEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameOptions:
+
+CGameOptions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGamePermission:
+
+CGamePermission
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameRemoteObjectArray:
+
+CGameRemoteObjectArray
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameRemoteObjectControlChange:
+
+CGameRemoteObjectControlChange
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameRemoteObjectDeletion:
+
+CGameRemoteObjectDeletion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameRemoteObjectListEntry:
+
+CGameRemoteObjectListEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameRemoveMapNote:
+
+CGameRemoveMapNote
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameSave:
+
+CGameSave
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameSaveCharacter:
+
+CGameSaveCharacter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameSound:
+
+CGameSound
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameSpawning:
+
+CGameSpawning
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameSprite:
+
+CGameSprite
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+
+.. _CGameSpriteGroundItem:
+
+CGameSprite::GroundItem
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameSpriteRenderHealthBar:
+
+CGameSprite::RenderHealthBar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+
+.. _CGameSpriteEquipment:
+
+CGameSpriteEquipment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameSpriteLastUpdate:
+
+CGameSpriteLastUpdate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameStatic:
+
+CGameStatic
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameStatsRes:
+
+CGameStatsRes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameStatsSprite:
+
+CGameStatsSprite
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameTemporal:
+
+CGameTemporal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameText:
+
+CGameText
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameTiledObject:
+
+CGameTiledObject
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameTimer:
+
+CGameTimer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameTrigger:
+
+CGameTrigger
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x

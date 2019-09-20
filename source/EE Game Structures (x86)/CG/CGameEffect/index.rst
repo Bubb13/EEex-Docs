@@ -1,0 +1,414 @@
+.. _CGameEffect Structures:
+
+==========================
+CGameEffect Structures
+==========================
+
+.. toctree::
+   :maxdepth: 1
+   
+
+* :ref:`CGameEffect<CGameEffect>`
+* :ref:`CGameEffectAC<>`
+* :ref:`CGameEffectAIChange<>`
+* :ref:`CGameEffectAddInnateAbility<>`
+* :ref:`CGameEffectAlignmentChange<>`
+* :ref:`CGameEffectAlignmentReversal<>`
+* :ref:`CGameEffectAnimationChange<>`
+* :ref:`CGameEffectApplyEffect<>`
+* :ref:`CGameEffectApplyEffectEquipItem<>`
+* :ref:`CGameEffectApplyEffectEquipItemType<>`
+* :ref:`CGameEffectApplySpell<>`
+* :ref:`CGameEffectApplySpellOnMove<>`
+* :ref:`CGameEffectAssassination<>`
+* :ref:`CGameEffectAttackNo<>`
+* :ref:`CGameEffectAuraCleansing<>`
+* :ref:`CGameEffectAwaken<>`
+* :ref:`CGameEffectBackStabMod<>`
+* :ref:`CGameEffectBackStabSpell<>`
+* :ref:`CGameEffectBardSong<>`
+* :ref:`CGameEffectBase<>`
+* :ref:`CGameEffectBerserk<>`
+* :ref:`CGameEffectBerserkStage1<>`
+* :ref:`CGameEffectBerserkStage2<>`
+* :ref:`CGameEffectBlindness<>`
+* :ref:`CGameEffectBlur<>`
+* :ref:`CGameEffectBounceEffect<>`
+* :ref:`CGameEffectBounceLevel<>`
+* :ref:`CGameEffectBounceLevelDecrement<>`
+* :ref:`CGameEffectBounceProjectile<>`
+* :ref:`CGameEffectBounceSchool<>`
+* :ref:`CGameEffectBounceSchoolDecrement<>`
+* :ref:`CGameEffectBounceSecondaryType<>`
+* :ref:`CGameEffectBounceSecondaryTypeDecrement<>`
+* :ref:`CGameEffectBounceSpell<>`
+* :ref:`CGameEffectCHR<>`
+* :ref:`CGameEffectCON<>`
+* :ref:`CGameEffectCalm<>`
+* :ref:`CGameEffectCannotSaveOrRest<>`
+* :ref:`CGameEffectCastSpell<>`
+* :ref:`CGameEffectCastSpellPoint<>`
+* :ref:`CGameEffectCastingFailure<>`
+* :ref:`CGameEffectCastingGlow<>`
+* :ref:`CGameEffectCastingLevelBonus<>`
+* :ref:`CGameEffectChangeStatic<>`
+* :ref:`CGameEffectChangeWeather<>`
+* :ref:`CGameEffectChaosShield<>`
+* :ref:`CGameEffectCharm<>`
+* :ref:`CGameEffectCheckForBerserk<>`
+* :ref:`CGameEffectClairvoyance<>`
+* :ref:`CGameEffectClassStringOverride<>`
+* :ref:`CGameEffectCleanAir<>`
+* :ref:`CGameEffectColorChange<>`
+* :ref:`CGameEffectColorGlowDissipate<>`
+* :ref:`CGameEffectColorGlowPulse<>`
+* :ref:`CGameEffectColorGlowSolid<>`
+* :ref:`CGameEffectColorLightSolid<>`
+* :ref:`CGameEffectColorTintSolid<>`
+* :ref:`CGameEffectConfusion<>`
+* :ref:`CGameEffectContingencyInstance<>`
+* :ref:`CGameEffectContingencyStart<>`
+* :ref:`CGameEffectCopySelf<>`
+* :ref:`CGameEffectCreateItem<>`
+* :ref:`CGameEffectCreateWeapon<>`
+* :ref:`CGameEffectCriticalHitBonus<>`
+* :ref:`CGameEffectCriticalHitSpell<>`
+* :ref:`CGameEffectCriticalMissModifier<>`
+* :ref:`CGameEffectCriticalMissSpell<>`
+* :ref:`CGameEffectCureBlindness<>`
+* :ref:`CGameEffectCureDeafness<>`
+* :ref:`CGameEffectCureDisease<>`
+* :ref:`CGameEffectCureFeebleMindedness<>`
+* :ref:`CGameEffectCurePoison<>`
+* :ref:`CGameEffectCurseApplyEffect<>`
+* :ref:`CGameEffectDEX<>`
+* :ref:`CGameEffectDamage<>`
+* :ref:`CGameEffectDamageLuck<>`
+* :ref:`CGameEffectDamageMod<>`
+* :ref:`CGameEffectDamageVisualEffect<>`
+* :ref:`CGameEffectDeafness<>`
+* :ref:`CGameEffectDeath<>`
+* :ref:`CGameEffectDefrost<>`
+* :ref:`CGameEffectDestroyItem<>`
+* :ref:`CGameEffectDestroySelf<>`
+* :ref:`CGameEffectDestroyWeapon<>`
+* :ref:`CGameEffectDetectAlignment<>`
+* :ref:`CGameEffectDetectIllusion<>`
+* :ref:`CGameEffectDetectTraps<>`
+* :ref:`CGameEffectDisableButton<>`
+* :ref:`CGameEffectDisableCircle<>`
+* :ref:`CGameEffectDisableSpellType<>`
+* :ref:`CGameEffectDisease<>`
+* :ref:`CGameEffectDisintegrate<>`
+* :ref:`CGameEffectDispelEffects<>`
+* :ref:`CGameEffectDispelInvisible<>`
+* :ref:`CGameEffectDispelSanctuary<>`
+* :ref:`CGameEffectDispelSchool<>`
+* :ref:`CGameEffectDispelSchoolOne<>`
+* :ref:`CGameEffectDispelSecondaryType<>`
+* :ref:`CGameEffectDispelSecondaryTypeOne<>`
+* :ref:`CGameEffectDisplayString<>`
+* :ref:`CGameEffectDither<>`
+* :ref:`CGameEffectDoNotDraw<>`
+* :ref:`CGameEffectDrainChargeFromAllItems<>`
+* :ref:`CGameEffectDurationCasting<>`
+* :ref:`CGameEffectEnableButton<>`
+* :ref:`CGameEffectEndNonDetection<>`
+* :ref:`CGameEffectEntangle<>`
+* :ref:`CGameEffectEquipWeapon<>`
+* :ref:`CGameEffectEvadeAreaOfEffect<>`
+* :ref:`CGameEffectExistanceDelayOverride<>`
+* :ref:`CGameEffectExplore<>`
+* :ref:`CGameEffectFamiliarBlock<>`
+* :ref:`CGameEffectFatigue<>`
+* :ref:`CGameEffectFeebleMindedness<>`
+* :ref:`CGameEffectFile<>`
+* :ref:`CGameEffectFindFamiliar<>`
+* :ref:`CGameEffectFistDamageBonus<>`
+* :ref:`CGameEffectFistTHAC0Bonus<>`
+* :ref:`CGameEffectFloatText<>`
+* :ref:`CGameEffectForceSurge<>`
+* :ref:`CGameEffectForceVisible<>`
+* :ref:`CGameEffectFreedom<>`
+* :ref:`CGameEffectGold<>`
+* :ref:`CGameEffectGreasePool<>`
+* :ref:`CGameEffectHaste<>`
+* :ref:`CGameEffectHaste2<>`
+* :ref:`CGameEffectHeal<>`
+* :ref:`CGameEffectHideInShadows<>`
+* :ref:`CGameEffectHighLevelAbility<>`
+* :ref:`CGameEffectHitMod<>`
+* :ref:`CGameEffectHitPoints<>`
+* :ref:`CGameEffectHitPointsOnDeath<>`
+* :ref:`CGameEffectHoldCreature<>`
+* :ref:`CGameEffectHoldCreatureSpell<>`
+* :ref:`CGameEffectINT<>`
+* :ref:`CGameEffectIdentify<>`
+* :ref:`CGameEffectIgnoreDialogPause<>`
+* :ref:`CGameEffectIgnoreDrainDeath<>`
+* :ref:`CGameEffectIgnoreReputationBreak<>`
+* :ref:`CGameEffectImmuneToTracking<>`
+* :ref:`CGameEffectImmuneToWeapon<>`
+* :ref:`CGameEffectImmunityLevelDecrement<>`
+* :ref:`CGameEffectImmunitySchool<>`
+* :ref:`CGameEffectImmunitySchoolDecrement<>`
+* :ref:`CGameEffectImmunitySecondaryType<>`
+* :ref:`CGameEffectImmunitySecondaryTypeDecrement<>`
+* :ref:`CGameEffectImmunitySpell<>`
+* :ref:`CGameEffectImmunitySpellIWD<>`
+* :ref:`CGameEffectImmunityToBackstab<>`
+* :ref:`CGameEffectImmunityToDisplayString<>`
+* :ref:`CGameEffectImmunityToEffect<>`
+* :ref:`CGameEffectImmunityToPortraitIcon<>`
+* :ref:`CGameEffectImmunityToProjectile<>`
+* :ref:`CGameEffectImmunityToSequester<>`
+* :ref:`CGameEffectImmunityToSpellLevel<>`
+* :ref:`CGameEffectImmunityToTimeStop<>`
+* :ref:`CGameEffectImmunityToTurnUndead<>`
+* :ref:`CGameEffectImmunityToVisualEffect<>`
+* :ref:`CGameEffectImprisonment<>`
+* :ref:`CGameEffectInfravision<>`
+* :ref:`CGameEffectInfravisionOff<>`
+* :ref:`CGameEffectIntoxication<>`
+* :ref:`CGameEffectInvisible<>`
+* :ref:`CGameEffectJumpToArea<>`
+* :ref:`CGameEffectJumpToPocketPlane<>`
+* :ref:`CGameEffectKnock<>`
+* :ref:`CGameEffectLearnSpell<>`
+* :ref:`CGameEffectLevel<>`
+* :ref:`CGameEffectLevelDrain<>`
+* :ref:`CGameEffectLevelRestoration<>`
+* :ref:`CGameEffectList<>`
+* :ref:`CGameEffectLore<>`
+* :ref:`CGameEffectLuck<>`
+* :ref:`CGameEffectMakeUnselectable<>`
+* :ref:`CGameEffectMaze<>`
+* :ref:`CGameEffectMeleeDamageBonus<>`
+* :ref:`CGameEffectMeleeEffect<>`
+* :ref:`CGameEffectMeleeTHAC0Bonus<>`
+* :ref:`CGameEffectMentalSpeed<>`
+* :ref:`CGameEffectMinHitPoints<>`
+* :ref:`CGameEffectMinorGlobe<>`
+* :ref:`CGameEffectMirrorImage<>`
+* :ref:`CGameEffectMirrorImageRun<>`
+* :ref:`CGameEffectMissileDamageBonus<>`
+* :ref:`CGameEffectMissileTHAC0Bonus<>`
+* :ref:`CGameEffectMorale<>`
+* :ref:`CGameEffectMoraleBreak<>`
+* :ref:`CGameEffectMovementRate<>`
+* :ref:`CGameEffectMovementRateModal<>`
+* :ref:`CGameEffectNPCBump<>`
+* :ref:`CGameEffectName<>`
+* :ref:`CGameEffectNoPermanentDeath<>`
+* :ref:`CGameEffectNonDetection<>`
+* :ref:`CGameEffectNon_CumulativeAid<>`
+* :ref:`CGameEffectNon_CumulativeBless<>`
+* :ref:`CGameEffectNon_CumulativeChant<>`
+* :ref:`CGameEffectNon_CumulativeChantBad<>`
+* :ref:`CGameEffectNon_CumulativeDrawUponHolyMight<>`
+* :ref:`CGameEffectNon_CumulativeLuck<>`
+* :ref:`CGameEffectOverrideAnimation<>`
+* :ref:`CGameEffectOverrideWeaponType<>`
+* :ref:`CGameEffectPanic<>`
+* :ref:`CGameEffectPauseCaster<>`
+* :ref:`CGameEffectPetrification<>`
+* :ref:`CGameEffectPhysicalSpeed<>`
+* :ref:`CGameEffectPlayMovie<>`
+* :ref:`CGameEffectPlaySound<>`
+* :ref:`CGameEffectPoison<>`
+* :ref:`CGameEffectPolymorph<>`
+* :ref:`CGameEffectPortrait<>`
+* :ref:`CGameEffectPortraitIcon<>`
+* :ref:`CGameEffectPowerWordKill<>`
+* :ref:`CGameEffectPowerWordSleep<>`
+* :ref:`CGameEffectPowerWordStun<>`
+* :ref:`CGameEffectPreventAISlowDown<>`
+* :ref:`CGameEffectPreventSpellProtectionEffects<>`
+* :ref:`CGameEffectProficiency<>`
+* :ref:`CGameEffectProtectionCircle<>`
+* :ref:`CGameEffectProtectionFromCreature<>`
+* :ref:`CGameEffectPuppetMaster<>`
+* :ref:`CGameEffectPushPull<>`
+* :ref:`CGameEffectRandomDrop<>`
+* :ref:`CGameEffectRandomPhase<>`
+* :ref:`CGameEffectRandomSummon<>`
+* :ref:`CGameEffectRandomTeleport<>`
+* :ref:`CGameEffectRangeEffect<>`
+* :ref:`CGameEffectRegeneration<>`
+* :ref:`CGameEffectRememorizeSpell<>`
+* :ref:`CGameEffectRemoveAllOfType<>`
+* :ref:`CGameEffectRemoveConfusion<>`
+* :ref:`CGameEffectRemoveCurse<>`
+* :ref:`CGameEffectRemoveEffectOfResource<>`
+* :ref:`CGameEffectRemoveHold<>`
+* :ref:`CGameEffectRemoveInnateAbility<>`
+* :ref:`CGameEffectRemoveIntoxication<>`
+* :ref:`CGameEffectRemovePanic<>`
+* :ref:`CGameEffectRemovePortraitIcon<>`
+* :ref:`CGameEffectRemoveRandomSpell<>`
+* :ref:`CGameEffectRemoveSpellImmunity<>`
+* :ref:`CGameEffectRepeatingApplyEffect<>`
+* :ref:`CGameEffectReplaceItem<>`
+* :ref:`CGameEffectReplaceSelf<>`
+* :ref:`CGameEffectReputation<>`
+* :ref:`CGameEffectResistAcid<>`
+* :ref:`CGameEffectResistCold<>`
+* :ref:`CGameEffectResistCrushing<>`
+* :ref:`CGameEffectResistElectricity<>`
+* :ref:`CGameEffectResistFire<>`
+* :ref:`CGameEffectResistMagic<>`
+* :ref:`CGameEffectResistMagicCold<>`
+* :ref:`CGameEffectResistMagicFire<>`
+* :ref:`CGameEffectResistMissile<>`
+* :ref:`CGameEffectResistPiercing<>`
+* :ref:`CGameEffectResistSlashing<>`
+* :ref:`CGameEffectResistanceToMagic<>`
+* :ref:`CGameEffectResistanceToPoison<>`
+* :ref:`CGameEffectRest<>`
+* :ref:`CGameEffectRestoreMovementRate<>`
+* :ref:`CGameEffectRestrictEquipItem<>`
+* :ref:`CGameEffectRestrictEquipItemType<>`
+* :ref:`CGameEffectResurrect<>`
+* :ref:`CGameEffectResurrectParty<>`
+* :ref:`CGameEffectRetreatFrom<>`
+* :ref:`CGameEffectRevealMagic<>`
+* :ref:`CGameEffectSTR<>`
+* :ref:`CGameEffectSTRExtra<>`
+* :ref:`CGameEffectSanctuary<>`
+* :ref:`CGameEffectSaveVsBreath<>`
+* :ref:`CGameEffectSaveVsDeath<>`
+* :ref:`CGameEffectSaveVsPoly<>`
+* :ref:`CGameEffectSaveVsSchoolMod<>`
+* :ref:`CGameEffectSaveVsSpell<>`
+* :ref:`CGameEffectSaveVsWands<>`
+* :ref:`CGameEffectSavingThrowChange<>`
+* :ref:`CGameEffectScreenShake<>`
+* :ref:`CGameEffectScriptingState<>`
+* :ref:`CGameEffectSecondaryCastList<>`
+* :ref:`CGameEffectSeeInvisible<>`
+* :ref:`CGameEffectSelectiveDamageBonus<>`
+* :ref:`CGameEffectSelectiveEnchantmentBonus<>`
+* :ref:`CGameEffectSelectiveToHitBonus<>`
+* :ref:`CGameEffectSequencerFire<>`
+* :ref:`CGameEffectSequencerFirePoint<>`
+* :ref:`CGameEffectSequencerInstance<>`
+* :ref:`CGameEffectSequencerStart<>`
+* :ref:`CGameEffectSetAIScript<>`
+* :ref:`CGameEffectSetDoNotJump<>`
+* :ref:`CGameEffectSetGlobal<>`
+* :ref:`CGameEffectSetLocalExternal<>`
+* :ref:`CGameEffectSetLocalVariable<>`
+* :ref:`CGameEffectSetSequence<>`
+* :ref:`CGameEffectSetSnare<>`
+* :ref:`CGameEffectSetSpellState<>`
+* :ref:`CGameEffectSetTrap<>`
+* :ref:`CGameEffectSevenEyes<>`
+* :ref:`CGameEffectSevenEyesRun<>`
+* :ref:`CGameEffectSexChange<>`
+* :ref:`CGameEffectShieldGlobe<>`
+* :ref:`CGameEffectShowArea<>`
+* :ref:`CGameEffectShowCreatures<>`
+* :ref:`CGameEffectSilence<>`
+* :ref:`CGameEffectSingleColorPulseAll<>`
+* :ref:`CGameEffectSkillLockPicking<>`
+* :ref:`CGameEffectSkillPickPocket<>`
+* :ref:`CGameEffectSkillStealth<>`
+* :ref:`CGameEffectSkillTracking<>`
+* :ref:`CGameEffectSkillTraps<>`
+* :ref:`CGameEffectSlay<>`
+* :ref:`CGameEffectSleep<>`
+* :ref:`CGameEffectSlow<>`
+* :ref:`CGameEffectSlowPoison<>`
+* :ref:`CGameEffectSparkle<>`
+* :ref:`CGameEffectSpecificDamageMod<>`
+* :ref:`CGameEffectSpellMemorizationCleric<>`
+* :ref:`CGameEffectSpellMemorizationMage<>`
+* :ref:`CGameEffectSpellTrapLevelDecrement<>`
+* :ref:`CGameEffectStaticCharge<>`
+* :ref:`CGameEffectStoneSkins<>`
+* :ref:`CGameEffectStoneSkinsGolem<>`
+* :ref:`CGameEffectStoneToFlesh<>`
+* :ref:`CGameEffectStun<>`
+* :ref:`CGameEffectSummon<>`
+* :ref:`CGameEffectSummonDisable<>`
+* :ref:`CGameEffectSurgeMod<>`
+* :ref:`CGameEffectSwapHitpoints<>`
+* :ref:`CGameEffectTeleport<>`
+* :ref:`CGameEffectThac0<>`
+* :ref:`CGameEffectThac0Left<>`
+* :ref:`CGameEffectThac0Right<>`
+* :ref:`CGameEffectTimeStop<>`
+* :ref:`CGameEffectTracking<>`
+* :ref:`CGameEffectTranslucent<>`
+* :ref:`CGameEffectTurnUndead<>`
+* :ref:`CGameEffectTurnUndeadModifier<>`
+* :ref:`CGameEffectUnpauseCaster<>`
+* :ref:`CGameEffectUnstun<>`
+* :ref:`CGameEffectUnsummon<>`
+* :ref:`CGameEffectUsability<>`
+* :ref:`CGameEffectUsabilityList<>`
+* :ref:`CGameEffectUseAnyItem<>`
+* :ref:`CGameEffectVisible<>`
+* :ref:`CGameEffectVisualAnimationEffect<>`
+* :ref:`CGameEffectVisualEffect<>`
+* :ref:`CGameEffectVisualRange<>`
+* :ref:`CGameEffectVisualSpellHit<>`
+* :ref:`CGameEffectVisualSpellHitIWD<>`
+* :ref:`CGameEffectVocalize<>`
+* :ref:`CGameEffectWIS<>`
+* :ref:`CGameEffectWebHold<>`
+* :ref:`CGameEffectWish<>`
+* :ref:`CGameEffectXP<>`
+
+
+.. _CGameEffect:
+
+CGameEffect
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameEffectAC:
+
+CGameEffectAC
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
+.. _CGameEffectAIChange:
+
+CGameEffectAIChange
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   x
+
