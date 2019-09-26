@@ -22,6 +22,9 @@ Other Structures
 * :ref:`PVRTextureHeaderV3<PVRTextureHeaderV3>`
 * :ref:`RLEDestFormat<RLEDestFormat>`
 * :ref:`ResFixedHeader_st<ResFixedHeader_st>`
+* :ref:`SAreaFileCreatureWrapper<SAreaFileCreatureWrapper>`
+* :ref:`SAreaFileDoorWrapper<SAreaFileDoorWrapper>`
+* :ref:`SAreaFileWrapper<SAreaFileWrapper>`
 * :ref:`STR_RES<STR_RES>`
 * :ref:`STR_RES_HEADER<STR_RES_HEADER>`
 * :ref:`Spell_Header_st<Spell_Header_st>`
