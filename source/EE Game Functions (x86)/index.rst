@@ -45,21 +45,33 @@ EE Game Functions (x86)
    CGameText/index
    CGameTiledObject/index
    CGameTrigger/index
+   CIcon/index
+   CImmunities/index
+   CImportGame/index
+   CItem/index
+   CLUAConsole/index
+   CMachineStates/index
+   CMoveList/index
+   CMultiplayerSettings/index
    CNetwork/index
    CParticle/index
+   CPathSearch/index
+   CPersistantEffect/index
+   CProjectile/index
    CScreenDLC/index
    CSound/index
    CSoundChannel/index
    CSoundExtensionFile/index
    CSoundImp/index
    CSoundMixer/index
-   CTlkTable/index
    CTlkFileOverride/index
+   CTlkTable/index
    CVideo/Index
    CVidFont/Index
    CVidMode/index
    CVidPalette/index
-   
+   CVoice/index
+   CWarp/index
    dimm/index
 
 .. CGameEffect
