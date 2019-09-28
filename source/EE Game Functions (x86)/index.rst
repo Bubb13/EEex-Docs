@@ -58,14 +58,24 @@ EE Game Functions (x86)
    CPathSearch/index
    CPersistantEffect/index
    CProjectile/index
+   CRuleTables/index
    CScreenDLC/index
+   CScriptCache/index
+   CSearchBitmap/index
+   CSequenceSoundList/index
    CSound/index
    CSoundChannel/index
    CSoundExtensionFile/index
    CSoundImp/index
    CSoundMixer/index
+   CSpell/index
+   CStore/index
+   CTiledObject/index
+   CTimerWorld/index
    CTlkFileOverride/index
    CTlkTable/index
+   CVariableHash/index
+   CVEFVidCell/index
    CVideo/Index
    CVidFont/Index
    CVidMode/index
