@@ -28,6 +28,8 @@ EE Game Functions (x86)
    CColorEffects/index
    CContingency/index
    CDerivedStats/index
+   CDungeonMaster/index
+   CFile/index
    CGameAIBase/index
    CGameAreaNotes/index
    CGameContainer/index
@@ -48,6 +50,10 @@ EE Game Functions (x86)
    CIcon/index
    CImmunities/index
    CImportGame/index
+   CInfButtonArray/index
+   CInfCursor/index
+   CInfinity/index
+   CInfTileSet/index
    CItem/index
    CLUAConsole/index
    CMachineStates/index
@@ -59,6 +65,7 @@ EE Game Functions (x86)
    CPersistantEffect/index
    CProjectile/index
    CRuleTables/index
+   CScreenAI/index
    CScreenDLC/index
    CScriptCache/index
    CSearchBitmap/index
@@ -76,15 +83,29 @@ EE Game Functions (x86)
    CTlkTable/index
    CVariableHash/index
    CVEFVidCell/index
-   CVideo/Index
-   CVidFont/Index
+   CVidBitmap/index
+   CVidCell/index
+   CVidDrawable/index
+   CVideo/index
+   CVidFont/index
+   CVidImage/index
    CVidMode/index
+   CVidMosaic/index
    CVidPalette/index
+   CVidPng/index
+   CVidPoly/index
+   CVidTile/index
+   CVisibilityMap/index
+   CVisualEffect/index
    CVoice/index
    CWarp/index
+   CWeather/index
+   CWorldMap/index
    dimm/index
+   Draw/index
 
 .. CGameEffect
+.. CInfGame
 
    
 .. note:: The functions and their definitions listed here have been extracted primarily from debug symbol information located in .pdb files and from debugging the EE game executables - using IDA, x64dbg, llvm-pdbutil and other tools. As the primary source of this information is ``Baldur.pdb`` from **Baldur's Gate II: Throne of Bhall Enhanced Edition**, please note that some of the information presented may be incorrect when compared to other Enhanced Edition games.

@@ -25,6 +25,7 @@ Other Structures
 * :ref:`SAreaFileCreatureWrapper<SAreaFileCreatureWrapper>`
 * :ref:`SAreaFileDoorWrapper<SAreaFileDoorWrapper>`
 * :ref:`SAreaFileWrapper<SAreaFileWrapper>`
+* :ref:`SDL_Rect<SDL_Rect>`
 * :ref:`STR_RES<STR_RES>`
 * :ref:`STR_RES_HEADER<STR_RES_HEADER>`
 * :ref:`Spell_Header_st<Spell_Header_st>`
@@ -889,6 +890,35 @@ Asm Definition
      pStartingItem   dd ? ; CCreatureFileItem* 
      pPickPointStart dd ? ; CAreaPoint* 
    SAreaFileWrapper  ends
+
+
+.. _SDL_Rect:
+
+SDL_Rect
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+-------------------------------+-----------+
+| **Offset** | **Size** | **Type**           | **Field** |
++------------+-------------------------------+-----------+
+| 0x00       | 4        | int                | x         |
++------------+-------------------------------+-----------+
+| 0x04       | 4        | int                | y         |
++------------+-------------------------------+-----------+
+| 0x08       | 4        | int                | w         |
++------------+-------------------------------+-----------+
+| 0x0C       | 4        | int                | h         |
++------------+-------------------------------+-----------+
+
+Asm Definition
+
+::
+
+   SDL_Rect  struct
+     x       dd ?
+     y       dd ?
+     w       dd ?
+     h       dd ?
+   SDL_Rect  ends
 
 
 .. _STR_RES:
