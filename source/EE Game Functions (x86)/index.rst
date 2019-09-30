@@ -52,6 +52,7 @@ EE Game Functions (x86)
    CImportGame/index
    CInfButtonArray/index
    CInfCursor/index
+   CInfGame/index
    CInfinity/index
    CInfTileSet/index
    CItem/index
@@ -66,7 +67,19 @@ EE Game Functions (x86)
    CProjectile/index
    CRuleTables/index
    CScreenAI/index
+   CScreenChapter/index
+   CScreenCharacter/index
+   CScreenConnection/index
+   CScreenCreateChar/index
+   CScreenCreateParty/index
    CScreenDLC/index
+   CScreenInventory/index
+   CScreenJournal/index
+   CScreenLoad/index
+   CScreenMap/index
+   CScreenMovies/index
+   CScreenMultiPlayer/index
+   CScreenOptions/index
    CScriptCache/index
    CSearchBitmap/index
    CSequenceSoundList/index
