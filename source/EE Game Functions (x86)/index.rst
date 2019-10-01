@@ -58,13 +58,19 @@ EE Game Functions (x86)
    CItem/index
    CLUAConsole/index
    CMachineStates/index
+   CMemINI/index
    CMoveList/index
    CMultiplayerSettings/index
    CNetwork/index
+   CObList/index
    CParticle/index
    CPathSearch/index
    CPersistantEffect/index
+   CPlex/index
    CProjectile/index
+   CPtrList/index
+   CRect/index
+   CResRef/index
    CRuleTables/index
    CScreenAI/index
    CScreenChapter/index
@@ -80,6 +86,13 @@ EE Game Functions (x86)
    CScreenMovies/index
    CScreenMultiPlayer/index
    CScreenOptions/index
+   CScreenPriestSpell/index
+   CScreenSave/index
+   CScreenStart/index
+   CScreenStore/index
+   CScreenWizSpell/index
+   CScreenWorld/index
+   CScreenWorldMap/index
    CScriptCache/index
    CSearchBitmap/index
    CSequenceSoundList/index
@@ -88,8 +101,13 @@ EE Game Functions (x86)
    CSoundExtensionFile/index
    CSoundImp/index
    CSoundMixer/index
+   CSpawn/index
+   CSpawnFile/index
+   CSpawnList/index
+   CSpawnPoint/index
    CSpell/index
    CStore/index
+   CStringList/index
    CTiledObject/index
    CTimerWorld/index
    CTlkFileOverride/index
@@ -116,10 +134,15 @@ EE Game Functions (x86)
    CWorldMap/index
    dimm/index
    Draw/index
+   music/index
+   sound/index
 
 .. CGameEffect
-.. CInfGame
+.. CMapStringToString
+
+
+.. note:: Many of the functions listed here are technically methods belonging to a class (denoted by the colon pair ``::`` that seperates the class name and it's method)
 
    
-.. note:: The functions and their definitions listed here have been extracted primarily from debug symbol information located in .pdb files and from debugging the EE game executables - using IDA, x64dbg, llvm-pdbutil and other tools. As the primary source of this information is ``Baldur.pdb`` from **Baldur's Gate II: Throne of Bhall Enhanced Edition**, please note that some of the information presented may be incorrect when compared to other Enhanced Edition games.
+.. note:: The functions (class methods) and their definitions listed here have been extracted primarily from debug symbol information located in .pdb files and from debugging the EE game executables - using IDA, x64dbg, llvm-pdbutil and other tools. As the primary source of this information is ``Baldur.pdb`` from **Baldur's Gate II: Throne of Bhall Enhanced Edition**, please note that some of the information presented may be incorrect when compared to other Enhanced Edition games.
 
