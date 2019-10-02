@@ -2612,41 +2612,41 @@ mosHeader_st
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | unsigned long                          | nFileType                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x04       | 4        | unsigned long                          | nFileVersion                  |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x08       | 2        | unsigned short                         | nWidth                        |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x0A       | 2        | unsigned short                         | nHeight                       |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x0C       | 2        | unsigned short                         | nXTiles                       |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x0E       | 2        | unsigned short                         | nYTiles                       |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x10       | 2        | unsigned short                         | nTileSize                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x12       | 1        | unsigned char                          | nTransparentColor             |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x13       | 1        | unsigned char                          | nCompressed                   |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x14       | 4        | unsigned long                          | nPaletteOffset                |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] unsigned long nFileType
-      data +0x04 [sizeof=4] unsigned long nFileVersion
-      data +0x08 [sizeof=2] unsigned short nWidth
-      data +0x0a [sizeof=2] unsigned short nHeight
-      data +0x0c [sizeof=2] unsigned short nXTiles
-      data +0x0e [sizeof=2] unsigned short nYTiles
-      data +0x10 [sizeof=2] unsigned short nTileSize
-      data +0x12 [sizeof=1] unsigned char nTransparentColor
-      data +0x13 [sizeof=1] unsigned char nCompressed
-      data +0x14 [sizeof=4] unsigned long nPaletteOffset
+      data +0x00 [sizeof=4] unsigned long nFileType dd ?
+      data +0x04 [sizeof=4] unsigned long nFileVersion dd ?
+      data +0x08 [sizeof=2] unsigned short nWidth dw ?
+      data +0x0a [sizeof=2] unsigned short nHeight dw ?
+      data +0x0c [sizeof=2] unsigned short nXTiles dw ?
+      data +0x0e [sizeof=2] unsigned short nYTiles dw ?
+      data +0x10 [sizeof=2] unsigned short nTileSize dw ?
+      data +0x12 [sizeof=1] unsigned char nTransparentColor db ?
+      data +0x13 [sizeof=1] unsigned char nCompressed db ?
+      data +0x14 [sizeof=4] unsigned long nPaletteOffset dd ?
 
 
 .. _st_tiledef:
@@ -2657,23 +2657,23 @@ st_tiledef
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | int                                    | nTile                         |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x04       | 4        | int                                    | nUsageCount                   |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x08       | 4        | int                                    | texture                       |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x0C       | 4        | :ref:`CInfTileSet<CInfTileSet>`\*      | pTileSet                      |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] int nTile
-      data +0x04 [sizeof=4] int nUsageCount
-      data +0x08 [sizeof=4] int texture
-      data +0x0c [sizeof=4] CInfTileSet* pTileSet
+      data +0x00 [sizeof=4] int nTile dd ?
+      data +0x04 [sizeof=4] int nUsageCount dd ?
+      data +0x08 [sizeof=4] int texture dd ?
+      data +0x0c [sizeof=4] CInfTileSet* pTileSet dd ? ; 
 
 
 .. _uiColumn:
@@ -2684,16 +2684,20 @@ uiColumn
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | :ref:`uiVariant<uiVariant>`\*          | width                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | :ref:`uiItem<uiItem>`\*                | items                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | :ref:`uiColumn<uiColumn>`\*            | next                          |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiVariant* width
-      data +0x04 [sizeof=4] uiItem* items
-      data +0x08 [sizeof=4] uiColumn* next
+      data +0x00 [sizeof=4] uiVariant* width dd ? ;
+      data +0x04 [sizeof=4] uiItem* items dd ? ;
+      data +0x08 [sizeof=4] uiColumn* next dd ? ;
 
 
 .. _uiItem:
@@ -2706,26 +2710,92 @@ uiItem
 +------------+----------+----------------------------------------+-------------------------------+
 |            |          |                                        |                               |
 +------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiItemType type
-      data +0x04 [sizeof=4] uiMenu* menu
-      data +0x08 [sizeof=4] const char* name
-      data +0x0c [sizeof=4] int instanceId
-      data +0x10 [sizeof=4] const char* templateName
+      data +0x00 [sizeof=4] uiItemType type dd ? ;
+      data +0x04 [sizeof=4] uiMenu* menu dd ? ;
+      data +0x08 [sizeof=4] const char* name dd ? ;
+      data +0x0c [sizeof=4] int instanceId dd ?
+      data +0x10 [sizeof=4] const char* templateName dd ? ;
       data +0x14 [sizeof=16] Marker areaSrc
       data +0x24 [sizeof=16] SDL_Rect area
       data +0x34 [sizeof=16] SDL_Rect pad
-      data +0x44 [sizeof=4] int enabled
-      data +0x48 [sizeof=4] int ignoreEvents
-      data +0x4c [sizeof=4] int ha
-      data +0x50 [sizeof=4] int va
-      data +0x54 [sizeof=4] uiVariant* alpha
-      data +0x58 [sizeof=4] uiVariant* fill
-      data +0x5c [sizeof=4] int useOverlayTint
+      data +0x44 [sizeof=4] int enabled dd ?
+      data +0x48 [sizeof=4] int ignoreEvents dd ?
+      data +0x4c [sizeof=4] int ha dd ?
+      data +0x50 [sizeof=4] int va dd ?
+      data +0x54 [sizeof=4] uiVariant* alpha dd ? ;
+      data +0x58 [sizeof=4] uiVariant* fill dd ? ;
+      data +0x5c [sizeof=4] int useOverlayTint dd ?
       data +0x60 [sizeof=12] int overlayTint[3]
       data +0x6c [sizeof=40] uiItem::<unnamed-type-text> text
       data +0x94 [sizeof=4] uiItem::<unnamed-type-uiTemplate> uiTemplate
@@ -2742,22 +2812,22 @@ Asm Definition
       data +0x1b8 [sizeof=12] uiItem::<unnamed-type-progressBar> progressBar
       data +0x1c4 [sizeof=20] uiItem::<unnamed-type-slot> slot
       data +0x1d8 [sizeof=8] uiItem::<unnamed-type-rectangle> rectangle
-      data +0x1e0 [sizeof=4] int action
-      data +0x1e4 [sizeof=4] int actionDbl
-      data +0x1e8 [sizeof=4] int actionAlt
-      data +0x1ec [sizeof=4] int actionDrag
-      data +0x1f0 [sizeof=4] int actionEnter
-      data +0x1f4 [sizeof=4] int actionExit
-      data +0x1f8 [sizeof=4] int actionUpdate
-      data +0x1fc [sizeof=4] int actionSimpleDrag
-      data +0x200 [sizeof=4] int actionSimpleDrop
-      data +0x204 [sizeof=4] int actionHold
-      data +0x208 [sizeof=4] int actionScroll
-      data +0x20c [sizeof=4] int framesHeld
+      data +0x1e0 [sizeof=4] int action dd ?
+      data +0x1e4 [sizeof=4] int actionDbl dd ?
+      data +0x1e8 [sizeof=4] int actionAlt dd ?
+      data +0x1ec [sizeof=4] int actionDrag dd ?
+      data +0x1f0 [sizeof=4] int actionEnter dd ?
+      data +0x1f4 [sizeof=4] int actionExit dd ?
+      data +0x1f8 [sizeof=4] int actionUpdate dd ?
+      data +0x1fc [sizeof=4] int actionSimpleDrag dd ?
+      data +0x200 [sizeof=4] int actionSimpleDrop dd ?
+      data +0x204 [sizeof=4] int actionHold dd ?
+      data +0x208 [sizeof=4] int actionScroll dd ?
+      data +0x20c [sizeof=4] int framesHeld dd ?
       data +0x210 [sizeof=20] uiItem::<unnamed-type-tooltip> tooltip
-      data +0x224 [sizeof=4] uiVariant* glow
-      data +0x228 [sizeof=4] uiVariant* pulse
-      data +0x22c [sizeof=4] uiItem* next
+      data +0x224 [sizeof=4] uiVariant* glow dd ? ;
+      data +0x228 [sizeof=4] uiVariant* pulse dd ? ;
+      data +0x22c [sizeof=4] uiItem* next dd ? ;
 
 
 .. _uiItembam:
@@ -2768,20 +2838,32 @@ uiItem\:\:<unnamed-type-bam
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | :ref:`uiVariant<uiVariant>`\*          | resref                        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | :ref:`uiVariant<uiVariant>`\*          | sequence                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | :ref:`uiVariant<uiVariant>`\*          | sequenceonce                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0C       | 4        | :ref:`uiVariant<uiVariant>`\*          | frame                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x10       | 4        | :ref:`uiVariant<uiVariant>`\*          | greyscale                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x14       | 4        | :ref:`uiVariant<uiVariant>`\*          | usealpha                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x18       | 4        | int                                    | scaletoclip                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiVariant* resref
-      data +0x04 [sizeof=4] uiVariant* sequence
-      data +0x08 [sizeof=4] uiVariant* sequenceonce
-      data +0x0c [sizeof=4] uiVariant* frame
-      data +0x10 [sizeof=4] uiVariant* greyscale
-      data +0x14 [sizeof=4] uiVariant* usealpha
-      data +0x18 [sizeof=4] int scaletoclip
+      data +0x00 [sizeof=4] uiVariant* resref dd ? ;
+      data +0x04 [sizeof=4] uiVariant* sequence dd ? ;
+      data +0x08 [sizeof=4] uiVariant* sequenceonce dd ? ;
+      data +0x0c [sizeof=4] uiVariant* frame dd ? ;
+      data +0x10 [sizeof=4] uiVariant* greyscale dd ? ;
+      data +0x14 [sizeof=4] uiVariant* usealpha dd ? ;
+      data +0x18 [sizeof=4] int scaletoclip dd ?
 
 
 .. _uiItembmp:
@@ -2792,16 +2874,14 @@ uiItem\:\:<unnamed-type-bmp
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | int                                    | resname                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-    data +0x00 [sizeof=4] int resname
-      data +0x04 [sizeof=4] uiVariant* resref
-      data +0x08 [sizeof=16] SDL_Rect area
+    data +0x00 [sizeof=4] int resname dd ?
 
 
 .. _uiItembutton:
@@ -2812,23 +2892,43 @@ uiItem\:\:<unnamed-type-button
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | :ref:`uiVariant<uiVariant>`\*          | portrait                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | :ref:`uiVariant<uiVariant>`\*          | paperdoll                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | int                                    | encumbrance                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0C       | 4        | int                                    | colorDisplay                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x10       | 4        | int                                    | frameTimes                    |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x14       | 4        | const char\*                           | toggle                        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x18       | 4        | const char\*                           | on                            |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1C       | 4        | const char\*                           | highlightGroup                |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x20       | 4        | :ref:`uiVariant<uiVariant>`\*          | clickable                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x24       | 4        | :ref:`uiVariant<uiVariant>`\*          | actionBar                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x28       | 4        | const char\*                           | sound                         |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiVariant* portrait
-      data +0x04 [sizeof=4] uiVariant* paperdoll
-      data +0x08 [sizeof=4] int encumbrance
-      data +0x0c [sizeof=4] int colorDisplay
-      data +0x10 [sizeof=4] int frameTimes
+      data +0x00 [sizeof=4] uiVariant* portrait dd ? ;
+      data +0x04 [sizeof=4] uiVariant* paperdoll dd ? ;
+      data +0x08 [sizeof=4] int encumbrance dd ?
+      data +0x0c [sizeof=4] int colorDisplay dd ?
+      data +0x10 [sizeof=4] int frameTimes dd ?
       data +0x14 [sizeof=4] const char* toggle
       data +0x18 [sizeof=4] const char* on
       data +0x1c [sizeof=4] const char* highlightGroup
-      data +0x20 [sizeof=4] uiVariant* clickable
-      data +0x24 [sizeof=4] uiVariant* actionBar
+      data +0x20 [sizeof=4] uiVariant* clickable dd ? ;
+      data +0x24 [sizeof=4] uiVariant* actionBar dd ? ;
       data +0x28 [sizeof=4] const char* sound
 
 
@@ -2840,20 +2940,32 @@ uiItem\:\:<unnamed-type-edit
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | const char\*                           | var                           |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | int                                    | maxlines                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | int                                    | maxchars                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0C       | 4        | :ref:`uiVariant<uiVariant>`\*          | placeholder                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x10       | 4        | int                                    | cursor                        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x14       | 4        | int                                    | selectStart                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x18       | 4        | int                                    | selectEnd                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] const char* var
-      data +0x04 [sizeof=4] int maxlines
-      data +0x08 [sizeof=4] int maxchars
-      data +0x0c [sizeof=4] uiVariant* placeholder
-      data +0x10 [sizeof=4] int cursor
-      data +0x14 [sizeof=4] int selectStart
-      data +0x18 [sizeof=4] int selectEnd
+      data +0x00 [sizeof=4] const char* var dd ? ;
+      data +0x04 [sizeof=4] int maxlines dd ?
+      data +0x08 [sizeof=4] int maxchars dd ?
+      data +0x0c [sizeof=4] uiVariant* placeholder dd ? ;
+      data +0x10 [sizeof=4] int cursor dd ?
+      data +0x14 [sizeof=4] int selectStart dd ?
+      data +0x18 [sizeof=4] int selectEnd dd ?
 
 
 .. _uiItemlist:
@@ -2864,27 +2976,53 @@ uiItem\:\:<unnamed-type-list
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | int                                    | table                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | int                                    | printrow                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | int                                    | rowheight                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0C       | 4        | int                                    | rowwidth                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x10       | 4        | :ref:`uiVariant<uiVariant>`\*          | rowbackground                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x14       | 4        | int                                    | dynamicHeight                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x18       | 4        | :ref:`uiColumn<uiColumn>`\*            | columns                       |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1C       | 4        | int                                    | category                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x20       | 4        | int                                    | showHighlight                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x24       | 4        | int                                    | seperator                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x28       | 4        | int                                    | selected                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x2C       | 4        | int                                    | height                        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x30       | 4        | :ref:`uiVariant<uiVariant>`\*          | color                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x34       | 4        | int                                    | currentRow                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] int table
-      data +0x04 [sizeof=4] int printrow
-      data +0x08 [sizeof=4] int rowheight
-      data +0x0c [sizeof=4] int rowwidth
-      data +0x10 [sizeof=4] uiVariant* rowbackground
-      data +0x14 [sizeof=4] int dynamicHeight
-      data +0x18 [sizeof=4] uiColumn* columns
-      data +0x1c [sizeof=4] int category
-      data +0x20 [sizeof=4] int showHighlight
-      data +0x24 [sizeof=4] int seperator
-      data +0x28 [sizeof=4] int selected
-      data +0x2c [sizeof=4] int height
-      data +0x30 [sizeof=4] uiVariant* color
-      data +0x34 [sizeof=4] int currentRow
+      data +0x00 [sizeof=4] int table dd ?
+      data +0x04 [sizeof=4] int printrow dd ?
+      data +0x08 [sizeof=4] int rowheight dd ?
+      data +0x0c [sizeof=4] int rowwidth dd ?
+      data +0x10 [sizeof=4] uiVariant* rowbackground dd ? ;
+      data +0x14 [sizeof=4] int dynamicHeight dd ?
+      data +0x18 [sizeof=4] uiColumn* columns dd ? ;
+      data +0x1c [sizeof=4] int category dd ?
+      data +0x20 [sizeof=4] int showHighlight dd ?
+      data +0x24 [sizeof=4] int seperator dd ?
+      data +0x28 [sizeof=4] int selected dd ?
+      data +0x2c [sizeof=4] int height dd ?
+      data +0x30 [sizeof=4] uiVariant* color dd ? ;
+      data +0x34 [sizeof=4] int currentRow dd ?
 
 
 .. _uiItemmap:
@@ -2895,14 +3033,14 @@ uiItem\:\:<unnamed-type-map
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | int                                    | type                          |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] int type
+      data +0x00 [sizeof=4] int type dd ?
 
 
 .. _uiItemmosaic:
@@ -2913,15 +3051,17 @@ uiItem\:\:<unnamed-type-mosaic
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | :ref:`uiVariant<uiVariant>`\*          | resref                        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | int                                    | respectClipping               |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiVariant* resref
-      data +0x04 [sizeof=4] int respectClipping
+      data +0x00 [sizeof=4] uiVariant* resref dd ? ;
+      data +0x04 [sizeof=4] int respectClipping dd ?
 
 
 .. _uiItemmovie:
@@ -2932,19 +3072,29 @@ uiItem\:\:<unnamed-type-movie
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | void\*                                 | res                           |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 16       | :ref:`SDL_Rect<SDL_Rect>`              | subtitle                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x14       | 4        | int                                    | transparent                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x18       | 4        | unsigned int                           | background                    |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1C       | 4        | int                                    | loop                          |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x20       | 4        | :ref:`uiVariant<uiVariant>`\*          | queuedMovie                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] void* res
+      data +0x00 [sizeof=4] void* res dd ? ;
       data +0x04 [sizeof=16] SDL_Rect subtitle
-      data +0x14 [sizeof=4] int transparent
-      data +0x18 [sizeof=4] unsigned int background
-      data +0x1c [sizeof=4] int loop
-      data +0x20 [sizeof=4] uiVariant* queuedMovie
+      data +0x14 [sizeof=4] int transparent dd ?
+      data +0x18 [sizeof=4] unsigned int background dd ?
+      data +0x1c [sizeof=4] int loop dd ?
+      data +0x20 [sizeof=4] uiVariant* queuedMovie dd ? ;
 
 
 .. _uiItemprogressBar:
@@ -2955,16 +3105,20 @@ uiItem\:\:<unnamed-type-progressBar
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | :ref:`uiVariant<uiVariant>`\*          | percent                       |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | :ref:`uiVariant<uiVariant>`\*          | color                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | :ref:`uiVariant<uiVariant>`\*          | fullColor                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiVariant* percent
-      data +0x04 [sizeof=4] uiVariant* color
-      data +0x08 [sizeof=4] uiVariant* fullColor
+      data +0x00 [sizeof=4] uiVariant* percent dd ? ;
+      data +0x04 [sizeof=4] uiVariant* color dd ? ;
+      data +0x08 [sizeof=4] uiVariant* fullColor dd ? ;
 
 
 .. _uiItemrectangle:
@@ -2975,15 +3129,17 @@ uiItem\:\:<unnamed-type-rectangle
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | int                                    | number                        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | :ref:`uiVariant<uiVariant>`\*          | opacity                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] int number
-      data +0x04 [sizeof=4] uiVariant* opacity
+      data +0x00 [sizeof=4] int number dd ?
+      data +0x04 [sizeof=4] uiVariant* opacity dd ? ;
 
 
 .. _uiItemscrollbar:
@@ -2994,23 +3150,41 @@ uiItem\:\:<unnamed-type-scrollbar
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | const char\*                           | bam                           |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | const char\*                           | function                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | :ref:`uiVariant<uiVariant>`\*          | hide                          |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0C       | 4        | int                                    | top                           |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x10       | 4        | int                                    | held                          |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x14       | 4        | int                                    | dragging                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x18       | 4        | int                                    | contentHeight                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1C       | 4        | int                                    | respectConstraints            |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x20       | 4        | int                                    | clunkyScroll                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x24       | 4        | int                                    | skipReset                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] const char* bam
-      data +0x04 [sizeof=4] const char* function
-      data +0x08 [sizeof=4] uiVariant* hide
-      data +0x0c [sizeof=4] int top
-      data +0x10 [sizeof=4] int held
-      data +0x14 [sizeof=4] int dragging
-      data +0x18 [sizeof=4] int contentHeight
-      data +0x1c [sizeof=4] int respectConstraints
-      data +0x20 [sizeof=4] int clunkyScroll
-      data +0x24 [sizeof=4] int skipReset
+      data +0x00 [sizeof=4] const char* bam dd ? ;
+      data +0x04 [sizeof=4] const char* function dd ? ;
+      data +0x08 [sizeof=4] uiVariant* hide dd ? ;
+      data +0x0c [sizeof=4] int top dd ?
+      data +0x10 [sizeof=4] int held dd ?
+      data +0x14 [sizeof=4] int dragging dd ?
+      data +0x18 [sizeof=4] int contentHeight dd ?
+      data +0x1c [sizeof=4] int respectConstraints dd ?
+      data +0x20 [sizeof=4] int clunkyScroll dd ?
+      data +0x24 [sizeof=4] int skipReset dd ?
 
 
 .. _uiItemslider:
@@ -3021,18 +3195,26 @@ uiItem\:\:<unnamed-type-slider
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | const char\*                           | position                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | :ref:`uiVariant<uiVariant>`\*          | settings                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | int                                    | palette                       |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0C       | 4        | const char\*                           | background                    |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x10       | 4        | int                                    | right                         |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] const char* position
-      data +0x04 [sizeof=4] uiVariant* settings
-      data +0x08 [sizeof=4] int palette
-      data +0x0c [sizeof=4] const char* background
-      data +0x10 [sizeof=4] int right
+      data +0x00 [sizeof=4] const char* position dd ? ;
+      data +0x04 [sizeof=4] uiVariant* settings dd ? ;
+      data +0x08 [sizeof=4] int palette dd ?
+      data +0x0c [sizeof=4] const char* background dd ? ;
+      data +0x10 [sizeof=4] int right dd ?
 
 
 .. _uiItemslot:
@@ -3043,18 +3225,26 @@ uiItem\:\:<unnamed-type-slot
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | :ref:`uiVariant<uiVariant>`\*          | icon                          |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | :ref:`uiVariant<uiVariant>`\*          | count                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | :ref:`uiVariant<uiVariant>`\*          | usages                        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0C       | 4        | :ref:`uiVariant<uiVariant>`\*          | highlight                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x10       | 4        | :ref:`uiVariant<uiVariant>`\*          | tint                          |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiVariant* icon
-      data +0x04 [sizeof=4] uiVariant* count
-      data +0x08 [sizeof=4] uiVariant* usages
-      data +0x0c [sizeof=4] uiVariant* highlight
-      data +0x10 [sizeof=4] uiVariant* tint
+      data +0x00 [sizeof=4] uiVariant* icon dd ? ;
+      data +0x04 [sizeof=4] uiVariant* count dd ? ;
+      data +0x08 [sizeof=4] uiVariant* usages dd ? ;
+      data +0x0c [sizeof=4] uiVariant* highlight dd ? ;
+      data +0x10 [sizeof=4] uiVariant* tint dd ? ;
 
 
 .. _uiItemtext:
@@ -3065,23 +3255,41 @@ uiItem\:\:<unnamed-type-text
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | const char\*                           | originalText                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | :ref:`uiVariant<uiVariant>`\*          | text                          |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | const char\*                           | font                          |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0C       | 4        | int                                    | point                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x10       | 4        | int                                    | useFontZoom                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x14       | 4        | :ref:`uiVariant<uiVariant>`\*          | color                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x18       | 4        | int                                    | upper                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1C       | 4        | int                                    | lower                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x20       | 4        | :ref:`uiVariant<uiVariant>`\*          | shadow                        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x24       | 4        | :ref:`uiVariant<uiVariant>`\*          | showhighlight                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] const char* originalText
-      data +0x04 [sizeof=4] uiVariant* text
-      data +0x08 [sizeof=4] const char* font
-      data +0x0c [sizeof=4] int point
-      data +0x10 [sizeof=4] int useFontZoom
+      data +0x00 [sizeof=4] const char* originalText dd ? ;
+      data +0x04 [sizeof=4] uiVariant* text dd ? ;
+      data +0x08 [sizeof=4] const char* font dd ? ;
+      data +0x0c [sizeof=4] int point dd ?
+      data +0x10 [sizeof=4] int useFontZoom dd ?
       data +0x14 [sizeof=4] uiVariant* color
-      data +0x18 [sizeof=4] int upper
-      data +0x1c [sizeof=4] int lower
-      data +0x20 [sizeof=4] uiVariant* shadow
-      data +0x24 [sizeof=4] uiVariant* showhighlight
+      data +0x18 [sizeof=4] int upper dd ?
+      data +0x1c [sizeof=4] int lower dd ?
+      data +0x20 [sizeof=4] uiVariant* shadow dd ? ;
+      data +0x24 [sizeof=4] uiVariant* showhighlight dd ? ;
 
 
 .. _uiItemtooltip:
@@ -3092,18 +3300,26 @@ uiItem\:\:<unnamed-type-tooltip
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | const char\*                           | originalText                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | :ref:`uiVariant<uiVariant>`\*          | text                          |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | :ref:`uiVariant<uiVariant>`\*          | force                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0C       | 4        | int                                    | position                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x10       | 4        | int                                    | forceTop                      |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] const char* originalText
-      data +0x04 [sizeof=4] uiVariant* text
-      data +0x08 [sizeof=4] uiVariant* force
-      data +0x0c [sizeof=4] int position
-      data +0x10 [sizeof=4] int forceTop
+      data +0x00 [sizeof=4] const char* originalText dd ? ;
+      data +0x04 [sizeof=4] uiVariant* text dd ? ;
+      data +0x08 [sizeof=4] uiVariant* force dd ? ;
+      data +0x0c [sizeof=4] int position dd ?
+      data +0x10 [sizeof=4] int forceTop dd ?
 
 
 .. _uiItemuiTemplate:
@@ -3114,14 +3330,14 @@ uiItem\:\:<unnamed-type-uiTemplate
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | :ref:`uiItem<uiItem>`\*                | item                          |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiItem* item
+      data +0x00 [sizeof=4] uiItem* item dd ? ;
 
 
 .. _uiMenu:
@@ -3134,28 +3350,63 @@ uiMenu
 +------------+----------+----------------------------------------+-------------------------------+
 |            |          |                                        |                               |
 +------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+|            |          |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+
 
 Asm Definition
 
 ::
 
       data +0x00 [sizeof=16] Marker menuSrc
-      data +0x10 [sizeof=4] const char* name
-      data +0x14 [sizeof=4] int panel
-      data +0x18 [sizeof=4] int state
-      data +0x1c [sizeof=4] uiItem* items
-      data +0x20 [sizeof=4] uiVariant* modal
-      data +0x24 [sizeof=4] uiVariant* opacity
-      data +0x28 [sizeof=4] uiVariant* greyscale
-      data +0x2c [sizeof=4] int onOpen
-      data +0x30 [sizeof=4] int onClose
+      data +0x10 [sizeof=4] const char* name dd ? ;
+      data +0x14 [sizeof=4] int panel dd ?
+      data +0x18 [sizeof=4] int state dd ?
+      data +0x1c [sizeof=4] uiItem* items dd ? ;
+      data +0x20 [sizeof=4] uiVariant* modal dd ? ;
+      data +0x24 [sizeof=4] uiVariant* opacity dd ? ;
+      data +0x28 [sizeof=4] uiVariant* greyscale dd ? ;
+      data +0x2c [sizeof=4] int onOpen dd ?
+      data +0x30 [sizeof=4] int onClose dd ?
       data +0x34 [sizeof=8] SDL_Point offset
-      data +0x3c [sizeof=4] int ha
-      data +0x40 [sizeof=4] int va
-      data +0x44 [sizeof=4] int width
-      data +0x48 [sizeof=4] int height
-      data +0x4c [sizeof=4] int enabled
-      data +0x50 [sizeof=4] int ignoreEsc
+      data +0x3c [sizeof=4] int ha dd ?
+      data +0x40 [sizeof=4] int va dd ?
+      data +0x44 [sizeof=4] int width dd ?
+      data +0x48 [sizeof=4] int height dd ?
+      data +0x4c [sizeof=4] int enabled dd ?
+      data +0x50 [sizeof=4] int ignoreEsc dd ?
 
 
 .. _uiVariant:
@@ -3166,13 +3417,15 @@ uiVariant
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | uiVariantType                          | type                          |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | uiVariant\:\:\<unnamed-type-value\>    | value                         |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiVariantType type
-      data +0x04 [sizeof=4] uiVariant::<unnamed-type-value> value
+      data +0x00 [sizeof=4] uiVariantType type dd ? ;
+      data +0x04 [sizeof=4] uiVariant::<unnamed-type-value> value dd ? ;
 

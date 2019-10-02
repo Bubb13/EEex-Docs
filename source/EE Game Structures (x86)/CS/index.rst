@@ -80,6 +80,7 @@ CS Structures
 * :ref:`CStoreFileItem<CStoreFileItem>`
 * :ref:`CStoreFileSpell<CStoreFileSpell>`
 * :ref:`CString<CString>`
+* :ref:`CStringData<CStringData>`
 * :ref:`CStringList<CStringList>`
 * :ref:`CStringList::CNode<CStringListCNode>`
 
@@ -5119,6 +5120,32 @@ Asm Definition
    CString         struc
      m_pchData     dd ?
    CString         ends ; size 0x4
+
+
+.. _CStringData:
+
+CStringData
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+-------------+--------------+
+| **Offset** | **Size** | **Type**    | **Field**    |
++------------+----------+-------------+--------------+
+| 0x00       | 4        | long        | nRefs        |
++------------+----------+-------------+--------------+
+| 0x04       | 4        | int         | nDataLength  |
++------------+----------+-------------+--------------+
+| 0x08       | 4        | int         | nAllocLength |
++------------+----------+-------------+--------------+
+
+Asm Definition
+
+::
+
+   CStringData      struct
+     nRefs          dd ?
+     nDataLength    dd ?
+     nAllocLength   dd ?
+   CStringData      ends
 
 
 .. _CStringList:

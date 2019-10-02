@@ -107,8 +107,10 @@ EE Game Functions (x86)
    CSpawnPoint/index
    CSpell/index
    CStore/index
+   CString/index
    CStringList/index
    CTiledObject/index
+   CTime/index
    CTimerWorld/index
    CTlkFileOverride/index
    CTlkTable/index
@@ -139,6 +141,7 @@ EE Game Functions (x86)
 
 .. CGameEffect
 .. CMapStringToString
+.. tolua
 
 
 .. note:: Many of the functions listed here are technically methods belonging to a class (denoted by the colon pair ``::`` that seperates the class name and it's method)
