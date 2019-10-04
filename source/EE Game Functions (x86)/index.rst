@@ -1,8 +1,8 @@
-.. _EE Game Functions (x86):
+.. _EE Game Classes & Functions (x86):
 
-=======================
-EE Game Functions (x86)
-=======================
+=================================
+EE Game Classes & Functions (x86)
+=================================
 
 .. toctree::
    :maxdepth: 1

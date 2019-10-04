@@ -119,8 +119,8 @@ Locate a text value in the 2da array using x and y coords to limit search
 
    unsigned char C2DArray::Find(
       CString& sSearchString, 
-	  CPoint& ptLocation, 
-	  unsigned char bSearchLabels);
+      CPoint& ptLocation, 
+      unsigned char bSearchLabels);
 
 **Parameters**
 
@@ -147,7 +147,7 @@ Get a text value from the specified x and y coordinates
 
    CString& C2DArray::GetAt(
       CString& nX, 
-	  CString& nY);
+      CString& nY);
 
 **Parameters**
 
@@ -195,6 +195,33 @@ Loads the specified 2da resource
 **Parameters**
 
 * :ref:`CResRef<CResRef>`\& res - *resource reference of the 2da file to load*
+
+**Remarks**
+
+The disassembly below shows the following:
+
+* in a loop, loading of 17 strings and turning them into resource references with the ``CResRef::CResRef`` class method
+* passing the newly created CResRef (resource reference) to the ``C2DArray::Load`` class method to load the specified .2da file resource
+* note: esi is compared to 18 decimal (0x12) and continues the loop is below that value: ``cmp esi,12``, ``jb baldur.604232``
+
+.. image:: C2DArrayLoad_example.png
+
+The equivalant in C++ might be:
+
+::
+
+   string 2dalist[18] = {"LOADHINT", "MASTAREA", "NPCLEVEL", "TBPPARTY", "PDIALOG", "STARTARE", "STRTGOLD", "STARTPOS", "STWEAPON", "XPCAP", "XPLIST", "25STWEAP", "INTERACT", "YEARS", "REPUTATION" ,"CLASTEXT", "RACETEXT"}; 
+
+   CResRef ref;
+   C2DArray array;
+   
+   
+   for (int i = 0; i < 18; i++)
+   {
+	  CResRef ref((const char*)2dalist[i]);
+      array.Load(ref);
+   }
+
 
 
 .. _C2DArrayLoadLines:

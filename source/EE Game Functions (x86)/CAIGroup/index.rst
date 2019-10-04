@@ -1,37 +1,16 @@
-.. _CAIGroup Functions:
+.. _CAIGroup Class:
 
 ==========================
-CAIGroup Functions
+CAIGroup Class
 ==========================
 
 .. toctree::
    :maxdepth: 1
 
+The structure used for this class is :ref:`CAIGroup<CAIGroup>`
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Functions**                                                                                                                                      |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| void **CAIAction\:\:CAIAction**\(:ref:`CAIAction<CAIAction>`\& __that)                                                                             |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| void **CAIAction\:\:CAIAction**\(short actionID, :ref:`CAIObjectType<CAIObjectType>`\& actee, long specificID, long specificID2, long specificID3) |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| void **CAIAction\:\:CAIAction**\(short actionID, :ref:`CPoint<CPoint>`\& dest, long specificID, long sp2)                                          |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| void **CMessageAddAction\:\:CMessageAddAction**\(:ref:`CAIAction<CAIAction>`\& action, long caller, long target)                                   |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| void **CMessageSetTrigger\:\:CMessageSetTrigger**\(:ref:`CAITrigger<CAITrigger>`\& trigger, long caller, long target)                              |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| void **CMessageStopActions\:\:CMessageStopActions**\(long caller, long target, :ref:`CGameSprite<CGameSprite>`\* pSprite)                          |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`CAIAction<CAIAction>`\& **CAIAction\:\:operator=**\(:ref:`CAIAction<CAIAction>`\& y)                                                         |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`CAIObjectType<CAIObjectType>`\& **CAIObjectType\:\:operator=**\(:ref:`CAIObjectType<CAIObjectType>`\& y)                                     |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`CAITrigger<CAITrigger>`\& **CAITrigger\:\:operator=**\(:ref:`CAITrigger<CAITrigger>`\& __that)                                               |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| int **CPoint\:\:operator==**\(tagPOINT point)                                                                                                      |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| int **CPoint\:\:operator!=**\(tagPOINT point)                                                                                                      |
+| **Quick Ref**                                                                                                                                      |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
 | __POSITION\* **CAIGroup\:\:Add**\(long spriteIndex)                                                                                                |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -47,53 +26,13 @@ CAIGroup Functions
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CAIGroup\:\:FollowLeader**\(:ref:`CPoint<CPoint>` target, int additive)                                                                     |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
-| CDerivedStats\* **CGameSprite\:\:GetActiveStats**\()                                                                                               |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual short **CMessage\:\:GetCommType**\()                                                                                                       |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual short **CMessageAddAction\:\:GetCommType**\()                                                                                              |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual short **CMessageSetTrigger\:\:GetCommType**\()                                                                                             |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual short **CMessageStartFollow\:\:GetCommType**\()                                                                                            |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual short **CMessageStopActions\:\:GetCommType**\()                                                                                            |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual short **CMessageStopFollow\:\:GetCommType**\()                                                                                             |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
 | short\* **CAIGroup\:\:GetFacings**\(short formationType, short direction)                                                                          |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
 | long **CAIGroup\:\:GetGroupLeader**\()                                                                                                             |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
 | long\* **CAIGroup\:\:GetGroupList**\()                                                                                                             |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual unsigned char **CMessage\:\:GetMsgSubType**\()                                                                                             |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual unsigned char **CMessageAddAction\:\:GetMsgSubType**\()                                                                                    |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual unsigned char **CMessageSetTrigger\:\:GetMsgSubType**\()                                                                                   |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual unsigned char **CMessageStartFollow\:\:GetMsgSubType**\()                                                                                  |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual unsigned char **CMessageStopActions\:\:GetMsgSubType**\()                                                                                  |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual unsigned char **CMessageStopFollow\:\:GetMsgSubType**\()                                                                                   |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual unsigned char **CMessage\:\:GetMsgType**\()                                                                                                |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual unsigned char **CMessageAddAction\:\:GetMsgType**\()                                                                                       |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual unsigned char **CMessageSetTrigger\:\:GetMsgType**\()                                                                                      |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual unsigned char **CMessageStartFollow\:\:GetMsgType**\()                                                                                     |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual unsigned char **CMessageStopActions\:\:GetMsgType**\()                                                                                     |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual unsigned char **CMessageStopFollow\:\:GetMsgType**\()                                                                                      |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
 | :ref:`CPoint<CPoint>`\* **CAIGroup\:\:GetOffsets**\(short formationType, short direction, unsigned char bFullParty)                                |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| unsigned char **CGameAnimation\:\:GetPersonalSpace**\()                                                                                            |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CAIGroup\:\:GroupAction**\(:ref:`CAIAction<CAIAction>` action, int override, :ref:`CAIAction<CAIAction>`\* leaderAction)                    |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -111,11 +50,7 @@ CAIGroup Functions
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
 | int **CAIGroup\:\:InList**\(long index)                                                                                                            |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
-| int **CInfGame\:\:IsFamiliar**\(long id)                                                                                                           |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
 | int **CAIGroup\:\:IsPartyLeader**\()                                                                                                               |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual void **CMessage\:\:MarshalMessage**\(unsigned char\*\* pData, unsigned long\* dwSize)                                                      |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CAIGroup\:\:Remove**\(long id)                                                                                                              |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -125,14 +60,614 @@ CAIGroup Functions
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
 | virtual void __cdecl **CAIGroup\:\:RotateOffsets**\(:ref:`CPoint<CPoint>`\* offsets, short numOffsets, short degreesOfRotation) = 0                |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual void **CMessage\:\:Run**\()                                                                                                                |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CAIGroup\:\:SetGroupTriggerId**\(long triggerId)                                                                                            |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CAIGroup\:\:Sort**\()                                                                                                                       |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual int **CMessage\:\:UnmarshalMessage**\(unsigned char\* pData, unsigned long dwSize)                                                         |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual long __cdecl **CUtil\:\:UtilRandInt**\(long nNumber) = 0                                                                                   |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+
+
+---------------
+Methods
+---------------
+
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| **Name**                                                        | **Description**                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:Add<CAIGroupAdd>`                             |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:Add<CAIGroupAdd2>`                            |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:AddEffect<CAIGroupAddEffect>`                 |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:AddToSearch<CAIGroupAddToSearch>`             |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:AddTrigger<CAIGroupAddTrigger>`               |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:ClearActions<CAIGroupClearActions>`           |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:FollowLeader<CAIGroupFollowLeader>`           |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:GetFacings<CAIGroupGetFacings>`               |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:GetGroupLeader<CAIGroupGetGroupLeader>`       |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:GetGroupList<CAIGroupGetGroupList>`           |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:GetOffsets<CAIGroupGetOffsets>`               |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:GroupAction<CAIGroupGroupAction>`             |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:GroupCancelMove<CAIGroupGroupCancelMove>`     |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:GroupDrawMove<CAIGroupGroupDrawMove>`         |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:GroupProtectPoint<CAIGroupGroupProtectPoint>` |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:GroupSetTarget<CAIGroupGroupSetTarget>`       |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:GroupSetTarget<CAIGroupGroupSetTarget2>`      |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:HandleFollowPath<CAIGroupHandleFollowPath>`   |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:InList<CAIGroupInList>`                       |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:IsPartyLeader<CAIGroupIsPartyLeader>`         |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:Remove<CAIGroupRemove>`                       |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:Remove<CAIGroupRemove2>`                      |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:RemoveFromSearch<CAIGroupRemoveFromSearch>`   |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:RotateOffsets<CAIGroupRotateOffsets>`         |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:SetGroupTriggerId<CAIGroupSetGroupTriggerId>` |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CAIGroup\:\:Sort<CAIGroupSort>`                           |                                                                                         |
++-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+
+.. _CAIGroupAdd:
+
+CAIGroup\:\:Add
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   __POSITION* CAIGroup::Add(long spriteIndex);
+
+**Parameters**
+
+* ``long`` spriteIndex - * *
+
+**Return Value**
+
+``__POSITION``
+
+**Remarks**
+
+
+.. _CAIGroupAdd2:
+
+CAIGroup\:\:Add
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::Add(CGameSprite* pSprite);
+
+**Parameters**
+
+* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+
+**Remarks**
+
+
+.. _CAIGroupAddEffect:
+
+CAIGroup\:\:AddEffect
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::AddEffect(CGameEffect* effect);
+
+**Parameters**
+
+* :ref:`CGameEffect<CGameEffect>`\* effect - * *
+
+**Remarks**
+
+
+.. _CAIGroupAddToSearch:
+
+CAIGroup\:\:AddToSearch
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::AddToSearch(CSearchBitmap* search);
+
+**Parameters**
+
+* :ref:`CSearchBitmap<CSearchBitmap>`\* search - * *
+
+**Remarks**
+
+
+.. _CAIGroupAddTrigger:
+
+CAIGroup\:\:AddTrigger
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::AddTrigger(CAITrigger& trigger);
+
+**Parameters**
+
+* :ref:`CAITrigger<CAITrigger>`\& trigger - * *
+
+**Remarks**
+
+
+.. _CAIGroupClearActions:
+
+CAIGroup\:\:ClearActions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::ClearActions();
+
+**Remarks**
+
+
+.. _CAIGroupFollowLeader:
+
+CAIGroup\:\:FollowLeader
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::FollowLeader(
+      CPoint target, 
+      int additive);
+
+**Parameters**
+
+* :ref:`CPoint<CPoint>` target - * *
+* ``int`` additive - * *
+
+**Remarks**
+
+
+
+.. _CAIGroupGetFacings:
+
+CAIGroup\:\:GetFacings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   short* CAIGroup::GetFacings(
+      short formationType, 
+      short direction);
+
+**Parameters**
+
+* ``short`` formationType - * *
+* ``short`` direction - * *
+
+**Return Value**
+
+``short*``
+
+**Remarks**
+
+
+
+.. _CAIGroupGetGroupLeader:
+
+CAIGroup\:\:GetGroupLeader
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   long CAIGroup::GetGroupLeader();
+
+**Return Value**
+
+``long``
+
+**Remarks**
+
+
+
+.. _CAIGroupGetGroupList:
+
+CAIGroup\:\:GetGroupList
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   long* CAIGroup::GetGroupList();
+
+**Return Value**
+
+``long*``
+
+**Remarks**
+
+
+
+.. _CAIGroupGetOffsets:
+
+CAIGroup\:\:GetOffsets
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   CPoint* CAIGroup::GetOffsets(
+      short formationType, 
+      short direction, 
+      unsigned char bFullParty);
+
+**Parameters**
+
+* ``short`` formationType - * *
+* ``short`` direction - * *
+* ``unsigned char`` bFullParty - * *
+
+**Return Value**
+
+:ref:`CPoint<CPoint>`\*
+
+**Remarks**
+
+
+
+.. _CAIGroupGroupAction:
+
+CAIGroup\:\:GroupAction
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::GroupAction(
+      CAIAction action, 
+      int override, 
+      CAIAction* leaderAction);
+
+**Parameters**
+
+* :ref:`CAIAction<CAIAction>` action - * *
+* ``int`` override - * *
+* :ref:`CAIAction<CAIAction>`\* leaderAction - * *
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CAIGroupGroupCancelMove:
+
+CAIGroup\:\:GroupCancelMove
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::GroupCancelMove();
+
+**Remarks**
+
+
+
+.. _CAIGroupGroupDrawMove:
+
+CAIGroup\:\:GroupDrawMove
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::GroupDrawMove(
+      CPoint target, 
+      short formationType, 
+      CPoint cursor);
+
+**Parameters**
+
+* :ref:`CPoint<CPoint>` target - * *
+* ``short`` formationType - * *
+* :ref:`CPoint<CPoint>` cursor - * *
+
+**Remarks**
+
+
+
+.. _CAIGroupGroupProtectPoint:
+
+CAIGroup\:\:GroupProtectPoint
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::GroupProtectPoint(
+      CPoint target, 
+      short formationType, 
+      CPoint cursor, 
+      long range);
+
+**Parameters**
+
+* :ref:`CPoint<CPoint>` target - * *
+* ``short`` formationType - * *
+* :ref:`CPoint<CPoint>` cursor - * *
+* ``long`` range - * *
+
+**Remarks**
+
+
+
+.. _CAIGroupGroupSetTarget:
+
+CAIGroup\:\:GroupSetTarget
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::GroupSetTarget(long iObject);
+
+**Parameters**
+
+* ``long`` iObject - * *
+
+**Remarks**
+
+
+
+.. _CAIGroupGroupSetTarget2:
+
+CAIGroup\:\:GroupSetTarget
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::GroupSetTarget(
+      CPoint target, 
+      int additive, 
+      short formationType, 
+      CPoint cursor);
+
+**Parameters**
+
+* :ref:`CPoint<CPoint>` target - * *
+* ``int`` additive - * *
+* ``short`` formationType - * *
+* :ref:`CPoint<CPoint>` cursor - * *
+
+**Remarks**
+
+
+
+.. _CAIGroupHandleFollowPath:
+
+CAIGroup\:\:HandleFollowPath
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::HandleFollowPath(
+      long* pPath, 
+      short nPath, 
+      CPoint target, 
+      CPoint start, 
+      int additive);
+
+**Parameters**
+
+* ``long*`` pPath - * *
+* ``short`` nPath - * *
+* :ref:`CPoint<CPoint>` target - * *
+* :ref:`CPoint<CPoint>` start - * *
+* ``int`` additive
+
+**Remarks**
+
+
+
+.. _CAIGroupInList:
+
+CAIGroup\:\:InList
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   int CAIGroup::InList(long index);
+
+**Parameters**
+
+* ``long`` index - * *
+
+**Return Value**
+
+``int``
+
+**Remarks**
+
+
+
+.. _CAIGroupIsPartyLeader:
+
+CAIGroup\:\:IsPartyLeader
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   int CAIGroup::IsPartyLeader();
+
+**Return Value**
+
+``int``
+
+**Remarks**
+
+
+
+.. _CAIGroupRemove:
+
+CAIGroup\:\:Remove
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::Remove(long id);
+
+**Parameters**
+
+* ``long`` id - * *
+
+**Remarks**
+
+
+
+.. _CAIGroupRemove2:
+
+CAIGroup\:\:Remove
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::Remove(CGameSprite* pSprite);
+
+**Parameters**
+
+* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+
+**Remarks**
+
+
+
+.. _CAIGroupRemoveFromSearch:
+
+CAIGroup\:\:RemoveFromSearch
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::RemoveFromSearch(CSearchBitmap* search);
+
+**Parameters**
+
+* :ref:`CSearchBitmap<CSearchBitmap>`\* search - * *
+
+**Remarks**
+
+
+
+.. _CAIGroupRotateOffsets:
+
+CAIGroup\:\:RotateOffsets
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   virtual void __cdecl CAIGroup::RotateOffsets(
+      CPoint* offsets, 
+      short numOffsets, 
+      short degreesOfRotation) = 0;
+
+**Parameters**
+
+* :ref:`CPoint<CPoint>`\* offsets - * *
+* ``short`` numOffsets - * *
+* ``short`` degreesOfRotation - * *
+
+**Remarks**
+
+
+
+.. _CAIGroupSetGroupTriggerId:
+
+CAIGroup\:\:SetGroupTriggerId
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::SetGroupTriggerId(long triggerId);
+
+**Parameters**
+
+* ``long`` triggerId - * *
+
+**Remarks**
+
+
+
+.. _CAIGroupSort:
+
+CAIGroup\:\:Sort
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CAIGroup::Sort();
+
+**Remarks**
 
