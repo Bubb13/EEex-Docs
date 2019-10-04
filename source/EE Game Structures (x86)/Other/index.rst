@@ -14,6 +14,7 @@ Other Structures
 * :ref:`KeyFileHeader_st<KeyFileHeader_st>`
 * :ref:`KeyFileKeyEntry_st<KeyFileKeyEntry_st>`
 * :ref:`KeyFileResFileName_st<KeyFileResFileName_st>`
+* :ref:`Marker<Marker>`
 * :ref:`MAP_CHAR_POSITIONS<MAP_CHAR_POSITIONS>`
 * :ref:`MOSAICHEADERV2<MOSAICHEADERV2>`
 * :ref:`MOSAICQUAD<MOSAICQUAD>`
@@ -504,6 +505,35 @@ Asm Definition
      nFileNameSize          dw ?
      bDrives                dw ?
    KeyFileResFileName_st    ends
+
+
+.. _Marker:
+
+Marker
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 4        | const char\*                           | src                           |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | int                                    | start                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | int                                    | count                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0C       | 4        | int                                    | line                          |
++------------+----------+----------------------------------------+-------------------------------+
+
+Asm Definition
+
+::
+
+   Marker    struct
+     src     dd ? ; const char*
+     start   dd ?
+     count   dd ?
+     line    dd ?
+   Marker    ends
 
 
 .. _MAP_CHAR_POSITIONS:
@@ -2637,16 +2667,18 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] unsigned long nFileType dd ?
-      data +0x04 [sizeof=4] unsigned long nFileVersion dd ?
-      data +0x08 [sizeof=2] unsigned short nWidth dw ?
-      data +0x0a [sizeof=2] unsigned short nHeight dw ?
-      data +0x0c [sizeof=2] unsigned short nXTiles dw ?
-      data +0x0e [sizeof=2] unsigned short nYTiles dw ?
-      data +0x10 [sizeof=2] unsigned short nTileSize dw ?
-      data +0x12 [sizeof=1] unsigned char nTransparentColor db ?
-      data +0x13 [sizeof=1] unsigned char nCompressed db ?
-      data +0x14 [sizeof=4] unsigned long nPaletteOffset dd ?
+   mosHeader_st         struct
+     nFileType          dd ?
+     nFileVersion       dd ?
+     nWidth             dw ?
+     nHeight            dw ?
+     nXTiles            dw ?
+     nYTiles            dw ?
+     nTileSize          dw ?
+     nTransparentColor  db ?
+     nCompressed        db ?
+     nPaletteOffset     dd ?
+   mosHeader_st         ends
 
 
 .. _st_tiledef:
@@ -2670,10 +2702,12 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] int nTile dd ?
-      data +0x04 [sizeof=4] int nUsageCount dd ?
-      data +0x08 [sizeof=4] int texture dd ?
-      data +0x0c [sizeof=4] CInfTileSet* pTileSet dd ? ; 
+   st_tiledef       struct
+     nTile          dd ?
+     nUsageCount    dd ?
+     texture        dd ?
+     pTileSet       dd ? ; CInfTileSet* 
+   st_tiledef       ends
 
 
 .. _uiColumn:
@@ -2695,144 +2729,173 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiVariant* width dd ? ;
-      data +0x04 [sizeof=4] uiItem* items dd ? ;
-      data +0x08 [sizeof=4] uiColumn* next dd ? ;
-
+   uiColumn struct
+     width  dd ? ; uiVariant* 
+     items  dd ? ; uiItem* 
+     next   dd ? ; uiColumn* 
+   uiColumn ends
 
 .. _uiItem:
 
 uiItem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
++------------+----------+------------------------------------------------------------------+------------------+
+| **Offset** | **Size** | **Type**                                                         | **Field**        |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x00       | 4        | uiItemType                                                       | type             |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x04       | 4        | :ref:`uiItem<uiItem>`\*                                          | menu             |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x08       | 4        | const char\*                                                     | name             |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x0C       | 4        | int                                                              | instanceId       |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x10       | 4        | const char\*                                                     | templateName     |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x14       | 16       | :ref:`Marker<Marker>`                                            | areaSrc          |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x24       | 16       | :ref:`SDL_Rect<SDL_Rect>`                                        | area             |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x34       | 16       | :ref:`SDL_Rect<SDL_Rect>`                                        | pad              |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x44       | 4        | int                                                              | enabled          |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x48       | 4        | int                                                              | ignoreEvents     |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x4C       | 4        | int                                                              | ha               |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x50       | 4        | int                                                              | va               |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x54       | 4        | :ref:`uiVariant<uiVariant>`\*                                    | alpha            |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x58       | 4        | :ref:`uiVariant<uiVariant>`\*                                    | fill             |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x5C       | 4        | int                                                              | useOverlayTint   |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x60       | 12       | int                                                              | overlayTint[3]   |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x6C       | 40       | :ref:`uiItem\:\:\<unnamed-type-text\><uiItemtext>`               | text             |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x94       | 4        | :ref:`uiItem\:\:\<unnamed-type-uiTemplate\><uiItemuiTemplate>`   | uiTemplate       |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x98       | 28       | :ref:`uiItem\:\:\<unnamed-type-bam\><uiItembam>`                 | bam              |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0xB4       | 24       | :ref:`uiItem\:\:\<unnamed-type-bmp\><uiItembmp>`                 | bmp              |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0xCC       | 56       | :ref:`uiItem\:\:\<unnamed-type-list\><uiItemlist>`               | list             |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x104      | 40       | :ref:`uiItem\:\:\<unnamed-type-scrollbar\><uiItemscrollbar>`     | scrollbar        |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x12C      | 20       | :ref:`uiItem\:\:\<unnamed-type-slider\><uiItemslider>`           | slider           |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x140      | 28       | :ref:`uiItem\:\:\<unnamed-type-edit\><uiItemedit>`               | edit             |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x15C      | 8        | :ref:`uiItem\:\:\<unnamed-type-mosaic\><uiItemmosaic>`           | mosaic           |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x164      | 36       | :ref:`uiItem\:\:\<unnamed-type-movie\><uiItemmovie>`             | movie            |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x188      | 44       | :ref:`uiItem\:\:\<unnamed-type-button\><uiItembutton>`           | button           |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x1B4      | 4        | :ref:`uiItem\:\:\<unnamed-type-map\><uiItemmap>`                 | map              |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x1B8      | 12       | :ref:`uiItem\:\:\<unnamed-type-progressBar\><uiItemprogressBar>` | progressBar      |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x1C4      | 20       | :ref:`uiItem\:\:\<unnamed-type-slot\><uiItemslot>`               | slot             |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x1D8      | 8        | :ref:`uiItem\:\:\<unnamed-type-rectangle\><uiItemrectangle>`     | rectangle        |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x1E0      | 4        | int                                                              | action           |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x1E4      | 4        | int                                                              | actionDbl        |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x1E8      | 4        | int                                                              | actionAlt        |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x1EC      | 4        | int                                                              | actionDrag       |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x1F0      | 4        | int                                                              | actionEnter      |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x1F4      | 4        | int                                                              | actionExit       |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x1F8      | 4        | int                                                              | actionUpdate     |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x1FC      | 4        | int                                                              | actionSimpleDrag |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x200      | 4        | int                                                              | actionSimpleDrop |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x204      | 4        | int                                                              | actionHold       |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x208      | 4        | int                                                              | actionScroll     |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x20C      | 4        | int                                                              | framesHeld       |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x210      | 20       | :ref:`uiItem\:\:\<unnamed-type-tooltip\><uiItemtooltip>`         | tooltip          |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x224      | 4        | :ref:`uiVariant<uiVariant>`\*                                    | glow             |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x228      | 4        | :ref:`uiVariant<uiVariant>`\*                                    | pulse            |
++------------+----------+------------------------------------------------------------------+------------------+
+| 0x22C      | 4        | :ref:`uiItem<uiItem>`\*                                          | next             |
++------------+----------+------------------------------------------------------------------+------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiItemType type dd ? ;
-      data +0x04 [sizeof=4] uiMenu* menu dd ? ;
-      data +0x08 [sizeof=4] const char* name dd ? ;
-      data +0x0c [sizeof=4] int instanceId dd ?
-      data +0x10 [sizeof=4] const char* templateName dd ? ;
-      data +0x14 [sizeof=16] Marker areaSrc
-      data +0x24 [sizeof=16] SDL_Rect area
-      data +0x34 [sizeof=16] SDL_Rect pad
-      data +0x44 [sizeof=4] int enabled dd ?
-      data +0x48 [sizeof=4] int ignoreEvents dd ?
-      data +0x4c [sizeof=4] int ha dd ?
-      data +0x50 [sizeof=4] int va dd ?
-      data +0x54 [sizeof=4] uiVariant* alpha dd ? ;
-      data +0x58 [sizeof=4] uiVariant* fill dd ? ;
-      data +0x5c [sizeof=4] int useOverlayTint dd ?
-      data +0x60 [sizeof=12] int overlayTint[3]
-      data +0x6c [sizeof=40] uiItem::<unnamed-type-text> text
-      data +0x94 [sizeof=4] uiItem::<unnamed-type-uiTemplate> uiTemplate
-      data +0x98 [sizeof=28] uiItem::<unnamed-type-bam> bam
-      data +0xb4 [sizeof=24] uiItem::<unnamed-type-bmp> bmp
-      data +0xcc [sizeof=56] uiItem::<unnamed-type-list> list
-      data +0x104 [sizeof=40] uiItem::<unnamed-type-scrollbar> scrollbar
-      data +0x12c [sizeof=20] uiItem::<unnamed-type-slider> slider
-      data +0x140 [sizeof=28] uiItem::<unnamed-type-edit> edit
-      data +0x15c [sizeof=8] uiItem::<unnamed-type-mosaic> mosaic
-      data +0x164 [sizeof=36] uiItem::<unnamed-type-movie> movie
-      data +0x188 [sizeof=44] uiItem::<unnamed-type-button> button
-      data +0x1b4 [sizeof=4] uiItem::<unnamed-type-map> map
-      data +0x1b8 [sizeof=12] uiItem::<unnamed-type-progressBar> progressBar
-      data +0x1c4 [sizeof=20] uiItem::<unnamed-type-slot> slot
-      data +0x1d8 [sizeof=8] uiItem::<unnamed-type-rectangle> rectangle
-      data +0x1e0 [sizeof=4] int action dd ?
-      data +0x1e4 [sizeof=4] int actionDbl dd ?
-      data +0x1e8 [sizeof=4] int actionAlt dd ?
-      data +0x1ec [sizeof=4] int actionDrag dd ?
-      data +0x1f0 [sizeof=4] int actionEnter dd ?
-      data +0x1f4 [sizeof=4] int actionExit dd ?
-      data +0x1f8 [sizeof=4] int actionUpdate dd ?
-      data +0x1fc [sizeof=4] int actionSimpleDrag dd ?
-      data +0x200 [sizeof=4] int actionSimpleDrop dd ?
-      data +0x204 [sizeof=4] int actionHold dd ?
-      data +0x208 [sizeof=4] int actionScroll dd ?
-      data +0x20c [sizeof=4] int framesHeld dd ?
-      data +0x210 [sizeof=20] uiItem::<unnamed-type-tooltip> tooltip
-      data +0x224 [sizeof=4] uiVariant* glow dd ? ;
-      data +0x228 [sizeof=4] uiVariant* pulse dd ? ;
-      data +0x22c [sizeof=4] uiItem* next dd ? ;
+   uiItem               struct
+     type               dd ? ; uiItemType
+     menu               dd ? ; uiMenu* 
+     name               dd ? ; const char* 
+     instanceId         dd ?
+     templateName       dd ? ; const char* 
+     areaSrc            Marker <>
+     area               SDL_Rect <>
+     pad                SDL_Rect <>
+     enabled            dd ?
+     ignoreEvents       dd ?
+     ha                 dd ?
+     va                 dd ?
+     alpha              dd ? ; uiVariant* 
+     fill               dd ? ; uiVariant* 
+     useOverlayTint     dd ?
+     overlayTint        dd 3 dup (?)
+     text               uiItemutext <> ; iItem::<unnamed-type-text> 
+     uiTemplate         uiItemuiTemplate <> ; uiItem::<unnamed-type-uiTemplate> 
+     bam                uiItembam <> ; uiItem::<unnamed-type-bam> 
+     bmp                uiItembmp <> ; uiItem::<unnamed-type-bmp> 
+     list               uiItemlist <> ; uiItem::<unnamed-type-list> 
+     scrollbar          uiItemscrollbar <> ; uiItem::<unnamed-type-scrollbar> 
+     slider             uiItemslider <> ; uiItem::<unnamed-type-slider> 
+     edit               uiItemedit <> ; uiItem::<unnamed-type-edit> 
+     mosaic             uiItemmosaic <> ; uiItem::<unnamed-type-mosaic> 
+     movie              uiItemmovie <> ; uiItem::<unnamed-type-movie> 
+     button             uiItembutton <> ; uiItem::<unnamed-type-button> 
+     map                uiItemmap <> ; uiItem::<unnamed-type-map> 
+     progressBar        uiItemprogressBar <> ; uiItem::<unnamed-type-progressBar> 
+     slot               uiItemslot <> ; uiItem::<unnamed-type-slot> 
+     rectangle          uiItemrectangle <> ; uiItem::<unnamed-type-rectangle> 
+     action             dd ?
+     actionDbl          dd ?
+     actionAlt          dd ?
+     actionDrag         dd ?
+     actionEnter        dd ?
+     actionExit         dd ?
+     actionUpdate       dd ?
+     actionSimpleDrag   dd ?
+     actionSimpleDrop   dd ?
+     actionHold         dd ?
+     actionScroll       dd ?
+     framesHeld         dd ?
+     tooltip            uiItemtooltip <> ; uiItem::<unnamed-type-tooltip> 
+     glow               dd ? ; uiVariant* 
+     pulse              dd ? ; uiVariant* 
+     next               dd ? ; uiItem* 
+   uiItem               ends
 
 
 .. _uiItembam:
 
-uiItem\:\:<unnamed-type-bam
+uiItem\:\:\<unnamed-type-bam\>
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
@@ -2857,18 +2920,20 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiVariant* resref dd ? ;
-      data +0x04 [sizeof=4] uiVariant* sequence dd ? ;
-      data +0x08 [sizeof=4] uiVariant* sequenceonce dd ? ;
-      data +0x0c [sizeof=4] uiVariant* frame dd ? ;
-      data +0x10 [sizeof=4] uiVariant* greyscale dd ? ;
-      data +0x14 [sizeof=4] uiVariant* usealpha dd ? ;
-      data +0x18 [sizeof=4] int scaletoclip dd ?
+   uiItembam        struct
+     resref         dd ? ; uiVariant*
+     sequence       dd ? ; uiVariant*
+     sequenceonce   dd ? ; uiVariant*
+     frame          dd ? ; uiVariant*
+     greyscale      dd ? ; uiVariant*
+     usealpha       dd ? ; uiVariant*
+     scaletoclip    dd ?
+   uiItembam        ends
 
 
 .. _uiItembmp:
 
-uiItem\:\:<unnamed-type-bmp
+uiItem\:\:\<unnamed-type-bmp\>
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
@@ -2881,12 +2946,14 @@ Asm Definition
 
 ::
 
-    data +0x00 [sizeof=4] int resname dd ?
+   uiItembmp    struct
+     resname    dd ?
+   uiItembmp    ends
 
 
 .. _uiItembutton:
 
-uiItem\:\:<unnamed-type-button
+uiItem\:\:\<unnamed-type-button\>
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
@@ -2919,22 +2986,24 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiVariant* portrait dd ? ;
-      data +0x04 [sizeof=4] uiVariant* paperdoll dd ? ;
-      data +0x08 [sizeof=4] int encumbrance dd ?
-      data +0x0c [sizeof=4] int colorDisplay dd ?
-      data +0x10 [sizeof=4] int frameTimes dd ?
-      data +0x14 [sizeof=4] const char* toggle
-      data +0x18 [sizeof=4] const char* on
-      data +0x1c [sizeof=4] const char* highlightGroup
-      data +0x20 [sizeof=4] uiVariant* clickable dd ? ;
-      data +0x24 [sizeof=4] uiVariant* actionBar dd ? ;
-      data +0x28 [sizeof=4] const char* sound
+   uiItembutton     struct
+     portrait       dd ? ; uiVariant* 
+     paperdoll      dd ? ; uiVariant* 
+     encumbrance    dd ?
+     colorDisplay   dd ?
+     frameTimes     dd ?
+     toggle         dd ; const char* 
+     on             dd ; const char* 
+     highlightGroup dd ; const char* 
+     clickable      dd ? ; uiVariant* 
+     actionBar      dd ? ; uiVariant* 
+     sound          dd ; const char* 
+   uiItembutton     ends
 
 
 .. _uiItemedit:
 
-uiItem\:\:<unnamed-type-edit
+uiItem\:\:\<unnamed-type-edit\>
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
@@ -2959,18 +3028,20 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] const char* var dd ? ;
-      data +0x04 [sizeof=4] int maxlines dd ?
-      data +0x08 [sizeof=4] int maxchars dd ?
-      data +0x0c [sizeof=4] uiVariant* placeholder dd ? ;
-      data +0x10 [sizeof=4] int cursor dd ?
-      data +0x14 [sizeof=4] int selectStart dd ?
-      data +0x18 [sizeof=4] int selectEnd dd ?
+   uiItemedit       struct
+     var            dd ? ; const char* 
+     maxlines       dd ?
+     maxchars       dd ?
+     placeholder    dd ? ; uiVariant* 
+     cursor         dd ?
+     selectStart    dd ?
+     selectEnd      dd ?
+   uiItemedit       ends
 
 
 .. _uiItemlist:
 
-uiItem\:\:<unnamed-type-list
+uiItem\:\:\<unnamed-type-list\>
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
@@ -3009,25 +3080,27 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] int table dd ?
-      data +0x04 [sizeof=4] int printrow dd ?
-      data +0x08 [sizeof=4] int rowheight dd ?
-      data +0x0c [sizeof=4] int rowwidth dd ?
-      data +0x10 [sizeof=4] uiVariant* rowbackground dd ? ;
-      data +0x14 [sizeof=4] int dynamicHeight dd ?
-      data +0x18 [sizeof=4] uiColumn* columns dd ? ;
-      data +0x1c [sizeof=4] int category dd ?
-      data +0x20 [sizeof=4] int showHighlight dd ?
-      data +0x24 [sizeof=4] int seperator dd ?
-      data +0x28 [sizeof=4] int selected dd ?
-      data +0x2c [sizeof=4] int height dd ?
-      data +0x30 [sizeof=4] uiVariant* color dd ? ;
-      data +0x34 [sizeof=4] int currentRow dd ?
+   uiItemlist       struct
+     table          dd ?
+     printrow       dd ?
+     rowheight      dd ?
+     rowwidth       dd ?
+     rowbackground  dd ? ; uiVariant* 
+     dynamicHeight  dd ?
+     columns        dd ? ; uiColumn* 
+     category       dd ?
+     showHighlight  dd ?
+     seperator      dd ?
+     selected       dd ?
+     height         dd ?
+     color          dd ? ; uiVariant* 
+     currentRow     dd ?
+   uiItemlist       ends
 
 
 .. _uiItemmap:
 
-uiItem\:\:<unnamed-type-map
+uiItem\:\:\<unnamed-type-map\>
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
@@ -3040,12 +3113,14 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] int type dd ?
+   uiItemmap    struct
+     type       dd ?
+   uiItemmap    ends
 
 
 .. _uiItemmosaic:
 
-uiItem\:\:<unnamed-type-mosaic
+uiItem\:\:\<unnamed-type-mosaic\>
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
@@ -3060,13 +3135,15 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiVariant* resref dd ? ;
-      data +0x04 [sizeof=4] int respectClipping dd ?
+   uiItemmosaic         struct
+     resref             dd ? ; uiVariant* 
+     respectClipping    dd ?
+   uiItemmosaic         ends
 
 
 .. _uiItemmovie:
 
-uiItem\:\:<unnamed-type-movie
+uiItem\:\:\<unnamed-type-movie\>
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
@@ -3089,18 +3166,20 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] void* res dd ? ;
-      data +0x04 [sizeof=16] SDL_Rect subtitle
-      data +0x14 [sizeof=4] int transparent dd ?
-      data +0x18 [sizeof=4] unsigned int background dd ?
-      data +0x1c [sizeof=4] int loop dd ?
-      data +0x20 [sizeof=4] uiVariant* queuedMovie dd ? ;
+   uiItemmovie      struct
+     res            dd ? ; void* 
+     subtitle       SDL_Rect <>
+     transparent    dd ?
+     background     dd ?
+     loop           dd ?
+     queuedMovie    dd ? ; uiVariant* 
+   uiItemmovie      ends
 
 
 .. _uiItemprogressBar:
 
-uiItem\:\:<unnamed-type-progressBar
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+uiItem\:\:\<unnamed-type-progressBar\>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -3116,15 +3195,17 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiVariant* percent dd ? ;
-      data +0x04 [sizeof=4] uiVariant* color dd ? ;
-      data +0x08 [sizeof=4] uiVariant* fullColor dd ? ;
+   uiItemprogressBar    struct
+     percent            dd ? ; uiVariant* 
+     color              dd ? ; uiVariant* 
+     fullColor          dd ? ; uiVariant* 
+   uiItemprogressBar    ends
 
 
 .. _uiItemrectangle:
 
-uiItem\:\:<unnamed-type-rectangle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+uiItem\:\:\<unnamed-type-rectangle\>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -3138,14 +3219,16 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] int number dd ?
-      data +0x04 [sizeof=4] uiVariant* opacity dd ? ;
+   uiItemrectangle  struct
+     number         dd ?
+     opacity        dd ? ; uiVariant* 
+   uiItemrectangle  ends
 
 
 .. _uiItemscrollbar:
 
-uiItem\:\:<unnamed-type-scrollbar
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+uiItem\:\:\<unnamed-type-scrollbar\>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -3175,21 +3258,23 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] const char* bam dd ? ;
-      data +0x04 [sizeof=4] const char* function dd ? ;
-      data +0x08 [sizeof=4] uiVariant* hide dd ? ;
-      data +0x0c [sizeof=4] int top dd ?
-      data +0x10 [sizeof=4] int held dd ?
-      data +0x14 [sizeof=4] int dragging dd ?
-      data +0x18 [sizeof=4] int contentHeight dd ?
-      data +0x1c [sizeof=4] int respectConstraints dd ?
-      data +0x20 [sizeof=4] int clunkyScroll dd ?
-      data +0x24 [sizeof=4] int skipReset dd ?
+   uiItemscrollbar      struct
+     bam                dd ? ; const char* 
+     function           dd ? ; const char* 
+     hide               dd ? ; uiVariant* 
+     top                dd ?
+     held               dd ?
+     dragging           dd ?
+     contentHeight      dd ?
+     respectConstraints dd ?
+     clunkyScroll       dd ?
+     skipReset          dd ?
+   uiItemscrollbar      ends
 
 
 .. _uiItemslider:
 
-uiItem\:\:<unnamed-type-slider
+uiItem\:\:\<unnamed-type-slider\>
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
@@ -3210,16 +3295,18 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] const char* position dd ? ;
-      data +0x04 [sizeof=4] uiVariant* settings dd ? ;
-      data +0x08 [sizeof=4] int palette dd ?
-      data +0x0c [sizeof=4] const char* background dd ? ;
-      data +0x10 [sizeof=4] int right dd ?
+   uiItemslider struct
+     position   dd ? ; const char* 
+     settings   dd ? ; uiVariant* 
+     palette    dd ?
+     background dd ? ; const char* 
+     right      dd ?
+   uiItemslider ends
 
 
 .. _uiItemslot:
 
-uiItem\:\:<unnamed-type-slot
+uiItem\:\:\<unnamed-type-slot\>
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
@@ -3240,16 +3327,18 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiVariant* icon dd ? ;
-      data +0x04 [sizeof=4] uiVariant* count dd ? ;
-      data +0x08 [sizeof=4] uiVariant* usages dd ? ;
-      data +0x0c [sizeof=4] uiVariant* highlight dd ? ;
-      data +0x10 [sizeof=4] uiVariant* tint dd ? ;
+   uiItemslot   struct
+     icon       dd ? ; uiVariant* 
+     count      dd ? ; uiVariant* 
+     usages     dd ? ; uiVariant* 
+     highlight  dd ? ; uiVariant* 
+     tint       dd ? ; uiVariant* 
+   uiItemslot   ends
 
 
 .. _uiItemtext:
 
-uiItem\:\:<unnamed-type-text
+uiItem\:\:\<unnamed-type-text\>
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
@@ -3280,22 +3369,24 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] const char* originalText dd ? ;
-      data +0x04 [sizeof=4] uiVariant* text dd ? ;
-      data +0x08 [sizeof=4] const char* font dd ? ;
-      data +0x0c [sizeof=4] int point dd ?
-      data +0x10 [sizeof=4] int useFontZoom dd ?
-      data +0x14 [sizeof=4] uiVariant* color
-      data +0x18 [sizeof=4] int upper dd ?
-      data +0x1c [sizeof=4] int lower dd ?
-      data +0x20 [sizeof=4] uiVariant* shadow dd ? ;
-      data +0x24 [sizeof=4] uiVariant* showhighlight dd ? ;
+   uiItemtext       struct
+     originalText   dd ? ; const char* 
+     text           dd ? ; uiVariant* 
+     font           dd ? ; const char* 
+     point          dd ?
+     useFontZoom    dd ?
+     color          dd ? ; uiVariant* 
+     upper          dd ?
+     lower          dd ?
+     shadow         dd ? ; uiVariant* 
+     showhighlight  dd ? ; uiVariant* 
+   uiItemtext       ends
 
 
 .. _uiItemtooltip:
 
-uiItem\:\:<unnamed-type-tooltip
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+uiItem\:\:\<unnamed-type-tooltip\>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -3315,17 +3406,19 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] const char* originalText dd ? ;
-      data +0x04 [sizeof=4] uiVariant* text dd ? ;
-      data +0x08 [sizeof=4] uiVariant* force dd ? ;
-      data +0x0c [sizeof=4] int position dd ?
-      data +0x10 [sizeof=4] int forceTop dd ?
+   uiItemtooltip    struct
+     originalText   dd ? ; const char* 
+     text           dd ? ; uiVariant* 
+     force          dd ? ; uiVariant* 
+     position       dd ?
+     forceTop       dd ?
+   uiItemtooltip    ends
 
 
 .. _uiItemuiTemplate:
 
-uiItem\:\:<unnamed-type-uiTemplate
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+uiItem\:\:\<unnamed-type-uiTemplate\>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -3337,7 +3430,9 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiItem* item dd ? ;
+   uiItemuiTemplate struct
+     item           dd ? ; uiItem* 
+   uiItemuiTemplate ends
 
 
 .. _uiMenu:
@@ -3348,65 +3443,64 @@ uiMenu
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 16       | :ref:`Marker<Marker>`                  | menuSrc                       |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x10       | 4        | const char\*                           | name                          |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x14       | 4        | int                                    | panel                         |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x18       | 4        | int                                    | state                         |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x1C       | 4        | :ref:`uiItem<uiItem>`\*                | items                         |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x20       | 4        | :ref:`uiVariant<uiVariant>`\*          | modal                         |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x24       | 4        | :ref:`uiVariant<uiVariant>`\*          | opacity                       |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x28       | 4        | :ref:`uiVariant<uiVariant>`\*          | greyscale                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x2C       | 4        | int                                    | onOpen                        |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x30       | 4        | int                                    | onClose                       |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x34       | 4        | :ref:`SDL_Point<SDL_Point>`            | offset                        |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x3C       | 4        | int                                    | ha                            |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x40       | 4        | int                                    | va                            |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x44       | 4        | int                                    | width                         |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x48       | 4        | int                                    | height                        |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x4C       | 4        | int                                    | enabled                       |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x50       | 4        | int                                    | ignoreEsc                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=16] Marker menuSrc
-      data +0x10 [sizeof=4] const char* name dd ? ;
-      data +0x14 [sizeof=4] int panel dd ?
-      data +0x18 [sizeof=4] int state dd ?
-      data +0x1c [sizeof=4] uiItem* items dd ? ;
-      data +0x20 [sizeof=4] uiVariant* modal dd ? ;
-      data +0x24 [sizeof=4] uiVariant* opacity dd ? ;
-      data +0x28 [sizeof=4] uiVariant* greyscale dd ? ;
-      data +0x2c [sizeof=4] int onOpen dd ?
-      data +0x30 [sizeof=4] int onClose dd ?
-      data +0x34 [sizeof=8] SDL_Point offset
-      data +0x3c [sizeof=4] int ha dd ?
-      data +0x40 [sizeof=4] int va dd ?
-      data +0x44 [sizeof=4] int width dd ?
-      data +0x48 [sizeof=4] int height dd ?
-      data +0x4c [sizeof=4] int enabled dd ?
-      data +0x50 [sizeof=4] int ignoreEsc dd ?
+   uiMenu       struct
+     menuSrc    Marker <>
+     name       dd ? ; const char* 
+     panel      dd ?
+     state      dd ?
+     items      dd ? ; uiItem* 
+     modal      dd ? ; uiVariant* 
+     opacity    dd ? ; uiVariant* 
+     greyscale  dd ? ; uiVariant* 
+     onOpen     dd ?
+     onClose    dd ?
+     offset     SDL_Point <>
+     ha         dd ?
+     va         dd ?
+     width      dd ?
+     height     dd ?
+     enabled    dd ?
+     ignoreEsc  dd ?
+   uiMenu       ends
 
 
 .. _uiVariant:
@@ -3426,6 +3520,7 @@ Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] uiVariantType type dd ? ;
-      data +0x04 [sizeof=4] uiVariant::<unnamed-type-value> value dd ? ;
-
+   uiVariant    struct
+     type       dd ? ; uiVariantType 
+     value      uiVariantvalue <> ; uiVariant::<unnamed-type-value> 
+   uiVariant    ends
