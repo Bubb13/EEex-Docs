@@ -51,7 +51,7 @@ CG Structures
 * :ref:`CGameFile<CGameFile>`
 * :ref:`CGameFireball3d<CGameFireball3d>`
 * :ref:`CGameID<CGameID>`
-* :ref:`CGameID::GameID_t<CGameIDGameID_t>`
+* :ref:`CGameID\:\:GameID_t<CGameIDGameID_t>`
 * :ref:`CGameJournal<CGameJournal>`
 * :ref:`CGameJournalAlphabetizer<CGameJournalAlphabetizer>`
 * :ref:`CGameJournalEntry<CGameJournalEntry>`
@@ -70,8 +70,8 @@ CG Structures
 * :ref:`CGameSound<CGameSound>`
 * :ref:`CGameSpawning<CGameSpawning>`
 * :ref:`CGameSprite<CGameSprite>`
-* :ref:`CGameSprite::GroundItem<CGameSpriteGroundItem>`
-* :ref:`CGameSprite::RenderHealthBar<CGameSpriteRenderHealthBar>`
+* :ref:`CGameSprite\:\:GroundItem<CGameSpriteGroundItem>`
+* :ref:`CGameSprite\:\:RenderHealthBar<CGameSpriteRenderHealthBar>`
 * :ref:`CGameSpriteEquipment<CGameSpriteEquipment>`
 * :ref:`CGameSpriteLastUpdate<CGameSpriteLastUpdate>`
 * :ref:`CGameStatic<CGameStatic>`
@@ -264,8 +264,6 @@ CGameAIBase
 Asm Definition
 
 ::
-
-.. todo
 
    CGameAIBase              struct
      m_cGameObject          CGameObject <>
@@ -882,241 +880,314 @@ CGameAnimationTypeCharacterOld
 +------------+----------+-----------------------------------------------+-------------------------------+
 | 0x00       | 1952     | :ref:`CGameAnimationType<CGameAnimationType>` | m_cGameAnimationType          |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7A0      | 4        | :ref:`CString<CString>`                       | m_resref                      |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7A4      | 4        | :ref:`CString<CString>`                       | m_resrefShadow                |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7A8      | 4        | :ref:`CString<CString>`                       | m_heightCode                  |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7AC      | 4        | :ref:`CString<CString>`                       | m_heightCodeHelmet            |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7B0      | 1        | char                                          | m_armorCode                   |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7B1      | 1        | char                                          | m_armorMaxCode                |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+|            | 2        |                                               | ``<padding>``                 |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7B4      | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCell              |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7B8      | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellBase          |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7BC      | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellExtend        |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7C0      | 192      | :ref:`CVidCell<CVidCell>`                     | m_g1VidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x880      | 192      | :ref:`CVidCell<CVidCell>`                     | m_g1VidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x940      | 192      | :ref:`CVidCell<CVidCell>`                     | m_w2VidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xA00      | 192      | :ref:`CVidCell<CVidCell>`                     | m_w2VidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xAC0      | 192      | :ref:`CVidCell<CVidCell>`                     | m_caVidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xB80      | 192      | :ref:`CVidCell<CVidCell>`                     | m_caVidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xC40      | 192      | :ref:`CVidCell<CVidCell>`                     | m_a1VidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xD00      | 192      | :ref:`CVidCell<CVidCell>`                     | m_a1VidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xDC0      | 192      | :ref:`CVidCell<CVidCell>`                     | m_a2VidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xE80      | 192      | :ref:`CVidCell<CVidCell>`                     | m_a2VidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xF40      | 192      | :ref:`CVidCell<CVidCell>`                     | m_a3VidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1000     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a3VidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x10C0     | 36       | :ref:`CVidPalette<CVidPalette>`               | m_charPalette                 |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x10E4     | 4        | :ref:`CString<CString>`                       | m_resrefWeapon                |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x10E8     | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellWeapon        |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x10EC     | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellWeaponBase    |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x10F0     | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellWeaponExtend  |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x10F4     | 192      | :ref:`CVidCell<CVidCell>`                     | m_g1VidCellWeaponBase         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x11B4     | 192      | :ref:`CVidCell<CVidCell>`                     | m_g1VidCellWeaponExtend       |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1274     | 192      | :ref:`CVidCell<CVidCell>`                     | m_w2VidCellWeaponBase         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1334     | 192      | :ref:`CVidCell<CVidCell>`                     | m_w2VidCellWeaponExtend       |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x13F4     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a1VidCellWeaponBase         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x14B4     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a1VidCellWeaponExtend       |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1574     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a2VidCellWeaponBase         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1634     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a2VidCellWeaponExtend       |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x16F4     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a3VidCellWeaponBase         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x17B4     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a3VidCellWeaponExtend       |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1874     | 36       | :ref:`CVidPalette<CVidPalette>`               | m_weaponPalette               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1898     | 4        | :ref:`CString<CString>`                       | m_resrefShield                |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x189C     | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellShield        |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x18A0     | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellShieldBase    |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x18A4     | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellShieldExtend  |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x18A8     | 192      | :ref:`CVidCell<CVidCell>`                     | m_g1VidCellShieldBase         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1968     | 192      | :ref:`CVidCell<CVidCell>`                     | m_g1VidCellShieldExtend       |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1A28     | 192      | :ref:`CVidCell<CVidCell>`                     | m_w2VidCellShieldBase         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1AE8     | 192      | :ref:`CVidCell<CVidCell>`                     | m_w2VidCellShieldExtend       |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1BA8     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a1VidCellShieldBase         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1C68     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a1VidCellShieldExtend       |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1D28     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a2VidCellShieldBase         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1DE8     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a2VidCellShieldExtend       |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1EA8     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a3VidCellShieldBase         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1F68     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a3VidCellShieldExtend       |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x2028     | 36       | :ref:`CVidPalette<CVidPalette>`               | m_shieldPalette               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x204C     | 4        | :ref:`CString<CString>`                       | m_resrefHelmet                |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x2050     | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellHelmet        |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x2054     | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellHelmetBase    |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x2058     | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellHelmetExtend  |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x205C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_g1VidCellHelmetBase         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x211C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_g1VidCellHelmetExtend       |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x21DC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_w2VidCellHelmetBase         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x229C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_w2VidCellHelmetExtend       |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x235C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_caVidCellHelmetBase         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x241C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_caVidCellHelmetExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x24DC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a1VidCellHelmetBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x259C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a1VidCellHelmetExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x265C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a2VidCellHelmetBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x271C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a2VidCellHelmetExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x27DC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a3VidCellHelmetBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x289C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a3VidCellHelmetExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x295C     | 36       | :ref:`CVidPalette<CVidPalette>`               | m_helmetPalette               |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2980     | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellShadow        |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2984     | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellShadowBase    |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2988     | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellShadowExtend  |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x298C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_g1VidCellShadowBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2A4C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_g1VidCellShadowExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2B0C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_w2VidCellShadowBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2BCC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_w2VidCellShadowExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2C8C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_caVidCellShadowBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2D4C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_caVidCellShadowExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2E0C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a1VidCellShadowBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2ECC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a1VidCellShadowExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2F8C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a2VidCellShadowBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x304C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a2VidCellShadowExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x310C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a3VidCellShadowBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x31CC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a3VidCellShadowExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x328C     | 2        | short                                         | m_currentBamSequence          |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x328E     | 2        | short                                         | m_currentBamDirection         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x3290     | 4        | int                                           | m_renderWeapons               |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x3294     | 4        | int                                           | m_bHideWeapons                |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x3298     | 4        | int                                           | m_renderHelmet                |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x329C     | 4        | int                                           | m_bEquipHelmet                |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x32A0     | 4        | int                                           | m_weaponLeftHand              |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x32A4     | 4        | int                                           | m_falseColor                  |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x32A8     | 1        | unsigned char                                 | m_weaponCode                  |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x32A9     | 1        | unsigned char                                 | m_extendDirectionTest         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x32AA     | 1        | unsigned char                                 | m_bDetectedByInfravision      |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x32AB     | 1        | unsigned char                                 | m_bInvulnerable               |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x32AC     | 1        | unsigned char                                 | m_bCanLieDown                 |
++------------+----------+-----------------------------------------------+-------------------------------+
+|            | 3        |                                               | ``<padding>``                 |
 +------------+----------+-----------------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=1952] CGameAnimationType
-      data +0x7a0 [sizeof=4] CString m_resref
-      data +0x7a4 [sizeof=4] CString m_resrefShadow
-      data +0x7a8 [sizeof=4] CString m_heightCode
-      data +0x7ac [sizeof=4] CString m_heightCodeHelmet
-      data +0x7b0 [sizeof=1] char m_armorCode
-      data +0x7b1 [sizeof=1] char m_armorMaxCode
-      <padding> (2 bytes)
-      data +0x7b4 [sizeof=4] CVidCell* m_currentVidCell
-      data +0x7b8 [sizeof=4] CVidCell* m_currentVidCellBase
-      data +0x7bc [sizeof=4] CVidCell* m_currentVidCellExtend
-      data +0x7c0 [sizeof=192] CVidCell m_g1VidCellBase
-      data +0x880 [sizeof=192] CVidCell m_g1VidCellExtend
-      data +0x940 [sizeof=192] CVidCell m_w2VidCellBase
-      data +0xa00 [sizeof=192] CVidCell m_w2VidCellExtend
-      data +0xac0 [sizeof=192] CVidCell m_caVidCellBase
-      data +0xb80 [sizeof=192] CVidCell m_caVidCellExtend
-      data +0xc40 [sizeof=192] CVidCell m_a1VidCellBase
-      data +0xd00 [sizeof=192] CVidCell m_a1VidCellExtend
-      data +0xdc0 [sizeof=192] CVidCell m_a2VidCellBase
-      data +0xe80 [sizeof=192] CVidCell m_a2VidCellExtend
-      data +0xf40 [sizeof=192] CVidCell m_a3VidCellBase
-      data +0x1000 [sizeof=192] CVidCell m_a3VidCellExtend
-      data +0x10c0 [sizeof=36] CVidPalette m_charPalette
-      data +0x10e4 [sizeof=4] CString m_resrefWeapon
-      data +0x10e8 [sizeof=4] CVidCell* m_currentVidCellWeapon
-      data +0x10ec [sizeof=4] CVidCell* m_currentVidCellWeaponBase
-      data +0x10f0 [sizeof=4] CVidCell* m_currentVidCellWeaponExtend
-      data +0x10f4 [sizeof=192] CVidCell m_g1VidCellWeaponBase
-      data +0x11b4 [sizeof=192] CVidCell m_g1VidCellWeaponExtend
-      data +0x1274 [sizeof=192] CVidCell m_w2VidCellWeaponBase
-      data +0x1334 [sizeof=192] CVidCell m_w2VidCellWeaponExtend
-      data +0x13f4 [sizeof=192] CVidCell m_a1VidCellWeaponBase
-      data +0x14b4 [sizeof=192] CVidCell m_a1VidCellWeaponExtend
-      data +0x1574 [sizeof=192] CVidCell m_a2VidCellWeaponBase
-      data +0x1634 [sizeof=192] CVidCell m_a2VidCellWeaponExtend
-      data +0x16f4 [sizeof=192] CVidCell m_a3VidCellWeaponBase
-      data +0x17b4 [sizeof=192] CVidCell m_a3VidCellWeaponExtend
-      data +0x1874 [sizeof=36] CVidPalette m_weaponPalette
-      data +0x1898 [sizeof=4] CString m_resrefShield
-      data +0x189c [sizeof=4] CVidCell* m_currentVidCellShield
-      data +0x18a0 [sizeof=4] CVidCell* m_currentVidCellShieldBase
-      data +0x18a4 [sizeof=4] CVidCell* m_currentVidCellShieldExtend
-      data +0x18a8 [sizeof=192] CVidCell m_g1VidCellShieldBase
-      data +0x1968 [sizeof=192] CVidCell m_g1VidCellShieldExtend
-      data +0x1a28 [sizeof=192] CVidCell m_w2VidCellShieldBase
-      data +0x1ae8 [sizeof=192] CVidCell m_w2VidCellShieldExtend
-      data +0x1ba8 [sizeof=192] CVidCell m_a1VidCellShieldBase
-      data +0x1c68 [sizeof=192] CVidCell m_a1VidCellShieldExtend
-      data +0x1d28 [sizeof=192] CVidCell m_a2VidCellShieldBase
-      data +0x1de8 [sizeof=192] CVidCell m_a2VidCellShieldExtend
-      data +0x1ea8 [sizeof=192] CVidCell m_a3VidCellShieldBase
-      data +0x1f68 [sizeof=192] CVidCell m_a3VidCellShieldExtend
-      data +0x2028 [sizeof=36] CVidPalette m_shieldPalette
-      data +0x204c [sizeof=4] CString m_resrefHelmet
-      data +0x2050 [sizeof=4] CVidCell* m_currentVidCellHelmet
-      data +0x2054 [sizeof=4] CVidCell* m_currentVidCellHelmetBase
-      data +0x2058 [sizeof=4] CVidCell* m_currentVidCellHelmetExtend
-      data +0x205c [sizeof=192] CVidCell m_g1VidCellHelmetBase
-      data +0x211c [sizeof=192] CVidCell m_g1VidCellHelmetExtend
-      data +0x21dc [sizeof=192] CVidCell m_w2VidCellHelmetBase
-      data +0x229c [sizeof=192] CVidCell m_w2VidCellHelmetExtend
-      data +0x235c [sizeof=192] CVidCell m_caVidCellHelmetBase
-      data +0x241c [sizeof=192] CVidCell m_caVidCellHelmetExtend
-      data +0x24dc [sizeof=192] CVidCell m_a1VidCellHelmetBase
-      data +0x259c [sizeof=192] CVidCell m_a1VidCellHelmetExtend
-      data +0x265c [sizeof=192] CVidCell m_a2VidCellHelmetBase
-      data +0x271c [sizeof=192] CVidCell m_a2VidCellHelmetExtend
-      data +0x27dc [sizeof=192] CVidCell m_a3VidCellHelmetBase
-      data +0x289c [sizeof=192] CVidCell m_a3VidCellHelmetExtend
-      data +0x295c [sizeof=36] CVidPalette m_helmetPalette
-      data +0x2980 [sizeof=4] CVidCell* m_currentVidCellShadow
-      data +0x2984 [sizeof=4] CVidCell* m_currentVidCellShadowBase
-      data +0x2988 [sizeof=4] CVidCell* m_currentVidCellShadowExtend
-      data +0x298c [sizeof=192] CVidCell m_g1VidCellShadowBase
-      data +0x2a4c [sizeof=192] CVidCell m_g1VidCellShadowExtend
-      data +0x2b0c [sizeof=192] CVidCell m_w2VidCellShadowBase
-      data +0x2bcc [sizeof=192] CVidCell m_w2VidCellShadowExtend
-      data +0x2c8c [sizeof=192] CVidCell m_caVidCellShadowBase
-      data +0x2d4c [sizeof=192] CVidCell m_caVidCellShadowExtend
-      data +0x2e0c [sizeof=192] CVidCell m_a1VidCellShadowBase
-      data +0x2ecc [sizeof=192] CVidCell m_a1VidCellShadowExtend
-      data +0x2f8c [sizeof=192] CVidCell m_a2VidCellShadowBase
-      data +0x304c [sizeof=192] CVidCell m_a2VidCellShadowExtend
-      data +0x310c [sizeof=192] CVidCell m_a3VidCellShadowBase
-      data +0x31cc [sizeof=192] CVidCell m_a3VidCellShadowExtend
-      data +0x328c [sizeof=2] short m_currentBamSequence
-      data +0x328e [sizeof=2] short m_currentBamDirection
-      data +0x3290 [sizeof=4] int m_renderWeapons
-      data +0x3294 [sizeof=4] int m_bHideWeapons
-      data +0x3298 [sizeof=4] int m_renderHelmet
-      data +0x329c [sizeof=4] int m_bEquipHelmet
-      data +0x32a0 [sizeof=4] int m_weaponLeftHand
-      data +0x32a4 [sizeof=4] int m_falseColor
-      data +0x32a8 [sizeof=1] unsigned char m_weaponCode
-      data +0x32a9 [sizeof=1] unsigned char m_extendDirectionTest
-      data +0x32aa [sizeof=1] unsigned char m_bDetectedByInfravision
-      data +0x32ab [sizeof=1] unsigned char m_bInvulnerable
-      data +0x32ac [sizeof=1] unsigned char m_bCanLieDown
-      <padding> (3 bytes)
-
-
-
-
+   CGameAnimationTypeCharacterOld   struct
+     m_cGameAnimationType           CGameAnimationType <>
+     m_resref                       CString <>
+     m_resrefShadow                 CString <>
+     m_heightCode                   CString <>
+     m_heightCodeHelmet             CString <>
+     m_armorCode                    db ?
+     m_armorMaxCode                 db ?
+                                    db ? ; padding
+                                    db ? ; padding
+     m_currentVidCell               dd ? ; CVidCell* 
+     m_currentVidCellBase           dd ? ; CVidCell* 
+     m_currentVidCellExtend         dd ? ; CVidCell* 
+     m_g1VidCellBase                CVidCell <>
+     m_g1VidCellExtend              CVidCell <>
+     m_w2VidCellBase                CVidCell <>
+     m_w2VidCellExtend              CVidCell <>
+     m_caVidCellBase                CVidCell <>
+     m_caVidCellExtend              CVidCell <>
+     m_a1VidCellBase                CVidCell <>
+     m_a1VidCellExtend              CVidCell <>
+     m_a2VidCellBase                CVidCell <>
+     m_a2VidCellExtend              CVidCell <>
+     m_a3VidCellBase                CVidCell <>
+     m_a3VidCellExtend              CVidCell <>
+     m_charPalette                  CVidPalette <>
+     m_resrefWeapon                 CString <>
+     m_currentVidCellWeapon         dd ? ; CVidCell* 
+     m_currentVidCellWeaponBase     dd ? ; CVidCell* 
+     m_currentVidCellWeaponExtend   dd ? ; CVidCell* 
+     m_g1VidCellWeaponBase          CVidCell <>
+     m_g1VidCellWeaponExtend        CVidCell <>
+     m_w2VidCellWeaponBase          CVidCell <>
+     m_w2VidCellWeaponExtend        CVidCell <>
+     m_a1VidCellWeaponBase          CVidCell <>
+     m_a1VidCellWeaponExtend        CVidCell <>
+     m_a2VidCellWeaponBase          CVidCell <>
+     m_a2VidCellWeaponExtend        CVidCell <>
+     m_a3VidCellWeaponBase          CVidCell <>
+     m_a3VidCellWeaponExtend        CVidCell <>
+     m_weaponPalette                CVidPalette <>
+     m_resrefShield                 CString <>
+     m_currentVidCellShield         dd ? ; CVidCell* 
+     m_currentVidCellShieldBase     dd ? ; CVidCell* 
+     m_currentVidCellShieldExtend   dd ? ; CVidCell* 
+     m_g1VidCellShieldBase          CVidCell <>
+     m_g1VidCellShieldExtend        CVidCell <>
+     m_w2VidCellShieldBase          CVidCell <>
+     m_w2VidCellShieldExtend        CVidCell <>
+     m_a1VidCellShieldBase          CVidCell <>
+     m_a1VidCellShieldExtend        CVidCell <>
+     m_a2VidCellShieldBase          CVidCell <>
+     m_a2VidCellShieldExtend        CVidCell <>
+     m_a3VidCellShieldBase          CVidCell <>
+     m_a3VidCellShieldExtend        CVidCell <>
+     m_shieldPalette                CVidPalette <>
+     m_resrefHelmet                 CString <>
+     m_currentVidCellHelmet         dd ? ; CVidCell* 
+     m_currentVidCellHelmetBase     dd ? ; CVidCell* 
+     m_currentVidCellHelmetExtend   dd ? ; CVidCell* 
+     m_g1VidCellHelmetBase          CVidCell <>
+     m_g1VidCellHelmetExtend        CVidCell <>
+     m_w2VidCellHelmetBase          CVidCell <>
+     m_w2VidCellHelmetExtend        CVidCell <>
+     m_caVidCellHelmetBase          CVidCell <>
+     m_caVidCellHelmetExtend        CVidCell <>
+     m_a1VidCellHelmetBase          CVidCell <>
+     m_a1VidCellHelmetExtend        CVidCell <>
+     m_a2VidCellHelmetBase          CVidCell <>
+     m_a2VidCellHelmetExtend        CVidCell <>
+     m_a3VidCellHelmetBase          CVidCell <>
+     m_a3VidCellHelmetExtend        CVidCell <>
+     m_helmetPalette                CVidPalette <>
+     m_currentVidCellShadow         dd ? ; CVidCell* 
+     m_currentVidCellShadowBase     dd ? ; CVidCell* 
+     m_currentVidCellShadowExtend   dd ? ; CVidCell* 
+     m_g1VidCellShadowBase          CVidCell <>
+     m_g1VidCellShadowExtend        CVidCell <>
+     m_w2VidCellShadowBase          CVidCell <>
+     m_w2VidCellShadowExtend        CVidCell <>
+     m_caVidCellShadowBase          CVidCell <>
+     m_caVidCellShadowExtend        CVidCell <>
+     m_a1VidCellShadowBase          CVidCell <>
+     m_a1VidCellShadowExtend        CVidCell <>
+     m_a2VidCellShadowBase          CVidCell <>
+     m_a2VidCellShadowExtend        CVidCell <>
+     m_a3VidCellShadowBase          CVidCell <>
+     m_a3VidCellShadowExtend        CVidCell <>
+     m_currentBamSequence           dw ?
+     m_currentBamDirection          dw ?
+     m_renderWeapons                dd ?
+     m_bHideWeapons                 dd ?
+     m_renderHelmet                 dd ?
+     m_bEquipHelmet                 dd ?
+     m_weaponLeftHand               dd ?
+     m_falseColor                   dd ?
+     m_weaponCode                   db ?
+     m_extendDirectionTest          db ?
+     m_bDetectedByInfravision       db ?
+     m_bInvulnerable                db ?
+     m_bCanLieDown                  db ?
+                                    db ? ; padding
+                                    db ? ; padding
+                                    db ? ; padding
+   CGameAnimationTypeCharacterOld   ends
 
 
 .. _CGameAnimationTypeEffect:
@@ -1471,154 +1542,216 @@ CGameAnimationTypeMonsterIcewind
 +------------+----------+-----------------------------------------------+-------------------------------+
 | 0x00       | 1952     | :ref:`CGameAnimationType<CGameAnimationType>` | m_cGameAnimationType          |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7A0      | 4        | :ref:`CString<CString>`                       | m_resref                      |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7A4      | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCell              |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7A8      | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellBase          |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7AC      | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellExtend        |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7B0      | 192      | :ref:`CVidCell<CVidCell>`                     | m_a1VidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x870      | 192      | :ref:`CVidCell<CVidCell>`                     | m_a1VidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x930      | 192      | :ref:`CVidCell<CVidCell>`                     | m_a2VidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x9F0      | 192      | :ref:`CVidCell<CVidCell>`                     | m_a2VidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xAB0      | 192      | :ref:`CVidCell<CVidCell>`                     | m_a3VidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xB70      | 192      | :ref:`CVidCell<CVidCell>`                     | m_a3VidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xC30      | 192      | :ref:`CVidCell<CVidCell>`                     | m_shVidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xCF0      | 192      | :ref:`CVidCell<CVidCell>`                     | m_shVidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xDB0      | 192      | :ref:`CVidCell<CVidCell>`                     | m_awVidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xE70      | 192      | :ref:`CVidCell<CVidCell>`                     | m_awVidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xF30      | 192      | :ref:`CVidCell<CVidCell>`                     | m_slVidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0xFF0      | 192      | :ref:`CVidCell<CVidCell>`                     | m_slVidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x10B0     | 192      | :ref:`CVidCell<CVidCell>`                     | m_deVidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1170     | 192      | :ref:`CVidCell<CVidCell>`                     | m_deVidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1230     | 192      | :ref:`CVidCell<CVidCell>`                     | m_daVidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x12F0     | 192      | :ref:`CVidCell<CVidCell>`                     | m_daVidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x13B0     | 192      | :ref:`CVidCell<CVidCell>`                     | m_paVidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1470     | 192      | :ref:`CVidCell<CVidCell>`                     | m_paVidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1530     | 192      | :ref:`CVidCell<CVidCell>`                     | m_reVidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x15F0     | 192      | :ref:`CVidCell<CVidCell>`                     | m_reVidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x16B0     | 192      | :ref:`CVidCell<CVidCell>`                     | m_coVidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1770     | 192      | :ref:`CVidCell<CVidCell>`                     | m_coVidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1830     | 192      | :ref:`CVidCell<CVidCell>`                     | m_caVidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x18F0     | 192      | :ref:`CVidCell<CVidCell>`                     | m_caVidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x19B0     | 192      | :ref:`CVidCell<CVidCell>`                     | m_twVidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1A70     | 192      | :ref:`CVidCell<CVidCell>`                     | m_twVidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1B30     | 192      | :ref:`CVidCell<CVidCell>`                     | m_waVidCellBase               |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1BF0     | 192      | :ref:`CVidCell<CVidCell>`                     | m_waVidCellExtend             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1CB0     | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellWeapon        |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1CB4     | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellWeaponBase    |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1CB8     | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellWeaponExtend  |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1CBC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a1VidCellWeaponBase         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x1D7C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a1VidCellWeaponExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x1E3C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a2VidCellWeaponBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x1EFC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a2VidCellWeaponExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x1FBC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a3VidCellWeaponBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x207C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_a3VidCellWeaponExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x213C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_shVidCellWeaponBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x21FC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_shVidCellWeaponExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x22BC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_awVidCellWeaponBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x237C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_awVidCellWeaponExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x243C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_slVidCellWeaponBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x24FC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_slVidCellWeaponExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x25BC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_daVidCellWeaponBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x267C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_daVidCellWeaponExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x273C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_paVidCellWeaponBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x27FC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_paVidCellWeaponExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x28BC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_reVidCellWeaponBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x297C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_reVidCellWeaponExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2A3C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_coVidCellWeaponBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2AFC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_coVidCellWeaponExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2BBC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_caVidCellWeaponBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2C7C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_caVidCellWeaponExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2D3C     | 192      | :ref:`CVidCell<CVidCell>`                     | m_waVidCellWeaponBase         |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2DFC     | 192      | :ref:`CVidCell<CVidCell>`                     | m_waVidCellWeaponExtend       |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2EBC     | 2        | short                                         | m_currentBamDirection         |
++------------+----------+-----------------------------------------------+-------------------------------+
+|            | 2        |                                               | ``<padding>``                 |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2EC0     | 4        | int                                           | m_bRenderWeapons              |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2EC4     | 4        | int                                           | m_bHideWeapons                |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2EC8     | 4        | int                                           | m_weaponLeftHand              |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2ECC     | 1        | unsigned char                                 | m_bDetectedByInfravision      |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x2ECD     | 1        | unsigned char                                 | m_extendDirectionTest         |
++------------+----------+-----------------------------------------------+-------------------------------+
+|            | 2        |                                               | ``<padding>``                 |
 +------------+----------+-----------------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=1952] CGameAnimationType
-      data +0x7a0 [sizeof=4] CString m_resref
-      data +0x7a4 [sizeof=4] CVidCell* m_currentVidCell
-      data +0x7a8 [sizeof=4] CVidCell* m_currentVidCellBase
-      data +0x7ac [sizeof=4] CVidCell* m_currentVidCellExtend
-      data +0x7b0 [sizeof=192] CVidCell m_a1VidCellBase
-      data +0x870 [sizeof=192] CVidCell m_a1VidCellExtend
-      data +0x930 [sizeof=192] CVidCell m_a2VidCellBase
-      data +0x9f0 [sizeof=192] CVidCell m_a2VidCellExtend
-      data +0xab0 [sizeof=192] CVidCell m_a3VidCellBase
-      data +0xb70 [sizeof=192] CVidCell m_a3VidCellExtend
-      data +0xc30 [sizeof=192] CVidCell m_shVidCellBase
-      data +0xcf0 [sizeof=192] CVidCell m_shVidCellExtend
-      data +0xdb0 [sizeof=192] CVidCell m_awVidCellBase
-      data +0xe70 [sizeof=192] CVidCell m_awVidCellExtend
-      data +0xf30 [sizeof=192] CVidCell m_slVidCellBase
-      data +0xff0 [sizeof=192] CVidCell m_slVidCellExtend
-      data +0x10b0 [sizeof=192] CVidCell m_deVidCellBase
-      data +0x1170 [sizeof=192] CVidCell m_deVidCellExtend
-      data +0x1230 [sizeof=192] CVidCell m_daVidCellBase
-      data +0x12f0 [sizeof=192] CVidCell m_daVidCellExtend
-      data +0x13b0 [sizeof=192] CVidCell m_paVidCellBase
-      data +0x1470 [sizeof=192] CVidCell m_paVidCellExtend
-      data +0x1530 [sizeof=192] CVidCell m_reVidCellBase
-      data +0x15f0 [sizeof=192] CVidCell m_reVidCellExtend
-      data +0x16b0 [sizeof=192] CVidCell m_coVidCellBase
-      data +0x1770 [sizeof=192] CVidCell m_coVidCellExtend
-      data +0x1830 [sizeof=192] CVidCell m_caVidCellBase
-      data +0x18f0 [sizeof=192] CVidCell m_caVidCellExtend
-      data +0x19b0 [sizeof=192] CVidCell m_twVidCellBase
-      data +0x1a70 [sizeof=192] CVidCell m_twVidCellExtend
-      data +0x1b30 [sizeof=192] CVidCell m_waVidCellBase
-      data +0x1bf0 [sizeof=192] CVidCell m_waVidCellExtend
-      data +0x1cb0 [sizeof=4] CVidCell* m_currentVidCellWeapon
-      data +0x1cb4 [sizeof=4] CVidCell* m_currentVidCellWeaponBase
-      data +0x1cb8 [sizeof=4] CVidCell* m_currentVidCellWeaponExtend
-      data +0x1cbc [sizeof=192] CVidCell m_a1VidCellWeaponBase
-      data +0x1d7c [sizeof=192] CVidCell m_a1VidCellWeaponExtend
-      data +0x1e3c [sizeof=192] CVidCell m_a2VidCellWeaponBase
-      data +0x1efc [sizeof=192] CVidCell m_a2VidCellWeaponExtend
-      data +0x1fbc [sizeof=192] CVidCell m_a3VidCellWeaponBase
-      data +0x207c [sizeof=192] CVidCell m_a3VidCellWeaponExtend
-      data +0x213c [sizeof=192] CVidCell m_shVidCellWeaponBase
-      data +0x21fc [sizeof=192] CVidCell m_shVidCellWeaponExtend
-      data +0x22bc [sizeof=192] CVidCell m_awVidCellWeaponBase
-      data +0x237c [sizeof=192] CVidCell m_awVidCellWeaponExtend
-      data +0x243c [sizeof=192] CVidCell m_slVidCellWeaponBase
-      data +0x24fc [sizeof=192] CVidCell m_slVidCellWeaponExtend
-      data +0x25bc [sizeof=192] CVidCell m_daVidCellWeaponBase
-      data +0x267c [sizeof=192] CVidCell m_daVidCellWeaponExtend
-      data +0x273c [sizeof=192] CVidCell m_paVidCellWeaponBase
-      data +0x27fc [sizeof=192] CVidCell m_paVidCellWeaponExtend
-      data +0x28bc [sizeof=192] CVidCell m_reVidCellWeaponBase
-      data +0x297c [sizeof=192] CVidCell m_reVidCellWeaponExtend
-      data +0x2a3c [sizeof=192] CVidCell m_coVidCellWeaponBase
-      data +0x2afc [sizeof=192] CVidCell m_coVidCellWeaponExtend
-      data +0x2bbc [sizeof=192] CVidCell m_caVidCellWeaponBase
-      data +0x2c7c [sizeof=192] CVidCell m_caVidCellWeaponExtend
-      data +0x2d3c [sizeof=192] CVidCell m_waVidCellWeaponBase
-      data +0x2dfc [sizeof=192] CVidCell m_waVidCellWeaponExtend
-      data +0x2ebc [sizeof=2] short m_currentBamDirection
-      <padding> (2 bytes)
-      data +0x2ec0 [sizeof=4] int m_bRenderWeapons
-      data +0x2ec4 [sizeof=4] int m_bHideWeapons
-      data +0x2ec8 [sizeof=4] int m_weaponLeftHand
-      data +0x2ecc [sizeof=1] unsigned char m_bDetectedByInfravision
-      data +0x2ecd [sizeof=1] unsigned char m_extendDirectionTest
-      <padding> (2 bytes)
-
+   CGameAnimationTypeMonsterIcewind     struct
+     m_cGameAnimationType               CGameAnimationType <>
+     m_resref                           CString  <>
+     m_currentVidCell                   dd ? ; CVidCell* 
+     m_currentVidCellBase               dd ? ; CVidCell* 
+     m_currentVidCellExtend             dd ? ; CVidCell* 
+     m_a1VidCellBase                    CVidCell <>
+     m_a1VidCellExtend                  CVidCell <>
+     m_a2VidCellBase                    CVidCell <>
+     m_a2VidCellExtend                  CVidCell <>
+     m_a3VidCellBase                    CVidCell <>
+     m_a3VidCellExtend                  CVidCell <>
+     m_shVidCellBase                    CVidCell <>
+     m_shVidCellExtend                  CVidCell <>
+     m_awVidCellBase                    CVidCell <>
+     m_awVidCellExtend                  CVidCell <>
+     m_slVidCellBase                    CVidCell <>
+     m_slVidCellExtend                  CVidCell <>
+     m_deVidCellBase                    CVidCell <>
+     m_deVidCellExtend                  CVidCell <>
+     m_daVidCellBase                    CVidCell <>
+     m_daVidCellExtend                  CVidCell <>
+     m_paVidCellBase                    CVidCell <>
+     m_paVidCellExtend                  CVidCell <>
+     m_reVidCellBase                    CVidCell <>
+     m_reVidCellExtend                  CVidCell <>
+     m_coVidCellBase                    CVidCell <>
+     m_coVidCellExtend                  CVidCell <>
+     m_caVidCellBase                    CVidCell <>
+     m_caVidCellExtend                  CVidCell <>
+     m_twVidCellBase                    CVidCell <>
+     m_twVidCellExtend                  CVidCell <>
+     m_waVidCellBase                    CVidCell <>
+     m_waVidCellExtend                  CVidCell <>
+     m_currentVidCellWeapon             dd ? ; CVidCell* 
+     m_currentVidCellWeaponBase         dd ? ; CVidCell* 
+     m_currentVidCellWeaponExtend       dd ? ; CVidCell* 
+     m_a1VidCellWeaponBase              CVidCell <>
+     m_a1VidCellWeaponExtend            CVidCell <>
+     m_a2VidCellWeaponBase              CVidCell <>
+     m_a2VidCellWeaponExtend            CVidCell <>
+     m_a3VidCellWeaponBase              CVidCell <>
+     m_a3VidCellWeaponExtend            CVidCell <>
+     m_shVidCellWeaponBase              CVidCell <>
+     m_shVidCellWeaponExtend            CVidCell <>
+     m_awVidCellWeaponBase              CVidCell <>
+     m_awVidCellWeaponExtend            CVidCell <>
+     m_slVidCellWeaponBase              CVidCell <>
+     m_slVidCellWeaponExtend            CVidCell <>
+     m_daVidCellWeaponBase              CVidCell <>
+     m_daVidCellWeaponExtend            CVidCell <>
+     m_paVidCellWeaponBase              CVidCell <>
+     m_paVidCellWeaponExtend            CVidCell <>
+     m_reVidCellWeaponBase              CVidCell <>
+     m_reVidCellWeaponExtend            CVidCell <>
+     m_coVidCellWeaponBase              CVidCell <>
+     m_coVidCellWeaponExtend            CVidCell <>
+     m_caVidCellWeaponBase              CVidCell <>
+     m_caVidCellWeaponExtend            CVidCell <>
+     m_waVidCellWeaponBase              CVidCell <>
+     m_waVidCellWeaponExtend            CVidCell <>
+     m_currentBamDirection              dw ?
+                                        dw ? ; padding
+     m_bRenderWeapons                   dd ?
+     m_bHideWeapons                     dd ?
+     m_weaponLeftHand                   dd ?
+     m_bDetectedByInfravision           db ?
+     m_extendDirectionTest              db ?
+                                        db ? ; padding
+                                        db ? ; padding
+   CGameAnimationTypeMonsterIcewind     ends
 
 
 .. _CGameAnimationTypeMonsterLarge:
@@ -2083,79 +2216,99 @@ CGameAnimationTypeMonsterMultiNew
 +------------+----------+-----------------------------------------------+-------------------------------+
 | 0x00       | 1952     | :ref:`CGameAnimationType<CGameAnimationType>` | m_cGameAnimationType          |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7A0      | 4        | :ref:`CString<CString>`                       | m_resref                      |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7A4      | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCell              |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7A8      | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_currentVidCellBase          |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7AC      | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_pg1VidCellBase              |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7B0      | 4        | :ref:`CVidCell<CVidCell>`\*                   | m_pg2VidCellBase              |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7B4      | 36       | :ref:`CVidPalette<CVidPalette>`               | m_charPalette                 |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7D8      | 2        | short                                         | m_currentBamSequence          |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7DA      | 2        | short                                         | m_currentBamDirection         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7DC      | 2        | short                                         | m_currentShootSequence        |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+|            | 2        |                                               | ``<padding>``                 |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7E0      | 4        | int                                           | m_falseColor                  |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7E4      | 1        | unsigned char                                 | m_extendDirectionTest         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7E5      | 1        | unsigned char                                 | m_nQuadrants                  |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+|            | 2        |                                               | ``<padding>``                 |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7E8      | 4        | int                                           | m_bSplitBams                  |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7EC      | 1        | char                                          | m_splitBamChar                |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+|            | 3        |                                               | ``<padding>``                 |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7F0      | 4        | int                                           | m_translucent                 |
 +------------+----------+-----------------------------------------------+-------------------------------+
-|            |          |                                               |                               |
+| 0x7F4      | 4        | int                                           | m_renderWeapons               |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x7F8      | 4        | int                                           | m_weaponLeftHand              |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x7FC      | 1        | unsigned char                                 | m_bDetectedByInfravision      |
++------------+----------+-----------------------------------------------+-------------------------------+
+|            | 3        |                                               | ``<padding>``                 |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x800      | 4        | int                                           | m_bCanLieDown                 |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x804      | 4        | int                                           | m_bPathSmooth                 |
++------------+----------+-----------------------------------------------+-------------------------------+
+| 0x808      | 1        | char                                          | m_currentShootSplit           |
++------------+----------+-----------------------------------------------+-------------------------------+
+|            | 3        |                                               | ``<padding>``                 |
 +------------+----------+-----------------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=1952] CGameAnimationType
-      data +0x7a0 [sizeof=4] CString m_resref
-      data +0x7a4 [sizeof=4] CVidCell* m_pCurrentVidCell
-      data +0x7a8 [sizeof=4] CVidCell* m_pCurrentVidCellBase
-      data +0x7ac [sizeof=4] CVidCell* m_pg1VidCellBase
-      data +0x7b0 [sizeof=4] CVidCell* m_pg2VidCellBase
-      data +0x7b4 [sizeof=36] CVidPalette m_charPalette
-      data +0x7d8 [sizeof=2] short m_currentBamSequence
-      data +0x7da [sizeof=2] short m_currentBamDirection
-      data +0x7dc [sizeof=2] short m_currentShootSequence
-      <padding> (2 bytes)
-      data +0x7e0 [sizeof=4] int m_falseColor
-      data +0x7e4 [sizeof=1] unsigned char m_extendDirectionTest
-      data +0x7e5 [sizeof=1] unsigned char m_nQuadrants
-      <padding> (2 bytes)
-      data +0x7e8 [sizeof=4] int m_bSplitBams
-      data +0x7ec [sizeof=1] char m_splitBamChar
-      <padding> (3 bytes)
-      data +0x7f0 [sizeof=4] int m_translucent
-      data +0x7f4 [sizeof=4] int m_renderWeapons
-      data +0x7f8 [sizeof=4] int m_weaponLeftHand
-      data +0x7fc [sizeof=1] unsigned char m_bDetectedByInfravision
-      <padding> (3 bytes)
-      data +0x800 [sizeof=4] int m_bCanLieDown
-      data +0x804 [sizeof=4] int m_bPathSmooth
-      data +0x808 [sizeof=1] char m_currentShootSplit
-      <padding> (3 bytes)
-
-
-
+   CGameAnimationTypeMonsterMultiNew    struct
+     m_cGameAnimationType               CGameAnimationType <>
+     m_resref                           CString <>
+     m_pCurrentVidCell                  dd ? ; CVidCell* 
+     m_pCurrentVidCellBase              dd ? ; CVidCell* 
+     m_pg1VidCellBase                   dd ? ; CVidCell* 
+     m_pg2VidCellBase                   dd ? ; CVidCell* 
+     m_charPalette                      CVidPalette <>
+     m_currentBamSequence               dw ?
+     m_currentBamDirection              dw ?
+     m_currentShootSequence             dw ?
+                                        dw ? ; <padding>
+     m_falseColor                       dd ?
+     m_extendDirectionTest              db ?
+     m_nQuadrants                       db ?
+                                        db ? ; <padding>
+                                        db ? ; <padding>
+     m_bSplitBams                       dd ?
+     m_splitBamChar                     db ?
+                                        db ? ; <padding>
+                                        db ? ; <padding>
+                                        db ? ; <padding>
+     m_translucent                      dd ?
+     m_renderWeapons                    dd ?
+     m_weaponLeftHand                   dd ?
+     m_bDetectedByInfravision           db ?
+                                        db ? ; <padding>
+                                        db ? ; <padding>
+                                        db ? ; <padding>
+     m_bCanLieDown                      dd ?
+     m_bPathSmooth                      dd ?
+     m_currentShootSplit                db ?
+                                        db ? ; <padding>
+                                        db ? ; <padding>
+                                        db ? ; <padding>
+   CGameAnimationTypeMonsterMultiNew    ends
 
 
 .. _CGameAnimationTypeMonsterOld:
@@ -2641,35 +2794,37 @@ CGameAreaClairvoyanceEntry
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 8        | :ref:`CPoint<CPoint>`                  | m_position                    |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x08       | 4        | long                                   | m_id                          |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x0C       | 4        | long                                   | m_timeKill                    |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x10       | 4        | unsigned char\*                        | m_pVisibleTerrainTable        |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x14       | 4        | long                                   | m_charId                      |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x18       | 2        | short                                  | m_visRange                    |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+|            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x1C       | 4        | long\*                                 | m_pVisMapExploredArea         |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=8] CPoint m_position
-      data +0x08 [sizeof=4] long m_id
-      data +0x0c [sizeof=4] long m_timeKill
-      data +0x10 [sizeof=4] unsigned char* m_pVisibleTerrainTable
-      data +0x14 [sizeof=4] long m_charId
-      data +0x18 [sizeof=2] short m_visRange
-      <padding> (2 bytes)
-      data +0x1c [sizeof=4] long* m_pVisMapExploredArea
+   CGameAreaClairvoyanceEntry   struct
+     m_position                 CPoint <>
+     m_id                       dd ?
+     m_timeKill                 dd ?
+     m_pVisibleTerrainTable     dd ? ;
+     m_charId                   dd ?
+     m_visRange                 dw ?
+                                dw ? ; <padding>
+     m_pVisMapExploredArea      dd ? ; 
+   CGameAreaClairvoyanceEntry   ends
 
 
 .. _CGameAreaNotes:
@@ -2680,41 +2835,51 @@ CGameAreaNotes
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | int                                    | m_bInitialized                |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x04       | 8        | :ref:`CPoint<CPoint>`                  | m_ptCellSize                  |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x0C       | 8        | :ref:`CPoint<CPoint>`                  | m_ptButtonSize                |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x14       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_areaNoteList                |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x30       | 52       | :ref:`CAreaUserNote<CAreaUserNote>`    | m_cAreaNote                   |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x64       | 4        | int                                    | m_bAddingNote                 |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x68       | 4        | unsigned long                          | m_nNoteButtonClicked          |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x6C       | 8        | :ref:`CResRef<CResRef>`                | m_rArea                       |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x74       | 4        | :ref:`CString<CString>`                | m_szBuffer                    |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x78       | 1        | unsigned char                          | m_bNetworkDelete              |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x79       | 1        | unsigned char                          | m_nCurrentIcon                |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] int m_bInitialized
-      data +0x04 [sizeof=8] CPoint m_ptCellSize
-      data +0x0c [sizeof=8] CPoint m_ptButtonSize
-      data +0x14 [sizeof=28] CTypedPtrList<CPtrList,CAreaUserNote *> m_areaNoteList
-      data +0x30 [sizeof=52] CAreaUserNote m_cAreaNote
-      data +0x64 [sizeof=4] int m_bAddingNote
-      data +0x68 [sizeof=4] unsigned long m_nNoteButtonClicked
-      data +0x6c [sizeof=8] CResRef m_rArea
-      data +0x74 [sizeof=4] CString m_szBuffer
-      data +0x78 [sizeof=1] unsigned char m_bNetworkDelete
-      data +0x79 [sizeof=1] unsigned char m_nCurrentIcon
-      <padding> (2 bytes)
+   CGameAreaNotes           struct
+     m_bInitialized         dd ?
+     m_ptCellSize           CPoint <>
+     m_ptButtonSize         CPoint <>
+     m_areaNoteList         CTypedPtrList <> 
+     m_cAreaNote            CAreaUserNote<>
+     m_bAddingNote          dd ?
+     m_nNoteButtonClicked   dd ?
+     m_rArea                CResRef <>
+     m_szBuffer             CString <>
+     m_bNetworkDelete       db ?
+     m_nCurrentIcon         db ?
+                            db ? ; padding
+                            db ? ; padding
+   CGameAreaNotes           ends
+
 
 .. _CGameButtonList:
 
@@ -2724,15 +2889,20 @@ CGameButtonList
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cButtonDataList             |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1C       | 4        | int                                    | m_nFirstMageSpellIndex        |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=28] CTypedPtrList<CPtrList,CButtonData *>
-      data +0x1c [sizeof=4] int m_nFirstMageSpellIndex
+   CGameButtonList          struct
+     m_cButtonDataList      CTypedPtrList <>
+     m_nFirstMageSpellIndex dd ?
+   CGameButtonList          ends
+
 
 .. _CGameChunk:
 
@@ -2742,46 +2912,49 @@ CGameChunk
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 71       | :ref:`CGameObject<CGameObject>`        | m_cGameObject                 |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+|            | 1        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x48       | 16       | unsigned char                          | m_visibleTerrainTable[16]     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x58       | 16       | :ref:`CGameAnimation<CGameAnimation>`  | m_animation                   |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x68       | 4        | int                                    | m_animationRunning            |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x6c       | 8        | :ref:`CPoint<CPoint>`                  | m_posDelta                    |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x74       | 4        | long                                   | m_posZDelta                   |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x78       | 1        | unsigned char                          | m_doBounce                    |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x79       | 1        | unsigned char                          | m_duration                    |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x7a       | 1        | unsigned char                          | m_durationFade                |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 1        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x7c       | 20       |                                        |                               |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=71] CGameObject
-      <padding> (1 bytes)
-      data +0x48 [sizeof=16] unsigned char m_visibleTerrainTable[16]
-      data +0x58 [sizeof=16] CGameAnimation m_animation
-      data +0x68 [sizeof=4] int m_animationRunning
-      data +0x6c [sizeof=8] CPoint m_posDelta
-      data +0x74 [sizeof=4] long m_posZDelta
-      data +0x78 [sizeof=1] unsigned char m_doBounce
-      data +0x79 [sizeof=1] unsigned char m_duration
-      data +0x7a [sizeof=1] unsigned char m_durationFade
-      <padding> (1 bytes)
-      data +0x7c [sizeof=20] CSound m_sound
-
-
-
-
-
+   CGameChunk               struct
+     m_cGameObject          CGameObject <>
+                            db ? ; <padding>
+     m_visibleTerrainTable  db 16 dup (?)
+     m_animation            CGameAnimation <>
+     m_animationRunning     dd ?
+     m_posDelta             CPoint <>
+     m_posZDelta            dd ?
+     m_doBounce             db ?
+     m_duration             db ?
+     m_durationFade         db ?
+                            db ? ; <padding>
+     m_sound                CSound <>
+   CGameChunk               ends
 
 
 .. _CGameContainer:
@@ -2890,37 +3063,40 @@ CGameDialogEntry
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 20       | :ref:`CTypedPtrArray<CTypedPtrArray>`  | m_cGameDialogReplyArray       |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x14       | 4        | unsigned long                          | m_dialogText                  |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x18       | 28       | :ref:`CAICondition<CAICondition>`      | m_startCondition              |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x34       | 4        | int                                    | m_picked                      |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x38       | 4        | unsigned long                          | m_conditionPriority           |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x3C       | 4        | unsigned long                          | m_dialogIndex                 |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x40       | 1        | unsigned char                          | m_bDisplayButton              |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+|            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=20] CTypedPtrArray<CPtrArray,CGameDialogReply *>
-      data +0x14 [sizeof=4] unsigned long m_dialogText
-      data +0x18 [sizeof=28] CAICondition m_startCondition
-      data +0x34 [sizeof=4] int m_picked
-      data +0x38 [sizeof=4] unsigned long m_conditionPriority
-      data +0x3c [sizeof=4] unsigned long m_dialogIndex
-      data +0x40 [sizeof=1] unsigned char m_bDisplayButton
-      <padding> (3 bytes)
+   CGameDialogEntry             struct
+     m_cGameDialogReplyArray    CTypedPtrArray <>
+     m_dialogText               dd ?
+     m_startCondition           CAICondition <>
+     m_picked                   dd ?
+     m_conditionPriority        dd ?
+     m_dialogIndex              dd ?
+     m_bDisplayButton           db ?
+                                db ? ; padding
+                                db ? ; padding
+                                db ? ; padding
+   CGameDialogEntry             ends
+
 
 .. _CGameDialogIdentifier:
 
@@ -2930,15 +3106,20 @@ CGameDialogIdentifier
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 8        | :ref:`CResRef<CResRef>`                | m_dialog                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | unsigned long                          | m_index                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=8] CResRef m_dialog
-      data +0x08 [sizeof=4] unsigned long m_index
+   CGameDialogIdentifier    struct
+     m_dialog               CResRef <>
+     m_index                dd ?
+   CGameDialogIdentifier    ends
+
 
 .. _CGameDialogReply:
 
@@ -2948,47 +3129,63 @@ CGameDialogReply
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | unsigned long                          | m_flags                       |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x04       | 4        | unsigned long                          | m_replyText                   |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x08       | 4        | unsigned long                          | m_journalEntry                |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x0C       | 28       | :ref:`CAICondition<CAICondition>`      | m_condition                   |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x28       | 36       | :ref:`CAIResponse<CAIResponse>`        | m_response                    |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x4C       | 8        | :ref:`CResRef<CResRef>`                | m_nextDialog                  |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x54       | 4        | unsigned long                          | m_nextEntryIndex              |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x58       | 4        | __POSITION\*                           | m_displayPosition             |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x5C       | 4        | int                                    | m_removeIfPicked              |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x60       | 1        | unsigned char                          | m_displayListId               |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 3        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x64       | 4        | :ref:`CString<CString>`                | m_conditionString             |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x68       | 4        | int                                    | m_needToParseCondition        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x6C       | 4        | :ref:`CString<CString>`                | m_responseString              |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x70       | 4        | int                                    | m_needToParseResponse         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x74       | 4        | int                                    | m_bracketedActions            |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] unsigned long m_flags
-      data +0x04 [sizeof=4] unsigned long m_replyText
-      data +0x08 [sizeof=4] unsigned long m_journalEntry
-      data +0x0c [sizeof=28] CAICondition m_condition
-      data +0x28 [sizeof=36] CAIResponse m_response
-      data +0x4c [sizeof=8] CResRef m_nextDialog
-      data +0x54 [sizeof=4] unsigned long m_nextEntryIndex
-      data +0x58 [sizeof=4] __POSITION* m_displayPosition
-      data +0x5c [sizeof=4] int m_removeIfPicked
-      data +0x60 [sizeof=1] unsigned char m_displayListId
-      <padding> (3 bytes)
-      data +0x64 [sizeof=4] CString m_conditionString
-      data +0x68 [sizeof=4] int m_needToParseCondition
-      data +0x6c [sizeof=4] CString m_responseString
-      data +0x70 [sizeof=4] int m_needToParseResponse
-      data +0x74 [sizeof=4] int m_bracketedActions
-
-
+   CGameDialogReply         struct
+     m_flags                dd ?
+     m_replyText            dd ?
+     m_journalEntry         dd ?
+     m_condition            CAICondition <>
+     m_response             CAIResponse <>
+     m_nextDialog           CResRef <>
+     m_nextEntryIndex       dd ?
+     m_displayPosition      dd ? ; __POSITION*
+     m_removeIfPicked       dd ?
+     m_displayListId        db ?
+                            db ? ; padding
+                            db ? ; padding
+                            db ? ; padding
+     m_conditionString      CString <>
+     m_needToParseCondition dd ?
+     m_responseString       CString <>
+     m_needToParseResponse  dd ?
+     m_bracketedActions     dd ?
+   CGameDialogReply         ends
 
 
 .. _CGameDialogSprite:
@@ -2999,49 +3196,64 @@ CGameDialogSprite
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 8        | :ref:`CResRef<CResRef>`                | m_file                        |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x08       | 20       | :ref:`CTypedPtrArray<CTypedPtrArray>`  | m_dialogEntries               |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x1C       | 20       | :ref:`CTypedPtrArray<CTypedPtrArray>`  | m_dialogEntriesOrdered        |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x30       | 4        | long                                   | m_characterIndex              |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x34       | 4        | long                                   | m_talkerIndex                 |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x38       | 4        | unsigned long                          | m_currentEntryIndex           |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x3C       | 4        | int                                    | m_waitingForResponse          |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x40       | 4        | long                                   | m_responseMarker              |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x44       | 4        | unsigned long                          | m_playerColor                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x48       | 4        | :ref:`CString<CString>`                | m_playerName                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x4C       | 4        | long                                   | m_dialogFreezeCounter         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x50       | 4        | long                                   | m_dialogFreezeMultiplayer     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x54       | 4        | unsigned long                          | m_dWFlags                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x58       | 4        | int                                    | m_bPlayedStartSound           |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x5C       | 4        | int                                    | m_bItemDialog                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x60       | 4        | int                                    | m_bSuppressName               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x64       | 4        | long                                   | m_UpdateTime                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=8] CResRef m_file
-      data +0x08 [sizeof=20] CTypedPtrArray<CPtrArray,CGameDialogEntry *> m_dialogEntries
-      data +0x1c [sizeof=20] CTypedPtrArray<CPtrArray,CGameDialogEntry *> m_dialogEntriesOrdered
-      data +0x30 [sizeof=4] long m_characterIndex
-      data +0x34 [sizeof=4] long m_talkerIndex
-      data +0x38 [sizeof=4] unsigned long m_currentEntryIndex
-      data +0x3c [sizeof=4] int m_waitingForResponse
-      data +0x40 [sizeof=4] long m_responseMarker
-      data +0x44 [sizeof=4] unsigned long m_playerColor
-      data +0x48 [sizeof=4] CString m_playerName
-      data +0x4c [sizeof=4] long m_dialogFreezeCounter
-      data +0x50 [sizeof=4] long m_dialogFreezeMultiplayer
-      data +0x54 [sizeof=4] unsigned long m_dWFlags
-      data +0x58 [sizeof=4] int m_bPlayedStartSound
-      data +0x5c [sizeof=4] int m_bItemDialog
-      data +0x60 [sizeof=4] int m_bSuppressName
-      data +0x64 [sizeof=4] long m_UpdateTime
-
-
-
+   CGameDialogSprite            struct
+     m_file                     CResRef <>
+     m_dialogEntries            CTypedPtrArray <>
+     m_dialogEntriesOrdered     CTypedPtrArray <>
+     m_characterIndex           dd ?
+     m_talkerIndex              dd ?
+     m_currentEntryIndex        dd ?
+     m_waitingForResponse       dd ?
+     m_responseMarker           dd ?
+     m_playerColor              dd ?
+     m_playerName               CString <>
+     m_dialogFreezeCounter      dd ?
+     m_dialogFreezeMultiplayer  dd ?
+     m_dWFlags                  dd ?
+     m_bPlayedStartSound        dd ?
+     m_bItemDialog              dd ?
+     m_bSuppressName            dd ?
+     m_UpdateTime               dd ?
+   CGameDialogSprite            ends
 
 
 .. _CGameDoor:
@@ -3178,14 +3390,17 @@ CGameFile
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResGame                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=12] CResHelper<CResGame,1013>
+   CGameFile    struct
+     m_cResGame CResHelper <>
+   CGameFile    ends
+
 
 .. _CGameFireball3d:
 
@@ -3326,38 +3541,51 @@ Asm Definition
 CGameID
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
++------------+----------+---------------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                                    | **Field**                     |
++------------+----------+---------------------------------------------+-------------------------------+
+| 0x00       | 8        | unsigned __int64                            | m_ulGameID                    |
++------------+----------+---------------------------------------------+-------------------------------+
+| 0x00       | 8        | :ref:`CGameID\:\:GameID_t<CGameIDGameID_t>` | m_gameID                      |
++------------+----------+---------------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=8] unsigned __int64 m_ulGameID
-      data +0x00 [sizeof=8] CGameID::GameID_t m_gameID
+   CGameID          struct
+     union
+       m_ulGameID   dq ? ; unsigned __int64 
+       m_gameID     CGameIDGameID_t <> ; CGameID::GameID_t 
+     ends
+   CGameID          ends
 
 
 .. _CGameIDGameID_t:
 
-CGameID::GameID_t
+CGameID\:\:GameID_t
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | unsigned int                           | m_nAppID : 24                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 4        | unsigned int                           | m_nType : 8                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | unsigned int                           | m_nModID : 32                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] unsigned int m_nAppID : 24
-      data +0x00 [sizeof=4] unsigned int m_nType : 8
-      data +0x04 [sizeof=4] unsigned int m_nModID : 32
+   CGameIDGameID_t  struct
+     _gameid RECORD
+       m_nAppID:    24,
+       m_nType:     8,
+       m_nModID:    32
+   CGameIDGameID_t  ends
 
 
 .. _CGameJournal:
@@ -3368,54 +3596,75 @@ CGameJournal
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 20       | :ref:`CTypedPtrArray<CTypedPtrArray>`  | m_aChapters                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=20] CTypedPtrArray<CPtrArray,CTypedPtrList<CPtrList,CGameJournalEntry *> *> m_aChapters
+   CGameJournal  struct
+     m_aChapters CTypedPtrArray <>
+   CGameJournal  ends
+
 
 .. _CGameJournalAlphabetizer:
 
 CGameJournalAlphabetizer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
++------------+----------+-----------------------------------------------+------------------+
+| **Offset** | **Size** | **Type**                                      | **Field**        |
++------------+----------+-----------------------------------------------+------------------+
+| 0x00       | 4        | :ref:`CGameJournalEntry<CGameJournalEntry>`\* | pEntry           |
++------------+----------+-----------------------------------------------+------------------+
+| 0x04       | 4        | :ref:`CString<CString>`                       | stText           |
++------------+----------+-----------------------------------------------+------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] CGameJournalEntry* pEntry
-      data +0x04 [sizeof=4] CString stText
+   CGameJournalAlphabetizer struct
+     pEntry                 dd ? ; CGameJournalEntry*
+     stText                 CString  <>
+   CGameJournalAlphabetizer ends
+
 
 .. _CGameJournalEntry:
 
 CGameJournalEntry
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
++------------+----------+-----------------------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                                            | **Field**                     |
++------------+----------+-----------------------------------------------------+-------------------------------+
+| 0x00       | 4        | unsigned long                                       | m_strText                     |
++------------+----------+-----------------------------------------------------+-------------------------------+
+| 0x04       | 4        | long                                                | m_nTime                       |
++------------+----------+-----------------------------------------------------+-------------------------------+
+| 0x08       | 4        | :ref:`CGameJournalEntryFlag<CGameJournalEntryFlag>` | m_Flag                        |
++------------+----------+-----------------------------------------------------+-------------------------------+
+| 0x0C       | 2        | unsigned short                                      | m_wType                       |
++------------+----------+-----------------------------------------------------+-------------------------------+
+| 0x0E       | 1        | unsigned char                                       | m_bCharacter                  |
++------------+----------+-----------------------------------------------------+-------------------------------+
+| 0x0F       | 1        | unsigned char                                       | m_nCharacterHasNotRead        |
++------------+----------+-----------------------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] unsigned long m_strText
-      data +0x04 [sizeof=4] long m_nTime
-      data +0x08 [sizeof=4] CGameJournalEntryFlag m_Flag
-      data +0x0c [sizeof=2] unsigned short m_wType
-      data +0x0e [sizeof=1] unsigned char m_bCharacter
-      data +0x0f [sizeof=1] unsigned char m_nCharacterHasNotRead
+   CGameJournalEntry        struct
+     m_strText              dd ?
+     m_nTime                dd ?
+     m_Flag                 CGameJournalEntryFlag <>
+     m_wType                dw ?
+     m_bCharacter           db ?
+     m_nCharacterHasNotRead db ?
+   CGameJournalEntry        ends
+
 
 .. _CGameObject:
 
@@ -3433,33 +3682,33 @@ CGameObject
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x08       | 8        | :ref:`CPoint<CPoint>`                  | m_pos                         |
 +------------+----------+----------------------------------------+-------------------------------+
-| 0x10       | 4        |                                        |                               |
+| 0x10       | 4        | long                                   | m_posZ                        |
 +------------+----------+----------------------------------------+-------------------------------+
-| 0x14       | 4        |                                        |                               |
+| 0x14       | 4        | :ref:`CGameArea<CGameArea>`\*          | m_pArea                       |
 +------------+----------+----------------------------------------+-------------------------------+
-| 0x18       | 4        |                                        |                               |
+| 0x18       | 4        | __POSITION\*                           | m_posVertList                 |
 +------------+----------+----------------------------------------+-------------------------------+
-| 0x1C       | 1        |                                        |                               |
+| 0x1C       | 1        | unsigned char                          | m_listType                    |
 +------------+----------+----------------------------------------+-------------------------------+
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
-| 0x20       | 20       |                                        |                               |
+| 0x20       | 20       | :ref:`CAIObjectType<CAIObjectType>`    | m_typeAI                      |
 +------------+----------+----------------------------------------+-------------------------------+
-| 0x34       |          |                                        |                               |
+| 0x34       | 4        | long                                   | m_id                          |
 +------------+----------+----------------------------------------+-------------------------------+
-| 0x38       |          |                                        |                               |
+| 0x38       | 2        | short                                  | m_canBeSeen                   |
 +------------+----------+----------------------------------------+-------------------------------+
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
-| 0x3C       |          |                                        |                               |
+| 0x3C       | 4        | int                                    | m_remotePlayerID              |
 +------------+----------+----------------------------------------+-------------------------------+
-| 0x40       |          |                                        |                               |
+| 0x40       | 4        | long                                   | m_remoteObjectID              |
 +------------+----------+----------------------------------------+-------------------------------+
-| 0x44       |          |                                        |                               |
+| 0x44       | 1        | unsigned char                          | m_AISpeed                     |
 +------------+----------+----------------------------------------+-------------------------------+
-| 0x45       |          |                                        |                               |
+| 0x45       | 1        | unsigned char                          | m_bLocalControl               |
 +------------+----------+----------------------------------------+-------------------------------+
-| 0x46       |          |                                        |                               |
+| 0x46       | 1        | unsigned char                          | m_AIInhibitor                 |
 +------------+----------+----------------------------------------+-------------------------------+
 |            | 1        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
@@ -3515,16 +3764,23 @@ CGameObjectArrayEntry
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 2        | short                                  | m_objectId                    |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | :ref:`CGameObject<CGameObject>`\*      | m_objectPtr                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-     data +0x00 [sizeof=2] short m_objectId
-      <padding> (2 bytes)
-      data +0x04 [sizeof=4] CGameObject* m_objectPtr
+   CGameObjectArrayEntry    struct
+     m_objectId             dw ?
+                            dw ? ; padding
+     m_objectPtr            dd ? ; CGameObject*
+   CGameObjectArrayEntry    ends
+
 
 .. _CGameOptions:
 
@@ -3824,6 +4080,7 @@ Asm Definition
       data +0x254 [sizeof=4] int m_bExpireTraps
       data +0x258 [sizeof=4] long m_nDifficultyLevel
 
+
 .. _CGamePermission:
 
 CGamePermission
@@ -3832,138 +4089,172 @@ CGamePermission
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 8        | unsigned char                          | m_permission[8]               |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=8] unsigned char m_permission[8]
+   CGamePermission  struct
+     m_permission   db 8 dup (?)
+   CGamePermission  ends
+
 
 .. _CGameRemoteObjectArray:
 
 CGameRemoteObjectArray
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
+| **Offset** | **Size** | **Type**                                                                | **Field**                             |
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
+| 0x00       | 4        | :ref:`CGameRemoteObjectListEntry<CGameRemoteObjectListEntry>`\*\*       | m_pArray                              |
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
+| 0x04       | 2        | short                                                                   | m_nArraySize                          |
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
+| 0x06       | 2        | short                                                                   | m_nControlsChanged                    |
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
+| 0x08       | 4        | :ref:`CGameRemoteObjectControlChange<CGameRemoteObjectControlChange>`\* | m_pControlsChanged                    |
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
+| 0x0C       | 4        | :ref:`CGameRemoteObjectControlChange<CGameRemoteObjectControlChange>`\* | m_pControlsChangedTail                |
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
+| 0x10       | 2        | short                                                                   | m_nDeletions                          |
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
+|            | 2        |                                                                         | ``<padding>``                         |
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
+| 0x14       | 4        | :ref:`CGameRemoteObjectDeletion<CGameRemoteObjectDeletion>`\*           | m_pDeletions                          |
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
+| 0x18       | 4        | :ref:`CGameRemoteObjectDeletion<CGameRemoteObjectDeletion>`\*           | m_pDeletionsTail                      |
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
+| 0x1C       | 2        | short                                                                   | m_nControlsAreaChanged                |
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
+| 0x1E       | 48       | :ref:`CResRef<CResRef>`                                                 | m_psControlsAreaChangedName[6]        |
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
+|            | 2        |                                                                         | ``<padding>``                         |
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
+| 0x50       | 24       | unsigned long                                                           | m_pnControlsAreaChangedPlayerNum[6]   |
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
+| 0x68       | 12       | short                                                                   | m_pnControlsAreaChangedFirstObject[6] |
++------------+----------+-------------------------------------------------------------------------+---------------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] CGameRemoteObjectListEntry** m_pArray
-      data +0x04 [sizeof=2] short m_nArraySize
-      data +0x06 [sizeof=2] short m_nControlsChanged
-      data +0x08 [sizeof=4] CGameRemoteObjectControlChange* m_pControlsChanged
-      data +0x0c [sizeof=4] CGameRemoteObjectControlChange* m_pControlsChangedTail
-      data +0x10 [sizeof=2] short m_nDeletions
-      <padding> (2 bytes)
-      data +0x14 [sizeof=4] CGameRemoteObjectDeletion* m_pDeletions
-      data +0x18 [sizeof=4] CGameRemoteObjectDeletion* m_pDeletionsTail
-      data +0x1c [sizeof=2] short m_nControlsAreaChanged
-      data +0x1e [sizeof=48] CResRef m_psControlsAreaChangedName[6]
-      <padding> (2 bytes)
-      data +0x50 [sizeof=24] unsigned long m_pnControlsAreaChangedPlayerNum[6]
-      data +0x68 [sizeof=12] short m_pnControlsAreaChangedFirstObject[6]
+   CGameRemoteObjectArray               struct
+     m_pArray                           dd ? ; CGameRemoteObjectListEntry** 
+     m_nArraySize                       dw ?
+     m_nControlsChanged                 dw ?
+     m_pControlsChanged                 dd ? ; CGameRemoteObjectControlChange* 
+     m_pControlsChangedTail             dd ? ; CGameRemoteObjectControlChange* 
+     m_nDeletions                       dw ?
+                                        dw ? ; padding
+     m_pDeletions                       dd ? ; CGameRemoteObjectDeletion* 
+     m_pDeletionsTail                   dd ? ; CGameRemoteObjectDeletion* 
+     m_nControlsAreaChanged             dw ?
+     m_psControlsAreaChangedName        CResRef 6 dup ({})
+                                        db ? ; padding
+                                        db ? ; padding
+     m_pnControlsAreaChangedPlayerNum   dd 6 dup (?)
+     m_pnControlsAreaChangedFirstObject dw 6 dup (?)
+   CGameRemoteObjectArray
+
 
 .. _CGameRemoteObjectControlChange:
 
 CGameRemoteObjectControlChange
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
++------------+----------+-------------------------------------------------------------------------+--------------+
+| **Offset** | **Size** | **Type**                                                                | **Field**    |
++------------+----------+-------------------------------------------------------------------------+--------------+
+| 0x00       | 4        | int                                                                     | oldPlayerID  |
++------------+----------+-------------------------------------------------------------------------+--------------+
+| 0x04       | 4        | long                                                                    | oldObjectID  |
++------------+----------+-------------------------------------------------------------------------+--------------+
+| 0x08       | 4        | int                                                                     | newPlayerID  |
++------------+----------+-------------------------------------------------------------------------+--------------+
+| 0x0C       | 4        | long                                                                    | newObjectID  |
++------------+----------+-------------------------------------------------------------------------+--------------+
+| 0x10       | 4        | :ref:`CGameRemoteObjectControlChange<CGameRemoteObjectControlChange>`\* | pNext        |
++------------+----------+-------------------------------------------------------------------------+--------------+
+| 0x14       | 1        | unsigned char                                                           | localControl |
++------------+----------+-------------------------------------------------------------------------+--------------+
+|            | 3        |                                                                         | ``<padding>``|
++------------+----------+-------------------------------------------------------------------------+--------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] int oldPlayerID
-      data +0x04 [sizeof=4] long oldObjectID
-      data +0x08 [sizeof=4] int newPlayerID
-      data +0x0c [sizeof=4] long newObjectID
-      data +0x10 [sizeof=4] CGameRemoteObjectControlChange* pNext
-      data +0x14 [sizeof=1] unsigned char localControl
-      <padding> (3 bytes)
+   CGameRemoteObjectControlChange   struct
+     oldPlayerID                    dd ?
+     oldObjectID                    dd ?
+     newPlayerID                    dd ?
+     newObjectID                    dd ?
+     pNext                          dd ? ; CGameRemoteObjectControlChange* 
+     localControl                   db ?
+                                    db ? ; padding
+                                    db ? ; padding
+                                    db ? ; padding
+   CGameRemoteObjectControlChange   ends
+
 
 .. _CGameRemoteObjectDeletion:
 
 CGameRemoteObjectDeletion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
++------------+----------+---------------------------------------------------------------+-----------------+
+| **Offset** | **Size** | **Type**                                                      | **Field**       |
++------------+----------+---------------------------------------------------------------+-----------------+
+| 0x00       | 4        | int                                                           | deletedPlayerID |
++------------+----------+---------------------------------------------------------------+-----------------+
+| 0x04       | 4        | long                                                          | deletedObjectID |
++------------+----------+---------------------------------------------------------------+-----------------+
+| 0x08       | 4        | :ref:`CGameRemoteObjectDeletion<CGameRemoteObjectDeletion>`\* | pNext           |
++------------+----------+---------------------------------------------------------------+-----------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] int deletedPlayerID
-      data +0x04 [sizeof=4] long deletedObjectID
-      data +0x08 [sizeof=4] CGameRemoteObjectDeletion* pNext
+   CGameRemoteObjectDeletion    struct
+     deletedPlayerID            dd ?
+     deletedObjectID            dd ?
+     pNext                      dd ? ; CGameRemoteObjectDeletion* 
+   CGameRemoteObjectDeletion    ends
+
 
 .. _CGameRemoteObjectListEntry:
 
 CGameRemoteObjectListEntry
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
++------------+----------+-----------------------------------------------------------------+----------------+
+| **Offset** | **Size** | **Type**                                                        | **Field**      |
++------------+----------+-----------------------------------------------------------------+----------------+
+| 0x00       | 4        | int                                                             | remotePlayerID |
++------------+----------+-----------------------------------------------------------------+----------------+
+| 0x04       | 4        | long                                                            | remoteObjectID |
++------------+----------+-----------------------------------------------------------------+----------------+
+| 0x08       | 4        | long                                                            | localObjectID  |
++------------+----------+-----------------------------------------------------------------+----------------+
+| 0x0C       | 4        | :ref:`CGameRemoteObjectListEntry<CGameRemoteObjectListEntry>`\* | pNext          |
++------------+----------+-----------------------------------------------------------------+----------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] int remotePlayerID
-      data +0x04 [sizeof=4] long remoteObjectID
-      data +0x08 [sizeof=4] long localObjectID
-      data +0x0c [sizeof=4] CGameRemoteObjectListEntry* pNext
+   CGameRemoteObjectListEntry   struct
+     remotePlayerID             dd ?
+     remoteObjectID             dd ?
+     localObjectID              dd ?
+     pNext                      dd ? ; CGameRemoteObjectListEntry* 
+   CGameRemoteObjectListEntry   ends
+
 
 .. _CGameRemoveMapNote:
 
@@ -3973,14 +4264,17 @@ CGameRemoveMapNote
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=324] CGameEffect
+   CGameRemoveMapNote   struct
+     m_cGameEffect      CGameEffect <>
+   CGameRemoveMapNote   ends
+
 
 .. _CGameSave:
 
@@ -3990,42 +4284,53 @@ CGameSave
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | unsigned long                          | m_inputMode                   |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x04       | 8        | :ref:`CResRef<CResRef>`                | m_cResCurrentWorldArea        |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x0C       | 4        | unsigned long                          | m_nCurrentWorldLink           |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x10       | 4        | unsigned long                          | m_nPartyGold                  |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x14       | 2        | short                                  | m_curFormation                |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x16       | 10       | short                                  | m_quickFormations[5]          |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x20       | 400      | :ref:`CItem<CItem>`\*                  | m_groupInventory[100]         |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x1B0      | 4        | int                                    | m_bArenaMode                  |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x1B4      | 2        | short                                  | m_groupInventoryNumber        |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1B8      | 4        | unsigned long                          | m_mode                        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1BC      | 4        | int                                    | m_cutScene                    |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1C0      | 4        | long                                   | m_nCutSceneStatusOverride     |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] unsigned long m_inputMode
-      data +0x04 [sizeof=8] CResRef m_cResCurrentWorldArea
-      data +0x0c [sizeof=4] unsigned long m_nCurrentWorldLink
-      data +0x10 [sizeof=4] unsigned long m_nPartyGold
-      data +0x14 [sizeof=2] short m_curFormation
-      data +0x16 [sizeof=10] short m_quickFormations[5]
-      data +0x20 [sizeof=400] CItem* m_groupInventory[100]
-      data +0x1b0 [sizeof=4] int m_bArenaMode
-      data +0x1b4 [sizeof=2] short m_groupInventoryNumber
-      <padding> (2 bytes)
-      data +0x1b8 [sizeof=4] unsigned long m_mode
-      data +0x1bc [sizeof=4] int m_cutScene
-      data +0x1c0 [sizeof=4] long m_nCutSceneStatusOverride
+   CGameSave                    struct
+     m_inputMode                dd ?
+     m_cResCurrentWorldArea     CResRef <>
+     m_nCurrentWorldLink        dd ?
+     m_nPartyGold               dd ?
+     m_curFormation             dw ?
+     m_quickFormations          dw 5 dup (?)
+     m_groupInventory           dd 100 dup (?) ; CItem* 
+     m_bArenaMode               dd ?
+     m_groupInventoryNumber     dw ?
+                                dw ? ; padding
+     m_mode                     dd ?
+     m_cutScene                 dd ?
+     m_nCutSceneStatusOverride  dd ?
+   CGameSave                    ends
+
 
 .. _CGameSaveCharacter:
 
@@ -4035,59 +4340,74 @@ CGameSaveCharacter
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | unsigned long                          | m_actionMode                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 208      | :ref:`CButtonData<CButtonData>`        | m_quickWeapons[4]             |
++------------+----------+----------------------------------------+-------------------------------+
+| 0xD4       | 156      | :ref:`CButtonData<CButtonData>`        | m_quickSpells[3]              |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x170      | 156      | :ref:`CButtonData<CButtonData>`        | m_quickItems[3]               |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] unsigned long m_actionMode
-      data +0x04 [sizeof=208] CButtonData m_quickWeapons[4]
-      data +0xd4 [sizeof=156] CButtonData m_quickSpells[3]
-      data +0x170 [sizeof=156] CButtonData m_quickItems[3]
+   CGameSaveCharacter   struct
+     m_actionMode       dd ?
+     m_quickWeapons     CButtonData 4 dup ({})
+     m_quickSpells      CButtonData 3 dup ({})
+     m_quickItems       CButtonData 3 dup ({})
+   CGameSaveCharacter   ends
+
 
 .. _CGameSound:
 
 CGameSound
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
++------------+----------+---------------------------------------------------+-------------------+
+| **Offset** | **Size** | **Type**                                          | **Field**         |
++------------+----------+---------------------------------------------------+-------------------+
+| 0x00       | 71       | :ref:`CGameObject<CGameObject>`                   | m_cGameObject     |
++------------+----------+---------------------------------------------------+-------------------+
+|            | 1        |                                                   | ``<padding>``     |
++------------+----------+---------------------------------------------------+-------------------+
+| 0x48       | 212      | :ref:`CAreaFileSoundObject<CAreaFileSoundObject>` | m_soundObject     |
++------------+----------+---------------------------------------------------+-------------------+
+| 0x11c      | 20       | :ref:`CSound<CSound>`                             | m_looping         |
++------------+----------+---------------------------------------------------+-------------------+
+| 0x130      | 4        | int                                               | m_bLoopPlaying    |
++------------+----------+---------------------------------------------------+-------------------+
+| 0x134      | 4        | long                                              | m_period          |
++------------+----------+---------------------------------------------------+-------------------+
+| 0x138      | 4        | long                                              | m_periodCount     |
++------------+----------+---------------------------------------------------+-------------------+
+| 0x13c      | 1        | unsigned char                                     | m_currentSound    |
++------------+----------+---------------------------------------------------+-------------------+
+|            | 3        |                                                   | ``<padding>``     |
++------------+----------+---------------------------------------------------+-------------------+
+| 0x140      | 4        | unsigned long                                     | m_timeOfDayActive |
++------------+----------+---------------------------------------------------+-------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=71] CGameObject
-      <padding> (1 bytes)
-      data +0x48 [sizeof=212] CAreaFileSoundObject m_soundObject
-      data +0x11c [sizeof=20] CSound m_looping
-      data +0x130 [sizeof=4] int m_bLoopPlaying
-      data +0x134 [sizeof=4] long m_period
-      data +0x138 [sizeof=4] long m_periodCount
-      data +0x13c [sizeof=1] unsigned char m_currentSound
-      <padding> (3 bytes)
-      data +0x140 [sizeof=4] unsigned long m_timeOfDayActive
+   CGameSound           struct
+     m_cGameObject      CGameObject <>
+                        db ? ; padding
+     m_soundObject      CAreaFileSoundObject <>
+     m_looping          CSound <>
+     m_bLoopPlaying     dd ?
+     m_period           dd ?
+     m_periodCount      dd ?
+     m_currentSound     db ?
+                        db ? ; padding
+                        db ? ; padding
+                        db ? ; padding
+     m_timeOfDayActive  dd ?
+   CGameSound           ends
 
 
 .. _CGameSpawning:
@@ -4095,25 +4415,37 @@ Asm Definition
 CGameSpawning
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
++------------+----------+---------------------------------------------------------------------------------+---------------------------+
+| **Offset** | **Size** | **Type**                                                                        | **Field**                 |
++------------+----------+---------------------------------------------------------------------------------+---------------------------+
+| 0x00       | 71       | :ref:`CGameObject<CGameObject>`                                                 | m_cGameObject             |
++------------+----------+---------------------------------------------------------------------------------+---------------------------+
+|            | 1        |                                                                                 | ``<padding>``             |
++------------+----------+---------------------------------------------------------------------------------+---------------------------+
+| 0x48       | 200      | :ref:`CAreaFileRandomMonsterSpawningPoint<CAreaFileRandomMonsterSpawningPoint>` | m_spawningObject          |
++------------+----------+---------------------------------------------------------------------------------+---------------------------+
+| 0x110      | 16       | unsigned char                                                                   | m_terrainTable[16]        |
++------------+----------+---------------------------------------------------------------------------------+---------------------------+
+| 0x120      | 16       | unsigned char                                                                   | m_visibleTerrainTable[16] |
++------------+----------+---------------------------------------------------------------------------------+---------------------------+
+| 0x130      | 4        | long                                                                            | m_nTrackingCounter        |
++------------+----------+---------------------------------------------------------------------------------+---------------------------+
+| 0x134      | 4        | unsigned long                                                                   | m_weightSum               |
++------------+----------+---------------------------------------------------------------------------------+---------------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=71] CGameObject
-      <padding> (1 bytes)
-      data +0x48 [sizeof=200] CAreaFileRandomMonsterSpawningPoint m_spawningObject
-      data +0x110 [sizeof=16] unsigned char m_terrainTable[16]
-      data +0x120 [sizeof=16] unsigned char m_visibleTerrainTable[16]
-      data +0x130 [sizeof=4] long m_nTrackingCounter
-      data +0x134 [sizeof=4] unsigned long m_weightSum
-
-
+   CGameSpawning            struct
+     m_cGameObject          CGameObject <>
+                            db ? ; padding
+     m_spawningObject       CAreaFileRandomMonsterSpawningPoint <>
+     m_terrainTable         db 16 dup (?)
+     m_visibleTerrainTable  db 16 dup (?)
+     m_nTrackingCounter     dd ?
+     m_weightSum            dd ?
+   CGameSpawning            ends
 
 
 .. _CGameSprite:
@@ -4531,45 +4863,63 @@ Asm Definition
 
 .. _CGameSpriteGroundItem:
 
-CGameSprite::GroundItem
+CGameSprite\:\:GroundItem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | long                                   | containerID                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | long                                   | itemSlot                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 8        | :ref:`CResRef<CResRef>`                | item                          |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x10       | 8        | :ref:`CResRef<CResRef>`                | itemIcon                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x18       | 2        | unsigned short                         | count                         |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1C       | 4        | unsigned long                          | itemFlags                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] long containerID
-      data +0x04 [sizeof=4] long itemSlot
-      data +0x08 [sizeof=8] CResRef item
-      data +0x10 [sizeof=8] CResRef itemIcon
-      data +0x18 [sizeof=2] unsigned short count
-      <padding> (2 bytes)
-      data +0x1c [sizeof=4] unsigned long itemFlags
+   CGameSpriteGroundItem    struct
+     containerID            dd ?
+     itemSlot               dd ?
+     item                   CResRef <>
+     itemIcon               CResRef <>
+     count                  dw ?
+                            dw ? ; padding
+     itemFlags              dd ?
+   CGameSpriteGroundItem    ends
 
 
 .. _CGameSpriteRenderHealthBar:
 
-CGameSprite::RenderHealthBar
+CGameSprite\:\:RenderHealthBar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 8        | :ref:`SDL_Point<SDL_Point>`            | pt                            |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | unsigned long                          | c                             |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=8] SDL_Point pt
-      data +0x08 [sizeof=4] unsigned long c
+   CGameSpriteRenderHealthBar   struct
+     pt                         SDL_Point <>
+     c                          dd ?
+   CGameSpriteRenderHealthBar   ends
 
 
 .. _CGameSpriteEquipment:
@@ -4580,19 +4930,31 @@ CGameSpriteEquipment
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 156      | :ref:`CItem<CItem>`\*                  | m_items[39]                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x9C       | 1        | unsigned char                          | m_selectedWeapon              |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 1        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x9E       | 2        | unsigned short                         | m_selectedWeaponAbility       |
++------------+----------+----------------------------------------+-------------------------------+
+| 0xA0       | 4        | :ref:`CItem<CItem>`\*                  | m_pTempItem                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0xA4       | 4        | :ref:`CGameSprite<CGameSprite>`\*      | m_pSprite                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=156] CItem* m_items[39]
-      data +0x9c [sizeof=1] unsigned char m_selectedWeapon
-      <padding> (1 bytes)
-      data +0x9e [sizeof=2] unsigned short m_selectedWeaponAbility
-      data +0xa0 [sizeof=4] CItem* m_pTempItem
-      data +0xa4 [sizeof=4] CGameSprite* m_pSprite
+   CGameSpriteEquipment         struct
+     m_items                    dd 39 dup (?) ; CItem* 
+     m_selectedWeapon           db ?
+                                db ? ; padding
+     m_selectedWeaponAbility    dw ?
+     m_pTempItem                dd ? ; CItem* 
+     m_pSprite                  dd ? ; CGameSprite* 
+   CGameSpriteEquipment         ends
 
 
 .. _CGameSpriteLastUpdate:
@@ -4657,32 +5019,49 @@ Asm Definition
 CGameStatic
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
-+------------+----------+----------------------------------------+-------------------------------+
++------------+----------+-----------------------------------------------------+------------------------+
+| **Offset** | **Size** | **Type**                                            | **Field**              |
++------------+----------+-----------------------------------------------------+------------------------+
+| 0x00       | 71       | :ref:`CGameObject<CGameObject>`                     | m_cGameObject          |
++------------+----------+-----------------------------------------------------+------------------------+
+|            | 1        |                                                     | ``<padding>``          |
++------------+----------+-----------------------------------------------------+------------------------+
+| 0x48       | 76       | :ref:`CAreaFileStaticObject<CAreaFileStaticObject>` | m_header               |
++------------+----------+-----------------------------------------------------+------------------------+
+| 0x94       | 192      | :ref:`CVidCell<CVidCell>`                           | m_vidCell              |
++------------+----------+-----------------------------------------------------+------------------------+
+| 0x154      | 4        | :ref:`CResWebm<CResWebm>`\*                         | m_pMovie               |
++------------+----------+-----------------------------------------------------+------------------------+
+| 0x158      | 4        | :ref:`CResPVR<CResPVR>`\*                           | m_pImage               |
++------------+----------+-----------------------------------------------------+------------------------+
+| 0x15C      | 4        | int                                                 | m_bRender              |
++------------+----------+-----------------------------------------------------+------------------------+
+| 0x160      | 8        | :ref:`CSize<CSize>`                                 | m_size                 |
++------------+----------+-----------------------------------------------------+------------------------+
+| 0x168      | 28       | :ref:`CTypedPtrList<CTypedPtrList>`                 | m_secondaryVidCellList |
++------------+----------+-----------------------------------------------------+------------------------+
+| 0x184      | 4        | int                                                 | m_bNewPalette          |
++------------+----------+-----------------------------------------------------+------------------------+
+| 0x188      | 176      | :ref:`CVidBitmap<CVidBitmap>`                       | m_newPalette           |
++------------+----------+-----------------------------------------------------+------------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=71] CGameObject
-      <padding> (1 bytes)
-      data +0x48 [sizeof=76] CAreaFileStaticObject m_header
-      data +0x94 [sizeof=192] CVidCell m_vidCell
-      data +0x154 [sizeof=4] CResWebm* m_pMovie
-      data +0x158 [sizeof=4] CResPVR* m_pImage
-      data +0x15c [sizeof=4] int m_bRender
-      data +0x160 [sizeof=8] CSize m_size
-      data +0x168 [sizeof=28] CTypedPtrList<CPtrList,CVidCell *> m_secondaryVidCellList
-      data +0x184 [sizeof=4] int m_bNewPalette
-      data +0x188 [sizeof=176] CVidBitmap m_newPalette
-
-
-
-
-
+   CGameStatic              struct
+     m_cGameObject          CGameObject <>
+                            db ? ; padding
+     m_header               CAreaFileStaticObject <>
+     m_vidCell              CVidCell <>
+     m_pMovie               dd ? ; CResWebm* 
+     m_pImage               dd ? ; CResPVR* 
+     m_bRender              dd ?
+     m_size                 CSize <>
+     m_secondaryVidCellList CTypedPtrList <>
+     m_bNewPalette          dd ?
+     m_newPalette           CVidBitmap <>
+   CGameStatic              ends
 
 
 .. _CGameStatsRes:
@@ -4693,17 +5072,25 @@ CGameStatsRes
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | :ref:`CObject<CObject>`                | m_cObject                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 8        | :ref:`CResRef<CResRef>`                | m_cResRef                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0C       | 2        | short                                  | m_nTimesUsed                  |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=4] CObject
-      data +0x04 [sizeof=8] CResRef m_cResRef
-      data +0x0c [sizeof=2] short m_nTimesUsed
-      <padding> (2 bytes)
+   CGameStatsRes    struct
+     m_cObject      CObject <>
+     m_cResRef      CResRef <>
+     m_nTimesUsed   dw ?
+                    dw ? ; padding
+   CGameStatsRes    ends
 
 
 .. _CGameStatsSprite:
@@ -4714,24 +5101,46 @@ CGameStatsSprite
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | unsigned long                          | m_strStrongestKillName        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | unsigned long                          | m_nStrongestKillXPValue       |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | unsigned long                          | m_nPreviousTimeWithParty      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0C       | 4        | unsigned long                          | m_nJoinPartyTime              |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x10       | 4        | int                                    | m_bWithParty                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x14       | 4        | unsigned long                          | m_nChapterKillsXPValue        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x18       | 4        | unsigned long                          | m_nChapterKillsNumber         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1C       | 4        | unsigned long                          | m_nGameKillsXPValue           |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x20       | 4        | unsigned long                          | m_nGameKillsNumber            |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x24       | 64       | :ref:`CGameStatsRes<CGameStatsRes>`    | m_pSpellStats[4]              |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x64       | 64       | :ref:`CGameStatsRes<CGameStatsRes>`    | m_pWeaponStats[4]             |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] unsigned long m_strStrongestKillName
-      data +0x04 [sizeof=4] unsigned long m_nStrongestKillXPValue
-      data +0x08 [sizeof=4] unsigned long m_nPreviousTimeWithParty
-      data +0x0c [sizeof=4] unsigned long m_nJoinPartyTime
-      data +0x10 [sizeof=4] int m_bWithParty
-      data +0x14 [sizeof=4] unsigned long m_nChapterKillsXPValue
-      data +0x18 [sizeof=4] unsigned long m_nChapterKillsNumber
-      data +0x1c [sizeof=4] unsigned long m_nGameKillsXPValue
-      data +0x20 [sizeof=4] unsigned long m_nGameKillsNumber
-      data +0x24 [sizeof=64] CGameStatsRes m_pSpellStats[4]
-      data +0x64 [sizeof=64] CGameStatsRes m_pWeaponStats[4]
+   CGameStatsSprite             struct
+     m_strStrongestKillName     dd ?
+     m_nStrongestKillXPValue    dd ?
+     m_nPreviousTimeWithParty   dd ?
+     m_nJoinPartyTime           dd ?
+     m_bWithParty               dd ?
+     m_nChapterKillsXPValue     dd ?
+     m_nChapterKillsNumber      dd ?
+     m_nGameKillsXPValue        dd ?
+     m_nGameKillsNumber         dd ?
+     m_pSpellStats              CGameStatsRes 4 dup ({})
+     m_pWeaponStats             CGameStatsRes 4 dup ({})
+   CGameStatsSprite             ends
 
 
 .. _CGameTemporal:
@@ -4742,31 +5151,58 @@ CGameTemporal
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 71       | :ref:`CGameObject<CGameObject>`        | m_cGameObject                 |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 1        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x48       | 16       | unsigned char                          | m_visibleTerrainTable[16]     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x58       | 16       | :ref:`CGameAnimation<CGameAnimation>`  | m_animation                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x68       | 4        | int                                    | m_animationRunning            |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x6C       | 8        | :ref:`CPoint<CPoint>`                  | m_posExact                    |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x74       | 8        | :ref:`CPoint<CPoint>`                  | m_posDelta                    |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x7C       | 2        | short                                  | m_duration                    |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x7E       | 1        | unsigned char                          | m_durationFade                |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x7F       | 1        | unsigned char                          | m_collision                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x80       | 20       | :ref:`CSound<CSound>`                  | m_sound                       |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x94       | 4        | int                                    | m_bPermanent                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x98       | 4        | int                                    | m_bAllowSave                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x9C       | 2        | unsigned short                         | m_projectileType              |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=71] CGameObject
-      <padding> (1 bytes)
-      data +0x48 [sizeof=16] unsigned char m_visibleTerrainTable[16]
-      data +0x58 [sizeof=16] CGameAnimation m_animation
-      data +0x68 [sizeof=4] int m_animationRunning
-      data +0x6c [sizeof=8] CPoint m_posExact
-      data +0x74 [sizeof=8] CPoint m_posDelta
-      data +0x7c [sizeof=2] short m_duration
-      data +0x7e [sizeof=1] unsigned char m_durationFade
-      data +0x7f [sizeof=1] unsigned char m_collision
-      data +0x80 [sizeof=20] CSound m_sound
-      data +0x94 [sizeof=4] int m_bPermanent
-      data +0x98 [sizeof=4] int m_bAllowSave
-      data +0x9c [sizeof=2] unsigned short m_projectileType
-      <padding> (2 bytes)
-
-
-
+   CGameTemporal            struct
+     m_cGameObject          CGameObject <>
+                            db ? ; padding
+     m_visibleTerrainTable  db 16 dup (?)
+     m_animation            CGameAnimation <>
+     m_animationRunning     dd ?
+     m_posExact             CPoint <>
+     m_posDelta             CPoint <>
+     m_duration             dw ?
+     m_durationFade         db ?
+     m_collision            db ?
+     m_sound                CSound <>
+     m_bPermanent           dd ?
+     m_bAllowSave           dd ?
+     m_projectileType       dw ?
+                            dw ? ; padding
+   CGameTemporal            ends
 
 
 .. _CGameText:
@@ -4777,24 +5213,43 @@ CGameText
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 71       | :ref:`CGameObject<CGameObject>`        | m_cGameObject                 |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 1        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x48       | 4        | int                                    | m_nWidth                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x4C       | 32       | :ref:`CVidFont<CVidFont>`              | m_textFont                    |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x6C       | 4        | int                                    | m_nDuration                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x70       | 2        | unsigned short                         | m_nBeginFade                  |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x74       | 4        | :ref:`CString<CString>`                | m_sText                       |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x78       | 4        | long                                   | m_iTarget                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x7C       | 4        | :ref:`CGameObject<CGameObject>`\*      | m_pTarget                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=71] CGameObject
-      <padding> (1 bytes)
-      data +0x48 [sizeof=4] int m_nWidth
-      data +0x4c [sizeof=32] CVidFont m_textFont
-      data +0x6c [sizeof=4] int m_nDuration
-      data +0x70 [sizeof=2] unsigned short m_nBeginFade
-      <padding> (2 bytes)
-      data +0x74 [sizeof=4] CString m_sText
-      data +0x78 [sizeof=4] long m_iTarget
-      data +0x7c [sizeof=4] CGameObject* m_pTarget
-
+   CGameText        struct
+     m_cGameObject  CGameObject <>
+                    db ? ; padding
+     m_nWidth       dd ?
+     m_textFont     CVidFont <>
+     m_nDuration    dd ?
+     m_nBeginFade   dw ?
+                    dw ? ; padding
+     m_sText        CString <>
+     m_iTarget      dd ?
+     m_pTarget      dd ? ; CGameObject*
+   CGameText        ends
 
 
 .. _CGameTiledObject:
@@ -4805,24 +5260,46 @@ CGameTiledObject
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 1020     | :ref:`CGameAIBase<CGameAIBase>`        | m_cGameAIBase                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x3fc      | 8        | :ref:`CResRef<CResRef>`                | m_resID                       |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x404      | 4        | unsigned long                          | m_dwFlags                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x408      | 4        | :ref:`CPoint<CPoint>`\*                | m_pPrimarySearch              |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x40C      | 2        | unsigned short                         | m_nPrimarySearch              |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x410      | 4        | :ref:`CPoint<CPoint>`\*                | m_pSecondarySearch            |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x414      | 2        | unsigned short                         | m_nSecondarySearch            |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        |                               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x418      | 24       | :ref:`CTiledObject<CTiledObject>`      | m_tiledObject                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x430      | 32       | char                                   | m_scriptName[32]              |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=1020] CGameAIBase
-      data +0x3fc [sizeof=8] CResRef m_resID
-      data +0x404 [sizeof=4] unsigned long m_dwFlags
-      data +0x408 [sizeof=4] CPoint* m_pPrimarySearch
-      data +0x40c [sizeof=2] unsigned short m_nPrimarySearch
-      <padding> (2 bytes)
-      data +0x410 [sizeof=4] CPoint* m_pSecondarySearch
-      data +0x414 [sizeof=2] unsigned short m_nSecondarySearch
-      <padding> (2 bytes)
-      data +0x418 [sizeof=24] CTiledObject m_tiledObject
-      data +0x430 [sizeof=32] char m_scriptName[32]
+   CGameTiledObject     struct
+     m_cGameAIBase      CGameAIBase <>
+     m_resID            CResRef <>
+     m_dwFlags          dd ?
+     m_pPrimarySearch   dd ? ; CPoint* 
+     m_nPrimarySearch   dw ?
+                        dw ? ; padding
+     m_pSecondarySearch dd ? ; CPoint* 
+     m_nSecondarySearch dw ?
+                        dw ? ; padding
+     m_tiledObject      CTiledObject <>
+     m_scriptName       db 32 dup (?)
+   CGameTiledObject     ends
 
 
 .. _CGameTimer:
@@ -4833,16 +5310,24 @@ CGameTimer
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 4        | long                                   | m_time                        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 1        | unsigned char                          | m_id                          |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      data +0x00 [sizeof=4] long m_time
-      data +0x04 [sizeof=1] unsigned char m_id
-      <padding> (3 bytes)
+   CGameTimer   struct
+     m_time     dd ?
+     m_id       db ?
+                db ? ; padding
+                db ? ; padding
+                db ? ; padding
+   CGameTimer   ends
 
 
 .. _CGameTrigger:
@@ -4853,37 +5338,84 @@ CGameTrigger
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-|            |          |                                        |                               |
+| 0x00       | 1020     | :ref:`CGameAIBase<CGameAIBase>`        | m_cGameAIBase                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x3FC      | 2        | unsigned short                         | m_triggerType                 |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x400      | 16       | :ref:`CRect<CRect>`                    | m_rBounding                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x410      | 4        | unsigned long                          | m_cursorType                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x414      | 8        | unsigned char                          | m_newArea[8]                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x41C      | 32       | char                                   | m_newEntryPoint[32]           |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x43C      | 4        | unsigned long                          | m_dwFlags                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x440      | 4        | unsigned long                          | m_description                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x444      | 4        | :ref:`CPoint<CPoint>`\*                | m_pPolygon                    |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x448      | 2        | unsigned short                         | m_nPolygon                    |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x44A      | 2        | unsigned short                         | m_boundingRange               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x44C      | 8        | unsigned char                          | m_scriptRes[8]                |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x454      | 32       | char                                   | m_scriptName[32]              |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x474      | 2        | unsigned short                         | m_trapDetectionDifficulty     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x476      | 2        | unsigned short                         | m_trapDisarmingDifficulty     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x478      | 2        | unsigned short                         | m_trapActivated               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x47A      | 2        | unsigned short                         | m_trapDetected                |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x47C      | 8        | :ref:`CPoint<CPoint>`                  | m_posTrapOrigin               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x484      | 8        | :ref:`CResRef<CResRef>`                | m_keyType                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x48C      | 2        | short                                  | m_drawPoly                    |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x490      | 4        | unsigned long                          | m_iGameText                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x494      | 8        | :ref:`CPoint<CPoint>`                  | m_ptWalkTo                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
 Asm Definition
 
 ::
 
-      base +0x00 [sizeof=1020] CGameAIBase
-      data +0x3fc [sizeof=2] unsigned short m_triggerType
-      <padding> (2 bytes)
-      data +0x400 [sizeof=16] CRect m_rBounding
-      data +0x410 [sizeof=4] unsigned long m_cursorType
-      data +0x414 [sizeof=8] unsigned char m_newArea[8]
-      data +0x41c [sizeof=32] char m_newEntryPoint[32]
-      data +0x43c [sizeof=4] unsigned long m_dwFlags
-      data +0x440 [sizeof=4] unsigned long m_description
-      data +0x444 [sizeof=4] CPoint* m_pPolygon
-      data +0x448 [sizeof=2] unsigned short m_nPolygon
-      data +0x44a [sizeof=2] unsigned short m_boundingRange
-      data +0x44c [sizeof=8] unsigned char m_scriptRes[8]
-      data +0x454 [sizeof=32] char m_scriptName[32]
-      data +0x474 [sizeof=2] unsigned short m_trapDetectionDifficulty
-      data +0x476 [sizeof=2] unsigned short m_trapDisarmingDifficulty
-      data +0x478 [sizeof=2] unsigned short m_trapActivated
-      data +0x47a [sizeof=2] unsigned short m_trapDetected
-      data +0x47c [sizeof=8] CPoint m_posTrapOrigin
-      data +0x484 [sizeof=8] CResRef m_keyType
-      data +0x48c [sizeof=2] short m_drawPoly
-      <padding> (2 bytes)
-      data +0x490 [sizeof=4] unsigned long m_iGameText
-      data +0x494 [sizeof=8] CPoint m_ptWalkTo
-
+   CGameTrigger                 struct
+     m_cGameAIBase              CGameAIBase <>
+     m_triggerType              dw ?
+                                dw ? ; padding
+     m_rBounding                CRect <>
+     m_cursorType               dd ?
+     m_newArea                  db 8 dup (?)
+     m_newEntryPoint            db 32 dup (?)
+     m_dwFlags                  dd ?
+     m_description              dd ?
+     m_pPolygon                 dd ? ; CPoint* 
+     m_nPolygon                 dw ?
+     m_boundingRange            dw ?
+     m_scriptRes                db 8 dup (?)
+     m_scriptName               db 32 dup (?)
+     m_trapDetectionDifficulty  dw ?
+     m_trapDisarmingDifficulty  dw ?
+     m_trapActivated            dw ?
+     m_trapDetected             dw ?
+     m_posTrapOrigin            CPoint <>
+     m_keyType                  CResRef <>
+     m_drawPoly                 dw ?
+                                dw ? ; padding
+     m_iGameText                dd ?
+     m_ptWalkTo                 CPoint <>
+   CGameTrigger                 ends
 
 
