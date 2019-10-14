@@ -22,5 +22,6 @@ None
 
    EEex_SetActionbarState()
 
+**See Also**
 
-
+:ref:`EEex_GetActionbarState<EEex_GetActionbarState>`
