@@ -4,19 +4,19 @@
 EEex_GetActorGeneralScript 
 ===================================
 
-EEex_GetActorGeneralScript()
+::
 
+   EEex_GetActorGeneralScript(actorID)
 
+Returns the actor's general script resref as a string, (defined at offset ``0x260`` of the .CRE, or optionally overriden by the actor structure at offset ``0x58``).
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **actorID** - the actor's id 
 
 **Return**
 
+Returns a string
 
 **Example**
 
@@ -26,5 +26,5 @@ EEex_GetActorGeneralScript()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_GetActorClassScript<EEex_GetActorClassScript>`, :ref:`EEex_GetActorDefaultScript<EEex_GetActorDefaultScript>`, :ref:`EEex_GetActorOverrideScript<EEex_GetActorOverrideScript>`, :ref:`EEex_GetActorRaceScript<EEex_GetActorRaceScript>`, :ref:`EEex_GetActorSpecificsScript<EEex_GetActorSpecificsScript>`
 

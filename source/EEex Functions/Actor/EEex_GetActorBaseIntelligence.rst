@@ -4,27 +4,27 @@
 EEex_GetActorBaseIntelligence 
 ===================================
 
-EEex_GetActorBaseIntelligence()
+::
 
+   EEex_GetActorBaseIntelligence()
 
+Returns the actor's base intelligence, (defined at offset ``0x23A`` of the .CRE)
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **actorID** - the actor id to return the base intelligence for
 
 **Return**
 
+Returns the base intelligence as a byte value
 
 **Example**
 
 ::
 
-   EEex_GetActorBaseIntelligence()
+   local baseint = EEex_GetActorBaseIntelligence(actorID)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_GetActorBaseCharisma<EEex_GetActorBaseCharisma>`, :ref:`EEex_GetActorBaseConstitution<EEex_GetActorBaseConstitution>`, :ref:`EEex_GetActorBaseDexterity<EEex_GetActorBaseDexterity>`, :ref:`EEex_GetActorBaseStrength<EEex_GetActorBaseStrength>`, :ref:`EEex_GetActorBaseWisdom<EEex_GetActorBaseWisdom>`
 

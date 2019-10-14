@@ -4,27 +4,28 @@
 EEex_GetActorDirection 
 ===================================
 
-EEex_GetActorDirection()
+::
 
+   EEex_GetActorDirection(actorID)
 
+Returns the actor's direction, (as defined in DIR.IDS; stored at offset ``0x34`` of the actor structure)
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **actorID** - the actor id to return the actor's direction for
 
 **Return**
 
+A ``WORD`` value indicating direction as defined in DIR.IDS
 
 **Example**
 
 ::
 
-   EEex_GetActorDirection()
+   local attackerDirection = EEex_GetActorDirection(attackerID)
+   local targetDirection = EEex_GetActorDirection(targetID)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_GetActorRequiredDirection<EEex_GetActorRequiredDirection>`
 

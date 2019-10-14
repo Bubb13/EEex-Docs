@@ -4,27 +4,27 @@
 EEex_GetActorRace 
 ===================================
 
-EEex_GetActorRace()
+::
 
+   EEex_GetActorRace(actorID)
 
+Returns the actor's race
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **actorID** - actor id to return race for
 
 **Return**
 
+Returns a ``BYTE`` value indicating race
 
 **Example**
 
 ::
 
-   EEex_GetActorRace()
+   local race = EEex_GetActorRace(actorID)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_GetActorAlignment<EEex_GetActorAlignment>`, :ref:`EEex_GetActorAllegiance<EEex_GetActorAllegiance>`, :ref:`EEex_GetActorClass<EEex_GetActorClass>`, :ref:`EEex_GetActorGender<EEex_GetActorGender>`, :ref:`EEex_GetActorKit<EEex_GetActorKit>`, :ref:`EEex_GetActorName<EEex_GetActorName>`
 
