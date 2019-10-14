@@ -6,17 +6,15 @@ EEex_DumpDynamicCode
 
 EEex_DumpDynamicCode()
 
-
+Dumps the contents of dynamically allocated EEex code to the console window. For debugging.
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+None
 
 **Return**
 
+None
 
 **Example**
 
@@ -26,5 +24,5 @@ EEex_DumpDynamicCode()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_DumpLuaStack<EEex_DumpLuaStack>`, :ref:`EEex_ReadDwordDebug<EEex_ReadDwordDebug>`
 

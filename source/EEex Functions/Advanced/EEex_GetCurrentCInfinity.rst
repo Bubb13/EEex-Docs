@@ -6,25 +6,19 @@ EEex_GetCurrentCInfinity
 
 EEex_GetCurrentCInfinity()
 
-
+Returns the current CInfinity instance - mostly contains fields pertaining to rendering and viewport
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+None
 
 **Return**
 
+Returns the current CInfinity instance (m_cInfinity)
 
 **Example**
 
 ::
 
-   EEex_GetCurrentCInfinity()
-
-**See Also**
-
-:ref:``, :ref:`` 
+   local CInfinity = EEex_GetCurrentCInfinity()
 

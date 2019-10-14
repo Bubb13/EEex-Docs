@@ -4,27 +4,26 @@
 EEex_FreeCString 
 ===================================
 
-EEex_FreeCString()
+EEex_FreeCString(CString)
 
-
+Frees the memory allocated by the given :ref:`CString<CString>` pointer
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **CString** - the :ref:`CString<CString>` to free
 
 **Return**
 
+None
 
 **Example**
 
 ::
 
-   EEex_FreeCString()
+   local variableNamePtr = EEex_ConstructCString(variableName)
+   EEex_FreeCString(variableNamePtr)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_ConstructCString<EEex_ConstructCString>`, :ref:`EEex_CopyCString<EEex_CopyCString>`, :ref:`CString<CString>`
 

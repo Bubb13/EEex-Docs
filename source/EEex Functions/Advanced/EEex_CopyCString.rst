@@ -4,27 +4,26 @@
 EEex_CopyCString 
 ===================================
 
-EEex_CopyCString()
+EEex_CopyCString(CString)
 
-
+Copies the given :ref:`CString<CString>` and returns its pointer
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **CString** - the :ref:`CString<CString>` to copy
 
 **Return**
 
+Returns a pointer to the copied :ref:`CString<CString>`
 
 **Example**
 
 ::
 
-   EEex_CopyCString()
+   local variableNamePtr = EEex_ConstructCString(variableName)
+   local variableNameLookupPtr = EEex_CopyCString(variableNamePtr)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_ConstructCString<EEex_ConstructCString>`, :ref:`EEex_FreeCString<EEex_FreeCString>`, :ref:`CString<CString>` 
 

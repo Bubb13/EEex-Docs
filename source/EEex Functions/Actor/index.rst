@@ -25,9 +25,9 @@ Actor
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorAnimation<EEex_GetActorAnimation>`                 |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorAreaRes<EEex_GetActorAreaRes>`                     |                                                    |
+| :ref:`EEex_GetActorAreaRes<EEex_GetActorAreaRes>`                     | Returns the actor's current area resref as a string|
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorAreaSize<EEex_GetActorAreaSize>`                   |                                                    |
+| :ref:`EEex_GetActorAreaSize<EEex_GetActorAreaSize>`                   | Gets the max X and Y coords of area the actor is in|
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorBaseCharisma<EEex_GetActorBaseCharisma>`           |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
@@ -45,7 +45,7 @@ Actor
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorClass<EEex_GetActorClass>`                         |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorClassScript<EEex_GetActorClassScript>`             |                                                    |
+| :ref:`EEex_GetActorClassScript<EEex_GetActorClassScript>`             | Returns the actor's class script                   |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorClassString<EEex_GetActorClassString>`             |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
@@ -53,9 +53,9 @@ Actor
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorCurrentHP<EEex_GetActorCurrentHP>`                 |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorDefaultScript<EEex_GetActorDefaultScript>`         |                                                    |
+| :ref:`EEex_GetActorDefaultScript<EEex_GetActorDefaultScript>`         | Returns actor's default script resref as a string  |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorDialogue<EEex_GetActorDialogue>`                   |                                                    |
+| :ref:`EEex_GetActorDialogue<EEex_GetActorDialogue>`                   | Returns the actor's dialogue resref as a string    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorDirection<EEex_GetActorDirection>`                 |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
@@ -65,7 +65,7 @@ Actor
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorGeneral<EEex_GetActorGeneral>`                     |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorGeneralScript<EEex_GetActorGeneralScript>`         |                                                    |
+| :ref:`EEex_GetActorGeneralScript<EEex_GetActorGeneralScript>`         | Returns actor's general script resref as a string  |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorKit<EEex_GetActorKit>`                             |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
@@ -73,7 +73,7 @@ Actor
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorLocation<EEex_GetActorLocation>`                   |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorModalState<EEex_GetActorModalState>`               |                                                    |
+| :ref:`EEex_GetActorModalState<EEex_GetActorModalState>`               | Returns the actor's current modal state (MODAL.IDS)|
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorModalTimer<EEex_GetActorModalTimer>`               |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
@@ -81,13 +81,13 @@ Actor
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorName<EEex_GetActorName>`                           |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorOverrideScript<EEex_GetActorOverrideScript>`       |                                                    |
+| :ref:`EEex_GetActorOverrideScript<EEex_GetActorOverrideScript>`       | Returns actor's override script resref as a string |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorPosDest<EEex_GetActorPosDest>`                     |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorRace<EEex_GetActorRace>`                           |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorRaceScript<EEex_GetActorRaceScript>`               |                                                    |
+| :ref:`EEex_GetActorRaceScript<EEex_GetActorRaceScript>`               | Returns the actor's race script resref as a string |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorRequiredDirection<EEex_GetActorRequiredDirection>` |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
@@ -97,7 +97,7 @@ Actor
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorSpecific<EEex_GetActorSpecific>`                   |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorSpecificsScript<EEex_GetActorSpecificsScript>`     |                                                    |
+| :ref:`EEex_GetActorSpecificsScript<EEex_GetActorSpecificsScript>`     | Returns actor's specifics script resref as a string|
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorSpellRES<EEex_GetActorSpellRES>`                   |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
@@ -129,5 +129,5 @@ Actor
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_IterateActorEffects<EEex_IterateActorEffects>`             |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_SetActorLocal<EEex_SetActorLocal>`                         |                                                    |
+| :ref:`EEex_SetActorLocal<EEex_SetActorLocal>`                         | Sets a LOCALS variable in the actor's .CRE         |
 +-----------------------------------------------------------------------+----------------------------------------------------+
