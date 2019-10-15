@@ -316,6 +316,18 @@ Asm Definition
      m_Alignment    db ?
    CAIObjectType    ends ; size 0x14
 
+**Notes**
+
+Valid values for the following fields can be found in specific .IDS files:
+
+* **m_EnemyAlly** valid values can be found in the ``EA.IDS`` file
+* **m_General** valid values can be found in the ``GENERAL.IDS`` file
+* **m_Race** valid values can be found in the ``RACE.IDS`` file
+* **m_Class** valid values can be found in the ``CLASS.IDS`` file
+* **m_Specifics** valid values can be found in the ``SPECIFIC.IDS`` file
+* **m_Gender** valid values can be found in the ``GENDER.IDS`` file
+* **m_Alignment** valid values can be found in the ``ALIGN.IDS`` file
+
 
 .. _CAIPlayerScript:
 
