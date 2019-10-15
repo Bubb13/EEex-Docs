@@ -22,7 +22,7 @@ Returns a string
 
 ::
 
-   EEex_GetActorOverrideScript()
+   local overridescript = EEex_GetActorOverrideScript(actorID)
 
 **See Also**
 

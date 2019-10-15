@@ -41,15 +41,15 @@ Actor
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorBaseWisdom<EEex_GetActorBaseWisdom>`               | Returns the actor's base wisdom                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorCastTimer<EEex_GetActorCastTimer>`                 |                                                    |
+| :ref:`EEex_GetActorCastTimer<EEex_GetActorCastTimer>`                 | Returns cast counter value for the specified actor |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorClass<EEex_GetActorClass>`                         | Returns the actor's class                          |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorClassScript<EEex_GetActorClassScript>`             | Returns the actor's class script                   |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorClassString<EEex_GetActorClassString>`             |                                                    |
+| :ref:`EEex_GetActorClassString<EEex_GetActorClassString>`             | Returns actor class as a string                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorCurrentDest<EEex_GetActorCurrentDest>`             |                                                    |
+| :ref:`EEex_GetActorCurrentDest<EEex_GetActorCurrentDest>`             | Returns actor current destination                  |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorCurrentHP<EEex_GetActorCurrentHP>`                 | Returns the actor's current HP                     |
 +-----------------------------------------------------------------------+----------------------------------------------------+
@@ -59,31 +59,31 @@ Actor
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorDirection<EEex_GetActorDirection>`                 | Returns the actor's direction                      |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorEffectResrefs<EEex_GetActorEffectResrefs>`         |                                                    |
+| :ref:`EEex_GetActorEffectResrefs<EEex_GetActorEffectResrefs>`         | Returns a list of effects as resource references   |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorGender<EEex_GetActorGender>`                       | Returns the actor's gender                         |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorGeneral<EEex_GetActorGeneral>`                     |                                                    |
+| :ref:`EEex_GetActorGeneral<EEex_GetActorGeneral>`                     | Returns the actor's general                        |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorGeneralScript<EEex_GetActorGeneralScript>`         | Returns actor's general script resref as a string  |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorKit<EEex_GetActorKit>`                             |                                                    |
+| :ref:`EEex_GetActorKit<EEex_GetActorKit>`                             | Returns the kit for the actor                      |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorLocal<EEex_GetActorLocal>`                         |                                                    |
+| :ref:`EEex_GetActorLocal<EEex_GetActorLocal>`                         | Gets a LOCALS variable in the actor's .CRE         |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorLocation<EEex_GetActorLocation>`                   |                                                    |
+| :ref:`EEex_GetActorLocation<EEex_GetActorLocation>`                   | Returns a point coordinate indicating location     |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorModalState<EEex_GetActorModalState>`               | Returns the actor's current modal state (MODAL.IDS)|
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorModalTimer<EEex_GetActorModalTimer>`               |                                                    |
+| :ref:`EEex_GetActorModalTimer<EEex_GetActorModalTimer>`               | Returns the modal timer value for the actor        |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorMovementRate<EEex_GetActorMovementRate>`           |                                                    |
+| :ref:`EEex_GetActorMovementRate<EEex_GetActorMovementRate>`           | Returns the actor's movement rate                  |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorName<EEex_GetActorName>`                           | Returns actor's name as a string                   |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorOverrideScript<EEex_GetActorOverrideScript>`       | Returns actor's override script resref as a string |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorPosDest<EEex_GetActorPosDest>`                     |                                                    |
+| :ref:`EEex_GetActorPosDest<EEex_GetActorPosDest>`                     | Return the destination position of the actor       |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorRace<EEex_GetActorRace>`                           | Returns the actor's race                           |
 +-----------------------------------------------------------------------+----------------------------------------------------+
@@ -91,25 +91,25 @@ Actor
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorRequiredDirection<EEex_GetActorRequiredDirection>` | Returns the direction for the actor to face a point|
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorScriptName<EEex_GetActorScriptName>`               |                                                    |
+| :ref:`EEex_GetActorScriptName<EEex_GetActorScriptName>`               | Returns the script name for the actor              |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorShare<EEex_GetActorShare>`                         |                                                    |
+| :ref:`EEex_GetActorShare<EEex_GetActorShare>`                         | Returns internal actor information                 |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorSpecific<EEex_GetActorSpecific>`                   |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorSpecificsScript<EEex_GetActorSpecificsScript>`     | Returns actor's specifics script resref as a string|
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorSpellRES<EEex_GetActorSpellRES>`                   |                                                    |
+| :ref:`EEex_GetActorSpellRES<EEex_GetActorSpellRES>`                   | Returns the resref of spell the actor is casting   |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorSpellState<EEex_GetActorSpellState>`               |                                                    |
+| :ref:`EEex_GetActorSpellState<EEex_GetActorSpellState>`               | Returns spell state for the actor                  |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorSpellTimer<EEex_GetActorSpellTimer>`               |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetActorStat<EEex_GetActorStat>`                           |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorTargetID<EEex_GetActorTargetID>`                   |                                                    |
+| :ref:`EEex_GetActorTargetID<EEex_GetActorTargetID>`                   | Returns the ID of the target of the actor's action |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetActorTargetPoint<EEex_GetActorTargetPoint>`             |                                                    |
+| :ref:`EEex_GetActorTargetPoint<EEex_GetActorTargetPoint>`             | Return the target of the actor as a point          |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetImageMasterID<EEex_GetImageMasterID>`                   | Returns the actor ID of the image's master         |
 +-----------------------------------------------------------------------+----------------------------------------------------+
@@ -117,13 +117,13 @@ Actor
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_HasState<EEex_HasState>`                                   | Returns true if the actor has the specified state  |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_IsActorFacing<EEex_IsActorFacing>`                         |                                                    |
+| :ref:`EEex_IsActorFacing<EEex_IsActorFacing>`                         | Returns true if actor is facing target             |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_IsActorInCombat<EEex_IsActorInCombat>`                     |                                                    |
+| :ref:`EEex_IsActorInCombat<EEex_IsActorInCombat>`                     | Returns true if the given actor is in combat       |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_IsImmuneToOpcode<EEex_IsImmuneToOpcode>`                   |                                                    |
+| :ref:`EEex_IsImmuneToOpcode<EEex_IsImmuneToOpcode>`                   | Returns true if actor is immune to specified opcode|
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_IsImmuneToSpellLevel<EEex_IsImmuneToSpellLevel>`           |                                                    |
+| :ref:`EEex_IsImmuneToSpellLevel<EEex_IsImmuneToSpellLevel>`           | Returns true if actor is immune to spell level     |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_IsSprite<EEex_IsSprite>`                                   | Returns true if the actor is a creature            |
 +-----------------------------------------------------------------------+----------------------------------------------------+

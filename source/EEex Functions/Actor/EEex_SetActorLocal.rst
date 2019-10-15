@@ -4,7 +4,9 @@
 EEex_SetActorLocal 
 ===================================
 
-EEex_SetActorLocal(actorID, localName, value)
+::
+
+   EEex_SetActorLocal(actorID, localName, value)
 
 Sets a LOCALS variable in the actor's .CRE as if a SetGlobal(<localName>, "LOCALS", <value>) script action was executed by the given actor.
 
@@ -22,7 +24,7 @@ Returns the local variable
 
 ::
 
-   EEex_SetActorLocal()
+   EEex_SetActorLocal(actorID, "quest1completed", true)
 
 **See Also**
 

@@ -4,27 +4,27 @@
 EEex_GetActorClassString 
 ===================================
 
-EEex_GetActorClassString()
+::
 
+   EEex_GetActorClassString(actorID)
 
+Returns actor class as a string
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **actorID** - actor id to return class string for
 
 **Return**
 
+Returns actor class as a string
 
 **Example**
 
 ::
 
-   EEex_GetActorClassString()
+   local classname = EEex_GetActorClassString()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_GetActorClass<EEex_GetActorClass>`, :ref:`EEex_GetActorKit<EEex_GetActorKit>`
 

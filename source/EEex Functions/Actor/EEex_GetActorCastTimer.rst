@@ -4,27 +4,25 @@
 EEex_GetActorCastTimer 
 ===================================
 
-EEex_GetActorCastTimer()
+::
 
+   EEex_GetActorCastTimer(actorID)
 
+Returns cast counter value for the specified actor
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **actorID** - actor id to return cast counter value for
 
 **Return**
 
+Returns a value between 0 and 100
 
 **Example**
 
 ::
 
-   EEex_GetActorCastTimer()
+   casttimervalue = EEex_GetActorCastTimer(actorID)
 
-**See Also**
 
-:ref:``, :ref:`` 
 

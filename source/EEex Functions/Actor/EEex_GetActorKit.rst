@@ -4,27 +4,27 @@
 EEex_GetActorKit 
 ===================================
 
-EEex_GetActorKit()
+::
 
+   EEex_GetActorKit(actorID)
 
+Returns the kit for the actor
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **actorID** - actor id to return the kit for
 
 **Return**
 
+Returns a ``BYTE`` value indicating kit value
 
 **Example**
 
 ::
 
-   EEex_GetActorKit()
+   local kitid = EEex_GetActorKit(actorID)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_GetActorClass<EEex_GetActorClass>`, :ref:`EEex_GetActorClassString<EEex_GetActorClassString>`
 

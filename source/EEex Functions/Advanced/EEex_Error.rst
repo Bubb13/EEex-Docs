@@ -4,7 +4,9 @@
 EEex_Error 
 ===================================
 
-EEex_Error(message)
+::
+
+   EEex_Error(message)
 
 Throws a Lua error, appending the current stacktrace to the end of the message
 

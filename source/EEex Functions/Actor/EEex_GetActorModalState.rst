@@ -22,5 +22,5 @@ Returns the modal state
 
 ::
 
-   EEex_GetActorModalState()
+   local state = EEex_GetActorModalState(actorID)
 

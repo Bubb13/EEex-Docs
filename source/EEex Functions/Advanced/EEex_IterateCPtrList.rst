@@ -4,7 +4,9 @@
 EEex_IterateCPtrList 
 ===================================
 
-EEex_IterateCPtrList(CPtrList, func)
+::
+
+   EEex_IterateCPtrList(CPtrList, func)
 
 Given a pointer to a CPtrList, iterates through every element and calls func() with element as argument. If func() returns true, the iteration breaks and instantly returns.
 

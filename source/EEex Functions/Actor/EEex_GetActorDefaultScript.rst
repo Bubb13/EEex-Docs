@@ -22,7 +22,7 @@ Returns a string
 
 ::
 
-   EEex_GetActorDefaultScript()
+   local defaultscript = EEex_GetActorDefaultScript(actorID)
 
 **See Also**
 

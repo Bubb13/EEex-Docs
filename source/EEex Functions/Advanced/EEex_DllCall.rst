@@ -4,7 +4,9 @@
 EEex_DllCall 
 ===================================
 
-EEex_DllCall(dll, proc, args, ecx, pop)
+::
+
+   EEex_DllCall(dll, proc, args, ecx, pop)
 
 Calls a function from a DLL. The DLL will be loaded into the process's address space if it isn't already.
 

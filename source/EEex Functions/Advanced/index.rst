@@ -95,7 +95,7 @@ Advanced low level functions
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_ReadWord<EEex_ReadWord>`                                   | Read an unsigned ``WORD`` value from an address    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_ReserveCodeMemory<EEex_ReserveCodeMemory>`                 |                                                    |
+| :ref:`EEex_ReserveCodeMemory<EEex_ReserveCodeMemory>`                 | Dynamically allocates and reserves memory for code |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_Reset<EEex_Reset>`                                         | Executes the listeners in EEex_ResetListeners      |
 +-----------------------------------------------------------------------+----------------------------------------------------+

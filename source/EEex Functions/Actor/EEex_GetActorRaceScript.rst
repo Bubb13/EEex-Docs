@@ -22,7 +22,7 @@ Returns a string
 
 ::
 
-   EEex_GetActorRaceScript()
+   local racescript = EEex_GetActorRaceScript(actorID)
 
 **See Also**
 

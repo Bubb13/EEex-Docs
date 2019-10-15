@@ -4,7 +4,9 @@
 EEex_FunctionLog 
 ===================================
 
-EEex_FunctionLog(message)
+::
+
+   EEex_FunctionLog(message)
 
 Logs a message to the console window, prepending the message with the calling function's name
 

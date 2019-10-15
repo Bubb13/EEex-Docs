@@ -4,7 +4,9 @@
 EEex_MessageBox 
 ===================================
 
-EEex_MessageBox(message)
+::
+
+   EEex_MessageBox(message)
 
 Displays a message box to the user. Note: Suspends game until closed, which can be useful for debugging
 

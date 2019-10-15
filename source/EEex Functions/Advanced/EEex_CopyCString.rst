@@ -4,7 +4,9 @@
 EEex_CopyCString 
 ===================================
 
-EEex_CopyCString(CString)
+::
+
+   EEex_CopyCString(CString)
 
 Copies the given :ref:`CString<CString>` and returns its pointer
 

@@ -22,7 +22,7 @@ Returns a string
 
 ::
 
-   EEex_GetActorGeneralScript()
+   local genscript = EEex_GetActorGeneralScript(actorID)
 
 **See Also**
 

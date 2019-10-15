@@ -6,7 +6,7 @@ EEex_GetActorBaseIntelligence
 
 ::
 
-   EEex_GetActorBaseIntelligence()
+   EEex_GetActorBaseIntelligence(actorID)
 
 Returns the actor's base intelligence, (defined at offset ``0x23A`` of the .CRE)
 

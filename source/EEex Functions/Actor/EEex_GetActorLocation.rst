@@ -4,27 +4,27 @@
 EEex_GetActorLocation 
 ===================================
 
-EEex_GetActorLocation()
+::
 
+   EEex_GetActorLocation(actorID)
 
+Returns an x, y point coordinate indicating actor's location
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **actorID** - the actor's id to return the location for
 
 **Return**
 
+Returns an x and y point coordinate
 
 **Example**
 
 ::
 
-   EEex_GetActorLocation()
+   local targetX, targetY = EEex_GetActorLocation(targetID)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_GetActorDirection<EEex_GetActorDirection>`, :ref:`EEex_GetActorRequiredDirection<EEex_GetActorRequiredDirection>`
 

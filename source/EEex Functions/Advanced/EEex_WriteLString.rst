@@ -4,7 +4,9 @@
 EEex_WriteLString 
 ===================================
 
-EEex_WriteLString(address, toWrite, maxLength)
+::
+
+   EEex_WriteLString(address, toWrite, maxLength)
 
 Writes a string to the given address, padding the end with 0's to achieve desired length. If the string length exactly matches the field length, terminating null is not written.
 

@@ -4,7 +4,9 @@
 EEex_FreeCPtrList 
 ===================================
 
-EEex_FreeCPtrList(CPtrList)
+::
+
+   EEex_FreeCPtrList(CPtrList)
 
 Frees the memory allocated by the given CPtrList pointer
 

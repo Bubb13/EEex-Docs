@@ -4,7 +4,9 @@
 EEex_FreeCString 
 ===================================
 
-EEex_FreeCString(CString)
+::
+
+   EEex_FreeCString(CString)
 
 Frees the memory allocated by the given :ref:`CString<CString>` pointer
 

@@ -4,27 +4,29 @@
 EEex_IsActorInCombat 
 ===================================
 
-EEex_IsActorInCombat()
+::
 
+   EEex_IsActorInCombat(actorID, includeDeadZone)
 
+Returns true if the given actor is in combat
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **actorID** - the actor's id to check if in combat
+* **includeDeadZone** - boolean value, see notes
 
 **Return**
 
+Returns true or false
+
+**Notes**
+
+If includeDeadZone is set to true, the time period will be extended to until the battle music fully fades out
 
 **Example**
 
 ::
 
-   EEex_IsActorInCombat()
+   local incombat = EEex_IsActorInCombat(actorID, false)
 
-**See Also**
-
-:ref:``, :ref:`` 
 

@@ -4,27 +4,24 @@
 EEex_GetActorScriptName 
 ===================================
 
-EEex_GetActorScriptName()
+::
 
+  EEex_GetActorScriptName(actorID)
 
+Returns the script name for the actor
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **actorID** - the actor's id to return the script name for
 
 **Return**
 
+Returns a string indicating the script name
 
 **Example**
 
 ::
 
-   EEex_GetActorScriptName()
+   local sname = EEex_GetActorScriptName(actorID)
 
-**See Also**
-
-:ref:``, :ref:`` 
 

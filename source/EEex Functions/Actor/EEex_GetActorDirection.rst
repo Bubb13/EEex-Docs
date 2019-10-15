@@ -27,5 +27,5 @@ A ``WORD`` value indicating direction as defined in DIR.IDS
 
 **See Also**
 
-:ref:`EEex_GetActorRequiredDirection<EEex_GetActorRequiredDirection>`
+:ref:`EEex_GetActorRequiredDirection<EEex_GetActorRequiredDirection>`, :ref:`EEex_GetActorLocation<EEex_GetActorLocation>`
 

@@ -4,7 +4,9 @@
 EEex_Reset 
 ===================================
 
-EEex_Reset()
+::
+
+   EEex_Reset()
 
 Executes the listeners in EEex_ResetListeners. Called by first line in UI.MENU - which should have been inserted by the EEex WeiDU installer.
 

@@ -4,7 +4,9 @@
 EEex_ConstructCString 
 ===================================
 
-EEex_ConstructCString(string)
+::
+
+   EEex_ConstructCString(string)
 
 Constructs and returns a :ref:`CString<CString>` from the given Lua string
 
