@@ -4,9 +4,11 @@
 EEex_SetAreaGlobal 
 ===================================
 
-EEex_SetAreaGlobal(areaResref, globalName, value)
+::
 
-Sets an <arearesref> variable in an .ARE as if a SetGlobal(<globalName>, <areaResref>, <value>) script action was executed.
+   EEex_SetAreaGlobal(areaResref, globalName, value)
+
+Sets an *arearesref* variable named *globalName* to a *value* in an .ARE as if a ``SetGlobal(<globalName>, <areaResref>, <value>)`` script action was executed.
 
 **Parameters**
 
