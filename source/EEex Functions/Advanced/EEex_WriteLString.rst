@@ -32,5 +32,5 @@ Can crash the game if the terminating null byte ends up outside of allocated mem
 
 **See Also**
 
-:ref:`EEex_ReadString<EEex_ReadString>`, :ref:`EEex_WriteString<EEex_WriteString>` 
+:ref:`EEex_WriteString<EEex_WriteString>`, :ref:`EEex_ReadString<EEex_ReadString>`, :ref:`EEex_ReadLString<EEex_ReadLString>`
 

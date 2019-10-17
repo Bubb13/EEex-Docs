@@ -4,7 +4,9 @@
 EEex_ResolveMacroArg 
 ===================================
 
-EEex_ResolveMacroArg()
+::
+
+   EEex_ResolveMacroArg()
 
 
 

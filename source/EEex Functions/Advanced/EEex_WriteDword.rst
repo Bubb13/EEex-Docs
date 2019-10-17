@@ -4,7 +4,9 @@
 EEex_WriteDword 
 ===================================
 
-EEex_WriteDword()
+::
+
+   EEex_WriteDword()
 
 
 

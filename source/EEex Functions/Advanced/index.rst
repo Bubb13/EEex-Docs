@@ -15,25 +15,27 @@ Advanced low level functions
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | **Function**                                                          | **Description**                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_AllocCodePage<EEex_AllocCodePage>`                         |                                                    |
+| :ref:`EEex_AddressList<EEex_AddressList>`                             | Returns an array of pattern database entries       |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_CalcLabelOffset<EEex_CalcLabelOffset>`                     |                                                    |
+| :ref:`EEex_AllocCodePage<EEex_AllocCodePage>`                         | Allocate additional code pages when needed         |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_CalcWriteLength<EEex_CalcWriteLength>`                     |                                                    |
+| :ref:`EEex_CalcLabelOffset<EEex_CalcLabelOffset>`                     | Calculate the offset to a label                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_Call<EEex_Call>`                                           |                                                    |
+| :ref:`EEex_CalcWriteLength<EEex_CalcWriteLength>`                     | Calculate the write length                         |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_ClearCStringList<EEex_ClearCStringList>`                   |                                                    |
+| :ref:`EEex_Call<EEex_Call>`                                           | Calls an internal function at the given address    |
++-----------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`EEex_ClearCStringList<EEex_ClearCStringList>`                   | Clears a :ref:`CStringList<CStringList>`           |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_ConstructCString<EEex_ConstructCString>`                   | Constructs and returns CString from a Lua string   |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_CopyCString<EEex_CopyCString>`                             | Copies the given CString and returns its pointer   |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_CopyCStringList<EEex_CopyCStringList>`                     |                                                    |
+| :ref:`EEex_CopyCStringList<EEex_CopyCStringList>`                     | Copies a :ref:`CStringList<CStringList>`           |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_DecodeAssembly<EEex_DecodeAssembly>`                       |                                                    |
+| :ref:`EEex_DecodeAssembly<EEex_DecodeAssembly>`                       | Decodes assembly                                   |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_DefineAssemblyLabel<EEex_DefineAssemblyLabel>`             |                                                    |
+| :ref:`EEex_DefineAssemblyLabel<EEex_DefineAssemblyLabel>`             | Adds an array entry for a text label and an address|
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_DefineAssemblyMacro<EEex_DefineAssemblyMacro>`             |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
@@ -49,7 +51,7 @@ Advanced low level functions
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_Error<EEex_Error>`                                         | Throws a Lua error                                 |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_ExposeToLua<EEex_ExposeToLua>`                             |                                                    |
+| :ref:`EEex_ExposeToLua<EEex_ExposeToLua>`                             | Registers a function name and address with lua     |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_Free<EEex_Free>`                                           | Free memory allocated with EEex_Malloc             |
 +-----------------------------------------------------------------------+----------------------------------------------------+
@@ -65,17 +67,17 @@ Advanced low level functions
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetEffectiveY<EEex_GetEffectiveY>`                         |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_GetLuaRegistryIndex<EEex_GetLuaRegistryIndex>`             |                                                    |
+| :ref:`EEex_GetLuaRegistryIndex<EEex_GetLuaRegistryIndex>`             | Fetches a value held in the special lua registry   |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_Init<EEex_Init>`                                           | Initialize EEex - called from loader               |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_IterateCPtrList<EEex_IterateCPtrList>`                     | Iterates through every element and calls func()    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_Label<EEex_Label>`                                         |                                                    |
+| :ref:`EEex_Label<EEex_Label>`                                         | Returns an address from the global labels array    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_Malloc<EEex_Malloc>`                                       | Allocate a block of memory and return a pointer    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_Memset<EEex_Memset>`                                       |                                                    |
+| :ref:`EEex_Memset<EEex_Memset>`                                       | Fills a block of memory with a specific value      |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_MessageBox<EEex_MessageBox>`                               | Show a message box to user                         |
 +-----------------------------------------------------------------------+----------------------------------------------------+
@@ -85,11 +87,11 @@ Advanced low level functions
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_ReadDwordDebug<EEex_ReadDwordDebug>`                       | Read a ``DWORD`` value from a memory address       |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_ReadLString<EEex_ReadLString>`                             |                                                    |
+| :ref:`EEex_ReadLString<EEex_ReadLString>`                             | Reads a string from address until null or max size |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_ReadSignedWord<EEex_ReadSignedWord>`                       | Read a signed ``WORD`` value from a memory address |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_ReadString<EEex_ReadString>`                               |                                                    |
+| :ref:`EEex_ReadString<EEex_ReadString>`                               | Reads a string from an address until null          |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_ReadUserdata<EEex_ReadUserdata>`                           |                                                    |
 +-----------------------------------------------------------------------+----------------------------------------------------+
@@ -121,7 +123,7 @@ Advanced low level functions
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_WriteLString<EEex_WriteLString>`                           | Writes a null padded string to the given address   |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_WriteString<EEex_WriteString>`                             |                                                    |
+| :ref:`EEex_WriteString<EEex_WriteString>`                             | Writes a string to the specified address           |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_WriteWord<EEex_WriteWord>`                                 | Write a ``WORD`` value to a memory address         |
 +-----------------------------------------------------------------------+----------------------------------------------------+

@@ -4,7 +4,9 @@
 EEex_ResolveMacro 
 ===================================
 
-EEex_ResolveMacro()
+::
+
+   EEex_ResolveMacro()
 
 
 

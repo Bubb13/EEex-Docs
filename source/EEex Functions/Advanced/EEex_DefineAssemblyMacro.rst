@@ -4,7 +4,9 @@
 EEex_DefineAssemblyMacro 
 ===================================
 
-EEex_DefineAssemblyMacro()
+::
+
+   EEex_DefineAssemblyMacro()
 
 
 

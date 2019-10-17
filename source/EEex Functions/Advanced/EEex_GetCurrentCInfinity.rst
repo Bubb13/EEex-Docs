@@ -4,7 +4,9 @@
 EEex_GetCurrentCInfinity 
 ===================================
 
-EEex_GetCurrentCInfinity()
+::
+
+   EEex_GetCurrentCInfinity()
 
 Returns the current CInfinity instance - mostly contains fields pertaining to rendering and viewport
 

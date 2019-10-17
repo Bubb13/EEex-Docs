@@ -4,7 +4,9 @@
 EEex_DumpLuaStack 
 ===================================
 
-EEex_DumpLuaStack()
+::
+
+   EEex_DumpLuaStack()
 
 Dumps the contents of the Lua stack to the console window. For debugging.
 

@@ -4,27 +4,30 @@
 EEex_CalcWriteLength 
 ===================================
 
-EEex_CalcWriteLength()
+Calculate the length of data to write based on the arguments supplied
 
+::
+
+   EEex_CalcWriteLength(address, args)
 
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
+* **address**
+* **args**
 
 
 **Return**
 
+An integer value representing the write length
 
 **Example**
 
 ::
 
-   EEex_CalcWriteLength()
+   writeLength = EEex_CalcWriteLength(allocEntry.address, assembly)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_CalcLabelOffset<EEex_CalcLabelOffset>`
 

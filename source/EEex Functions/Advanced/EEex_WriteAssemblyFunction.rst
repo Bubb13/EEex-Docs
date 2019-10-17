@@ -4,7 +4,9 @@
 EEex_WriteAssemblyFunction 
 ===================================
 
-EEex_WriteAssemblyFunction()
+::
+
+   EEex_WriteAssemblyFunction()
 
 
 

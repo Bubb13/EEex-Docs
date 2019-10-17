@@ -4,7 +4,9 @@
 EEex_DumpDynamicCode 
 ===================================
 
-EEex_DumpDynamicCode()
+::
+
+   EEex_DumpDynamicCode()
 
 Dumps the contents of dynamically allocated EEex code to the console window. For debugging.
 

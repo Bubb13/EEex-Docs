@@ -4,7 +4,9 @@
 EEex_ReadDwordDebug 
 ===================================
 
-EEex_ReadDwordDebug(reading, read)
+::
+
+   EEex_ReadDwordDebug(reading, read)
 
 Called by EEex_ReadDword() to help debug crashes. Disabled by default
 

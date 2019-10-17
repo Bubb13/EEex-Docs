@@ -4,7 +4,11 @@
 EEex_GetEffectiveY 
 ===================================
 
-EEex_GetEffectiveY()
+Returns Y
+
+::
+
+   EEex_GetEffectiveY()
 
 
 
@@ -17,6 +21,11 @@ EEex_GetEffectiveY()
 
 **Return**
 
+Returns Y 
+
+**Notes**
+
+Function is implemented by raw asm byte code via :ref:`EEex_WriteAssemblyFunction<EEex_WriteAssemblyFunction>`
 
 **Example**
 
@@ -24,7 +33,5 @@ EEex_GetEffectiveY()
 
    EEex_GetEffectiveY()
 
-**See Also**
 
-:ref:``, :ref:`` 
 

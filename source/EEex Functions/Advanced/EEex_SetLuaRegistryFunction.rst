@@ -4,7 +4,9 @@
 EEex_SetLuaRegistryFunction 
 ===================================
 
-EEex_SetLuaRegistryFunction()
+::
+
+   EEex_SetLuaRegistryFunction()
 
 
 

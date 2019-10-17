@@ -4,7 +4,9 @@
 EEex_WriteAssemblyAuto 
 ===================================
 
-EEex_WriteAssemblyAuto()
+::
+
+   EEex_WriteAssemblyAuto()
 
 
 
