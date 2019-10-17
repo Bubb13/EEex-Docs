@@ -35,5 +35,5 @@ For more technical information on how the EEex loader works and how it implement
 
 **See Also**
 
-:ref:`EEex_Init<EEex_Init>`, :ref:`EEex_ExposeToLua<EEex_ExposeToLua>`, :ref:`EEex_AddressList<EEex_AddressList>`
+:ref:`EEex_ReadByte<EEex_ReadByte>`, :ref:`EEex_ReadWord<EEex_ReadWord>`, :ref:`EEex_WriteWord<EEex_WriteWord>`, :ref:`EEex_ReadDword<EEex_ReadDword>`, :ref:`EEex_WriteDword<EEex_WriteDword>`, :ref:`EEex_Init<EEex_Init>`, :ref:`EEex_ExposeToLua<EEex_ExposeToLua>`, :ref:`EEex_AddressList<EEex_AddressList>`
 

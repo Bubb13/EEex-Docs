@@ -12,7 +12,7 @@ Dynamically allocates and reserves executable memory for new code
 
 **Parameters**
 
-* **assembly** - pointer to the raw bytecode assembly data to write to the newly allocated memory
+* **assembly** - pointer to the assembler data to write to the newly allocated memory
 
 **Return**
 

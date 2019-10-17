@@ -113,9 +113,9 @@ Advanced low level functions
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_WriteAssembly<EEex_WriteAssembly>`                         | Write raw assembly x86 opcodes to memory location  |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_WriteAssemblyAuto<EEex_WriteAssemblyAuto>`                 |                                                    |
+| :ref:`EEex_WriteAssemblyAuto<EEex_WriteAssemblyAuto>`                 | Writes assembly declarations into dynamic memory   |
 +-----------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_WriteAssemblyFunction<EEex_WriteAssemblyFunction>`         |                                                    |
+| :ref:`EEex_WriteAssemblyFunction<EEex_WriteAssemblyFunction>`         | Writes assembly into memory and exposes to lua     |
 +-----------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_WriteByte<EEex_WriteByte>`                                 | Write a ``BYTE`` value to a memory address         |
 +-----------------------------------------------------------------------+----------------------------------------------------+
