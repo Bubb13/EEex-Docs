@@ -4,19 +4,20 @@
 EEex_UnmemorizeInnateSpell 
 ===================================
 
-EEex_UnmemorizeInnateSpell()
+::
 
+   EEex_UnmemorizeInnateSpell(actorID, index)
 
+Unmemorize an innate spell for an actor
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **actorID** - id of actor that is unmemorizing spell
+* **resref** - resource reference of spell to unmemorize
 
 **Return**
 
+None
 
 **Example**
 
@@ -26,5 +27,5 @@ EEex_UnmemorizeInnateSpell()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_MemorizeClericSpell<EEex_MemorizeClericSpell>`, :ref:`EEex_MemorizeInnateSpell<EEex_MemorizeInnateSpell>`, :ref:`EEex_MemorizeWizardSpell<EEex_MemorizeWizardSpell>`, :ref:`EEex_UnmemorizeClericSpell<EEex_UnmemorizeClericSpell>`, :ref:`EEex_UnmemorizeWizardSpell<EEex_UnmemorizeWizardSpell>`
 

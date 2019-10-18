@@ -4,19 +4,20 @@
 EEex_ProcessInnateMemorization 
 ===================================
 
-EEex_ProcessInnateMemorization()
+::
 
+   EEex_ProcessInnateMemorization(actorID, func)
 
+Iterate memorized innate spells for an actor
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **actorID** - id of actor to iterate spells for
+* **func** - return function that passes back spell
 
 **Return**
 
+Special
 
 **Example**
 
@@ -26,5 +27,5 @@ EEex_ProcessInnateMemorization()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_ProcessClericMemorization<EEex_ProcessClericMemorization>`, :ref:`EEex_ProcessKnownClericSpells<EEex_ProcessKnownClericSpells>`, :ref:`EEex_ProcessKnownInnateSpells<EEex_ProcessKnownInnateSpells>`, :ref:`EEex_ProcessKnownWizardSpells<EEex_ProcessKnownWizardSpells>`, :ref:`EEex_ProcessWizardMemorization<EEex_ProcessWizardMemorization>`
 

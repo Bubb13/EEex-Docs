@@ -4,27 +4,27 @@
 EEex_GetSpellName 
 ===================================
 
-EEex_GetSpellName()
+::
 
+   EEex_GetSpellName(resrefLocation)
 
+Returns a string containing spell name
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **resrefLocation** - resource reference of spell to return name for
 
 **Return**
 
+Returns a string
 
 **Example**
 
 ::
 
-   EEex_GetSpellName()
+   local name = EEex_GetSpellName("SPWI304")
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_GetSpellDescription<EEex_GetSpellDescription>`, :ref:`EEex_GetSpellIcon<EEex_GetSpellIcon>`
 

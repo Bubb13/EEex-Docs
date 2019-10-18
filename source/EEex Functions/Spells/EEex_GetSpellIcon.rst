@@ -4,27 +4,27 @@
 EEex_GetSpellIcon 
 ===================================
 
-EEex_GetSpellIcon()
+::
 
+   EEex_GetSpellIcon(resrefLocation)
 
+Returns a string containing spell icon id
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **resrefLocation** - resource reference of spell to return icon for
 
 **Return**
 
+Returns a string 
 
 **Example**
 
 ::
 
-   EEex_GetSpellIcon()
+   local icon = EEex_GetSpellIcon("SPWI304")
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_GetSpellDescription<EEex_GetSpellDescription>`, :ref:`EEex_GetSpellName<EEex_GetSpellName>`
 

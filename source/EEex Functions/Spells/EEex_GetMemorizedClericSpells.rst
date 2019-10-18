@@ -4,27 +4,27 @@
 EEex_GetMemorizedClericSpells 
 ===================================
 
-EEex_GetMemorizedClericSpells()
+::
 
+   EEex_GetMemorizedClericSpells(actorID)
 
+Returns an array of memorized cleric spells for specified actor.
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **actorID** - id of actor to return memorized cleric spells for
 
 **Return**
 
+Returns an array of memorized cleric spells for specified actor. The returned array contains the following fields and values for each spell returned: ``resref``, ``icon``, ``castable``, ``index``, ``name``, ``description``
 
 **Example**
 
 ::
 
-   EEex_GetMemorizedClericSpells()
+   local mempriestspells = EEex_GetMemorizedClericSpells(actorID)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_GetKnownClericSpells<EEex_GetKnownClericSpells>`, :ref:`EEex_GetMemorizedInnateSpells<EEex_GetMemorizedInnateSpells>`, :ref:`EEex_GetMemorizedWizardSpells<EEex_GetMemorizedWizardSpells>` 
 

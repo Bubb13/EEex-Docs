@@ -6,25 +6,23 @@ EEex_IsSpellValid
 
 EEex_IsSpellValid()
 
-
+Returns true if resource is a valid spell
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **resrefLocation** - resource reference to check if a valid spell
 
 **Return**
 
+Returns true or false
 
 **Example**
 
 ::
 
-   EEex_IsSpellValid()
+   local bSpellvalid = EEex_IsSpellValid("SPWI304") -- true
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_GetSpellData<EEex_GetSpellData>`
 
