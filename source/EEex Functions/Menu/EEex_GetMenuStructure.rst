@@ -4,27 +4,27 @@
 EEex_GetMenuStructure 
 ===================================
 
-EEex_GetMenuStructure()
+::
 
+   EEex_GetMenuStructure(menuName)
 
+Returns menu structure
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **menuName** - menu name to return structure for
 
 **Return**
 
+Returns a pointer to the menu structure
 
 **Example**
 
 ::
 
-   EEex_GetMenuStructure()
+   local menu = EEex_GetMenuStructure(menuName)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_GetMenuFunctionOffset<EEex_GetMenuFunctionOffset>`
 

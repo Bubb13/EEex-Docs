@@ -4,19 +4,19 @@
 EEex_GetMenuItemAddress 
 ===================================
 
-EEex_GetMenuItemAddress()
+::
 
+   EEex_GetMenuItemAddress(menuItemName)
 
+Return an address of an menu item
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **menuItemName** - menu item name to return address for
 
 **Return**
 
+Returns menu item address
 
 **Example**
 
@@ -26,5 +26,5 @@ EEex_GetMenuItemAddress()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_GetMenuAddressFromItem<EEex_GetMenuAddressFromItem>`
 

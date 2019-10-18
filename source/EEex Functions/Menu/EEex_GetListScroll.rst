@@ -4,27 +4,27 @@
 EEex_GetListScroll 
 ===================================
 
-EEex_GetListScroll()
+::
+   
+   EEex_GetListScroll(listName)
 
-
+Get list scroll position
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **listName** - list to return scroll positon for
 
 **Return**
 
+Returns scroll position
 
 **Example**
 
 ::
 
-   EEex_GetListScroll()
+   local scrollpos = EEex_GetListScroll(listName)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_SetListScroll<EEex_SetListScroll>`
 

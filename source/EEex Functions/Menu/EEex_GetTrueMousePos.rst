@@ -4,27 +4,27 @@
 EEex_GetTrueMousePos 
 ===================================
 
-EEex_GetTrueMousePos()
+::
 
+   EEex_GetTrueMousePos()
 
+Returns x and y coordinate for mouse position
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+None
 
 **Return**
 
+Returns and x and y coordinate representing the mouse position
 
 **Example**
 
 ::
 
-   EEex_GetTrueMousePos()
+   local mouseX, mouseY = EEex_GetTrueMousePos()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_IsCursorWithin<EEex_IsCursorWithin>`, :ref:`EEex_IsCursorWithinMenu<EEex_IsCursorWithinMenu>`, :ref:`EEex_ScreenToWorldXY<EEex_ScreenToWorldXY>`
 

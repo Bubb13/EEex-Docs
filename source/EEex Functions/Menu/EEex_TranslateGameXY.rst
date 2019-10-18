@@ -4,19 +4,20 @@
 EEex_TranslateGameXY 
 ===================================
 
-EEex_TranslateGameXY()
+::
 
+   EEex_TranslateGameXY(mouseGameX, mouseGameY)
 
+Translates the given mouse coordinate to viewport coordinates
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **mouseGameX** - x game coordinate to translate
+* **mouseGameY** - y game coordinate to translate
 
 **Return**
 
+Returns translated x and y viewport coordinates
 
 **Example**
 
@@ -26,5 +27,5 @@ EEex_TranslateGameXY()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_ScreenToWorldXY<EEex_ScreenToWorldXY>`, :ref:`EEex_GetTrueMousePos<EEex_GetTrueMousePos>` 
 

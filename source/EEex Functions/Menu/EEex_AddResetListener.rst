@@ -4,19 +4,19 @@
 EEex_AddResetListener 
 ===================================
 
-EEex_AddResetListener()
+::
 
+   EEex_AddResetListener(listener)
 
+Adds the specified listener function to the EEex_ResetListeners list
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **listener** - function to add
 
 **Return**
 
+None
 
 **Example**
 
@@ -26,5 +26,5 @@ EEex_AddResetListener()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_AddUIMenuLoadListener<EEex_AddUIMenuLoadListener>`, :ref:`EEex_AddPostResetListener<EEex_AddPostResetListener>`
 

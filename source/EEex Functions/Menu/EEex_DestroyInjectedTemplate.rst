@@ -4,19 +4,21 @@
 EEex_DestroyInjectedTemplate 
 ===================================
 
-EEex_DestroyInjectedTemplate()
+::
 
+   EEex_DestroyInjectedTemplate(menuName, templateName, instanceId)
 
+Destroys an instance injected into a menu via :ref:`EEex_InjectTemplate<EEex_InjectTemplate>` 
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **menuName** - menu name
+* **templateName** - template name
+* **instanceId** - instance id
 
 **Return**
 
+None
 
 **Example**
 
@@ -26,5 +28,5 @@ EEex_DestroyInjectedTemplate()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_InjectTemplate<EEex_InjectTemplate>` 
 
