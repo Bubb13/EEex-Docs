@@ -4,27 +4,27 @@
 EEex_ParseObjectString 
 ===================================
 
-EEex_ParseObjectString()
+::
 
+   EEex_ParseObjectString(string)
 
+Parses the given object string in standard BAF syntax and returns a pointer to the compiled :ref:`CAIObjectType<CAIObjectType>` instance. Use :ref:`EEex_EvalObjectAsActor<EEex_EvalObjectAsActor>` to evaluate the compiled object instance in relation to an actor.
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **string** - the string to evaluate
 
 **Return**
 
+Returns pointer to the object
 
 **Example**
 
 ::
 
-   EEex_ParseObjectString()
+   local object = EEex_ParseObjectString(string)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_EvalObjectAsActor<EEex_EvalObjectAsActor>`, :ref:`EEex_EvalObjectStringAsActor<EEex_EvalObjectStringAsActor>` 
 
