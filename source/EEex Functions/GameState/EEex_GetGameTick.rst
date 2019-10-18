@@ -4,7 +4,9 @@
 EEex_GetGameTick 
 ===================================
 
-EEex_GetGameTick()
+::
+
+   EEex_GetGameTick()
 
 Returns the game time tick (``m_gameTime``) value from ``m_pObjectGame``
 
@@ -20,7 +22,7 @@ Returns the game time tick value
 
 ::
 
-   EEex_GetGameTick()
+   local tick = EEex_GetGameTick()
 
 **See Also**
 

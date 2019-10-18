@@ -4,27 +4,27 @@
 EEex_GetGlobal 
 ===================================
 
-EEex_GetGlobal()
+::
 
+   EEex_GetGlobal(globalName)
 
+Gets a GLOBAL variable's value from the .GAM
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **globalName** - the variable name to fetch the value for
 
 **Return**
 
+Returns the global variable
 
 **Example**
 
 ::
 
-   EEex_GetGlobal()
+   testervalue = EEex_GetGlobal("tester")
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_SetGlobal<EEex_SetGlobal>`, :ref:`EEex_FetchVariable<EEex_FetchVariable>`, :ref:`EEex_SetVariable<EEex_SetVariable>`
 

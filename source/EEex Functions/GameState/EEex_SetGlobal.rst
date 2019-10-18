@@ -4,9 +4,11 @@
 EEex_SetGlobal 
 ===================================
 
-EEex_SetGlobal(globalName, value)
+::
 
-Sets a "GLOBAL" variable in the .GAM as if a SetGlobal(<globalName>, "GLOBAL", <value>) script action was executed.
+   EEex_SetGlobal(globalName, value)
+
+Sets a GLOBAL variable's value in the .GAM as if a ``SetGlobal(<globalName>, "GLOBAL", <value>)`` script action was executed.
 
 **Parameters**
 
@@ -25,5 +27,5 @@ Returns the global variable
 
 **See Also**
 
-:ref:`EEex_GetGlobal<EEex_GetGlobal>`, :ref:`EEex_SetVariable<EEex_SetVariable>`
+:ref:`EEex_GetGlobal<EEex_GetGlobal>`, :ref:`EEex_FetchVariable<EEex_FetchVariable>`, :ref:`EEex_SetVariable<EEex_SetVariable>`
 
