@@ -19,6 +19,8 @@ Menu
 +-------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_AddResetListener<EEex_AddResetListener>`               | Add function to the EEex_ResetListeners list       |
 +-------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`EEex_AddUIMenuLoadListener<EEex_AddUIMenuLoadListener>`     | Add function to be called after initial UI.MENU    |
++-------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_DestroyInjectedTemplate<EEex_DestroyInjectedTemplate>` | Destroys an instance injected into a menu          |
 +-------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_FetchMenuRes<EEex_FetchMenuRes>`                       | Fetch menu resource reference                      |

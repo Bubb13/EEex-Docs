@@ -26,5 +26,5 @@ None
 
 **See Also**
 
-:ref:`EEex_AddUIMenuLoadListener<EEex_AddUIMenuLoadListener>`, :ref:`EEex_AddPostResetListener<EEex_AddPostResetListener>`
+:ref:`EEex_LoadMenuFile<EEex_LoadMenuFile>`, :ref:`EEex_AddUIMenuLoadListener<EEex_AddUIMenuLoadListener>`, :ref:`EEex_AddPostResetListener<EEex_AddPostResetListener>`
 
