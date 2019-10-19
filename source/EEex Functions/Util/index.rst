@@ -15,47 +15,47 @@ Util
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
 | **Function**                                                        | **Description**                                                                              |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_AreBitsSet<EEex_AreBitsSet>`                             |                                                                                              |
+| :ref:`EEex_AreBitsSet<EEex_AreBitsSet>`                             | Returns true if bits match                                                                   |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_AreBitsUnset<EEex_AreBitsUnset>`                         |                                                                                              |
+| :ref:`EEex_AreBitsUnset<EEex_AreBitsUnset>`                         | Returns true if bits dont match                                                              |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_CharFind<EEex_CharFind>`                                 |                                                                                              |
+| :ref:`EEex_CharFind<EEex_CharFind>`                                 | Finds the first instance of the given char after or at the starting index                    |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_ConcatTables<EEex_ConcatTables>`                         |                                                                                              |
+| :ref:`EEex_ConcatTables<EEex_ConcatTables>`                         | Flattens given table so that any nested tables are merged                                    |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_CyclicBound<EEex_CyclicBound>`                           |                                                                                              |
+| :ref:`EEex_CyclicBound<EEex_CyclicBound>`                           | Adjust a cyclical numeric value that is bounded by an lower and upper value                  |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_Flags<EEex_Flags>`                                       |                                                                                              |
+| :ref:`EEex_Flags<EEex_Flags>`                                       | Performs bitwise OR to combine flag values                                                   |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_IsBitSet<EEex_IsBitSet>`                                 |                                                                                              |
+| :ref:`EEex_IsBitSet<EEex_IsBitSet>`                                 | Determines if an indexed bit value is set                                                    |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_IsBitUnset<EEex_IsBitUnset>`                             |                                                                                              |
+| :ref:`EEex_IsBitUnset<EEex_IsBitUnset>`                             | Determines if an indexed bit value is not set                                                |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_IsMaskSet<EEex_IsMaskSet>`                               |                                                                                              |
+| :ref:`EEex_IsMaskSet<EEex_IsMaskSet>`                               | Determines if a mask value matches                                                           |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_IsMaskUnset<EEex_IsMaskUnset>`                           |                                                                                              |
+| :ref:`EEex_IsMaskUnset<EEex_IsMaskUnset>`                           | Determines if a mask value does not match                                                    |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
 | :ref:`EEex_IsValidBackstabDirection<EEex_IsValidBackstabDirection>` | Returns true if the attackerID actor's direction is sufficent to backstab the targetID actor |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_RoundUp<EEex_RoundUp>`                                   |                                                                                              |
+| :ref:`EEex_RoundUp<EEex_RoundUp>`                                   | Rounds the given number upwards to the nearest multiple                                      |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_SetBit<EEex_SetBit>`                                     |                                                                                              |
+| :ref:`EEex_SetBit<EEex_SetBit>`                                     | Sets a specific bit in a value to 1                                                          |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_SetBits<EEex_SetBits>`                                   |                                                                                              |
+| :ref:`EEex_SetBits<EEex_SetBits>`                                   | Sets all the bit values to 1 that match the bitwise mask                                     |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_SetMask<EEex_SetMask>`                                   |                                                                                              |
+| :ref:`EEex_SetMask<EEex_SetMask>`                                   | Sets all the bit values to 1 that match the bitwise mask                                     |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_SplitByChar<EEex_SplitByChar>`                           |                                                                                              |
+| :ref:`EEex_SplitByChar<EEex_SplitByChar>`                           | Returns a table of string sequences that where separated by a char                           |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_StringStartsWith<EEex_StringStartsWith>`                 |                                                                                              |
+| :ref:`EEex_StringStartsWith<EEex_StringStartsWith>`                 | Checks the first character of a string                                                       |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_ToHex<EEex_ToHex>`                                       |                                                                                              |
+| :ref:`EEex_ToHex<EEex_ToHex>`                                       | Converts a numeric value to a hex string                                                     |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_UnsetBit<EEex_UnsetBit>`                                 |                                                                                              |
+| :ref:`EEex_UnsetBit<EEex_UnsetBit>`                                 | Sets a specific bit in a value to 0                                                          |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_UnsetBits<EEex_UnsetBits>`                               |                                                                                              |
+| :ref:`EEex_UnsetBits<EEex_UnsetBits>`                               | Sets all the bit values to 0 that match the bitwise mask                                     |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_UnsetMask<EEex_UnsetMask>`                               |                                                                                              |
+| :ref:`EEex_UnsetMask<EEex_UnsetMask>`                               | Sets all the bit values to 0 that match the bitwise mask                                     |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-| :ref:`EEex_WithinCyclicRange<EEex_WithinCyclicRange>`               |                                                                                              |
+| :ref:`EEex_WithinCyclicRange<EEex_WithinCyclicRange>`               | Returns true if a cyclical numeric value is within range of another numeric value            |
 +---------------------------------------------------------------------+----------------------------------------------------------------------------------------------+

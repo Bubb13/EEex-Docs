@@ -4,27 +4,26 @@
 EEex_ConcatTables 
 ===================================
 
-EEex_ConcatTables()
+::
 
+   EEex_ConcatTables(tables)
 
+Flattens given table so that any nested tables are merged. Example: ``{"Hello", {"World"}}`` becomes ``{"Hello", "World"}``.
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **tables** - table containing any nested tables to merge
 
 **Return**
 
+Returns a table
 
 **Example**
 
 ::
 
-   EEex_ConcatTables()
+   local mergedtable = EEex_ConcatTables(tables)
 
 **See Also**
 
-:ref:``, :ref:`` 
-
+:ref:`EEex_SplitByChar<EEex_SplitByChar>`
