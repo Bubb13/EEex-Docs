@@ -4,7 +4,9 @@
 EEex_AddActionbarListener 
 ===================================
 
-EEex_AddActionbarListener(func)
+::
+
+   EEex_AddActionbarListener(func)
 
 Add a listener function to the actionbar
 

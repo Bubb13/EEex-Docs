@@ -4,7 +4,9 @@
 EEex_HookBardThieving 
 ===================================
 
-EEex_HookBardThieving()
+::
+
+   EEex_HookBardThieving()
 
 Returns a class IDS that will be what the game engine treats the character as when they use their thieving abilities.
 

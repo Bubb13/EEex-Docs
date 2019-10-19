@@ -4,7 +4,9 @@
 EEex_IsActionbarButtonDown 
 ===================================
 
-EEex_IsActionbarButtonDown(buttonIndex)
+::
+
+   EEex_IsActionbarButtonDown(buttonIndex)
 
 Determines whether a specific button in the actionbar is in the down state (being clicked)
 

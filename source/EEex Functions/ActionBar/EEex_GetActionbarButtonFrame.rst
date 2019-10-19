@@ -4,7 +4,9 @@
 EEex_GetActionbarButtonFrame 
 ===================================
 
-EEex_GetActionbarButtonFrame(buttonIndex)
+::
+
+   EEex_GetActionbarButtonFrame(buttonIndex)
 
 Returns the current frame of the actionbar button at buttonIndex, taking into account the click status.
 

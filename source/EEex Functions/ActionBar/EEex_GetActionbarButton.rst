@@ -4,7 +4,9 @@
 EEex_GetActionbarButton 
 ===================================
 
-EEex_GetActionbarButton(buttonIndex)
+::
+
+   EEex_GetActionbarButton(buttonIndex)
 
 Retrieves the button type of a specific button on the actionbar
 

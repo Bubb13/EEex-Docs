@@ -4,7 +4,9 @@
 EEex_UpdateActionbar 
 ===================================
 
-EEex_UpdateActionbar()
+::
+
+   EEex_UpdateActionbar()
 
 Forces the actionbar to refresh its state. Use if making changes with :ref:`EEex_SetActionbarButton<EEex_SetActionbarButton>` outside of an actionbar listener.
 

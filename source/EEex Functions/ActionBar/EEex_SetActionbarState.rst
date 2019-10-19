@@ -4,7 +4,9 @@
 EEex_SetActionbarState 
 ===================================
 
-EEex_SetActionbarState(actionbarConfig)
+::
+
+   EEex_SetActionbarState(actionbarConfig)
 
 Sets the state of the actionbar
 

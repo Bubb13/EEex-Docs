@@ -4,7 +4,9 @@
 EEex_SetActionbarButton 
 ===================================
 
-EEex_SetActionbarButton(buttonIndex, buttonType)
+::
+
+   EEex_SetActionbarButton(buttonIndex, buttonType)
 
 Sets the button type of a specific button on the actionbar
 
