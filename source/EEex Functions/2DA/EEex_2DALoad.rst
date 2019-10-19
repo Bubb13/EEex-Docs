@@ -12,7 +12,7 @@ Loads a two dimensional (2D) resource - a .2da text based file that stores game 
 
 **Parameters**
 
-* **_2DAResref** - resource reference of the 2da file to load into 
+* **_2DAResref** - resource reference of the 2da file to load into a :ref:`C2DArray<C2DArray>` structure
 
 **Return**
 
