@@ -4,19 +4,19 @@
 EEex_InstallRenderHook 
 ===================================
 
-EEex_InstallRenderHook()
+::
 
+   EEex_InstallRenderHook()
 
+Installs a hook for rendering and drawing of primitive shapes, rectangles and lines
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+None
 
 **Return**
 
+None
 
 **Example**
 
@@ -26,5 +26,5 @@ EEex_InstallRenderHook()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_ResetHook<EEex_ResetHook>`
 

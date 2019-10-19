@@ -4,19 +4,19 @@
 EEex_InstallFixes 
 ===================================
 
-EEex_InstallFixes()
+::
 
+   EEex_InstallFixes()
 
+Installs game engine bug fixes and other enhancements
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+None
 
 **Return**
 
+None
 
 **Example**
 
@@ -26,5 +26,5 @@ EEex_InstallFixes()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_InstallLuaHooks<EEex_InstallLuaHooks>`, :ref:`EEex_InstallOpcodeChanges<EEex_InstallOpcodeChanges>`
 

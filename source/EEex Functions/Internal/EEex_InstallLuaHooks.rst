@@ -4,19 +4,19 @@
 EEex_InstallLuaHooks 
 ===================================
 
-EEex_InstallLuaHooks()
+::
 
+   EEex_InstallLuaHooks()
 
+Install a hook for lua 
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+None
 
 **Return**
 
+None
 
 **Example**
 
@@ -26,5 +26,5 @@ EEex_InstallLuaHooks()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_InstallMenuHooks<EEex_InstallMenuHooks>`, :ref:`EEex_InstallFixes<EEex_InstallFixes>`
 

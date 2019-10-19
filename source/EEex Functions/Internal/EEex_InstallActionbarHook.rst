@@ -4,14 +4,15 @@
 EEex_InstallActionbarHook 
 ===================================
 
-EEex_InstallActionbarHook()
+::
+
+   EEex_InstallActionbarHook()
 
 Install the hook for the actionbar
 
 **Parameters**
 
 None
-
 
 **Return**
 

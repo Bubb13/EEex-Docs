@@ -4,19 +4,19 @@
 EEex_HookReloadStats 
 ===================================
 
-EEex_HookReloadStats()
+::
 
+   EEex_HookReloadStats(cre)
 
+Reload derived base stats for a specified creature
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **cre** - cre
 
 **Return**
 
+None
 
 **Example**
 
@@ -26,5 +26,5 @@ EEex_HookReloadStats()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_HookCopyStats<EEex_HookCopyStats>`
 

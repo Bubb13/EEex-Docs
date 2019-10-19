@@ -4,19 +4,19 @@
 EEex_HookCopyStats 
 ===================================
 
-EEex_HookCopyStats()
+::
 
+   EEex_HookCopyStats(cre)
 
+Copy a creature's stat
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **cre**
 
 **Return**
 
+None
 
 **Example**
 
@@ -26,5 +26,5 @@ EEex_HookCopyStats()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_HookReloadStats<EEex_HookReloadStats>`
 

@@ -4,19 +4,19 @@
 EEex_HookDeconstructCreature 
 ===================================
 
-EEex_HookDeconstructCreature()
+::
 
+   EEex_HookDeconstructCreature(cre)
 
+Destroys a previously created creature
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **cre**
 
 **Return**
 
+None
 
 **Example**
 
@@ -26,5 +26,5 @@ EEex_HookDeconstructCreature()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_HookConstructCreature<EEex_HookConstructCreature>`, :ref:`EEex_HookCopyStats<EEex_HookCopyStats>`, :ref:`EEex_HookReloadStats<EEex_HookReloadStats>`
 
