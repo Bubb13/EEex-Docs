@@ -4,19 +4,19 @@
 EEex_GetActionString1 
 ===================================
 
-EEex_GetActionString1()
+::
 
+   EEex_GetActionString1(actionData)
 
+Get action string for action data 
 
 **Parameters**
 
-* **1**
-* **2**
-* **3**
-
+* **actionData** - action data to return action string for
 
 **Return**
 
+Returns action string of action data
 
 **Example**
 
@@ -26,5 +26,5 @@ EEex_GetActionString1()
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`EEex_SetActionString1<EEex_SetActionString1>`
 

@@ -15,13 +15,13 @@ Action
 +---------------------------------------------------------------------------------+----------------------------------------------------+
 | **Function**                                                                    | **Description**                                    |
 +---------------------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_AddActionHook<EEex_AddActionHook>`                                   | Add an action hook                                 |
+| :ref:`EEex_AddActionHook<EEex_AddActionHook>`                                   | Add a function to an action hook                   |
 +---------------------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_EvalActionsAsActor<EEex_EvalActionsAsActor>`                         | Evaluate actions as an actor                       |
+| :ref:`EEex_EvalActionsAsActor<EEex_EvalActionsAsActor>`                         | Evaluate compiled script actions as an actor       |
 +---------------------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_EvalActionsAsActorResume<EEex_EvalActionsAsActorResume>`             | Evaluate actions as an actor and continue          |
 +---------------------------------------------------------------------------------+----------------------------------------------------+
-| :ref:`EEex_EvalActionsStringAsActor<EEex_EvalActionsStringAsActor>`             | Evaluate actions strings as an actor               |
+| :ref:`EEex_EvalActionsStringAsActor<EEex_EvalActionsStringAsActor>`             | Evaluate script actions string as an actor         |
 +---------------------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_EvalActionsStringAsActorResume<EEex_EvalActionsStringAsActorResume>` | Evaluate actions strings as actor and continue     |
 +---------------------------------------------------------------------------------+----------------------------------------------------+
