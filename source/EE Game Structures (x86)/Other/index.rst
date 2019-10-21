@@ -2743,7 +2743,7 @@ uiItem
 +------------+----------+------------------------------------------------------------------+------------------+
 | **Offset** | **Size** | **Type**                                                         | **Field**        |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0x00       | 4        | uiItemType                                                       | type             |
+| 0x00       | 4        | ``uiItemType``                                                   | type             |
 +------------+----------+------------------------------------------------------------------+------------------+
 | 0x04       | 4        | :ref:`uiItem<uiItem>`\*                                          | menu             |
 +------------+----------+------------------------------------------------------------------+------------------+
@@ -2843,7 +2843,7 @@ Asm Definition
 ::
 
    uiItem               struct
-     type               dd ? ; uiItemType
+     type               dd ? ; uiItemType typedef
      menu               dd ? ; uiMenu* 
      name               dd ? ; const char* 
      instanceId         dd ?
@@ -2892,6 +2892,25 @@ Asm Definition
      next               dd ? ; uiItem* 
    uiItem               ends
 
+
+**Notes**
+
+::
+
+   enum uiItemType {
+     ITEM_NONE = 0
+     ITEM_TEXT = 1
+     ITEM_BUTTON = 2
+     ITEM_LIST = 3
+     ITEM_EDIT = 4
+     ITEM_MOVIE = 5
+     ITEM_SLIDER = 6
+     ITEM_HANDLE = 7
+     ITEM_DRAGGABLE = 8
+     ITEM_SLOT = 9
+     ITEM_MAP = 10
+     ITEM_TEMPLATE = 11
+   }
 
 .. _uiItembam:
 
@@ -3511,7 +3530,7 @@ uiVariant
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 4        | uiVariantType                          | type                          |
+| 0x00       | 4        | ``uiVariantType``                      | type                          |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x04       | 4        | uiVariant\:\:\<unnamed-type-value\>    | value                         |
 +------------+----------+----------------------------------------+-------------------------------+
@@ -3524,3 +3543,15 @@ Asm Definition
      type       dd ? ; uiVariantType 
      value      uiVariantvalue <> ; uiVariant::<unnamed-type-value> 
    uiVariant    ends
+
+
+**Notes**
+
+::
+
+   enum uiVariantType {
+     UIVAR_INT = 0
+     UIVAR_FUNCTION = 1
+     UIVAR_STRING = 2
+     UIVAR_FLOAT = 3
+   }
