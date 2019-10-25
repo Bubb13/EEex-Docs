@@ -158,6 +158,7 @@ Constructs a ``CBaldurChitin`` object
 
 By convention, ``argv[0]`` is the command with which the program is invoked, ``argv[1]`` is the first command-line argument, and so on.
 
+
 Constructs a ``CBaldurChitin`` object
 
 .. _CBaldurChitin~CBaldurChitin:
@@ -185,29 +186,29 @@ Methods
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | **Name**                                                                                                      | **Description**                                                                         |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:AddPlayedMovie<CBaldurChitinAddPlayedMovie>`                                           |                                                                                         |
+| :ref:`CBaldurChitin\:\:AddPlayedMovie<CBaldurChitinAddPlayedMovie>`                                           | Add a movie to the already played list                                                  |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:AllocResObject<CBaldurChitinAllocResObject>`                                           |                                                                                         |
+| :ref:`CBaldurChitin\:\:AllocResObject<CBaldurChitinAllocResObject>`                                           | Creates and allocates memory for a resource                                             |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CBaldurChitin\:\:AsynchronousUpdate<CBaldurChitinAsynchronousUpdate>`                                   |                                                                                         |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:BroadcastMultiplayerProgressBarInfo<CBaldurChitinBroadcastMultiplayerProgressBarInfo>` |                                                                                         |
+| :ref:`CBaldurChitin\:\:BroadcastMultiplayerProgressBarInfo<CBaldurChitinBroadcastMultiplayerProgressBarInfo>` | Broadcast to all connected sessions the progress bar information                        |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CBaldurChitin\:\:CheckGUISong<CBaldurChitinCheckGUISong>`                                               |                                                                                         |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:ConfirmQuit<CBaldurChitinConfirmQuit>`                                                 |                                                                                         |
+| :ref:`CBaldurChitin\:\:ConfirmQuit<CBaldurChitinConfirmQuit>`                                                 | Displays a prompt to confirm if players wishes to quit, save before quit, etc           |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:CutsceneModeActive<CBaldurChitinCutsceneModeActive>`                                   |                                                                                         |
+| :ref:`CBaldurChitin\:\:CutsceneModeActive<CBaldurChitinCutsceneModeActive>`                                   | Determines if the cutscene mode is active or not (for dreams etc)                       |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CBaldurChitin\:\:FontRectOutline<CBaldurChitinFontRectOutline>`                                         |                                                                                         |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:GetEAXActive<CBaldurChitinGetEAXActive>`                                               |                                                                                         |
+| :ref:`CBaldurChitin\:\:GetEAXActive<CBaldurChitinGetEAXActive>`                                               | Determines if the EAX sound feature is active or not                                    |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:GetGameSpyCode<CBaldurChitinGetGameSpyCode>`                                           |                                                                                         |
+| :ref:`CBaldurChitin\:\:GetGameSpyCode<CBaldurChitinGetGameSpyCode>`                                           | Gets the game spy code                                                                  |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:GetGameSpyGameName<CBaldurChitinGetGameSpyGameName>`                                   |                                                                                         |
+| :ref:`CBaldurChitin\:\:GetGameSpyGameName<CBaldurChitinGetGameSpyGameName>`                                   | Gets the game spy game name                                                             |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:GetIconRes<CBaldurChitinGetIconRes>`                                                   |                                                                                         |
+| :ref:`CBaldurChitin\:\:GetIconRes<CBaldurChitinGetIconRes>`                                                   | Gets default icon resolution                                                            |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CBaldurChitin\:\:GetIDSBadDeskTopBitDepth<CBaldurChitinGetIDSBadDeskTopBitDepth>`                       |                                                                                         |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
@@ -227,33 +228,33 @@ Methods
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CBaldurChitin\:\:GetIDSWindowsFonts<CBaldurChitinGetIDSWindowsFonts>`                                   |                                                                                         |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:GetKeyFileName<CBaldurChitinGetKeyFileName>`                                           |                                                                                         |
+| :ref:`CBaldurChitin\:\:GetKeyFileName<CBaldurChitinGetKeyFileName>`                                           | Returns a pointer to a string containing the default key file (usually ``chitin.key``)  |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:GetMovieVolume<CBaldurChitinGetMovieVolume>`                                           |                                                                                         |
+| :ref:`CBaldurChitin\:\:GetMovieVolume<CBaldurChitinGetMovieVolume>`                                           | Returns movie volume                                                                    |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:GetMultiplayerDirectPlayPort<CBaldurChitinGetMultiplayerDirectPlayPort>`               |                                                                                         |
+| :ref:`CBaldurChitin\:\:GetMultiplayerDirectPlayPort<CBaldurChitinGetMultiplayerDirectPlayPort>`               | Returns port no used in DirectPlay                                                      |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:GetMultiplayerGameSpyPort<CBaldurChitinGetMultiplayerGameSpyPort>`                     |                                                                                         |
+| :ref:`CBaldurChitin\:\:GetMultiplayerGameSpyPort<CBaldurChitinGetMultiplayerGameSpyPort>`                     | Returns port no used in GameSpy                                                         |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:GetNumberSoundChannels<CBaldurChitinGetNumberSoundChannels>`                           |                                                                                         |
+| :ref:`CBaldurChitin\:\:GetNumberSoundChannels<CBaldurChitinGetNumberSoundChannels>`                           | Returns number of sound channels supported by local machine                             |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:GetPanicCDStrings<CBaldurChitinGetPanicCDStrings>`                                     |                                                                                         |
+| :ref:`CBaldurChitin\:\:GetPanicCDStrings<CBaldurChitinGetPanicCDStrings>`                                     | Legacy function for when game was distributed on CD/DVD                                 |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:GetPlayedMovies<CBaldurChitinGetPlayedMovies>`                                         |                                                                                         |
+| :ref:`CBaldurChitin\:\:GetPlayedMovies<CBaldurChitinGetPlayedMovies>`                                         | Returns a list of movies that have been played                                          |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CBaldurChitin\:\:GetScreenShotFilePrefix<CBaldurChitinGetScreenShotFilePrefix>`                         |                                                                                         |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CBaldurChitin\:\:GetSoundEnvironment<CBaldurChitinGetSoundEnvironment>`                                 |                                                                                         |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:Init<CBaldurChitinInit>`                                                               |                                                                                         |
+| :ref:`CBaldurChitin\:\:Init<CBaldurChitinInit>`                                                               | Initialize CBaldurChitin class                                                          |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:Is3DSound*<CBaldurChitinIs3DSound>`                                                    |                                                                                         |
+| :ref:`CBaldurChitin\:\:Is3DSound*<CBaldurChitinIs3DSound>`                                                    | Returns if 3D sound is supported on local machine                                       |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:LoadDialogFiles<CBaldurChitinLoadDialogFiles>`                                         |                                                                                         |
+| :ref:`CBaldurChitin\:\:LoadDialogFiles<CBaldurChitinLoadDialogFiles>`                                         | Load dialog files                                                                       |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:LoadOptions<CBaldurChitinLoadOptions>`                                                 |                                                                                         |
+| :ref:`CBaldurChitin\:\:LoadOptions<CBaldurChitinLoadOptions>`                                                 | Load options                                                                            |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:Log<CBaldurChitinLog>`                                                                 |                                                                                         |
+| :ref:`CBaldurChitin\:\:Log<CBaldurChitinLog>`                                                                 | Output text to a log, similar to printf and uses variable no of arguments               |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CBaldurChitin\:\:MessageCallback<CBaldurChitinMessageCallback>`                                         |                                                                                         |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
@@ -271,11 +272,11 @@ Methods
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CBaldurChitin\:\:OnMultiplayerSessionToClose<CBaldurChitinOnMultiplayerSessionToClose>`                 |                                                                                         |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:PreLoadFonts<CBaldurChitinPreLoadFonts>`                                               |                                                                                         |
+| :ref:`CBaldurChitin\:\:PreLoadFonts<CBaldurChitinPreLoadFonts>`                                               | Preload fonts for game                                                                  |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:SaveOptions<CBaldurChitinSaveOptions>`                                                 |                                                                                         |
+| :ref:`CBaldurChitin\:\:SaveOptions<CBaldurChitinSaveOptions>`                                                 | Save options                                                                            |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:SetProgressBar<CBaldurChitinSetProgressBar>`                                           |                                                                                         |
+| :ref:`CBaldurChitin\:\:SetProgressBar<CBaldurChitinSetProgressBar>`                                           | Set progress bar on screen                                                              |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CBaldurChitin\:\:SetProgressBarActivateEngine<CBaldurChitinSetProgressBarActivateEngine>`               |                                                                                         |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
@@ -287,7 +288,7 @@ Methods
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CBaldurChitin\:\:SynchronousUpdate<CBaldurChitinSynchronousUpdate>`                                     |                                                                                         |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:UnloadFonts<CBaldurChitinUnloadFonts>`                                                 |                                                                                         |
+| :ref:`CBaldurChitin\:\:UnloadFonts<CBaldurChitinUnloadFonts>`                                                 | Unload fonts previously loaded by game engine, typically when game is closing           |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
 
@@ -316,7 +317,7 @@ Add a movie to the already played list
 CBaldurChitin\:\:AllocResObject
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Create an allocate memory for a resource
+Creates and allocates memory for a resource
 
 ::
 
@@ -465,7 +466,7 @@ Determines if the EAX sound feature is active or not
 
 **Return Value**
 
-Returns an ``int``
+Returns an ``int`` representing true ``1`` or false ``0``
 
 **Remarks**
 
@@ -752,7 +753,7 @@ Returns port no used in DirectPlay
 
 **Return Value**
 
-Returns ``unsigned short``
+Returns an ``unsigned short`` representing the port
 
 **Remarks**
 
@@ -771,7 +772,7 @@ Returns port no used in GameSpy
 
 **Return Value**
 
-Returns ``unsigned short``
+Returns an ``unsigned short`` representing the port
 
 **Remarks**
 
@@ -913,7 +914,7 @@ Initialize CBaldurChitin class
 CBaldurChitin\:\:Is3DSound
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Returns if 3D sound is supported on local machine
+Returns true if 3D sound is supported on local machine
 
 ::
 
@@ -925,7 +926,7 @@ Returns if 3D sound is supported on local machine
 
 **Return Value**
 
-Returns an ``int``
+Returns an ``int`` representing true ``1`` or false ``0``
 
 **Remarks**
 
