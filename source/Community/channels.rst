@@ -31,7 +31,7 @@ Mod Tools
 ---------
 
 - `NearInfinity <https://github.com/Argent77/NearInfinity>`_
-- `Modmerge <https://github.com/ScottBrooks/modmerge>`_
+- `DLCMerger <https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game>`_
 - `WeiDU installer <http://www.weidu.org/~thebigg/>`_
 - `InfinityTools <https://github.com/InfinityTools>`_
 - `IESDP <https://gibberlings3.github.io/iesdp/>`_
