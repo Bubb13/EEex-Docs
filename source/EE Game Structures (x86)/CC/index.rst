@@ -891,6 +891,11 @@ CCreatureFileEquipment
 | 0x4E       | 2        | unsigned short                         | m_selectedWeaponAbility       |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `CRE V1.0 Item Slots <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/cre_v1.htm#CREV1_0_ItemSlots>`_
+
+
 Asm Definition
 
 ::
@@ -1087,6 +1092,16 @@ CCreatureFileHeader
 | 0x260      | 8        | unsigned char                          | m_scriptDefault[8]            |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `CRE V1.0 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/cre_v1.htm#CREV1_0_Header>`_
+
+* **m_generalState** (offset ``0x18``) contains values found in ``STATE.IDS``
+* **m_animationType** (offset ``0x20``) contains values found in ``ANIMATE.IDS``
+* **m_effectVersion** (offset ``0x2B``) contains: ``0`` version 1 EFF or ``1`` version 2 EFF
+* **m_hatedRace** (offset ``0x239``) contains racial enemy values found in ``RACE.IDS``
+
+
 Asm Definition
 
 ::
@@ -1194,6 +1209,14 @@ CCreatureFileItem
 | 0x10       | 4        | unsigned long                          | m_dynamicFlags                |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `CRE V1.0 Items Table <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/cre_v1.htm#CREV1_0_Item>`_
+
+* **m_wear** (offset ``0x08``) item expiration time
+* **m_usageCount[3]** (offset ``0x0A``) item quantity/charges
+* **m_dynamicFlags** (offset ``0x10``) contains: bit ``0`` = Identified, bit ``1`` = Unstealable, bit ``2`` = Stolen, bit ``3`` = Undroppable
+
 
 Asm Definition
 
@@ -1222,6 +1245,13 @@ CCreatureFileKnownSpell
 | 0x0A       | 2        | unsigned short                         | m_magicType                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `CRE V1.0 Known Spells <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/cre_v1.htm#CREV1_0_KnownSpell>`_
+
+* **m_magicType** (offset ``0x0A``) contains: ``0`` = Priest, ``1`` = Wizard, ``2`` = Innate
+
+
 Asm Definition
 
 ::
@@ -1247,6 +1277,13 @@ CCreatureFileMemorizedSpell
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x0A       | 2        | unsigned char                          | structureAlignment1[2]        |
 +------------+----------+----------------------------------------+-------------------------------+
+
+**Notes**
+
+Related to `CRE V1.0 Memorized Spells Table <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/cre_v1.htm#CREV1_0_MemSpell>`_
+
+* **m_flags** (offset ``0x08``) contains: bit ``0`` = Memorised or bit ``1`` = Disabled
+
 
 Asm Definition
 
@@ -1279,6 +1316,15 @@ CCreatureFileMemorizedSpellLevel
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x0C       | 4        | unsigned long                          | m_memorizedCount              |
 +------------+----------+----------------------------------------+-------------------------------+
+
+**Notes**
+
+Related to `CRE V1.0 Spell Memorization Info <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/cre_v1.htm#CREV1_0_MemSpellInfo>`_
+
+* **m_magicType** (offset ``0x06``) contains: ``0`` = Priest, ``1`` = Wizard, ``2`` = Innate
+* **m_memorizedStartingSpell** (offset ``0x08``) index into memorized spells (array of :ref:`CCreatureFileMemorizedSpell<CCreatureFileMemorizedSpell>` structures) of first memorized spell of this type in this level
+* **m_memorizedCount** (offset ``0x0C``) count of memorized spell entries in memorized spells array of memorized spells of this type in this level
+
 
 Asm Definition
 
@@ -1346,6 +1392,14 @@ CCreatureFileOffsets
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x5C       | 8        | unsigned char                          | m_dialog[8]                   |
 +------------+----------+----------------------------------------+-------------------------------+
+
+
+**Notes**
+
+Related to offset ``0x0270`` of `CRE V1.0 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/cre_v1.htm#CREV1_0_Header>`_
+
+
+
 
 Asm Definition
 
