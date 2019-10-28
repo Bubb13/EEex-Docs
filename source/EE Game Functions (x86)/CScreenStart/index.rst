@@ -423,7 +423,7 @@ Determines if there is an existing game already saved, ready to be continued
 
 ::
 
-   int **CScreenStart\:\:HasGameToContinue**\() ;
+   int CScreenStart::HasGameToContinue() ;
 
 **Return Value**
 
@@ -449,12 +449,16 @@ Event action for when campaign button is clicked
 
 **Parameters**
 
-* ``char``\* campaign - *CAMPAIGN.2DA row label*
+* ``char``\* campaign - *CAMPAIGN.2DA column label*
 * ``bool`` playIntro - *play intro movie or not*
 
 **Remarks**
 
-Loads 2da file under the CAMPAIGN.2DA ``TBPPARTY`` column
+Optionally plays intro movie if *playIntro* parameter is ``true``. Loads 2da file under the CAMPAIGN.2DA *campaign* column label. 
+
+Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value under the ``Program Options`` section.
+
+CScreenStart\:\:OnCampaignButtonClick is called from :ref:`CScreenStart\:\:TimerAsynchronousUpdate<CScreenStartTimerAsynchronousUpdate>` and :ref:`tolua_BaldurLUA_CScreenStart_OnCampaignButtonClick00<tolua_BaldurLUA_CScreenStart_OnCampaignButtonClick00>`
 
 
 .. _CScreenStartOnContinueGame:
@@ -664,6 +668,12 @@ Event action for when Shadows of Amn button is clicked
 
 **Remarks**
 
+Optionally plays intro movie if *playIntro* parameter is ``true``. Plays ``INTRO15F.WBM`` or ``INTRO.WBM`` movie. 
+
+Sets start area based on contents of ``STARTARE.2DA`` - using the ``START_AREA`` value which is currently set to ``AR0602`` for **Shadows of Amn**. Loads 2da file under the ``CAMPAIGN.2DA`` ``IWDPARTY`` column.
+
+Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value under the ``Program Options`` section.
+
 
 
 .. _CScreenStartOnTBPButtonClick:
@@ -683,7 +693,11 @@ Event action for when The Black Pits button is clicked
 
 **Remarks**
 
+Optionally plays intro movie if *playIntro* parameter is ``true``. Plays ``BLACKPIT.WBM`` movie. 
 
+Sets start area based on contents of ``STARTBP.2DA`` - using the START_AREA value which is currently set to ``OH8000`` for **The Black Pits**. Loads 2da file under the ``CAMPAIGN.2DA`` ``TBPPARTY`` column.
+
+Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value under the ``Program Options`` section.
 
 
 .. _CScreenStartOnToBButtonClick:
@@ -703,6 +717,11 @@ Event action for when Throne of Bhaal button is clicked
 
 **Remarks**
 
+Optionally plays intro movie if *playIntro* parameter is ``true``. Plays ``INTRO.WBM`` movie (references ``HOWSEER`` as an alternative movie?). 
+
+Sets start area based on contents of ``STARTARE.2DA`` - using the ``START_AREA_MP`` value which is currently set to ``AR4000`` for **Throne of Bhaal**. Loads 2da file under the ``CAMPAIGN.2DA`` ``HOWPARTY`` column.
+
+Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value under the ``Program Options`` section.
 
 
 .. _CScreenStartOnTutorialButtonClick:
@@ -718,6 +737,9 @@ Event action for when tutorial button is clicked
 
 **Remarks**
 
+Sets start area based on contents of ``STARTARE.2DA`` - using the ``START_AREA_TUTORIAL`` value which is currently set to ``AR0015`` for **Tutorial**
+
+Calls :ref:`CScreenStart\:\:OnNewGameButtonClick<CScreenStartOnNewGameButtonClick>` to start a new game begining with the tutorial.
 
 
 .. _CScreenStartReadyEndCredits:
