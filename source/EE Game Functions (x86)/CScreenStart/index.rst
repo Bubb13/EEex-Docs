@@ -445,7 +445,7 @@ Event action for when campaign button is clicked
 
    void CScreenStart::OnCampaignButtonClick(
       char* campaign, 
-	  bool playIntro);
+      bool playIntro);
 
 **Parameters**
 
