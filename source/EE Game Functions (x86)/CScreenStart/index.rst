@@ -458,7 +458,7 @@ Optionally plays intro movie if *playIntro* parameter is ``true``. Loads 2da fil
 
 Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value under the ``Program Options`` section.
 
-CScreenStart\:\:OnCampaignButtonClick is called from :ref:`CScreenStart\:\:TimerAsynchronousUpdate<CScreenStartTimerAsynchronousUpdate>` and :ref:`tolua_BaldurLUA_CScreenStart_OnCampaignButtonClick00<tolua_BaldurLUA_CScreenStart_OnCampaignButtonClick00>`
+:ref:`CScreenStart\:\:OnCampaignButtonClick<CScreenStartOnCampaignButtonClick>` is called from :ref:`CScreenStart\:\:TimerAsynchronousUpdate<CScreenStartTimerAsynchronousUpdate>` and :ref:`tolua_BaldurLUA_CScreenStart_OnCampaignButtonClick00<tolua_BaldurLUA_CScreenStart_OnCampaignButtonClick00>`
 
 
 .. _CScreenStartOnContinueGame:
@@ -674,6 +674,7 @@ Sets start area based on contents of ``STARTARE.2DA`` - using the ``START_AREA``
 
 Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value under the ``Program Options`` section.
 
+:ref:`CScreenStart\:\:OnSoAButtonClick<CScreenStartOnSoAButtonClick>` is called from :ref:`CScreenStart\:\:TimerAsynchronousUpdate<CScreenStartTimerAsynchronousUpdate>` and :ref:`tolua_BaldurLUA_CScreenStart_OnSoAButtonClick00<tolua_BaldurLUA_CScreenStart_OnSoAButtonClick00>`
 
 
 .. _CScreenStartOnTBPButtonClick:
@@ -699,6 +700,8 @@ Sets start area based on contents of ``STARTBP.2DA`` - using the START_AREA valu
 
 Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value under the ``Program Options`` section.
 
+:ref:`CScreenStart\:\:OnTBPButtonClick<CScreenStartOnTBPButtonClick>` is called from :ref:`CScreenStart\:\:TimerAsynchronousUpdate<CScreenStartTimerAsynchronousUpdate>` and :ref:`tolua_BaldurLUA_CScreenStart_OnTBPButtonClick00<tolua_BaldurLUA_CScreenStart_OnTBPButtonClick00>`
+
 
 .. _CScreenStartOnToBButtonClick:
 
@@ -723,6 +726,8 @@ Sets start area based on contents of ``STARTARE.2DA`` - using the ``START_AREA_M
 
 Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value under the ``Program Options`` section.
 
+:ref:`CScreenStart\:\:OnToBButtonClick<CScreenStartOnToBButtonClick>` is called from :ref:`tolua_BaldurLUA_CScreenStart_OnToBButtonClick00<tolua_BaldurLUA_CScreenStart_OnToBButtonClick00>`
+
 
 .. _CScreenStartOnTutorialButtonClick:
 
@@ -740,6 +745,8 @@ Event action for when tutorial button is clicked
 Sets start area based on contents of ``STARTARE.2DA`` - using the ``START_AREA_TUTORIAL`` value which is currently set to ``AR0015`` for **Tutorial**
 
 Calls :ref:`CScreenStart\:\:OnNewGameButtonClick<CScreenStartOnNewGameButtonClick>` to start a new game begining with the tutorial.
+
+:ref:`CScreenStart\:\:OnTutorialButtonClick<CScreenStartOnTutorialButtonClick>` is called from :ref:`tolua_BaldurLUA_CScreenStart_OnTutorialButtonClick00<tolua_BaldurLUA_CScreenStart_OnTutorialButtonClick00>`
 
 
 .. _CScreenStartReadyEndCredits:
@@ -770,7 +777,9 @@ Update timer asynchronously
 
 **Remarks**
 
+Processes a number of possible options: end credits to play based on ``2DECRED.2DA``, show splash screen, game options dialog, campaign button, SoA button, ToB button, TBP button etc.
 
+Calls the following functions: :ref:`CScreenStart\:\:OnSoAButtonClick<CScreenStartOnSoAButtonClick>`, :ref:`CScreenStart\:\:OnTBPButtonClick<CScreenStartOnTBPButtonClick>` and :ref:`CScreenStart\:\:OnCampaignButtonClick<CScreenStartOnCampaignButtonClick>`
 
 .. _CScreenStartTimerSynchronousUpdate:
 
