@@ -229,7 +229,7 @@ Uninitialize CBaldurProjector
 CBaldurProjector\:\:GetVirtualKeys
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Key press event processing
+Return keyCode and other information for current keypress
 
 ::
 
@@ -241,6 +241,7 @@ Returns :ref:`CKeyInfo<CKeyInfo>`\*
 
 **Remarks**
 
+:ref:`CKeyInfo<CKeyInfo>` contains keyCode and other keyboard information: repeatCount, repeatDelay and repeatRate
 
 
 .. _CBaldurProjectorGetVirtualKeysFlags:
@@ -276,7 +277,7 @@ Returns number of keys supported by keyboard for key event processing
 
 **Return Value**
 
-Returns a ``short``
+Returns a ``short`` value indicating number of keys supported
 
 **Remarks**
 
