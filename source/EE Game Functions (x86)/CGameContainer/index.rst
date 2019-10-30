@@ -1,17 +1,16 @@
-.. _CGameContainer Functions:
+.. _CGameContainer Class:
 
 ==========================
-CGameContainer Functions
+CGameContainer Class
 ==========================
 
 .. toctree::
    :maxdepth: 1
 
+The structure used for this class is :ref:`CGameContainer<CGameContainer>`
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Functions**                                                                                                                                                                                                                                                                                              |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| virtual unsigned char **CGameContainer\:\:CanSaveGame**\(unsigned long\& strError, int restCheck, int combatCheck)                                                                                                                                                                                         |
+| **Quick Ref**                                                                                                                                                                                                                                                                                              |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CGameContainer\:\:CGameContainer**\(:ref:`CGameArea<CGameArea>`\* pArea, :ref:`CRect<CRect>`\& rBound)                                                                                                                                                                                              |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -22,6 +21,8 @@ CGameContainer Functions
 | virtual void **CGameContainer\:\:AIUpdate**\()                                                                                                                                                                                                                                                             |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | virtual void **CGameContainer\:\:AddEffect**\(:ref:`CGameEffect<CGameEffect>`\* pEffect, unsigned char list, int noSave, int immediateApply)                                                                                                                                                               |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| virtual unsigned char **CGameContainer\:\:CanSaveGame**\(unsigned long\& strError, int restCheck, int combatCheck)                                                                                                                                                                                         |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CGameContainer\:\:CompressContainer**\()                                                                                                                                                                                                                                                            |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -85,4 +86,896 @@ CGameContainer Functions
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | virtual void **CGameContainer\:\:RemoveFromArea**\()                                                                                                                                                                                                                                                       |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+
+---------------
+Constructors
+---------------
+
++-------------------------------------------------------------------------+------------------------------------------------------+
+| **Name**                                                                | **Description**                                      |
++-------------------------------------------------------------------------+------------------------------------------------------+
+| :ref:`CGameContainer\:\:CGameContainer<CGameContainerCGameContainer>`   | Constructs a ``CGameContainer`` object               |
++-------------------------------------------------------------------------+------------------------------------------------------+
+| :ref:`CGameContainer\:\:~CGameContainer<CGameContainer~CGameContainer>` | Destroys a ``CGameContainer`` object                 |
++-------------------------------------------------------------------------+------------------------------------------------------+
+
+.. _CGameContainerCGameContainer:
+
+CGameContainer\:\:CGameContainer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Constructs a ``CGameContainer`` object
+
+::
+
+   void CGameContainer::CGameContainer(
+      CGameArea* pArea, 
+      CRect& rBound);
+
+
+**Parameters**
+
+* :ref:`CGameArea<CGameArea>`\* pArea - *pointer to area*
+* :ref:`CRect<CRect>`\& rBound - *bounding rectanble of the container to add to area*
+
+**Remarks**
+
+Constructs a ``CGameContainer`` object
+
+
+CGameContainer\:\:CGameContainer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Constructs a ``CGameContainer`` object
+
+::
+
+   void CGameContainer::CGameContainer(
+      CGameArea* pArea, 
+      CAreaFileContainer* pContainerObject, 
+      CAreaPoint* pPoints, 
+      unsigned short maxPts, 
+      CCreatureFileItem* pItems, 
+      unsigned long maxItems);
+
+
+**Parameters**
+
+* :ref:`CGameArea<CGameArea>`\* pArea - *pointer to area*
+* :ref:`CAreaFileContainer<CAreaFileContainer>`\* pContainerObject - *pointer to container object*
+* :ref:`CAreaPoint<CAreaPoint>`\* pPoints - *pointer to array of points used for polygon to highlight container*
+* ``unsigned short`` maxPts - *count of points in array for polygon*
+* :ref:`CCreatureFileItem<CCreatureFileItem>`\* pItems - *pointer to array of items to add to container*
+* ``unsigned long`` maxItems - *count of items in array to add to container*
+
+**Remarks**
+
+Constructs a ``CGameContainer`` object
+
+
+
+
+.. _CGameContainer~CGameContainer:
+
+CGameContainer\:\:~CGameContainer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Destroys the ``CGameContainer`` object
+
+::
+
+   virtual void CGameContainer::~CGameContainer();
+
+**Remarks**
+
+Destroys the ``CGameContainer`` object
+
+
+
+
+---------------
+Methods
+---------------
+
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| **Name**                                                                          | **Description**                                                                         |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:AIUpdate<CGameContainerAIUpdate>`                         |                                                                                         |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:AddEffect<CGameContainerAddEffect>`                       | Add a game effect to a container                                                        |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:CanSaveGame<CGameContainerCanSaveGame>`                   |                                                                                         |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:CompressContainer<CGameContainerCompressContainer>`       |                                                                                         |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:CompressTime<CGameContainerCompressTime>`                 |                                                                                         |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:CountItem<CGameContainerCountItem>`                       | Returns the number of items in container                                                |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:DebugDump<CGameContainerDebugDump>`                       | Debug message from container class                                                      |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:DoAIUpdate<CGameContainerDoAIUpdate>`                     |                                                                                         |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:FindItemSlot<CGameContainerFindItemSlot>`                 | Return the slot id for a specific item in a container                                   |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:GetBounding<CGameContainerGetBounding>`                   | Get the bounding rectangle for the container                                            |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:GetItem<CGameContainerGetItem>`                           | Return an item from a specified slot in a container                                     |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:GetNPoly<CGameContainerGetNPoly>`                         | Returns no of polygons points for the container                                         |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:GetNumTrueItems<CGameContainerGetNumTrueItems>`           |                                                                                         |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:GetPoly<CGameContainerGetPoly>`                           | Returns a pointer to an array of points which define the container polygon              |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:HasItemType<CGameContainerHasItemType>`                   | Determines if a container contains a specific item type                                 |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:HasItemWithFlag<CGameContainerHasItemWithFlag>`           | Determines if a container contains a specific item type with an item flag               |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:IsOver<CGameContainerIsOver>`                             | Determines if mouse position is over the container                                      |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:Marshal<CGameContainerMarshal>`                           |                                                                                         |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:MarshalMessage<CGameContainerMarshalMessage>`             |                                                                                         |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:OnActionButton<CGameContainerOnActionButton>`             | Event action for when mouse is clicked on the container                                 |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:OpenContainer<CGameContainerOpenContainer>`               | Opens container by the specified character                                              |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:PlaceAllGold<CGameContainerPlaceAllGold>`                 | Takes gold and places the specified amount into the shared party gold stash             |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:PlaceItemInBlankSlot<CGameContainerPlaceItemInBlankSlot>` | Places an item into a blank slot of the container                                       |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:RefreshRenderPile<CGameContainerRefreshRenderPile>`       |                                                                                         |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:Render<CGameContainerRender>`                             |                                                                                         |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:SetCursor<CGameContainerSetCursor>`                       | Set the cursor and tooltip when mouse is over the container                             |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:SetDrawPoly<CGameContainerSetDrawPoly>`                   |                                                                                         |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:SetFlags<CGameContainerSetFlags>`                         | Set container flags                                                                     |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:SetItem<CGameContainerSetItem>`                           | Set an item in a container slot                                                         |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:SetTrapActivated<CGameContainerSetTrapActivated>`         | Sets or clears if a trap is activated on the container                                  |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:SetTrapDetected<CGameContainerSetTrapDetected>`           | Sets if a trap on a container has been detected yet                                     |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:TakeAllGold<CGameContainerTakeAllGold>`                   | Take all gold                                                                           |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:TakeCreatureItems<CGameContainerTakeCreatureItems>`       | Take items from a creature                                                              |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CGameContainer\:\:RemoveFromArea<CGameContainerRemoveFromArea>`             | Remove from area                                                                        |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+
+
+.. _CGameContainerAIUpdate:
+
+CGameContainer\:\:AIUpdate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   virtual void CGameContainer::AIUpdate();
+
+**Remarks**
+
+
+
+
+.. _CGameContainerAddEffect:
+
+CGameContainer\:\:AddEffect
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Add a game effect to a container
+
+::
+
+   virtual void CGameContainer::AddEffect(
+      CGameEffect* pEffect, 
+      unsigned char list, 
+      int noSave, 
+      int immediateApply);
+
+**Parameters**
+
+* :ref:`CGameEffect<CGameEffect>`\* pEffect - *pointer to game effect to add to container*
+* ``unsigned char`` list - * *
+* ``int`` noSave - *if a saving throw is allowed to avoid or reduce effect if trap is triggered*
+* ``int`` immediateApply - *if the effect is immediate or delayed*
+
+**Remarks**
+
+Used for setting trap effects on containers, eg. fireball, lightning, poison, or piercing, slashing damage etc
+
+
+.. _CGameContainerCanSaveGame:
+
+CGameContainer\:\:CanSaveGame
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   virtual unsigned char CGameContainer::CanSaveGame(
+      unsigned long& strError, 
+      int restCheck, 
+      int combatCheck);
+
+**Parameters**
+
+* ``unsigned long``\& strError - * *
+* ``int`` restCheck - * *
+* ``int`` combatCheck - * *
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+.. _CGameContainerCompressContainer:
+
+CGameContainer\:\:CompressContainer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CGameContainer::CompressContainer();
+
+**Remarks**
+
+
+
+
+.. _CGameContainerCompressTime:
+
+CGameContainer\:\:CompressTime
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   virtual unsigned char CGameContainer::CompressTime(unsigned long deltaTime);
+
+**Parameters**
+
+* ``unsigned long`` deltaTime - * *
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+.. _CGameContainerCountItem:
+
+CGameContainer\:\:CountItem
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Returns the number of items in container
+
+::
+
+   short CGameContainer::CountItem(CResRef& res)
+
+**Parameters**
+
+* :ref:`CResRef<CResRef>`\& res - *resource reference of the container to return count of items for*
+
+**Return Value**
+
+Returns a ``short`` value reprenting the number of items in the container
+
+**Remarks**
+
+
+
+.. _CGameContainerDebugDump:
+
+CGameContainer\:\:DebugDump
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Debug message from container class
+
+::
+
+   virtual void CGameContainer::DebugDump(
+      CString& message, 
+      unsigned char bEchoToScreen);
+
+**Parameters**
+
+* :ref:`CString<CString>`\& message - *debug message to output to console*
+* ``unsigned char`` bEchoToScreen - *output debug message to screen as well as console*
+
+**Remarks**
+
+
+
+.. _CGameContainerDoAIUpdate:
+
+CGameContainer\:\:DoAIUpdate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   virtual unsigned char CGameContainer::DoAIUpdate(
+      unsigned char active, 
+      long counter);
+
+**Parameters**
+
+* ``unsigned char`` active - * *
+* ``long`` counter - * *
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+.. _CGameContainerFindItemSlot:
+
+CGameContainer\:\:FindItemSlot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Return the slot id for a specific item in a container
+
+::
+
+   short CGameContainer::FindItemSlot(CResRef& res);
+
+**Parameters**
+
+* :ref:`CResRef<CResRef>`\& res - *resource reference of item in container*
+
+**Return Value**
+
+Returns a ``short`` value representing the slot id for the item in a container
+
+**Remarks**
+
+Does this return 0 or -1 if item not found in container ?
+
+
+.. _CGameContainerGetBounding:
+
+CGameContainer\:\:GetBounding
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Get the bounding rectangle for the container
+
+::
+
+   virtual CRect CGameContainer::GetBounding();
+
+**Return Value**
+
+Returns a :ref:`CRect<CRect>` which defines the bounding dimensions of the container
+
+**Remarks**
+
+
+
+.. _CGameContainerGetItem:
+
+CGameContainer\:\:GetItem
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Return an item from a specified slot in a container
+
+::
+
+   CItem* CGameContainer::GetItem(short nSlotNum);
+
+**Parameters**
+
+* ``short`` nSlotNum - *slot id to return the item associated with this slot*
+
+**Return Value**
+
+Returns :ref:`CItem<CItem>`\*
+
+**Remarks**
+
+
+
+.. _CGameContainerGetNPoly:
+
+CGameContainer\:\:GetNPoly
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Returns the number of polygons points for the container
+
+::
+
+   virtual short CGameContainer::GetNPoly();
+
+**Return Value**
+
+Returns a ``short`` value indicating no of points that define the containers polygon
+
+**Remarks**
+
+Polygons are used when highlighting containers with a bright colored outline
+
+See also :ref:`CGameContainer\:\:GetPoly<CGameContainerGetPoly>` and :ref:`CGameContainer\:\:SetDrawPoly<CGameContainerSetDrawPoly>`
+
+
+.. _CGameContainerGetNumTrueItems:
+
+CGameContainer\:\:GetNumTrueItems
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   short CGameContainer::GetNumTrueItems();
+
+**Return Value**
+
+Returns ``short``
+
+**Remarks**
+
+
+
+.. _CGameContainerGetPoly:
+
+CGameContainer\:\:GetPoly
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Returns a pointer to an array of points which define the container polygon
+
+::
+
+   virtual CPoint* CGameContainer::GetPoly();
+
+**Return Value**
+
+Returns :ref:`CPoint<CPoint>`\*, an array of points which define the container polygon
+
+**Remarks**
+
+Polygons are used when highlighting containers with a bright colored outline
+
+See also :ref:`CGameContainer\:\:GetNPoly<CGameContainerGetNPoly>` and :ref:`CGameContainer\:\:SetDrawPoly<CGameContainerSetDrawPoly>`
+
+
+.. _CGameContainerHasItemType:
+
+CGameContainer\:\:HasItemType
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Determines if a container contains a specific item type
+
+::
+
+   unsigned char CGameContainer::HasItemType(unsigned long type);
+
+**Parameters**
+
+* ``unsigned long`` type - *the type of item to check for*
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+.. _CGameContainerHasItemWithFlag:
+
+CGameContainer\:\:HasItemWithFlag
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Determines if a container contains a specific item type with an item flag
+
+::
+
+   unsigned char CGameContainer::HasItemWithFlag(
+      unsigned long flag, 
+      int ignoreDestructible);
+
+**Parameters**
+
+* ``unsigned long`` flag - *item flag to check for*
+* ``int`` ignoreDestructible - *ignore destructible items*
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+
+.. _CGameContainerIsOver:
+
+`CGameContainer\:\:IsOver
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Determines if mouse position is over the container
+
+::
+
+   virtual int CGameContainer::IsOver(CPoint& pt);
+
+**Parameters**
+
+* :ref:`CPoint<CPoint>`\& pt - *x and y coordinates of the mouse position*
+
+**Return Value**
+
+Returns an ``int`` value representing ``1`` true, or ``0`` false
+
+**Remarks**
+
+
+
+.. _CGameContainerMarshal:
+
+CGameContainer\:\:Marshal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CGameContainer::Marshal(SAreaFileWrapper* pContainerWrapper);
+
+**Parameters**
+
+* :ref:`SAreaFileWrapper<SAreaFileWrapper>`\* pContainerWrapper - * *
+
+**Remarks**
+
+
+
+.. _CGameContainerMarshalMessage:
+
+CGameContainer\:\:MarshalMessage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CGameContainer::MarshalMessage(
+      unsigned char** pData, 
+      unsigned long* dwSize);
+
+**Parameters**
+
+* ``unsigned char``\*\* pData - *data*
+* ``unsigned long``\* dwSize - *size of data*
+
+**Remarks**
+
+
+
+.. _CGameContainerOnActionButton:
+
+CGameContainer\:\:OnActionButton
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Event action for when mouse is clicked on the container
+
+::
+
+   virtual void CGameContainer::OnActionButton(CPoint& pt);
+
+**Parameters**
+
+* :ref:`CPoint<CPoint>`\& pt - *x and y coordinates of the mouse pointer*
+
+**Remarks**
+
+
+
+.. _CGameContainerOpenContainer:
+
+CGameContainer\:\:OpenContainer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Opens container by the specified character
+
+::
+
+   void CGameContainer::OpenContainer(CAIObjectType& user);
+
+**Parameters**
+
+* :ref:`CAIObjectType<CAIObjectType>`\& user - *character that opens the container*
+
+**Remarks**
+
+
+
+.. _CGameContainerPlaceAllGold:
+
+CGameContainer\:\:PlaceAllGold
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Takes gold and places the specified amount into the shared party gold stash
+
+::
+
+   void CGameContainer::PlaceAllGold(unsigned long gold);
+
+**Parameters**
+
+* ``unsigned long`` gold - *amount of gold*
+
+**Remarks**
+
+
+
+.. _CGameContainerPlaceItemInBlankSlot:
+
+CGameContainer\:\:PlaceItemInBlankSlot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Places an item into a blank slot of the container
+
+::
+
+   unsigned char CGameContainer::PlaceItemInBlankSlot(
+      CItem* pItem, 
+      unsigned char bCompressContainer, 
+      short nRecommendedSlotNum, 
+      int useMessage);
+
+**Parameters**
+
+* :ref:`CItem<CItem>`\* pItem - *item to place in container*
+* ``unsigned char`` bCompressContainer - *if the container should be compressed*
+* ``short`` nRecommendedSlotNum - *the slot id to place the item into the container at*
+* ``int`` useMessage - *?*
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+
+.. _CGameContainerRefreshRenderPile:
+
+CGameContainer\:\:RefreshRenderPile
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CGameContainer::RefreshRenderPile();
+
+**Remarks**
+
+
+
+.. _CGameContainerRender:
+
+CGameContainer\:\:Render
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   virtual void CGameContainer::Render(
+      CGameArea* pArea, 
+      CVidMode* pVidMode);
+
+**Parameters**
+
+* :ref:`CGameArea<CGameArea>`\* pArea - *pointer to area*
+* :ref:`CVidMode<CVidMode>\* pVidMode - *pointer to vid mode*
+
+**Remarks**
+
+
+
+.. _CGameContainerSetCursor:
+
+CGameContainer\:\:SetCursor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Set the cursor and tooltip when mouse is over the container
+
+::
+
+   virtual void CGameContainer::SetCursor(long nToolTip);
+
+**Parameters**
+
+* ``long`` nToolTip - *pointer to tooltip text?*
+
+**Remarks**
+
+
+
+.. _CGameContainerSetDrawPoly:
+
+CGameContainer\:\:SetDrawPoly
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CGameContainer::SetDrawPoly(short time);
+
+**Parameters**
+
+* ``short`` time - *time value*
+
+**Remarks**
+
+Polygons are used when highlighting containers with a bright colored outline
+
+See also :ref:`CGameContainer\:\:GetNPoly<CGameContainerGetNPoly>` and :ref:`CGameContainer\:\:GetPoly<CGameContainerGetPoly>`
+
+
+
+.. _CGameContainerSetFlags:
+
+CGameContainer\:\:SetFlags
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Set container flags
+
+::
+
+   void CGameContainer::SetFlags(unsigned long dwFlags);
+
+**Parameters**
+
+* ``unsigned long`` dwFlags - *flags to set for container*
+
+**Remarks**
+
+
+
+.. _CGameContainerSetItem:
+
+CGameContainer\:\:SetItem
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Set an item in a container slot
+
+::
+
+   void CGameContainer::SetItem(
+      short nSlotNum, 
+      CItem* pItem);
+
+**Parameters**
+
+* ``short`` nSlotNum - *slot id to set item for*
+* :ref:`CItem<CItem>`\* pItem - *pointer to item to associate with this slot id*
+
+**Remarks**
+
+
+
+.. _CGameContainerSetTrapActivated:
+
+CGameContainer\:\:SetTrapActivated
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Sets or clears if a trap is activated on the container
+
+::
+
+   void CGameContainer::SetTrapActivated(unsigned short active);
+
+**Parameters**
+
+* ``unsigned short`` active - *trap activated state*
+
+**Remarks**
+
+if trap is to be activated or already sprung, or not enabled
+
+
+.. _CGameContainerSetTrapDetected:
+
+CGameContainer\:\:SetTrapDetected
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Sets if a trap on a container has been detected yet
+
+::
+
+   void CGameContainer::SetTrapDetected(unsigned short state);
+
+**Parameters**
+
+* ``unsigned short`` state - *trap detected state*
+
+**Remarks**
+
+
+
+.. _CGameContainerTakeAllGold:
+
+CGameContainer\:\:TakeAllGold
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Take all gold
+
+::
+
+   unsigned long CGameContainer::TakeAllGold();
+
+**Return Value**
+
+Returns ``unsigned long``
+
+**Remarks**
+
+
+
+.. _CGameContainerTakeCreatureItems:
+
+CGameContainer\:\:TakeCreatureItems
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Take items from a creature
+
+::
+
+   void CGameContainer::TakeCreatureItems(
+      CGameSprite* pSprite, 
+      int Type);
+
+**Parameters**
+
+* :ref:`CGameSprite<CGameSprite>`\* pSprite - *pointer to creature to take items from*
+* int Type - *type of item to take*
+
+**Remarks**
+
+Typically a dead creature is seen as a container for looting purposes.
+
+
+.. _CGameContainerRemoveFromArea:
+
+CGameContainer\:\:RemoveFromArea
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Remove from area
+
+::
+
+   virtual void CGameContainer::RemoveFromArea();
+
+**Remarks**
+
 
