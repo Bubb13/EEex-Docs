@@ -30,7 +30,9 @@ EE Game Classes & Functions (x86)
    CDerivedStats/index
    CDungeonMaster/index
    CFile/index
+   CFileException/index
    CFileFind/index
+   CFileView/index
    CGameAIBase/index
    CGameAreaNotes/index
    CGameContainer/index
