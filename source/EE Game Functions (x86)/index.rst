@@ -34,7 +34,9 @@ EE Game Classes & Functions (x86)
    CGameAIBase/index
    CGameAreaNotes/index
    CGameContainer/index
-   CGameDialog/index
+   CGameDialogEntry/index
+   CGameDialogReply/index
+   CGameDialogSprite/index
    CGameDoor/index
    CGameFireball3d/index
    CGameJournal/index
