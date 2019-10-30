@@ -2273,6 +2273,8 @@ Event action for when cheating on ability score rolls
 
 **Remarks**
 
+If the CLUA Console is enabled then cheat keys are also enabled. Pressing ``CTRL + 8`` during character creation this will set all attributes to 18 (STR 18/00)
+
 
 
 .. _CScreenCreateCharOnClassSelectButtonClick:
