@@ -68,7 +68,7 @@ CContingency\:\:operator=
 
 **Parameters**
 
-* :ref:`CContingency<CContingency>`\& __that - * *
+* :ref:`CContingency<CContingency>`\& *__that* - 
 
 **Return Value**
 

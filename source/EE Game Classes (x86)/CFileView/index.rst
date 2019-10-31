@@ -102,7 +102,7 @@ Open a view of a file which is memory mapped
 
 **Parameters**
 
-* ``const char``\* fileName - * *
+* ``const char``\* *fileName* - string containing file name to open a view of a memory mapped file
 
 **Return Value**
 
@@ -128,8 +128,8 @@ Reads the file view contents into a buffer of a specified size
 
 **Parameters**
 
-* ``char``\* buffer - * *
-* ``int`` size - * *
+* ``char``\* *buffer* - pointer to buffer to read file view data
+* ``int`` *size* - size of buffer to read data into
 
 **Return Value**
 
@@ -154,8 +154,8 @@ Move the file view pointer
 
 **Parameters**
 
-* ``long`` offset - * *
-* ``int`` origin - * *
+* ``long`` *offset* - address offset to move file view pointer to
+* ``int`` *origin* - move file view pointer relative to beginning, current position or end of file view
 
 **Return Value**
 

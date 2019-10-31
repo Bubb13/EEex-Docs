@@ -52,6 +52,7 @@ Constructs a ``CAIAction`` object
 
 Constructs a ``CAIAction`` object
 
+
 .. _CAIAction~CAIAction:
 
 CAIAction\:\:~CAIAction
@@ -96,7 +97,7 @@ Decode action
 
 **Parameters**
 
-* :ref:`CGameAIBase<CGameAIBase>`\* caller - *pointer to the CGameAIBase caller*
+* :ref:`CGameAIBase<CGameAIBase>`\* *caller* - pointer to the CGameAIBase caller
 
 **Remarks**
 
@@ -116,11 +117,11 @@ OfType
 
 **Parameters**
 
-* ``short`` type - *the type to get*
+* ``short`` *type* - the type to get
 
 **Return Value**
 
-Returns as an unsigned char
+Returns as an ``unsigned char``
 
 **Remarks**
 
@@ -139,8 +140,8 @@ Reads the action
 
 **Parameters**
 
-* :ref:`CString<CString>` data - *action data to read*
-* :ref:`CString<CString>` source - *source of action*
+* :ref:`CString<CString>` *data* - action data to read
+* :ref:`CString<CString>` *source* - source of action
 
 **Remarks**
 

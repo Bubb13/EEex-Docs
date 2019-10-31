@@ -56,6 +56,7 @@ Constructs a ``CAIIdList`` object
 
 Constructs a ``CAIIdList`` object
 
+
 .. _CAIIdList~CAIIdList:
 
 CAIIdList\:\:~CAIIdList
@@ -106,7 +107,7 @@ CAIIdList\:\:CAIIdList
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>` id - *resource reference id*
+* :ref:`CResRef<CResRef>` *id* - resource reference id
 
 **Remarks**
 
@@ -125,7 +126,7 @@ CAIIdList\:\:Find
 
 **Parameters**
 
-* ``long`` id - * *
+* ``long`` *id* - 
 
 **Return Value**
 
@@ -150,8 +151,8 @@ CAIIdList\:\:Find
 
 **Parameters**
 
-* :ref:`CString<CString>` name - * *
-* ``int`` caseSensetive - * *
+* :ref:`CString<CString>` *name* - text to search for
+* ``int`` *caseSensetive* - case sensitive searching enabled or not
 
 **Return Value**
 
@@ -174,7 +175,7 @@ CAIIdList\:\:LoadList
 
 **Parameters**
 
-* ``int`` faster - * *
+* ``int`` *faster* - 
 
 **Remarks**
 
@@ -193,8 +194,8 @@ CAIIdList\:\:LoadList
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>` id - *resource reference id*
-* ``int faster`` - * *
+* :ref:`CResRef<CResRef>` *id* - resource reference id
+* ``int`` *faster* - 
 
 **Remarks**
 

@@ -86,10 +86,10 @@ Constructs a ``CGameDoor`` object
 
 **Parameters**
 
-* :ref:`CGameArea<CGameArea>`\* pArea - *pointer to area*
-* :ref:`CAreaFileDoorObject<CAreaFileDoorObject>`\* pDoorObject - *pointer to door object*
-* :ref:`CAreaPoint<CAreaPoint>`\* pPoints - *pointer to array of points used for polygon to highlight door*
-* unsigned short maxPts - *count of points in array for polygon*
+* :ref:`CGameArea<CGameArea>`\* *pArea* - pointer to area
+* :ref:`CAreaFileDoorObject<CAreaFileDoorObject>`\* *pDoorObject* - pointer to door object
+* :ref:`CAreaPoint<CAreaPoint>`\* *pPoints* - pointer to array of points used for polygon to highlight door
+* ``unsigned short`` *maxPts* - count of points in array for polygon
 
 **Remarks**
 
@@ -194,10 +194,10 @@ Add a game effect to a door
 
 **Parameters**
 
-* :ref:`CGameEffect<CGameEffect>`\* pEffect - *pointer to game effect to add to door*
-* ``unsigned char`` list - * *
-* ``int`` noSave - *if a saving throw is allowed to avoid or reduce effect if trap is triggered*
-* ``int`` immediateApply - *if the effect is immediate or delayed*
+* :ref:`CGameEffect<CGameEffect>`\* *pEffect* - pointer to game effect to add to door
+* ``unsigned char`` *list* - 
+* ``int`` *noSave* - if a saving throw is allowed to avoid or reduce effect if trap is triggered
+* ``int`` *immediateApply* - if the effect is immediate or delayed
 
 
 **Remarks**
@@ -221,9 +221,9 @@ CGameDoor\:\:CanSaveGame
 
 **Parameters**
 
-* ``unsigned long``\& strError - * *
-* ``int`` restCheck - * *
-* ``int`` combatCheck - * *
+* ``unsigned long``\& *strError* - 
+* ``int`` *restCheck* - 
+* ``int`` *combatCheck* - 
 
 **Return Value**
 
@@ -246,7 +246,7 @@ CGameDoor\:\:CompressTime
 
 **Parameters**
 
-* ``unsigned long`` deltaTime - * *
+* ``unsigned long`` *deltaTime* - 
 
 **Return Value**
 
@@ -271,8 +271,8 @@ Debug message from door class
 
 **Parameters**
 
-* :ref:`CString<CString>`\& message - *debug message to output to console*
-* ``unsigned char`` bEchoToScreen - *output debug message to screen as well as console*
+* :ref:`CString<CString>`\& *message* - address of debug message string to output to console
+* ``unsigned char`` *bEchoToScreen* - output debug message to screen as well as console
 
 **Remarks**
 
@@ -293,8 +293,8 @@ CGameDoor\:\:DoAIUpdate
 
 **Parameters**
 
-* ``unsigned char`` active - * *
-* ``long`` counter - * *
+* ``unsigned char`` *active* - 
+* ``long`` *counter* - 
 
 **Return Value**
 
@@ -355,7 +355,7 @@ CGameDoor\:\:GetMoveDest
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>`\& ptSource - * *
+* :ref:`CPoint<CPoint>`\& *ptSource* - 
 
 **Return Value**
 
@@ -378,7 +378,7 @@ Determines if mouse position is over the door
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>`\& pt - *x and y coordinates of the mouse position*
+* :ref:`CPoint<CPoint>`\& *pt* - x and y coordinates of the mouse position
 
 **Return Value**
 
@@ -401,7 +401,7 @@ CGameDoor\:\:Marshal
 
 **Parameters**
 
-* :ref:`SAreaFileDoorWrapper<SAreaFileDoorWrapper>`\* pDoorWrapper - * *
+* :ref:`SAreaFileDoorWrapper<SAreaFileDoorWrapper>`\* *pDoorWrapper* - 
 
 **Remarks**
 
@@ -420,7 +420,7 @@ Event action for when mouse is clicked on the door
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>`\& pt - *x and y coordinates of the mouse pointer*
+* :ref:`CPoint<CPoint>`\& *pt* - x and y coordinates of the mouse pointer
 
 **Remarks**
 
@@ -443,10 +443,10 @@ CGameDoor\:\:OnDoorStatusUpdate
 
 **Parameters**
 
-* ``unsigned char`` bDoorOpened - * *
-* ``unsigned long`` dwFlags - * *
-* ``unsigned short`` nTrapActivated - * *
-* ``unsigned short`` nTrapDetected - * *
+* ``unsigned char`` *bDoorOpened* - 
+* ``unsigned long`` *dwFlags* - 
+* ``unsigned short`` *nTrapActivated* - 
+* ``unsigned short`` *nTrapDetected* - 
 
 **Remarks**
 
@@ -481,8 +481,8 @@ CGameDoor\:\:Render
 
 **Parameters**
 
-* :ref:`CGameArea<CGameArea>`\* pArea - * *
-* :ref:`CVidMode<CVidMode>`\* pVidMode - * *
+* :ref:`CGameArea<CGameArea>`\* *pArea* - pointer to area
+* :ref:`CVidMode<CVidMode>`\* *pVidMode* - pointer to vid mode
 
 **Remarks**
 
@@ -501,7 +501,7 @@ Set the cursor and tooltip when mouse is over the door
 
 **Parameters**
 
-* ``long`` nToolTip - *pointer to tooltip text?*
+* ``long`` *nToolTip* - pointer to tooltip text?
 
 **Remarks**
 
@@ -520,7 +520,7 @@ CGameDoor\:\:SetDrawPoly
 
 **Parameters**
 
-* ``short`` time - * *
+* ``short`` *time* - 
 
 **Remarks**
 
@@ -541,8 +541,8 @@ Toggles door by the specified character, opens door if it is currently closed, a
 
 **Parameters**
 
-* :ref:`CAIObjectType<CAIObjectType>`\& user - *character that opens the door*
-* ``int`` ignoreLocked - * *
+* :ref:`CAIObjectType<CAIObjectType>`\& *user* - character that opens the door
+* ``int`` *ignoreLocked* - true of false to ignore locked door
 
 **Remarks**
 
@@ -561,7 +561,7 @@ CGameDoor\:\:ToggleTransitionTrigger
 
 **Parameters**
 
-* ``int`` bClosed - * *
+* ``int`` *bClosed* - true or false for door open or closed
 
 **Remarks**
 

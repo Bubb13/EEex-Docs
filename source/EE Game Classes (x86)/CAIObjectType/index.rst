@@ -12,17 +12,15 @@ The structure used for this class is :ref:`CAIObjectType<CAIObjectType>`
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                                                                                                                                                                              |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`CAIObjectType<CAIObjectType>`\& **CAIObjectType\:\:operator=**\(:ref:`CAIObjectType<CAIObjectType>`\& y)                                                                                                                                                                             |
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CAIObjectType\:\:CAIObjectType**\(unsigned char EnemyAlly, unsigned char General, unsigned char Race, unsigned char Class, unsigned char Specifics, unsigned char Gender, unsigned char Alignment, long Instance)                                                                   |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CAIObjectType\:\:CAIObjectType**\(unsigned char EnemyAlly, unsigned char General, unsigned char Race, unsigned char Class, unsigned char Specifics, unsigned char Gender, unsigned char Alignment, long Instance, const unsigned char\* SpecialCase, :ref:`CString<CString>`\& name)|
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| int **CAIObjectType\:\:operator==**\(:ref:`CAIObjectType<CAIObjectType>`\& y)                                                                                                                                                                                                              |
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CAIObjectType\:\:Decode**\(:ref:`CGameAIBase<CGameAIBase>`\* caller)                                                                                                                                                                                                                |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CAIObjectType\:\:GetActiveInactiveClasses**\(unsigned char\& nActiveClass, unsigned char\& nInactiveClass)                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| unsigned char **CAIObjectType\:\:GetClass**\()                                                                                                                                                                                                                                             |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | :ref:`CAIObjectType<CAIObjectType>` **CAIObjectType\:\:GetEnemyOf**\()                                                                                                                                                                                                                     |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -46,7 +44,9 @@ The structure used for this class is :ref:`CAIObjectType<CAIObjectType>`
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CAIObjectType\:\:SetSpecialCase**\(unsigned char\* temp)                                                                                                                                                                                                                            |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| unsigned char **CAIObjectType\:\:GetClass**\()                                                                                                                                                                                                                                             |
+| :ref:`CAIObjectType<CAIObjectType>`\& **CAIObjectType\:\:operator=**\(:ref:`CAIObjectType<CAIObjectType>`\& y)                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| int **CAIObjectType\:\:operator==**\(:ref:`CAIObjectType<CAIObjectType>`\& y)                                                                                                                                                                                                              |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -61,8 +61,7 @@ Constructors
 +-------------------------------------------------------------------+------------------------------------------------------+
 | :ref:`CAIObjectType\:\:CAIObjectType<CAIObjectTypeCAIObjectType>` | Constructs a ``CAIObjectType`` object                |
 +-------------------------------------------------------------------+------------------------------------------------------+
-| :ref:`CAIObjectType\:\:CAIObjectType<CAIObjectTypeCAIObjectType2>`| Constructs a ``CAIObjectType`` object                |
-+-------------------------------------------------------------------+------------------------------------------------------+
+
 
 .. _CAIObjectTypeCAIObjectType:
 
@@ -98,7 +97,6 @@ Constructs a ``CAIObjectType`` object
 
 Constructs a ``CAIObjectType`` object
 
-.. _CAIObjectTypeCAIObjectType2:
 
 CAIObjectType\:\:CAIObjectType
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -135,7 +133,6 @@ Constructs a ``CAIObjectType`` object
 **Remarks**
 
 Constructs a ``CAIObjectType`` object
-
 
 
 
@@ -189,7 +186,7 @@ Decode CAIObjectType
 
 **Parameters**
 
-* :ref:`CGameAIBase<CGameAIBase>`\* caller - * *
+* :ref:`CGameAIBase<CGameAIBase>`\* *caller* - 
 
 **Remarks**
 
@@ -211,8 +208,8 @@ Gets active and inactive classes
 
 **Parameters**
 
-* ``unsigned char&`` nActiveClass - * *
-* ``unsigned char&`` nInactiveClass - * *
+* ``unsigned char``\& *nActiveClass* - 
+* ``unsigned char``& *nInactiveClass* - 
 
 **Remarks**
 
@@ -271,8 +268,8 @@ CAIObjectType\:\:GetShare
 
 **Parameters**
 
-* :ref:`CGameAIBase<CGameAIBase>`\* caller - * *
-* ``int`` checkBackList - * *
+* :ref:`CGameAIBase<CGameAIBase>`\* *caller* - 
+* ``int`` *checkBackList* - 
 
 **Return Value**
 
@@ -298,9 +295,9 @@ CAIObjectType\:\:GetShareType
 
 **Parameters**
 
-* :ref:`CGameAIBase<CGameAIBase>`\* caller - * *
-* ``unsigned char`` type - * *
-* ``int`` checkBackList - * *
+* :ref:`CGameAIBase<CGameAIBase>`\* *caller* - 
+* ``unsigned char`` *type* - 
+* ``int`` *checkBackList* - 
 
 **Return Value**
 
@@ -323,7 +320,7 @@ CAIObjectType\:\:IsAllyOf
 
 **Parameters**
 
-* :ref:`CAIObjectType<CAIObjectType>`\& type - * *
+* :ref:`CAIObjectType<CAIObjectType>`\& *type* - 
 
 **Return Value**
 
@@ -347,7 +344,7 @@ CAIObjectType\:\:IsEnemyOf
 
 **Parameters**
 
-* :ref:`CAIObjectType<CAIObjectType>`\& type - * *
+* :ref:`CAIObjectType<CAIObjectType>`\& *type* - 
 
 **Return Value**
 
@@ -373,8 +370,8 @@ CAIObjectType\:\:IsUsableSubClass
 
 **Parameters**
 
-* ``unsigned char`` nSubClass - * *
-* ``int`` bAsync - * *
+* ``unsigned char`` *nSubClass* - 
+* ``int`` *bAsync* - asynchronous or synchronous
 
 **Return Value**
 
@@ -398,7 +395,7 @@ CAIObjectType\:\:Match
 
 **Parameters**
 
-* :ref:`CAIObjectType<CAIObjectType>`\& y - * *
+* :ref:`CAIObjectType<CAIObjectType>`\& *y* - 
 
 **Return Value**
 
@@ -427,9 +424,9 @@ CAIObjectType\:\:OfType
 **Parameters**
 
 * :ref:`CAIObjectType<CAIObjectType>`\* type - * *
-* ``int`` checkForNonSprites - * *
-* ``int`` noNonSprites - * *
-* ``int`` deathMatchAllowance - * *
+* ``int`` *checkForNonSprites* - 
+* ``int`` *noNonSprites* - 
+* ``int`` *deathMatchAllowance* - 
 
 **Return Value**
 
@@ -453,7 +450,7 @@ CAIObjectType\:\:Read
 
 **Parameters**
 
-* :ref:`CString<CString>` data - * *
+* :ref:`CString<CString>` *data* - string containing data to read
 
 **Remarks**
 
@@ -473,7 +470,7 @@ CAIObjectType\:\:Set
 
 **Parameters**
 
-* :ref:`CAIObjectType<CAIObjectType>`\& type - * *
+* :ref:`CAIObjectType<CAIObjectType>`\& *type* - type to set object as
 
 **Remarks**
 
@@ -493,7 +490,7 @@ CAIObjectType\:\:SetSpecialCase
 
 **Parameters**
 
-* ``unsigned char*`` temp - * *
+* ``unsigned char*`` *temp* - 
 
 **Remarks**
 
@@ -524,7 +521,7 @@ Assign ``y`` to a :ref:`CAIObjectType<CAIObjectType>` object
 
 **Parameters**
 
-* :ref:`CAIObjectType<CAIObjectType>`\& y - *the new value to assign*
+* :ref:`CAIObjectType<CAIObjectType>`\& *y* - the new value to assign
 
 **Return Value**
 
@@ -546,7 +543,7 @@ Logical comparison equals operator
 
 **Parameters**
 
-* :ref:`CAIObjectType<CAIObjectType>`\& y - *the value to be compared*
+* :ref:`CAIObjectType<CAIObjectType>`\& *y* - the value to be compared
 
 **Return Value**
 

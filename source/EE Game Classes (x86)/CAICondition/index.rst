@@ -36,10 +36,11 @@ Constructors
 | :ref:`CAICondition\:\:~CAICondition<CAICondition~CAICondition>` | Destroys a ``CAICondition`` object                   |
 +-----------------------------------------------------------------+------------------------------------------------------+
 
+
 .. _CAICondition~CAICondition:
 
 CAICondition\:\:~CAICondition
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Destroys the ``CAICondition`` object
 
@@ -84,7 +85,7 @@ Adds a trigger to a condition
 
 **Parameters**
 
-* :ref:`CAITrigger<CAITrigger>`\& trigger - *trigger to add to condition*
+* :ref:`CAITrigger<CAITrigger>`\& *trigger* - trigger to add to condition
 
 **Remarks**
 
@@ -106,8 +107,8 @@ CAICondition\:\:Hold
 
 **Parameters**
 
-* :ref:`CTypedPtrList<CTypedPtrList>`\& triggerList - * *
-* :ref:`CGameAIBase<CGameAIBase>`\* caller - * *
+* :ref:`CTypedPtrList<CTypedPtrList>`\& *triggerList* - 
+* :ref:`CGameAIBase<CGameAIBase>`\* *caller* - 
 
 **Return Value**
 
@@ -130,7 +131,7 @@ CAICondition\:\:Read
 
 **Parameters**
 
-* :ref:`CString<CString>` data - * *
+* :ref:`CString<CString>` *data* - 
 
 **Remarks**
 
@@ -149,7 +150,7 @@ CAICondition\:\:Set
 
 **Parameters**
 
-* :ref:`CAICondition<CAICondition>`\& temp - * *
+* :ref:`CAICondition<CAICondition>`\& *temp* - 
 
 **Remarks**
 
@@ -171,13 +172,13 @@ CAICondition\:\:TriggerHolds
 
 **Parameters**
 
-* :ref:`CAITrigger<CAITrigger>`\* pTrigger - * *
-* :ref:`CTypedPtrList<CTypedPtrList>`\& triggerList - * *
-* :ref:`CGameAIBase<CGameAIBase>`\* caller - * *
+* :ref:`CAITrigger<CAITrigger>`\* *pTrigger* - 
+* :ref:`CTypedPtrList<CTypedPtrList>`\& *triggerList* - 
+* :ref:`CGameAIBase<CGameAIBase>`\* *caller* - 
 
 **Return Value**
 
-``int``
+Returns an ``int`` value
 
 **Remarks**
 

@@ -14,9 +14,7 @@ The structure used for this class is :ref:`CDerivedStats<CDerivedStats>`
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CDerivedStats\:\:CDerivedStats**\()                                                                                                                                                                                                                                                |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`CDerivedStats<CDerivedStats>`\& **CDerivedStats\:\:operator=**\(:ref:`CDerivedStats<CDerivedStats>`\& header)                                                                                                                                                                       |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`CDerivedStats<CDerivedStats>`\& **CDerivedStats\:\:operator+=**\(:ref:`CDerivedStats<CDerivedStats>`\& header)                                                                                                                                                                      |
+| void **CDerivedStats\:\:~CDerivedStats**\()                                                                                                                                                                                                                                               |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CDerivedStats\:\:BonusInit**\()                                                                                                                                                                                                                                                    |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -76,7 +74,9 @@ The structure used for this class is :ref:`CDerivedStats<CDerivedStats>`
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CDerivedStats\:\:Unmarshal**\(unsigned char\* pStats, long nStats)                                                                                                                                                                                                                 |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| void **CDerivedStats\:\:~CDerivedStats**\()                                                                                                                                                                                                                                               |
+| :ref:`CDerivedStats<CDerivedStats>`\& **CDerivedStats\:\:operator=**\(:ref:`CDerivedStats<CDerivedStats>`\& header)                                                                                                                                                                       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`CDerivedStats<CDerivedStats>`\& **CDerivedStats\:\:operator+=**\(:ref:`CDerivedStats<CDerivedStats>`\& header)                                                                                                                                                                      |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -106,6 +106,7 @@ Constructs a ``CDerivedStats`` object
 **Remarks**
 
 Constructs a ``CDerivedStats`` object
+
 
 .. _CDerivedStats~CDerivedStats:
 
@@ -235,7 +236,7 @@ CDerivedStats\:\:GetAtOffset
 
 **Parameters**
 
-* ``short`` offset - * *
+* ``short`` *offset* - 
 
 **Return Value**
 
@@ -258,7 +259,7 @@ CDerivedStats\:\:GetAverageLevel
 
 **Parameters**
 
-* ``unsigned char`` nClass - * *
+* ``unsigned char`` *nClass* - 
 
 **Return Value**
 
@@ -281,7 +282,7 @@ CDerivedStats\:\:GetCastingTime
 
 **Parameters**
 
-* ``int`` nAbilitySpeed - * *
+* ``int`` *nAbilitySpeed* - 
 
 **Return Value**
 
@@ -306,8 +307,8 @@ CDerivedStats\:\:GetClassLevel
 
 **Parameters**
 
-* ``unsigned char`` nClass - * *
-* ``unsigned char`` nSubClass - * *
+* ``unsigned char`` *nClass* - 
+* ``unsigned char`` *nSubClass* - 
 
 **Return Value**
 
@@ -334,10 +335,10 @@ CDerivedStats\:\:GetCriticalValue
 
 **Parameters**
 
-* ``int`` leftHand - * *
-* ``int`` itemType - * *
-* ``int`` attackType - * *
-* ``int`` hitOrMiss - * *
+* ``int`` *leftHand* - 
+* ``int`` *itemType* - 
+* ``int`` *attackType* - 
+* ``int`` *hitOrMiss* - 
 
 **Return Value**
 
@@ -380,7 +381,7 @@ CDerivedStats\:\:GetFalseColor
 
 **Parameters**
 
-* ``unsigned char`` range - * *
+* ``unsigned char`` *range* - 
 
 **Return Value**
 
@@ -405,8 +406,8 @@ CDerivedStats\:\:GetLevel
 
 **Parameters**
 
-* ``unsigned char`` nClass - * *
-* ``unsigned char`` nSubClass - * *
+* ``unsigned char`` *nClass* - 
+* ``unsigned char`` *nSubClass* - 
 
 **Return Value**
 
@@ -432,9 +433,9 @@ CDerivedStats\:\:GetLevelField
 
 **Parameters**
 
-* ``unsigned char`` nClass - * *
-* ``unsigned char`` nSubClass - * *
-* ``unsigned short``\*\& pLevel - * *
+* ``unsigned char`` *nClass* - 
+* ``unsigned char`` *nSubClass* - 
+* ``unsigned short``\*\& *pLevel* - 
 
 **Remarks**
 
@@ -453,7 +454,7 @@ CDerivedStats\:\:GetMaximumLevel
 
 **Parameters**
 
-* ``unsigned char`` nClass - * *
+* ``unsigned char`` *nClass* - 
 
 **Return Value**
 
@@ -476,7 +477,7 @@ CDerivedStats\:\:GetPriestLevel
 
 **Parameters**
 
-* ``unsigned char`` nClass - * *
+* ``unsigned char`` *nClass* - 
 
 **Return Value**
 
@@ -500,7 +501,7 @@ CDerivedStats\:\:GetPriestLevelCast
 
 **Parameters**
 
-* ``unsigned char`` nClass - * *
+* ``unsigned char`` *nClass* - 
 
 **Return Value**
 
@@ -524,7 +525,7 @@ CDerivedStats\:\:GetRating
 
 **Parameters**
 
-* :ref:`CArray<CArray>`\& stats - * *
+* :ref:`CArray<CArray>`\& *stats* - 
 
 **Return Value**
 
@@ -547,7 +548,7 @@ CDerivedStats\:\:GetRogueLevel
 
 **Parameters**
 
-* ``unsigned`` char nClass - * *
+* ``unsigned`` char *nClass* - 
 
 **Return Value**
 
@@ -570,7 +571,7 @@ CDerivedStats\:\:GetSpellState
 
 **Parameters**
 
-* ``unsigned long`` bit - * *
+* ``unsigned long`` *bit* - 
 
 **Return Value**
 
@@ -593,7 +594,7 @@ CDerivedStats\:\:GetWarriorLevel
 
 **Parameters**
 
-* ``unsigned char`` nClass - * *
+* ``unsigned char`` *nClass* - 
 
 **Return Value**
 
@@ -616,7 +617,7 @@ CDerivedStats\:\:GetWizardLevel
 
 **Parameters**
 
-* ``unsigned char`` nClass - * *
+* ``unsigned char`` *nClass* - 
 
 **Return Value**
 
@@ -639,7 +640,7 @@ CDerivedStats\:\:GetWizardLevelCast
 
 **Parameters**
 
-* ``unsigned char`` nClass - * *
+* ``unsigned char`` *nClass* - 
 
 **Return Value**
 
@@ -666,10 +667,10 @@ CDerivedStats\:\:GetXP
 
 **Parameters**
 
-* ``unsigned char`` nClass - * *
-* ``unsigned char`` nSubClass - * *
-* ``unsigned char`` nActiveClass - * *
-* ``unsigned char`` nInactiveClass - * *
+* ``unsigned char`` *nClass* - 
+* ``unsigned char`` *nSubClass* - 
+* ``unsigned char`` *nActiveClass* - 
+* ``unsigned char`` *nInactiveClass* - 
 
 **Return Value**
 
@@ -694,8 +695,8 @@ CDerivedStats\:\:Marshal
 
 **Parameters**
 
-* unsigned char\*\* pStats - * *
-* long\* nStats - * *
+* ``unsigned char``\*\* *pStats* - 
+* ``long``\* *nStats* - 
 
 **Remarks**
 
@@ -714,7 +715,7 @@ CDerivedStats\:\:NumAttacksFloatToShort
 
 **Parameters**
 
-* ``float`` f - * *
+* ``float`` *f* - 
 
 **Return Value**
 
@@ -737,7 +738,7 @@ CDerivedStats\:\:NumAttacksShortToFloat
 
 **Parameters**
 
-* ``short`` s - * *
+* ``short`` *s* - 
 
 **Return Value**
 
@@ -764,9 +765,9 @@ CDerivedStats\:\:Reload
 
 **Parameters**
 
-* :ref:`CCreatureFileHeader<CCreatureFileHeader>`\* header - * *
-* :ref:`CCreatureFileMemorizedSpellLevel<CCreatureFileMemorizedSpellLevel>`\*\* mageSpells - * *
-* :ref:`CCreatureFileMemorizedSpellLevel<CCreatureFileMemorizedSpellLevel>`\*\* priestSpells - * *
+* :ref:`CCreatureFileHeader<CCreatureFileHeader>`\* *header* - 
+* :ref:`CCreatureFileMemorizedSpellLevel<CCreatureFileMemorizedSpellLevel>`\*\* *mageSpells* - 
+* :ref:`CCreatureFileMemorizedSpellLevel<CCreatureFileMemorizedSpellLevel>`\*\* *priestSpells* - 
  
 
 **Remarks**
@@ -787,7 +788,7 @@ CDerivedStats\:\:SetExtState
 
 **Parameters**
 
-* ``unsigned long`` bit - * *
+* ``unsigned long`` *bit* - 
 
 **Remarks**
 
@@ -810,9 +811,9 @@ CDerivedStats\:\:SetLevel
 
 **Parameters**
 
-* ``unsigned char`` nClass - * *
-* ``unsigned char`` nSubClass - * *
-* ``unsigned char`` nLevel - * *
+* ``unsigned char`` *nClass* - 
+* ``unsigned char`` *nSubClass* - 
+* ``unsigned char`` *nLevel* - 
 
 **Remarks**
 
@@ -832,10 +833,7 @@ CDerivedStats\:\:SetSpellState
 
 **Parameters**
 
-* ``unsigned long`` bit - * *
-*  - * *
-*  - * *
-*  - * *
+* ``unsigned long`` *bit* - 
 
 **Return Value**
 
@@ -861,8 +859,8 @@ CDerivedStats\:\:Unmarshal
 
 **Parameters**
 
-* ``unsigned char``\* pStats - * *
-* ``long`` nStats - * *
+* ``unsigned char``\* *pStats* - 
+* ``long`` *nStats* - 
 
 **Remarks**
 
@@ -896,7 +894,7 @@ CDerivedStats\:\:operator=
 
 **Parameters**
 
-* :ref:`CDerivedStats<CDerivedStats>`\& header - * *
+* :ref:`CDerivedStats<CDerivedStats>`\& *header* - 
 
 **Return Value**
 
@@ -920,7 +918,7 @@ CDerivedStats\:\:operator+=
 
 **Parameters**
 
-* :ref:`CDerivedStats<CDerivedStats>`\& header - * *
+* :ref:`CDerivedStats<CDerivedStats>`\& *header* - 
 
 **Return Value**
 

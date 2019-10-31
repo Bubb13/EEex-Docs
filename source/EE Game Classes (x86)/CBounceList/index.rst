@@ -56,14 +56,14 @@ CBounceList\:\:Add
 
 **Parameters**
 
-* CGameEffect\* pEffect - * *
-* long levelDecrement - * *
-* unsigned long effectId - * *
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
-* int decrementOnly - * *
-* unsigned long string - * *
-* int stringOnly - * *
-* int recoverSpellLevels - * *
+* :ref:`CGameEffect<CGameEffect>`\* *pEffect* - pointer to game effect to add
+* ``long`` *levelDecrement* - 
+* ``unsigned long`` *effectId* - 
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
+* ``int`` *decrementOnly* - 
+* ``unsigned long`` *string* - 
+* ``int`` *stringOnly* - 
+* ``int`` *recoverSpellLevels* - 
 
 **Remarks**
 
@@ -98,7 +98,7 @@ CBounceList\:\:Process
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 

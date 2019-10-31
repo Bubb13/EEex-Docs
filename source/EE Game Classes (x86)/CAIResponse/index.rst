@@ -55,6 +55,7 @@ Constructs a ``CAIResponse`` object
 
 Constructs a ``CAIResponse`` object
 
+
 .. _CAIResponse~CAIResponse:
 
 CAIResponse\:\:~CAIResponse
@@ -104,7 +105,7 @@ CAIResponse\:\:Add
 
 **Parameters**
 
-* :ref:`CAIResponse<CAIResponse>`\& res - * *
+* :ref:`CAIResponse<CAIResponse>`\& *res* - response to add
 
 **Remarks**
 
@@ -124,7 +125,7 @@ CAIResponse\:\:Add
 
 **Parameters**
 
-* :ref:`CAIAction<CAIAction>`\& action - * *
+* :ref:`CAIAction<CAIAction>`\& *action* - action to add to response object
 
 **Remarks**
 
@@ -143,7 +144,7 @@ CAIResponse\:\:InListEnd
 
 **Parameters**
 
-* ``short`` actionID - * *
+* ``short`` *actionID* - action id to check occurs in the list
 
 **Return Value**
 
@@ -164,12 +165,12 @@ CAIResponse\:\:Read
 
    void CAIResponse::Read(
       CString data, 
-	  CString source);
+      CString source);
 
 **Parameters**
 
-* :ref:`CString<CString>` data - * *
-* :ref:`CString<CString>` source - * *
+* :ref:`CString<CString>` *data* - string containing data
+* :ref:`CString<CString>` *source* - string containing source
 
 **Remarks**
 
@@ -188,7 +189,7 @@ CAIResponse\:\:Set
 
 **Parameters**
 
-* :ref:`CAIResponse<CAIResponse>`\& temp - * *
+* :ref:`CAIResponse<CAIResponse>`\& *temp* - 
 
 **Remarks**
 

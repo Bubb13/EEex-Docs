@@ -66,8 +66,6 @@ Methods
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`C2DArray\:\:Find<C2DArrayFind>`                    | Locate a text value in the 2da array using column and row text headers to limit search  |
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`C2DArray\:\:Find<C2DArrayFind2>`                   | Locate a text value in the 2da array using x and y coords to limit search               |
-+----------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`C2DArray\:\:GetAt<C2DArrayGetAt>`                  | Return a text value from the specified x and y coords of the 2da array                  |
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`C2DArray\:\:GetAtLong<C2DArrayGetAtLong>`          | Return a long integer value from the specified x and y coords of the 2da array          |
@@ -94,10 +92,10 @@ Locates a text value in the 2da array using column and row text headers to limit
 
 **Parameters**
 
-* :ref:`CString<CString>`\& sSearchString - *text string to search for*
-* :ref:`CString<CString>`\& sXLabel - *column to search*
-* :ref:`CString<CString>`\& sYLabel - *row to search*
-* ``unsigned char`` bSearchLabels - *search among labels for sSearchString*
+* :ref:`CString<CString>`\& *sSearchString* - text string to search for
+* :ref:`CString<CString>`\& *sXLabel* - column to search
+* :ref:`CString<CString>`\& *sYLabel* - row to search
+* ``unsigned char`` *bSearchLabels* - search among labels for sSearchString
 
 **Return Value**
 
@@ -107,8 +105,6 @@ Returns the result of the search as an unsigned char.
 
 *bSearchLabels* can be set to ``TRUE`` to search labels.
 
-
-.. _C2DArrayFind2:
 
 C2DArray\:\:Find
 ^^^^^^^^^^^^^^^^^^^^^
@@ -124,9 +120,9 @@ Locate a text value in the 2da array using x and y coords to limit search
 
 **Parameters**
 
-* :ref:`CString<CString>`\& sSearchString - *text string to search for*
-* :ref:`CPoint<CPoint>`\& ptLocation - *x and y coordinates to search*
-* ``unsigned char`` bSearchLabels - *search among labels for sSearchString*
+* :ref:`CString<CString>`\& *sSearchString* - text string to search for
+* :ref:`CPoint<CPoint>`\& *ptLocation* - x and y coordinates to search
+* ``unsigned char`` *bSearchLabels* - search among labels for sSearchString
 
 **Return Value**
 
@@ -135,6 +131,7 @@ Returns the result of the search as an unsigned char.
 **Remarks**
 
 *bSearchLabels* can be set to ``TRUE`` to search labels.
+
 
 .. _C2DArrayGetAt:
 
@@ -151,8 +148,8 @@ Get a text value from the specified x and y coordinates
 
 **Parameters**
 
-* :ref:`CString<CString>`\& nX - *x coordinate to get the text value from*
-* :ref:`CString<CString>`\& nY - *y coordinate to get the text value from*
+* :ref:`CString<CString>`\& *nX* - x coordinate to get the text value from
+* :ref:`CString<CString>`\& *nY* - y coordinate to get the text value from
 
 **Return Value**
 
@@ -173,7 +170,7 @@ Get a numeric value from the specified x and y coordinates
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>`\& coordinates - *x and y coordinates to get the numeric value from*
+* :ref:`CPoint<CPoint>`\& *coordinates* - x and y coordinates to get the numeric value from
 
 **Return Value**
 
@@ -194,7 +191,7 @@ Loads the specified 2da resource
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>`\& res - *resource reference of the 2da file to load*
+* :ref:`CResRef<CResRef>`\& *res* - resource reference of the 2da file to load
 
 **Remarks**
 
@@ -218,7 +215,7 @@ The equivalant in C++ might be:
    
    for (int i = 0; i < 18; i++)
    {
-	  CResRef ref((const char*)2dalist[i]);
+      CResRef ref((const char*)2dalist[i]);
       array.Load(ref);
    }
 
@@ -238,7 +235,7 @@ Loads the specified 2da resource
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>`\& res - *resource reference of the 2da file to load*
+* :ref:`CResRef<CResRef>`\& *res* - resource reference of the 2da file to load
 
 
 

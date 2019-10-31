@@ -297,7 +297,7 @@ Event handling using SDL library
 
 **Parameters**
 
-* SDL_Event\* e - *SDL event*
+* ``SDL_Event``\* *e* - SDL event
 
 **Return Value**
 
@@ -320,7 +320,7 @@ Key press event for when a key has been pressed (down) and released (up)
 
 **Parameters**
 
-* ``int`` nKeyFlags - * *
+* ``int`` *nKeyFlags* - 
 
 **Remarks**
 
@@ -358,7 +358,7 @@ Plays the WEBM movie as specified by the resource reference
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>`\& cResRef - *WBM movie resource reference to play*
+* :ref:`CResRef<CResRef>`\& *cResRef* - WBM movie resource reference to play
 
 **Remarks**
 
@@ -379,8 +379,8 @@ Plays the WEBM movie as specified by the resource reference
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>`\& cResRef - *WBM movie resource reference to play*
-* ``int`` bAsynchThread - *boolean indicating the use of an asynchronous thread (true) or a synchronous thread instead (false)*
+* :ref:`CResRef<CResRef>`\& *cResRef* - WBM movie resource reference to play
+* ``int`` *bAsynchThread* - boolean indicating the use of an asynchronous thread (true) or a synchronous thread instead (false)
 
 **Remarks**
 
@@ -399,7 +399,7 @@ Play the next movie. Adds movie to queue to play next?
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>`\& cResRef - *WBM movie resource reference to play next*
+* :ref:`CResRef<CResRef>`\& *cResRef* - WBM movie resource reference to play next
 
 **Remarks**
 

@@ -140,8 +140,8 @@ Add a journal entry
 
 **Parameters**
 
-* ``unsigned long`` strText - *pointer to string containing text to add to journal*
-* ``unsigned short`` nType - *type of journal entry to add*
+* ``unsigned long`` *strText* - pointer to string containing text to add to journal
+* ``unsigned short`` *nType* - type of journal entry to add
 
 **Return Value**
 
@@ -166,10 +166,10 @@ Add a journal entry
 
 **Parameters**
 
-* ``unsigned long`` strText - *pointer to string containing text to add to journal*
-* ``int`` nChapter - *chapter to add journal entry to*
-* ``long`` nTime - *date time stamp for journal entry*
-* ``unsigned short`` nType - *type of journal entry to add*
+* ``unsigned long`` *strText* - pointer to string containing text to add to journal
+* ``int`` *nChapter* - chapter to add journal entry to
+* ``long`` *nTime* - date time stamp for journal entry
+* ``unsigned short`` *nType* - type of journal entry to add
 
 **Return Value**
 
@@ -194,7 +194,7 @@ Sorts quests in the specified chapter in alphabetical order
 
 **Parameters**
 
-* ``int`` nChapter - *chapter number to sort*
+* ``int`` *nChapter* - chapter number to sort
 
 **Remarks**
 
@@ -215,8 +215,8 @@ Change a journal entry
 
 **Parameters**
 
-* ``unsigned long`` strRef - *string reference*
-* :ref:`CString<CString>` szNewText - *string containing new text to use in journal entry*
+* ``unsigned long`` *strRef* - string reference
+* :ref:`CString<CString>` *szNewText* - string containing new text to use in journal entry
 
 **Remarks**
 
@@ -237,10 +237,10 @@ Change a journal entry
 
 **Parameters**
 
-* ``unsigned long`` nIndex - *journal entry index id*
-* :ref:`CString<CString>` szNewText - *string containing new text to use in journal entry*
-* ``int`` nChapter - *chapter number that entry is located in*
-* ``unsigned char`` nCharacter - * *
+* ``unsigned long`` *nIndex* - journal entry index id
+* :ref:`CString<CString>` *szNewText* - string containing new text to use in journal entry
+* ``int`` *nChapter* - chapter number that entry is located in
+* ``unsigned char`` *nCharacter* - 
 
 **Remarks**
 
@@ -294,7 +294,7 @@ Delete a journal entry
 
 **Parameters**
 
-* unsigned long strRef - *string reference of journal entry to delete*
+* ``unsigned long`` *strRef* - string reference of journal entry to delete
 
 **Remarks**
 
@@ -316,9 +316,9 @@ Insert a new journal entry after a specific journal entry
 
 **Parameters**
 
-* :ref:`CString<CString>` strText - *string containing new text to use in journal entry*
-* ``unsigned long`` nEntry - *journal entry id to insert new entry after*
-* ``unsigned short`` nType - *type of journal entry to add*
+* :ref:`CString<CString>` *strText* - string containing new text to use in journal entry
+* ``unsigned long`` *nEntry* - journal entry id to insert new entry after
+* ``unsigned short`` *nType* - type of journal entry to add
 
 **Return Value**
 
@@ -345,13 +345,13 @@ Insert a new journal entry after a specific journal entry
 
 **Parameters**
 
-* :ref:`CString<CString>` szText - *string containing new text to use in journal entry*
-* ``unsigned long`` nIndex - *journal entry id to insert new entry after*
-* ``int`` nChapter - *chapter to add journal entry to*
-* ``long`` nTime - *date time stamp for journal entry*
-* ``unsigned char`` nCharacter - * *
-* ``unsigned short`` nType - *type of journal entry to add*
-* ``unsigned long`` strRef - *string reference*
+* :ref:`CString<CString>` *szText* - string containing new text to use in journal entry
+* ``unsigned long`` *nIndex* - journal entry id to insert new entry after
+* ``int`` *nChapter* - chapter to add journal entry to
+* ``long`` *nTime* - date time stamp for journal entry
+* ``unsigned char`` *nCharacter* - 
+* ``unsigned short`` *nType* - type of journal entry to add
+* ``unsigned long`` *strRef* - string reference
 
 **Return Value**
 
@@ -373,7 +373,7 @@ CGameJournal\:\:Marshal
 
 **Parameters**
 
-* :ref:`CSavedGameJournalEntry<CSavedGameJournalEntry>`\* pSavedEntry - * *
+* :ref:`CSavedGameJournalEntry<CSavedGameJournalEntry>`\* *pSavedEntry* - 
 
 **Remarks**
 
@@ -393,7 +393,7 @@ Mark a journal quest entry as completed
 
 **Parameters**
 
-* ``unsigned long`` strRef - *string reference of journal entry to mark as completed*
+* ``unsigned long`` *strRef* - string reference of journal entry to mark as completed
 
 **Remarks**
 
@@ -414,8 +414,8 @@ CGameJournal\:\:Unmarshal
 
 **Parameters**
 
-* :ref:`CSavedGameJournalEntry<CSavedGameJournalEntry>`\* pSavedEntry - * *
-* ``unsigned long`` nSavedEntry - * *
+* :ref:`CSavedGameJournalEntry<CSavedGameJournalEntry>`\* *pSavedEntry* - 
+* ``unsigned long`` *nSavedEntry* - 
 
 **Remarks**
 
@@ -439,11 +439,11 @@ Update a journal entry
 
 **Parameters**
 
-* ``unsigned long`` strText - *string containing journal entry text*
-* ``long`` time - *date time stamp for journal entry*
-* ``unsigned short`` type - *type of journal entry*
-* ``int`` chapter - *chapter number*
-* :ref:`CString<CString>` timeStamp - *date time stamp text*
+* ``unsigned long`` *strText* - string containing journal entry text
+* ``long`` *time* - date time stamp for journal entry
+* ``unsigned short`` *type* - type of journal entry
+* ``int`` *chapter* - chapter number
+* :ref:`CString<CString>` *timeStamp* - date time stamp text
 
 **Remarks**
 

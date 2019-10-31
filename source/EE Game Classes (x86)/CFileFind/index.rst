@@ -71,6 +71,7 @@ Constructs a ``CFileFind`` object
 
 Constructs a ``CFileFind`` object
 
+
 .. _CFileFind~CFileFind:
 
 CFileFind\:\:~CFileFind
@@ -171,8 +172,8 @@ Searches a directory for a specified file name
 
 **Parameters**
 
-* ``const char``\* pstrName - *A pointer to a string containing the name of the file to find. If you pass NULL for pstrName, FindFile does a wildcard (\*.\*) search.*
-* ``unsigned long`` __formal - *Reserved - Must be ``0``*
+* ``const char``\* *pstrName* - A pointer to a string containing the name of the file to find. If you pass NULL for pstrName, FindFile does a wildcard (\*.\*) search.
+* ``unsigned long`` *__formal* - Reserved - Must be ``0``
 
 **Return Value**
 
@@ -342,8 +343,8 @@ Gets the title and extension of the found file
 
 **Parameters**
 
-* :ref:`CString<CString>`\& name - *address of variable to hold file name*
-* :ref:`CString<CString>`\& ext - *address of variable to file extension*
+* :ref:`CString<CString>`\& *name* - address of variable to hold file name
+* :ref:`CString<CString>`\& *ext* - address of variable to file extension
 
 **Remarks**
 
@@ -403,7 +404,7 @@ Indicates the desired file attributes of the file to be found
 
 **Parameters**
 
-* ``unsigned long`` dwMask - *Specifies one or more file attributes for the found file*
+* ``unsigned long`` *dwMask* - Specifies one or more file attributes for the found file
 
 **Return Value**
 

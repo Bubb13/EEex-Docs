@@ -52,6 +52,7 @@ Constructs a ``CChatBuffer`` object
 
 Constructs a ``CChatBuffer`` object
 
+
 .. _CChatBuffer~CChatBuffer:
 
 CChatBuffer\:\:~CChatBuffer
@@ -74,22 +75,22 @@ Destroys the ``CChatBuffer`` object
 Methods
 ---------------
 
-+-----------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| **Name**                                                              | **Description**                                                                         |
-+-----------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CChatBuffer\:\:AddMessage<CChatBufferAddMessage>`               |                                                                                         |
-+-----------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CChatBuffer\:\:ClearMessages<CChatBufferClearMessages>`         |                                                                                         |
-+-----------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CChatBuffer\:\:UpdateTextDisplay<CChatBufferUpdateTextDisplay>` |                                                                                         |
-+-----------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------+--------------------------+
+| **Name**                                                              | **Description**          |
++-----------------------------------------------------------------------+--------------------------+
+| :ref:`CChatBuffer\:\:AddMessage<CChatBufferAddMessage>`               | Add a message to chat    |
++-----------------------------------------------------------------------+--------------------------+
+| :ref:`CChatBuffer\:\:ClearMessages<CChatBufferClearMessages>`         | Clear chat messages      |
++-----------------------------------------------------------------------+--------------------------+
+| :ref:`CChatBuffer\:\:UpdateTextDisplay<CChatBufferUpdateTextDisplay>` | Refresh and update chat  |
++-----------------------------------------------------------------------+--------------------------+
 
 .. _CChatBufferAddMessage:
 
 CChatBuffer\:\:AddMessage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Add a message to chat
 
 ::
 
@@ -99,8 +100,8 @@ CChatBuffer\:\:AddMessage
 
 **Parameters**
 
-* :ref:`CString<CString>`\& sLabel - * *
-* :ref:`CString<CString>`\& sNewMessage - * *
+* :ref:`CString<CString>`\& *sLabel* - address of string containing label text
+* :ref:`CString<CString>`\& *sNewMessage* - address of string containing message text
 
 **Remarks**
 
@@ -112,7 +113,7 @@ CChatBuffer\:\:AddMessage
 CChatBuffer\:\:ClearMessages
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Clear chat messages
 
 ::
 
@@ -127,7 +128,7 @@ CChatBuffer\:\:ClearMessages
 CChatBuffer\:\:UpdateTextDisplay
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Refresh and update chat
 
 ::
 

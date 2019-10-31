@@ -27,24 +27,24 @@ CColorEffects Class
 Methods
 ---------------
 
-+----------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| **Name**                                                 | **Description**                                                                         |
-+----------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CColorEffects\:\:Apply<CColorEffectsApply>`        |                                                                                         |
-+----------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CColorEffects\:\:Marshal<CColorEffectsMarshal>`    |                                                                                         |
-+----------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CColorEffects\:\:Unmarshal<CColorEffectsUnmarshal>`|                                                                                         |
-+----------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CColorEffects\:\:ClearAll<CColorEffectsClearAll>`  |                                                                                         |
-+----------------------------------------------------------+-----------------------------------------------------------------------------------------+
++----------------------------------------------------------+--------------------------------------------------+
+| **Name**                                                 | **Description**                                  |
++----------------------------------------------------------+--------------------------------------------------+
+| :ref:`CColorEffects\:\:Apply<CColorEffectsApply>`        | Apply color effects to a game sprite             |
++----------------------------------------------------------+--------------------------------------------------+
+| :ref:`CColorEffects\:\:Marshal<CColorEffectsMarshal>`    |                                                  |
++----------------------------------------------------------+--------------------------------------------------+
+| :ref:`CColorEffects\:\:Unmarshal<CColorEffectsUnmarshal>`|                                                  |
++----------------------------------------------------------+--------------------------------------------------+
+| :ref:`CColorEffects\:\:ClearAll<CColorEffectsClearAll>`  | Clear all color effects                          |
++----------------------------------------------------------+--------------------------------------------------+
 
 .. _CColorEffectsApply:
 
 CColorEffects\:\:Apply
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Apply color effects to a game sprite
 
 ::
 
@@ -52,7 +52,7 @@ CColorEffects\:\:Apply
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -72,7 +72,7 @@ CColorEffects\:\:Marshal
 
 **Parameters**
 
-* unsigned char\*\* ptrPtr - * *
+* unsigned char\*\* *ptrPtr* - pointer to a pointer
 
 **Return Value**
 
@@ -97,8 +97,8 @@ CColorEffects\:\:Unmarshal
 
 **Parameters**
 
-* ``unsigned char``\* data - * *
-* ``unsigned long`` nSize - * *
+* ``unsigned char``\* *data* - pointer to data
+* ``unsigned long`` *nSize* - size of data
 
 **Remarks**
 
@@ -109,7 +109,7 @@ CColorEffects\:\:Unmarshal
 CColorEffects\:\:ClearAll
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Clear all color effects
 
 ::
 
@@ -143,7 +143,7 @@ CColorEffects\:\:operator=
 
 **Parameters**
 
-* :ref:`CColorEffects<CColorEffects>`\& y - * *
+* :ref:`CColorEffects<CColorEffects>`\& *y* - 
 
 **Return Value**
 

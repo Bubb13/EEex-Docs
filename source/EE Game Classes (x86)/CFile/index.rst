@@ -204,8 +204,8 @@ CFile\:\:GetBufferPtr
 
 **Parameters**
 
-* ``unsigned int`` nCommand - * *
-* ``unsigned int`` __formal - * *
+* ``unsigned int`` *nCommand* - 
+* ``unsigned int`` *__formal* - 
 
 **Return Value**
 
@@ -327,7 +327,7 @@ This method retrieves status information related to a given :ref:`CFile<CFile>` 
 
 **Parameters**
 
-* CFileStatus\& rStatus - *A reference to a user-supplied :ref:`CFileStatus<CFileStatus>` structure that will receive the status information*
+* CFileStatus\& *rStatus* - A reference to a user-supplied :ref:`CFileStatus<CFileStatus>` structure that will receive the status information
 
 **Return Value**
 
@@ -369,9 +369,9 @@ Safely opens a file with an error-testing option
 
 **Parameters**
 
-* ``const char``\* lpszFileName - *A string that contains the path to the desired file. The path can be relative, absolute, or a network name (UNC)*
-* ``unsigned int`` nOpenFlags - *A ``UINT`` that defines the file's sharing and access mode. It specifies the action to take when opening the file.*
-* :ref:`CFileException<CFileException>`\* pException - *A pointer to an existing file-exception object that will receive the status of a failed operation.*
+* ``const char``\* *lpszFileName* - A string that contains the path to the desired file. The path can be relative, absolute, or a network name (UNC)
+* ``unsigned int`` *nOpenFlags* - A ``UINT`` that defines the file's sharing and access mode. It specifies the action to take when opening the file.
+* :ref:`CFileException<CFileException>`\* *pException* - A pointer to an existing file-exception object that will receive the status of a failed operation.
 
 **Return Value**
 
@@ -397,8 +397,8 @@ Reads data into a buffer from the file associated with the :ref:`CFile<CFile>` o
 
 **Parameters**
 
-* ``void``\* lpBuf - *Pointer to the user-supplied buffer that is to receive the data read from the file.*
-* ``unsigned int`` nCount - *The maximum number of bytes to be read from the file. For text-mode files, carriage return-line feed pairs are counted as single characters.*
+* ``void``\* *lpBuf* - Pointer to the user-supplied buffer that is to receive the data read from the file.
+* ``unsigned int`` *nCount* - The maximum number of bytes to be read from the file. For text-mode files, carriage return-line feed pairs are counted as single characters.
 
 **Return Value**
 
@@ -422,7 +422,7 @@ Deletes the specified file
 
 **Parameters**
 
-* ``const char``\* lpszFileName - *A string that is the path to the desired file. The path can be relative or absolute, and can contain a network name.*
+* ``const char``\* *lpszFileName* - A string that is the path to the desired file. The path can be relative or absolute, and can contain a network name.
 
 **Remarks**
 
@@ -444,8 +444,8 @@ Positions the current file pointer
 
 **Parameters**
 
-* ``long`` lOff - *Number of bytes to move the file pointer. Positive values move the file pointer towards the end of the file; negative values move the file pointer towards the start of the file.*
-* ``unsigned int`` nFrom - *Position to seek from. See the Remarks section for possible values.*
+* ``long`` *lOff* - Number of bytes to move the file pointer. Positive values move the file pointer towards the end of the file; negative values move the file pointer towards the start of the file.
+* ``unsigned int`` *nFrom* - Position to seek from. See the Remarks section for possible values.
 
 **Return Value**
 
@@ -480,7 +480,7 @@ Sets the full file path of the selected file
 
 **Parameters**
 
-* ``const char``\* lpszNewName - *Pointer to a string specifying the new path.*
+* ``const char``\* *lpszNewName* - Pointer to a string specifying the new path.
 
 **Remarks**
 
@@ -500,7 +500,7 @@ Changes the length of the file
 
 **Parameters**
 
-* ``unsigned long`` dwNewLen - *Desired length of the file in bytes. This value can be larger or smaller than the current length of the file. The file will be extended or truncated as appropriate.*
+* ``unsigned long`` *dwNewLen* - Desired length of the file in bytes. This value can be larger or smaller than the current length of the file. The file will be extended or truncated as appropriate.
 
 
 .. _CFileWrite:
@@ -518,8 +518,8 @@ Writes (unbuffered) data in a file to the current file position
 
 **Parameters**
 
-* ``const void``\* lpBuf - *A pointer to the user-supplied buffer that contains the data to be written to the file.*
-* ``unsigned int`` nCount - *The number of bytes to be transferred from the buffer. For text-mode files, carriage return-line feed pairs are counted as single characters.*
+* ``const void``\* *lpBuf* - A pointer to the user-supplied buffer that contains the data to be written to the file.
+* ``unsigned int`` *nCount* - The number of bytes to be transferred from the buffer. For text-mode files, carriage return-line feed pairs are counted as single characters.
 
 **Return Value**
 

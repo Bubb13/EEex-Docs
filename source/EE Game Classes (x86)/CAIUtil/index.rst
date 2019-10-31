@@ -67,8 +67,8 @@ Count all squares in the specified points
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>`\& start - *start coordinates*
-* :ref:`CPoint<CPoint>`\& end - *end coordinates*
+* :ref:`CPoint<CPoint>`\& *start* - start coordinates
+* :ref:`CPoint<CPoint>`\& *end* - end coordinates
 
 **Return Value**
 
@@ -94,8 +94,8 @@ Read a string and returns the portion of the string after the specified characte
 
 **Parameters**
 
-* :ref:`CString<CString>`\& line - *the source string to read*
-* ``char`` c - *the character byte to start reading the portion of the string after*
+* :ref:`CString<CString>`\& *line* - the source string to read
+* ``char`` *c* - the character byte to start reading the portion of the string after
 
 **Return Value**
 
@@ -120,8 +120,8 @@ Reads a string and returns the portion of the string that matches the pattern sp
 
 **Parameters**
 
-* :ref:`CString<CString>`\& in - *the source string to read*
-* :ref:`CString<CString>` pattern - *the string pattern to match*
+* :ref:`CString<CString>`\& *in* - the source string to read
+* :ref:`CString<CString>` *pattern* - the string pattern to match
 
 **Return Value**
 
@@ -147,9 +147,9 @@ Reads a string and returns the portion of the string that matches up to the patt
 
 **Parameters**
 
-* :ref:`CString<CString>`\& in - *the source string to read*
-* :ref:`CString<CString>` pattern - *the string pattern to match*
-* ``int`` updateIn - *?*
+* :ref:`CString<CString>`\& *in* - the source string to read
+* :ref:`CString<CString>` *pattern* - the string pattern to match
+* ``int`` *updateIn* - 
 
 **Return Value**
 
@@ -174,8 +174,8 @@ Reads a string and returns the portion of the string before and upto the specifi
 
 **Parameters**
 
-* :ref:`CString<CString>`\& line - *the source string to read*
-* ``char`` c - *the character byte to start reading the portion of the string before and upto*
+* :ref:`CString<CString>`\& *line* - the source string to read
+* ``char`` *c* - the character byte to start reading the portion of the string before and upto
 
 **Return Value**
 
@@ -198,7 +198,7 @@ Removes all whitespace characters (space, tab, line feed, carriage return) from 
 
 **Parameters**
 
-* :ref:`CString<CString>` in - *the source string to strip of whitespace*
+* :ref:`CString<CString>` *in* - the source string to strip of whitespace
 
 **Return Value**
 
@@ -223,8 +223,8 @@ Returns the range squared of the specified points
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>` start - *start coordinate for range*
-* :ref:`CPoint<CPoint>` end - *end coordinates for range*
+* :ref:`CPoint<CPoint>` *start* - start coordinate for range
+* :ref:`CPoint<CPoint>` *end* - end coordinates for range
 
 **Return Value**
 

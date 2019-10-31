@@ -117,8 +117,8 @@ Constructs a ``CGameContainer`` object
 
 **Parameters**
 
-* :ref:`CGameArea<CGameArea>`\* pArea - *pointer to area*
-* :ref:`CRect<CRect>`\& rBound - *bounding rectanble of the container to add to area*
+* :ref:`CGameArea<CGameArea>`\* *pArea* - pointer to area
+* :ref:`CRect<CRect>`\& *rBound* - bounding rectanble of the container to add to area
 
 **Remarks**
 
@@ -143,12 +143,12 @@ Constructs a ``CGameContainer`` object
 
 **Parameters**
 
-* :ref:`CGameArea<CGameArea>`\* pArea - *pointer to area*
-* :ref:`CAreaFileContainer<CAreaFileContainer>`\* pContainerObject - *pointer to container object*
-* :ref:`CAreaPoint<CAreaPoint>`\* pPoints - *pointer to array of points used for polygon to highlight container*
-* ``unsigned short`` maxPts - *count of points in array for polygon*
-* :ref:`CCreatureFileItem<CCreatureFileItem>`\* pItems - *pointer to array of items to add to container*
-* ``unsigned long`` maxItems - *count of items in array to add to container*
+* :ref:`CGameArea<CGameArea>`\* *pArea* - pointer to area
+* :ref:`CAreaFileContainer<CAreaFileContainer>`\* *pContainerObject* - pointer to container object
+* :ref:`CAreaPoint<CAreaPoint>`\* *pPoints* - pointer to array of points used for polygon to highlight container
+* ``unsigned short`` *maxPts* - count of points in array for polygon
+* :ref:`CCreatureFileItem<CCreatureFileItem>`\* *pItems* - pointer to array of items to add to container
+* ``unsigned long`` *maxItems* - count of items in array to add to container
 
 **Remarks**
 
@@ -285,10 +285,10 @@ Add a game effect to a container
 
 **Parameters**
 
-* :ref:`CGameEffect<CGameEffect>`\* pEffect - *pointer to game effect to add to container*
-* ``unsigned char`` list - * *
-* ``int`` noSave - *if a saving throw is allowed to avoid or reduce effect if trap is triggered*
-* ``int`` immediateApply - *if the effect is immediate or delayed*
+* :ref:`CGameEffect<CGameEffect>`\* *pEffect* - pointer to game effect to add to container
+* ``unsigned char`` *list* - 
+* ``int`` *noSave* - if a saving throw is allowed to avoid or reduce effect if trap is triggered
+* ``int`` *immediateApply* - if the effect is immediate or delayed
 
 **Remarks**
 
@@ -311,9 +311,9 @@ CGameContainer\:\:CanSaveGame
 
 **Parameters**
 
-* ``unsigned long``\& strError - * *
-* ``int`` restCheck - * *
-* ``int`` combatCheck - * *
+* ``unsigned long``\& *strError* - 
+* ``int`` *restCheck* - 
+* ``int`` *combatCheck* - 
 
 **Return Value**
 
@@ -352,7 +352,7 @@ CGameContainer\:\:CompressTime
 
 **Parameters**
 
-* ``unsigned long`` deltaTime - * *
+* ``unsigned long`` *deltaTime* - 
 
 **Return Value**
 
@@ -375,7 +375,7 @@ Returns the number of items in container
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>`\& res - *resource reference of the container to return count of items for*
+* :ref:`CResRef<CResRef>`\& *res* - resource reference of the container to return count of items for
 
 **Return Value**
 
@@ -400,8 +400,8 @@ Debug message from container class
 
 **Parameters**
 
-* :ref:`CString<CString>`\& message - *debug message to output to console*
-* ``unsigned char`` bEchoToScreen - *output debug message to screen as well as console*
+* :ref:`CString<CString>`\& *message* - debug message to output to console
+* ``unsigned char`` *bEchoToScreen* - output debug message to screen as well as console
 
 **Remarks**
 
@@ -422,8 +422,8 @@ CGameContainer\:\:DoAIUpdate
 
 **Parameters**
 
-* ``unsigned char`` active - * *
-* ``long`` counter - * *
+* ``unsigned char`` *active* - 
+* ``long`` *counter* - 
 
 **Return Value**
 
@@ -446,7 +446,7 @@ Return the slot id for a specific item in a container
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>`\& res - *resource reference of item in container*
+* :ref:`CResRef<CResRef>`\& *res* - resource reference of item in container
 
 **Return Value**
 
@@ -489,7 +489,7 @@ Return an item from a specified slot in a container
 
 **Parameters**
 
-* ``short`` nSlotNum - *slot id to return the item associated with this slot*
+* ``short`` *nSlotNum* - slot id to return the item associated with this slot
 
 **Return Value**
 
@@ -575,7 +575,7 @@ Determines if a container contains a specific item type
 
 **Parameters**
 
-* ``unsigned long`` type - *the type of item to check for*
+* ``unsigned long`` *type* - the type of item to check for
 
 **Return Value**
 
@@ -600,8 +600,8 @@ Determines if a container contains a specific item type with an item flag
 
 **Parameters**
 
-* ``unsigned long`` flag - *item flag to check for*
-* ``int`` ignoreDestructible - *ignore destructible items*
+* ``unsigned long`` *flag* - item flag to check for
+* ``int`` *ignoreDestructible* - ignore destructible items
 
 **Return Value**
 
@@ -625,7 +625,7 @@ Determines if mouse position is over the container
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>`\& pt - *x and y coordinates of the mouse position*
+* :ref:`CPoint<CPoint>`\& *pt* - x and y coordinates of the mouse position
 
 **Return Value**
 
@@ -648,7 +648,7 @@ CGameContainer\:\:Marshal
 
 **Parameters**
 
-* :ref:`SAreaFileWrapper<SAreaFileWrapper>`\* pContainerWrapper - * *
+* :ref:`SAreaFileWrapper<SAreaFileWrapper>`\* *pContainerWrapper* - 
 
 **Remarks**
 
@@ -669,8 +669,8 @@ CGameContainer\:\:MarshalMessage
 
 **Parameters**
 
-* ``unsigned char``\*\* pData - *data*
-* ``unsigned long``\* dwSize - *size of data*
+* ``unsigned char``\*\* *pData* - pointer to data
+* ``unsigned long``\* *dwSize* - size of data
 
 **Remarks**
 
@@ -689,7 +689,7 @@ Event action for when mouse is clicked on the container
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>`\& pt - *x and y coordinates of the mouse pointer*
+* :ref:`CPoint<CPoint>`\& *pt* - x and y coordinates of the mouse pointer
 
 **Remarks**
 
@@ -708,7 +708,7 @@ Opens container by the specified character
 
 **Parameters**
 
-* :ref:`CAIObjectType<CAIObjectType>`\& user - *character that opens the container*
+* :ref:`CAIObjectType<CAIObjectType>`\& *user* - character that opens the container
 
 **Remarks**
 
@@ -727,7 +727,7 @@ Takes gold and places the specified amount into the shared party gold stash
 
 **Parameters**
 
-* ``unsigned long`` gold - *amount of gold*
+* ``unsigned long`` *gold* - amount of gold
 
 **Remarks**
 
@@ -750,10 +750,10 @@ Places an item into a blank slot of the container
 
 **Parameters**
 
-* :ref:`CItem<CItem>`\* pItem - *item to place in container*
-* ``unsigned char`` bCompressContainer - *if the container should be compressed*
-* ``short`` nRecommendedSlotNum - *the slot id to place the item into the container at*
-* ``int`` useMessage - *?*
+* :ref:`CItem<CItem>`\* *pItem* - item to place in container
+* ``unsigned char`` *bCompressContainer* - if the container should be compressed
+* ``short`` *nRecommendedSlotNum* - the slot id to place the item into the container at
+* ``int`` *useMessage* - 
 
 **Return Value**
 
@@ -794,8 +794,8 @@ CGameContainer\:\:Render
 
 **Parameters**
 
-* :ref:`CGameArea<CGameArea>`\* pArea - *pointer to area*
-* :ref:`CVidMode<CVidMode>\* pVidMode - *pointer to vid mode*
+* :ref:`CGameArea<CGameArea>`\* *pArea* - pointer to area
+* :ref:`CVidMode<CVidMode>\* *pVidMode* - pointer to vid mode
 
 **Remarks**
 
@@ -814,7 +814,7 @@ Set the cursor and tooltip when mouse is over the container
 
 **Parameters**
 
-* ``long`` nToolTip - *pointer to tooltip text?*
+* ``long`` *nToolTip* - pointer to tooltip text?
 
 **Remarks**
 
@@ -833,7 +833,7 @@ CGameContainer\:\:SetDrawPoly
 
 **Parameters**
 
-* ``short`` time - *time value*
+* ``short`` *time* - time value
 
 **Remarks**
 
@@ -856,7 +856,7 @@ Set container flags
 
 **Parameters**
 
-* ``unsigned long`` dwFlags - *flags to set for container*
+* ``unsigned long`` *dwFlags* - flags to set for container
 
 **Remarks**
 
@@ -877,8 +877,8 @@ Set an item in a container slot
 
 **Parameters**
 
-* ``short`` nSlotNum - *slot id to set item for*
-* :ref:`CItem<CItem>`\* pItem - *pointer to item to associate with this slot id*
+* ``short`` *nSlotNum* - slot id to set item for
+* :ref:`CItem<CItem>`\* *pItem* - pointer to item to associate with this slot id
 
 **Remarks**
 
@@ -897,7 +897,7 @@ Sets or clears if a trap is activated on the container
 
 **Parameters**
 
-* ``unsigned short`` active - *trap activated state*
+* ``unsigned short`` *active* - trap activated state
 
 **Remarks**
 
@@ -917,7 +917,7 @@ Sets if a trap on a container has been detected yet
 
 **Parameters**
 
-* ``unsigned short`` state - *trap detected state*
+* ``unsigned short`` *state* - trap detected state
 
 **Remarks**
 
@@ -957,8 +957,8 @@ Take items from a creature
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - *pointer to creature to take items from*
-* int Type - *type of item to take*
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to creature to take items from
+* ``int`` *Type* - type of item to take
 
 **Remarks**
 

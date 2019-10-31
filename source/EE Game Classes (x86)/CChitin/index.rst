@@ -209,8 +209,8 @@ Constructs a ``CChitin`` object
 
 **Parameters**
 
-* ``int`` argc - *An integer that contains the count of arguments that follow in argv*
-* ``char``\*\* argv - *An array of null-terminated strings representing command-line arguments*
+* ``int`` *argc* - An integer that contains the count of arguments that follow in argv
+* ``char``\*\* *argv* - An array of null-terminated strings representing command-line arguments
 
 **Remarks**
 
@@ -218,6 +218,7 @@ By convention, ``argv[0]`` is the command with which the program is invoked, ``a
 
 
 Constructs a ``CChitin`` object
+
 
 .. _CChitin~CChitin:
 
@@ -342,7 +343,7 @@ Methods
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CChitin\:\:LoadOptions<CChitinLoadOptions>`                                                 | Load options                                                                            |
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CChitin\:\:OnAltEnter<CChitinOnAltEnter>`                                                   |                                                                                         |
+| :ref:`CChitin\:\:OnAltEnter<CChitinOnAltEnter>`                                                   | Event action for when Alt+Enter keys are pressed                                        |
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CChitin\:\:OnDropFile<CChitinOnDropFile>`                                                   | Event for handling a file dropped onto running game instance                            |
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
@@ -350,19 +351,19 @@ Methods
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CChitin\:\:OnMixerInitialize<CChitinOnMixerInitialize>`                                     |                                                                                         |
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CChitin\:\:OnMultiplayerPlayerJoin<CChitinOnMultiplayerPlayerJoin>`                         |                                                                                         |
+| :ref:`CChitin\:\:OnMultiplayerPlayerJoin<CChitinOnMultiplayerPlayerJoin>`                         | Event action when a player joins a multiplayer game session                             |
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CChitin\:\:OnMultiplayerPlayerLeave<CChitinOnMultiplayerPlayerLeave>`                       |                                                                                         |
+| :ref:`CChitin\:\:OnMultiplayerPlayerLeave<CChitinOnMultiplayerPlayerLeave>`                       | Event action when a player leaves a multiplayer game session                            |
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CChitin\:\:OnMultiplayerPlayerVisible<CChitinOnMultiplayerPlayerVisible>`                   |                                                                                         |
+| :ref:`CChitin\:\:OnMultiplayerPlayerVisible<CChitinOnMultiplayerPlayerVisible>`                   | Event action when a player in a multiplayer game session becomes visible to others      |
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CChitin\:\:OnMultiplayerSessionClose<CChitinOnMultiplayerSessionClose>`                     |                                                                                         |
+| :ref:`CChitin\:\:OnMultiplayerSessionClose<CChitinOnMultiplayerSessionClose>`                     | Event action when a multiplayer game session closes                                     |
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CChitin\:\:OnMultiplayerSessionOpen<CChitinOnMultiplayerSessionOpen>`                       |                                                                                         |
+| :ref:`CChitin\:\:OnMultiplayerSessionOpen<CChitinOnMultiplayerSessionOpen>`                       | Event action when a multiplayer game session opens                                      |
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CChitin\:\:OnMultiplayerSessionToClose<CChitinOnMultiplayerSessionToClose>`                 |                                                                                         |
+| :ref:`CChitin\:\:OnMultiplayerSessionToClose<CChitinOnMultiplayerSessionToClose>`                 | Event action when a multiplayer game session is about to close                          |
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CChitin\:\:OnResizeWindow<CChitinOnResizeWindow>`                                           |                                                                                         |
+| :ref:`CChitin\:\:OnResizeWindow<CChitinOnResizeWindow>`                                           | Event action for when window is being resized                                           |
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CChitin\:\:MessageCallback<CChitinMessageCallback>`                                         |                                                                                         |
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
@@ -420,7 +421,7 @@ CChitin\:\:AddEngine
 
 **Parameters**
 
-* :ref:`CWarp<CWarp>`\* pNewEngine - * *
+* :ref:`CWarp<CWarp>`\* *pNewEngine* - pointer to new engine instance to add
 
 **Remarks**
 
@@ -440,7 +441,7 @@ Creates and allocates memory for a resource
 
 **Parameters**
 
-* ``int`` nType - *type of resource to create*
+* ``int`` *nType* - type of resource to create
 
 **Return Value**
 
@@ -463,7 +464,7 @@ CChitin\:\:AsynchronousUpdate
 
 **Parameters**
 
-* unsigned int __formal - * *
+* ``unsigned int`` *__formal* - 
 
 **Remarks**
 
@@ -623,7 +624,7 @@ CChitin\:\:GetGamespyResponse
 
 **Parameters**
 
-* unsigned char __formal - * *
+* ``unsigned char`` *__formal* - 
 
 **Return Value**
 
@@ -646,7 +647,7 @@ Gets the game spy code
 
 **Parameters**
 
-* :ref:`CString<CString>`\& sGameSpyCode - * *
+* :ref:`CString<CString>`\& *sGameSpyCode* - address of string variable to store game spy code
 
 **Remarks**
 
@@ -665,7 +666,7 @@ Gets the game spy game name
 
 **Parameters**
 
-* :ref:`CString<CString>`\& sGameSpyName - * *
+* :ref:`CString<CString>`\& *sGameSpyName* - address of string variable to store game spy name
 
 **Remarks**
 
@@ -952,9 +953,9 @@ Legacy function for when game was distributed on CD/DVD
 
 **Parameters**
 
-* :ref:`CString<CString>`\& sMediaRemoved - * *
-* :ref:`CString<CString>`\& sPlaceCD - * *
-* :ref:`CString<CString>`\& sInDrive - * *
+* :ref:`CString<CString>`\& *sMediaRemoved* - address of string to store media string
+* :ref:`CString<CString>`\& *sPlaceCD* - address of string to store place cd/dvd string
+* :ref:`CString<CString>`\& *sInDrive* - address of string to store in drive string
 
 **Remarks**
 
@@ -974,7 +975,7 @@ CChitin\:\:GetScreenShotFilePrefix
 
 **Parameters**
 
-* :ref:`CString<CString>`\& szGameFileName - * *
+* :ref:`CString<CString>`\& *szGameFileName* - address of string to store screenshot filename prefix to
 
 **Remarks**
 
@@ -993,7 +994,7 @@ CChitin\:\:GetTimer
 
 **Parameters**
 
-* ``int`` timer - * *
+* ``int`` *timer* - 
 
 **Return Value**
 
@@ -1208,7 +1209,7 @@ Returns if 3D sound is supported on local machine
 
 **Parameters**
 
-* int nChannel - * *
+* ``int`` *nChannel* - 
 
 **Return Value**
 
@@ -1335,7 +1336,7 @@ Load options
 CChitin\:\:OnAltEnter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Event action for when Alt+Enter keys are pressed
 
 ::
 
@@ -1343,7 +1344,7 @@ CChitin\:\:OnAltEnter
 
 **Remarks**
 
-
+Legacy function for entering and exiting fullscreen mode
 
 
 .. _CChitinOnDropFile:
@@ -1351,7 +1352,7 @@ CChitin\:\:OnAltEnter
 CChitin\:\:OnDropFile
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Event for handling a file dropped onto running game instance.
+Event for handling a file dropped into a specific folder whilst the game instance is running.
 
 ::
 
@@ -1359,7 +1360,7 @@ Event for handling a file dropped onto running game instance.
 
 **Parameters**
 
-* const char\* path - *full filepath to file dropped onto game instance*
+* const char\* *path* - full filepath to file "dropped"
 
 **Remarks**
 
@@ -1430,7 +1431,7 @@ CChitin\:\:OnMixerInitialize
 CChitin\:\:OnMultiplayerPlayerJoin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Event action when a player joins a multiplayer game session
 
 ::
 
@@ -1438,10 +1439,11 @@ CChitin\:\:OnMultiplayerPlayerJoin
 
 **Parameters**
 
-* int __formal - * *
+* ``int`` *__formal* - 
 
 **Remarks**
 
+See also :ref:`CBaldurChitin::OnMultiplayerPlayerJoin<CBaldurChitinOnMultiplayerPlayerJoin>`
 
 
 .. _CChitinOnMultiplayerPlayerLeave:
@@ -1449,7 +1451,7 @@ CChitin\:\:OnMultiplayerPlayerJoin
 CChitin\:\:OnMultiplayerPlayerLeave
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Event action when a player leaves a multiplayer game session
 
 ::
 
@@ -1457,10 +1459,11 @@ CChitin\:\:OnMultiplayerPlayerLeave
 
 **Parameters**
 
-* int __formal - * *
+* ``int`` *__formal* - 
 
 **Remarks**
 
+See also :ref:`CBaldurChitin::OnMultiplayerPlayerLeave<CBaldurChitinOnMultiplayerPlayerLeave>`
 
 
 .. _CChitinOnMultiplayerPlayerVisible:
@@ -1468,7 +1471,7 @@ CChitin\:\:OnMultiplayerPlayerLeave
 CChitin\:\:OnMultiplayerPlayerVisible
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Event action when a player in a multiplayer game session becomes visible to other existing players
 
 ::
 
@@ -1476,9 +1479,11 @@ CChitin\:\:OnMultiplayerPlayerVisible
 
 **Parameters**
 
-* int __formal - * *
+* ``int`` *__formal* - 
 
 **Remarks**
+
+See also :ref:`CBaldurChitin::OnMultiplayerPlayerVisible<CBaldurChitinOnMultiplayerPlayerVisible>`
 
 
 .. _CChitinOnMultiplayerSessionClose:
@@ -1486,7 +1491,7 @@ CChitin\:\:OnMultiplayerPlayerVisible
 CChitin\:\:OnMultiplayerSessionClose
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Event action when a multiplayer game session closes
 
 ::
 
@@ -1494,7 +1499,7 @@ CChitin\:\:OnMultiplayerSessionClose
 
 **Remarks**
 
-
+See also :ref:`CBaldurChitin::OnMultiplayerSessionClose<CBaldurChitinOnMultiplayerSessionClose>`
 
 
 .. _CChitinOnMultiplayerSessionOpen:
@@ -1502,7 +1507,7 @@ CChitin\:\:OnMultiplayerSessionClose
 CChitin\:\:OnMultiplayerSessionOpen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Event action when a multiplayer game session opens
 
 ::
 
@@ -1510,10 +1515,11 @@ CChitin\:\:OnMultiplayerSessionOpen
 
 **Parameters**
 
-* :ref:`CString<CString>`\& __formal - * *
+* :ref:`CString<CString>`\& *__formal* - 
 
 **Remarks**
 
+See also :ref:`CBaldurChitin::OnMultiplayerSessionOpen<CBaldurChitinOnMultiplayerSessionOpen>`
 
 
 .. _CChitinOnMultiplayerSessionToClose:
@@ -1521,7 +1527,7 @@ CChitin\:\:OnMultiplayerSessionOpen
 CChitin\:\:OnMultiplayerSessionToClose
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Event action when a multiplayer game session is about to close
 
 ::
 
@@ -1529,25 +1535,25 @@ CChitin\:\:OnMultiplayerSessionToClose
 
 **Remarks**
 
-
+See also :ref:`CBaldurChitin\:\:OnMultiplayerSessionToClose<CBaldurChitinOnMultiplayerSessionToClose>`
 
 .. _CChitinOnResizeWindow:
 
 CChitin\:\:OnResizeWindow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Event action for when window is being resized
 
 ::
 
    void CChitin::OnResizeWindow(
       int w, 
-	  int h);
+      int h);
 
 **Parameters**
 
-* ``int`` w - * *
-* ``int`` h - * *
+* ``int`` *w* - new width of main window
+* ``int`` *h* - new height of main window
 
 **Remarks**
 
@@ -1566,7 +1572,7 @@ CChitin\:\:MessageCallback
 
 **Parameters**
 
-* unsigned char\* __formal - * *
+* unsigned char\* *__formal* - 
 
 **Return Value**
 
@@ -1603,6 +1609,7 @@ The command line accepts the following recognised options and parameters:
 * ``+tob`` - *multiplayer game is set for Throne of Bhaal*
 
 Options are preceded with a ``+``, parameter values can be enclosed in quotes ``"``
+
 
 .. _CChitinPreLoadFonts:
 
@@ -1696,7 +1703,7 @@ CChitin\:\:SetCDSwitchActivateEngine
 
 **Parameters**
 
-* int bValue - * *
+* ``int`` *bValue* - true or false
 
 **Remarks**
 
@@ -1715,7 +1722,7 @@ CChitin\:\:SetCDSwitchStatus
 
 **Parameters**
 
-* unsigned char __formal - * *
+* ``unsigned char`` *__formal* - 
 
 **Remarks**
 
@@ -1734,7 +1741,7 @@ CChitin\:\:SelectEngine
 
 **Parameters**
 
-* :ref:`CWarp<CWarp>`\* pNewEngine - * *
+* :ref:`CWarp<CWarp>`\* *pNewEngine* - pointer to new engine to select
 
 **Remarks**
 
@@ -1768,7 +1775,7 @@ Set progress bar on screen
 
 **Parameters**
 
-* unsigned char __formal - * *
+* ``unsigned char`` *__formal* - 
 
 **Remarks**
 
@@ -1787,7 +1794,7 @@ CChitin\:\:SetProgressBarActivateEngine
 
 **Parameters**
 
-* int bValue - * *
+* ``int`` *bValue* - true or false
 
 **Remarks**
 
@@ -1806,7 +1813,7 @@ CChitin\:\:SetRenderCount
 
 **Parameters**
 
-* unsigned char nCount - * *
+* ``unsigned char`` *nCount* - set render count
 
 **Remarks**
 
@@ -1840,7 +1847,7 @@ CChitin\:\:ShowVirtualKeyboard
 
 **Parameters**
 
-* int multiline - * *
+* ``int`` *multiline* - true or false to show multiline virtual keyboard
 
 **Remarks**
 
@@ -1858,14 +1865,14 @@ CChitin\:\:ShutDown
 
    virtual void CChitin::ShutDown(
       int nLineNumber, 
-	  const char* szFileName, 
-	  const char* text);
+      const char* szFileName, 
+      const char* text);
 
 **Parameters**
 
-* int nLineNumber - * *
-* const char\* szFileName - * *
-* const char\* text - * *
+* ``int`` *nLineNumber* -  line number that shutdown occured at
+* ``const char``\* *szFileName* - file that shutdown occured at
+* ``const char``\* *text* - message text for shutdown reason to output to log
 
 **Remarks**
 

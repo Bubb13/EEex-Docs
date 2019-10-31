@@ -158,12 +158,12 @@ Add notes to an area
 
 **Parameters**
 
-* :ref:`CString<CString>` area - *map area name to add notes to*
-* ``unsigned short`` startX - *x coordinate to add note at*
-* ``unsigned short`` startY - *y coordinate to add note at*
-* :ref:`CString<CString>` szNote - *the text content of the note to add*
-* ``unsigned long`` dwFlags - *flags*
-* ``unsigned long`` strRef - *string reference*
+* :ref:`CString<CString>` *area* - map area name to add notes to
+* ``unsigned short`` *startX* - x coordinate to add note at
+* ``unsigned short`` *startY* - y coordinate to add note at
+* :ref:`CString<CString>` *szNote* - the text content of the note to add
+* ``unsigned long`` *dwFlags* - flags
+* ``unsigned long`` *strRef* - string reference
 
 **Remarks**
 
@@ -183,7 +183,7 @@ Add a note to area
 
 **Parameters**
 
-* :ref:`CAreaUserNote<CAreaUserNote>`\* cNote - *note structure to use for adding a note*
+* :ref:`CAreaUserNote<CAreaUserNote>`\* *cNote* - note structure to use for adding a note
 
 **Return Value**
 
@@ -206,7 +206,7 @@ Add a note button
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>` ptWorld - *x and y coordinates to add note button at*
+* :ref:`CPoint<CPoint>` *ptWorld* - x and y coordinates to add note button at
 
 **Return Value**
 
@@ -233,10 +233,10 @@ Add a predefined note using a string reference from the tlk table
 
 **Parameters**
 
-* ``unsigned long`` strref - *string reference of existing note defined in tlk table to add*
-* ``unsigned long`` flags - *flags*
-* :ref:`CPoint<CPoint>` cPoint - *x and y coordinates to add note at*
-* ``int`` bAddToEnd - *add note to end or beginning*
+* ``unsigned long`` *strref* - string reference of existing note defined in tlk table to add
+* ``unsigned long`` *flags* - flags
+* :ref:`CPoint<CPoint>` *cPoint* - x and y coordinates to add note at
+* ``int`` *bAddToEnd* - add note to end or beginning
 
 **Remarks**
 
@@ -255,7 +255,7 @@ Delete an existing note button
 
 **Parameters**
 
-* ``unsigned long`` nButtonId - *id of note button to delete*
+* ``unsigned long`` *nButtonId* - id of note button to delete
 
 **Return Value**
 
@@ -278,7 +278,7 @@ Get note information at a specified coordinate
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>`\& cPt - *x and y coordinates to return note at this location for*
+* :ref:`CPoint<CPoint>`\& *cPt* - x and y coordinates to return note at this location for
 
 **Return Value**
 
@@ -301,7 +301,7 @@ Returns note color for a specified note button
 
 **Parameters**
 
-* ``unsigned long`` iD - *id of note button to return color for*
+* ``unsigned long`` *iD* - id of note button to return color for
 
 **Return Value**
 
@@ -324,7 +324,7 @@ Returns note text for a specified note button
 
 **Parameters**
 
-* ``unsigned long`` iD - *id of note button*
+* ``unsigned long`` *iD* - id of note button
 
 **Return Value**
 
@@ -363,7 +363,7 @@ Determines if a note exists at the specified coordinates
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>`\& cPt - *x and y coordinates to check if a note exists at*
+* :ref:`CPoint<CPoint>`\& *cPt* - x and y coordinates to check if a note exists at
 
 **Return Value**
 
@@ -388,8 +388,8 @@ CGameAreaNotes\:\:Marshal
 
 **Parameters**
 
-* unsigned char\*\*\& pArea - *pointer to area*
-* unsigned long\& cnt - *count*
+* unsigned char\*\*\& *pArea* - pointer to area
+* unsigned long\& *cnt* - count
 
 **Remarks**
 
@@ -410,8 +410,8 @@ Push a note at a specified world and screen location to the lua stack
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>` ptWorld - *x and y coordinates of world*
-* :ref:`CPoint<CPoint>` ptScreen - *x and y coordinates of screen*
+* :ref:`CPoint<CPoint>` *ptWorld* - x and y coordinates of world
+* :ref:`CPoint<CPoint>` *ptScreen* - x and y coordinates of screen
 
 **Remarks**
 
@@ -432,8 +432,8 @@ Remove text from an existing note
 
 **Parameters**
 
-* unsigned long strref - *string reference to remove from note*
-* :ref:`CPoint<CPoint>` cPoint - *x and y coordinates of note button*
+* ``unsigned long`` *strref* - string reference to remove from note
+* :ref:`CPoint<CPoint>` *cPoint* - x and y coordinates of note button
 
 **Remarks**
 
@@ -469,8 +469,8 @@ Refresh and update note button
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>` ptWorld - *x and y coordinates of note button*
-* int nID - *button id*
+* :ref:`CPoint<CPoint>` *ptWorld* - x and y coordinates of note button
+* ``int`` *nID* - button id
 
 **Return Value**
 

@@ -85,11 +85,11 @@ CGameDialogEntry\:\:Display
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
-* ``unsigned long`` playerColor - * *
-* ``int`` newDialog - * *
-* ``int`` bSuppressName - * *
-* :ref:`CResRef<CResRef>` resItem - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object to display in dialog entry
+* ``unsigned long`` *playerColor* - 
+* ``int`` *newDialog* - 
+* ``int`` *bSuppressName* - 
+* :ref:`CResRef<CResRef>` *resItem* - resource reference
 
 **Remarks**
 
@@ -114,11 +114,11 @@ CGameDialogEntry\:\:Handle
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
-* ``unsigned long`` playerColor - * *
-* ``int`` newDialog - * *
-* ``int`` bSuppressName - * *
-* :ref:`CResRef<CResRef>` resItem - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object to display in dialog entry
+* ``unsigned long`` *playerColor* - 
+* ``int`` *newDialog* -  
+* ``int`` *bSuppressName* - 
+* :ref:`CResRef<CResRef>` *resItem* - resource reference
 
 **Return Value**
 
@@ -144,9 +144,9 @@ CGameDialogEntry\:\:RemoveReplies
 
 **Parameters**
 
-* ``long`` marker - * *
-* ``unsigned long`` nameColor - * *
-* :ref:`CString<CString>`\& name - * *
+* ``long`` *marker* - 
+* ``unsigned long`` *nameColor* - 
+* :ref:`CString<CString>`\& *name* - 
 
 **Remarks**
 

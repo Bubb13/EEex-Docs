@@ -74,8 +74,8 @@ Constructs a ``CAIScript`` object
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>` cNewResRef - * *
-* ``int`` playerscript - * *
+* :ref:`CResRef<CResRef>` *cNewResRef* - 
+* ``int`` *playerscript* - 
 
 **Remarks**
 
@@ -133,8 +133,8 @@ Add a condition (:ref:`CAICondition<CAICondition>`) and a response (:ref:`CAIRes
 
 **Parameters**
 
-* :ref:`CAICondition<CAICondition>`\& condition - * *
-* :ref:`CAIResponseSet<CAIResponseSet>`\& responseSet - * *
+* :ref:`CAICondition<CAICondition>`\& *condition* - 
+* :ref:`CAIResponseSet<CAIResponseSet>`\& *responseSet* - 
 
 **Remarks**
 
@@ -154,7 +154,7 @@ Copy a list of script items
 
 **Parameters**
 
-* :ref:`CTypedPtrList<CTypedPtrList>`\& copyList - * *
+* :ref:`CTypedPtrList<CTypedPtrList>`\& *copyList* - 
 
 **Remarks**
 
@@ -175,8 +175,8 @@ Find a trigger within a script and return the response for that
 
 **Parameters**
 
-* :ref:`CTypedPtrList<CTypedPtrList>`\& triggerList - * *
-* :ref:`CGameAIBase<CGameAIBase>`\* caller - * *
+* :ref:`CTypedPtrList<CTypedPtrList>`\& *triggerList* - 
+* :ref:`CGameAIBase<CGameAIBase>`\* *caller* - 
 
 **Return Value**
 
@@ -201,8 +201,8 @@ Read a script file from disk as specified by *fileName*
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>` fileName - * *
-* ``int`` playerScript - * *
+* :ref:`CResRef<CResRef>` *fileName* - resource reference of script file to read
+* ``int`` *playerScript* - 
 
 **Remarks**
 
@@ -223,8 +223,8 @@ Writes a script to a file as specified by *fileName*
 
 **Parameters**
 
-* :ref:`CString<CString>` fileName - * *
-* :ref:`CGameObject<CGameObject>`\* pAIObj - * *
+* :ref:`CString<CString>` *fileName* - script filename to write data to
+* :ref:`CGameObject<CGameObject>`\* *pAIObj* - 
  
 
 **Remarks**

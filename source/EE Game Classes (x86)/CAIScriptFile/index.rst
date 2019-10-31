@@ -111,7 +111,7 @@ Constructs a ``CAIScriptFile`` object
 
 ::
 
-   void CAIScriptFile();
+   void CAIScriptFile::CAIScriptFile();
 
 **Remarks**
 
@@ -126,7 +126,7 @@ Destroys the ``CAIScriptFile`` object
 
 ::
 
-   void ~CAIScriptFile();;
+   void CAIScriptFile::~CAIScriptFile();;
 
 **Remarks**
 
@@ -243,11 +243,11 @@ Decodes and returns an action id name for the name specified
 
 ::
 
-   short **CAIScriptFile::DecodeActionID(CString name);
+   short CAIScriptFile::DecodeActionID(CString name);
 
 **Parameters**
 
-* :ref:`CString<CString>` name - *action name*
+* :ref:`CString<CString>` *name* - action name
 
 **Return Value**
 
@@ -272,8 +272,8 @@ Decodes and returns an action type name for the line specified
 
 **Parameters**
 
-* :ref:`CString<CString>` IDLine - *line identifier*
-* ``long``\& paramCount - *count of parameters*
+* :ref:`CString<CString>` *IDLine* - line identifier
+* ``long``\& *paramCount* - count of parameters
 
 **Return Value**
 
@@ -296,7 +296,7 @@ Decodes a special case
 
 **Parameters**
 
-* :ref:`CString<CString>` name - *special case name*
+* :ref:`CString<CString>` *name* - special case name
 
 **Return Value**
 
@@ -315,11 +315,11 @@ Decodes and returns an trigger id name for the name specified
 
 ::
 
-   short **CAIScriptFile\:\:DecodeTriggerID**\(:ref:`CString<CString>` name);
+   short CAIScriptFile::DecodeTriggerID(CString name);
 
 **Parameters**
 
-* :ref:`CString<CString>` name - *trigger name*
+* :ref:`CString<CString>` *name* - trigger name
 
 **Return Value**
 
@@ -344,8 +344,8 @@ Decompile an action
 
 **Parameters**
 
-* :ref:`CAIAction<CAIAction>` action - *the action to decompile*
-* :ref:`CGameObject<CGameObject>`\* pAIObj - *pointer to game object*
+* :ref:`CAIAction<CAIAction>` *action* - the action to decompile
+* :ref:`CGameObject<CGameObject>`\* *pAIObj* - pointer to game object
 
 **Remarks**
 
@@ -366,8 +366,8 @@ CAIScriptFile\:\:DecompileInt
 
 **Parameters**
 
-* ``long`` num - * *
-* :ref:`CString<CString>` constFile - *filename*
+* ``long`` *num* - 
+* :ref:`CString<CString>` *constFile* - string containing filename to decompile
 
 **Remarks**
 
@@ -389,8 +389,8 @@ Decompile a :ref:`CAIObjectType<CAIObjectType>` object
 
 **Parameters**
 
-* :ref:`CAIObjectType<CAIObjectType>` object - *object to decompile*
-* :ref:`CGameObject<CGameObject>`\* pAIObj - *pointer to game object*
+* :ref:`CAIObjectType<CAIObjectType>` *object* - object to decompile
+* :ref:`CGameObject<CGameObject>`\* *pAIObj* - pointer to game object
 
 **Remarks**
 
@@ -410,7 +410,7 @@ Decompile an x and y point coordinate
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>` point - *x, y coordinate to decompile*
+* :ref:`CPoint<CPoint>` *point* - x, y coordinate to decompile
 
 **Remarks**
 
@@ -431,8 +431,8 @@ Decompile a response set
 
 **Parameters**
 
-* :ref:`CAIResponseSet<CAIResponseSet>`\& resSet - *address of response set to decompile*
-* :ref:`CGameObject<CGameObject>`\* pAIObj - *pointer to game object*
+* :ref:`CAIResponseSet<CAIResponseSet>`\& *resSet* - address of response set to decompile
+* :ref:`CGameObject<CGameObject>`\* *pAIObj* -*pointer to game object
 
 **Remarks**
 
@@ -453,8 +453,8 @@ Decompile a script
 
 **Parameters**
 
-* :ref:`CAIScript<CAIScript>`\& script - *address of script to decompile*
-* :ref:`CGameObject<CGameObject>`\* pAIObj - *pointer to game object*
+* :ref:`CAIScript<CAIScript>`\& *script* - address of script to decompile
+* :ref:`CGameObject<CGameObject>`\* *pAIObj* - pointer to game object
 
 **Remarks**
 
@@ -475,8 +475,8 @@ Decompile a :ref:`CAITrigger<CAITrigger>` trigger
 
 **Parameters**
 
-* :ref:`CAITrigger<CAITrigger>`\& trigger - *address of trigger to decompile*
-* :ref:`CGameObject<CGameObject>`\* pAIObj - *pointer to game object*
+* :ref:`CAITrigger<CAITrigger>`\& *trigger* - address of trigger to decompile
+* :ref:`CGameObject<CGameObject>`\* *pAIObj* - pointer to game object
 
 **Remarks**
 
@@ -495,7 +495,7 @@ CAIScriptFile\:\:DontMergeStrings
 
 **Parameters**
 
-* :ref:`CString<CString>` IDLine - *line identifier*
+* :ref:`CString<CString>` *IDLine* - line identifier
 
 **Return Value**
 
@@ -518,7 +518,7 @@ CAIScriptFile\:\:GetConstFile
 
 **Parameters**
 
-* :ref:`CString<CString>` parameter - * *
+* :ref:`CString<CString>` *parameter* - 
 
 **Return Value**
 
@@ -544,8 +544,8 @@ CAIScriptFile\:\:GetIdLine
 
 **Parameters**
 
-* :ref:`CAIIdList<CAIIdList>`\& ids - * *
-* :ref:`CString<CString>`\& name - * *
+* :ref:`CAIIdList<CAIIdList>`\& *ids* - 
+* :ref:`CString<CString>`\& *name* - 
 **Return Value**
 
 Returns a :ref:`CString<CString>`
@@ -570,8 +570,8 @@ Returns a parameter from a line in a script
 
 **Parameters**
 
-* ``short`` parNum - *parameter number to fetch*
-* :ref:`CString<CString>` IDLine - *line identifier*
+* ``short`` *parNum* - parameter number to fetch
+* :ref:`CString<CString>` *IDLine* - line identifier
 
 **Return Value**
 
@@ -594,7 +594,7 @@ Returns a parameter type from the specified parameter name
 
 **Parameters**
 
-* :ref:`CString<CString>` param - *name of the parameter to return the type for*
+* :ref:`CString<CString>` *param* - name of the parameter to return the type for
 
 **Return Value**
 
@@ -632,7 +632,7 @@ Create a new response
 
 **Parameters**
 
-* ``short`` weight - * *
+* ``short`` *weight* - 
 
 **Remarks**
 
@@ -666,7 +666,7 @@ Parse a line in a script file for an action
 
 **Parameters**
 
-* :ref:`CString<CString>` line - *the line number of the script to parse for an action*
+* :ref:`CString<CString>` *line* - the line number of the script to parse for an action
 
 **Return Value**
 
@@ -690,7 +690,7 @@ Parse a string that contains a conditional
 
 **Parameters**
 
-* :ref:`CString<CString>` data - *string containing the conditional to parse*
+* :ref:`CString<CString>` *data* - string containing the conditional to parse
 
 **Remarks**
 
@@ -710,7 +710,7 @@ Parse an error message for a script file
 
 **Parameters**
 
-* :ref:`CString<CString>` message - *the error message to parse*
+* :ref:`CString<CString>` *message* - the error message to parse
 
 **Remarks**
 
@@ -731,8 +731,8 @@ Parse a script file and returns an integer from the input
 
 **Parameters**
 
-* :ref:`CString<CString>` input - *string containing input to parse*
-* :ref:`CString<CString>` constFile - *script filename to parse an integer for*
+* :ref:`CString<CString>` *input* - string containing input to parse
+* :ref:`CString<CString>` *constFile* - string containing script filename to parse an integer for
 
 **Return Value**
 
@@ -755,7 +755,7 @@ Parse input for an atomic object and return a :ref:`CAIObjectType<CAIObjectType>
 
 **Parameters**
 
-* :ref:`CString<CString>` input - *string containing input to parse*
+* :ref:`CString<CString>` *input* - string containing input to parse
 
 **Return Value**
 
@@ -778,7 +778,7 @@ Parse input for an object function and return a :ref:`CAIObjectType<CAIObjectTyp
 
 **Parameters**
 
-* :ref:`CString<CString>` input - *string containing input to parse*
+* :ref:`CString<CString>` *input* - string containing input to parse
 
 **Return Value**
 
@@ -801,7 +801,7 @@ Parse input for an object type and return a :ref:`CAIObjectType<CAIObjectType>`
 
 **Parameters**
 
-* :ref:`CString<CString>`\& input - *address of string containing input to parse*
+* :ref:`CString<CString>`\& *input* - address of string containing input to parse
 
 **Return Value**
 
@@ -824,7 +824,7 @@ Parse a single line
 
 **Parameters**
 
-* :ref:`CString<CString>` line - *string containing line to parse*
+* :ref:`CString<CString>` *line* - string containing line to parse
 
 **Return Value**
 
@@ -848,7 +848,7 @@ CAIScriptFile\:\:ParsePoint
 
 **Parameters**
 
-* :ref:`CString<CString>` input - *string containing input to parse*
+* :ref:`CString<CString>` *input* - string containing input to parse
 
 **Return Value**
 
@@ -872,7 +872,7 @@ Parse a string containing response data
 
 **Parameters**
 
-* :ref:`CString<CString>` data - *string containing response data to parse*
+* :ref:`CString<CString>` *data* - string containing response data to parse
 
 **Remarks**
 
@@ -891,7 +891,7 @@ Parse a string line containing a trigger
 
 **Parameters**
 
-* :ref:`CString<CString>` line - *string containing line that has a trigger to parse*
+* :ref:`CString<CString>` *line* - string containing line that has a trigger to parse
 
 **Return Value**
 
@@ -916,8 +916,8 @@ Read a script line for a specific character and return the rest of line after th
 
 **Parameters**
 
-* :ref:`CString<CString>` line - *string containing line to read*
-* ``char`` c - *character byte to read after*
+* :ref:`CString<CString>` *line* - string containing line to read
+* ``char`` *c* - character byte to read after
 
 **Return Value**
 
@@ -942,8 +942,8 @@ Read a script line up to a specific character and return the portion before that
 
 **Parameters**
 
-* :ref:`CString<CString>` line - *string containing line to read*
-* ``char`` c - *character byte to read up to*
+* :ref:`CString<CString>` *line* - string containing line to read
+* ``char`` *c* - character byte to read up to
 
 **Return Value**
 
@@ -981,7 +981,7 @@ Write decompiled text to a script
 
 **Parameters**
 
-* :ref:`CString<CString>` text - *string containing script text to write to script file*
+* :ref:`CString<CString>` *text* - string containing script text to write to script file
 
 **Return Value**
 

@@ -48,7 +48,7 @@ CGameDialogReply\:\:Hold
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Return Value**
 
@@ -72,7 +72,7 @@ CGameDialogReply\:\:Pick
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Return Value**
 
@@ -95,7 +95,7 @@ CGameDialogReply\:\:ProcessInstants
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 

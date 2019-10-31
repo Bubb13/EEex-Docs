@@ -141,7 +141,7 @@ CAIGroup\:\:Add
 
 **Parameters**
 
-* ``long`` spriteIndex - * *
+* ``long`` *spriteIndex* - 
 
 **Return Value**
 
@@ -163,7 +163,7 @@ CAIGroup\:\:Add
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - 
 
 **Remarks**
 
@@ -181,7 +181,7 @@ CAIGroup\:\:AddEffect
 
 **Parameters**
 
-* :ref:`CGameEffect<CGameEffect>`\* effect - * *
+* :ref:`CGameEffect<CGameEffect>`\* *effect* - 
 
 **Remarks**
 
@@ -199,7 +199,7 @@ CAIGroup\:\:AddToSearch
 
 **Parameters**
 
-* :ref:`CSearchBitmap<CSearchBitmap>`\* search - * *
+* :ref:`CSearchBitmap<CSearchBitmap>`\* *search* - 
 
 **Remarks**
 
@@ -217,7 +217,7 @@ CAIGroup\:\:AddTrigger
 
 **Parameters**
 
-* :ref:`CAITrigger<CAITrigger>`\& trigger - * *
+* :ref:`CAITrigger<CAITrigger>`\& *trigger* - 
 
 **Remarks**
 
@@ -251,8 +251,8 @@ CAIGroup\:\:FollowLeader
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>` target - * *
-* ``int`` additive - * *
+* :ref:`CPoint<CPoint>` *target* - 
+* ``int`` *additive* - 
 
 **Remarks**
 
@@ -273,8 +273,8 @@ CAIGroup\:\:GetFacings
 
 **Parameters**
 
-* ``short`` formationType - * *
-* ``short`` direction - * *
+* ``short`` *formationType* - 
+* ``short`` *direction* - 
 
 **Return Value**
 
@@ -316,7 +316,7 @@ CAIGroup\:\:GetGroupList
 
 **Return Value**
 
-``long*``
+``long``\*
 
 **Remarks**
 
@@ -338,9 +338,9 @@ CAIGroup\:\:GetOffsets
 
 **Parameters**
 
-* ``short`` formationType - * *
-* ``short`` direction - * *
-* ``unsigned char`` bFullParty - * *
+* ``short`` *formationType* - 
+* ``short`` *direction* - 
+* ``unsigned char`` *bFullParty* - 
 
 **Return Value**
 
@@ -366,9 +366,9 @@ CAIGroup\:\:GroupAction
 
 **Parameters**
 
-* :ref:`CAIAction<CAIAction>` action - * *
-* ``int`` override - * *
-* :ref:`CAIAction<CAIAction>`\* leaderAction - * *
+* :ref:`CAIAction<CAIAction>` *action* - 
+* ``int`` *override* - 
+* :ref:`CAIAction<CAIAction>`\* *leaderAction* - 
 
 **Return Value**
 
@@ -409,9 +409,9 @@ CAIGroup\:\:GroupDrawMove
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>` target - * *
-* ``short`` formationType - * *
-* :ref:`CPoint<CPoint>` cursor - * *
+* :ref:`CPoint<CPoint>` *target* - 
+* ``short`` *formationType* - 
+* :ref:`CPoint<CPoint>` *cursor* - 
 
 **Remarks**
 
@@ -434,10 +434,10 @@ CAIGroup\:\:GroupProtectPoint
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>` target - * *
-* ``short`` formationType - * *
-* :ref:`CPoint<CPoint>` cursor - * *
-* ``long`` range - * *
+* :ref:`CPoint<CPoint>` *target* - 
+* ``short`` *formationType* - 
+* :ref:`CPoint<CPoint>` *cursor* - 
+* ``long`` *range* - 
 
 **Remarks**
 
@@ -456,7 +456,7 @@ CAIGroup\:\:GroupSetTarget
 
 **Parameters**
 
-* ``long`` iObject - * *
+* ``long`` *iObject* - 
 
 **Remarks**
 
@@ -479,10 +479,10 @@ CAIGroup\:\:GroupSetTarget
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>` target - * *
-* ``int`` additive - * *
-* ``short`` formationType - * *
-* :ref:`CPoint<CPoint>` cursor - * *
+* :ref:`CPoint<CPoint>` *target* - 
+* ``int`` *additive* - 
+* ``short`` *formationType* - 
+* :ref:`CPoint<CPoint>` *cursor* - 
 
 **Remarks**
 
@@ -506,11 +506,11 @@ CAIGroup\:\:HandleFollowPath
 
 **Parameters**
 
-* ``long*`` pPath - * *
-* ``short`` nPath - * *
-* :ref:`CPoint<CPoint>` target - * *
-* :ref:`CPoint<CPoint>` start - * *
-* ``int`` additive
+* ``long``\* *pPath* - 
+* ``short`` *nPath* - 
+* :ref:`CPoint<CPoint>` *target* - 
+* :ref:`CPoint<CPoint>` *start* - 
+* ``int`` *additive*
 
 **Remarks**
 
@@ -529,7 +529,7 @@ CAIGroup\:\:InList
 
 **Parameters**
 
-* ``long`` index - * *
+* ``long`` *index* - 
 
 **Return Value**
 
@@ -571,7 +571,7 @@ CAIGroup\:\:Remove
 
 **Parameters**
 
-* ``long`` id - * *
+* ``long`` *id* - 
 
 **Remarks**
 
@@ -590,7 +590,7 @@ CAIGroup\:\:Remove
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - 
 
 **Remarks**
 
@@ -609,7 +609,7 @@ CAIGroup\:\:RemoveFromSearch
 
 **Parameters**
 
-* :ref:`CSearchBitmap<CSearchBitmap>`\* search - * *
+* :ref:`CSearchBitmap<CSearchBitmap>`\* *search* - 
 
 **Remarks**
 
@@ -627,13 +627,13 @@ CAIGroup\:\:RotateOffsets
    virtual void __cdecl CAIGroup::RotateOffsets(
       CPoint* offsets, 
       short numOffsets, 
-      short degreesOfRotation) = 0;
+      short degreesOfRotation);
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>`\* offsets - * *
-* ``short`` numOffsets - * *
-* ``short`` degreesOfRotation - * *
+* :ref:`CPoint<CPoint>`\* *offsets* - 
+* ``short`` *numOffsets* - 
+* ``short`` *degreesOfRotation* - 
 
 **Remarks**
 
@@ -652,7 +652,7 @@ CAIGroup\:\:SetGroupTriggerId
 
 **Parameters**
 
-* ``long`` triggerId - * *
+* ``long`` *triggerId* - 
 
 **Remarks**
 

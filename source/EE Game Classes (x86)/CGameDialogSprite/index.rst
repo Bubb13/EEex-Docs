@@ -73,6 +73,7 @@ Constructs a ``CGameDialogSprite`` object
 
 Constructs a ``CGameDialogSprite`` object
 
+
 .. _CGameDialogSprite~CGameDialogSprite:
 
 CGameDialogSprite\:\:~CGameDialogSprite
@@ -190,11 +191,11 @@ CGameDialogSprite\:\:EnterDialog
 
 **Parameters**
 
-* unsigned long index - * *
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
-* ``int`` newDialog - * *
-* ``int`` bSuppressName - * *
-* ``int`` bItemDialog - * *
+* ``unsigned long`` *index* - 
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
+* ``int`` *newDialog* - 
+* ``int`` *bSuppressName* - 
+* ``int`` *bItemDialog* -*
 
 **Return Value**
 
@@ -221,10 +222,10 @@ CGameDialogSprite\:\:FetchRumor
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>`\& file - * *
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
-* ``long``\& nIndex - * *
-* :ref:`STR_RES<STR_RES>`\& strRes - * *
+* :ref:`CResRef<CResRef>`\& *file* - 
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
+* ``long``\& *nIndex* - 
+* :ref:`STR_RES<STR_RES>`\& *strRes* - 
 
 **Return Value**
 
@@ -247,7 +248,7 @@ CGameDialogSprite\:\:GetFlagsFromFile
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>`\& res - * *
+* :ref:`CResRef<CResRef>`\& *res* - resource reference
 
 **Return Value**
 
@@ -274,10 +275,10 @@ CGameDialogSprite\:\:Load
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>` file - * *
-* ``long`` characterId - * *
-* ``long`` NPCId - * *
-* ``int`` bItemDialog - * *
+* :ref:`CResRef<CResRef>` *file* - resource reference
+* ``long`` *characterId* - 
+* ``long`` *NPCId* - 
+* ``int`` *bItemDialog* - 
 
 **Remarks**
 
@@ -297,8 +298,8 @@ CGameDialogSprite\:\:Reload
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>` file - * *
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CResRef<CResRef>` *file* - resource reference
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Return Value**
 
@@ -370,7 +371,7 @@ CGameDialogSprite\:\:StartDialog
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Return Value**
 
@@ -398,12 +399,12 @@ CGameDialogSprite\:\:Unmarshal
 
 **Parameters**
 
-* ``unsigned char``\* pDialog - * *
-* ``long`` dialogSize - * *
-* ``long`` characterId - * *
-* ``long`` NPCId - * *
-* :ref:`CResRef<CResRef>`\& loadedFile - * *
-* ``int`` fast - * *
+* ``unsigned char``\* *pDialog* - 
+* ``long`` *dialogSize* - 
+* ``long`` *characterId* - 
+* ``long`` *NPCId* - 
+* :ref:`CResRef<CResRef>`\& *loadedFile* - 
+* ``int`` *fast* - 
 
 **Remarks**
 

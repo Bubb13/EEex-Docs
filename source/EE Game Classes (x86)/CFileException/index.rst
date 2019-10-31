@@ -46,8 +46,8 @@ CFileException\:\:ThrowOsError
 
 **Parameters**
 
-* ``long`` lOsError - * *
-* ``const char``\* lpszFileName - * *
+* ``long`` *lOsError* - 
+* ``const char``\* *lpszFileName* - 
 
 **Remarks**
 
@@ -67,7 +67,7 @@ CFileException\:\:OsErrorToException
 
 **Parameters**
 
-* ``long`` lOsErr - * *
+* ``long`` *lOsErr* - 
 
 **Return Value**
 

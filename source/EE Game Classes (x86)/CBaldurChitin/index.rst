@@ -151,8 +151,8 @@ Constructs a ``CBaldurChitin`` object
 
 **Parameters**
 
-* ``int`` argc - *An integer that contains the count of arguments that follow in argv*
-* ``char``\*\* argv - *An array of null-terminated strings representing command-line arguments*
+* ``int`` *argc* - An integer that contains the count of arguments that follow in argv
+* ``char``\*\* *argv* - An array of null-terminated strings representing command-line arguments
 
 **Remarks**
 
@@ -260,17 +260,17 @@ Methods
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CBaldurChitin\:\:OnMixerInitialize<CBaldurChitinOnMixerInitialize>`                                     |                                                                                         |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:OnMultiplayerPlayerJoin<CBaldurChitinOnMultiplayerPlayerJoin>`                         |                                                                                         |
+| :ref:`CBaldurChitin\:\:OnMultiplayerPlayerJoin<CBaldurChitinOnMultiplayerPlayerJoin>`                         | Event action when a player joins a multiplayer game session                             |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:OnMultiplayerPlayerLeave<CBaldurChitinOnMultiplayerPlayerLeave>`                       |                                                                                         |
+| :ref:`CBaldurChitin\:\:OnMultiplayerPlayerLeave<CBaldurChitinOnMultiplayerPlayerLeave>`                       | Event action when a player leaves a multiplayer game session                            |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:OnMultiplayerPlayerVisible<CBaldurChitinOnMultiplayerPlayerVisible>`                   |                                                                                         |
+| :ref:`CBaldurChitin\:\:OnMultiplayerPlayerVisible<CBaldurChitinOnMultiplayerPlayerVisible>`                   | Event action when a player in a multiplayer game session becomes visible to others      |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:OnMultiplayerSessionClose<CBaldurChitinOnMultiplayerSessionClose>`                     |                                                                                         |
+| :ref:`CBaldurChitin\:\:OnMultiplayerSessionClose<CBaldurChitinOnMultiplayerSessionClose>`                     | Event action when a multiplayer game session closes                                     |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:OnMultiplayerSessionOpen<CBaldurChitinOnMultiplayerSessionOpen>`                       |                                                                                         |
+| :ref:`CBaldurChitin\:\:OnMultiplayerSessionOpen<CBaldurChitinOnMultiplayerSessionOpen>`                       | Event action when a multiplayer game session opens                                      |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CBaldurChitin\:\:OnMultiplayerSessionToClose<CBaldurChitinOnMultiplayerSessionToClose>`                 |                                                                                         |
+| :ref:`CBaldurChitin\:\:OnMultiplayerSessionToClose<CBaldurChitinOnMultiplayerSessionToClose>`                 | Event action when a multiplayer game session is about to close                          |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CBaldurChitin\:\:PreLoadFonts<CBaldurChitinPreLoadFonts>`                                               | Preload fonts for game                                                                  |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
@@ -305,7 +305,7 @@ Add a movie to the already played list
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>`\& cResMovie - *resource reference of movie to add to played list*
+* :ref:`CResRef<CResRef>`\& *cResMovie* - resource reference of movie to add to played list
 
 **Remarks**
 
@@ -325,7 +325,7 @@ Creates and allocates memory for a resource
 
 **Parameters**
 
-* ``int`` nType - *type of resource to create*
+* ``int`` *nType* - type of resource to create
 
 **Return Value**
 
@@ -353,11 +353,11 @@ CBaldurChitin\:\:AsynchronousUpdate
 
 **Parameters**
 
-* unsigned int uTimerID - * *
-* unsigned int uMsg - * *
-* unsigned long dwUser - * *
-* unsigned long dw1 - * *
-* unsigned long dw2 - * *
+* ``unsigned int`` *uTimerID* - 
+* ``unsigned int`` *uMsg* - 
+* ``unsigned long`` *dwUser* - 
+* ``unsigned long`` *dw1* - 
+* ``unsigned long`` *dw2* - 
 
 **Remarks**
 
@@ -485,7 +485,7 @@ Gets the game spy code
 
 **Parameters**
 
-* :ref:`CString<CString>`\& sGameSpyCode - * *
+* :ref:`CString<CString>`\& *sGameSpyCode* - address of string to store the game spy code in
 
 **Remarks**
 
@@ -504,7 +504,7 @@ Gets the game spy game name
 
 **Parameters**
 
-* :ref:`CString<CString>`\& sGameSpyName - * *
+* :ref:`CString<CString>`\& *sGameSpyName* - address of string to store the game spy name in
 
 **Remarks**
 
@@ -813,9 +813,9 @@ Legacy function for when game was distributed on CD/DVD
 
 **Parameters**
 
-* :ref:`CString<CString>`\& sMediaRemoved - * *
-* :ref:`CString<CString>`\& sPlaceCD - * *
-* :ref:`CString<CString>`\& sInDrive - * *
+* :ref:`CString<CString>`\& *sMediaRemoved* - address of string to store media string
+* :ref:`CString<CString>`\& *sPlaceCD* - address of string to store place cd/dvd string
+* :ref:`CString<CString>`\& *sInDrive* - address of string to store in drive string
 
 **Remarks**
 
@@ -853,7 +853,7 @@ CBaldurChitin\:\:GetScreenShotFilePrefix
 
 **Parameters**
 
-* :ref:`CString<CString>`\& szGameFileName - * *
+* :ref:`CString<CString>`\& *szGameFileName* - address of string to store screenshot filename prefix to
 
 **Remarks**
 
@@ -879,12 +879,12 @@ CBaldurChitin\:\:GetSoundEnvironment
 
 **Parameters**
 
-* :ref:`CString<CString>` stAreaRef - * *
-* ``unsigned long``\& dwEnvironment - * *
-* ``float``\& fDamping - * *
-* ``float``\& fDecay - * *
-* ``float``\& fVolume - * *
-* ``float``\& fReverbLevel - * *
+* :ref:`CString<CString>` *stAreaRef* - string containing area resource reference
+* ``unsigned long``\& *dwEnvironment* - address of long variable to store sound environment info
+* ``float``\& *fDamping* - address of float variable to store sound damping value
+* ``float``\& *fDecay* - address of float variable to store sound decay value
+* ``float``\& *fVolume* - address of float variable to store sound volume
+* ``float``\& *fReverbLevel* - address of float variable to store reverb level
 
 **Return Value**
 
@@ -922,7 +922,7 @@ Returns true if 3D sound is supported on local machine
 
 **Parameters**
 
-* ``int`` nChannel - * *
+* ``int`` *nChannel* - 
 
 **Return Value**
 
@@ -977,7 +977,7 @@ Output text to a log, similar to printf and uses variable no of arguments after 
 
 **Parameters**
 
-* ``const char``\* format - * *
+* ``const char``\* *format* - special format string for handling other passed parameters
 * ... - * *
 
 **Remarks**
@@ -999,14 +999,12 @@ CBaldurChitin\:\:MessageCallback
 
 **Parameters**
 
-* ``unsigned char``\* pData - * *
-* ``unsigned long`` dwSize - * *
-*  - * *
-*  - * *
+* ``unsigned char``\* *pData* - pointer to data to send in message callback
+* ``unsigned long`` *dwSize* - size of message callback data
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -1033,7 +1031,7 @@ CBaldurChitin\:\:OnMixerInitialize
 CBaldurChitin\:\:OnMultiplayerPlayerJoin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Event action when a player joins a multiplayer game session
 
 ::
 
@@ -1043,8 +1041,8 @@ CBaldurChitin\:\:OnMultiplayerPlayerJoin
 
 **Parameters**
 
-* ``int`` playerID - * *
-* :ref:`CString<CString>`\& sPlayerName - * *
+* ``int`` *playerID* - id of player joining multiplayer session
+* :ref:`CString<CString>`\& *sPlayerName* - address of string variable that contains player name
 
 **Remarks**
 
@@ -1055,7 +1053,7 @@ CBaldurChitin\:\:OnMultiplayerPlayerJoin
 CBaldurChitin\:\:OnMultiplayerPlayerLeave
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Event action when a player leaves a multiplayer game session
 
 ::
 
@@ -1065,8 +1063,8 @@ CBaldurChitin\:\:OnMultiplayerPlayerLeave
 
 **Parameters**
 
-* ``int`` playerID - * *
-* :ref:`CString<CString>`\& sPlayerName - * *
+* ``int`` *playerID* - id of player leaving multiplayer session
+* :ref:`CString<CString>`\& *sPlayerName* - address of string variable that contains player name
 
 **Remarks**
 
@@ -1077,7 +1075,7 @@ CBaldurChitin\:\:OnMultiplayerPlayerLeave
 CBaldurChitin\:\:OnMultiplayerPlayerVisible
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Event action when a player in a multiplayer game session becomes visible to other existing players
 
 ::
 
@@ -1085,7 +1083,7 @@ CBaldurChitin\:\:OnMultiplayerPlayerVisible
 
 **Parameters**
 
-* ``int`` playerID - * *
+* ``int`` *playerID* - id of multiplayer player 
 
 **Remarks**
 
@@ -1096,7 +1094,7 @@ CBaldurChitin\:\:OnMultiplayerPlayerVisible
 CBaldurChitin\:\:OnMultiplayerSessionClose
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Event action when a multiplayer game session closes
 
 ::
 
@@ -1111,7 +1109,7 @@ CBaldurChitin\:\:OnMultiplayerSessionClose
 CBaldurChitin\:\:OnMultiplayerSessionOpen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Event action when a multiplayer game session opens
 
 ::
 
@@ -1122,9 +1120,9 @@ CBaldurChitin\:\:OnMultiplayerSessionOpen
 
 **Parameters**
 
-* :ref:`CString<CString>`\& sJoinedGame - * *
-* :ref:`CString<CString>`\& sDroppedGame - * *
-* :ref:`CString<CString>`\& sLeftGame - * *
+* :ref:`CString<CString>`\& *sJoinedGame* - address of string containing joined game text
+* :ref:`CString<CString>`\& *sDroppedGame* - address of string containing dropped game text
+* :ref:`CString<CString>`\& *sLeftGame* - address of string containing left game text
 
 **Remarks**
 
@@ -1135,7 +1133,7 @@ CBaldurChitin\:\:OnMultiplayerSessionOpen
 CBaldurChitin\:\:OnMultiplayerSessionToClose
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Event action when a multiplayer game session is about to close
 
 ::
 
@@ -1200,17 +1198,17 @@ Set progress bar on screen
 
 **Parameters**
 
-* ``unsigned char`` bEnabled - * *
-* ``long`` nProgressBarCaption - * *
-* ``int`` nBytesCopied - * *
-* ``int`` nTotalBytes - * *
-* ``unsigned char`` bTravel - * *
-* ``long`` nParchmentCaption - * *
-* ``unsigned`` char bWaiting - * *
-* ``long`` nWaitingReason - * *
-* ``unsigned char`` bDisplayMinibars - * *
-* ``unsigned char`` bTimeoutCounter - * *
-* ``unsigned long`` nSecondsToTimeout - * *
+* ``unsigned char`` *bEnabled* - 
+* ``long`` *nProgressBarCaption* - 
+* ``int`` *nBytesCopied* - 
+* ``int`` *nTotalBytes* - 
+* ``unsigned char`` *bTravel* - 
+* ``long`` *nParchmentCaption* - 
+* ``unsigned char`` *bWaiting* - 
+* ``long`` *nWaitingReason* - 
+* ``unsigned char`` *bDisplayMinibars* - 
+* ``unsigned char`` *bTimeoutCounter* - 
+* ``unsigned long`` *nSecondsToTimeout* - 
 
 **Remarks**
 
@@ -1229,7 +1227,7 @@ CBaldurChitin\:\:SetProgressBarActivateEngine
 
 **Parameters**
 
-* ``int`` bValue - * *
+* ``int`` *bValue* - 
 
 **Remarks**
 
@@ -1282,9 +1280,9 @@ CBaldurChitin\:\:ShutDown
 
 **Parameters**
 
-* ``int`` nLineNumber - * *
-* ``char``\* szFileName - * *
-* ``const char``\* text - * *
+* ``int`` *nLineNumber* - line number that shutdown occured at
+* ``char``\* *szFileName* - file that shutdown occured at
+* ``const char``\* *text* - message text for shutdown reason to output to log
 
 **Remarks**
 

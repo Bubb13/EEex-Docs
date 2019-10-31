@@ -74,17 +74,17 @@ Constructs a ``CGameFireball3d`` object
 
 **Parameters**
 
-* ``unsigned char`` type - * *
-* ``unsigned short`` projectileID - * *
-* ``unsigned char``\* colorRangeValues - * *
-* ``short`` radius
-* ``unsigned char`` speed - * *
-* ``unsigned char`` collision - * *
-* ``unsigned long`` projectileFlags - * *
-* ``short`` holdDuration - * *
-* ``int`` bCone - * *
-* ``unsigned short`` coneSize - * *
-* :ref:`CPoint<CPoint>`\& posEdge - * *
+* ``unsigned char`` *type* - 
+* ``unsigned short`` *projectileID* - 
+* ``unsigned char``\* *colorRangeValues* - 
+* ``short`` *radius* - 
+* ``unsigned char`` *speed* - 
+* ``unsigned char`` *collision* - 
+* ``unsigned long`` *projectileFlags* - 
+* ``short`` *holdDuration* - 
+* ``int`` *bCone* - 
+* ``unsigned short`` *coneSize* - 
+* :ref:`CPoint<CPoint>`\& *posEdge* - 
 
 **Remarks**
 
@@ -171,10 +171,10 @@ Add fireball object to area
 
 **Parameters**
 
-* :ref:`CGameArea<CGameArea>`\* pArea - *pointer to area to add fireball to*
-* :ref:`CPoint<CPoint>`\& pos - *x and y coordinates where to add fireball*
-* ``long`` posZ - *z height position of fireball*
-* ``unsigned char`` listType - * *
+* :ref:`CGameArea<CGameArea>`\* *pArea* - pointer to area to add fireball to
+* :ref:`CPoint<CPoint>`\& *pos* - x and y coordinates where to add fireball
+* ``long`` *posZ* - z height position of fireball
+* ``unsigned char`` *listType* - 
 
 **Return Value**
 
@@ -200,9 +200,9 @@ CGameFireball3d\:\:CanSaveGame
 
 **Parameters**
 
-* ``unsigned long``\& strError - * *
-* ``int`` restCheck - * *
-* ``int`` combatCheck - * *
+* ``unsigned long``\& *strError* - 
+* ``int`` *restCheck* - 
+* ``int`` *combatCheck* - 
 
 **Return Value**
 
@@ -228,9 +228,9 @@ CGameFireball3d\:\:CreateStaticTemporal
 
 **Parameters**
 
-* ``short`` duration - * *
-* :ref:`CPoint<CPoint>`\& ptTemp - * *
-* :ref:`CPoint<CPoint>`\& ptSpeed - * *
+* ``short`` *duration* - 
+* :ref:`CPoint<CPoint>`\& *ptTemp* - 
+* :ref:`CPoint<CPoint>`\& *ptSpeed* - 
 
 **Remarks**
 
@@ -252,9 +252,9 @@ CGameFireball3d\:\:CreateTemporal
 
 **Parameters**
 
-* ``short`` duration - * *
-* :ref:`CPoint<CPoint>`\& ptTemp - * *
-* :ref:`CPoint<CPoint>`\& ptSpeed - * *
+* ``short`` *duration* - 
+* :ref:`CPoint<CPoint>`\& *ptTemp* - 
+* :ref:`CPoint<CPoint>`\& *ptSpeed* - 
 
 **Remarks**
 
@@ -290,8 +290,8 @@ Render fireball object
 
 **Parameters**
 
-* :ref:`CGameArea<CGameArea>`\* pArea - *pointer to area*
-* :ref:`CVidMode<CVidMode>`\* pVidMode - *pointer to vid mode*
+* :ref:`CGameArea<CGameArea>`\* *pArea* - pointer to area
+* :ref:`CVidMode<CVidMode>`\* *pVidMode* - pointer to vid mode
 
 **Remarks**
 
@@ -309,7 +309,7 @@ Set fireball object flags
 
 **Parameters**
 
-* ``unsigned long`` flags - * *
+* ``unsigned long`` *flags* - 
 
 **Remarks**
 
@@ -329,7 +329,7 @@ Set sound explosion for the fireball object
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>` resref - *resource reference for explosion sound to play*
+* :ref:`CResRef<CResRef>` *resref* - resource reference for explosion sound to play
 
 **Remarks**
 
@@ -350,8 +350,8 @@ Set sprite splash for the fireball object
 
 **Parameters**
 
-* :ref:`CResRef<CResRef>` resref - *resource reference for sprite splash*
-* ``int`` paletted - * *
+* :ref:`CResRef<CResRef>` *resref* - resource reference for sprite splash
+* ``int`` *paletted* - true or false?
 
 **Remarks**
 

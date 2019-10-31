@@ -16,8 +16,6 @@ The structure used for this class is :ref:`CAITrigger<CAITrigger>`
 +-------------------------------------------------------------------------------------------------------------------------------------+
 | void **CAITrigger\:\:~CAITrigger**\()                                                                                               |
 +-------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`CAITrigger<CAITrigger>`\& **CAITrigger\:\:operator=**\(:ref:`CAITrigger<CAITrigger>`\& __that)                                |
-+-------------------------------------------------------------------------------------------------------------------------------------+
 | void **CAITrigger\:\:CAITrigger**\(short triggerID, :ref:`CAIObjectType<CAIObjectType>`\& cause, long specific)                     |
 +-------------------------------------------------------------------------------------------------------------------------------------+
 | void **CAITrigger\:\:CAITrigger**\(short triggerID, long specific)                                                                  |
@@ -26,6 +24,8 @@ The structure used for this class is :ref:`CAITrigger<CAITrigger>`
 +-------------------------------------------------------------------------------------------------------------------------------------+
 | void **CAITrigger\:\:Read**\(:ref:`CString<CString>`\& sData)                                                                       |
 +-------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`CAITrigger<CAITrigger>`\& **CAITrigger\:\:operator=**\(:ref:`CAITrigger<CAITrigger>`\& __that)                                |
++-------------------------------------------------------------------------------------------------------------------------------------+
 
 
 
@@ -33,17 +33,13 @@ The structure used for this class is :ref:`CAITrigger<CAITrigger>`
 Constructors
 ---------------
 
-+-------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+
-| **Name**                                                                                                          | **Description**                                      |
-+-------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+
-| :ref:`CAITrigger\:\:CAITrigger<CAITriggerCAITrigger>`\(CAITrigger& __that)                                        | Constructs a ``CAITrigger`` object                   |
-+-------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+
-| :ref:`CAITrigger\:\:CAITrigger<CAITriggerCAITrigger2>`\(short triggerID, CAIObjectType& cause, long specific)     | Constructs a ``CAITrigger`` object                   |
-+-------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+
-| :ref:`CAITrigger\:\:CAITrigger<CAITriggerCAITrigger3>`\(short triggerID, long specific)                           | Constructs a ``CAITrigger`` object                   |
-+-------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+
-| :ref:`CAITrigger\:\:~CAITrigger<CAITrigger~CAITrigger>`                                                           | Destroys a ``CAITrigger`` object                     |
-+-------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+
++---------------------------------------------------------+------------------------------------------------------+
+| **Name**                                                | **Description**                                      |
++---------------------------------------------------------+------------------------------------------------------+
+| :ref:`CAITrigger\:\:CAITrigger<CAITriggerCAITrigger>`   | Constructs a ``CAITrigger`` object                   |
++---------------------------------------------------------+------------------------------------------------------+
+| :ref:`CAITrigger\:\:~CAITrigger<CAITrigger~CAITrigger>` | Destroys a ``CAITrigger`` object                     |
++---------------------------------------------------------+------------------------------------------------------+
 
 .. _CAITriggerCAITrigger:
 
@@ -58,14 +54,12 @@ Constructs a ``CAITrigger`` object
 
 **Parameters**
 
-* :ref:`CAITrigger<CAITrigger>`\& __that - * *
+* :ref:`CAITrigger<CAITrigger>`\& *__that* - 
 
 **Remarks**
 
 Constructs a ``CAITrigger`` object
 
-
-.. _CAITriggerCAITrigger2:
 
 CAITrigger\:\:CAITrigger
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -81,16 +75,14 @@ Constructs a ``CAITrigger`` object
 
 **Parameters**
 
-* ``short`` triggerID - * *
-* :ref:`CAIObjectType<CAIObjectType>`\& cause - * *
-* ``long`` specific - * *
+* ``short`` *triggerID* - 
+* :ref:`CAIObjectType<CAIObjectType>`\& *cause* - 
+* ``long`` *specific* - 
 
 **Remarks**
 
 Constructs a ``CAITrigger`` object
 
-
-.. _CAITriggerCAITrigger3:
 
 CAITrigger\:\:CAITrigger
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -105,8 +97,8 @@ Constructs a ``CAITrigger`` object
 
 **Parameters**
 
-* ``short`` triggerID - * *
-* ``long`` specific - * *
+* ``short`` *triggerID* - 
+* ``long`` *specific* - 
 
 **Remarks**
 
@@ -122,7 +114,7 @@ Destroys the ``CAITrigger`` object
 
 ::
 
-   void ~CAITrigger();
+   void CAITrigger::~CAITrigger();
 
 **Remarks**
 
@@ -156,7 +148,7 @@ CAITrigger\:\:OfType
 
 **Parameters**
 
-* :ref:`CAITrigger<CAITrigger>`\& trigger - * *
+* :ref:`CAITrigger<CAITrigger>`\& *trigger* - 
 
 **Return Value**
 
@@ -180,7 +172,7 @@ CAITrigger\:\:Read
 
 **Parameters**
 
-* :ref:`CString<CString>`\& sData - * *
+* :ref:`CString<CString>`\& *sData* - string containing trigger data to read
 
 **Remarks**
 
@@ -209,7 +201,7 @@ CAITrigger\:\:operator=
 
 **Parameters**
 
-* :ref:`CAITrigger<CAITrigger>`\& __that - * *
+* :ref:`CAITrigger<CAITrigger>`\& *__that* - 
 
 **Return Value**
 
