@@ -8,3 +8,4 @@ Community
    contributing
    channels
    tutorials
+   pearls
