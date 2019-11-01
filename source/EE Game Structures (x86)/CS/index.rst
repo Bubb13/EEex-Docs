@@ -407,6 +407,15 @@ CSavedGamePartyCreature
 | 0x158      | 8        | unsigned char                          | m_secondarySounds[8]               |
 +------------+----------+----------------------------------------+------------------------------------+
 
+**Notes**
+
+Related to `GAM V2.0 file format <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/gam_v2.0.htm>`_
+
+* Offset ``0x00`` to ``0xE0`` is related to `GAME V2.0 NPCs (both in-party and out-of-party NPCs) <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/gam_v2.0.htm#GAMEV2_0_NPC>`_
+* Offset ``0xE4`` to ``0x158`` is related to `GAME V2.0 Character stats <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/gam_v2.0.htm#GAMEV2_0_Stats>`_
+* **m_nNumberOfTimesInteractedWith[24]** (offset ``0x2C``) doesnt appear to be used
+
+
 Asm Definition
 
 ::
