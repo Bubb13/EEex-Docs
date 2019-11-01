@@ -43,6 +43,7 @@ EE Game Classes (x86)
    CGameFireball3d/index
    CGameJournal/index
    CGameObject/index
+   CGameObjectArray/index
    CGamePermission/index
    CGameSave/index
    CGameSound/index
