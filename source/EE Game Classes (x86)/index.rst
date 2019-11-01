@@ -54,7 +54,17 @@ EE Game Classes (x86)
    CGameTiledObject/index
    CGameTrigger/index
    CIcon/index
-   CImmunities/index
+   CImmunitiesAIType/index
+   CImmunitiesEffect/index
+   CImmunitiesItemEquipList/index
+   CImmunitiesItemTypeEquipList/index
+   CImmunitiesProjectile/index
+   CImmunitiesSchoolAndSecondary/index
+   CImmunitiesSchoolAndSecondaryDecrementing/index
+   CImmunitiesSpellLevel/index
+   CImmunitiesSpellLevelDecrementing/index
+   CImmunitiesSpellList/index
+   CImmunitiesWeapon/index
    CImportGame/index
    CInfButtonArray/index
    CInfCursor/index
