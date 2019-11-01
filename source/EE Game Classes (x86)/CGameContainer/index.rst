@@ -614,7 +614,7 @@ Returns ``unsigned char``
 
 .. _CGameContainerIsOver:
 
-`CGameContainer\:\:IsOver
+CGameContainer\:\:IsOver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Determines if mouse position is over the container

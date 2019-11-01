@@ -112,6 +112,7 @@ EE Game Classes (x86)
    CSpawnList/index
    CSpawnPoint/index
    CSpell/index
+   CSteam/index
    CStore/index
    CString/index
    CStringList/index
