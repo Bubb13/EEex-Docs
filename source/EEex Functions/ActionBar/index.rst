@@ -33,3 +33,8 @@ ActionBar
 +-------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_UpdateActionbar<EEex_UpdateActionbar>`                 | Forces the actionbar to refresh its state          |
 +-------------------------------------------------------------------+----------------------------------------------------+
+
+
+**See Also**
+
+:ref:`CInfButtonArray Class<CInfButtonArray Class>`, :ref:`CInfButtonArray Structure<CInfButtonArray>`
