@@ -470,7 +470,7 @@ Constructors
 .. _CBaldurMessageCBaldurMessage:
 
 CBaldurMessage\:\:CBaldurMessage
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CBaldurMessage`` object
 
@@ -487,7 +487,7 @@ Constructs a ``CBaldurMessage`` object
 .. _CBaldurMessage~CBaldurMessage:
 
 CBaldurMessage\:\:~CBaldurMessage
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Destroys the ``CBaldurMessage`` object
 
@@ -946,10 +946,10 @@ Methods
 | :ref:`CBaldurMessage\:\:WeatherBroadcast<CBaldurMessageWeatherBroadcast>`                                            |                                                                                         |
 +----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
-.. _x:
+.. _CBaldurMessageAddDroppedPlayer:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:AddDroppedPlayer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -973,10 +973,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageAnnounceAreaMapANote:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:AnnounceAreaMapANote
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -999,10 +999,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageAnnounceAreaMapNote:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:AnnounceAreaMapNote
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1025,10 +1025,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageAnnounceBiography:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:AnnounceBiography
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1051,10 +1051,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageAnnounceJournalDeleteEntry:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:AnnounceJournalDeleteEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1077,10 +1077,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageAnnounceJournalEntry:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:AnnounceJournalEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1103,10 +1103,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageAnnounceJournalEntryChange:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:AnnounceJournalEntryChange
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1130,10 +1130,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageAnnounceJournalSetQuestDone:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:AnnounceJournalSetQuestDone
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1157,10 +1157,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageAnnounceJournalUserEntry:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:AnnounceJournalUserEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1183,10 +1183,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageBroadcastDemandCharacterSlotReply:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:BroadcastDemandCharacterSlotReply
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1209,10 +1209,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageBroadcastUpdateCharacterSlot:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:BroadcastUpdateCharacterSlot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1235,10 +1235,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageCancelCloseSessionPoll:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:CancelCloseSessionPoll
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1261,10 +1261,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageCancelDeleteAreaPoll:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:CancelDeleteAreaPoll
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1287,10 +1287,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageCancelDialogRequestToServer:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:CancelDialogRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1314,10 +1314,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageChapterAnnounceStatus:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:ChapterAnnounceStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1341,10 +1341,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageCharacterPartyOrderAnnounce:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:CharacterPartyOrderAnnounce
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1367,10 +1367,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageCharacterPartyOrderRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:CharacterPartyOrderRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1393,10 +1393,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageCharacterPartyRemovePickPanel:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:CharacterPartyRemovePickPanel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1419,10 +1419,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageCleanLeaveAreaLuaRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:CleanLeaveAreaLuaRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1445,10 +1445,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageCleanLeaveAreaNameRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:CleanLeaveAreaNameRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1471,10 +1471,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageCloseSessionBallotComplete:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:CloseSessionBallotComplete
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1498,10 +1498,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageCloseSessionCloseSession:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:CloseSessionCloseSession
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1525,10 +1525,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageCloseSessionReturnBallot:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:CloseSessionReturnBallot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1551,10 +1551,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageCloseSessionStartPoll:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:CloseSessionStartPoll
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1577,10 +1577,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageDeleteAreaBallotComplete:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:DeleteAreaBallotComplete
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1603,10 +1603,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageDeleteAreaBallotResult:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:DeleteAreaBallotResult
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1629,10 +1629,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageDeleteAreaDeleteArea:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:DeleteAreaDeleteArea
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1655,10 +1655,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageDeleteAreaReturnBallot:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:DeleteAreaReturnBallot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1682,10 +1682,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageDeleteAreaStartPoll:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:DeleteAreaStartPoll
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1709,10 +1709,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageDemandCharacterSlot:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:DemandCharacterSlot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1735,10 +1735,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageDemandCharacterSlotReply:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:DemandCharacterSlotReply
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1761,10 +1761,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageDemandResourceFromServer:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:DemandResourceFromServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1787,10 +1787,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageDemandSettingsNightmareMode:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:DemandSettingsNightmareMode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1813,10 +1813,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageDialogRequestKillOrUse:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:DialogRequestKillOrUse
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1839,10 +1839,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageHandleBlockingMessages:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:HandleBlockingMessages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1866,10 +1866,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageKickOutWaitingForSignal:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:KickOutWaitingForSignal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1893,10 +1893,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageKickPlayerRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:KickPlayerRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1919,10 +1919,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageKickPlayerServerSupport:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:KickPlayerServerSupport
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1945,10 +1945,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageMovieAnnounceStatus:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:MovieAnnounceStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1971,10 +1971,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageMultiplayerSynchReply:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:MultiplayerSynchReply
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1997,10 +1997,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageMultiplayerSynchRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:MultiplayerSynchRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2023,10 +2023,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageNonBlockingWaitForSignal:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:NonBlockingWaitForSignal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2050,10 +2050,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageObjectAdd:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:ObjectAdd
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2077,10 +2077,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageObjectArrayDelete:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:ObjectArrayDelete
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2103,10 +2103,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageObjectControl:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:ObjectControl
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2129,10 +2129,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageObjectControlRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:ObjectControlRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2155,10 +2155,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageObjectControlSuggestion:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:ObjectControlSuggestion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2181,10 +2181,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageObjectDelete:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:ObjectDelete
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2207,10 +2207,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageObjectDeleteRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:ObjectDeleteRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2234,10 +2234,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnAnnounceAreaMapANote:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnAnnounceAreaMapANote
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2261,10 +2261,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnAnnounceAreaMapNote:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnAnnounceAreaMapNote
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2287,10 +2287,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnAnnounceBiography:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnAnnounceBiography
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2313,10 +2313,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnAnnounceJournalDeleteEntry:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnAnnounceJournalDeleteEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2339,10 +2339,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnAnnounceJournalEntry:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnAnnounceJournalEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2365,10 +2365,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnAnnounceJournalEntryChange:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnAnnounceJournalEntryChange
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2391,10 +2391,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnAnnounceJournalSetQuestDone:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnAnnounceJournalSetQuestDone
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2418,10 +2418,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnAnnounceJournalUserEntry:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnAnnounceJournalUserEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2445,10 +2445,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnCancelDialogRequestToServer:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnCancelDialogRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2471,10 +2471,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnChapterAnnounceStatus:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnChapterAnnounceStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2497,10 +2497,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnChapterSendRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnChapterSendRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2523,10 +2523,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnCharacterPartyOrderAnnounce:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnCharacterPartyOrderAnnounce
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2549,10 +2549,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnCharacterPartyOrderRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnCharacterPartyOrderRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2575,10 +2575,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnCharacterPartyRemovePickPanel:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnCharacterPartyRemovePickPanel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2602,10 +2602,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnChatMessageOnChatMessage:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnChatMessage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2629,10 +2629,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnCloseSessionCloseSession:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnCloseSessionCloseSession
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2655,10 +2655,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnCloseSessionReturnBallot:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnCloseSessionReturnBallot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2681,10 +2681,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnCloseSessionStartPoll:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnCloseSessionStartPoll
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2707,10 +2707,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnDeleteAreaDeleteArea:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnDeleteAreaDeleteArea
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2733,10 +2733,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnDeleteAreaReturnBallot:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnDeleteAreaReturnBallot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2759,10 +2759,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnDeleteAreaStartPoll:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnDeleteAreaStartPoll
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2786,10 +2786,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnDemandCharacterSlot:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnDemandCharacterSlot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2813,10 +2813,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnDemandCharacterSlotReply:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnDemandCharacterSlotReply
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2839,10 +2839,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnDemandSettingsNightmareMode:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnDemandSettingsNightmareMode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2865,10 +2865,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnDialogReplyFromServer:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnDialogReplyFromServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2891,10 +2891,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnDialogRequestKillOrUse:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnDialogRequestKillOrUse
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2917,10 +2917,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnDialogRequestToServer:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnDialogRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2943,10 +2943,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnKickPlayerHoofedOut:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnKickPlayerHoofedOut
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2970,10 +2970,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnKickPlayerRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnKickPlayerRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2997,10 +2997,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnKickPlayerServerSupport:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnKickPlayerServerSupport
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3023,10 +3023,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnLeaveAreaLuaAnnouncement:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnLeaveAreaLuaAnnouncement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3049,10 +3049,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnLeaveAreaLuaPanicToServer:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnLeaveAreaLuaPanicToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3075,10 +3075,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnLeaveAreaLuaReplyFromServer:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnLeaveAreaLuaReplyFromServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3101,10 +3101,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnLeaveAreaLuaRequestToServer:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnLeaveAreaLuaRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3127,10 +3127,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnLeaveAreaNameAnnouncement:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnLeaveAreaNameAnnouncement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3154,10 +3154,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnLeaveAreaNameReplyFromServer:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnLeaveAreaNameReplyFromServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3181,10 +3181,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnLeaveAreaNameRequestToServer:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnLeaveAreaNameRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3207,10 +3207,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnMapWorldAnnounceArea:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnMapWorldAnnounceArea
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3233,10 +3233,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnMapWorldAnnounceAreaRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnMapWorldAnnounceAreaRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3259,10 +3259,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnMapWorldAnnounceStatus:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnMapWorldAnnounceStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3285,10 +3285,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnMapWorldCancelRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnMapWorldCancelRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3311,10 +3311,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnMapWorldRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnMapWorldRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3338,10 +3338,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnMapWorldRevealArea:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnMapWorldRevealArea
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3364,10 +3364,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnMovieAnnounceStatus:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnMovieAnnounceStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3390,10 +3390,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnMovieEndCredits:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnMovieEndCredits
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3416,10 +3416,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnMovieRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnMovieRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3444,10 +3444,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnMultiplayerSynchReply:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnMultiplayerSynchReply
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3470,10 +3470,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnMultiplayerSynchRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnMultiplayerSynchRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3496,10 +3496,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnObjectAdd:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnObjectAdd
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3522,10 +3522,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnObjectArrayDelete:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnObjectArrayDelete
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3550,10 +3550,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnObjectControl:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnObjectControl
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3576,10 +3576,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnObjectControlRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnObjectControlRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3602,10 +3602,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnObjectControlSuggestion:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnObjectControlSuggestion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3628,10 +3628,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnObjectDelete:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnObjectDelete
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3656,10 +3656,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnObjectDeleteRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnObjectDeleteRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3682,10 +3682,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnPauseAnnounceStatus:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnPauseAnnounceStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3708,10 +3708,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnPauseRequestToServer:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnPauseRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3734,10 +3734,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnProgressBarStatus:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnProgressBarStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3762,10 +3762,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnReformPartyAnnounceStatus:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnReformPartyAnnounceStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3788,10 +3788,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnReformPartyRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnReformPartyRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3814,10 +3814,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnRequestClientSignal:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnRequestClientSignal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3840,10 +3840,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnResourceDemanded:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnResourceDemanded
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3868,10 +3868,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnResourceReply:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnResourceReply
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3894,10 +3894,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnResourceSuggestLoad:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnResourceSuggestLoad
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3920,10 +3920,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnRestAnnounceStatus:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnRestAnnounceStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3946,10 +3946,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnRestRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnRestRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3974,10 +3974,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSendAreaMapANote:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSendAreaMapANote
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4000,10 +4000,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSendAreaMapNote:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSendAreaMapNote
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4026,10 +4026,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSendBiography:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSendBiography
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4052,10 +4052,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSendEntryJournalChange:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSendEntryJournalChange
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4080,10 +4080,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSendJournalDeleteEntry:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSendJournalDeleteEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4106,10 +4106,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSendJournalEntry:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSendJournalEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4132,10 +4132,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSendJournalSetQuestDone:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSendJournalSetQuestDone
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4158,10 +4158,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSendJournalUserEntry:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSendJournalUserEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4186,10 +4186,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSendResourceToServer:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSendResourceToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4212,10 +4212,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSettingsArbitrationLockAllowInput:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSettingsArbitrationLockAllowInput
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4238,10 +4238,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSettingsArbitrationLockRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSettingsArbitrationLockRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4264,10 +4264,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSettingsArbitrationLockStatus:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSettingsArbitrationLockStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4292,10 +4292,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSettingsCharacterControlSet:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSettingsCharacterControlSet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4318,10 +4318,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSettingsCharacterReadySet:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSettingsCharacterReadySet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4344,10 +4344,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSettingsCharacterSlotStatus:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSettingsCharacterSlotStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4370,10 +4370,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSettingsFullDemanded:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSettingsFullDemanded
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4398,10 +4398,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSettingsFullSet:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSettingsFullSet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4424,10 +4424,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSettingsGoreRequirement:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSettingsGoreRequirement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4450,10 +4450,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSettingsImportingOptionSet:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSettingsImportingOptionSet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4476,10 +4476,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSettingsJoinRequestOptionSet:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSettingsJoinRequestOptionSet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4504,10 +4504,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSettingsNightmareMode:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSettingsNightmareMode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4530,10 +4530,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSettingsPermissionSet:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSettingsPermissionSet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4556,10 +4556,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSettingsPlayerReadySet:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSettingsPlayerReadySet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4582,10 +4582,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSettingsRestrictStoreOptionSet:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSettingsRestrictStoreOptionSet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4610,10 +4610,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSignal:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSignal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4636,10 +4636,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSwapItemReply:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSwapItemReply
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4662,10 +4662,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnSwapItemRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnSwapItemRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4688,10 +4688,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnTextScreenAnnounceStatus:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnTextScreenAnnounceStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4716,10 +4716,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnTextScreenCompletion:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnTextScreenCompletion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4742,10 +4742,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnTextScreenSendRequest:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnTextScreenSendRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4768,10 +4768,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnTimeChangeToServer:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnTimeChangeToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4794,10 +4794,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnTimeSynchBroadcast:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnTimeSynchBroadcast
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4822,10 +4822,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnUpdateCharacterSlotReply:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnUpdateCharacterSlotReply
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4848,10 +4848,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnUpdateDemandCharacterSlot:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnUpdateDemandCharacterSlot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4874,10 +4874,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnVersionServer:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnVersionServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4900,10 +4900,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageOnWeatherBroadcast:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:OnWeatherBroadcast
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4928,10 +4928,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessagePauseAnnounceStatus:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:PauseAnnounceStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4954,10 +4954,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessagePollSpecificMessageType:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:PollSpecificMessageType
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4980,10 +4980,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessagePurgeDroppedPlayers:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:PurgeDroppedPlayers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -5006,10 +5006,10 @@ x
 
 
 
-.. _x:
+.. _CBaldurMessageRemoveSignalsFromQueue:
 
-x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CBaldurMessage\:\:RemoveSignalsFromQueue
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -5031,5 +5031,1651 @@ x
 **Remarks**
 
 
+
+
+.. _CBaldurMessageRequestClientSignal:
+
+CBaldurMessage\:\:RequestClientSignal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+
+.. _CBaldurMessageResourceSuggestLoad:
+
+CBaldurMessage\:\:ResourceSuggestLoad
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageRestAnnounceStatus:
+
+CBaldurMessage\:\:RestAnnounceStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendArbitrationLockAllowInput:
+
+CBaldurMessage\:\:SendArbitrationLockAllowInput
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendArbitrationLockRequestToServer:
+
+CBaldurMessage\:\:SendArbitrationLockRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendArbitrationLockStatus:
+
+CBaldurMessage\:\:SendArbitrationLockStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendAreaMapANoteToServer:
+
+CBaldurMessage\:\:SendAreaMapANoteToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendAreaMapNoteToServer:
+
+CBaldurMessage\:\:SendAreaMapNoteToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+
+.. _CBaldurMessageSendBiographyToServer:
+
+CBaldurMessage\:\:SendBiographyToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendChapterRequestToServer:
+
+CBaldurMessage\:\:SendChapterRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendCharacterControlToServer:
+
+CBaldurMessage\:\:SendCharacterControlToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendCharacterReadyToServer:
+
+CBaldurMessage\:\:SendCharacterReadyToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendCharacterSlotStatusToServer:
+
+CBaldurMessage\:\:SendCharacterSlotStatusToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendChatMessage:
+
+CBaldurMessage\:\:SendChatMessage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendDialogRequestToServer:
+
+CBaldurMessage\:\:SendDialogRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+
+.. _CBaldurMessageSendFullSettingsToClients:
+
+CBaldurMessage\:\:SendFullSettingsToClients
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendGoreRequirementToServer:
+
+CBaldurMessage\:\:SendGoreRequirementToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendImportingOptionToServer:
+
+CBaldurMessage\:\:SendImportingOptionToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendJoinRequestOptionToServer:
+
+CBaldurMessage\:\:SendJoinRequestOptionToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendJournalDeleteEntryToServer:
+
+CBaldurMessage\:\:SendJournalDeleteEntryToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendJournalEntryChangeToServer:
+
+CBaldurMessage\:\:SendJournalEntryChangeToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendJournalEntryToServer:
+
+CBaldurMessage\:\:SendJournalEntryToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+
+.. _CBaldurMessageSendJournalSetQuestDoneToServer:
+
+CBaldurMessage\:\:SendJournalSetQuestDoneToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendJournalUserEntry:
+
+CBaldurMessage\:\:SendJournalUserEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendLeaveAreaLuaAnnouncement:
+
+CBaldurMessage\:\:SendLeaveAreaLuaAnnouncement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendLeaveAreaLuaPanicToServer:
+
+CBaldurMessage\:\:SendLeaveAreaLuaPanicToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendLeaveAreaLuaRequestToServer:
+
+CBaldurMessage\:\:SendLeaveAreaLuaRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendLeaveAreaNameAnnouncement:
+
+CBaldurMessage\:\:SendLeaveAreaNameAnnouncement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendLeaveAreaNameRequestToServer:
+
+CBaldurMessage\:\:SendLeaveAreaNameRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+
+.. _CBaldurMessageSendMapWorldAnnounceArea:
+
+CBaldurMessage\:\:SendMapWorldAnnounceArea
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendMapWorldAnnounceAreaRequest:
+
+CBaldurMessage\:\:SendMapWorldAnnounceAreaRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendMapWorldAnnounceStatus:
+
+CBaldurMessage\:\:SendMapWorldAnnounceStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendMapWorldCancelRequestToServer:
+
+CBaldurMessage\:\:SendMapWorldCancelRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendMapWorldRequestToServer:
+
+CBaldurMessage\:\:SendMapWorldRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendMapWorldRevealArea:
+
+CBaldurMessage\:\:SendMapWorldRevealArea
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendMovieEndCreditsToServer:
+
+CBaldurMessage\:\:SendMovieEndCreditsToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+
+.. _CBaldurMessageSendMovieRequestToServer:
+
+CBaldurMessage\:\:SendMovieRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendPauseRequestToServer:
+
+CBaldurMessage\:\:SendPauseRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendPermissionToServer:
+
+CBaldurMessage\:\:SendPermissionToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendPlayerReadyToServer:
+
+CBaldurMessage\:\:SendPlayerReadyToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendProgressBarStatus:
+
+CBaldurMessage\:\:SendProgressBarStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendReformPartyAnnounceStatus:
+
+CBaldurMessage\:\:SendReformPartyAnnounceStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendReformPartyRequestToServer:
+
+CBaldurMessage\:\:SendReformPartyRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+
+.. _CBaldurMessageSendRestRequestToServer:
+
+CBaldurMessage\:\:SendRestRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendRestrictStoreOptionToServer:
+
+CBaldurMessage\:\:SendRestrictStoreOptionToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendSettingsNightmareMode:
+
+CBaldurMessage\:\:SendSettingsNightmareMode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendSignal:
+
+CBaldurMessage\:\:SendSignal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSendTextScreenRequestToServer:
+
+CBaldurMessage\:\:SendTextScreenRequestToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSetSignalDefaultSecondsToTimeout:
+
+CBaldurMessage\:\:SetSignalDefaultSecondsToTimeout
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSetVersionControlShutdownClientString:
+
+CBaldurMessage\:\:SetVersionControlShutdownClientString
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+
+.. _CBaldurMessageSetVersionControlShutdownServerString:
+
+CBaldurMessage\:\:SetVersionControlShutdownServerString
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSwapItemReply:
+
+CBaldurMessage\:\:SwapItemReply
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageSwapItemRequest:
+
+CBaldurMessage\:\:SwapItemRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageTextScreenAnnounceStatus:
+
+CBaldurMessage\:\:TextScreenAnnounceStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageTextScreenCompletion:
+
+CBaldurMessage\:\:TextScreenCompletion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageTimeChangeToServer:
+
+CBaldurMessage\:\:TimeChangeToServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageTimeSynchBroadcast:
+
+CBaldurMessage\:\:TimeSynchBroadcast
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+
+.. _CBaldurMessageUpdateCharacterSlotReply:
+
+CBaldurMessage\:\:UpdateCharacterSlotReply
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageUpdateDemandCharacterSlot:
+
+CBaldurMessage\:\:UpdateDemandCharacterSlot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageUpdateDemandCharacters:
+
+CBaldurMessage\:\:UpdateDemandCharacters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageVersionServer:
+
+CBaldurMessage\:\:VersionServer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageWaitForSignal:
+
+CBaldurMessage\:\:WaitForSignal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+.. _CBaldurMessageWeatherBroadcast:
+
+CBaldurMessage\:\:WeatherBroadcast
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   x;
+
+**Parameters**
+
+*  * - 
+*  * - 
+*  * - 
+*  * - 
+
+**Return Value**
+
+ 
+
+**Remarks**
 
 
