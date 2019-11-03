@@ -1411,6 +1411,20 @@ CItem
 | 0x4C       | 28       | :ref:`CGameEffectUsabilityList<CGameEffectUsabilityList>` | m_Usability                   |
 +------------+----------+-----------------------------------------------------------+-------------------------------+
 
+**Notes**
+
+**m_flags** field can contain bit values from ``INVITEM.IDS``:
+
+::
+
+   1 IDENTIFIED  
+   2 NONSTEALABLE       
+   4 STOLEN      
+   8 NONDROPABLE
+   
+**m_flags**is checked for identified value in :ref:`CItem\:\:GetGenericName<CItemGetGenericName>` and :ref:`CItem\:\:GetDescription<CItemGetDescription>`
+
+
 Asm Definition
 
 ::

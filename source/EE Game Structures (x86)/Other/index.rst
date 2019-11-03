@@ -35,6 +35,7 @@ Other Structures
 * :ref:`SSavedGamePartyCreatureReferenceWrapper<SSavedGamePartyCreatureReferenceWrapper>`
 * :ref:`StatRating<StatRating>`
 * :ref:`STriggerObjectWrapper<STriggerObjectWrapper>`
+* :ref:`TILE_CODE<TILE_CODE>`
 * :ref:`TLK_FILE_HEADER<TLK_FILE_HEADER>`
 * :ref:`TLK_FILE_OVERRIDE_ENTRY<TLK_FILE_OVERRIDE_ENTRY>`
 * :ref:`TLK_FILE_OVERRIDE_HEADER<TLK_FILE_OVERRIDE_HEADER>`
@@ -1371,6 +1372,26 @@ Asm Definition
      pTriggerObject         dd ? ; CAreaFileTriggerObject* 
      pPickPointStart        dd ? ; CAreaPoint* 
    STriggerObjectWrapper    ends
+
+
+
+.. _TILE_CODE:
+
+TILE_CODE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 1        | unsigned char                          | tileNW                        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x01       | 1        | unsigned char                          | tileNE                        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x02       | 1        | unsigned char                          | tileSW                        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x03       | 1        | unsigned char                          | tileSE                        |
++------------+----------+----------------------------------------+-------------------------------+
+
 
 
 .. _TLK_FILE_HEADER:

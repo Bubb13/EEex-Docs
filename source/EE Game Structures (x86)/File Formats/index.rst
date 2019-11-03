@@ -135,6 +135,7 @@ ITM
 * :ref:`Item_ability_st<Item_ability_st>`
 * :ref:`Item_effect_st<Item_effect_st>`
 * :ref:`Item_Header_st<Item_Header_st>`
+* :ref:`CItem<CItem>`
 * :ref:`CResItem<CResItem>`
 
 .. _KEY:
@@ -217,6 +218,7 @@ TIS
 * :ref:`CTiledObject<CTiledObject>`
 * :ref:`ResFixedHeader_st<ResFixedHeader_st>`
 * :ref:`st_tiledef<st_tiledef>`
+* :ref:`TILE_CODE<TILE_CODE>`
 
 .. _TLK:
 
