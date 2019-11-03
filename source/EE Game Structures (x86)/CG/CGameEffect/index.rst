@@ -698,6 +698,11 @@ CGameEffectBase
 | 0xCC       | 60       | unsigned long                          | m_pad[15]                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `EFF V2.0 file format <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/eff_v2.htm>`_
+
+
 
 .. _CGameEffectBerserk:
 

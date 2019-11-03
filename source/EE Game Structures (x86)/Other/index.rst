@@ -119,6 +119,11 @@ BAMHEADERV2
 | 0x1C       | 4        | unsigned long                          | nQuadsOffset                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `BAM v2 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bam_v2.htm#bamv2_Header>`_
+
+
 Asm Definition
 
 ::
@@ -217,6 +222,11 @@ Item_Header_st
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x70       | 2        | unsigned short                         | equipedEffectCount            |
 +------------+----------+----------------------------------------+-------------------------------+
+
+**Notes**
+
+Related to `ITM V1.0 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/itm_v1.htm#itmv1_Header>`_
+
 
 Asm Definition
 
@@ -322,6 +332,11 @@ Item_ability_st
 | 0x2C       | 12       | unsigned short                         | attackProbability[6]          |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `ITM V1.0 Extended Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/itm_v1.htm#itmv1_Extended_Header>`_
+
+
 Asm Definition
 
 ::
@@ -394,6 +409,12 @@ Item_effect_st
 | 0x2C       | 4        | unsigned long                          | special                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `ITM V1.0 Feature Block <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/itm_v1.htm#itmv1_Feature_Block>`_ and `SPL V1 Feature Block <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/spl_v1.htm#splv1_Feature_Block>`_
+
+
+
 Asm Definition
 
 ::
@@ -438,6 +459,11 @@ KeyFileHeader_st
 | 0x14       | 4        | unsigned long                          | nOffsetToKeyTable             |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `KEY V1 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/key_v1.htm#keyv1_Header>`_
+
+
 Asm Definition
 
 ::
@@ -467,6 +493,11 @@ KeyFileKeyEntry_st
 | 0x0A       | 4        | unsigned int                           | nID                           |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `KEY V1 Resource Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/key_v1.htm#keyv1_ResIndices>`_
+
+
 Asm Definition
 
 ::
@@ -494,6 +525,11 @@ KeyFileResFileName_st
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x0A       | 2        | unsigned short                         | bDrives                       |
 +------------+----------+----------------------------------------+-------------------------------+
+
+**Notes**
+
+Related to `KEY V1 Bif Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/key_v1.htm#keyv1_BifIndices>`_
+
 
 Asm Definition
 
@@ -580,6 +616,10 @@ MOSAICHEADERV2
 | 0x14       | 4        | unsigned long                          | nOffsetToQuads                |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `MOS V2 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/mos_v2.htm#mos_v2_Header>`_
+
 
 Asm Definition
 
@@ -617,6 +657,12 @@ MOSAICQUAD
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x18       | 4        | int                                    | sy                            |
 +------------+----------+----------------------------------------+-------------------------------+
+
+**Notes**
+
+Related to `MOS V2 Data Block <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/mos_v2.htm#mos_v2_DataBlock>`_ and `BAM V2 Data Block <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bam_v2.htm#bamv2_DataBlock>`_
+
+
 
 Asm Definition
 
@@ -828,6 +874,11 @@ ResFixedHeader_st
 | 0x10       | 4        | unsigned long                          | nTableOffset                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `TIS V1 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/tis_v1.htm>`_
+
+
 Asm Definition
 
 ::
@@ -995,6 +1046,12 @@ STR_RES_HEADER
 | 0x16       | 4        | unsigned long                          | strSize                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `TLK V1 Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/tlk_v1.htm#tlkv1_Entry>`_
+
+
+
 Asm Definition
 
 ::
@@ -1094,6 +1151,11 @@ Spell_Header_st
 | 0x70       | 2        | unsigned short                         | castingEffectCount            |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `SPL V1 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/spl_v1.htm#splv1_Header>`_
+
+
 Asm Definition
 
 ::
@@ -1184,6 +1246,11 @@ Spell_ability_st
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x26       | 2        | unsigned short                         | missileType                   |
 +------------+----------+----------------------------------------+-------------------------------+
+
+**Notes**
+
+Related to `SPL V1 Extended Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/spl_v1.htm#splv1_Extended_Header>`_
+
 
 Asm Definition
 
@@ -1325,6 +1392,11 @@ TLK_FILE_HEADER
 | 0x0E       | 4        | unsigned long                          | strEntriesOffset              |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `TLK V1 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/tlk_v1.htm#tlkv1_Header>`_
+
+
 Asm Definition
 
 ::
@@ -1359,6 +1431,11 @@ TLK_FILE_OVERRIDE_ENTRY
 | 0x18       | 4        | unsigned long                          | offsetToStr                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `TLK V1 Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/tlk_v1.htm#tlkv1_Entry>`_
+
+
 Asm Definition
 
 ::
@@ -1391,6 +1468,11 @@ TLK_FILE_OVERRIDE_HEADER
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x10       | 4        | unsigned long                          | strEntriesOffset              |
 +------------+----------+----------------------------------------+-------------------------------+
+
+**Notes**
+
+Related to `TLK V1 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/tlk_v1.htm#tlkv1_Header>`_
+
 
 Asm Definition
 
@@ -2357,6 +2439,11 @@ bamHeader_st
 | 0x14       | 4        | unsigned long                          | nFrameListOffset              |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `BAM V1 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bam_v1.htm#bamv1_Header>`_
+
+
 Asm Definition
 
 ::
@@ -2392,6 +2479,11 @@ biffFixedTableEntry_st
 | 0x10       | 4        | unsigned long                          | nType                         |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `BIFF V1 Tileset Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bif_v1.htm#bif_v1_TilesetEntry>`_
+
+
 Asm Definition
 
 ::
@@ -2424,6 +2516,11 @@ biffHeader_st
 | 0x10       | 4        | unsigned long                          | nTableOffset                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
+**Notes**
+
+Related to `BIFF V1 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bif_v1.htm#bif_v1_Header>`_
+
+
 Asm Definition
 
 ::
@@ -2453,6 +2550,11 @@ biffVarTableEntry_st
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x0C       | 4        | unsigned long                          | nType                         |
 +------------+----------+----------------------------------------+-------------------------------+
+
+**Notes**
+
+Related to `BIFF V1 File Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bif_v1.htm#bif_v1_FileEntry>`_
+
 
 Asm Definition
 
@@ -2597,6 +2699,11 @@ frameTableEntry_st
 | 0x08       | 4        | :ref:`frameTableEntry_st\:\:\<unnamed-tag>\:\:\<unnamed-type-v2\><frameTableEntry_stv2>` | v2        |
 +------------+----------+------------------------------------------------------------------------------------------+-----------+
 
+**Notes**
+
+Related to `BAM v2 Frame Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bam_v2.htm#bamv2_FrameEntry>`_
+
+
 Asm Definition
 
 ::
@@ -2623,6 +2730,12 @@ frameTableEntry_st\:\:<unnamed-tag>\:\:<unnamed-type-v2
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x02       | 2        | short                                  | nQuadCount                    |
 +------------+----------+----------------------------------------+-------------------------------+
+
+
+**Notes**
+
+Related to `BAM v2 Cycle Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bam_v2.htm#bamv2_CycleEntry>`_
+
 
 Asm Definition
 
