@@ -1422,7 +1422,7 @@ CItem
    4 STOLEN      
    8 NONDROPABLE
    
-**m_flags**is checked for identified value in :ref:`CItem\:\:GetGenericName<CItemGetGenericName>` and :ref:`CItem\:\:GetDescription<CItemGetDescription>`
+**m_flags** field is checked for identified value in :ref:`CItem\:\:GetGenericName<CItemGetGenericName>` and :ref:`CItem\:\:GetDescription<CItemGetDescription>`
 
 
 Asm Definition
