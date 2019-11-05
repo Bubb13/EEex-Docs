@@ -34,5 +34,5 @@ createCharScreen\:OnCheatyMcCheaterson
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:EnableCheatKeys<C_EnableCheatKeys>`
 

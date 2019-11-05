@@ -4,35 +4,28 @@
 C\:CreateEngine 
 ===================================
 
-.. description
+Unknown - seems to start a new single ``0`` or multi ``1`` player game
     
 ::
 
-   C:CreateEngine()
+   C:CreateEngine(nEngine)
 
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+* ``integer`` *nEngine* - engine id number to create
 
 **Notes**
 
-
+Unknown
 
 **Example**
 
 ::
 
-   C:CreateEngine()
+   C:CreateEngine(0)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:new<C_new>` 
 

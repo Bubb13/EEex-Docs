@@ -4,35 +4,28 @@
 C\:CreateVEFVidCell 
 ===================================
 
-.. description
+Create VEFVidCell
     
 ::
 
-   C:CreateVEFVidCell()
+   C:CreateVEFVidCell(VidCell)
 
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+* ``string`` *VidCell* - string containing resource reference (ResRef) of VEFVidCell to create
 
 **Notes**
 
-
+Unknown
 
 **Example**
 
 ::
 
-   C:CreateVEFVidCell()
+   C:CreateVEFVidCell("????????")
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:AddSpell<C_AddSpell>`, :ref:`C\:CreateItem<C_CreateItem>`
 

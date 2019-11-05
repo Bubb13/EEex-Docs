@@ -4,23 +4,16 @@
 C\:Exec 
 ===================================
 
-.. description
+Execute console commands contained in the specified file
     
 ::
 
-   C:Exec()
+   C:Exec(File)
 
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+* ``string`` *File* - string containing filename to execute
 
 **Notes**
 
@@ -28,11 +21,13 @@ C\:Exec
 
 **Example**
 
+Execute all the commands in the file ``test.txt``:
+
 ::
 
-   C:Exec()
+   C:Eval("test.txt")
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:Eval<C_Eval>` 
 

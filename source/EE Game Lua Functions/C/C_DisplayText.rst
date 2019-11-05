@@ -4,23 +4,16 @@
 C\:DisplayText 
 ===================================
 
-.. description
+Displays the specified text on screen
     
 ::
 
-   C:DisplayText()
+   C:DisplayText(text)
 
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+* ``string`` *text* - string containing text to display
 
 **Notes**
 
@@ -30,9 +23,9 @@ C\:DisplayText
 
 ::
 
-   C:DisplayText()
+   C:DisplayText("This is some text to display")
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:StrrefOn<C_StrrefOn>`, :ref:`C\:StrrefOff<C_StrrefOff>`
 

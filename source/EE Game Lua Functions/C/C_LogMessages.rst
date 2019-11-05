@@ -4,7 +4,7 @@
 C\:LogMessages 
 ===================================
 
-.. description
+Enables logging output to console
     
 ::
 
@@ -13,18 +13,11 @@ C\:LogMessages
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+None
 
 **Notes**
 
-
+See :ref:`C\:LogSet<C_LogSet>` to output logging to a file instead
 
 **Example**
 
@@ -34,5 +27,5 @@ C\:LogMessages
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:LogSet<C_LogSet>`
 

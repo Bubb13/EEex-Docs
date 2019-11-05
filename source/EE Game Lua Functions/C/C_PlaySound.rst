@@ -4,35 +4,32 @@
 C\:PlaySound 
 ===================================
 
-.. description
+Plays the specified sound
     
 ::
 
-   C:PlaySound()
+   C:PlaySound(Sound)
 
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+* ``string`` *Sound* - string containing resource reference (ResRef) of the sound, music, voices to play
 
 **Notes**
 
+Sound resource reference (ResRef) used in *Sound* must be 8 characters or less and must be valid.
 
+Plays WAV file format audio (.wav)
 
 **Example**
 
+Play cow moo sound ``COW01.WAV``:
+
 ::
 
-   C:PlaySound()
+   C:PlaySound("COW01")
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:PlayMovie<C_PlayMovie>`
 

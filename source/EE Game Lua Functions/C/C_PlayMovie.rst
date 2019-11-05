@@ -4,35 +4,32 @@
 C\:PlayMovie 
 ===================================
 
-.. description
+Plays the specified movie
     
 ::
 
-   C:PlayMovie()
+   C:PlayMovie(Movie)
 
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+* ``string`` *Movie* - string containing resource reference (ResRef) of the movie to play
 
 **Notes**
 
+Movie resource reference (ResRef) used in *Movie* must be 8 characters or less and must be valid.
 
+Plays WebM file format movies (.wbm)
 
 **Example**
 
+Plays ``LOGO.WBM``:
+
 ::
 
-   C:PlayMovie()
+   C:PlayMovie("LOGO")
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:PlaySound<C_PlaySound>`
 

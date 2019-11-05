@@ -4,7 +4,7 @@
 C\:DisplayAllBAMFiles 
 ===================================
 
-.. description
+Display all BAM files
     
 ::
 
@@ -13,18 +13,11 @@ C\:DisplayAllBAMFiles
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+None
 
 **Notes**
 
-
+Display all BAM files
 
 **Example**
 
@@ -34,5 +27,5 @@ C\:DisplayAllBAMFiles
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:TestAllDialog<C_TestAllDialog>`
 

@@ -4,27 +4,23 @@
 C\:WorkshopUpload 
 ===================================
 
-.. description
+Upload a module to the Steam Workshop - Not tested or verified
     
 ::
 
-   C:WorkshopUpload()
+   C:WorkshopUpload(ModuleName,ModulePath)
 
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+* ``string`` *ModuleName* - string containing name of the workshop module
+* ``string`` *ModulePath* - string containing the full filepath to the module to upload
 
 **Notes**
 
+Applies to Steam installation only
 
+Not tested or verified
 
 **Example**
 
@@ -32,7 +28,4 @@ C\:WorkshopUpload
 
    C:WorkshopUpload()
 
-**See Also**
-
-:ref:``, :ref:`` 
 

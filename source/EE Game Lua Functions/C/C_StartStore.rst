@@ -4,35 +4,27 @@
 C\:StartStore 
 ===================================
 
-.. description
+Starts the specified store
     
 ::
 
-   C:StartStore()
+   C:StartStore(StoreName)
 
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+* ``string`` *StoreName* - string containing resource reference (ResRef) of store to start
 
 **Notes**
 
+Store resource reference (ResRef) used in *StoreName* must be 8 characters or less and must be valid.
 
+May be unstable, leading to crashes.
 
 **Example**
 
 ::
 
-   C:StartStore()
+   C:StartStore("INN0103")
 
-**See Also**
-
-:ref:``, :ref:`` 
 

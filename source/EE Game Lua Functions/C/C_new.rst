@@ -4,7 +4,7 @@
 C\:new 
 ===================================
 
-.. description
+Create a new instance of the CLUAConsole
     
 ::
 
@@ -13,18 +13,17 @@ C\:new
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+None
 
 **Notes**
 
+This is used in the game engine to assign ``C:`` to CLUAConsole:
 
+::
+
+   C = CLUAConsole:new()
+
+Not recommended to use this
 
 **Example**
 
@@ -34,5 +33,5 @@ C\:new
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:CreateEngine<C_CreateEngine>`
 

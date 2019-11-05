@@ -4,35 +4,30 @@
 C\:AdvanceRealTime 
 ===================================
 
-.. description
+Advance time
     
 ::
 
-   C:AdvanceRealTime()
+   C:AdvanceRealTime(GameTime)
 
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+* ``integer`` *GameTime* - amount of time in milliseconds to advance
 
 **Notes**
 
-
+Can be used to trigger banters and love talks etc
 
 **Example**
 
+Speed up 1 hour real time:
+
 ::
 
-   C:AdvanceRealTime()
+   C:AdvanceRealTime(60000)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:GetGlobal<C_GetGlobal>`, :ref:`C\:SetGlobal<C_SetGlobal>`
 

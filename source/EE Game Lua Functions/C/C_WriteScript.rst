@@ -4,35 +4,30 @@
 C\:WriteScript 
 ===================================
 
-.. description
+Output scripts to directory
     
 ::
 
-   C:WriteScript()
+   C:WriteScript(Folder)
 
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+* ``string`` *Folder* - string containing filepath of folder to output scripts to
 
 **Notes**
 
-
+If the mouse is over a creature, the command will evaluate the scripts attached to that creature. Otherwise it will evaluate the area scripts.
 
 **Example**
 
+Output the script results to a folder called DebugScripts in the root of your game install:
+
 ::
 
-   C:WriteScript()
+   C:WriteScript("DebugScripts")
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:Exec<C_Exec>`
 

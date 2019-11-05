@@ -4,35 +4,24 @@
 C\:AddGold 
 ===================================
 
-.. description
+Adds gold to the party
     
 ::
 
-   C:AddGold()
+   C:AddGold(Gold)
 
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
-
-**Notes**
-
-
+* ``string`` *Gold* - string containing the numeric amount of gold to add to party
 
 **Example**
 
 ::
 
-   C:AddGold()
+   C:AddGold("1000")
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:AddSpell<C_AddSpell>`, :ref:`C\:CreateItem<C_CreateItem>`
 

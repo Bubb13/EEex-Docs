@@ -4,27 +4,20 @@
 C\:PickDialog 
 ===================================
 
-.. description
+Unknown
     
 ::
 
-   C:PickDialog()
+   C:PickDialog(Table)
 
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+* ``integer`` *Table* - Unknown
 
 **Notes**
 
-
+Unknown
 
 **Example**
 
@@ -34,5 +27,5 @@ C\:PickDialog
 
 **See Also**
 
-:ref:``, :ref:`` 
+
 

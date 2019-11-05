@@ -4,35 +4,28 @@
 C\:LogSet 
 ===================================
 
-.. description
+Sets logging to a file instead of to console if logging is enabled
     
 ::
 
-   C:LogSet()
+   C:LogSet(LogFile)
 
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+* ``string`` *LogFile* - string containing log filename
 
 **Notes**
 
-
+See :ref:`C\:LogMessages<C_LogMessages>` to enable logging
 
 **Example**
 
 ::
 
-   C:LogSet()
+   C:LogSet("output.txt")
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:LogMessages<C_LogMessages>`
 

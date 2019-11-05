@@ -4,7 +4,7 @@
 C\:ResetAchievements 
 ===================================
 
-.. description
+Reset achievements
     
 ::
 
@@ -13,18 +13,11 @@ C\:ResetAchievements
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+None
 
 **Notes**
 
-
+Applies to Steam installation only
 
 **Example**
 
@@ -32,7 +25,4 @@ C\:ResetAchievements
 
    C:ResetAchievements()
 
-**See Also**
-
-:ref:``, :ref:`` 
 

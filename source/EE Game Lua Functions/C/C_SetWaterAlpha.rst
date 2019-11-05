@@ -4,35 +4,28 @@
 C\:SetWaterAlpha 
 ===================================
 
-.. description
+Sets the alpha blend level for water transparency
     
 ::
 
-   C:SetWaterAlpha()
+   C:SetWaterAlpha(AlphaLevel)
 
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+* ``integer`` *AlphaLevel* - value to set for alpha blending of water transparency
 
 **Notes**
 
-
+Not tested / verified
 
 **Example**
 
 ::
 
-   C:SetWaterAlpha()
+   C:SetWaterAlpha(100)
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:SetWeather<C_SetWeather>`
 

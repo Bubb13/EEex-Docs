@@ -4,7 +4,7 @@
 C\:TestAllDialog 
 ===================================
 
-.. description
+Lists all dialog file in the game, and checks for errors
     
 ::
 
@@ -13,14 +13,7 @@ C\:TestAllDialog
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+None
 
 **Notes**
 
@@ -34,5 +27,5 @@ C\:TestAllDialog
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:DisplayAllBAMFiles<C_DisplayAllBAMFiles>`
 

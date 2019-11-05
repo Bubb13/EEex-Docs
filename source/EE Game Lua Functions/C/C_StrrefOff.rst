@@ -4,7 +4,7 @@
 C\:StrrefOff 
 ===================================
 
-.. description
+Strings are not displayed with their associated string reference (StrRef) id
     
 ::
 
@@ -13,14 +13,7 @@ C\:StrrefOff
 
 **Parameters**
 
-* **
-* **
-* **
-
-
-**Returns**
-
-
+None
 
 **Notes**
 
@@ -34,5 +27,5 @@ C\:StrrefOff
 
 **See Also**
 
-:ref:``, :ref:`` 
+:ref:`C\:StrrefOn<C_StrrefOn>`, :ref:`C\:DisplayText<C_DisplayText>` 
 
