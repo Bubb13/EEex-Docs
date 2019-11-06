@@ -30,6 +30,7 @@ EE Game Structures (x86)
    CV/index
    CW/index
    CZ/index
+   UI/index
    Other/index
    File Formats/index
 
