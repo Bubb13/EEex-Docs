@@ -22,6 +22,8 @@ The structure used for this class is :ref:`CImmunitiesEffect<CImmunitiesEffect>`
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -51,6 +53,8 @@ CImmunitiesEffect\:\:ClearAll
 
 
 
+----
+
 .. _CImmunitiesEffectOnList:
 
 CImmunitiesEffect\:\:OnList
@@ -74,6 +78,8 @@ Returns ``int``
 
 
 
+
+----
 
 ---------------
 Operators

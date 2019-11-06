@@ -25,6 +25,8 @@ The structure used for this class is :ref:`CImmunitiesSpellLevelDecrementing<CIm
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -51,6 +53,8 @@ Constructs a ``CImmunitiesSpellLevelDecrementing`` object
 Constructs a ``CImmunitiesSpellLevelDecrementing`` object
 
 
+
+----
 
 ---------------
 Methods
@@ -83,6 +87,8 @@ CImmunitiesSpellLevelDecrementing\:\:ClearAll
 
 
 
+----
+
 .. _CImmunitiesSpellLevelDecrementingIsEmpty:
 
 CImmunitiesSpellLevelDecrementing\:\:IsEmpty
@@ -101,6 +107,8 @@ Returns ``int``
 **Remarks**
 
 
+
+----
 
 .. _CImmunitiesSpellLevelDecrementingOnList:
 
@@ -124,6 +132,8 @@ Returns ``int``
 **Remarks**
 
 
+
+----
 
 ---------------
 Operators

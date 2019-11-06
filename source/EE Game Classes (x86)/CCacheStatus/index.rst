@@ -22,6 +22,8 @@ The structure used for this class is :ref:`CCacheStatus<CCacheStatus>`
 +-----------------------------------------------+
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -50,6 +52,8 @@ Constructs a ``CCacheStatus`` object
 Constructs a ``CCacheStatus`` object
 
 
+----
+
 .. _CCacheStatus~CCacheStatus:
 
 CCacheStatus\:\:~CCacheStatus
@@ -67,6 +71,8 @@ Destroys the ``CCacheStatus`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -95,6 +101,8 @@ Initialize screen cache status
 
 
 
+
+----
 
 .. _CCacheStatusInvalidateScreen:
 

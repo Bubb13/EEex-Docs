@@ -33,6 +33,8 @@ The structure used for this class is :ref:`CInfCursor<CInfCursor>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -60,6 +62,8 @@ Constructs a ``CInfCursor`` object
 
 
 
+----
+
 Constructs a ``CInfCursor`` object
 
 .. _CInfCursor~CInfCursor:
@@ -79,6 +83,8 @@ Destroys the ``CInfCursor`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -119,6 +125,8 @@ CInfCursor\:\:CursorUpdate
 
 
 
+----
+
 .. _CInfCursorInitialize:
 
 CInfCursor\:\:Initialize
@@ -133,6 +141,8 @@ CInfCursor\:\:Initialize
 **Remarks**
 
 
+
+----
 
 .. _CInfCursorSetCursor:
 
@@ -157,6 +167,8 @@ CInfCursor\:\:SetCursor
 **Remarks**
 
 
+
+----
 
 .. _CInfCursorSetCustomCursor:
 
@@ -186,6 +198,8 @@ Returns ``int``
 
 
 
+----
+
 .. _CInfCursorSetGreyScale:
 
 CInfCursor\:\:SetGreyScale
@@ -205,6 +219,8 @@ CInfCursor\:\:SetGreyScale
 
 
 
+----
+
 .. _CInfCursorSetScrollArrowDirection:
 
 CInfCursor\:\:SetScrollArrowDirection
@@ -219,6 +235,8 @@ CInfCursor\:\:SetScrollArrowDirection
 **Remarks**
 
 
+
+----
 
 .. _CInfCursorSetToolTip:
 

@@ -56,6 +56,8 @@ The structure used for this class is :ref:`CBaldurProjector<CBaldurProjector>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -83,6 +85,8 @@ Constructs a ``CBaldurProjector`` object
 
 Constructs a ``CBaldurProjector`` object
 
+----
+
 .. _CBaldurProjector~CBaldurProjector:
 
 CBaldurProjector\:\:~CBaldurProjector
@@ -100,6 +104,8 @@ Destroys the ``CBaldurProjector`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -164,6 +170,9 @@ Returns an ``int`` that represents true (``1``) or false (``0``)
 
 
 
+
+----
+
 .. _CBaldurProjectorEngineActivated:
 
 CBaldurProjector\:\:EngineActivated
@@ -178,6 +187,9 @@ Event signalling for when CBaldurProjector is activated
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurProjectorEngineDeactivated:
 
@@ -194,6 +206,9 @@ Event signalling for when CBaldurProjector is deactivated
 
 
 
+
+----
+
 .. _CBaldurProjectorEngineGameInit:
 
 CBaldurProjector\:\:EngineGameInit
@@ -209,6 +224,9 @@ Initialize CBaldurProjector
 
 
 
+
+----
+
 .. _CBaldurProjectorEngineGameUninit:
 
 CBaldurProjector\:\:EngineGameUninit
@@ -223,6 +241,9 @@ Uninitialize CBaldurProjector
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurProjectorGetVirtualKeys:
 
@@ -244,6 +265,9 @@ Returns :ref:`CKeyInfo<CKeyInfo>`\*
 :ref:`CKeyInfo<CKeyInfo>` contains keyCode and other keyboard information: repeatCount, repeatDelay and repeatRate
 
 
+
+----
+
 .. _CBaldurProjectorGetVirtualKeysFlags:
 
 CBaldurProjector\:\:GetVirtualKeysFlags
@@ -264,6 +288,9 @@ Returns ``int``\*
 
 
 
+
+----
+
 .. _CBaldurProjectorGetNumVirtualKeys:
 
 CBaldurProjector\:\:GetNumVirtualKeys
@@ -283,6 +310,9 @@ Returns a ``short`` value indicating number of keys supported
 
 
 
+
+
+----
 
 .. _CBaldurProjectorOnEvent:
 
@@ -307,6 +337,9 @@ Returns ``bool``
 
 
 
+
+----
+
 .. _CBaldurProjectorOnKeyUp:
 
 CBaldurProjector\:\:OnKeyUp
@@ -325,6 +358,9 @@ Key press event for when a key has been pressed (down) and released (up)
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurProjectorOnLButtonUp:
 
@@ -345,6 +381,9 @@ Mouse button event for when the left mouse has been clicked (down) and released 
 
 
 
+
+----
+
 .. _CBaldurProjectorPlayMovie:
 
 CBaldurProjector\:\:PlayMovie
@@ -363,6 +402,9 @@ Plays the WEBM movie as specified by the resource reference
 **Remarks**
 
 Calls :ref:`CBaldurProjector\:\:PlayMovieInternal<CBaldurProjectorPlayMovieInternal>` which handles the internals of playing the movie
+
+
+----
 
 .. _CBaldurProjectorPlayMovieInternal:
 
@@ -386,6 +428,9 @@ Plays the WEBM movie as specified by the resource reference
 
 Called from :ref:`CBaldurProjector\:\:PlayMovie<CBaldurProjectorPlayMovie>`. Depending on the thread type specified by *bAsyncThread* determines the update used: :ref:`CBaldurProjector\:\:TimerAsynchronousUpdate<CBaldurProjectorTimerAsynchronousUpdate>` or :ref:`CBaldurProjector\:\:TimerSynchronousUpdate<CBaldurProjectorTimerSynchronousUpdate>`
 
+
+----
+
 .. _CBaldurProjectorPlayMovieNext:
 
 CBaldurProjector\:\:PlayMovieNext
@@ -405,6 +450,9 @@ Play the next movie. Adds movie to queue to play next?
 
 
 
+
+
+----
 
 .. _CBaldurProjectorStopMusic:
 
@@ -426,6 +474,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CBaldurProjectorTimerAsynchronousUpdate:
 
 CBaldurProjector\:\:TimerAsynchronousUpdate
@@ -440,6 +491,9 @@ Timer asynchronous update
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurProjectorTimerSynchronousUpdate:
 

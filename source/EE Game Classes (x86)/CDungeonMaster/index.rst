@@ -29,6 +29,8 @@ The structure used for this class is :ref:`CDungeonMaster<CDungeonMaster>` which
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -55,6 +57,8 @@ Constructs a ``CDungeonMaster`` object
 Constructs a ``CDungeonMaster`` object
 
 
+
+----
 
 ---------------
 Methods
@@ -93,6 +97,8 @@ Engine activated
 
 
 
+----
+
 .. _CDungeonMasterEngineDeactivated:
 
 CDungeonMaster\:\:EngineDeactivated
@@ -107,6 +113,8 @@ Engine deactivated
 **Remarks**
 
 
+
+----
 
 .. _CDungeonMasterEngineDestroyed:
 
@@ -123,6 +131,8 @@ Engine destroyed
 
 
 
+----
+
 .. _CDungeonMasterEngineInitialized:
 
 CDungeonMaster\:\:EngineInitialized
@@ -138,6 +148,8 @@ Engine initialized
 
 
 
+----
+
 .. _CDungeonMasterTimerAsynchronousUpdate:
 
 CDungeonMaster\:\:TimerAsynchronousUpdate
@@ -152,6 +164,8 @@ Update timer asynchronously
 **Remarks**
 
 
+
+----
 
 .. _CDungeonMasterTimerSynchronousUpdate:
 

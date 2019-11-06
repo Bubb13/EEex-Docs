@@ -19,6 +19,8 @@ CGameSave Class
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -51,6 +53,8 @@ CGameSave\:\:SetInputMode
 
 The structure used for this class method is :ref:`CGameSave<CGameSave>`
 
+
+----
 
 .. _CGameSaveCharacterCGameSaveCharacter:
 

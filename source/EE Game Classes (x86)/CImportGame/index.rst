@@ -34,6 +34,8 @@ The structure used for this class is :ref:`CImportGame<CImportGame>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -63,6 +65,8 @@ Constructs a ``CImportGame`` object
 
 
 
+----
+
 .. _CImportGame~CImportGame:
 
 CImportGame\:\:~CImportGame
@@ -80,6 +84,8 @@ Destroys the ``CImportGame`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -127,6 +133,8 @@ CImportGame\:\:CopyGlobals
 
 
 
+----
+
 .. _CImportGameGetCharacter:
 
 CImportGame\:\:GetCharacter
@@ -149,6 +157,8 @@ Returns ``long``
 **Remarks**
 
 
+
+----
 
 .. _CImportGameGetCharacterAtIndex:
 
@@ -173,6 +183,8 @@ Returns ``long``
 
 
 
+----
+
 .. _CImportGameGetImportableCharacters:
 
 CImportGame\:\:GetImportableCharacters
@@ -195,6 +207,8 @@ Returns :ref:`CStringList<CStringList>`\*
 **Remarks**
 
 
+
+----
 
 .. _CImportGameGetNPCAtIndex:
 
@@ -219,6 +233,8 @@ Returns ``long``
 
 
 
+----
+
 .. _CImportGameLoadGame:
 
 CImportGame\:\:LoadGame
@@ -241,6 +257,8 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+----
 
 .. _CImportGameUnmarshal:
 

@@ -31,6 +31,8 @@ The structure used for this class is :ref:`CInfTileSet<CInfTileSet>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -64,6 +66,8 @@ Constructs a ``CInfTileSet`` object
 
 
 
+----
+
 .. _CInfTileSet~CInfTileSet:
 
 CInfTileSet\:\:~CInfTileSet
@@ -81,6 +85,8 @@ Destroys the ``CInfTileSet`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -127,6 +133,8 @@ Returns ``int``
 
 
 
+----
+
 .. _CInfTileSetDettachFromVRam:
 
 CInfTileSet\:\:DettachFromVRam
@@ -149,6 +157,8 @@ Returns ``int``
 **Remarks**
 
 
+
+----
 
 .. _CInfTileSetReadyTexture:
 
@@ -179,6 +189,8 @@ CInfTileSet\:\:ReadyTexture
 **Remarks**
 
 
+
+----
 
 .. _CInfTileSetRender:
 
@@ -220,6 +232,8 @@ Returns ``int``
 
 
 
+----
+
 .. _CInfTileSetRenderTexture:
 
 CInfTileSet\:\:RenderTexture
@@ -249,6 +263,8 @@ CInfTileSet\:\:RenderTexture
 **Remarks**
 
 
+
+----
 
 .. _CInfTileSetSetResID:
 

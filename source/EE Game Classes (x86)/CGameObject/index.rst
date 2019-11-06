@@ -70,6 +70,8 @@ The structure used for this class is :ref:`CGameObject<CGameObject>`
 +-------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -96,6 +98,8 @@ Constructs a ``CGameObject`` object
 Constructs a ``CGameObject`` object
 
 
+
+----
 
 ---------------
 Methods
@@ -187,6 +191,9 @@ CGameObject\:\:AddToArea
 
 
 
+
+----
+
 .. _CGameObjectAIUpdate:
 
 CGameObject\:\:AIUpdate
@@ -201,6 +208,9 @@ CGameObject\:\:AIUpdate
 **Remarks**
 
 
+
+
+----
 
 .. _CGameObjectCanSaveGame:
 
@@ -230,6 +240,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CGameObjectCompressTime:
 
 CGameObject\:\:CompressTime
@@ -253,6 +266,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CGameObjectDebugDump:
 
 CGameObject\:\:DebugDump
@@ -271,6 +287,9 @@ CGameObject\:\:DebugDump
 **Remarks**
 
 
+
+
+----
 
 .. _CGameObjectDoAIUpdate:
 
@@ -298,6 +317,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CGameObjectDoesIntersect:
 
 CGameObject\:\:DoesIntersect
@@ -320,6 +342,9 @@ Returns ``int``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameObjectEvaluateStatusTrigger:
 
@@ -345,6 +370,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CGameObjectGetAIType:
 
 CGameObject\:\:GetAIType
@@ -363,6 +391,9 @@ Returns :ref:`CAIObjectType<CAIObjectType>`\&
 **Remarks**
 
 
+
+
+----
 
 .. _CGameObjectGetNextWaypoint:
 
@@ -383,6 +414,9 @@ CGameObject\:\:GetNextWaypoint
 
 
 
+
+----
+
 .. _CGameObjectGetObjectType:
 
 CGameObject\:\:GetObjectType
@@ -401,6 +435,9 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameObjectGetTargetId:
 
@@ -421,6 +458,9 @@ Returns ``long``
 
 
 
+
+----
+
 .. _CGameObjectGetVertListPos:
 
 CGameObject\:\:GetVertListPos
@@ -439,6 +479,9 @@ Returns \_\_POSITION\*
 **Remarks**
 
 
+
+
+----
 
 .. _CGameObjectGetVertListType:
 
@@ -459,6 +502,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CGameObjectInControl:
 
 CGameObject\:\:InControl
@@ -478,6 +524,9 @@ Returns ``unsigned char``
 
 
 
+
+
+----
 
 .. _CGameObjectIsOver:
 
@@ -502,6 +551,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CGameObjectIsPicked:
 
 CGameObject\:\:IsPicked
@@ -520,6 +572,9 @@ Returns ``int``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameObjectOnActionButton:
 
@@ -540,6 +595,9 @@ CGameObject\:\:OnActionButton
 
 
 
+
+----
+
 .. _CGameObjectOnFormationButton:
 
 CGameObject\:\:OnFormationButton
@@ -558,6 +616,9 @@ CGameObject\:\:OnFormationButton
 **Remarks**
 
 
+
+
+----
 
 .. _CGameObjectOnSearchMap:
 
@@ -578,6 +639,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CGameObjectRemoveFromArea:
 
 CGameObject\:\:RemoveFromArea
@@ -592,6 +656,9 @@ CGameObject\:\:RemoveFromArea
 **Remarks**
 
 
+
+
+----
 
 .. _CGameObjectRender:
 
@@ -613,6 +680,9 @@ CGameObject\:\:Render
 
 
 
+
+----
+
 .. _CGameObjectSetTarget:
 
 CGameObject\:\:SetTarget
@@ -631,6 +701,9 @@ CGameObject\:\:SetTarget
 **Remarks**
 
 
+
+
+----
 
 .. _CGameObjectSetAIType:
 
@@ -654,6 +727,9 @@ CGameObject\:\:SetAIType
 
 
 
+
+----
+
 .. _CGameObjectSetVertListPos:
 
 CGameObject\:\:SetVertListPos
@@ -673,6 +749,9 @@ CGameObject\:\:SetVertListPos
 
 
 
+
+----
+
 .. _CGameObjectSetVertListType:
 
 CGameObject\:\:SetVertListType
@@ -691,6 +770,9 @@ CGameObject\:\:SetVertListType
 **Remarks**
 
 
+
+
+----
 
 .. _CGameObjectSetCursor:
 

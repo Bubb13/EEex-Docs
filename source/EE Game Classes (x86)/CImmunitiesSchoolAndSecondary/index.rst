@@ -17,6 +17,8 @@ The structure used for this class is :ref:`CImmunitiesSchoolAndSecondary<CImmuni
 
 
 
+----
+
 ---------------
 Operators
 ---------------

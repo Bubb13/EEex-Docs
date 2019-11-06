@@ -44,6 +44,8 @@ The structure used for this class is :ref:`CFileFind<CFileFind>`
 +---------------------------------------------------------------------------------------------------------------------------------------+
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -72,6 +74,8 @@ Constructs a ``CFileFind`` object
 Constructs a ``CFileFind`` object
 
 
+----
+
 .. _CFileFind~CFileFind:
 
 CFileFind\:\:~CFileFind
@@ -89,6 +93,8 @@ Destroys the ``CFileFind`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -141,6 +147,8 @@ Closes the search request. Call this member function to end the search, reset th
 After calling Close, you do not have to create a new CFileFind instance before calling :ref:`CFileFind\:\:FindFile<CFileFindFindFile>` to begin a new search.
 
 
+----
+
 .. _CFileFindCloseContext:
 
 CFileFind\:\:CloseContext
@@ -156,6 +164,8 @@ Closes the file specified by the current search handle
 
 Closes the file specified by the current value of the search handle
 
+
+----
 
 .. _CFileFindFindFile:
 
@@ -194,6 +204,8 @@ After calling :ref:`CFileFind\:\:FindFile<CFileFindFindFile>` to begin the file 
 * :ref:`CFileFind\:\:MatchesMask<CFileFindMatchesMask>`
 
 
+----
+
 .. _CFileFindFindNextFileA:
 
 CFileFind\:\:FindNextFileA
@@ -224,6 +236,8 @@ You must call :ref:`CFileFind\:\:FindNextFileA<CFileFindFindNextFileA>` at least
 * :ref:`CFileFind\:\:MatchesMask<CFileFindMatchesMask>`
 
 
+----
+
 .. _CFileFindGetFileName:
 
 CFileFind\:\:GetFileName
@@ -244,6 +258,8 @@ Returns a :ref:`CString<CString>` containg the name of the most-recently-found f
 You must call :ref:`CFileFind\:\:FindNextFileA<CFileFindFindNextFileA>` at least once before calling :ref:`CFileFind\:\:GetFileName<CFileFindGetFileName>`
 
 
+
+----
 
 .. _CFileFindGetFilePath:
 
@@ -266,6 +282,8 @@ You must call :ref:`CFileFind\:\:FindNextFileA<CFileFindFindNextFileA>` at least
 
 
 
+----
+
 .. _CFileFindGetFileTitle:
 
 CFileFind\:\:GetFileTitle
@@ -285,6 +303,8 @@ Returns a :ref:`CString<CString>` containing the title of the file
 
 You must call :ref:`CFileFind\:\:FindNextFileA<CFileFindFindNextFileA>` at least once before calling :ref:`CFileFind\:\:GetFileTitle<CFileFindGetFileTitle>`
 
+
+----
 
 .. _CFileFindGetFileURL:
 
@@ -308,6 +328,8 @@ You must call :ref:`CFileFind\:\:FindNextFileA<CFileFindFindNextFileA>` at least
 
 
 
+----
+
 .. _CFileFindGetLength:
 
 CFileFind\:\:GetLength
@@ -327,6 +349,8 @@ The length of the found file, in bytes
 
 You must call :ref:`CFileFind\:\:FindNextFileA<CFileFindFindNextFileA>` at least once before calling :ref:`CFileFind\:\:GetLength<CFileFindGetLength>`
 
+
+----
 
 .. _CFileFindGetNameAndExt:
 
@@ -351,6 +375,8 @@ Gets the title and extension of the found file
 You must call :ref:`CFileFind\:\:FindNextFileA<CFileFindFindNextFileA>` at least once before calling :ref:`CFileFind\:\:GetNameAndExt<CFileFindGetNameAndExt>`
 
 
+----
+
 .. _CFileFindGetRoot:
 
 CFileFind\:\:GetRoot
@@ -371,6 +397,8 @@ Returns a :ref:`CString<CString>` containing the root of the active search
 You must call :ref:`CFileFind\:\:FindNextFileA<CFileFindFindNextFileA>` at least once before calling :ref:`CFileFind\:\:GetRoot<CFileFindGetRoot>`
 
 
+----
+
 .. _CFileFindIsDots:
 
 CFileFind\:\:IsDots
@@ -390,6 +418,8 @@ Nonzero if the found file has the name "." or "..", which indicates that the fou
 
 You must call :ref:`CFileFind\:\:FindNextFileA<CFileFindFindNextFileA>` at least once before calling :ref:`CFileFind\:\:IsDots<CFileFindIsDots>`
 
+
+----
 
 .. _CFileFindMatchesMask:
 

@@ -351,6 +351,8 @@ The structure used for this class is :ref:`CScreenCreateChar<CScreenCreateChar>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -379,6 +381,8 @@ Constructs a ``CScreenCreateChar`` object
 Constructs a ``CScreenCreateChar`` object
 
 
+----
+
 .. _CScreenCreateChar~CScreenCreateChar:
 
 CScreenCreateChar\:\:~CScreenCreateChar
@@ -394,6 +398,8 @@ Destroys the ``CScreenCreateChar`` object
 
 Destroys the ``CScreenCreateChar`` object
 
+
+----
 
 ---------------
 Methods
@@ -762,6 +768,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CScreenCreateCharAbilityExistsInEffectList:
 
 CScreenCreateChar\:\:AbilityExistsInEffectList
@@ -788,6 +797,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CScreenCreateCharAcceptCharacter:
 
 CScreenCreateChar\:\:AcceptCharacter
@@ -806,6 +818,9 @@ CScreenCreateChar\:\:AcceptCharacter
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharAddChosenSpellsToKnown:
 
@@ -826,6 +841,9 @@ CScreenCreateChar\:\:AddChosenSpellsToKnown
 
 
 
+
+----
+
 .. _CScreenCreateCharCanSpendProficiencySlots:
 
 CScreenCreateChar\:\:CanSpendProficiencySlots
@@ -845,6 +863,9 @@ Returns ``bool`` - ``1`` true or ``0`` false
 
 
 
+
+----
+
 .. _CScreenCreateCharCancelCreateChar:
 
 CScreenCreateChar\:\:CancelCreateChar
@@ -861,6 +882,9 @@ Cancels character creation process
 See also :ref:`CScreenCreateChar\:\:StartCreateChar<CScreenCreateCharStartCreateChar>` and :ref:`CScreenCreateChar\:\:StopCreateChar<CScreenCreateCharStopCreateChar>`
 
 
+
+----
+
 .. _CScreenCreateCharCancelEngine:
 
 CScreenCreateChar\:\:CancelEngine
@@ -875,6 +899,9 @@ Cancel engine
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharCancelLevelUp:
 
@@ -892,6 +919,9 @@ Cancel level up
 
 
 
+
+----
+
 .. _CScreenCreateCharCancelMemorizeSpells:
 
 CScreenCreateChar\:\:CancelMemorizeSpells
@@ -906,6 +936,9 @@ Cancel memorized spells
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharCheckAbilityEnabled:
 
@@ -932,6 +965,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharCheckCompatibleEquipment:
 
@@ -966,6 +1002,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharCheckCompatibleSlot:
 
@@ -1003,6 +1042,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 
 
 
+
+----
+
 .. _CScreenCreateCharCheckDropEquipment:
 
 CScreenCreateChar\:\:CheckDropEquipment
@@ -1017,6 +1059,9 @@ CScreenCreateChar\:\:CheckDropEquipment
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharCheckDropSlot:
 
@@ -1036,6 +1081,9 @@ CScreenCreateChar\:\:CheckDropSlot
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharCheckMouseLButton:
 
@@ -1057,6 +1105,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CScreenCreateCharCheckMouseMove:
 
 CScreenCreateChar\:\:CheckMouseMove
@@ -1075,6 +1126,9 @@ Returns ``int``
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharCheckMouseRButton:
 
@@ -1095,6 +1149,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CScreenCreateCharCheckSystemKeyCapsLock:
 
 CScreenCreateChar\:\:CheckSystemKeyCapsLock
@@ -1113,6 +1170,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharCheckSystemKeyCtrl:
 
@@ -1133,6 +1193,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 
 
 
+
+----
+
 .. _CScreenCreateCharCheckSystemKeyShift:
 
 CScreenCreateChar\:\:CheckSystemKeyShift
@@ -1152,6 +1215,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 
 
 
+
+----
+
 .. _CScreenCreateCharCompleteCharacterAbilities:
 
 CScreenCreateChar\:\:CompleteCharacterAbilities
@@ -1170,6 +1236,9 @@ Complete the character abilities part of the character creation
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharCompleteCharacterClass:
 
@@ -1191,6 +1260,9 @@ Complete the character class part of the character creation
 
 
 
+
+----
+
 .. _CScreenCreateCharCompleteCharacterHighLevelAbilities:
 
 CScreenCreateChar\:\:CompleteCharacterHighLevelAbilities
@@ -1209,6 +1281,9 @@ Complete the character high level abilities (HLA) part of the character creation
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharCompleteCharacterInitialise:
 
@@ -1229,6 +1304,9 @@ Initialize the complete character creation process
 
 
 
+
+----
+
 .. _CScreenCreateCharCompleteCharacterSkills:
 
 CScreenCreateChar\:\:CompleteCharacterSkills
@@ -1247,6 +1325,9 @@ Complete the character skills part of the character creation
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharCompleteCharacterSounds:
 
@@ -1267,6 +1348,9 @@ Complete the character sound set (voice) part of the character creation
 
 
 
+
+----
+
 .. _CScreenCreateCharCompleteCharacterWrapup:
 
 CScreenCreateChar\:\:CompleteCharacterWrapup
@@ -1285,6 +1369,9 @@ CScreenCreateChar\:\:CompleteCharacterWrapup
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharCountInSelectedList:
 
@@ -1309,6 +1396,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CScreenCreateCharDecCurrentPortrait:
 
 CScreenCreateChar\:\:DecCurrentPortrait
@@ -1330,6 +1420,9 @@ See also :ref:`CScreenCreateChar\:\:IncCurrentPortrait<CScreenCreateCharIncCurre
 
 
 
+
+----
+
 .. _CScreenCreateCharDeleteCharacter:
 
 CScreenCreateChar\:\:DeleteCharacter
@@ -1346,6 +1439,9 @@ Delete character
 
 
 
+
+----
+
 .. _CScreenCreateCharEngineActivated:
 
 CScreenCreateChar\:\:EngineActivated
@@ -1360,6 +1456,9 @@ Character creation engine activated
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharEngineDeactivated:
 
@@ -1376,6 +1475,9 @@ Character creation engine deactivated
 
 
 
+
+----
+
 .. _CScreenCreateCharEngineDestroyed:
 
 CScreenCreateChar\:\:EngineDestroyed
@@ -1390,6 +1492,9 @@ Character creation engine destroyed
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharEngineGameInit:
 
@@ -1406,6 +1511,9 @@ Character creation engine initialization
 
 
 
+
+----
+
 .. _CScreenCreateCharEngineGameUninit:
 
 CScreenCreateChar\:\:EngineGameUninit
@@ -1420,6 +1528,9 @@ Character creation engine un-initialization
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharEngineInitialized:
 
@@ -1436,6 +1547,9 @@ Character creation engine initialized
 
 
 
+
+
+----
 
 .. _CScreenCreateCharExistsInSelectedList:
 
@@ -1460,6 +1574,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 
 
 
+
+----
+
 .. _CScreenCreateCharGetCapsLockKey:
 
 CScreenCreateChar\:\:GetCapsLockKey
@@ -1478,6 +1595,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharGetCharacterVersion:
 
@@ -1508,6 +1628,9 @@ Returns ``int``
 CRE file format used?
 
 
+
+----
+
 .. _CScreenCreateCharGetCtrlKey:
 
 CScreenCreateChar\:\:GetCtrlKey
@@ -1526,6 +1649,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharGetCurrentPortrait:
 
@@ -1553,6 +1679,9 @@ Returns a :ref:`CString<CString>`
 
 
 
+
+----
+
 .. _CScreenCreateCharGetCurrentPortraitCallback:
 
 CScreenCreateChar\:\:GetCurrentPortraitCallback
@@ -1571,6 +1700,9 @@ Callback for current portrait
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharGetDualClassCount:
 
@@ -1592,6 +1724,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CScreenCreateCharGetEngineState:
 
 CScreenCreateChar\:\:GetEngineState
@@ -1611,6 +1746,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CScreenCreateCharGetImportableCharacters:
 
 CScreenCreateChar\:\:GetImportableCharacters
@@ -1625,6 +1763,9 @@ CScreenCreateChar\:\:GetImportableCharacters
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharGetNumVirtualKeys:
 
@@ -1645,6 +1786,9 @@ Returns a ``short`` value indicating number of keys supported
 
 
 
+
+----
+
 .. _CScreenCreateCharGetShiftKey:
 
 CScreenCreateChar\:\:GetShiftKey
@@ -1663,6 +1807,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharGetSpecialistBonusSpells:
 
@@ -1690,6 +1837,9 @@ Returns an ``int`` value indicating count of bonus spells
 
 
 
+
+----
+
 .. _CScreenCreateCharGetStoredSkill:
 
 CScreenCreateChar\:\:GetStoredSkill
@@ -1713,6 +1863,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CScreenCreateCharGetVirtualKeys:
 
 CScreenCreateChar\:\:GetVirtualKeys
@@ -1733,6 +1886,9 @@ Returns :ref:`CKeyInfo<CKeyInfo>`\*
 :ref:`CKeyInfo<CKeyInfo>` contains keyCode and other keyboard information: repeatCount, repeatDelay and repeatRate
 
 
+
+----
+
 .. _CScreenCreateCharGetVirtualKeysFlags:
 
 CScreenCreateChar\:\:GetVirtualKeysFlags
@@ -1751,6 +1907,9 @@ Returns ``int``\*
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharImportCharacter:
 
@@ -1771,6 +1930,9 @@ Import a previously saved character into character creation
 
 
 
+
+----
+
 .. _CScreenCreateCharImportGame:
 
 CScreenCreateChar\:\:ImportGame
@@ -1790,6 +1952,9 @@ Import a previously saved game for importing of a character in the saved game
 
 
 
+
+----
+
 .. _CScreenCreateCharImportParty:
 
 CScreenCreateChar\:\:ImportParty
@@ -1804,6 +1969,9 @@ Import a party of characters
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharIncCurrentPortrait:
 
@@ -1826,6 +1994,9 @@ See also :ref:`CScreenCreateChar\:\:DecCurrentPortrait<CScreenCreateCharDecCurre
 
 
 
+
+----
+
 .. _CScreenCreateCharIncCustomSoundIndex:
 
 CScreenCreateChar\:\:IncCustomSoundIndex
@@ -1840,6 +2011,9 @@ CScreenCreateChar\:\:IncCustomSoundIndex
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharIsAbilityRecallButtonClickable:
 
@@ -1861,6 +2035,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 
 
 
+
+----
+
 .. _CScreenCreateCharIsAdvancedButtonClickable:
 
 CScreenCreateChar\:\:IsAdvancedButtonClickable
@@ -1879,6 +2056,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharIsChargenComplete:
 
@@ -1899,6 +2079,9 @@ Returns ``bool`` - ``1`` true or ``0`` false
 
 
 
+
+----
+
 .. _CScreenCreateCharIsClearMemoryAbilities:
 
 CScreenCreateChar\:\:IsClearMemoryAbilities
@@ -1917,6 +2100,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharIsDoneButtonClickable:
 
@@ -1941,6 +2127,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 
 
 
+
+----
+
 .. _CScreenCreateCharIsHighLevelAbilitiesButtonClickable:
 
 CScreenCreateChar\:\:IsHighLevelAbilitiesButtonClickable
@@ -1959,6 +2148,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharIsMainBackButtonClickable:
 
@@ -1979,6 +2171,9 @@ Returns ``bool`` - ``1`` true or ``0`` false
 
 
 
+
+----
+
 .. _CScreenCreateCharIsThiefSkillPlusMinusButtonClickable:
 
 CScreenCreateChar\:\:IsThiefSkillPlusMinusButtonClickable
@@ -1998,6 +2193,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 
 
 
+
+
+----
 
 .. _CScreenCreateCharLevelUp:
 
@@ -2021,6 +2219,9 @@ Level up character during character creation
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharMageSchoolSpellsAvailable:
 
@@ -2048,6 +2249,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 
 
 
+
+----
+
 .. _CScreenCreateCharMakeDualClass:
 
 CScreenCreateChar\:\:MakeDualClass
@@ -2070,6 +2274,9 @@ Changes a character from single class to dual class
 
 
 
+
+----
+
 .. _CScreenCreateCharMakeSingleClass:
 
 CScreenCreateChar\:\:MakeSingleClass
@@ -2088,6 +2295,9 @@ Changes a character from dual class to single class
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnAbilityPlusMinusButtonClick:
 
@@ -2111,6 +2321,9 @@ Event action for when ability plus (+) or minus (-) buttons are clicked
 
 
 
+
+----
+
 .. _CScreenCreateCharOnAbilityReRollButtonClick:
 
 CScreenCreateChar\:\:OnAbilityReRollButtonClick
@@ -2125,6 +2338,9 @@ Event action for when re-roll ability scores button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnAbilityRecallButtonClick:
 
@@ -2142,6 +2358,9 @@ Event action for when recall previously stored ability scores button is clicked
 
 
 
+
+----
+
 .. _CScreenCreateCharOnAbilityStoreButtonClick:
 
 CScreenCreateChar\:\:OnAbilityStoreButtonClick
@@ -2157,6 +2376,9 @@ Event action for when store ability scores button is clicked
 
 
 
+
+----
+
 .. _CScreenCreateCharOnAdvancedButtonClick:
 
 CScreenCreateChar\:\:OnAdvancedButtonClick
@@ -2171,6 +2393,9 @@ Event action for when advanced button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnAlignmentSelectButtonClick:
 
@@ -2191,6 +2416,9 @@ Event action for when an alignment button is clicked
 
 
 
+
+----
+
 .. _CScreenCreateCharOnBiographyButtonClick:
 
 CScreenCreateChar\:\:OnBiographyButtonClick
@@ -2206,6 +2434,9 @@ Event action for when an biography button is clicked
 
 
 
+
+----
+
 .. _CScreenCreateCharOnCancelButtonClick:
 
 CScreenCreateChar\:\:OnCancelButtonClick
@@ -2220,6 +2451,9 @@ Event action for when cancel button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnCharacterExportItemSelect:
 
@@ -2239,6 +2473,9 @@ Event action for when export of character item button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnCharacterImportItemSelect:
 
@@ -2260,6 +2497,9 @@ Event action for when import of character item button is clicked
 
 
 
+
+----
+
 .. _CScreenCreateCharOnCheatyMcCheaterson:
 
 CScreenCreateChar\:\:OnCheatyMcCheaterson
@@ -2276,6 +2516,9 @@ Event action for when cheating on ability score rolls
 If the CLUA Console is enabled then cheat keys are also enabled. Pressing ``CTRL + 8`` during character creation this will set all attributes to 18 (STR 18/00)
 
 
+
+
+----
 
 .. _CScreenCreateCharOnClassSelectButtonClick:
 
@@ -2296,6 +2539,9 @@ Event action for when character class button is clicked
 
 
 
+
+----
+
 .. _CScreenCreateCharOnDoneButtonClick:
 
 CScreenCreateChar\:\:OnDoneButtonClick
@@ -2310,6 +2556,9 @@ Event action for when finishing character creation and done button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnDoneButtonClickCallback:
 
@@ -2330,6 +2579,9 @@ Callback for when finishing character creation and done button is clicked
 
 
 
+
+----
+
 .. _CScreenCreateCharOnGenderSelectButtonClick:
 
 CScreenCreateChar\:\:OnGenderSelectButtonClick
@@ -2348,6 +2600,9 @@ Event action for when a gender selection button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnHLAButtonClick:
 
@@ -2371,6 +2626,9 @@ Event action for when a specific high level ability (HLA) button is clicked
 
 
 
+
+----
+
 .. _CScreenCreateCharOnHighLevelAbilitiesButtonClick:
 
 CScreenCreateChar\:\:OnHighLevelAbilitiesButtonClick
@@ -2387,6 +2645,9 @@ Event action for when high level abilities (HLA) button is clicked
 
 
 
+
+----
+
 .. _CScreenCreateCharOnImportCharacterButtonClick:
 
 CScreenCreateChar\:\:OnImportCharacterButtonClick
@@ -2401,6 +2662,9 @@ Event action for when import of a previously generated character button is click
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnImportCharacterFileButtonClick:
 
@@ -2417,6 +2681,9 @@ Event action for when selecting a character filename for importing
 
 
 
+
+----
+
 .. _CScreenCreateCharOnImportSaveButtonClick:
 
 CScreenCreateChar\:\:OnImportSaveButtonClick
@@ -2431,6 +2698,9 @@ Event action for when import save button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnKeyDown:
 
@@ -2451,6 +2721,9 @@ Key press event for when a key has been pressed (down)
 
 
 
+
+----
+
 .. _CScreenCreateCharOnKitSelectButtonClick:
 
 CScreenCreateChar\:\:OnKitSelectButtonClick
@@ -2470,6 +2743,9 @@ Event action for when class kit button is clicked
 
 
 
+
+----
+
 .. _CScreenCreateCharOnLButtonDblClk:
 
 CScreenCreateChar\:\:OnLButtonDblClk
@@ -2488,6 +2764,9 @@ Mouse button event for when the left mouse has been double clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnLButtonDown:
 
@@ -2509,6 +2788,9 @@ Mouse button event for when the left mouse has been clicked (down)
 
 
 
+
+----
+
 .. _CScreenCreateCharOnLButtonUp:
 
 CScreenCreateChar\:\:OnLButtonUp
@@ -2528,6 +2810,9 @@ Mouse button event for when the left mouse has been released (up)
 
 
 
+
+----
+
 .. _CScreenCreateCharOnLearnMageSpellButtonClick:
 
 CScreenCreateChar\:\:OnLearnMageSpellButtonClick
@@ -2546,6 +2831,9 @@ Event action for when learn mage spell button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnLevelUp:
 
@@ -2570,6 +2858,9 @@ Event action for when level up button is clicked
 Level up is available when importing a previously generated character, or previously saved character from Baldur's Gate (or Baldur's Gate: Shadows of Amn - if starting play at Throne of Bhaal campaign) that is at a lower level than the recommended minimum level required for starting the game campaign selected.
 
 
+
+----
+
 .. _CScreenCreateCharOnMainBackButtonClick:
 
 CScreenCreateChar\:\:OnMainBackButtonClick
@@ -2585,6 +2876,9 @@ Event action for when the main screen's back button is clicked
 
 
 
+
+----
+
 .. _CScreenCreateCharOnMainCancelButtonClick:
 
 CScreenCreateChar\:\:OnMainCancelButtonClick
@@ -2599,6 +2893,9 @@ Event action for when the main screen's cancel button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnMemorizeMageSpellButtonClick:
 
@@ -2621,6 +2918,9 @@ Event action for when a mage spell to memorize button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnMemorizePriestSpellButtonClick:
 
@@ -2645,6 +2945,9 @@ Event action for when a priest spell to memorize button is clicked
 
 
 
+
+----
+
 .. _CScreenCreateCharOnMenuButtonClick:
 
 CScreenCreateChar\:\:OnMenuButtonClick
@@ -2659,6 +2962,9 @@ Event action for when a menu button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnMouseMove:
 
@@ -2679,6 +2985,9 @@ Event action for when the mouse moves
 
 
 
+
+----
+
 .. _CScreenCreateCharOnPlayButtonClick:
 
 CScreenCreateChar\:\:OnPlayButtonClick
@@ -2695,6 +3004,9 @@ Event action for when play button is clicked
 For playing sound set voices for character generation
 
 
+
+----
+
 .. _CScreenCreateCharOnPrerollCancelButtonClick:
 
 CScreenCreateChar\:\:OnPrerollCancelButtonClick
@@ -2710,6 +3022,9 @@ Event action for when cancel preroll button is clicked
 
 For pregenerated characters selection dialog
 
+
+
+----
 
 .. _CScreenCreateCharOnPrerollCharacterPick:
 
@@ -2730,6 +3045,9 @@ Event action for when clicking on a pregenerated character
 
 For pregenerated characters selection dialog
 
+
+
+----
 
 .. _CScreenCreateCharOnProficiencyPlusMinusButtonClick:
 
@@ -2754,6 +3072,9 @@ Event action for when proficiency plus (+) or minus (-) buttons are clicked
 For weapon proficiencies dialog
 
 
+
+----
+
 .. _CScreenCreateCharOnRaceSelectButtonClick:
 
 CScreenCreateChar\:\:OnRaceSelectButtonClick
@@ -2773,6 +3094,9 @@ Event action for when a race button is clicked
 
 
 
+
+
+----
 
 .. _CScreenCreateCharOnRacialEnemySelectButtonClick:
 
@@ -2794,6 +3118,9 @@ Event action for when a racial enemy button is clicked
 For Ranger based classes or other kits that support racial enemies
 
 
+
+----
+
 .. _CScreenCreateCharOnRButtonDown:
 
 CScreenCreateChar\:\:OnRButtonDown
@@ -2813,6 +3140,9 @@ Mouse button event for when the right mouse has been clicked (down)
 
 
 
+
+----
+
 .. _CScreenCreateCharOnRButtonUp:
 
 CScreenCreateChar\:\:OnRButtonUp
@@ -2831,6 +3161,9 @@ Mouse button event for when the right mouse has been released (up)
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnResetSkills:
 
@@ -2852,6 +3185,9 @@ Event action for when a reset skills button is clicked
 Resets skill points previously assigned 
 
 
+
+----
+
 .. _CScreenCreateCharOnSoundItemSelect:
 
 CScreenCreateChar\:\:OnSoundItemSelect
@@ -2870,6 +3206,9 @@ Event action for when a sound set button is selected
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharOnThiefSkillPlusMinusButtonClick:
 
@@ -2893,6 +3232,9 @@ Event action for when thieving skills plus (+) or minus (-) buttons are clicked
 
 Thief, bard and lore skills
 
+
+
+----
 
 .. _CScreenCreateCharRecallMemoryAbilities:
 
@@ -2929,6 +3271,9 @@ Recall previously stored ability scores. Stores ability scores in the addresses 
 
 
 
+
+----
+
 .. _CScreenCreateCharRemoveAbilities:
 
 CScreenCreateChar\:\:RemoveAbilities
@@ -2953,6 +3298,9 @@ Remove abilities from character
 
 
 
+
+----
+
 .. _CScreenCreateCharRemoveItems:
 
 CScreenCreateChar\:\:RemoveItems
@@ -2972,6 +3320,9 @@ Remove items from character
 
 
 
+
+----
+
 .. _CScreenCreateCharRemoveSelectedAbility:
 
 CScreenCreateChar\:\:RemoveSelectedAbility
@@ -2990,6 +3341,9 @@ Remove specific selected ability from character
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharResetAbilities:
 
@@ -3013,6 +3367,9 @@ Reset character abilities
 
 
 
+
+----
+
 .. _CScreenCreateCharResetAbilitiesPanel:
 
 CScreenCreateChar\:\:ResetAbilitiesPanel
@@ -3031,6 +3388,9 @@ Reset character ability scores panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharResetAbility:
 
@@ -3068,6 +3428,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CScreenCreateCharResetAlignmentPanel:
 
 CScreenCreateChar\:\:ResetAlignmentPanel
@@ -3088,6 +3451,9 @@ Reset alignment selection panel
 
 
 
+
+----
+
 .. _CScreenCreateCharResetBiographyPanel:
 
 CScreenCreateChar\:\:ResetBiographyPanel
@@ -3106,6 +3472,9 @@ Reset biography panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharResetChooseMagePanel:
 
@@ -3126,6 +3495,9 @@ Reset mage specialist selection panel
 
 
 
+
+----
+
 .. _CScreenCreateCharResetClassPanel:
 
 CScreenCreateChar\:\:ResetClassPanel
@@ -3144,6 +3516,9 @@ Reset class selection panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharResetCustomSoundsPanel:
 
@@ -3164,6 +3539,9 @@ Reset custom sound set selection panel
 
 
 
+
+----
+
 .. _CScreenCreateCharResetDualClassChooseMagePanel:
 
 CScreenCreateChar\:\:ResetDualClassChooseMagePanel
@@ -3183,6 +3561,9 @@ Reset dual classing with mage panel
 
 
 
+
+----
+
 .. _CScreenCreateCharResetDualClassProficienciesPanel:
 
 CScreenCreateChar\:\:ResetDualClassProficienciesPanel
@@ -3201,6 +3582,9 @@ Reset dual class proficiencies panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharResetExportPanel:
 
@@ -3222,6 +3606,9 @@ Reset export character panel
 
 
 
+
+----
+
 .. _CScreenCreateCharResetGenderPanel:
 
 CScreenCreateChar\:\:ResetGenderPanel
@@ -3240,6 +3627,9 @@ Reset gender selection panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharResetHatedRacePanel:
 
@@ -3260,6 +3650,9 @@ Reset racial enemy panel
 
 
 
+
+----
+
 .. _CScreenCreateCharResetImportPanel:
 
 CScreenCreateChar\:\:ResetImportPanel
@@ -3278,6 +3671,9 @@ Reset import character panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharResetLevelUpPanel:
 
@@ -3298,6 +3694,9 @@ Reset level up panel
 
 
 
+
+----
+
 .. _CScreenCreateCharResetMemorizeMagePanel:
 
 CScreenCreateChar\:\:ResetMemorizeMagePanel
@@ -3317,6 +3716,9 @@ Reset memorized mage spells panel
 
 
 
+
+----
+
 .. _CScreenCreateCharResetMemorizePriestPanel:
 
 CScreenCreateChar\:\:ResetMemorizePriestPanel
@@ -3335,6 +3737,9 @@ Reset memorized priest spells panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharResetNamePanel:
 
@@ -3356,6 +3761,9 @@ Reset character name panel
 
 
 
+
+----
+
 .. _CScreenCreateCharResetPrerollPanel:
 
 CScreenCreateChar\:\:ResetPrerollPanel
@@ -3370,6 +3778,9 @@ Reset preroll panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharResetProficienciesPanel:
 
@@ -3391,6 +3802,9 @@ Reset proficiencies panel
 Reset weapon, thief and bard skill proficiencies
 
 
+
+----
+
 .. _CScreenCreateCharResetRacePanel:
 
 CScreenCreateChar\:\:ResetRacePanel
@@ -3409,6 +3823,9 @@ Reset race selection panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharResetSpellTables:
 
@@ -3430,6 +3847,9 @@ Reset spell tables
 Spells avaialble for each spell level for character at a experience level
 
 
+
+----
+
 .. _CScreenCreateCharSetAbilityHelpInfo:
 
 CScreenCreateChar\:\:SetAbilityHelpInfo
@@ -3450,6 +3870,9 @@ Set ability score description and help information
 Sets text in the panel that displays the specifics of each ability score, recommended scores and minimum required scores for specific classes
 
 
+
+----
+
 .. _CScreenCreateCharSetSystemKeyCapsLock:
 
 CScreenCreateChar\:\:SetSystemKeyCapsLock
@@ -3468,6 +3891,9 @@ Set caps lock key on or off
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharSetSystemKeyCtrl:
 
@@ -3489,6 +3915,9 @@ Set control key on or off
 
 
 
+
+----
+
 .. _CScreenCreateCharSetSystemKeyShift:
 
 CScreenCreateChar\:\:SetSystemKeyShift
@@ -3507,6 +3936,9 @@ Set shift key on or off
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharShowNextSpellScreen:
 
@@ -3527,6 +3959,9 @@ Show next spell screen
 
 
 
+
+----
+
 .. _CScreenCreateCharShowPortraitPanel:
 
 CScreenCreateChar\:\:ShowPortraitPanel
@@ -3541,6 +3976,9 @@ Show portrait panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharStartCreateChar:
 
@@ -3565,6 +4003,9 @@ Start the charaction creation process
 See also :ref:`CScreenCreateChar\:\:StopCreateChar<CScreenCreateCharStopCreateChar>` and :ref:`CScreenCreateChar\:\:CancelCreateChar<CScreenCreateCharCancelCreateChar>`
 
 
+
+----
+
 .. _CScreenCreateCharStartEditing:
 
 CScreenCreateChar\:\:StartEditing
@@ -3587,6 +4028,9 @@ CScreenCreateChar\:\:StartEditing
 
 
 
+
+----
+
 .. _CScreenCreateCharStopCreateChar:
 
 CScreenCreateChar\:\:StopCreateChar
@@ -3602,6 +4046,9 @@ Stop the charaction creation process
 
 See also :ref:`CScreenCreateChar\:\:StartCreateChar<CScreenCreateCharStartCreateChar>` and :ref:`CScreenCreateChar\:\:CancelCreateChar<CScreenCreateCharCancelCreateChar>`
 
+
+
+----
 
 .. _CScreenCreateCharTimerAsynchronousUpdate:
 
@@ -3619,6 +4066,9 @@ Update timer asynchronously
 
 
 
+
+----
+
 .. _CScreenCreateCharTimerSynchronousUpdate:
 
 CScreenCreateChar\:\:TimerSynchronousUpdate
@@ -3633,6 +4083,9 @@ Update timer synchronously
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharUpdateAbilitiesPanel:
 
@@ -3653,6 +4106,9 @@ Update ability scores panel
 
 
 
+
+----
+
 .. _CScreenCreateCharUpdateAlignmentPanel:
 
 CScreenCreateChar\:\:UpdateAlignmentPanel
@@ -3671,6 +4127,9 @@ Update alignement selection panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharUpdateCharacterList:
 
@@ -3691,6 +4150,9 @@ Update character list selection panel
 
 
 
+
+----
+
 .. _CScreenCreateCharUpdateChooseDualClassPanel:
 
 CScreenCreateChar\:\:UpdateChooseDualClassPanel
@@ -3710,6 +4172,9 @@ Update dual class selection panel
 
 
 
+
+----
+
 .. _CScreenCreateCharUpdateChooseMagePanel:
 
 CScreenCreateChar\:\:UpdateChooseMagePanel
@@ -3728,6 +4193,9 @@ Update mage specialist selection panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharUpdateClass:
 
@@ -3752,6 +4220,9 @@ Returns ``char``\*
 
 
 
+
+
+----
 
 .. _CScreenCreateCharUpdateClassEntry:
 
@@ -3789,6 +4260,9 @@ Returns ``char``\*
 
 
 
+
+----
+
 .. _CScreenCreateCharUpdateClassPanel:
 
 CScreenCreateChar\:\:UpdateClassPanel
@@ -3807,6 +4281,9 @@ Update class selection panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharUpdateHatedRacePanel:
 
@@ -3827,6 +4304,9 @@ Update racial enemy selection panel
 
 
 
+
+----
+
 .. _CScreenCreateCharUpdateHighLevelAbilitiesPanel:
 
 CScreenCreateChar\:\:UpdateHighLevelAbilitiesPanel
@@ -3845,6 +4325,9 @@ Update high level abilities (HLA) panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharUpdateKitPanel:
 
@@ -3865,6 +4348,9 @@ Update class kit panel
 
 
 
+
+----
+
 .. _CScreenCreateCharUpdateMainPanel:
 
 CScreenCreateChar\:\:UpdateMainPanel
@@ -3883,6 +4369,9 @@ Update main panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharUpdateMemorizeMagePanel:
 
@@ -3904,6 +4393,9 @@ Update memorized mage spells panel
 
 
 
+
+----
+
 .. _CScreenCreateCharUpdateMemorizePriestPanel:
 
 CScreenCreateChar\:\:UpdateMemorizePriestPanel
@@ -3922,6 +4414,9 @@ Update memorized priest spells panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharUpdateNamePanel:
 
@@ -3942,6 +4437,9 @@ Update character name panel
 
 
 
+
+----
+
 .. _CScreenCreateCharUpdateProficienciesPanel:
 
 CScreenCreateChar\:\:UpdateProficienciesPanel
@@ -3960,6 +4458,9 @@ Update proficienies panel
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenCreateCharUpdateRacePanel:
 

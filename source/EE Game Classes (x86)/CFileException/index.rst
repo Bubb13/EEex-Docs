@@ -18,6 +18,8 @@ The structure used for this class is :ref:`CFileException<CFileException>`
 +---------------------------------------------------------------------------------------------------------------------------------------+
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -53,6 +55,8 @@ CFileException\:\:ThrowOsError
 
 
 
+
+----
 
 .. _CFileExceptionOsErrorToException:
 

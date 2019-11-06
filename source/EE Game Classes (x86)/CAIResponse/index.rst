@@ -28,6 +28,8 @@ The structure used for this class is :ref:`CAIResponse<CAIResponse>`
 +-------------------------------------------------------------------------------------------------------------------------------------+
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -56,6 +58,8 @@ Constructs a ``CAIResponse`` object
 Constructs a ``CAIResponse`` object
 
 
+----
+
 .. _CAIResponse~CAIResponse:
 
 CAIResponse\:\:~CAIResponse
@@ -74,6 +78,8 @@ Destroys the ``CAIResponse`` object
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -82,8 +88,6 @@ Methods
 | **Name**                                                 | **Description**                                                                         |
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CAIResponse\:\:Add<CAIResponseAdd>`                |                                                                                         |
-+----------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CAIResponse\:\:Add<CAIResponseAdd2>`               |                                                                                         |
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CAIResponse\:\:InListEnd<CAIResponseInListEnd>`    |                                                                                         |
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
@@ -112,7 +116,7 @@ CAIResponse\:\:Add
 
 
 
-.. _CAIResponseAdd2:
+----
 
 CAIResponse\:\:Add
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -130,6 +134,8 @@ CAIResponse\:\:Add
 **Remarks**
 
 
+
+----
 
 .. _CAIResponseInListEnd:
 
@@ -154,6 +160,8 @@ CAIResponse\:\:InListEnd
 
 
 
+----
+
 .. _CAIResponseRead:
 
 CAIResponse\:\:Read
@@ -175,6 +183,8 @@ CAIResponse\:\:Read
 **Remarks**
 
 
+
+----
 
 .. _CAIResponseSet:
 

@@ -124,6 +124,8 @@ The structure used for this class is :ref:`CBaldurChitin<CBaldurChitin>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -161,6 +163,8 @@ By convention, ``argv[0]`` is the command with which the program is invoked, ``a
 
 Constructs a ``CBaldurChitin`` object
 
+----
+
 .. _CBaldurChitin~CBaldurChitin:
 
 CBaldurChitin\:\:~CBaldurChitin
@@ -178,6 +182,8 @@ Destroys the ``CBaldurChitin`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -312,6 +318,8 @@ Add a movie to the already played list
 
 
 
+----
+
 .. _CBaldurChitinAllocResObject:
 
 CBaldurChitin\:\:AllocResObject
@@ -334,6 +342,8 @@ Returns a :ref:`CRes<CRes>` object
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinAsynchronousUpdate:
 
@@ -362,6 +372,8 @@ CBaldurChitin\:\:AsynchronousUpdate
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinBroadcastMultiplayerProgressBarInfo:
 
@@ -395,6 +407,8 @@ CBaldurChitin\:\:CheckGUISong
 
 
 
+----
+
 .. _CBaldurChitinConfirmQuit:
 
 CBaldurChitin\:\:ConfirmQuit
@@ -414,6 +428,8 @@ Returns an ``int``
 
 
 
+----
+
 .. _CBaldurChitinCutsceneModeActive:
 
 CBaldurChitin\:\:CutsceneModeActive
@@ -432,6 +448,8 @@ Returns a ``unsigned char``
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinFontRectOutline:
 
@@ -453,6 +471,8 @@ Returns an ``int``
 
 
 
+----
+
 .. _CBaldurChitinGetEAXActive:
 
 CBaldurChitin\:\:GetEAXActive
@@ -471,6 +491,8 @@ Returns an ``int`` representing true ``1`` or false ``0``
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinGetGameSpyCode:
 
@@ -491,6 +513,8 @@ Gets the game spy code
 
 
 
+----
+
 .. _CBaldurChitinGetGameSpyGameName:
 
 CBaldurChitin\:\:GetGameSpyGameName
@@ -509,6 +533,8 @@ Gets the game spy game name
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinGetIconRes:
 
@@ -529,6 +555,8 @@ Returns a :ref:`CString<CString>`\&
 
 
 
+----
+
 .. _CBaldurChitinGetIDSBadDeskTopBitDepth:
 
 CBaldurChitin\:\:GetIDSBadDeskTopBitDepth
@@ -548,6 +576,8 @@ Returns an ``unsigned long``
 
 
 
+----
+
 .. _CBaldurChitinGetIDSChoosePixelFormat:
 
 CBaldurChitin\:\:GetIDSChoosePixelFormat
@@ -566,6 +596,8 @@ Returns an ``unsigned long``
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinGetIDSExclusiveMode:
 
@@ -587,6 +619,8 @@ Returns an ``unsigned long``
 
 
 
+----
+
 .. _CBaldurChitinGetIDSInvalidVideoMode:
 
 CBaldurChitin\:\:GetIDSInvalidVideoMode
@@ -605,6 +639,8 @@ Returns an ``unsigned long``
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinGetIDSOpenGLDll:
 
@@ -625,6 +661,8 @@ Returns an ``unsigned long``
 
 
 
+----
+
 .. _CBaldurChitinGetIDSSetGameBitDepth:
 
 CBaldurChitin\:\:GetIDSSetGameBitDepth
@@ -643,6 +681,8 @@ Returns an ``unsigned long``
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinGetIDSSetGameResolution:
 
@@ -663,6 +703,8 @@ Returns an ``unsigned long``
 
 
 
+----
+
 .. _CBaldurChitinGetIDSSetPixelFormat:
 
 CBaldurChitin\:\:GetIDSSetPixelFormat
@@ -682,6 +724,8 @@ Returns an ``unsigned long``
 
 
 
+----
+
 .. _CBaldurChitinGetIDSWindowsFonts:
 
 CBaldurChitin\:\:GetIDSWindowsFonts
@@ -700,6 +744,8 @@ Returns an ``unsigned long``
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinGetKeyFileName:
 
@@ -721,6 +767,8 @@ Returns ``const char``\*, a pointer to a string containing key file
 
 
 
+----
+
 .. _CBaldurChitinGetMovieVolume:
 
 CBaldurChitin\:\:GetMovieVolume
@@ -739,6 +787,8 @@ Returns ``long`` representing movie volume
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinGetMultiplayerDirectPlayPort:
 
@@ -759,6 +809,8 @@ Returns an ``unsigned short`` representing the port
 
 
 
+----
+
 .. _CBaldurChitinGetMultiplayerGameSpyPort:
 
 CBaldurChitin\:\:GetMultiplayerGameSpyPort
@@ -778,6 +830,8 @@ Returns an ``unsigned short`` representing the port
 
 
 
+----
+
 .. _CBaldurChitinGetNumberSoundChannels:
 
 CBaldurChitin\:\:GetNumberSoundChannels
@@ -796,6 +850,8 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinGetPanicCDStrings:
 
@@ -821,6 +877,8 @@ Legacy function for when game was distributed on CD/DVD
 
 
 
+----
+
 .. _CBaldurChitinGetPlayedMovies:
 
 CBaldurChitin\:\:GetPlayedMovies
@@ -839,6 +897,8 @@ Returns a :ref:`CStringList<CStringList>`\*
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinGetScreenShotFilePrefix:
 
@@ -859,6 +919,8 @@ CBaldurChitin\:\:GetScreenShotFilePrefix
 
 
 
+
+----
 
 .. _CBaldurChitinGetSoundEnvironment:
 
@@ -894,6 +956,8 @@ Returns ``unsigned char``
 
 
 
+----
+
 .. _CBaldurChitinInit:
 
 CBaldurChitin\:\:Init
@@ -908,6 +972,8 @@ Initialize CBaldurChitin class
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinIs3DSound:
 
@@ -931,6 +997,8 @@ Returns an ``int`` representing true ``1`` or false ``0``
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinLoadDialogFiles:
 
@@ -962,6 +1030,8 @@ Load options
 
 
 
+----
+
 .. _CBaldurChitinLog:
 
 CBaldurChitin\:\:Log
@@ -983,6 +1053,8 @@ Output text to a log, similar to printf and uses variable no of arguments after 
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinMessageCallback:
 
@@ -1011,6 +1083,8 @@ Returns ``int``
 
 
 
+----
+
 .. _CBaldurChitinOnMixerInitialize:
 
 CBaldurChitin\:\:OnMixerInitialize
@@ -1025,6 +1099,8 @@ CBaldurChitin\:\:OnMixerInitialize
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinOnMultiplayerPlayerJoin:
 
@@ -1048,6 +1124,8 @@ Event action when a player joins a multiplayer game session
 
 
 
+----
+
 .. _CBaldurChitinOnMultiplayerPlayerLeave:
 
 CBaldurChitin\:\:OnMultiplayerPlayerLeave
@@ -1070,6 +1148,8 @@ Event action when a player leaves a multiplayer game session
 
 
 
+----
+
 .. _CBaldurChitinOnMultiplayerPlayerVisible:
 
 CBaldurChitin\:\:OnMultiplayerPlayerVisible
@@ -1089,6 +1169,8 @@ Event action when a player in a multiplayer game session becomes visible to othe
 
 
 
+----
+
 .. _CBaldurChitinOnMultiplayerSessionClose:
 
 CBaldurChitin\:\:OnMultiplayerSessionClose
@@ -1103,6 +1185,8 @@ Event action when a multiplayer game session closes
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinOnMultiplayerSessionOpen:
 
@@ -1128,6 +1212,8 @@ Event action when a multiplayer game session opens
 
 
 
+----
+
 .. _CBaldurChitinOnMultiplayerSessionToClose:
 
 CBaldurChitin\:\:OnMultiplayerSessionToClose
@@ -1144,6 +1230,8 @@ Event action when a multiplayer game session is about to close
 
 
 
+----
+
 .. _CBaldurChitinPreLoadFonts:
 
 CBaldurChitin\:\:PreLoadFonts
@@ -1159,6 +1247,8 @@ Preload fonts for game
 
 
 
+----
+
 .. _CBaldurChitinSaveOptions:
 
 CBaldurChitin\:\:SaveOptions
@@ -1173,6 +1263,8 @@ Save options
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinSetProgressBar:
 
@@ -1214,6 +1306,8 @@ Set progress bar on screen
 
 
 
+----
+
 .. _CBaldurChitinSetProgressBarActivateEngine:
 
 CBaldurChitin\:\:SetProgressBarActivateEngine
@@ -1233,6 +1327,8 @@ CBaldurChitin\:\:SetProgressBarActivateEngine
 
 
 
+----
+
 .. _CBaldurChitinSetSoundVolumes:
 
 CBaldurChitin\:\:SetSoundVolumes
@@ -1247,6 +1343,8 @@ CBaldurChitin\:\:SetSoundVolumes
 **Remarks**
 
 
+
+----
 
 .. _CBaldurChitinSetupPanels:
 
@@ -1263,6 +1361,8 @@ CBaldurChitin\:\:SetupPanels
 
 
 
+
+----
 
 .. _CBaldurChitinShutDown:
 
@@ -1289,6 +1389,8 @@ CBaldurChitin\:\:ShutDown
 
 
 
+----
+
 .. _CBaldurChitinSynchronousUpdate:
 
 CBaldurChitin\:\:SynchronousUpdate
@@ -1304,6 +1406,8 @@ CBaldurChitin\:\:SynchronousUpdate
 
 
 
+
+----
 
 .. _CBaldurChitinUnloadFonts:
 

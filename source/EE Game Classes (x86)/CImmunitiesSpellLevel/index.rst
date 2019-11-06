@@ -23,6 +23,8 @@ The structure used for this class is :ref:`CImmunitiesSpellLevel<CImmunitiesSpel
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -54,6 +56,8 @@ CImmunitiesSpellLevel\:\:ClearAll
 
 
 
+----
+
 .. _CImmunitiesSpellLevelIsEmpty:
 
 CImmunitiesSpellLevel\:\:IsEmpty
@@ -72,6 +76,8 @@ Returns ``int``
 **Remarks**
 
 
+
+----
 
 .. _CImmunitiesSpellLevelOnList:
 
@@ -95,6 +101,8 @@ Returns ``int``
 **Remarks**
 
 
+
+----
 
 ---------------
 Operators

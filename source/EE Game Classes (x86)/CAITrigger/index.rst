@@ -29,6 +29,8 @@ The structure used for this class is :ref:`CAITrigger<CAITrigger>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -61,6 +63,8 @@ Constructs a ``CAITrigger`` object
 Constructs a ``CAITrigger`` object
 
 
+----
+
 CAITrigger\:\:CAITrigger
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -84,6 +88,8 @@ Constructs a ``CAITrigger`` object
 Constructs a ``CAITrigger`` object
 
 
+----
+
 CAITrigger\:\:CAITrigger
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -105,6 +111,8 @@ Constructs a ``CAITrigger`` object
 Constructs a ``CAITrigger`` object
 
 
+----
+
 .. _CAITrigger~CAITrigger:
 
 CAITrigger\:\:~CAITrigger
@@ -122,6 +130,8 @@ Destroys the ``CAITrigger`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -159,6 +169,8 @@ CAITrigger\:\:OfType
 
 
 
+----
+
 .. _CAITriggerRead:
 
 CAITrigger\:\:Read
@@ -177,6 +189,8 @@ CAITrigger\:\:Read
 **Remarks**
 
 
+
+----
 
 ---------------
 Operators

@@ -68,6 +68,8 @@ The structure used for this class is :ref:`CAIGroup<CAIGroup>`
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -150,6 +152,8 @@ CAIGroup\:\:Add
 **Remarks**
 
 
+----
+
 .. _CAIGroupAdd2:
 
 CAIGroup\:\:Add
@@ -167,6 +171,8 @@ CAIGroup\:\:Add
 
 **Remarks**
 
+
+----
 
 .. _CAIGroupAddEffect:
 
@@ -186,6 +192,8 @@ CAIGroup\:\:AddEffect
 **Remarks**
 
 
+----
+
 .. _CAIGroupAddToSearch:
 
 CAIGroup\:\:AddToSearch
@@ -203,6 +211,8 @@ CAIGroup\:\:AddToSearch
 
 **Remarks**
 
+
+----
 
 .. _CAIGroupAddTrigger:
 
@@ -222,6 +232,8 @@ CAIGroup\:\:AddTrigger
 **Remarks**
 
 
+----
+
 .. _CAIGroupClearActions:
 
 CAIGroup\:\:ClearActions
@@ -235,6 +247,8 @@ CAIGroup\:\:ClearActions
 
 **Remarks**
 
+
+----
 
 .. _CAIGroupFollowLeader:
 
@@ -257,6 +271,8 @@ CAIGroup\:\:FollowLeader
 **Remarks**
 
 
+
+----
 
 .. _CAIGroupGetFacings:
 
@@ -284,6 +300,8 @@ CAIGroup\:\:GetFacings
 
 
 
+----
+
 .. _CAIGroupGetGroupLeader:
 
 CAIGroup\:\:GetGroupLeader
@@ -303,6 +321,8 @@ CAIGroup\:\:GetGroupLeader
 
 
 
+----
+
 .. _CAIGroupGetGroupList:
 
 CAIGroup\:\:GetGroupList
@@ -321,6 +341,8 @@ CAIGroup\:\:GetGroupList
 **Remarks**
 
 
+
+----
 
 .. _CAIGroupGetOffsets:
 
@@ -350,6 +372,8 @@ CAIGroup\:\:GetOffsets
 
 
 
+----
+
 .. _CAIGroupGroupAction:
 
 CAIGroup\:\:GroupAction
@@ -378,6 +402,8 @@ CAIGroup\:\:GroupAction
 
 
 
+----
+
 .. _CAIGroupGroupCancelMove:
 
 CAIGroup\:\:GroupCancelMove
@@ -392,6 +418,8 @@ CAIGroup\:\:GroupCancelMove
 **Remarks**
 
 
+
+----
 
 .. _CAIGroupGroupDrawMove:
 
@@ -416,6 +444,8 @@ CAIGroup\:\:GroupDrawMove
 **Remarks**
 
 
+
+----
 
 .. _CAIGroupGroupProtectPoint:
 
@@ -443,6 +473,8 @@ CAIGroup\:\:GroupProtectPoint
 
 
 
+----
+
 .. _CAIGroupGroupSetTarget:
 
 CAIGroup\:\:GroupSetTarget
@@ -461,6 +493,8 @@ CAIGroup\:\:GroupSetTarget
 **Remarks**
 
 
+
+----
 
 .. _CAIGroupGroupSetTarget2:
 
@@ -487,6 +521,8 @@ CAIGroup\:\:GroupSetTarget
 **Remarks**
 
 
+
+----
 
 .. _CAIGroupHandleFollowPath:
 
@@ -516,6 +552,8 @@ CAIGroup\:\:HandleFollowPath
 
 
 
+----
+
 .. _CAIGroupInList:
 
 CAIGroup\:\:InList
@@ -539,6 +577,8 @@ CAIGroup\:\:InList
 
 
 
+----
+
 .. _CAIGroupIsPartyLeader:
 
 CAIGroup\:\:IsPartyLeader
@@ -557,6 +597,8 @@ CAIGroup\:\:IsPartyLeader
 **Remarks**
 
 
+
+----
 
 .. _CAIGroupRemove:
 
@@ -577,6 +619,8 @@ CAIGroup\:\:Remove
 
 
 
+----
+
 .. _CAIGroupRemove2:
 
 CAIGroup\:\:Remove
@@ -596,6 +640,8 @@ CAIGroup\:\:Remove
 
 
 
+----
+
 .. _CAIGroupRemoveFromSearch:
 
 CAIGroup\:\:RemoveFromSearch
@@ -614,6 +660,8 @@ CAIGroup\:\:RemoveFromSearch
 **Remarks**
 
 
+
+----
 
 .. _CAIGroupRotateOffsets:
 
@@ -639,6 +687,8 @@ CAIGroup\:\:RotateOffsets
 
 
 
+----
+
 .. _CAIGroupSetGroupTriggerId:
 
 CAIGroup\:\:SetGroupTriggerId
@@ -657,6 +707,8 @@ CAIGroup\:\:SetGroupTriggerId
 **Remarks**
 
 
+
+----
 
 .. _CAIGroupSort:
 

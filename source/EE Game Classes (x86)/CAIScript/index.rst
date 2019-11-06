@@ -31,6 +31,8 @@ The structure used for this class is :ref:`CAIScript<CAIScript>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -39,8 +41,6 @@ Constructors
 | **Name**                                                 | **Description**                                      |
 +----------------------------------------------------------+------------------------------------------------------+
 | :ref:`CAIScript\:\:CAIScript<CAIScriptCAIScript>`        | Constructs a ``CAIScript`` object                    |
-+----------------------------------------------------------+------------------------------------------------------+
-| :ref:`CAIScript\:\:CAIScript<CAIScriptCAIScript2>`       | Constructs a ``CAIScript`` object                    |
 +----------------------------------------------------------+------------------------------------------------------+
 | :ref:`CAIScript\:\:~CAIScript<CAIScript~CAIScript>`      | Destroys a ``CAIScript`` object                      |
 +----------------------------------------------------------+------------------------------------------------------+
@@ -61,7 +61,7 @@ Constructs a ``CAIScript`` object
 Constructs a ``CAIScript`` object
 
 
-.. _CAIScriptCAIScript2:
+----
 
 CAIScript\:\:CAIScript
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -82,6 +82,8 @@ Constructs a ``CAIScript`` object
 Constructs a ``CAIScript`` object
 
 
+----
+
 .. _CAIScript~CAIScript:
 
 CAIScript\:\:~CAIScript
@@ -99,6 +101,8 @@ Destroys the ``CAIScript`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -141,6 +145,8 @@ Add a condition (:ref:`CAICondition<CAICondition>`) and a response (:ref:`CAIRes
 
 
 
+----
+
 .. _CAIScriptCopy:
 
 CAIScript\:\:Copy
@@ -159,6 +165,8 @@ Copy a list of script items
 **Remarks**
 
 
+
+----
 
 .. _CAIScriptFind:
 
@@ -186,6 +194,8 @@ Returns a pointer to a :ref:`CAIResponse<CAIResponse>`
 
 
 
+----
+
 .. _CAIScriptRead:
 
 CAIScript\:\:Read
@@ -207,6 +217,8 @@ Read a script file from disk as specified by *fileName*
 **Remarks**
 
 
+
+----
 
 .. _CAIScriptWriteToDisk:
 

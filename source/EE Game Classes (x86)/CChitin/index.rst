@@ -182,6 +182,8 @@ The structure used for this class is :ref:`CChitin<CChitin>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -220,6 +222,8 @@ By convention, ``argv[0]`` is the command with which the program is invoked, ``a
 Constructs a ``CChitin`` object
 
 
+----
+
 .. _CChitin~CChitin:
 
 CChitin\:\:~CChitin
@@ -237,6 +241,8 @@ Destroys the ``CChitin`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -428,6 +434,9 @@ CChitin\:\:AddEngine
 
 
 
+
+----
+
 .. _CChitinAllocResObject:
 
 CChitin\:\:AllocResObject
@@ -451,6 +460,9 @@ Returns a :ref:`CRes<CRes>` object
 
 
 
+
+----
+
 .. _CChitinAsynchronousUpdate:
 
 CChitin\:\:AsynchronousUpdate
@@ -470,6 +482,9 @@ CChitin\:\:AsynchronousUpdate
 
 
 
+
+----
+
 .. _CChitinBroadcastMultiplayerProgressBarInfo:
 
 CChitin\:\:BroadcastMultiplayerProgressBarInfo
@@ -484,6 +499,9 @@ Broadcast to all connected sessions the progress bar information
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinConfirmQuit:
 
@@ -504,6 +522,9 @@ Returns an ``int``
 
 
 
+
+----
+
 .. _CChitinCutsceneModeActive:
 
 CChitin\:\:CutsceneModeActive
@@ -523,6 +544,9 @@ Returns an ``unsigned char``
 
 
 
+
+----
+
 .. _CChitinFontRectOutline:
 
 CChitin\:\:FontRectOutline
@@ -541,6 +565,9 @@ Returns an ``int``
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinFullScreen:
 
@@ -562,6 +589,9 @@ Returns an ``unsigned char``
 
 
 
+
+----
+
 .. _CChitinEnginesGameInit:
 
 CChitin\:\:EnginesGameInit
@@ -577,6 +607,9 @@ CChitin\:\:EnginesGameInit
 
 
 
+
+----
+
 .. _CChitinEnginesGameUninit:
 
 CChitin\:\:EnginesGameUninit
@@ -591,6 +624,9 @@ CChitin\:\:EnginesGameUninit
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinGetEAXActive:
 
@@ -610,6 +646,9 @@ Returns an ``int`` representing true ``1`` or false ``0``
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinGetGamespyResponse:
 
@@ -634,6 +673,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CChitinGetGameSpyCode:
 
 CChitin\:\:GetGameSpyCode
@@ -653,6 +695,9 @@ Gets the game spy code
 
 
 
+
+----
+
 .. _CChitinGetGameSpyGameName:
 
 CChitin\:\:GetGameSpyGameName
@@ -670,6 +715,9 @@ Gets the game spy game name
 
 **Remarks**
 
+
+
+----
 
 .. _CChitinGetIconRes:
 
@@ -691,6 +739,9 @@ Returns a :ref:`CString<CString>`\&
 
 
 
+
+----
+
 .. _CChitinGetIDSBadDeskTopBitDepth:
 
 CChitin\:\:GetIDSBadDeskTopBitDepth
@@ -709,6 +760,9 @@ Returns ``unsigned long``
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinGetIDSChoosePixelFormat:
 
@@ -729,6 +783,9 @@ Returns ``unsigned long``
 
 
 
+
+----
+
 .. _CChitinGetIDSExclusiveMode:
 
 CChitin\:\:GetIDSExclusiveMode
@@ -747,6 +804,9 @@ Returns ``unsigned long``
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinGetIDSInvalidVideoMode:
 
@@ -767,6 +827,9 @@ Returns ``unsigned long``
 
 
 
+
+----
+
 .. _CChitinGetIDSOpenGLDll:
 
 CChitin\:\:GetIDSOpenGLDll
@@ -786,6 +849,9 @@ Returns ``unsigned long``
 
 
 
+
+----
+
 .. _CChitinGetIDSSetGameBitDepth:
 
 CChitin\:\:GetIDSSetGameBitDepth
@@ -803,6 +869,9 @@ Returns ``unsigned long``
 
 **Remarks**
 
+
+
+----
 
 .. _CChitinGetIDSSetGameResolution:
 
@@ -824,6 +893,9 @@ Returns ``unsigned long``
 
 
 
+
+----
+
 .. _CChitinGetIDSSetPixelFormat:
 
 CChitin\:\:GetIDSSetPixelFormat
@@ -842,6 +914,9 @@ Returns ``unsigned long``
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinGetIDSWindowsFonts:
 
@@ -862,6 +937,9 @@ Returns ``unsigned long``
 
 
 
+
+----
+
 .. _CChitinGetKeyFileName:
 
 CChitin\:\:GetKeyFileName
@@ -880,6 +958,9 @@ Returns ``const char``\*, a pointer to a string containing key file
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinGetMovieVolume:
 
@@ -900,6 +981,9 @@ Returns ``long`` representing movie volume
 
 
 
+
+----
+
 .. _CChitinGetNetworkVersionString:
 
 CChitin\:\:GetNetworkVersionString
@@ -919,6 +1003,9 @@ Returns a :ref:`CString<CString>` containing the network version
 
 
 
+
+----
+
 .. _CChitinGetNumberSoundChannels:
 
 CChitin\:\:GetNumberSoundChannels
@@ -936,6 +1023,9 @@ Returns ``unsigned char``
 
 **Remarks**
 
+
+
+----
 
 .. _CChitinGetPanicCDStrings:
 
@@ -962,6 +1052,9 @@ Legacy function for when game was distributed on CD/DVD
 
 
 
+
+----
+
 .. _CChitinGetScreenShotFilePrefix:
 
 CChitin\:\:GetScreenShotFilePrefix
@@ -980,6 +1073,9 @@ CChitin\:\:GetScreenShotFilePrefix
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinGetTimer:
 
@@ -1004,6 +1100,9 @@ Returns an ``int`` value
 
 
 
+
+----
+
 .. _CChitinGetVersionString:
 
 CChitin\:\:GetVersionString
@@ -1022,6 +1121,9 @@ Returns a :ref:`CString<CString>` containing the game version
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinGetMultiplayerDirectPlayPort:
 
@@ -1042,6 +1144,9 @@ Returns an ``unsigned short`` representing the port
 
 
 
+
+----
+
 .. _CChitinGetMultiplayerGameSpyPort:
 
 CChitin\:\:GetMultiplayerGameSpyPort
@@ -1061,6 +1166,9 @@ Returns an ``unsigned short`` representing the port
 
 
 
+
+----
+
 .. _CChitinHasDirectX:
 
 CChitin\:\:HasDirectX
@@ -1079,6 +1187,9 @@ Returns an ``int`` representing true ``1`` or false ``0``
 **Remarks**
 
 
+
+----
+
 .. _CChitinHideVirtualKeyboard:
 
 CChitin\:\:HideVirtualKeyboard
@@ -1094,6 +1205,9 @@ Hides the virtual keyboard from the screen ui
 
 See also :ref:`CChitin\:\:ShowVirtualKeyboard<CChitinShowVirtualKeyboard>`
 
+
+
+----
 
 .. _CChitinInitInstance:
 
@@ -1114,6 +1228,9 @@ Returns an ``int`` value
 
 
 
+
+----
+
 .. _CChitinInitResources:
 
 CChitin\:\:InitResources
@@ -1128,6 +1245,9 @@ CChitin\:\:InitResources
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinInitSound:
 
@@ -1148,6 +1268,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CChitinInitVideo:
 
 CChitin\:\:InitVideo
@@ -1162,6 +1285,9 @@ CChitin\:\:InitVideo
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinInitializeServices:
 
@@ -1182,6 +1308,9 @@ Returns an ``int`` value
 
 
 
+
+----
+
 .. _CChitinInitializeVariables:
 
 CChitin\:\:InitializeVariables
@@ -1195,6 +1324,9 @@ CChitin\:\:InitializeVariables
 
 **Remarks**
 
+
+
+----
 
 .. _CChitinIs3DSound:
 
@@ -1220,6 +1352,9 @@ Returns an ``int`` representing true ``1`` or false ``0``
 
 
 
+
+----
+
 .. _CChitinIsAndroid:
 
 CChitin\:\:IsAndroid
@@ -1240,6 +1375,9 @@ Returns an ``int`` representing true ``1`` or false ``0``
 Compiled and hardcoded to return false ``0`` on other operating system builds
 
 
+
+----
+
 .. _CChitinIsHosting:
 
 CChitin\:\:IsHosting
@@ -1258,6 +1396,9 @@ Returns an ``int`` representing true ``1`` or false ``0``
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinIsIOS:
 
@@ -1279,6 +1420,9 @@ Returns an ``int`` representing true ``1`` or false ``0``
 Compiled and hardcoded to return false ``0`` on other operating system builds
 
 
+
+----
+
 .. _CChitinIsMultiplayer:
 
 CChitin\:\:IsMultiplayer
@@ -1297,6 +1441,9 @@ Returns an ``int`` representing true ``1`` or false ``0``
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinIsTouchUI:
 
@@ -1317,6 +1464,9 @@ Returns an ``int`` representing true ``1`` or false ``0``
 
 
 
+
+----
+
 .. _CChitinLoadOptions:
 
 CChitin\:\:LoadOptions
@@ -1330,6 +1480,9 @@ Load options
 
 **Remarks**
 
+
+
+----
 
 .. _CChitinOnAltEnter:
 
@@ -1346,6 +1499,9 @@ Event action for when Alt+Enter keys are pressed
 
 Legacy function for entering and exiting fullscreen mode
 
+
+
+----
 
 .. _CChitinOnDropFile:
 
@@ -1396,6 +1552,9 @@ Looks for files with the following extensions:
 * ".mpsodsave"
 
 
+
+----
+
 .. _CChitinOnLowMemory:
 
 CChitin\:\:OnLowMemory
@@ -1411,6 +1570,9 @@ CChitin\:\:OnLowMemory
 
 
 
+
+----
+
 .. _CChitinOnMixerInitialize:
 
 CChitin\:\:OnMixerInitialize
@@ -1425,6 +1587,9 @@ CChitin\:\:OnMixerInitialize
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinOnMultiplayerPlayerJoin:
 
@@ -1446,6 +1611,9 @@ Event action when a player joins a multiplayer game session
 See also :ref:`CBaldurChitin::OnMultiplayerPlayerJoin<CBaldurChitinOnMultiplayerPlayerJoin>`
 
 
+
+----
+
 .. _CChitinOnMultiplayerPlayerLeave:
 
 CChitin\:\:OnMultiplayerPlayerLeave
@@ -1465,6 +1633,9 @@ Event action when a player leaves a multiplayer game session
 
 See also :ref:`CBaldurChitin::OnMultiplayerPlayerLeave<CBaldurChitinOnMultiplayerPlayerLeave>`
 
+
+
+----
 
 .. _CChitinOnMultiplayerPlayerVisible:
 
@@ -1486,6 +1657,9 @@ Event action when a player in a multiplayer game session becomes visible to othe
 See also :ref:`CBaldurChitin::OnMultiplayerPlayerVisible<CBaldurChitinOnMultiplayerPlayerVisible>`
 
 
+
+----
+
 .. _CChitinOnMultiplayerSessionClose:
 
 CChitin\:\:OnMultiplayerSessionClose
@@ -1501,6 +1675,9 @@ Event action when a multiplayer game session closes
 
 See also :ref:`CBaldurChitin::OnMultiplayerSessionClose<CBaldurChitinOnMultiplayerSessionClose>`
 
+
+
+----
 
 .. _CChitinOnMultiplayerSessionOpen:
 
@@ -1522,6 +1699,9 @@ Event action when a multiplayer game session opens
 See also :ref:`CBaldurChitin::OnMultiplayerSessionOpen<CBaldurChitinOnMultiplayerSessionOpen>`
 
 
+
+----
+
 .. _CChitinOnMultiplayerSessionToClose:
 
 CChitin\:\:OnMultiplayerSessionToClose
@@ -1536,6 +1716,9 @@ Event action when a multiplayer game session is about to close
 **Remarks**
 
 See also :ref:`CBaldurChitin\:\:OnMultiplayerSessionToClose<CBaldurChitinOnMultiplayerSessionToClose>`
+
+
+----
 
 .. _CChitinOnResizeWindow:
 
@@ -1559,6 +1742,9 @@ Event action for when window is being resized
 
 
 
+
+----
+
 .. _CChitinMessageCallback:
 
 CChitin\:\:MessageCallback
@@ -1581,6 +1767,9 @@ Returns an ``int`` value
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinParseCommandLine:
 
@@ -1611,6 +1800,9 @@ The command line accepts the following recognised options and parameters:
 Options are preceded with a ``+``, parameter values can be enclosed in quotes ``"``
 
 
+
+----
+
 .. _CChitinPreLoadFonts:
 
 CChitin\:\:PreLoadFonts
@@ -1624,6 +1816,9 @@ Preload fonts for game
 
 **Remarks**
 
+
+
+----
 
 .. _CChitinProcessEvents:
 
@@ -1645,6 +1840,9 @@ Returns an ``int`` value
 
 
 
+
+----
+
 .. _CChitinReadIniFiles:
 
 CChitin\:\:ReadIniFiles
@@ -1659,6 +1857,9 @@ CChitin\:\:ReadIniFiles
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinRedrawScreen:
 
@@ -1675,6 +1876,9 @@ CChitin\:\:RedrawScreen
 
 
 
+
+----
+
 .. _CChitinResume:
 
 CChitin\:\:Resume
@@ -1689,6 +1893,9 @@ CChitin\:\:Resume
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinSetCDSwitchActivateEngine:
 
@@ -1709,6 +1916,9 @@ CChitin\:\:SetCDSwitchActivateEngine
 
 
 
+
+----
+
 .. _CChitinSetCDSwitchStatus:
 
 CChitin\:\:SetCDSwitchStatus
@@ -1728,6 +1938,9 @@ CChitin\:\:SetCDSwitchStatus
 
 
 
+
+----
+
 .. _CChitinSelectEngine:
 
 CChitin\:\:SelectEngine
@@ -1746,6 +1959,9 @@ CChitin\:\:SelectEngine
 **Remarks**
 
 
+
+----
+
 .. _CChitinSetupPanels:
 
 CChitin\:\:SetupPanels
@@ -1761,6 +1977,9 @@ CChitin\:\:SetupPanels
 
 
 
+
+
+----
 
 .. _CChitinSetProgressBar:
 
@@ -1781,6 +2000,9 @@ Set progress bar on screen
 
 
 
+
+----
+
 .. _CChitinSetProgressBarActivateEngine:
 
 CChitin\:\:SetProgressBarActivateEngine
@@ -1799,6 +2021,9 @@ CChitin\:\:SetProgressBarActivateEngine
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinSetRenderCount:
 
@@ -1819,6 +2044,9 @@ CChitin\:\:SetRenderCount
 
 
 
+
+----
+
 .. _CChitinSetSoundVolumes:
 
 CChitin\:\:SetSoundVolumes
@@ -1833,6 +2061,9 @@ CChitin\:\:SetSoundVolumes
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinShowVirtualKeyboard:
 
@@ -1853,6 +2084,9 @@ CChitin\:\:ShowVirtualKeyboard
 
 See also :ref:`CChitin\:\:HideVirtualKeyboard<CChitinHideVirtualKeyboard>`
 
+
+
+----
 
 .. _CChitinShutDown:
 
@@ -1877,6 +2111,9 @@ CChitin\:\:ShutDown
 **Remarks**
 
 
+
+----
+
 .. _CChitinSynchronousUpdate:
 
 CChitin\:\:SynchronousUpdate
@@ -1892,6 +2129,9 @@ CChitin\:\:SynchronousUpdate
 
 
 
+
+
+----
 
 .. _CChitinUninitSound:
 
@@ -1912,6 +2152,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CChitinUpdate:
 
 CChitin\:\:Update
@@ -1926,6 +2169,9 @@ CChitin\:\:Update
 **Remarks**
 
 
+
+
+----
 
 .. _CChitinWinMain:
 

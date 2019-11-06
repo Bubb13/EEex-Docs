@@ -41,6 +41,8 @@ The structure used for this class is :ref:`CGameSpawning<CGameSpawning>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -75,6 +77,8 @@ Constructs a ``CGameSpawning`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -138,6 +142,8 @@ Returns ``unsigned char``
 
 
 
+----
+
 .. _CGameSpawningCompressTime:
 
 CGameSpawning\:\:CompressTime
@@ -160,6 +166,8 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+----
 
 .. _CGameSpawningDoAIUpdate:
 
@@ -187,6 +195,8 @@ Returns ``unsigned char``
 
 
 
+----
+
 .. _CGameSpawningGetDifficulty:
 
 CGameSpawning\:\:GetDifficulty
@@ -210,6 +220,8 @@ Returns ``unsigned long``
 
 
 
+----
+
 .. _CGameSpawningGetFrequency:
 
 CGameSpawning\:\:GetFrequency
@@ -229,6 +241,8 @@ Returns ``unsigned long``
 
 
 
+----
+
 .. _CGameSpawningGetMaximum:
 
 CGameSpawning\:\:GetMaximum
@@ -247,6 +261,8 @@ Returns ``unsigned long``
 **Remarks**
 
 
+
+----
 
 .. _CGameSpawningGetProbability:
 
@@ -271,6 +287,8 @@ Returns ``unsigned long``
 
 
 
+----
+
 .. _CGameSpawningGetRandomCreatureType:
 
 CGameSpawning\:\:GetRandomCreatureType
@@ -291,6 +309,8 @@ Returns ``long``
 
 
 
+----
+
 .. _CGameSpawningMarshal:
 
 CGameSpawning\:\:Marshal
@@ -310,6 +330,8 @@ CGameSpawning\:\:Marshal
 
 
 
+----
+
 .. _CGameSpawningRemoveFromArea:
 
 CGameSpawning\:\:RemoveFromArea
@@ -324,6 +346,8 @@ CGameSpawning\:\:RemoveFromArea
 **Remarks**
 
 
+
+----
 
 .. _CGameSpawningRender:
 
@@ -346,6 +370,8 @@ CGameSpawning\:\:Render
 **Remarks**
 
 
+
+----
 
 .. _CGameSpawningSpawn:
 

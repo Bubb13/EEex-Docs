@@ -53,6 +53,8 @@ The structure used for this class is :ref:`CGameAreaNotes<CGameAreaNotes>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -81,6 +83,8 @@ Constructs a ``CGameAreaNotes`` object
 Constructs a ``CGameAreaNotes`` object
 
 
+----
+
 .. _CGameAreaNotes~CGameAreaNotes:
 
 CGameAreaNotes\:\:~CGameAreaNotes
@@ -97,6 +101,8 @@ Destroys the ``CGameAreaNotes`` object
 Destroys the ``CGameAreaNotes`` object
 
 
+
+----
 
 ---------------
 Methods
@@ -170,6 +176,9 @@ Add notes to an area
 
 
 
+
+----
+
 .. _CGameAreaNotesAddANote:
 
 CGameAreaNotes\:\:AddANote
@@ -193,6 +202,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CGameAreaNotesAddButton:
 
 CGameAreaNotes\:\:AddButton
@@ -215,6 +227,9 @@ Returns ``int``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAreaNotesAddPredefinedNote:
 
@@ -242,6 +257,9 @@ Add a predefined note using a string reference from the tlk table
 
 
 
+
+----
+
 .. _CGameAreaNotesDeleteANote:
 
 CGameAreaNotes\:\:DeleteANote
@@ -264,6 +282,9 @@ Returns ``int``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAreaNotesGetNoteAt:
 
@@ -288,6 +309,9 @@ Returns :ref:`CAreaUserNote<CAreaUserNote>`\*
 
 
 
+
+----
+
 .. _CGameAreaNotesGetNoteButtonColor:
 
 CGameAreaNotes\:\:GetNoteButtonColor
@@ -310,6 +334,9 @@ Returns ``int``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAreaNotesGetNoteButtonText:
 
@@ -335,6 +362,9 @@ Returns ``unsigned long``
 
 
 
+
+----
+
 .. _CGameAreaNotesIntrnlInitialize:
 
 CGameAreaNotes\:\:IntrnlInitialize
@@ -349,6 +379,9 @@ CGameAreaNotes\:\:IntrnlInitialize
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAreaNotesIsANoteThere:
 
@@ -373,6 +406,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 
 
 
+
+----
+
 .. _CGameAreaNotesMarshal:
 
 CGameAreaNotes\:\:Marshal
@@ -394,6 +430,9 @@ CGameAreaNotes\:\:Marshal
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAreaNotesPushNoteToLua:
 
@@ -417,6 +456,9 @@ Push a note at a specified world and screen location to the lua stack
 
 
 
+
+----
+
 .. _CGameAreaNotesRemoveTextFromNote:
 
 CGameAreaNotes\:\:RemoveTextFromNote
@@ -439,6 +481,9 @@ Remove text from an existing note
 
 
 
+
+----
+
 .. _CGameAreaNotesUninitialize:
 
 CGameAreaNotes\:\:Uninitialize
@@ -453,6 +498,9 @@ CGameAreaNotes\:\:Uninitialize
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAreaNotesUpdateButton:
 
@@ -480,6 +528,9 @@ Returns ``int``
 
 
 
+
+
+----
 
 .. _CGameAreaNotesUpdateButtonPositions:
 

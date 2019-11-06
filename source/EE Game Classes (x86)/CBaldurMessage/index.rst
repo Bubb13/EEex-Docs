@@ -455,6 +455,8 @@ The structure used for this class is :ref:`CBaldurMessage<CBaldurMessage>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -484,6 +486,8 @@ Constructs a ``CBaldurMessage`` object
 
 
 
+----
+
 .. _CBaldurMessage~CBaldurMessage:
 
 CBaldurMessage\:\:~CBaldurMessage
@@ -501,6 +505,8 @@ Destroys the ``CBaldurMessage`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -973,6 +979,8 @@ CBaldurMessage\:\:AddDroppedPlayer
 
 
 
+----
+
 .. _CBaldurMessageAnnounceAreaMapANote:
 
 CBaldurMessage\:\:AnnounceAreaMapANote
@@ -998,6 +1006,8 @@ CBaldurMessage\:\:AnnounceAreaMapANote
 **Remarks**
 
 
+
+----
 
 .. _CBaldurMessageAnnounceAreaMapNote:
 
@@ -1025,6 +1035,8 @@ CBaldurMessage\:\:AnnounceAreaMapNote
 
 
 
+----
+
 .. _CBaldurMessageAnnounceBiography:
 
 CBaldurMessage\:\:AnnounceBiography
@@ -1050,6 +1062,8 @@ CBaldurMessage\:\:AnnounceBiography
 **Remarks**
 
 
+
+----
 
 .. _CBaldurMessageAnnounceJournalDeleteEntry:
 
@@ -1077,6 +1091,8 @@ CBaldurMessage\:\:AnnounceJournalDeleteEntry
 
 
 
+----
+
 .. _CBaldurMessageAnnounceJournalEntry:
 
 CBaldurMessage\:\:AnnounceJournalEntry
@@ -1102,6 +1118,8 @@ CBaldurMessage\:\:AnnounceJournalEntry
 **Remarks**
 
 
+
+----
 
 .. _CBaldurMessageAnnounceJournalEntryChange:
 
@@ -1130,6 +1148,9 @@ CBaldurMessage\:\:AnnounceJournalEntryChange
 
 
 
+
+----
+
 .. _CBaldurMessageAnnounceJournalSetQuestDone:
 
 CBaldurMessage\:\:AnnounceJournalSetQuestDone
@@ -1157,6 +1178,9 @@ CBaldurMessage\:\:AnnounceJournalSetQuestDone
 
 
 
+
+----
+
 .. _CBaldurMessageAnnounceJournalUserEntry:
 
 CBaldurMessage\:\:AnnounceJournalUserEntry
@@ -1182,6 +1206,9 @@ CBaldurMessage\:\:AnnounceJournalUserEntry
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageBroadcastDemandCharacterSlotReply:
 
@@ -1209,6 +1236,9 @@ CBaldurMessage\:\:BroadcastDemandCharacterSlotReply
 
 
 
+
+----
+
 .. _CBaldurMessageBroadcastUpdateCharacterSlot:
 
 CBaldurMessage\:\:BroadcastUpdateCharacterSlot
@@ -1234,6 +1264,9 @@ CBaldurMessage\:\:BroadcastUpdateCharacterSlot
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageCancelCloseSessionPoll:
 
@@ -1261,6 +1294,9 @@ CBaldurMessage\:\:CancelCloseSessionPoll
 
 
 
+
+----
+
 .. _CBaldurMessageCancelDeleteAreaPoll:
 
 CBaldurMessage\:\:CancelDeleteAreaPoll
@@ -1286,6 +1322,9 @@ CBaldurMessage\:\:CancelDeleteAreaPoll
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageCancelDialogRequestToServer:
 
@@ -1314,6 +1353,9 @@ CBaldurMessage\:\:CancelDialogRequestToServer
 
 
 
+
+----
+
 .. _CBaldurMessageChapterAnnounceStatus:
 
 CBaldurMessage\:\:ChapterAnnounceStatus
@@ -1341,6 +1383,9 @@ CBaldurMessage\:\:ChapterAnnounceStatus
 
 
 
+
+----
+
 .. _CBaldurMessageCharacterPartyOrderAnnounce:
 
 CBaldurMessage\:\:CharacterPartyOrderAnnounce
@@ -1366,6 +1411,9 @@ CBaldurMessage\:\:CharacterPartyOrderAnnounce
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageCharacterPartyOrderRequest:
 
@@ -1393,6 +1441,9 @@ CBaldurMessage\:\:CharacterPartyOrderRequest
 
 
 
+
+----
+
 .. _CBaldurMessageCharacterPartyRemovePickPanel:
 
 CBaldurMessage\:\:CharacterPartyRemovePickPanel
@@ -1419,6 +1470,9 @@ CBaldurMessage\:\:CharacterPartyRemovePickPanel
 
 
 
+
+----
+
 .. _CBaldurMessageCleanLeaveAreaLuaRequest:
 
 CBaldurMessage\:\:CleanLeaveAreaLuaRequest
@@ -1444,6 +1498,9 @@ CBaldurMessage\:\:CleanLeaveAreaLuaRequest
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageCleanLeaveAreaNameRequest:
 
@@ -1498,6 +1555,9 @@ CBaldurMessage\:\:CloseSessionBallotComplete
 
 
 
+
+----
+
 .. _CBaldurMessageCloseSessionCloseSession:
 
 CBaldurMessage\:\:CloseSessionCloseSession
@@ -1525,6 +1585,9 @@ CBaldurMessage\:\:CloseSessionCloseSession
 
 
 
+
+----
+
 .. _CBaldurMessageCloseSessionReturnBallot:
 
 CBaldurMessage\:\:CloseSessionReturnBallot
@@ -1550,6 +1613,9 @@ CBaldurMessage\:\:CloseSessionReturnBallot
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageCloseSessionStartPoll:
 
@@ -1577,6 +1643,9 @@ CBaldurMessage\:\:CloseSessionStartPoll
 
 
 
+
+----
+
 .. _CBaldurMessageDeleteAreaBallotComplete:
 
 CBaldurMessage\:\:DeleteAreaBallotComplete
@@ -1602,6 +1671,9 @@ CBaldurMessage\:\:DeleteAreaBallotComplete
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageDeleteAreaBallotResult:
 
@@ -1629,6 +1701,9 @@ CBaldurMessage\:\:DeleteAreaBallotResult
 
 
 
+
+----
+
 .. _CBaldurMessageDeleteAreaDeleteArea:
 
 CBaldurMessage\:\:DeleteAreaDeleteArea
@@ -1654,6 +1729,9 @@ CBaldurMessage\:\:DeleteAreaDeleteArea
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageDeleteAreaReturnBallot:
 
@@ -1682,6 +1760,9 @@ CBaldurMessage\:\:DeleteAreaReturnBallot
 
 
 
+
+----
+
 .. _CBaldurMessageDeleteAreaStartPoll:
 
 CBaldurMessage\:\:DeleteAreaStartPoll
@@ -1709,6 +1790,9 @@ CBaldurMessage\:\:DeleteAreaStartPoll
 
 
 
+
+----
+
 .. _CBaldurMessageDemandCharacterSlot:
 
 CBaldurMessage\:\:DemandCharacterSlot
@@ -1734,6 +1818,9 @@ CBaldurMessage\:\:DemandCharacterSlot
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageDemandCharacterSlotReply:
 
@@ -1761,6 +1848,9 @@ CBaldurMessage\:\:DemandCharacterSlotReply
 
 
 
+
+----
+
 .. _CBaldurMessageDemandResourceFromServer:
 
 CBaldurMessage\:\:DemandResourceFromServer
@@ -1786,6 +1876,9 @@ CBaldurMessage\:\:DemandResourceFromServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageDemandSettingsNightmareMode:
 
@@ -1813,6 +1906,9 @@ CBaldurMessage\:\:DemandSettingsNightmareMode
 
 
 
+
+----
+
 .. _CBaldurMessageDialogRequestKillOrUse:
 
 CBaldurMessage\:\:DialogRequestKillOrUse
@@ -1838,6 +1934,9 @@ CBaldurMessage\:\:DialogRequestKillOrUse
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageHandleBlockingMessages:
 
@@ -1866,6 +1965,9 @@ CBaldurMessage\:\:HandleBlockingMessages
 
 
 
+
+----
+
 .. _CBaldurMessageKickOutWaitingForSignal:
 
 CBaldurMessage\:\:KickOutWaitingForSignal
@@ -1893,6 +1995,9 @@ CBaldurMessage\:\:KickOutWaitingForSignal
 
 
 
+
+----
+
 .. _CBaldurMessageKickPlayerRequest:
 
 CBaldurMessage\:\:KickPlayerRequest
@@ -1918,6 +2023,9 @@ CBaldurMessage\:\:KickPlayerRequest
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageKickPlayerServerSupport:
 
@@ -1945,6 +2053,9 @@ CBaldurMessage\:\:KickPlayerServerSupport
 
 
 
+
+----
+
 .. _CBaldurMessageMovieAnnounceStatus:
 
 CBaldurMessage\:\:MovieAnnounceStatus
@@ -1970,6 +2081,9 @@ CBaldurMessage\:\:MovieAnnounceStatus
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageMultiplayerSynchReply:
 
@@ -1997,6 +2111,9 @@ CBaldurMessage\:\:MultiplayerSynchReply
 
 
 
+
+----
+
 .. _CBaldurMessageMultiplayerSynchRequest:
 
 CBaldurMessage\:\:MultiplayerSynchRequest
@@ -2022,6 +2139,9 @@ CBaldurMessage\:\:MultiplayerSynchRequest
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageNonBlockingWaitForSignal:
 
@@ -2050,6 +2170,9 @@ CBaldurMessage\:\:NonBlockingWaitForSignal
 
 
 
+
+----
+
 .. _CBaldurMessageObjectAdd:
 
 CBaldurMessage\:\:ObjectAdd
@@ -2077,6 +2200,9 @@ CBaldurMessage\:\:ObjectAdd
 
 
 
+
+----
+
 .. _CBaldurMessageObjectArrayDelete:
 
 CBaldurMessage\:\:ObjectArrayDelete
@@ -2102,6 +2228,9 @@ CBaldurMessage\:\:ObjectArrayDelete
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageObjectControl:
 
@@ -2129,6 +2258,9 @@ CBaldurMessage\:\:ObjectControl
 
 
 
+
+----
+
 .. _CBaldurMessageObjectControlRequest:
 
 CBaldurMessage\:\:ObjectControlRequest
@@ -2154,6 +2286,9 @@ CBaldurMessage\:\:ObjectControlRequest
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageObjectControlSuggestion:
 
@@ -2181,6 +2316,9 @@ CBaldurMessage\:\:ObjectControlSuggestion
 
 
 
+
+----
+
 .. _CBaldurMessageObjectDelete:
 
 CBaldurMessage\:\:ObjectDelete
@@ -2206,6 +2344,9 @@ CBaldurMessage\:\:ObjectDelete
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageObjectDeleteRequest:
 
@@ -2234,6 +2375,9 @@ CBaldurMessage\:\:ObjectDeleteRequest
 
 
 
+
+----
+
 .. _CBaldurMessageOnAnnounceAreaMapANote:
 
 CBaldurMessage\:\:OnAnnounceAreaMapANote
@@ -2261,6 +2405,9 @@ CBaldurMessage\:\:OnAnnounceAreaMapANote
 
 
 
+
+----
+
 .. _CBaldurMessageOnAnnounceAreaMapNote:
 
 CBaldurMessage\:\:OnAnnounceAreaMapNote
@@ -2286,6 +2433,9 @@ CBaldurMessage\:\:OnAnnounceAreaMapNote
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnAnnounceBiography:
 
@@ -2313,6 +2463,9 @@ CBaldurMessage\:\:OnAnnounceBiography
 
 
 
+
+----
+
 .. _CBaldurMessageOnAnnounceJournalDeleteEntry:
 
 CBaldurMessage\:\:OnAnnounceJournalDeleteEntry
@@ -2338,6 +2491,9 @@ CBaldurMessage\:\:OnAnnounceJournalDeleteEntry
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnAnnounceJournalEntry:
 
@@ -2365,6 +2521,9 @@ CBaldurMessage\:\:OnAnnounceJournalEntry
 
 
 
+
+----
+
 .. _CBaldurMessageOnAnnounceJournalEntryChange:
 
 CBaldurMessage\:\:OnAnnounceJournalEntryChange
@@ -2390,6 +2549,9 @@ CBaldurMessage\:\:OnAnnounceJournalEntryChange
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnAnnounceJournalSetQuestDone:
 
@@ -2418,6 +2580,9 @@ CBaldurMessage\:\:OnAnnounceJournalSetQuestDone
 
 
 
+
+----
+
 .. _CBaldurMessageOnAnnounceJournalUserEntry:
 
 CBaldurMessage\:\:OnAnnounceJournalUserEntry
@@ -2445,6 +2610,9 @@ CBaldurMessage\:\:OnAnnounceJournalUserEntry
 
 
 
+
+----
+
 .. _CBaldurMessageOnCancelDialogRequestToServer:
 
 CBaldurMessage\:\:OnCancelDialogRequestToServer
@@ -2470,6 +2638,9 @@ CBaldurMessage\:\:OnCancelDialogRequestToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnChapterAnnounceStatus:
 
@@ -2497,6 +2668,9 @@ CBaldurMessage\:\:OnChapterAnnounceStatus
 
 
 
+
+----
+
 .. _CBaldurMessageOnChapterSendRequest:
 
 CBaldurMessage\:\:OnChapterSendRequest
@@ -2522,6 +2696,9 @@ CBaldurMessage\:\:OnChapterSendRequest
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnCharacterPartyOrderAnnounce:
 
@@ -2549,6 +2726,9 @@ CBaldurMessage\:\:OnCharacterPartyOrderAnnounce
 
 
 
+
+----
+
 .. _CBaldurMessageOnCharacterPartyOrderRequest:
 
 CBaldurMessage\:\:OnCharacterPartyOrderRequest
@@ -2574,6 +2754,9 @@ CBaldurMessage\:\:OnCharacterPartyOrderRequest
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnCharacterPartyRemovePickPanel:
 
@@ -2602,6 +2785,9 @@ CBaldurMessage\:\:OnCharacterPartyRemovePickPanel
 
 
 
+
+----
+
 .. _CBaldurMessageOnChatMessageOnChatMessage:
 
 CBaldurMessage\:\:OnChatMessage
@@ -2629,6 +2815,9 @@ CBaldurMessage\:\:OnChatMessage
 
 
 
+
+----
+
 .. _CBaldurMessageOnCloseSessionCloseSession:
 
 CBaldurMessage\:\:OnCloseSessionCloseSession
@@ -2654,6 +2843,9 @@ CBaldurMessage\:\:OnCloseSessionCloseSession
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnCloseSessionReturnBallot:
 
@@ -2681,6 +2873,9 @@ CBaldurMessage\:\:OnCloseSessionReturnBallot
 
 
 
+
+----
+
 .. _CBaldurMessageOnCloseSessionStartPoll:
 
 CBaldurMessage\:\:OnCloseSessionStartPoll
@@ -2706,6 +2901,9 @@ CBaldurMessage\:\:OnCloseSessionStartPoll
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnDeleteAreaDeleteArea:
 
@@ -2733,6 +2931,9 @@ CBaldurMessage\:\:OnDeleteAreaDeleteArea
 
 
 
+
+----
+
 .. _CBaldurMessageOnDeleteAreaReturnBallot:
 
 CBaldurMessage\:\:OnDeleteAreaReturnBallot
@@ -2758,6 +2959,9 @@ CBaldurMessage\:\:OnDeleteAreaReturnBallot
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnDeleteAreaStartPoll:
 
@@ -2786,6 +2990,9 @@ CBaldurMessage\:\:OnDeleteAreaStartPoll
 
 
 
+
+----
+
 .. _CBaldurMessageOnDemandCharacterSlot:
 
 CBaldurMessage\:\:OnDemandCharacterSlot
@@ -2813,6 +3020,9 @@ CBaldurMessage\:\:OnDemandCharacterSlot
 
 
 
+
+----
+
 .. _CBaldurMessageOnDemandCharacterSlotReply:
 
 CBaldurMessage\:\:OnDemandCharacterSlotReply
@@ -2838,6 +3048,9 @@ CBaldurMessage\:\:OnDemandCharacterSlotReply
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnDemandSettingsNightmareMode:
 
@@ -2865,6 +3078,9 @@ CBaldurMessage\:\:OnDemandSettingsNightmareMode
 
 
 
+
+----
+
 .. _CBaldurMessageOnDialogReplyFromServer:
 
 CBaldurMessage\:\:OnDialogReplyFromServer
@@ -2890,6 +3106,9 @@ CBaldurMessage\:\:OnDialogReplyFromServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnDialogRequestKillOrUse:
 
@@ -2917,6 +3136,9 @@ CBaldurMessage\:\:OnDialogRequestKillOrUse
 
 
 
+
+----
+
 .. _CBaldurMessageOnDialogRequestToServer:
 
 CBaldurMessage\:\:OnDialogRequestToServer
@@ -2942,6 +3164,9 @@ CBaldurMessage\:\:OnDialogRequestToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnKickPlayerHoofedOut:
 
@@ -2970,6 +3195,9 @@ CBaldurMessage\:\:OnKickPlayerHoofedOut
 
 
 
+
+----
+
 .. _CBaldurMessageOnKickPlayerRequest:
 
 CBaldurMessage\:\:OnKickPlayerRequest
@@ -2997,6 +3225,9 @@ CBaldurMessage\:\:OnKickPlayerRequest
 
 
 
+
+----
+
 .. _CBaldurMessageOnKickPlayerServerSupport:
 
 CBaldurMessage\:\:OnKickPlayerServerSupport
@@ -3022,6 +3253,9 @@ CBaldurMessage\:\:OnKickPlayerServerSupport
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnLeaveAreaLuaAnnouncement:
 
@@ -3049,6 +3283,9 @@ CBaldurMessage\:\:OnLeaveAreaLuaAnnouncement
 
 
 
+
+----
+
 .. _CBaldurMessageOnLeaveAreaLuaPanicToServer:
 
 CBaldurMessage\:\:OnLeaveAreaLuaPanicToServer
@@ -3074,6 +3311,9 @@ CBaldurMessage\:\:OnLeaveAreaLuaPanicToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnLeaveAreaLuaReplyFromServer:
 
@@ -3101,6 +3341,9 @@ CBaldurMessage\:\:OnLeaveAreaLuaReplyFromServer
 
 
 
+
+----
+
 .. _CBaldurMessageOnLeaveAreaLuaRequestToServer:
 
 CBaldurMessage\:\:OnLeaveAreaLuaRequestToServer
@@ -3126,6 +3369,9 @@ CBaldurMessage\:\:OnLeaveAreaLuaRequestToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnLeaveAreaNameAnnouncement:
 
@@ -3154,6 +3400,9 @@ CBaldurMessage\:\:OnLeaveAreaNameAnnouncement
 
 
 
+
+----
+
 .. _CBaldurMessageOnLeaveAreaNameReplyFromServer:
 
 CBaldurMessage\:\:OnLeaveAreaNameReplyFromServer
@@ -3181,6 +3430,9 @@ CBaldurMessage\:\:OnLeaveAreaNameReplyFromServer
 
 
 
+
+----
+
 .. _CBaldurMessageOnLeaveAreaNameRequestToServer:
 
 CBaldurMessage\:\:OnLeaveAreaNameRequestToServer
@@ -3206,6 +3458,9 @@ CBaldurMessage\:\:OnLeaveAreaNameRequestToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnMapWorldAnnounceArea:
 
@@ -3233,6 +3488,9 @@ CBaldurMessage\:\:OnMapWorldAnnounceArea
 
 
 
+
+----
+
 .. _CBaldurMessageOnMapWorldAnnounceAreaRequest:
 
 CBaldurMessage\:\:OnMapWorldAnnounceAreaRequest
@@ -3258,6 +3516,9 @@ CBaldurMessage\:\:OnMapWorldAnnounceAreaRequest
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnMapWorldAnnounceStatus:
 
@@ -3285,6 +3546,9 @@ CBaldurMessage\:\:OnMapWorldAnnounceStatus
 
 
 
+
+----
+
 .. _CBaldurMessageOnMapWorldCancelRequest:
 
 CBaldurMessage\:\:OnMapWorldCancelRequest
@@ -3310,6 +3574,9 @@ CBaldurMessage\:\:OnMapWorldCancelRequest
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnMapWorldRequest:
 
@@ -3338,6 +3605,9 @@ CBaldurMessage\:\:OnMapWorldRequest
 
 
 
+
+----
+
 .. _CBaldurMessageOnMapWorldRevealArea:
 
 CBaldurMessage\:\:OnMapWorldRevealArea
@@ -3363,6 +3633,9 @@ CBaldurMessage\:\:OnMapWorldRevealArea
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnMovieAnnounceStatus:
 
@@ -3390,6 +3663,9 @@ CBaldurMessage\:\:OnMovieAnnounceStatus
 
 
 
+
+----
+
 .. _CBaldurMessageOnMovieEndCredits:
 
 CBaldurMessage\:\:OnMovieEndCredits
@@ -3415,6 +3691,9 @@ CBaldurMessage\:\:OnMovieEndCredits
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnMovieRequest:
 
@@ -3444,6 +3723,9 @@ CBaldurMessage\:\:OnMovieRequest
 
 
 
+
+----
+
 .. _CBaldurMessageOnMultiplayerSynchReply:
 
 CBaldurMessage\:\:OnMultiplayerSynchReply
@@ -3469,6 +3751,9 @@ CBaldurMessage\:\:OnMultiplayerSynchReply
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnMultiplayerSynchRequest:
 
@@ -3496,6 +3781,9 @@ CBaldurMessage\:\:OnMultiplayerSynchRequest
 
 
 
+
+----
+
 .. _CBaldurMessageOnObjectAdd:
 
 CBaldurMessage\:\:OnObjectAdd
@@ -3521,6 +3809,9 @@ CBaldurMessage\:\:OnObjectAdd
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnObjectArrayDelete:
 
@@ -3550,6 +3841,9 @@ CBaldurMessage\:\:OnObjectArrayDelete
 
 
 
+
+----
+
 .. _CBaldurMessageOnObjectControl:
 
 CBaldurMessage\:\:OnObjectControl
@@ -3575,6 +3869,9 @@ CBaldurMessage\:\:OnObjectControl
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnObjectControlRequest:
 
@@ -3602,6 +3899,9 @@ CBaldurMessage\:\:OnObjectControlRequest
 
 
 
+
+----
+
 .. _CBaldurMessageOnObjectControlSuggestion:
 
 CBaldurMessage\:\:OnObjectControlSuggestion
@@ -3627,6 +3927,9 @@ CBaldurMessage\:\:OnObjectControlSuggestion
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnObjectDelete:
 
@@ -3656,6 +3959,9 @@ CBaldurMessage\:\:OnObjectDelete
 
 
 
+
+----
+
 .. _CBaldurMessageOnObjectDeleteRequest:
 
 CBaldurMessage\:\:OnObjectDeleteRequest
@@ -3681,6 +3987,9 @@ CBaldurMessage\:\:OnObjectDeleteRequest
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnPauseAnnounceStatus:
 
@@ -3708,6 +4017,9 @@ CBaldurMessage\:\:OnPauseAnnounceStatus
 
 
 
+
+----
+
 .. _CBaldurMessageOnPauseRequestToServer:
 
 CBaldurMessage\:\:OnPauseRequestToServer
@@ -3733,6 +4045,9 @@ CBaldurMessage\:\:OnPauseRequestToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnProgressBarStatus:
 
@@ -3762,6 +4077,9 @@ CBaldurMessage\:\:OnProgressBarStatus
 
 
 
+
+----
+
 .. _CBaldurMessageOnReformPartyAnnounceStatus:
 
 CBaldurMessage\:\:OnReformPartyAnnounceStatus
@@ -3787,6 +4105,9 @@ CBaldurMessage\:\:OnReformPartyAnnounceStatus
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnReformPartyRequest:
 
@@ -3814,6 +4135,9 @@ CBaldurMessage\:\:OnReformPartyRequest
 
 
 
+
+----
+
 .. _CBaldurMessageOnRequestClientSignal:
 
 CBaldurMessage\:\:OnRequestClientSignal
@@ -3839,6 +4163,9 @@ CBaldurMessage\:\:OnRequestClientSignal
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnResourceDemanded:
 
@@ -3868,6 +4195,9 @@ CBaldurMessage\:\:OnResourceDemanded
 
 
 
+
+----
+
 .. _CBaldurMessageOnResourceReply:
 
 CBaldurMessage\:\:OnResourceReply
@@ -3893,6 +4223,9 @@ CBaldurMessage\:\:OnResourceReply
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnResourceSuggestLoad:
 
@@ -3920,6 +4253,9 @@ CBaldurMessage\:\:OnResourceSuggestLoad
 
 
 
+
+----
+
 .. _CBaldurMessageOnRestAnnounceStatus:
 
 CBaldurMessage\:\:OnRestAnnounceStatus
@@ -3945,6 +4281,9 @@ CBaldurMessage\:\:OnRestAnnounceStatus
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnRestRequest:
 
@@ -3974,6 +4313,9 @@ CBaldurMessage\:\:OnRestRequest
 
 
 
+
+----
+
 .. _CBaldurMessageOnSendAreaMapANote:
 
 CBaldurMessage\:\:OnSendAreaMapANote
@@ -3999,6 +4341,9 @@ CBaldurMessage\:\:OnSendAreaMapANote
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnSendAreaMapNote:
 
@@ -4026,6 +4371,9 @@ CBaldurMessage\:\:OnSendAreaMapNote
 
 
 
+
+----
+
 .. _CBaldurMessageOnSendBiography:
 
 CBaldurMessage\:\:OnSendBiography
@@ -4051,6 +4399,9 @@ CBaldurMessage\:\:OnSendBiography
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnSendEntryJournalChange:
 
@@ -4080,6 +4431,9 @@ CBaldurMessage\:\:OnSendEntryJournalChange
 
 
 
+
+----
+
 .. _CBaldurMessageOnSendJournalDeleteEntry:
 
 CBaldurMessage\:\:OnSendJournalDeleteEntry
@@ -4105,6 +4459,9 @@ CBaldurMessage\:\:OnSendJournalDeleteEntry
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnSendJournalEntry:
 
@@ -4132,6 +4489,9 @@ CBaldurMessage\:\:OnSendJournalEntry
 
 
 
+
+----
+
 .. _CBaldurMessageOnSendJournalSetQuestDone:
 
 CBaldurMessage\:\:OnSendJournalSetQuestDone
@@ -4157,6 +4517,9 @@ CBaldurMessage\:\:OnSendJournalSetQuestDone
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnSendJournalUserEntry:
 
@@ -4186,6 +4549,9 @@ CBaldurMessage\:\:OnSendJournalUserEntry
 
 
 
+
+----
+
 .. _CBaldurMessageOnSendResourceToServer:
 
 CBaldurMessage\:\:OnSendResourceToServer
@@ -4211,6 +4577,9 @@ CBaldurMessage\:\:OnSendResourceToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnSettingsArbitrationLockAllowInput:
 
@@ -4238,6 +4607,9 @@ CBaldurMessage\:\:OnSettingsArbitrationLockAllowInput
 
 
 
+
+----
+
 .. _CBaldurMessageOnSettingsArbitrationLockRequest:
 
 CBaldurMessage\:\:OnSettingsArbitrationLockRequest
@@ -4263,6 +4635,9 @@ CBaldurMessage\:\:OnSettingsArbitrationLockRequest
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnSettingsArbitrationLockStatus:
 
@@ -4292,6 +4667,9 @@ CBaldurMessage\:\:OnSettingsArbitrationLockStatus
 
 
 
+
+----
+
 .. _CBaldurMessageOnSettingsCharacterControlSet:
 
 CBaldurMessage\:\:OnSettingsCharacterControlSet
@@ -4317,6 +4695,9 @@ CBaldurMessage\:\:OnSettingsCharacterControlSet
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnSettingsCharacterReadySet:
 
@@ -4344,6 +4725,9 @@ CBaldurMessage\:\:OnSettingsCharacterReadySet
 
 
 
+
+----
+
 .. _CBaldurMessageOnSettingsCharacterSlotStatus:
 
 CBaldurMessage\:\:OnSettingsCharacterSlotStatus
@@ -4369,6 +4753,9 @@ CBaldurMessage\:\:OnSettingsCharacterSlotStatus
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnSettingsFullDemanded:
 
@@ -4398,6 +4785,9 @@ CBaldurMessage\:\:OnSettingsFullDemanded
 
 
 
+
+----
+
 .. _CBaldurMessageOnSettingsFullSet:
 
 CBaldurMessage\:\:OnSettingsFullSet
@@ -4423,6 +4813,9 @@ CBaldurMessage\:\:OnSettingsFullSet
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnSettingsGoreRequirement:
 
@@ -4450,6 +4843,9 @@ CBaldurMessage\:\:OnSettingsGoreRequirement
 
 
 
+
+----
+
 .. _CBaldurMessageOnSettingsImportingOptionSet:
 
 CBaldurMessage\:\:OnSettingsImportingOptionSet
@@ -4475,6 +4871,9 @@ CBaldurMessage\:\:OnSettingsImportingOptionSet
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnSettingsJoinRequestOptionSet:
 
@@ -4504,6 +4903,9 @@ CBaldurMessage\:\:OnSettingsJoinRequestOptionSet
 
 
 
+
+----
+
 .. _CBaldurMessageOnSettingsNightmareMode:
 
 CBaldurMessage\:\:OnSettingsNightmareMode
@@ -4529,6 +4931,9 @@ CBaldurMessage\:\:OnSettingsNightmareMode
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnSettingsPermissionSet:
 
@@ -4556,6 +4961,9 @@ CBaldurMessage\:\:OnSettingsPermissionSet
 
 
 
+
+----
+
 .. _CBaldurMessageOnSettingsPlayerReadySet:
 
 CBaldurMessage\:\:OnSettingsPlayerReadySet
@@ -4581,6 +4989,9 @@ CBaldurMessage\:\:OnSettingsPlayerReadySet
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnSettingsRestrictStoreOptionSet:
 
@@ -4610,6 +5021,9 @@ CBaldurMessage\:\:OnSettingsRestrictStoreOptionSet
 
 
 
+
+----
+
 .. _CBaldurMessageOnSignal:
 
 CBaldurMessage\:\:OnSignal
@@ -4635,6 +5049,9 @@ CBaldurMessage\:\:OnSignal
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnSwapItemReply:
 
@@ -4662,6 +5079,9 @@ CBaldurMessage\:\:OnSwapItemReply
 
 
 
+
+----
+
 .. _CBaldurMessageOnSwapItemRequest:
 
 CBaldurMessage\:\:OnSwapItemRequest
@@ -4687,6 +5107,9 @@ CBaldurMessage\:\:OnSwapItemRequest
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnTextScreenAnnounceStatus:
 
@@ -4716,6 +5139,9 @@ CBaldurMessage\:\:OnTextScreenAnnounceStatus
 
 
 
+
+----
+
 .. _CBaldurMessageOnTextScreenCompletion:
 
 CBaldurMessage\:\:OnTextScreenCompletion
@@ -4741,6 +5167,9 @@ CBaldurMessage\:\:OnTextScreenCompletion
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnTextScreenSendRequest:
 
@@ -4768,6 +5197,9 @@ CBaldurMessage\:\:OnTextScreenSendRequest
 
 
 
+
+----
+
 .. _CBaldurMessageOnTimeChangeToServer:
 
 CBaldurMessage\:\:OnTimeChangeToServer
@@ -4793,6 +5225,9 @@ CBaldurMessage\:\:OnTimeChangeToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnTimeSynchBroadcast:
 
@@ -4822,6 +5257,9 @@ CBaldurMessage\:\:OnTimeSynchBroadcast
 
 
 
+
+----
+
 .. _CBaldurMessageOnUpdateCharacterSlotReply:
 
 CBaldurMessage\:\:OnUpdateCharacterSlotReply
@@ -4847,6 +5285,9 @@ CBaldurMessage\:\:OnUpdateCharacterSlotReply
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnUpdateDemandCharacterSlot:
 
@@ -4874,6 +5315,9 @@ CBaldurMessage\:\:OnUpdateDemandCharacterSlot
 
 
 
+
+----
+
 .. _CBaldurMessageOnVersionServer:
 
 CBaldurMessage\:\:OnVersionServer
@@ -4899,6 +5343,9 @@ CBaldurMessage\:\:OnVersionServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageOnWeatherBroadcast:
 
@@ -4928,6 +5375,9 @@ CBaldurMessage\:\:OnWeatherBroadcast
 
 
 
+
+----
+
 .. _CBaldurMessagePauseAnnounceStatus:
 
 CBaldurMessage\:\:PauseAnnounceStatus
@@ -4953,6 +5403,9 @@ CBaldurMessage\:\:PauseAnnounceStatus
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessagePollSpecificMessageType:
 
@@ -4980,6 +5433,9 @@ CBaldurMessage\:\:PollSpecificMessageType
 
 
 
+
+----
+
 .. _CBaldurMessagePurgeDroppedPlayers:
 
 CBaldurMessage\:\:PurgeDroppedPlayers
@@ -5005,6 +5461,9 @@ CBaldurMessage\:\:PurgeDroppedPlayers
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageRemoveSignalsFromQueue:
 
@@ -5033,6 +5492,9 @@ CBaldurMessage\:\:RemoveSignalsFromQueue
 
 
 
+
+----
+
 .. _CBaldurMessageRequestClientSignal:
 
 CBaldurMessage\:\:RequestClientSignal
@@ -5060,6 +5522,9 @@ CBaldurMessage\:\:RequestClientSignal
 
 
 
+
+----
+
 .. _CBaldurMessageResourceSuggestLoad:
 
 CBaldurMessage\:\:ResourceSuggestLoad
@@ -5085,6 +5550,9 @@ CBaldurMessage\:\:ResourceSuggestLoad
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageRestAnnounceStatus:
 
@@ -5112,6 +5580,9 @@ CBaldurMessage\:\:RestAnnounceStatus
 
 
 
+
+----
+
 .. _CBaldurMessageSendArbitrationLockAllowInput:
 
 CBaldurMessage\:\:SendArbitrationLockAllowInput
@@ -5137,6 +5608,9 @@ CBaldurMessage\:\:SendArbitrationLockAllowInput
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendArbitrationLockRequestToServer:
 
@@ -5164,6 +5638,9 @@ CBaldurMessage\:\:SendArbitrationLockRequestToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendArbitrationLockStatus:
 
 CBaldurMessage\:\:SendArbitrationLockStatus
@@ -5190,6 +5667,9 @@ CBaldurMessage\:\:SendArbitrationLockStatus
 
 
 
+
+----
+
 .. _CBaldurMessageSendAreaMapANoteToServer:
 
 CBaldurMessage\:\:SendAreaMapANoteToServer
@@ -5215,6 +5695,9 @@ CBaldurMessage\:\:SendAreaMapANoteToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendAreaMapNoteToServer:
 
@@ -5243,6 +5726,9 @@ CBaldurMessage\:\:SendAreaMapNoteToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendBiographyToServer:
 
 CBaldurMessage\:\:SendBiographyToServer
@@ -5268,6 +5754,9 @@ CBaldurMessage\:\:SendBiographyToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendChapterRequestToServer:
 
@@ -5295,6 +5784,9 @@ CBaldurMessage\:\:SendChapterRequestToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendCharacterControlToServer:
 
 CBaldurMessage\:\:SendCharacterControlToServer
@@ -5320,6 +5812,9 @@ CBaldurMessage\:\:SendCharacterControlToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendCharacterReadyToServer:
 
@@ -5347,6 +5842,9 @@ CBaldurMessage\:\:SendCharacterReadyToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendCharacterSlotStatusToServer:
 
 CBaldurMessage\:\:SendCharacterSlotStatusToServer
@@ -5373,6 +5871,9 @@ CBaldurMessage\:\:SendCharacterSlotStatusToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendChatMessage:
 
 CBaldurMessage\:\:SendChatMessage
@@ -5398,6 +5899,9 @@ CBaldurMessage\:\:SendChatMessage
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendDialogRequestToServer:
 
@@ -5426,6 +5930,9 @@ CBaldurMessage\:\:SendDialogRequestToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendFullSettingsToClients:
 
 CBaldurMessage\:\:SendFullSettingsToClients
@@ -5451,6 +5958,9 @@ CBaldurMessage\:\:SendFullSettingsToClients
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendGoreRequirementToServer:
 
@@ -5478,6 +5988,9 @@ CBaldurMessage\:\:SendGoreRequirementToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendImportingOptionToServer:
 
 CBaldurMessage\:\:SendImportingOptionToServer
@@ -5503,6 +6016,9 @@ CBaldurMessage\:\:SendImportingOptionToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendJoinRequestOptionToServer:
 
@@ -5530,6 +6046,9 @@ CBaldurMessage\:\:SendJoinRequestOptionToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendJournalDeleteEntryToServer:
 
 CBaldurMessage\:\:SendJournalDeleteEntryToServer
@@ -5556,6 +6075,9 @@ CBaldurMessage\:\:SendJournalDeleteEntryToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendJournalEntryChangeToServer:
 
 CBaldurMessage\:\:SendJournalEntryChangeToServer
@@ -5581,6 +6103,9 @@ CBaldurMessage\:\:SendJournalEntryChangeToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendJournalEntryToServer:
 
@@ -5609,6 +6134,9 @@ CBaldurMessage\:\:SendJournalEntryToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendJournalSetQuestDoneToServer:
 
 CBaldurMessage\:\:SendJournalSetQuestDoneToServer
@@ -5634,6 +6162,9 @@ CBaldurMessage\:\:SendJournalSetQuestDoneToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendJournalUserEntry:
 
@@ -5661,6 +6192,9 @@ CBaldurMessage\:\:SendJournalUserEntry
 
 
 
+
+----
+
 .. _CBaldurMessageSendLeaveAreaLuaAnnouncement:
 
 CBaldurMessage\:\:SendLeaveAreaLuaAnnouncement
@@ -5686,6 +6220,9 @@ CBaldurMessage\:\:SendLeaveAreaLuaAnnouncement
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendLeaveAreaLuaPanicToServer:
 
@@ -5713,6 +6250,9 @@ CBaldurMessage\:\:SendLeaveAreaLuaPanicToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendLeaveAreaLuaRequestToServer:
 
 CBaldurMessage\:\:SendLeaveAreaLuaRequestToServer
@@ -5739,6 +6279,9 @@ CBaldurMessage\:\:SendLeaveAreaLuaRequestToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendLeaveAreaNameAnnouncement:
 
 CBaldurMessage\:\:SendLeaveAreaNameAnnouncement
@@ -5764,6 +6307,9 @@ CBaldurMessage\:\:SendLeaveAreaNameAnnouncement
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendLeaveAreaNameRequestToServer:
 
@@ -5792,6 +6338,9 @@ CBaldurMessage\:\:SendLeaveAreaNameRequestToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendMapWorldAnnounceArea:
 
 CBaldurMessage\:\:SendMapWorldAnnounceArea
@@ -5817,6 +6366,9 @@ CBaldurMessage\:\:SendMapWorldAnnounceArea
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendMapWorldAnnounceAreaRequest:
 
@@ -5844,6 +6396,9 @@ CBaldurMessage\:\:SendMapWorldAnnounceAreaRequest
 
 
 
+
+----
+
 .. _CBaldurMessageSendMapWorldAnnounceStatus:
 
 CBaldurMessage\:\:SendMapWorldAnnounceStatus
@@ -5869,6 +6424,9 @@ CBaldurMessage\:\:SendMapWorldAnnounceStatus
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendMapWorldCancelRequestToServer:
 
@@ -5896,6 +6454,9 @@ CBaldurMessage\:\:SendMapWorldCancelRequestToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendMapWorldRequestToServer:
 
 CBaldurMessage\:\:SendMapWorldRequestToServer
@@ -5922,6 +6483,9 @@ CBaldurMessage\:\:SendMapWorldRequestToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendMapWorldRevealArea:
 
 CBaldurMessage\:\:SendMapWorldRevealArea
@@ -5947,6 +6511,9 @@ CBaldurMessage\:\:SendMapWorldRevealArea
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendMovieEndCreditsToServer:
 
@@ -5975,6 +6542,9 @@ CBaldurMessage\:\:SendMovieEndCreditsToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendMovieRequestToServer:
 
 CBaldurMessage\:\:SendMovieRequestToServer
@@ -6000,6 +6570,9 @@ CBaldurMessage\:\:SendMovieRequestToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendPauseRequestToServer:
 
@@ -6027,6 +6600,9 @@ CBaldurMessage\:\:SendPauseRequestToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendPermissionToServer:
 
 CBaldurMessage\:\:SendPermissionToServer
@@ -6052,6 +6628,9 @@ CBaldurMessage\:\:SendPermissionToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendPlayerReadyToServer:
 
@@ -6079,6 +6658,9 @@ CBaldurMessage\:\:SendPlayerReadyToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendProgressBarStatus:
 
 CBaldurMessage\:\:SendProgressBarStatus
@@ -6105,6 +6687,9 @@ CBaldurMessage\:\:SendProgressBarStatus
 
 
 
+
+----
+
 .. _CBaldurMessageSendReformPartyAnnounceStatus:
 
 CBaldurMessage\:\:SendReformPartyAnnounceStatus
@@ -6130,6 +6715,9 @@ CBaldurMessage\:\:SendReformPartyAnnounceStatus
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendReformPartyRequestToServer:
 
@@ -6158,6 +6746,9 @@ CBaldurMessage\:\:SendReformPartyRequestToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendRestRequestToServer:
 
 CBaldurMessage\:\:SendRestRequestToServer
@@ -6183,6 +6774,9 @@ CBaldurMessage\:\:SendRestRequestToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendRestrictStoreOptionToServer:
 
@@ -6210,6 +6804,9 @@ CBaldurMessage\:\:SendRestrictStoreOptionToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSendSettingsNightmareMode:
 
 CBaldurMessage\:\:SendSettingsNightmareMode
@@ -6235,6 +6832,9 @@ CBaldurMessage\:\:SendSettingsNightmareMode
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSendSignal:
 
@@ -6262,6 +6862,9 @@ CBaldurMessage\:\:SendSignal
 
 
 
+
+----
+
 .. _CBaldurMessageSendTextScreenRequestToServer:
 
 CBaldurMessage\:\:SendTextScreenRequestToServer
@@ -6288,6 +6891,9 @@ CBaldurMessage\:\:SendTextScreenRequestToServer
 
 
 
+
+----
+
 .. _CBaldurMessageSetSignalDefaultSecondsToTimeout:
 
 CBaldurMessage\:\:SetSignalDefaultSecondsToTimeout
@@ -6313,6 +6919,9 @@ CBaldurMessage\:\:SetSignalDefaultSecondsToTimeout
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSetVersionControlShutdownClientString:
 
@@ -6341,6 +6950,9 @@ CBaldurMessage\:\:SetVersionControlShutdownClientString
 
 
 
+
+----
+
 .. _CBaldurMessageSetVersionControlShutdownServerString:
 
 CBaldurMessage\:\:SetVersionControlShutdownServerString
@@ -6366,6 +6978,9 @@ CBaldurMessage\:\:SetVersionControlShutdownServerString
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageSwapItemReply:
 
@@ -6393,6 +7008,9 @@ CBaldurMessage\:\:SwapItemReply
 
 
 
+
+----
+
 .. _CBaldurMessageSwapItemRequest:
 
 CBaldurMessage\:\:SwapItemRequest
@@ -6418,6 +7036,9 @@ CBaldurMessage\:\:SwapItemRequest
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageTextScreenAnnounceStatus:
 
@@ -6445,6 +7066,9 @@ CBaldurMessage\:\:TextScreenAnnounceStatus
 
 
 
+
+----
+
 .. _CBaldurMessageTextScreenCompletion:
 
 CBaldurMessage\:\:TextScreenCompletion
@@ -6471,6 +7095,9 @@ CBaldurMessage\:\:TextScreenCompletion
 
 
 
+
+----
+
 .. _CBaldurMessageTimeChangeToServer:
 
 CBaldurMessage\:\:TimeChangeToServer
@@ -6496,6 +7123,9 @@ CBaldurMessage\:\:TimeChangeToServer
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageTimeSynchBroadcast:
 
@@ -6524,6 +7154,9 @@ CBaldurMessage\:\:TimeSynchBroadcast
 
 
 
+
+----
+
 .. _CBaldurMessageUpdateCharacterSlotReply:
 
 CBaldurMessage\:\:UpdateCharacterSlotReply
@@ -6549,6 +7182,9 @@ CBaldurMessage\:\:UpdateCharacterSlotReply
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageUpdateDemandCharacterSlot:
 
@@ -6576,6 +7212,9 @@ CBaldurMessage\:\:UpdateDemandCharacterSlot
 
 
 
+
+----
+
 .. _CBaldurMessageUpdateDemandCharacters:
 
 CBaldurMessage\:\:UpdateDemandCharacters
@@ -6601,6 +7240,9 @@ CBaldurMessage\:\:UpdateDemandCharacters
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageVersionServer:
 
@@ -6628,6 +7270,9 @@ CBaldurMessage\:\:VersionServer
 
 
 
+
+----
+
 .. _CBaldurMessageWaitForSignal:
 
 CBaldurMessage\:\:WaitForSignal
@@ -6653,6 +7298,9 @@ CBaldurMessage\:\:WaitForSignal
 **Remarks**
 
 
+
+
+----
 
 .. _CBaldurMessageWeatherBroadcast:
 

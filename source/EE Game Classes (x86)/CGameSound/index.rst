@@ -29,6 +29,8 @@ The structure used for this class is :ref:`CGameSound<CGameSound>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -63,6 +65,8 @@ Constructs a ``CGameSound`` object
 Constructs a ``CGameSound`` object
 
 
+
+----
 
 ---------------
 Methods
@@ -114,6 +118,8 @@ Returns ``unsigned char``
 
 
 
+----
+
 .. _CGameSoundCompressTime:
 
 CGameSound\:\:CompressTime
@@ -136,6 +142,8 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+----
 
 .. _CGameSoundDoAIUpdate:
 
@@ -163,6 +171,8 @@ Returns ``unsigned char``
 
 
 
+----
+
 .. _CGameSoundMarshal:
 
 CGameSound\:\:Marshal
@@ -182,6 +192,8 @@ CGameSound\:\:Marshal
 
 
 
+----
+
 .. _CGameSoundRemoveFromArea:
 
 CGameSound\:\:RemoveFromArea
@@ -196,6 +208,8 @@ CGameSound\:\:RemoveFromArea
 **Remarks**
 
 
+
+----
 
 .. _CGameSoundSetActive:
 

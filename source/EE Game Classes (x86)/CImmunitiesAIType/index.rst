@@ -22,6 +22,8 @@ The structure used for this class is :ref:`CImmunitiesAIType<CImmunitiesAIType>`
 +------------------------------------------------------------------------------------------------------------------------------------+
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -50,6 +52,8 @@ CImmunitiesAIType\:\:ClearAll
 
 
 
+----
+
 .. _CImmunitiesAITypeOnList:
 
 CImmunitiesAIType\:\:OnList
@@ -73,6 +77,8 @@ Returns ``int``
 
 
 
+
+----
 
 ---------------
 Operators
@@ -110,6 +116,8 @@ Returns :ref:`CImmunitiesAIType<CImmunitiesAIType>`\&
 
 
 
+
+----
 
 .. _CImmunitiesAITypeOpEquEqu:
 

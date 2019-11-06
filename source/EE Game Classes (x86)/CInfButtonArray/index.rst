@@ -67,6 +67,8 @@ The structure used for this class is :ref:`CInfButtonArray<CInfButtonArray>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -96,6 +98,8 @@ Constructs a ``CInfButtonArray`` object
 
 
 
+----
+
 .. _CInfButtonArray~CInfButtonArray:
 
 CInfButtonArray\:\:~CInfButtonArray
@@ -113,6 +117,8 @@ Destroys the ``CInfButtonArray`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -198,6 +204,9 @@ Returns ``int``
 Called from :ref:`CInfButtonArray\:\:UpdateButtons<CInfButtonArrayUpdateButtons>`
 
 
+
+----
+
 .. _CInfButtonArrayCheckActivation:
 
 CInfButtonArray\:\:CheckActivation
@@ -228,6 +237,9 @@ If :ref:`CDerivedStats<CDerivedStats>`.m_disabledButtons is ``0`` (enabled) then
 If :ref:`CDerivedStats<CDerivedStats>`.m_disabledButtons is ``1`` (disabled), then :ref:`CInfButtonArray\:\:CheckActivation<CInfButtonArrayCheckActivation>` returns false ``0``
 
 
+
+----
+
 .. _CInfButtonArrayClearList:
 
 CInfButtonArray\:\:ClearList
@@ -243,6 +255,9 @@ Clears all buttons
 
 Frees the list and sets :ref:`CGameButtonList<CGameButtonList>`.m_cButtonDataList to 0
 
+
+
+----
 
 .. _CInfButtonArrayGetButtonBam:
 
@@ -266,6 +281,9 @@ Returns :ref:`CString<CString>`
 **Remarks**
 
 
+
+
+----
 
 .. _CInfButtonArrayGetButtonId:
 
@@ -370,6 +388,9 @@ Skips buttons that are disabled. Checks :ref:`CInfButtonSettings<CInfButtonSetti
 Note: other button types not listed may be available, but typically are used internally for spell buttons and other dynamic buttons for the game engine.
 
 
+
+----
+
 .. _CInfButtonArrayGetButtonSequence:
 
 CInfButtonArray\:\:GetButtonSequence
@@ -395,6 +416,9 @@ Checks :ref:`CInfButtonSettings<CInfButtonSettings>`.m_bSelected = 0 (enabled) i
 
 
 
+
+----
+
 .. _CInfButtonArrayGetQuickSlotData:
 
 CInfButtonArray\:\:GetQuickSlotData
@@ -419,6 +443,9 @@ Get quick slot data for a specified slot
 
 Fills in quick slot data to a :ref:`CButtonData<CButtonData>` structure which is stored at the address of the *cButtonData* parameter
 
+
+
+----
 
 .. _CInfButtonArrayGetSelectedModalMode:
 
@@ -451,6 +478,9 @@ The values that can be returned can be found in ``MODAL.IDS``:
    5 SHAMANDANCE
 
 
+
+----
+
 .. _CInfButtonArrayGetSelectedQuickWeaponData:
 
 CInfButtonArray\:\:GetSelectedQuickWeaponData
@@ -469,6 +499,9 @@ Get quick slot data for the selected weapon quick button
 **Remarks**
 
 
+
+
+----
 
 .. _CInfButtonArrayOnLButtonPressed:
 
@@ -494,6 +527,9 @@ Returns ``int``
 Selects the button pressed
 
 
+
+----
+
 .. _CInfButtonArrayOnRButtonPressed:
 
 CInfButtonArray\:\:OnRButtonPressed
@@ -518,6 +554,9 @@ Returns ``int``
 Allows the assignment of quick slot buttons for casting a spell, using an item or ability. See :ref:`CInfButtonArray\:\:SetQuickSlot<CInfButtonArraySetQuickSlot>`
 
 
+
+----
+
 .. _CInfButtonArrayPickAbility:
 
 CInfButtonArray\:\:PickAbility
@@ -540,6 +579,9 @@ Returns ``unsigned char`` - true ``1`` if succesful or false ``0`` if ability ca
 **Remarks**
 
 
+
+
+----
 
 .. _CInfButtonArrayPickItem:
 
@@ -567,6 +609,9 @@ Returns ``unsigned char`` - true ``1`` if succesful or false ``0`` if item canno
 
 
 
+
+----
+
 .. _CInfButtonArrayPickOffInternalList:
 
 CInfButtonArray\:\:PickOffInternalList
@@ -592,6 +637,9 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+----
+
 .. _CInfButtonArrayPickQuickSlot:
 
 CInfButtonArray\:\:PickQuickSlot
@@ -614,6 +662,9 @@ Select a quick slot button that has been assigned to using a weapon, a spell or 
 
 
 
+
+
+----
 
 .. _CInfButtonArrayPickSpell:
 
@@ -641,6 +692,9 @@ Returns ``unsigned char`` - true ``1`` if succesful or false ``0`` if spell cann
 
 See also :ref:`CInfButtonArray\:\:PostRenderButton<CInfButtonArrayPostRenderButton>`
 
+
+
+----
 
 .. _CInfButtonArrayPostRenderButton:
 
@@ -673,6 +727,9 @@ Returns ``int``
 See also :ref:`CInfButtonArray\:\:PreRenderButton<CInfButtonArrayPreRenderButton>`
 
 
+
+----
+
 .. _CInfButtonArrayPreRenderButton:
 
 CInfButtonArray\:\:PreRenderButton
@@ -703,6 +760,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CInfButtonArrayResetState:
 
 CInfButtonArray\:\:ResetState
@@ -722,6 +782,9 @@ Returns ``int`` - always returns true ``1``
 
 Sets :ref:`CInfButtonArray<CInfButtonArray>`.m_nState to ``0`` and sets :ref:`CInfButtonArray<CInfButtonArray>`.m_bToggleButtonCleric to ``1``
 
+
+
+----
 
 .. _CInfButtonArraySetQuickSlot:
 
@@ -746,6 +809,9 @@ Customize quick slot button to another type for casting a favourite spell, using
 **Remarks**
 
 
+
+
+----
 
 .. _CInfButtonArraySetState:
 
@@ -848,6 +914,9 @@ Each class will have their own default class actionbar. Summoned creatures will 
 
 
 
+
+----
+
 .. _CInfButtonArraySetTooltip:
 
 CInfButtonArray\:\:SetTooltip
@@ -877,6 +946,9 @@ Set a tooltip for a button on the actionbar when the mouse hovers over button
 
 
 
+
+----
+
 .. _CInfButtonArrayUpdateButtons:
 
 CInfButtonArray\:\:UpdateButtons
@@ -895,6 +967,9 @@ Returns ``int``
 **Remarks**
 
 
+
+
+----
 
 .. _CInfButtonArrayUpdateState:
 

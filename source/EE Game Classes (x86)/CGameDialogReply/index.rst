@@ -20,6 +20,8 @@ The structure used for this class is :ref:`CGameDialogReply<CGameDialogReply>`
 +---------------------------------------------------------------------------------------------------------------------------------+
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -59,6 +61,8 @@ Returns ``int``
 
 
 
+----
+
 .. _CGameDialogReplyPick:
 
 CGameDialogReply\:\:Pick
@@ -81,6 +85,8 @@ Returns :ref:`CGameDialogIdentifier<CGameDialogIdentifier>`\*
 **Remarks**
 
 
+
+----
 
 .. _CGameDialogReplyProcessInstants:
 

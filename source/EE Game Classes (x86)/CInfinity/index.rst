@@ -172,6 +172,8 @@ CInfinity Class
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -201,6 +203,8 @@ Constructs a ``CInfinity`` object
 
 
 
+----
+
 .. _CInfinity~CInfinity:
 
 CInfinity\:\:~CInfinity
@@ -218,6 +222,8 @@ Destroys the ``CInfinity`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -409,6 +415,9 @@ CInfinity\:\:AddAOECircle
 
 
 
+
+----
+
 .. _CInfinityAddAOECone:
 
 CInfinity\:\:AddAOECone
@@ -434,6 +443,9 @@ CInfinity\:\:AddAOECone
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityAddAOELine:
 
@@ -461,6 +473,9 @@ CInfinity\:\:AddAOELine
 
 
 
+
+----
+
 .. _CInfinityAddAOERectangle:
 
 CInfinity\:\:AddAOERectangle
@@ -486,6 +501,9 @@ CInfinity\:\:AddAOERectangle
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityAdjustViewPosition:
 
@@ -513,6 +531,9 @@ CInfinity\:\:AdjustViewPosition
 
 
 
+
+----
+
 .. _CInfinityAdjustViewportForZoom:
 
 CInfinity\:\:AdjustViewportForZoom
@@ -538,6 +559,9 @@ CInfinity\:\:AdjustViewportForZoom
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityAdjustZoom:
 
@@ -566,6 +590,9 @@ CInfinity\:\:AdjustZoom
 
 
 
+
+----
+
 .. _CInfinityAIUpdate:
 
 CInfinity\:\:AIUpdate
@@ -593,6 +620,9 @@ CInfinity\:\:AIUpdate
 
 
 
+
+----
+
 .. _CInfinityApplyNightGlobalTint:
 
 CInfinity\:\:ApplyNightGlobalTint
@@ -618,6 +648,9 @@ CInfinity\:\:ApplyNightGlobalTint
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityAttachVRamPool:
 
@@ -645,6 +678,9 @@ CInfinity\:\:AttachVRamPool
 
 
 
+
+----
+
 .. _CInfinityAttachVRamRect:
 
 CInfinity\:\:AttachVRamRect
@@ -670,6 +706,9 @@ CInfinity\:\:AttachVRamRect
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityAttachWED:
 
@@ -697,6 +736,9 @@ CInfinity\:\:AttachWED
 
 
 
+
+----
+
 .. _CInfinityCallLightning:
 
 CInfinity\:\:CallLightning
@@ -722,6 +764,9 @@ CInfinity\:\:CallLightning
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityClearAOE:
 
@@ -750,6 +795,9 @@ CInfinity\:\:ClearAOE
 
 
 
+
+----
+
 .. _CInfinityDetachVRamRect:
 
 CInfinity\:\:DetachVRamRect
@@ -777,6 +825,9 @@ CInfinity\:\:DetachVRamRect
 
 
 
+
+----
+
 .. _CInfinityDrawCone:
 
 CInfinity\:\:DrawCone
@@ -802,6 +853,9 @@ CInfinity\:\:DrawCone
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityDrawEllipse:
 
@@ -829,6 +883,9 @@ CInfinity\:\:DrawEllipse
 
 
 
+
+----
+
 .. _CInfinityDrawHighlightRect:
 
 CInfinity\:\:DrawHighlightRect
@@ -854,6 +911,9 @@ CInfinity\:\:DrawHighlightRect
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityDrawLine:
 
@@ -881,6 +941,9 @@ CInfinity\:\:DrawLine
 
 
 
+
+----
+
 .. _CInfinityDrawRectangle:
 
 CInfinity\:\:DrawRectangle
@@ -906,6 +969,9 @@ CInfinity\:\:DrawRectangle
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityFillPoly:
 
@@ -934,6 +1000,9 @@ CInfinity\:\:FillPoly
 
 
 
+
+----
+
 .. _CInfinityFitViewPosition:
 
 CInfinity\:\:FitViewPosition
@@ -961,6 +1030,9 @@ CInfinity\:\:FitViewPosition
 
 
 
+
+----
+
 .. _CInfinityFreeWED:
 
 CInfinity\:\:FreeWED
@@ -986,6 +1058,9 @@ CInfinity\:\:FreeWED
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityFXBltFrom:
 
@@ -1013,6 +1088,9 @@ CInfinity\:\:FXBltFrom<CInfinityFXBltFrom
 
 
 
+
+----
+
 .. _CInfinityFXBltFromClipped:
 
 CInfinity\:\:FXBltFromClipped
@@ -1038,6 +1116,9 @@ CInfinity\:\:FXBltFromClipped
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityFXLock:
 
@@ -1065,6 +1146,9 @@ CInfinity\:\:FXLock
 
 
 
+
+----
+
 .. _CInfinityFXLockPrepForLighting:
 
 CInfinity\:\:FXLockPrepForLighting
@@ -1090,6 +1174,9 @@ CInfinity\:\:FXLockPrepForLighting
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityFXPrep:
 
@@ -1118,6 +1205,9 @@ CInfinity\:\:FXPrep
 
 
 
+
+----
+
 .. _CInfinityFXRender:
 
 CInfinity\:\:FXRender
@@ -1145,6 +1235,9 @@ CInfinity\:\:FXRender
 
 
 
+
+----
+
 .. _CInfinityFXRenderAlpha:
 
 CInfinity\:\:FXRenderAlpha
@@ -1170,6 +1263,9 @@ CInfinity\:\:FXRenderAlpha
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityFXRenderClippingPolys:
 
@@ -1197,6 +1293,9 @@ CInfinity\:\:FXRenderClippingPolys
 
 
 
+
+----
+
 .. _CInfinityFXUnlock:
 
 CInfinity\:\:FXUnlock
@@ -1222,6 +1321,9 @@ CInfinity\:\:FXUnlock
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityGetFadedColor:
 
@@ -1249,6 +1351,9 @@ CInfinity\:\:GetFadedColor
 
 
 
+
+----
+
 .. _CInfinityGetGlobalLighting:
 
 CInfinity\:\:GetGlobalLighting
@@ -1274,6 +1379,9 @@ CInfinity\:\:GetGlobalLighting
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityGetPointsOctant0:
 
@@ -1302,6 +1410,9 @@ CInfinity\:\:GetPointsOctant0
 
 
 
+
+----
+
 .. _CInfinityGetPointsOctant1:
 
 CInfinity\:\:GetPointsOctant1
@@ -1329,6 +1440,9 @@ CInfinity\:\:GetPointsOctant1
 
 
 
+
+----
+
 .. _CInfinityGetSegmentPoints:
 
 CInfinity\:\:GetSegmentPoints
@@ -1354,6 +1468,9 @@ CInfinity\:\:GetSegmentPoints
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityGetScreenCoordinates:
 
@@ -1381,6 +1498,9 @@ CInfinity\:\:GetScreenCoordinates
 
 
 
+
+----
+
 .. _CInfinityGetViewPosition:
 
 CInfinity\:\:GetViewPosition
@@ -1406,6 +1526,9 @@ CInfinity\:\:GetViewPosition
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityGetWorldCoordinates:
 
@@ -1433,6 +1556,9 @@ CInfinity\:\:GetWorldCoordinates
 
 
 
+
+----
+
 .. _CInfinityInitViewPort:
 
 CInfinity\:\:InvalidateRainTiles
@@ -1458,6 +1584,9 @@ CInfinity\:\:InvalidateRainTiles
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityOutlinePoly:
 
@@ -1486,6 +1615,9 @@ CInfinity\:\:OutlinePoly
 
 
 
+
+----
+
 .. _CInfinityPostRender:
 
 CInfinity\:\:PostRender
@@ -1513,6 +1645,9 @@ CInfinity\:\:PostRender
 
 
 
+
+----
+
 .. _CInfinityReleaseZoom:
 
 CInfinity\:\:ReleaseZoom
@@ -1538,6 +1673,9 @@ CInfinity\:\:ReleaseZoom
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityRender:
 
@@ -1565,6 +1703,9 @@ CInfinity\:\:Render
 
 
 
+
+----
+
 .. _CInfinityRenderAOE:
 
 CInfinity\:\:RenderAOE
@@ -1590,6 +1731,9 @@ CInfinity\:\:RenderAOE
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityRenderEdgeFade:
 
@@ -1617,6 +1761,9 @@ CInfinity\:\:RenderEdgeFade
 
 
 
+
+----
+
 .. _CInfinityRenderFlash:
 
 CInfinity\:\:RenderFlash
@@ -1642,6 +1789,9 @@ CInfinity\:\:RenderFlash
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityRenderFog:
 
@@ -1670,6 +1820,9 @@ CInfinity\:\:RenderFog
 
 
 
+
+----
+
 .. _CInfinityRenderLightning:
 
 CInfinity\:\:RenderLightning
@@ -1697,6 +1850,9 @@ CInfinity\:\:RenderLightning
 
 
 
+
+----
+
 .. _CInfinityRenderMessageScreen:
 
 CInfinity\:\:RenderMessageScreen
@@ -1722,6 +1878,9 @@ CInfinity\:\:RenderMessageScreen
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityRenderTransitions:
 
@@ -1749,6 +1908,9 @@ CInfinity\:\:RenderTransitions
 
 
 
+
+----
+
 .. _CInfinityRestoreZoom:
 
 CInfinity\:\:RestoreZoom
@@ -1774,6 +1936,9 @@ CInfinity\:\:RestoreZoom
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityScreenToViewport:
 
@@ -1801,6 +1966,9 @@ CInfinity\:\:ScreenToViewport
 
 
 
+
+----
+
 .. _CInfinityScreenToWorld:
 
 CInfinity\:\:ScreenToWorld
@@ -1826,6 +1994,9 @@ CInfinity\:\:ScreenToWorld
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityScroll:
 
@@ -1854,6 +2025,9 @@ CInfinity\:\:Scroll
 
 
 
+
+----
+
 .. _CInfinitySetCurrentWeather:
 
 CInfinity\:\:SetCurrentWeather
@@ -1881,6 +2055,9 @@ CInfinity\:\:SetCurrentWeather
 
 
 
+
+----
+
 .. _CInfinitySetApproachingDawn:
 
 CInfinity\:\:SetApproachingDawn
@@ -1906,6 +2083,9 @@ CInfinity\:\:SetApproachingDawn
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinitySetApproachingDusk:
 
@@ -1933,6 +2113,9 @@ CInfinity\:\:SetApproachingDusk
 
 
 
+
+----
+
 .. _CInfinitySetDawn:
 
 CInfinity\:\:SetDawn
@@ -1958,6 +2141,9 @@ CInfinity\:\:SetDawn
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinitySetDawnMultiHost:
 
@@ -1985,6 +2171,9 @@ CInfinity\:\:SetDawnMultiHost
 
 
 
+
+----
+
 .. _CInfinitySetDay:
 
 CInfinity\:\:SetDay
@@ -2010,6 +2199,9 @@ CInfinity\:\:SetDay
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinitySetDusk:
 
@@ -2038,6 +2230,9 @@ CInfinity\:\:SetDusk<CInfinitySetDusk
 
 
 
+
+----
+
 .. _CInfinitySetDuskMultiHost:
 
 CInfinity\:\:SetDuskMultiHost
@@ -2065,6 +2260,9 @@ CInfinity\:\:SetDuskMultiHost
 
 
 
+
+----
+
 .. _CInfinitySetMessageScreen:
 
 CInfinity\:\:SetMessageScreen
@@ -2090,6 +2288,9 @@ CInfinity\:\:SetMessageScreen
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinitySetNight:
 
@@ -2117,6 +2318,9 @@ CInfinity\:\:SetNight
 
 
 
+
+----
+
 .. _CInfinitySetScreenShake:
 
 CInfinity\:\:SetScreenShake
@@ -2142,6 +2346,9 @@ CInfinity\:\:SetScreenShake
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinitySetScrollDest:
 
@@ -2169,6 +2376,9 @@ CInfinity\:\:SetScrollDest
 
 
 
+
+----
+
 .. _CInfinitySetViewPort:
 
 CInfinity\:\:SetViewPort
@@ -2194,6 +2404,9 @@ CInfinity\:\:SetViewPort
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinitySetViewPosition:
 
@@ -2222,6 +2435,9 @@ CInfinity\:\:SetViewPosition
 
 
 
+
+----
+
 .. _CInfinitySetZoom:
 
 CInfinity\:\:SetZoom
@@ -2249,6 +2465,9 @@ CInfinity\:\:SetZoom
 
 
 
+
+----
+
 .. _CInfinitySetZoomEnabled:
 
 CInfinity\:\:SetZoomEnabled
@@ -2274,6 +2493,9 @@ CInfinity\:\:SetZoomEnabled
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinitySetZoomViewport:
 
@@ -2301,6 +2523,9 @@ CInfinity\:\:SetZoomViewport
 
 
 
+
+----
+
 .. _CInfinityStoreZoom:
 
 CInfinity\:\:StoreZoom
@@ -2327,6 +2552,9 @@ CInfinity\:\:StoreZoom
 
 
 
+
+----
+
 .. _CInfinitySwapVRamTiles:
 
 CInfinity\:\:SwapVRamTiles
@@ -2352,6 +2580,9 @@ CInfinity\:\:SwapVRamTiles
 **Remarks**
 
 
+
+
+----
 
 .. _CInfinityUpdateLighting:
 

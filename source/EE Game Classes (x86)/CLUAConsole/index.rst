@@ -79,6 +79,8 @@ CLUAConsole Class
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -170,6 +172,9 @@ Adds gold to the party
 * ``unsigned long`` *dwGold* - amount of gold to add to party
 
 
+
+----
+
 .. _CLUAConsoleAddSpell:
 
 CLUAConsole\:\:AddSpell
@@ -197,6 +202,9 @@ A character must be selected for this to work
 To obtain the spell codes (ResRef) required for this command, please use Near Infinity to browse .spl files, or visit the specific spell page from the `BGII Wiki <https://baldursgate.fandom.com/wiki/Spells_(Baldur%27s_Gate_II)>`_ and look for the spell code in the right hand info bar - **exclude** the .spl extension when using the spell code.
 
 
+
+----
+
 .. _CLUAConsoleAdvanceRealTime:
 
 CLUAConsole\:\:AdvanceRealTime
@@ -216,6 +224,9 @@ Advance time
 
 Can be used to trigger banters and love talks etc
 
+
+
+----
 
 .. _CLUAConsoleCreateCreature:
 
@@ -239,6 +250,9 @@ Creature resource reference (ResRef) used in *Creature* must be 8 characters or 
 This spawns a creature to the center of the screen (or nearest valid point). If you’re spawning a creature you know will be hostile, you may want to pause the game before entering this command for the safety of your party.
 
 
+
+----
+
 .. _CLUAConsoleCreateEngine:
 
 CLUAConsole\:\:CreateEngine
@@ -257,6 +271,9 @@ Unknown - seems to start a new single ``0`` or multi ``1`` player game
 **Remarks**
 
 
+
+
+----
 
 .. _CLUAConsoleCreateItem:
 
@@ -289,6 +306,9 @@ Item resource reference (ResRef) used in *Item* must be 8 characters or less and
 This spawns an item, based on its item file name, or a stack of the same item, in the inventory of the current party leader.
 
 
+
+----
+
 .. _CLUAConsoleCreateVEFVidCell:
 
 CLUAConsole\:\:CreateVEFVidCell
@@ -309,6 +329,9 @@ Create VEFVidCell
 
 
 
+
+----
+
 .. _CLUAConsoleDisplayAllBAMFiles:
 
 CLUAConsole\:\:DisplayAllBAMFiles
@@ -325,6 +348,9 @@ Display all BAM files
 
 
 
+
+----
+
 .. _CLUAConsoleDisplayText:
 
 CLUAConsole\:\:DisplayText
@@ -340,6 +366,9 @@ Displays the specified text on screen
 
 * :ref:`CString<CString>` *text* - string containing text to display
 
+
+
+----
 
 .. _CLUAConsoleEnableCheatKeys:
 
@@ -426,8 +455,13 @@ The following cheat key combination are available once cheat keys has been enabl
 | CTRL+Y  | Kills creature under cursor              |
 +---------+------------------------------------------+
 
-In addition CTRL+8 during character creation will set all attributes to 18 (STR 18/00)
+In addition CTRL+8 during character creation will set all attributes to 18 (STR 18/00) 
 
+CTRL+SHIFT+Z while hovering over a character will grant every spell file in the game - may crash due to invalid spells
+
+
+
+----
 
 .. _CLUAConsoleEval:
 
@@ -457,6 +491,9 @@ See `BG(2)EE Script Actions <https://gibberlings3.github.io/iesdp/scripting/acti
 
 
 
+
+----
+
 .. _CLUAConsoleExec:
 
 CLUAConsole\:\:Exec
@@ -477,6 +514,9 @@ Execute console commands contained in the specified file
 .. C:Eval("test.txt") Will execute all the commands in the file test.txt 
 
 
+
+----
+
 .. _CLUAConsoleExploreArea:
 
 CLUAConsole\:\:ExploreArea
@@ -492,6 +532,9 @@ Reveals the entire map for the current area
 
 This doesn’t remove the fog of war; if a creature is out of your field of vision it will still remain hidden
 
+
+
+----
 
 .. _CLUAConsoleGetGlobal:
 
@@ -516,6 +559,9 @@ Gets a global variable value for an area
 
 
 
+
+----
+
 .. _CLUAConsoleLogMessages:
 
 CLUAConsole\:\:LogMessages
@@ -535,6 +581,9 @@ Enables or disables logging output to console
 
 See :ref:`CLUAConsole\:\:LogSet<CLUAConsoleLogSet>` to output logging to a file instead
 
+
+
+----
 
 .. _CLUAConsoleLogSet:
 
@@ -556,6 +605,9 @@ Sets logging to a file instead of to console if logging is enabled
 See :ref:`CLUAConsole\:\:LogMessages<CLUAConsoleLogMessages>` to enable logging
 
 
+
+----
+
 .. _CLUAConsoleLuaInit:
 
 CLUAConsole\:\:LuaInit
@@ -571,6 +623,9 @@ Initialize lua for the CLUAConsole
 
 
 
+
+----
+
 .. _CLUAConsoleLuaUninit:
 
 CLUAConsole\:\:LuaUninit
@@ -585,6 +640,9 @@ Uninitialize lua for the CLUAConsole
 **Remarks**
 
 
+
+
+----
 
 .. _CLUAConsoleMoveToArea:
 
@@ -605,6 +663,9 @@ Move the selected characters to the area specified
 
 
 
+
+----
+
 .. _CLUAConsolePickDialog:
 
 CLUAConsole\:\:PickDialog
@@ -623,6 +684,9 @@ CLUAConsole\:\:PickDialog
 **Remarks**
 
 
+
+
+----
 
 .. _CLUAConsolePlayMovie:
 
@@ -643,6 +707,9 @@ Plays the specified movie
 
 
 
+
+
+----
 
 .. _CLUAConsolePlaySound:
 
@@ -669,6 +736,9 @@ Plays the specified sound
 
 
 
+
+----
+
 .. _CLUAConsoleResetAchievements:
 
 CLUAConsole\:\:ResetAchievements
@@ -684,6 +754,9 @@ Reset achievements
 
 Applies to Steam installation only
 
+
+
+----
 
 .. _CLUAConsoleSetCurrentXP:
 
@@ -704,6 +777,9 @@ Sets the experience points (XP) of the selected character
 
 This sets the total, rather than adding a value to your current experience points. A level up will be triggered for characters that qualify, based on the experince points table for the character's class level.
 
+
+
+----
 
 .. _CLUAConsoleSetGlobal:
 
@@ -729,6 +805,9 @@ Set a global variable to the specified value
 
 
 
+
+----
+
 .. _CLUAConsoleSetWaterAlpha:
 
 CLUAConsole\:\:SetWaterAlpha
@@ -747,6 +826,9 @@ Sets the alpha blend level for water transparency
 **Remarks**
 
 
+
+
+----
 
 .. _CLUAConsoleSetWeather:
 
@@ -775,6 +857,9 @@ Valid values to set can be found in ``WEATHER.IDS``:
    3 FOG
 
 
+
+----
+
 .. _CLUAConsoleStartStore:
 
 CLUAConsole\:\:StartStore
@@ -795,6 +880,9 @@ Starts the specified store
 Crashes 
 
 
+
+----
+
 .. _CLUAConsoleStrrefOff:
 
 CLUAConsole\:\:StrrefOff
@@ -810,6 +898,9 @@ Strings are not displayed with their associated string reference (StrRef) id
 
 String reference (StrRef) values are located in the TLK table
 
+
+
+----
 
 .. _CLUAConsoleStrrefOn:
 
@@ -827,6 +918,9 @@ Strings are displayed with their associated string reference (StrRef) id
 String reference (StrRef) values are located in the TLK table
 
 
+
+----
+
 .. _CLUAConsoleTestAllDialog:
 
 CLUAConsole\:\:TestAllDialog
@@ -841,6 +935,9 @@ Lists all dialog file in the game, and checks for errors
 **Remarks**
 
 
+
+
+----
 
 .. _CLUAConsoleWorkshopUpload:
 
@@ -864,6 +961,9 @@ Upload a module to the Steam Workshop - Not tested or verified
 
 Applies to Steam installation only.
 
+
+
+----
 
 .. _CLUAConsoleWriteScript:
 

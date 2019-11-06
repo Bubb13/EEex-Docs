@@ -114,6 +114,8 @@ The structures used for this class are :ref:`CItem<CItem>`, :ref:`CResItem<CResI
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -143,6 +145,8 @@ Constructs a ``CItem`` object
 
 
 
+----
+
 CItem\:\:CItem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -163,6 +167,8 @@ Constructs a ``CItem`` object
 
 
 
+----
+
 CItem\:\:CItem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -182,6 +188,8 @@ Constructs a ``CItem`` object
 
 
 
+
+----
 
 CItem\:\:CItem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -214,6 +222,8 @@ Constructs a ``CItem`` object
 
 
 
+----
+
 .. _CItem~CItem:
 
 CItem\:\:~CItem
@@ -231,6 +241,8 @@ Destroys the ``CItem`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -345,6 +357,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CItemEquip:
 
 CItem\:\:Equip
@@ -369,6 +384,9 @@ CItem\:\:Equip
 
 
 
+
+----
+
 .. _CItemGetAbility:
 
 CItem\:\:GetAbility
@@ -392,6 +410,9 @@ Returns :ref:`Item_ability_st<Item_ability_st>`\*
 
 
 
+
+----
+
 .. _CItemGetAbilityCount:
 
 CItem\:\:GetAbilityCount
@@ -410,6 +431,9 @@ Returns ``int``
 **Remarks**
 
 
+
+
+----
 
 .. _CItemGetAbilityEffect:
 
@@ -439,6 +463,9 @@ Returns :ref:`CGameEffect<CGameEffect>`\*
 
 
 
+
+----
+
 .. _CItemGetAnimationType:
 
 CItem\:\:GetAnimationType
@@ -459,6 +486,9 @@ Returns an ``unsigned short``, the animation type for the item
 Returns ``(256 * Item_Header_st.animationType[1]) + Item_Header_st.animationType[2]`` or ``0`` if error
 
 
+
+----
+
 .. _CItemGetBaseValue:
 
 CItem\:\:GetBaseValue
@@ -478,6 +508,9 @@ Returns ``unsigned long``, the base value of the item
 
 Returns the :ref:`Item_Header_st<Item_Header_st>`.baseValue field value
 
+
+
+----
 
 .. _CItemGetDescription:
 
@@ -512,6 +545,9 @@ The :ref:`CItem<CItem>`.m_flags** field is checked for a value of ``1`` and retu
 See also :ref:`CItem\:\:GetGenericName<CItemGetGenericName>`
 
 
+
+----
+
 .. _CItemGetFlagsFile:
 
 CItem\:\:GetFlagsFile
@@ -531,6 +567,9 @@ Returns ``unsigned long``
 
 Returns the value of the :ref:`Item_Header_st<Item_Header_st>`.itemFlags field
 
+
+
+----
 
 .. _CItemGetGenericName:
 
@@ -565,6 +604,9 @@ The :ref:`CItem<CItem>`.m_flags field is checked for a value of ``1`` and return
 See also :ref:`CItem\:\:GetDescription<CItemGetDescription>`
 
 
+
+----
+
 .. _CItemGetGroundIcon:
 
 CItem\:\:GetGroundIcon
@@ -588,6 +630,9 @@ If there is no ground icon for the item, it returns a default/generic sack icon 
 
 See also :ref:`CItem\:\:GetItemIcon<CItemGetItemIcon>`
 
+
+
+----
 
 .. _CItemGetInventorySlotType:
 
@@ -690,6 +735,9 @@ If the value in :ref:`Item_Header_st<Item_Header_st>`.itemType is greater than `
 See also :ref:`CItem\:\:GetItemType<CItemGetItemType>`
 
 
+
+----
+
 .. _CItemGetItemFile:
 
 CItem\:\:GetItemFile
@@ -708,6 +756,9 @@ Returns :ref:`CCreatureFileItem<CCreatureFileItem>`
 **Remarks**
 
 
+
+
+----
 
 .. _CItemGetItemIcon:
 
@@ -730,6 +781,9 @@ Returns the resource reference stored in the :ref:`Item_Header_st<Item_Header_st
 
 See also :ref:`CItem\:\:GetGroundIcon<CItemGetGroundIcon>`
 
+
+
+----
 
 .. _CItemGetItemType:
 
@@ -794,6 +848,9 @@ Returns the value stored in the :ref:`Item_Header_st<Item_Header_st>`.itemType f
 See also :ref:`CItem\:\:GetInventorySlotType<CItemGetInventorySlotType>`
 
 
+
+----
+
 .. _CItemGetLoreValue:
 
 CItem\:\:GetLoreValue
@@ -816,6 +873,9 @@ The lore value of the item is used to determine if a character with a high enoug
 Returns the value stored in the :ref:`Item_Header_st<Item_Header_st>`.loreValue field
 
 
+
+----
+
 .. _CItemGetMaxStackable:
 
 CItem\:\:GetMaxStackable
@@ -837,6 +897,9 @@ For items of the same type: gems, arrows etc. Returns how many can be stacked to
 
 Returns the value stored in the :ref:`Item_Header_st<Item_Header_st>`.maxStackable field
 
+
+
+----
 
 .. _CItemGetMaxUsageCount:
 
@@ -864,6 +927,9 @@ Fetches the value stored in the :ref:`Item_Header_st<Item_Header_st>`.abilityCou
 Returns the value in the :ref:`Item_ability_st<Item_ability_st>`.maxUsageCount field or ``0`` otherwise
 
 
+
+----
+
 .. _CItemGetMinCHRRequired:
 
 CItem\:\:GetMinCHRRequired
@@ -883,6 +949,9 @@ Returns ``unsigned char`` of the minimum ability scrore
 
 Returns the value stored in the :ref:`Item_Header_st<Item_Header_st>`.minCHRRequired field
 
+
+
+----
 
 .. _CItemGetMinCONRequired:
 
@@ -904,6 +973,9 @@ Returns ``unsigned char`` of the minimum ability scrore
 Returns the value stored in the :ref:`Item_Header_st<Item_Header_st>`.minCONRequired field
 
 
+
+----
+
 .. _CItemGetMinDEXRequired:
 
 CItem\:\:GetMinDEXRequired
@@ -923,6 +995,9 @@ Returns ``unsigned char`` of the minimum ability scrore
 
 Returns the value stored in the :ref:`Item_Header_st<Item_Header_st>`.minDEXRequired field
 
+
+
+----
 
 .. _CItemGetMinINTRequired:
 
@@ -944,6 +1019,9 @@ Returns ``unsigned char`` of the minimum ability scrore
 Returns the value stored in the :ref:`Item_Header_st<Item_Header_st>`.minINTRequired field
 
 
+
+----
+
 .. _CItemGetMinLevelRequired:
 
 CItem\:\:GetMinLevelRequired
@@ -963,6 +1041,9 @@ Returns ``unsigned char`` of the minimum level
 
 Returns the value stored in the :ref:`Item_Header_st<Item_Header_st>`.minLevelRequired field
 
+
+
+----
 
 .. _CItemGetMinSTRBonusRequired:
 
@@ -984,6 +1065,9 @@ Returns ``unsigned char`` of the minimum ability scrore
 Returns the value stored in the :ref:`Item_Header_st<Item_Header_st>`.minSTRBonusRequired field
 
 
+
+----
+
 .. _CItemGetMinSTRRequired:
 
 CItem\:\:GetMinSTRRequired
@@ -1004,6 +1088,9 @@ Returns ``unsigned char`` of the minimum ability scrore
 Returns the value stored in the :ref:`Item_Header_st<Item_Header_st>`.minSTRRequired field
 
 
+
+----
+
 .. _CItemGetMinWISRequired:
 
 CItem\:\:GetMinWISRequired
@@ -1023,6 +1110,9 @@ Returns ``unsigned char`` of the minimum ability scrore
 
 Returns the value stored in the :ref:`Item_Header_st<Item_Header_st>`.minWISRequired field
 
+
+
+----
 
 .. _CItemGetNotUsableBy:
 
@@ -1113,6 +1203,9 @@ Returns the value stored in the :ref:`Item_Header_st<Item_Header_st>`.notUsableB
 
 
 
+
+----
+
 .. _CItemGetNotUsableBy2:
 
 CItem\:\:GetNotUsableBy2
@@ -1201,6 +1294,9 @@ Fetches the byte values stored in the following fields: :ref:`Item_Header_st<Ite
 +---------------------+--------------------+
 
 
+
+----
+
 .. _CItemGetProficiencyType:
 
 CItem\:\:GetProficiencyType
@@ -1249,6 +1345,9 @@ Returns the value stored in the :ref:`Item_Header_st<Item_Header_st>`.proficienc
    115 PROFICIENCYCLUB
 
 
+
+----
+
 .. _CItemGetUsabilityText:
 
 CItem\:\:GetUsabilityText
@@ -1268,6 +1367,9 @@ Returns :ref:`CString<CString>`
 
 Performs the equivalent of :ref:`CItem\:\:GetNotUsableBy<CItemGetNotUsableBy>` and :ref:`CItem\:\:GetNotUsableBy2<CItemGetNotUsableBy2>` all the CItem\:\:GetMin\* functions, and other functions and builds the string for the item restrictions
 
+
+
+----
 
 .. _CItemGetUsageCount:
 
@@ -1292,6 +1394,9 @@ Returns ``unsigned short``
 
 
 
+
+----
+
 .. _CItemGetUsedUpItemId:
 
 CItem\:\:GetUsedUpItemId
@@ -1310,6 +1415,9 @@ Returns :ref:`CResRef<CResRef>`
 **Remarks**
 
 
+
+
+----
 
 .. _CItemGetWeight:
 
@@ -1330,6 +1438,9 @@ Returns ``unsigned long``
 
 
 
+
+----
+
 .. _CItemLoadUsability:
 
 CItem\:\:LoadUsability
@@ -1344,6 +1455,9 @@ CItem\:\:LoadUsability
 **Remarks**
 
 
+
+
+----
 
 .. _CItemLoadWeaponIdentification:
 
@@ -1368,6 +1482,9 @@ CItem\:\:LoadWeaponIdentification
 
 
 
+
+----
+
 .. _CItemPushToLua:
 
 CItem\:\:PushToLua
@@ -1388,6 +1505,9 @@ CItem\:\:PushToLua
 
 
 
+
+----
+
 .. _CItemResolveRandomItem:
 
 CItem\:\:ResolveRandomItem
@@ -1406,6 +1526,9 @@ CItem\:\:ResolveRandomItem
 **Remarks**
 
 
+
+
+----
 
 .. _CItemSetResRef:
 
@@ -1429,6 +1552,9 @@ CItem\:\:SetResRef
 
 
 
+
+----
+
 .. _CItemSetUsageCount:
 
 CItem\:\:SetUsageCount
@@ -1451,6 +1577,9 @@ CItem\:\:SetUsageCount
 
 
 
+
+----
+
 .. _CItemSetWear:
 
 CItem\:\:SetWear
@@ -1469,6 +1598,9 @@ CItem\:\:SetWear
 **Remarks**
 
 
+
+
+----
 
 .. _CItemTranslateAnimationType:
 
@@ -1495,6 +1627,9 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+
+----
 
 .. _CItemUnequip:
 
@@ -1523,6 +1658,8 @@ CItem\:\:Unequip
 
 
 
+
+----
 
 ---------------
 Operators
@@ -1557,6 +1694,9 @@ Returns :ref:`CItem<CItem>`\&
 
 **Remarks**
 
+
+
+----
 
 .. _CItemOpNotEqu:
 

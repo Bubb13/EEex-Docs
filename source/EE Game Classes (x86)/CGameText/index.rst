@@ -29,6 +29,8 @@ The structure used for this class is :ref:`CGameText<CGameText>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -75,6 +77,8 @@ Constructs a ``CGameText`` object
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -112,6 +116,8 @@ CGameText\:\:AIUpdate
 
 
 
+----
+
 .. _CGameTextCanSaveGame:
 
 CGameText\:\:CanSaveGame
@@ -140,6 +146,8 @@ Returns ``unsigned char``
 
 
 
+----
+
 .. _CGameTextDoAIUpdate:
 
 CGameText\:\:DoAIUpdate
@@ -166,6 +174,8 @@ Returns ``unsigned char``
 
 
 
+----
+
 .. _CGameTextRemoveFromArea:
 
 CGameText\:\:RemoveFromArea
@@ -180,6 +190,8 @@ CGameText\:\:RemoveFromArea
 **Remarks**
 
 
+
+----
 
 .. _CGameTextRender:
 
@@ -202,6 +214,8 @@ Render text
 **Remarks**
 
 
+
+----
 
 .. _CGameTextSetText:
 

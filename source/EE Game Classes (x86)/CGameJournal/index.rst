@@ -47,6 +47,8 @@ The structure used for this class is :ref:`CGameJournal<CGameJournal>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -76,6 +78,8 @@ Constructs a ``CGameJournal`` object
 
 
 
+----
+
 .. _CGameJournal~CGameJournal:
 
 CGameJournal\:\:~CGameJournal
@@ -93,6 +97,8 @@ Destroys the ``CGameJournal`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -151,6 +157,8 @@ Returns an ``int`` value
 
 
 
+----
+
 CGameJournal\:\:AddEntry
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -181,6 +189,8 @@ Returns an ``int`` value
 
 
 
+----
+
 .. _CGameJournalAlphabetizeQuests:
 
 CGameJournal\:\:AlphabetizeQuests
@@ -199,6 +209,8 @@ Sorts quests in the specified chapter in alphabetical order
 **Remarks**
 
 
+
+----
 
 .. _CGameJournalChangeEntry:
 
@@ -221,6 +233,8 @@ Change a journal entry
 **Remarks**
 
 
+
+----
 
 CGameJournal\:\:ChangeEntry
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -247,6 +261,8 @@ Change a journal entry
 
 
 
+----
+
 .. _CGameJournalClearAllEntries:
 
 CGameJournal\:\:ClearAllEntries
@@ -261,6 +277,8 @@ Clear all journal entries
 **Remarks**
 
 
+
+----
 
 .. _CGameJournalCountEntries:
 
@@ -281,6 +299,8 @@ Returns an ``unsigned short`` value which is the count of all journal entries
 
 
 
+----
+
 .. _CGameJournalDeleteEntry:
 
 CGameJournal\:\:DeleteEntry
@@ -299,6 +319,8 @@ Delete a journal entry
 **Remarks**
 
 
+
+----
 
 .. _CGameJournalInsertEntryAfter:
 
@@ -326,6 +348,8 @@ Returns an ``int`` value
 
 **Remarks**
 
+
+----
 
 CGameJournal\:\:InsertEntryAfter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -360,6 +384,8 @@ Returns an ``int`` value
 **Remarks**
 
 
+----
+
 .. _CGameJournalMarshal:
 
 CGameJournal\:\:Marshal
@@ -380,6 +406,8 @@ CGameJournal\:\:Marshal
 
 
 
+----
+
 .. _CGameJournalSetQuestDone:
 
 CGameJournal\:\:SetQuestDone
@@ -398,6 +426,8 @@ Mark a journal quest entry as completed
 **Remarks**
 
 
+
+----
 
 .. _CGameJournalUnmarshal:
 
@@ -420,6 +450,8 @@ CGameJournal\:\:Unmarshal
 **Remarks**
 
 
+
+----
 
 .. _CGameJournalUpdateJournalEntry:
 

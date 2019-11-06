@@ -23,6 +23,8 @@ The structure used for this class is :ref:`CGamePermission<CGamePermission>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -52,6 +54,8 @@ Constructs a ``CGamePermission`` object
 
 
 
+----
+
 .. _CGamePermission~CGamePermission:
 
 CGamePermission\:\:~CGamePermission
@@ -69,6 +73,8 @@ Destroys the ``CGamePermission`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -106,6 +112,8 @@ Returns ``unsigned char``
 
 
 
+
+----
 
 .. _CGamePermissionSetSinglePermission:
 

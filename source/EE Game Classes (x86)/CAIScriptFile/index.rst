@@ -90,6 +90,8 @@ The structure used for this class is :ref:`CAIScriptFile<CAIScriptFile>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -117,6 +119,8 @@ Constructs a ``CAIScriptFile`` object
 
 Constructs a ``CAIScriptFile`` object
 
+----
+
 .. _CAIScriptFile~CAIScriptFile:
 
 CAIScriptFile\:\:~CAIScriptFile
@@ -134,6 +138,8 @@ Destroys the ``CAIScriptFile`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -234,6 +240,8 @@ Clear the contents of a script file
 
 
 
+----
+
 .. _CAIScriptFileDecodeActionID:
 
 CAIScriptFile\:\:DecodeActionID
@@ -256,6 +264,8 @@ Returns a ``short`` value representing the action id for the name specified
 **Remarks**
 
 
+
+----
 
 .. _CAIScriptFileDecodeActionType:
 
@@ -283,6 +293,8 @@ Returns a ``short`` value representing the action type
 
 
 
+----
+
 .. _CAIScriptFileDecodeSpecialCase:
 
 CAIScriptFile\:\:DecodeSpecialCase
@@ -305,6 +317,8 @@ Decodes a special case
 **Remarks**
 
 
+
+----
 
 .. _CAIScriptFileDecodeTriggerID:
 
@@ -329,6 +343,8 @@ Decodes and returns an trigger id name for the name specified
 
 
 
+----
+
 .. _CAIScriptFileDecompileAction:
 
 CAIScriptFile\:\:DecompileAction
@@ -350,6 +366,8 @@ Decompile an action
 **Remarks**
 
 
+
+----
 
 .. _CAIScriptFileDecompileInt:
 
@@ -374,6 +392,8 @@ CAIScriptFile\:\:DecompileInt
 
 
 
+----
+
 .. _CAIScriptFileDecompileObject:
 
 CAIScriptFile\:\:DecompileObject
@@ -397,6 +417,8 @@ Decompile a :ref:`CAIObjectType<CAIObjectType>` object
 
 
 
+----
+
 .. _CAIScriptFileDecompilePoint:
 
 CAIScriptFile\:\:DecompilePoint
@@ -415,6 +437,8 @@ Decompile an x and y point coordinate
 **Remarks**
 
 
+
+----
 
 .. _CAIScriptFileDecompileResponseSet:
 
@@ -438,6 +462,8 @@ Decompile a response set
 
 
 
+----
+
 .. _CAIScriptFileDecompileScript:
 
 CAIScriptFile\:\:DecompileScript
@@ -460,6 +486,8 @@ Decompile a script
 
 
 
+----
+
 .. _CAIScriptFileDecompileTrigger:
 
 CAIScriptFile\:\:DecompileTrigger
@@ -481,6 +509,8 @@ Decompile a :ref:`CAITrigger<CAITrigger>` trigger
 **Remarks**
 
 
+
+----
 
 .. _CAIScriptFileDontMergeStrings:
 
@@ -505,6 +535,8 @@ CAIScriptFile\:\:DontMergeStrings
 
 
 
+----
+
 .. _CAIScriptFileGetConstFile:
 
 CAIScriptFile\:\:GetConstFile
@@ -528,6 +560,8 @@ Returns a :ref:`CString<CString>`
 
 
 
+
+----
 
 .. _CAIScriptFileGetIdLine:
 
@@ -555,6 +589,8 @@ Returns a :ref:`CString<CString>`
 
 
 
+----
+
 .. _CAIScriptFileGetParameter:
 
 CAIScriptFile\:\:GetParameter
@@ -581,6 +617,8 @@ Returns a :ref:`CString<CString>`
 
 
 
+----
+
 .. _CAIScriptFileGetParameterType:
 
 CAIScriptFile\:\:GetParameterType
@@ -604,6 +642,8 @@ Returns a :ref:`CString<CString>`
 
 
 
+----
+
 .. _CAIScriptFileNewConditional:
 
 CAIScriptFile\:\:NewConditional
@@ -618,6 +658,8 @@ Creates a new condition
 **Remarks**
 
 
+
+----
 
 .. _CAIScriptFileNewResponse:
 
@@ -638,6 +680,8 @@ Create a new response
 
 
 
+----
+
 .. _CAIScriptFileNewResponseSet:
 
 CAIScriptFile\:\:NewResponseSet
@@ -652,6 +696,8 @@ Create a new response set
 **Remarks**
 
 
+
+----
 
 .. _CAIScriptFileParseAction:
 
@@ -677,6 +723,8 @@ Returns a :ref:`CAIAction<CAIAction>`
 
 
 
+----
+
 .. _CAIScriptFileParseConditionalString:
 
 CAIScriptFile\:\:ParseConditionalString
@@ -697,6 +745,8 @@ Parse a string that contains a conditional
 
 
 
+----
+
 .. _CAIScriptFileParseError:
 
 CAIScriptFile\:\:ParseError
@@ -715,6 +765,8 @@ Parse an error message for a script file
 **Remarks**
 
 
+
+----
 
 .. _CAIScriptFileParseInt:
 
@@ -742,6 +794,8 @@ Returns a ``long`` value
 
 
 
+----
+
 .. _CAIScriptFileParseObjectAtomic:
 
 CAIScriptFile\:\:ParseObjectAtomic
@@ -764,6 +818,8 @@ Returns a :ref:`CAIObjectType<CAIObjectType>`
 **Remarks**
 
 
+
+----
 
 .. _CAIScriptFileParseObjectFunction:
 
@@ -788,6 +844,8 @@ Returns a :ref:`CAIObjectType<CAIObjectType>`
 
 
 
+----
+
 .. _CAIScriptFileParseObjectType:
 
 CAIScriptFile\:\:ParseObjectType
@@ -810,6 +868,8 @@ Returns a :ref:`CAIObjectType<CAIObjectType>`
 **Remarks**
 
 
+
+----
 
 .. _CAIScriptFileParseOneLine:
 
@@ -835,6 +895,8 @@ Returns a ``short`` value
 
 
 
+----
+
 .. _CAIScriptFileParsePoint:
 
 CAIScriptFile\:\:ParsePoint
@@ -859,6 +921,8 @@ Returns an x and y point coordinate as :ref:`CPoint<CPoint>`
 
 
 
+----
+
 .. _CAIScriptFileParseResponseString:
 
 CAIScriptFile\:\:ParseResponseString
@@ -877,6 +941,8 @@ Parse a string containing response data
 **Remarks**
 
 
+
+----
 
 .. _CAIScriptFileParseTrigger:
 
@@ -900,6 +966,8 @@ Returns a ``short`` value
 **Remarks**
 
 
+
+----
 
 .. _CAIScriptFileReadAfterChar:
 
@@ -927,6 +995,8 @@ Returns a :ref:`CString<CString>`
 
 
 
+----
+
 .. _CAIScriptFileReadToChar:
 
 CAIScriptFile\:\:ReadToChar
@@ -953,6 +1023,8 @@ Returns a :ref:`CString<CString>`
 
 
 
+----
+
 .. _CAIScriptFileSaveEntry:
 
 CAIScriptFile\:\:SaveEntry
@@ -967,6 +1039,8 @@ Save entry to a script file
 **Remarks**
 
 
+
+----
 
 .. _CAIScriptFileWriteDecompileText:
 

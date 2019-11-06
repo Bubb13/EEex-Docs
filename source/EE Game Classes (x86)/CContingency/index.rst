@@ -18,6 +18,8 @@ The structure used for this class is :ref:`CContingency<CContingency>`
 +-------------------------------------------------------------------------------------------------------------------------+
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -44,6 +46,8 @@ Constructs a ``CContingency`` object
 Constructs a ``CContingency`` object
 
 
+
+----
 
 ---------------
 Operators

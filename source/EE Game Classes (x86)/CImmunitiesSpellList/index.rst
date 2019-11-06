@@ -24,6 +24,8 @@ The structure used for this class is :ref:`CImmunitiesSpellList<CImmunitiesSpell
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -55,6 +57,8 @@ CImmunitiesSpellList\:\:ClearAll
 
 
 
+----
+
 .. _CImmunitiesSpellListFindRes:
 
 CImmunitiesSpellList\:\:FindRes
@@ -81,6 +85,8 @@ Returns :ref:`CImmunitySpell<CImmunitySpell>`\*
 
 
 
+----
+
 .. _CImmunitiesSpellListOnList:
 
 CImmunitiesSpellList\:\:OnList
@@ -106,6 +112,8 @@ Returns ``int``
 **Remarks**
 
 
+
+----
 
 ---------------
 Operators

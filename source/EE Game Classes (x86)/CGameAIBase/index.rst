@@ -311,6 +311,8 @@ The structure used for this class is :ref:`CGameAIBase<CGameAIBase>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -340,6 +342,8 @@ Constructs a ``CGameAIBase`` object
 
 
 
+----
+
 .. _CGameAIBase~CGameAIBase:
 
 CGameAIBase\:\:~CGameAIBase
@@ -357,6 +361,8 @@ Destroys the ``CGameAIBase`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -673,6 +679,9 @@ CGameAIBase\:\:AddAction
 
 
 
+
+----
+
 .. _CGameAIBaseAddEffect:
 
 CGameAIBase\:\:AddEffect
@@ -699,6 +708,9 @@ CGameAIBase\:\:AddEffect
 
 
 
+
+----
+
 .. _CGameAIBaseAddExperiencePartyGlobal:
 
 CGameAIBase\:\:AddExperiencePartyGlobal
@@ -717,6 +729,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseAddGlobals:
 
@@ -737,6 +752,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseAddStoreItem:
 
 CGameAIBase\:\:AddStoreItem
@@ -755,6 +773,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseAddXP2DA:
 
@@ -775,6 +796,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseApplyEffectToParty:
 
 CGameAIBase\:\:ApplyEffectToParty
@@ -793,6 +817,9 @@ CGameAIBase\:\:ApplyEffectToParty
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseApplySpell:
 
@@ -818,6 +845,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseApplyTriggers:
 
 CGameAIBase\:\:ApplyTriggers
@@ -832,6 +862,9 @@ CGameAIBase\:\:ApplyTriggers
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseAttachTransitionToDoor:
 
@@ -856,6 +889,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseAutoPause:
 
 CGameAIBase\:\:AutoPause
@@ -874,6 +910,9 @@ CGameAIBase\:\:AutoPause
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseBlowThroughInstantActions:
 
@@ -894,6 +933,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CGameAIBaseChangeAIScript:
 
 CGameAIBase\:\:ChangeAIScript
@@ -911,6 +953,9 @@ Returns ``short``
 
 **Remarks**
 
+
+
+----
 
 .. _CGameAIBaseChangeTileState:
 
@@ -934,6 +979,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseCheckAppropriateTarget:
 
@@ -961,6 +1009,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CGameAIBaseCheckTimers:
 
 CGameAIBase\:\:CheckTimers
@@ -979,6 +1030,9 @@ CGameAIBase\:\:CheckTimers
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseClearActions:
 
@@ -1021,6 +1075,9 @@ CGameAIBase\:\:ClearActions
 
 
 
+
+----
+
 .. _CGameAIBaseClearAI:
 
 CGameAIBase\:\:ClearAI
@@ -1039,6 +1096,9 @@ CGameAIBase\:\:ClearAI
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseClearAllActions:
 
@@ -1059,6 +1119,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseClearTriggers:
 
 CGameAIBase\:\:ClearTriggers
@@ -1073,6 +1136,9 @@ CGameAIBase\:\:ClearTriggers
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseClickLButtonObject:
 
@@ -1097,6 +1163,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseClickLButtonPoint:
 
 CGameAIBase\:\:ClickLButtonPoint
@@ -1115,6 +1184,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseClickRButtonObject:
 
@@ -1139,6 +1211,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseClickRButtonPoint:
 
 CGameAIBase\:\:ClickRButtonPoint
@@ -1158,6 +1233,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseCloseDoor:
 
@@ -1182,6 +1260,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseCompressTime:
 
 CGameAIBase\:\:CompressTime
@@ -1204,6 +1285,9 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseContainerEnable:
 
@@ -1228,6 +1312,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseCreateCreature:
 
 CGameAIBase\:\:CreateCreature
@@ -1246,6 +1333,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseCreateCreatureObject:
 
@@ -1270,6 +1360,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseCreateItem:
 
 CGameAIBase\:\:CreateItem
@@ -1288,6 +1381,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseCreateVisualEffect:
 
@@ -1308,6 +1404,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseCreateVisualEffectObject:
 
@@ -1332,6 +1431,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseDeathMatchPosition:
 
 CGameAIBase\:\:DeathMatchPosition
@@ -1350,6 +1452,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseDecodeSpell:
 
@@ -1373,6 +1478,9 @@ CGameAIBase\:\:DecodeSpell
 
 
 
+
+----
+
 .. _CGameAIBaseDestroyItem:
 
 CGameAIBase\:\:DestroyItem
@@ -1391,6 +1499,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseDetectSecretDoor:
 
@@ -1415,6 +1526,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseDisplayString:
 
 CGameAIBase\:\:DisplayString
@@ -1437,6 +1551,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseDisplayStringPoint:
 
@@ -1467,6 +1584,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseDisplayStringWait:
 
 CGameAIBase\:\:DisplayStringWait
@@ -1490,6 +1610,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseDoAction:
 
 CGameAIBase\:\:DoAction
@@ -1504,6 +1627,9 @@ CGameAIBase\:\:DoAction
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseDoubleClickLButton:
 
@@ -1528,6 +1654,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseDoubleClickLButtonObject:
 
 CGameAIBase\:\:DoubleClickLButtonObject
@@ -1551,6 +1680,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseDoubleClickLButtonPoint:
 
 CGameAIBase\:\:DoubleClickLButtonPoint
@@ -1569,6 +1701,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseDoubleClickRButton:
 
@@ -1592,6 +1727,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseDoubleClickRButtonObject:
 
@@ -1617,6 +1755,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseDoubleClickRButtonPoint:
 
 CGameAIBase\:\:DoubleClickRButtonPoint
@@ -1635,6 +1776,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseEncodeSpell:
 
@@ -1662,6 +1806,9 @@ Returns ``long``
 
 
 
+
+----
+
 .. _CGameAIBaseEvaluateStatusTrigger:
 
 CGameAIBase\:\:EvaluateStatusTrigger
@@ -1685,6 +1832,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CGameAIBaseExecuteAction:
 
 CGameAIBase\:\:ExecuteAction
@@ -1703,6 +1853,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseExportParty:
 
@@ -1723,6 +1876,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseFadeFromColor:
 
 CGameAIBase\:\:FadeFromColor
@@ -1742,6 +1898,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseFadeToColor:
 
 CGameAIBase\:\:FadeToColor
@@ -1760,6 +1919,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseFireItem:
 
@@ -1789,6 +1951,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseFireItemPoint:
 
 CGameAIBase\:\:FireItemPoint
@@ -1816,6 +1981,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseFireSpell:
 
@@ -1854,6 +2022,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseFireSpellPoint:
 
 CGameAIBase\:\:FireSpellPoint
@@ -1890,6 +2061,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseForceSpell:
 
 CGameAIBase\:\:ForceSpell
@@ -1913,6 +2087,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseForceSpellPoint:
 
 CGameAIBase\:\:ForceSpellPoint
@@ -1931,6 +2108,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseGetAttackRange:
 
@@ -1951,6 +2131,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseGetBounding:
 
 CGameAIBase\:\:GetBounding
@@ -1970,6 +2153,9 @@ Returns :ref:`CRect<CRect>`
 
 
 
+
+----
+
 .. _CGameAIBaseGetCanSeeInvisible:
 
 CGameAIBase\:\:GetCanSeeInvisible
@@ -1988,6 +2174,9 @@ Returns ``int``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseGetGlobalVariable:
 
@@ -2015,6 +2204,9 @@ Returns :ref:`CVariable<CVariable>`\*
 
 
 
+
+----
+
 .. _CGameAIBaseGetHelpRange:
 
 CGameAIBase\:\:GetHelpRange
@@ -2033,6 +2225,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseGetNextAction:
 
@@ -2057,6 +2252,9 @@ Returns :ref:`CAIAction<CAIAction>`\&
 
 
 
+
+----
+
 .. _CGameAIBaseGetReaction:
 
 CGameAIBase\:\:GetReaction
@@ -2080,6 +2278,9 @@ Returns ``unsigned char``
 
 
 
+
+
+----
 
 .. _CGameAIBaseGetTargetShare:
 
@@ -2120,6 +2321,9 @@ Returns :ref:`CGameObject<CGameObject>`\*
 
 
 
+
+
+----
 
 .. _CGameAIBaseGetTargetShareType:
 
@@ -2167,6 +2371,9 @@ Returns :ref:`CGameObject<CGameObject>`\*
 
 
 
+
+----
+
 .. _CGameAIBaseGetTerrainTable:
 
 CGameAIBase\:\:GetTerrainTable
@@ -2185,6 +2392,9 @@ Returns ``const unsigned char``\*
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseGetVariableReference:
 
@@ -2212,6 +2422,9 @@ Returns :ref:`CVariable<CVariable>`\*
 
 
 
+
+----
+
 .. _CGameAIBaseGetVisibleTerrainTable:
 
 CGameAIBase\:\:GetVisibleTerrainTable
@@ -2230,6 +2443,9 @@ Returns ``const unsigned char``\*
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseGetVisualRange:
 
@@ -2250,6 +2466,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseGiveItemCreate:
 
@@ -2275,6 +2494,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseGiveObjectGoldGlobal:
 
 CGameAIBase\:\:GiveObjectGoldGlobal
@@ -2298,6 +2520,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseGiveOrder:
 
@@ -2323,6 +2548,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseGivePartyGold:
 
 CGameAIBase\:\:GivePartyGold
@@ -2342,6 +2570,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseGivePartyGoldGlobal:
 
@@ -2363,6 +2594,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseIncrementChapter:
 
 CGameAIBase\:\:IncrementChapter
@@ -2382,6 +2616,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseIncrementGlobal:
 
@@ -2403,6 +2640,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseInsertAction:
 
 CGameAIBase\:\:InsertAction
@@ -2422,6 +2662,9 @@ CGameAIBase\:\:InsertAction
 
 
 
+
+
+----
 
 .. _CGameAIBaseInsertResponse:
 
@@ -2448,6 +2691,9 @@ CGameAIBase\:\:InsertResponse
 
 
 
+
+----
+
 .. _CGameAIBaseLeaveAreaLuaPanic:
 
 CGameAIBase\:\:LeaveAreaLuaPanic
@@ -2468,6 +2714,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseLeaveAreaLuaPanicEntry:
 
 CGameAIBase\:\:LeaveAreaLuaPanicEntry
@@ -2487,6 +2736,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseLock:
 
@@ -2511,6 +2763,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseMoveContainerContents:
 
@@ -2539,6 +2794,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseMoveCursor:
 
 CGameAIBase\:\:MoveCursor
@@ -2566,6 +2824,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseMoveCursorPoint:
 
 CGameAIBase\:\:MoveCursorPoint
@@ -2585,6 +2846,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseMoveGlobal:
 
@@ -2610,6 +2874,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseMoveGlobalObject:
 
 CGameAIBase\:\:MoveGlobalObject
@@ -2633,6 +2900,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseMoveView:
 
@@ -2661,6 +2931,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseMoveViewObject:
 
 CGameAIBase\:\:MoveViewObject
@@ -2685,6 +2958,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseMoveViewPoint:
 
 CGameAIBase\:\:MoveViewPoint
@@ -2704,6 +2980,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseMultiPlayerSynch:
 
@@ -2725,6 +3004,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseOnActionRemoval:
 
 CGameAIBase\:\:OnActionRemoval
@@ -2744,6 +3026,9 @@ CGameAIBase\:\:OnActionRemoval
 
 
 
+
+
+----
 
 .. _CGameAIBaseOpenDoor:
 
@@ -2769,6 +3054,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBasePartyHasItem:
 
 CGameAIBase\:\:PartyHasItem
@@ -2792,6 +3080,9 @@ Returns ``int``
 
 
 
+
+
+----
 
 .. _CGameAIBasePlaceItem:
 
@@ -2826,6 +3117,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CGameAIBasePlaySound:
 
 CGameAIBase\:\:PlaySound
@@ -2846,6 +3140,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseProcessAI:
 
 CGameAIBase\:\:ProcessAI
@@ -2861,6 +3158,9 @@ CGameAIBase\:\:ProcessAI
 
 
 
+
+
+----
 
 .. _CGameAIBaseProcessPendingTriggers:
 
@@ -2882,6 +3182,9 @@ CGameAIBase\:\:ProcessPendingTriggers
 
 
 
+
+----
+
 .. _CGameAIBasePutItemGround:
 
 CGameAIBase\:\:PutItemGround
@@ -2901,6 +3204,9 @@ CGameAIBase\:\:PutItemGround
 
 
 
+
+
+----
 
 .. _CGameAIBaseQuickDecode:
 
@@ -2929,6 +3235,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CGameAIBaseRemoveFromArea:
 
 CGameAIBase\:\:RemoveFromArea
@@ -2944,6 +3253,9 @@ CGameAIBase\:\:RemoveFromArea
 
 
 
+
+
+----
 
 .. _CGameAIBaseRemoveStoreItem:
 
@@ -2964,6 +3276,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseRemoveTrapsNonSprite:
 
@@ -2989,6 +3304,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseRevealAreaOnMap:
 
 CGameAIBase\:\:RevealAreaOnMap
@@ -3009,6 +3327,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseSaveLocation:
 
 CGameAIBase\:\:SaveLocation
@@ -3028,6 +3349,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseSaveObjectLocation:
 
@@ -3053,6 +3377,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseSendTrigger:
 
 CGameAIBase\:\:SendTrigger
@@ -3077,6 +3404,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseSetClassScript:
 
 CGameAIBase\:\:SetClassScript
@@ -3097,6 +3427,9 @@ CGameAIBase\:\:SetClassScript
 
 
 
+
+----
+
 .. _CGameAIBaseSetCurrAction:
 
 CGameAIBase\:\:SetCurrAction
@@ -3116,6 +3449,9 @@ CGameAIBase\:\:SetCurrAction
 
 
 
+
+
+----
 
 .. _CGameAIBaseSetGabber:
 
@@ -3141,6 +3477,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseSetGeneralScript:
 
 CGameAIBase\:\:SetGeneralScript
@@ -3160,6 +3499,9 @@ CGameAIBase\:\:SetGeneralScript
 
 
 
+
+
+----
 
 .. _CGameAIBaseSetGlobal:
 
@@ -3181,6 +3523,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseSetGlobalTimer:
 
 CGameAIBase\:\:SetGlobalTimer
@@ -3201,6 +3546,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseSetOverrideScript:
 
 CGameAIBase\:\:SetOverrideScript
@@ -3220,6 +3568,9 @@ CGameAIBase\:\:SetOverrideScript
 
 
 
+
+
+----
 
 .. _CGameAIBaseSetupWish:
 
@@ -3248,6 +3599,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseSetRaceScript:
 
 CGameAIBase\:\:SetRaceScript
@@ -3267,6 +3621,9 @@ CGameAIBase\:\:SetRaceScript
 
 
 
+
+
+----
 
 .. _CGameAIBaseSetScript:
 
@@ -3291,6 +3648,9 @@ CGameAIBase\:\:SetScript
 
 
 
+
+----
+
 .. _CGameAIBaseSetTrigger:
 
 CGameAIBase\:\:SetTrigger
@@ -3310,6 +3670,9 @@ CGameAIBase\:\:SetTrigger
 
 
 
+
+
+----
 
 .. _CGameAIBaseShout:
 
@@ -3331,6 +3694,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseSmallWait:
 
 CGameAIBase\:\:SmallWait
@@ -3350,6 +3716,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseSpawnPtActivate:
 
@@ -3375,6 +3744,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseSpawnPtDeactivate:
 
 CGameAIBase\:\:SpawnPtDeactivate
@@ -3398,6 +3770,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseSpawnPtSpawn:
 
@@ -3423,6 +3798,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseStartCutScene:
 
 CGameAIBase\:\:StartCutScene
@@ -3447,6 +3825,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseStartMovie:
 
 CGameAIBase\:\:StartMovie
@@ -3466,6 +3847,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseStartTextScreen:
 
@@ -3487,6 +3871,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseStartTimer:
 
 CGameAIBase\:\:StartTimer
@@ -3506,6 +3893,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseStaticPalette:
 
@@ -3534,6 +3924,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseStaticSequence:
 
 CGameAIBase\:\:StaticSequence
@@ -3561,6 +3954,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseStaticStart:
 
 CGameAIBase\:\:StaticStart
@@ -3587,6 +3983,9 @@ Returns ``short``
 
 
 
+
+
+----
 
 .. _CGameAIBaseSubtractPartyItemUse:
 
@@ -3617,6 +4016,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CGameAIBaseSynchLastObjects:
 
 CGameAIBase\:\:SynchLastObjects
@@ -3632,6 +4034,9 @@ CGameAIBase\:\:SynchLastObjects
 
 
 
+
+
+----
 
 .. _CGameAIBaseTakeObjectGoldGlobal:
 
@@ -3657,6 +4062,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseTakePartyGold:
 
 CGameAIBase\:\:TakePartyGold
@@ -3675,6 +4083,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseTakePartyItem:
 
@@ -3695,6 +4106,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseTakePartyItemList:
 
 CGameAIBase\:\:TakePartyItemList
@@ -3714,6 +4128,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseTransformItem:
 
 CGameAIBase\:\:TransformItem
@@ -3732,6 +4149,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseTriggerActivation:
 
@@ -3756,6 +4176,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseUpdateTarget:
 
 CGameAIBase\:\:UpdateTarget
@@ -3775,6 +4198,9 @@ CGameAIBase\:\:UpdateTarget
 
 
 
+
+
+----
 
 .. _CGameAIBaseUnlock:
 
@@ -3800,6 +4226,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CGameAIBaseWait:
 
 CGameAIBase\:\:Wait
@@ -3818,6 +4247,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameAIBaseXEquipItem:
 

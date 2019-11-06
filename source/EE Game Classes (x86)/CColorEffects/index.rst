@@ -23,6 +23,8 @@ CColorEffects Class
 +--------------------------------------------------------------------------------------------------------------------------+
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -59,6 +61,8 @@ Apply color effects to a game sprite
 
 
 
+----
+
 .. _CColorEffectsMarshal:
 
 CColorEffects\:\:Marshal
@@ -82,6 +86,8 @@ Returns ``unsigned long``
 
 
 
+----
+
 .. _CColorEffectsUnmarshal:
 
 CColorEffects\:\:Unmarshal
@@ -104,6 +110,8 @@ CColorEffects\:\:Unmarshal
 
 
 
+----
+
 .. _CColorEffectsClearAll:
 
 CColorEffects\:\:ClearAll
@@ -119,6 +127,8 @@ Clear all color effects
 
 
 
+
+----
 
 ---------------
 Operators

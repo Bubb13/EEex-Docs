@@ -46,6 +46,8 @@ The structure used for this class is :ref:`CGameDialogSprite<CGameDialogSprite>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -74,6 +76,8 @@ Constructs a ``CGameDialogSprite`` object
 Constructs a ``CGameDialogSprite`` object
 
 
+----
+
 .. _CGameDialogSprite~CGameDialogSprite:
 
 CGameDialogSprite\:\:~CGameDialogSprite
@@ -91,6 +95,8 @@ Destroys the ``CGameDialogSprite`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -143,6 +149,8 @@ CGameDialogSprite\:\:AsynchronousUpdate
 
 
 
+----
+
 .. _CGameDialogSpriteClearMarshal:
 
 CGameDialogSprite\:\:ClearMarshal
@@ -158,6 +166,8 @@ CGameDialogSprite\:\:ClearMarshal
 
 
 
+----
+
 .. _CGameDialogSpriteEndDialog:
 
 CGameDialogSprite\:\:EndDialog
@@ -172,6 +182,8 @@ CGameDialogSprite\:\:EndDialog
 **Remarks**
 
 
+
+----
 
 .. _CGameDialogSpriteEnterDialog:
 
@@ -205,6 +217,8 @@ Returns ``int``
 
 
 
+----
+
 .. _CGameDialogSpriteFetchRumor:
 
 CGameDialogSprite\:\:FetchRumor
@@ -235,6 +249,8 @@ Returns ``int``
 
 
 
+----
+
 .. _CGameDialogSpriteGetFlagsFromFile:
 
 CGameDialogSprite\:\:GetFlagsFromFile
@@ -257,6 +273,8 @@ Returns ``unsigned long``
 **Remarks**
 
 
+
+----
 
 .. _CGameDialogSpriteLoad:
 
@@ -282,6 +300,8 @@ CGameDialogSprite\:\:Load
 
 **Remarks**
 
+
+----
 
 .. _CGameDialogSpriteReload:
 
@@ -309,6 +329,8 @@ Returns ``int``
 
 
 
+----
+
 .. _CGameDialogSpriteResetDialogStates:
 
 CGameDialogSprite\:\:ResetDialogStates
@@ -323,6 +345,8 @@ CGameDialogSprite\:\:ResetDialogStates
 **Remarks**
 
 
+
+----
 
 .. _CGameDialogSpriteSetResponseMarker:
 
@@ -343,6 +367,8 @@ CGameDialogSprite\:\:SetResponseMarker
 
 
 
+----
+
 .. _CGameDialogSpriteSetUpdateScroll:
 
 CGameDialogSprite\:\:SetUpdateScroll
@@ -357,6 +383,8 @@ CGameDialogSprite\:\:SetUpdateScroll
 **Remarks**
 
 
+
+----
 
 .. _CGameDialogSpriteStartDialog:
 
@@ -379,6 +407,8 @@ Returns ``int``
 
 **Remarks**
 
+
+----
 
 .. _CGameDialogSpriteUnmarshal:
 

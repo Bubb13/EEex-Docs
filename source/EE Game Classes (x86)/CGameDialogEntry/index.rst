@@ -23,6 +23,8 @@ The structure used for this class is :ref:`CGameDialogEntry<CGameDialogEntry>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -51,6 +53,8 @@ Destroys the ``CGameDialogEntry`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -96,6 +100,8 @@ CGameDialogEntry\:\:Display
 
 
 
+----
+
 .. _CGameDialogEntryHandle:
 
 CGameDialogEntry\:\:Handle
@@ -127,6 +133,8 @@ Returns :ref:`CGameDialogIdentifier<CGameDialogIdentifier>`\*
 **Remarks**
 
 
+
+----
 
 .. _CGameDialogEntryRemoveReplies:
 

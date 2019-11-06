@@ -74,6 +74,7 @@ EE Game Classes (x86)
    CItem/index
    CLUAConsole/index
    CMachineStates/index
+   CMapStringToString/index
    CMemINI/index
    CMoveList/index
    CMultiplayerSettings/index

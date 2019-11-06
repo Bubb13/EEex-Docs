@@ -26,6 +26,8 @@ The structure used for this class is :ref:`CFileView<CFileView>`
 +---------------------------------------------------------------------------------------------------------------------------------------+
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -54,6 +56,8 @@ Constructs a ``CFileView`` object
 Constructs a ``CFileView`` object
 
 
+----
+
 .. _CFileView~CFileView:
 
 CFileView\:\:~CFileView
@@ -71,6 +75,8 @@ Destroys the ``CFileView`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -113,6 +119,8 @@ Returns ``int``, a pointer to the file contents in memory
 
 
 
+----
+
 .. _CFileViewfgets:
 
 CFileView\:\:fgets
@@ -139,6 +147,8 @@ Returns ``char``\*
 
 
 
+----
+
 .. _CFileViewfseek:
 
 CFileView\:\:fseek
@@ -164,6 +174,8 @@ Returns ``int``
 **Remarks**
 
 
+
+----
 
 .. _CFileViewftell:
 

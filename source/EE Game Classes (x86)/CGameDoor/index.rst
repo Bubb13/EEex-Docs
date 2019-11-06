@@ -57,6 +57,8 @@ The structure used for this class is :ref:`CGameDoor<CGameDoor>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -96,6 +98,8 @@ Constructs a ``CGameDoor`` object
 Constructs a ``CGameDoor`` object
 
 
+----
+
 .. _CGameDoor~CGameDoor:
 
 CGameDoor\:\:~CGameDoor
@@ -113,6 +117,8 @@ Destroys the ``CGameDoor`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -177,6 +183,9 @@ CGameDoor\:\:AIUpdate
 
 
 
+
+----
+
 .. _CGameDoorAddEffect:
 
 CGameDoor\:\:AddEffect
@@ -204,6 +213,9 @@ Add a game effect to a door
 
 Used for setting trap effects on doors, eg. fireball, lightning, poison, or piercing, slashing damage etc
 
+
+
+----
 
 .. _CGameDoorCanSaveGame:
 
@@ -233,6 +245,9 @@ CGameDoor\:\:CanSaveGame
 
 
 
+
+----
+
 .. _CGameDoorCompressTime:
 
 CGameDoor\:\:CompressTime
@@ -256,6 +271,9 @@ CGameDoor\:\:CompressTime
 
 
 
+
+----
+
 .. _CGameDoorDebugDump:
 
 CGameDoor\:\:DebugDump
@@ -277,6 +295,9 @@ Debug message from door class
 **Remarks**
 
 
+
+
+----
 
 .. _CGameDoorDoAIUpdate:
 
@@ -304,6 +325,9 @@ CGameDoor\:\:DoAIUpdate
 
 
 
+
+----
+
 .. _CGameDoorGetBoundingRectClosed:
 
 CGameDoor\:\:GetBoundingRectClosed
@@ -321,6 +345,9 @@ Returns a :ref:`CRect<CRect>` which defines the bounding dimensions of the close
 
 **Remarks**
 
+
+
+----
 
 .. _CGameDoorGetBoundingRectOpen:
 
@@ -341,6 +368,9 @@ Returns a :ref:`CRect<CRect>` which defines the bounding dimensions of the open 
 
 
 
+
+
+----
 
 .. _CGameDoorGetMoveDest:
 
@@ -365,6 +395,9 @@ Returns :ref:`CPoint<CPoint>`\&
 
 
 
+
+----
+
 .. _CGameDoorIsOver:
 
 CGameDoor\:\:IsOver
@@ -388,6 +421,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 
 
 
+
+----
+
 .. _CGameDoorMarshal:
 
 CGameDoor\:\:Marshal
@@ -407,6 +443,9 @@ CGameDoor\:\:Marshal
 
 
 
+
+----
+
 .. _CGameDoorOnActionButton:
 
 CGameDoor\:\:OnActionButton
@@ -425,6 +464,9 @@ Event action for when mouse is clicked on the door
 **Remarks**
 
 
+
+
+----
 
 .. _CGameDoorOnDoorStatusUpdate:
 
@@ -452,6 +494,9 @@ CGameDoor\:\:OnDoorStatusUpdate
 
 
 
+
+----
+
 .. _CGameDoorRemoveFromArea:
 
 CGameDoor\:\:RemoveFromArea
@@ -465,6 +510,9 @@ CGameDoor\:\:RemoveFromArea
 
 **Remarks**
 
+
+
+----
 
 .. _CGameDoorRender:
 
@@ -488,6 +536,9 @@ CGameDoor\:\:Render
 
 
 
+
+----
+
 .. _CGameDoorSetCursor:
 
 CGameDoor\:\:SetCursor
@@ -507,6 +558,9 @@ Set the cursor and tooltip when mouse is over the door
 
 
 
+
+----
+
 .. _CGameDoorSetDrawPoly:
 
 CGameDoor\:\:SetDrawPoly
@@ -525,6 +579,9 @@ CGameDoor\:\:SetDrawPoly
 **Remarks**
 
 
+
+
+----
 
 .. _CGameDoorToggleDoor:
 
@@ -547,6 +604,9 @@ Toggles door by the specified character, opens door if it is currently closed, a
 **Remarks**
 
 
+
+
+----
 
 .. _CGameDoorToggleTransitionTrigger:
 

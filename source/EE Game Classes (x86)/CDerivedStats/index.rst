@@ -80,6 +80,8 @@ The structure used for this class is :ref:`CDerivedStats<CDerivedStats>`
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -108,6 +110,8 @@ Constructs a ``CDerivedStats`` object
 Constructs a ``CDerivedStats`` object
 
 
+----
+
 .. _CDerivedStats~CDerivedStats:
 
 CDerivedStats\:\:~CDerivedStats
@@ -125,6 +129,8 @@ Destroys the ``CDerivedStats`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -208,6 +214,9 @@ CDerivedStats\:\:BonusInit
 
 
 
+
+----
+
 .. _CDerivedStatsCheckLimits:
 
 CDerivedStats\:\:CheckLimits
@@ -222,6 +231,9 @@ CDerivedStats\:\:CheckLimits
 **Remarks**
 
 
+
+
+----
 
 .. _CDerivedStatsGetAtOffset:
 
@@ -246,6 +258,9 @@ Returns ``long``
 
 
 
+
+----
+
 .. _CDerivedStatsGetAverageLevel:
 
 CDerivedStats\:\:GetAverageLevel
@@ -269,6 +284,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CDerivedStatsGetCastingTime:
 
 CDerivedStats\:\:GetCastingTime
@@ -291,6 +309,9 @@ Returns ``unsigned long``
 **Remarks**
 
 
+
+
+----
 
 .. _CDerivedStatsGetClassLevel:
 
@@ -317,6 +338,9 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+
+----
 
 .. _CDerivedStatsGetCriticalValue:
 
@@ -349,6 +373,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CDerivedStatsGetExtState:
 
 CDerivedStats\:\:GetExtState
@@ -367,6 +394,9 @@ Returns ``unsigned long``
 **Remarks**
 
 
+
+
+----
 
 .. _CDerivedStatsGetFalseColor:
 
@@ -390,6 +420,9 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+
+----
 
 .. _CDerivedStatsGetLevel:
 
@@ -417,6 +450,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CDerivedStatsGetLevelField:
 
 CDerivedStats\:\:GetLevelField
@@ -441,6 +477,9 @@ CDerivedStats\:\:GetLevelField
 
 
 
+
+----
+
 .. _CDerivedStatsGetMaximumLevel:
 
 CDerivedStats\:\:GetMaximumLevel
@@ -463,6 +502,9 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+
+----
 
 .. _CDerivedStatsGetPriestLevel:
 
@@ -488,6 +530,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CDerivedStatsGetPriestLevelCast:
 
 CDerivedStats\:\:GetPriestLevelCast
@@ -512,6 +557,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CDerivedStatsGetRating:
 
 CDerivedStats\:\:GetRating
@@ -534,6 +582,9 @@ Returns ``float``
 **Remarks**
 
 
+
+
+----
 
 .. _CDerivedStatsGetRogueLevel:
 
@@ -558,6 +609,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CDerivedStatsGetSpellState:
 
 CDerivedStats\:\:GetSpellState
@@ -580,6 +634,9 @@ Returns ``int``
 **Remarks**
 
 
+
+
+----
 
 .. _CDerivedStatsGetWarriorLevel:
 
@@ -604,6 +661,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CDerivedStatsGetWizardLevel:
 
 CDerivedStats\:\:GetWizardLevel
@@ -627,6 +687,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CDerivedStatsGetWizardLevelCast:
 
 CDerivedStats\:\:GetWizardLevelCast
@@ -649,6 +712,9 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+
+----
 
 .. _CDerivedStatsGetXP:
 
@@ -680,6 +746,9 @@ CDerivedStats\:\:GetXP
 
 
 
+
+----
+
 .. _CDerivedStatsMarshal:
 
 CDerivedStats\:\:Marshal
@@ -701,6 +770,9 @@ CDerivedStats\:\:Marshal
 **Remarks**
 
 
+
+
+----
 
 .. _CDerivedStatsNumAttacksFloatToShort:
 
@@ -725,6 +797,9 @@ Returns ``short``
 
 
 
+
+----
+
 .. _CDerivedStatsNumAttacksShortToFloat:
 
 CDerivedStats\:\:NumAttacksShortToFloat
@@ -748,6 +823,9 @@ Returns ``float``
 
 
 
+
+
+----
 
 .. _CDerivedStatsReload:
 
@@ -775,6 +853,9 @@ CDerivedStats\:\:Reload
 
 
 
+
+----
+
 .. _CDerivedStatsSetExtState:
 
 CDerivedStats\:\:SetExtState
@@ -794,6 +875,9 @@ CDerivedStats\:\:SetExtState
 
 
 
+
+
+----
 
 .. _CDerivedStatsSetLevel:
 
@@ -820,6 +904,9 @@ CDerivedStats\:\:SetLevel
 
 
 
+
+----
+
 .. _CDerivedStatsSetSpellState:
 
 CDerivedStats\:\:SetSpellState
@@ -843,6 +930,9 @@ Returns ``int``
 
 
 
+
+
+----
 
 .. _CDerivedStatsUnmarshal:
 
@@ -880,7 +970,6 @@ Operators
 | :ref:`CDerivedStats\:\:operator+=<CDerivedStatsOpPlusEqu>` |                                                                                         |
 +------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
-
 .. _CDerivedStatsOpEqu:
 
 CDerivedStats\:\:operator=
@@ -904,6 +993,9 @@ Returns :ref:`CDerivedStats<CDerivedStats>`\&
 
 
 
+
+
+----
 
 .. _CDerivedStatsOpPlusEqu:
 

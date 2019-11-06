@@ -85,6 +85,8 @@ The structure used for this class is :ref:`CScreenStart<CScreenStart>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -111,6 +113,8 @@ Constructs a ``CScreenStart`` object
 Constructs a ``CScreenStart`` object
 
 
+
+----
 
 ---------------
 Methods
@@ -208,6 +212,9 @@ Returns ``int``
 
 
 
+
+----
+
 .. _CScreenStartClearSaveGameName:
 
 CScreenStart\:\:ClearSaveGameName
@@ -222,6 +229,9 @@ Clear save game filename
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenStartDismissChooseCampaignPopup:
 
@@ -238,6 +248,9 @@ Closes choose campaign dialog
 
 
 
+
+----
+
 .. _CScreenStartEngineActivated:
 
 CScreenStart\:\:EngineActivated
@@ -252,6 +265,9 @@ CScreenStart\:\:EngineActivated
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenStartEngineDeactivated:
 
@@ -268,6 +284,9 @@ CScreenStart\:\:EngineDeactivated
 
 
 
+
+----
+
 .. _CScreenStartEngineDestroyed:
 
 CScreenStart\:\:EngineDestroyed
@@ -283,6 +302,9 @@ CScreenStart\:\:EngineDestroyed
 
 
 
+
+----
+
 .. _CScreenStartEngineInitialized:
 
 CScreenStart\:\:EngineInitialized
@@ -297,6 +319,9 @@ CScreenStart\:\:EngineInitialized
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenStartGetCampaign:
 
@@ -318,6 +343,9 @@ Returns an ``int` value representing campaign id
 
 
 
+
+----
+
 .. _CScreenStartGetContinueSaveGameName:
 
 CScreenStart\:\:GetContinueSaveGameName
@@ -338,6 +366,9 @@ Returns a :ref:`CString<CString>` containing the save game
 See also :ref:`CScreenStart\:\:HasGameToContinue<CScreenStartHasGameToContinue>`
 
 
+
+----
+
 .. _CScreenStartGetEngineState:
 
 CScreenStart\:\:GetEngineState
@@ -356,6 +387,9 @@ Returns an ``int` value representing the engine state
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenStartGetNumVirtualKeys:
 
@@ -376,6 +410,9 @@ Returns a ``short`` value
 
 
 
+
+----
+
 .. _CScreenStartGetVirtualKeys:
 
 CScreenStart\:\:GetVirtualKeys
@@ -394,6 +431,9 @@ Returns :ref:`CKeyInfo<CKeyInfo>`\*
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenStartGetVirtualKeysFlags:
 
@@ -414,6 +454,9 @@ Returns ``int``\*
 
 
 
+
+----
+
 .. _CScreenStartHasGameToContinue:
 
 CScreenStart\:\:HasGameToContinue
@@ -433,6 +476,9 @@ Returns an ``int`` representing true ``1`` or false ``0``
 
 See also :ref:`CScreenStart\:\:GetContinueSaveGameName<CScreenStartGetContinueSaveGameName>`
 
+
+
+----
 
 .. _CScreenStartOnCampaignButtonClick:
 
@@ -461,6 +507,9 @@ Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value u
 :ref:`CScreenStart\:\:OnCampaignButtonClick<CScreenStartOnCampaignButtonClick>` is called from :ref:`CScreenStart\:\:TimerAsynchronousUpdate<CScreenStartTimerAsynchronousUpdate>` and :ref:`tolua_BaldurLUA_CScreenStart_OnCampaignButtonClick00<tolua_BaldurLUA_CScreenStart_OnCampaignButtonClick00>`
 
 
+
+----
+
 .. _CScreenStartOnContinueGame:
 
 CScreenStart\:\:OnContinueGame
@@ -480,6 +529,9 @@ Returns ``bool`` - true ``1`` or false ``0``
 
 
 
+
+----
+
 .. _CScreenStartOnCreatePartyButtonClick:
 
 CScreenStart\:\:OnCreatePartyButtonClick
@@ -494,6 +546,9 @@ Event action for when create party button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenStartOnDLCImageClick:
 
@@ -510,6 +565,9 @@ Event action for when a dlc button is clicked
 
 
 
+
+----
+
 .. _CScreenStartOnImportCharacterButtonClick:
 
 CScreenStart\:\:OnImportCharacterButtonClick
@@ -524,6 +582,9 @@ Event action for when import character button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenStartOnKeyDown:
 
@@ -544,6 +605,9 @@ Key event for a key being pressed
 
 
 
+
+----
+
 .. _CScreenStartOnLoadGameButtonClick:
 
 CScreenStart\:\:OnLoadGameButtonClick
@@ -558,6 +622,9 @@ Event action for when load game button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenStartOnMultiPlayerButtonClick:
 
@@ -575,6 +642,9 @@ Event action for when multiplayer button is clicked
 
 
 
+
+----
+
 .. _CScreenStartOnNewGameButtonClick:
 
 CScreenStart\:\:OnNewGameButtonClick
@@ -590,6 +660,9 @@ Event action for when new game button is clicked
 
 
 
+
+----
+
 .. _CScreenStartOnOptionsButtonClick:
 
 CScreenStart\:\:OnOptionsButtonClick
@@ -604,6 +677,9 @@ Event action for when options button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenStartOnPreGenerateButtonClick:
 
@@ -621,6 +697,9 @@ Event action for when pre-generate button is clicked
 Allows player to select pre-generated characters from a list in a dialog to play in the game
 
 
+
+----
+
 .. _CScreenStartOnPregenSelectButtonClick:
 
 CScreenStart\:\:OnPregenSelectButtonClick
@@ -636,6 +715,9 @@ Event action for when a selection button in the pre-generate is clicked
 
 
 
+
+----
+
 .. _CScreenStartOnQuitButtonClick:
 
 CScreenStart\:\:OnQuitButtonClick
@@ -650,6 +732,9 @@ Event action for when quit button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenStartOnSoAButtonClick:
 
@@ -677,6 +762,9 @@ Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value u
 :ref:`CScreenStart\:\:OnSoAButtonClick<CScreenStartOnSoAButtonClick>` is called from :ref:`CScreenStart\:\:TimerAsynchronousUpdate<CScreenStartTimerAsynchronousUpdate>` and :ref:`tolua_BaldurLUA_CScreenStart_OnSoAButtonClick00<tolua_BaldurLUA_CScreenStart_OnSoAButtonClick00>`
 
 
+
+----
+
 .. _CScreenStartOnTBPButtonClick:
 
 CScreenStart\:\:OnTBPButtonClick
@@ -702,6 +790,9 @@ Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value u
 
 :ref:`CScreenStart\:\:OnTBPButtonClick<CScreenStartOnTBPButtonClick>` is called from :ref:`CScreenStart\:\:TimerAsynchronousUpdate<CScreenStartTimerAsynchronousUpdate>` and :ref:`tolua_BaldurLUA_CScreenStart_OnTBPButtonClick00<tolua_BaldurLUA_CScreenStart_OnTBPButtonClick00>`
 
+
+
+----
 
 .. _CScreenStartOnToBButtonClick:
 
@@ -729,6 +820,9 @@ Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value u
 :ref:`CScreenStart\:\:OnToBButtonClick<CScreenStartOnToBButtonClick>` is called from :ref:`tolua_BaldurLUA_CScreenStart_OnToBButtonClick00<tolua_BaldurLUA_CScreenStart_OnToBButtonClick00>`
 
 
+
+----
+
 .. _CScreenStartOnTutorialButtonClick:
 
 CScreenStart\:\:OnTutorialButtonClick
@@ -749,6 +843,9 @@ Calls :ref:`CScreenStart\:\:OnNewGameButtonClick<CScreenStartOnNewGameButtonClic
 :ref:`CScreenStart\:\:OnTutorialButtonClick<CScreenStartOnTutorialButtonClick>` is called from :ref:`tolua_BaldurLUA_CScreenStart_OnTutorialButtonClick00<tolua_BaldurLUA_CScreenStart_OnTutorialButtonClick00>`
 
 
+
+----
+
 .. _CScreenStartReadyEndCredits:
 
 CScreenStart\:\:ReadyEndCredits
@@ -763,6 +860,9 @@ Event action for when credits button is clicked
 **Remarks**
 
 
+
+
+----
 
 .. _CScreenStartTimerAsynchronousUpdate:
 
@@ -780,6 +880,9 @@ Update timer asynchronously
 Processes a number of possible options: end credits to play based on ``2DECRED.2DA``, show splash screen, game options dialog, campaign button, SoA button, ToB button, TBP button etc.
 
 Calls the following functions: :ref:`CScreenStart\:\:OnSoAButtonClick<CScreenStartOnSoAButtonClick>`, :ref:`CScreenStart\:\:OnTBPButtonClick<CScreenStartOnTBPButtonClick>` and :ref:`CScreenStart\:\:OnCampaignButtonClick<CScreenStartOnCampaignButtonClick>`
+
+
+----
 
 .. _CScreenStartTimerSynchronousUpdate:
 

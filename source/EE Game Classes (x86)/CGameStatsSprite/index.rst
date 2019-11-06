@@ -37,6 +37,8 @@ The structure used for this class is :ref:`CGameStatsSprite<CGameStatsSprite>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -63,6 +65,8 @@ Constructs a ``CGameStatsSprite`` object
 Constructs a ``CGameStatsSprite`` object
 
 
+
+----
 
 ---------------
 Methods
@@ -113,6 +117,8 @@ Returns a characters favourite spell they have used the most
 See also :ref:`CGameStatsSprite\:\:RecordSpellUse<CGameStatsSpriteRecordSpellUse>`
 
 
+----
+
 .. _CGameStatsSpriteGetFavouriteWeapon:
 
 CGameStatsSprite\:\:GetFavouriteWeapon
@@ -132,6 +138,8 @@ Returns a characters favourite weapon they have used the most
 
 See also :ref:`CGameStatsSprite\:\:RecordWeaponUse<CGameStatsSpriteRecordWeaponUse>`
 
+
+----
 
 .. _CGameStatsSpriteGetStrongestKill:
 
@@ -153,6 +161,8 @@ Returns a characters strongest creature they have killed
 See also :ref:`CGameStatsSprite\:\:RecordKill<CGameStatsSpriteRecordKill>`
 
 
+----
+
 .. _CGameStatsSpriteGetTimeWithParty:
 
 CGameStatsSprite\:\:GetTimeWithParty
@@ -173,6 +183,8 @@ Returns a characters time with the party
 See also :ref:`CGameStatsSprite\:\:RecordJoinParty<CGameStatsSpriteRecordJoinParty>` and :ref:`CGameStatsSprite\:\:RecordLeaveParty<CGameStatsSpriteRecordLeaveParty>`
 
 
+----
+
 .. _CGameStatsSpriteRecordJoinParty:
 
 CGameStatsSprite\:\:RecordJoinParty
@@ -188,6 +200,8 @@ Records the time stamp when a character joins the party
 
 See also :ref:`CGameStatsSprite\:\:GetTimeWithParty<CGameStatsSpriteGetTimeWithParty>` and :ref:`CGameStatsSprite\:\:RecordLeaveParty<CGameStatsSpriteRecordLeaveParty>`
 
+
+----
 
 .. _CGameStatsSpriteRecordKill:
 
@@ -209,6 +223,8 @@ Records the strongest creature killed
 See also :ref:`CGameStatsSprite\:\:GetStrongestKill<CGameStatsSpriteGetStrongestKill>`
 
 
+----
+
 .. _CGameStatsSpriteRecordLeaveParty:
 
 CGameStatsSprite\:\:RecordLeaveParty
@@ -224,6 +240,8 @@ Records the time stamp when a character leaves the party
 
 See also :ref:`CGameStatsSprite\:\:GetTimeWithParty<CGameStatsSpriteGetTimeWithParty>` and :ref:`CGameStatsSprite\:\:RecordJoinParty<CGameStatsSpriteRecordJoinParty>`
 
+
+----
 
 .. _CGameStatsSpriteRecordSpellUse:
 
@@ -246,6 +264,8 @@ See also :ref:`CGameStatsSprite\:\:GetFavouriteSpell<CGameStatsSpriteGetFavourit
 
 
 
+----
+
 .. _CGameStatsSpriteRecordWeaponUse:
 
 CGameStatsSprite\:\:RecordWeaponUse
@@ -264,6 +284,8 @@ Records favourite weapon used by a character
 **Remarks**
 
 
+
+----
 
 .. _CGameStatsSpriteResetChapterStats:
 

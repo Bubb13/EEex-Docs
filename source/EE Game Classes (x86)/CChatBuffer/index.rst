@@ -25,6 +25,8 @@ The structure used for this class is :ref:`CChatBuffer<CChatBuffer>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -53,6 +55,8 @@ Constructs a ``CChatBuffer`` object
 Constructs a ``CChatBuffer`` object
 
 
+----
+
 .. _CChatBuffer~CChatBuffer:
 
 CChatBuffer\:\:~CChatBuffer
@@ -70,6 +74,8 @@ Destroys the ``CChatBuffer`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -108,6 +114,8 @@ Add a message to chat
 
 
 
+----
+
 .. _CChatBufferClearMessages:
 
 CChatBuffer\:\:ClearMessages
@@ -122,6 +130,8 @@ Clear chat messages
 **Remarks**
 
 
+
+----
 
 .. _CChatBufferUpdateTextDisplay:
 

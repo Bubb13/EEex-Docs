@@ -29,6 +29,8 @@ The structure used for this class is :ref:`CAIIdList<CAIIdList>`
 +-------------------------------------------------------------------------------------------------------------------------------------+
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -50,12 +52,35 @@ Constructs a ``CAIIdList`` object
 
 ::
 
-   void CAIIdList();
+   void CAIIdList::CAIIdList();
 
 **Remarks**
 
 Constructs a ``CAIIdList`` object
 
+
+
+----
+
+CAIIdList\:\:CAIIdList
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Constructs a ``CAIIdList`` object
+
+::
+
+   void CAIIdList::CAIIdList(CResRef id);
+
+**Parameters**
+
+* :ref:`CResRef<CResRef>` *id* - resource reference id
+
+**Remarks**
+
+Constructs a ``CAIIdList`` object
+
+
+----
 
 .. _CAIIdList~CAIIdList:
 
@@ -75,6 +100,8 @@ Destroys the ``CAIIdList`` object
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -82,35 +109,10 @@ Methods
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | **Name**                                                 | **Description**                                                                         |
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CAIIdList\:\:CAIIdList<CAIIdListCAIIdList2>`       |                                                                                         |
-+----------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CAIIdList\:\:Find<CAIIdListFind>`                  |                                                                                         |
-+----------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CAIIdList\:\:Find<CAIIdListFind2>`                 |                                                                                         |
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CAIIdList\:\:LoadList<CAIIdListLoadList>`          |                                                                                         |
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CAIIdList\:\:LoadList<CAIIdListLoadList2>`         |                                                                                         |
-+----------------------------------------------------------+-----------------------------------------------------------------------------------------+
-
-
-.. _CAIIdListCAIIdList2:
-
-CAIIdList\:\:CAIIdList
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-::
-
-   void CAIIdList::CAIIdList(CResRef id);
-
-**Parameters**
-
-* :ref:`CResRef<CResRef>` *id* - resource reference id
-
-**Remarks**
-
 
 
 .. _CAIIdListFind:
@@ -136,7 +138,7 @@ Returns a pointer to :ref:`CAIId<CAIId>`
 
 
 
-.. _CAIIdListFind2:
+----
 
 CAIIdList\:\:Find
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -162,6 +164,8 @@ Returns a pointer to :ref:`CAIId<CAIId>`
 
 
 
+----
+
 .. _CAIIdListLoadList:
 
 CAIIdList\:\:LoadList
@@ -181,7 +185,7 @@ CAIIdList\:\:LoadList
 
 
 
-.. _CAIIdListLoadList2:
+----
 
 CAIIdList\:\:LoadList
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -38,6 +38,8 @@ The structure used for this class is :ref:`CGameFireball3d<CGameFireball3d>`
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -92,6 +94,8 @@ Constructs a ``CGameFireball3d`` object
 
 
 
+----
+
 .. _CGameFireball3d~CGameFireball3d:
 
 CGameFireball3d\:\:~CGameFireball3d
@@ -109,6 +113,8 @@ Destroys the ``CGameFireball3d`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -154,6 +160,8 @@ CGameFireball3d\:\:AIUpdate
 
 
 
+----
+
 .. _CGameFireball3dAddToAreaFireball:
 
 CGameFireball3d\:\:AddToAreaFireball
@@ -184,6 +192,8 @@ Returns ``int``
 
 
 
+----
+
 .. _CGameFireball3dCanSaveGame:
 
 CGameFireball3d\:\:CanSaveGame
@@ -212,6 +222,8 @@ Returns ``unsigned char``
 
 
 
+----
+
 .. _CGameFireball3dCreateStaticTemporal:
 
 CGameFireball3d\:\:CreateStaticTemporal
@@ -235,6 +247,8 @@ CGameFireball3d\:\:CreateStaticTemporal
 **Remarks**
 
 
+
+----
 
 .. _CGameFireball3dCreateTemporal:
 
@@ -260,6 +274,8 @@ CGameFireball3d\:\:CreateTemporal
 
 
 
+----
+
 .. _CGameFireball3dRemoveFromArea:
 
 CGameFireball3d\:\:RemoveFromArea
@@ -274,6 +290,8 @@ Remove fireball object from area
 **Remarks**
 
 
+
+----
 
 .. _CGameFireball3dRender:
 
@@ -296,6 +314,8 @@ Render fireball object
 **Remarks**
 
 
+----
+
 .. _CGameFireball3dSetFlags:
 
 CGameFireball3d\:\:SetFlags
@@ -316,6 +336,8 @@ Set fireball object flags
 
 
 
+----
+
 .. _CGameFireball3dSetSndExplosion:
 
 CGameFireball3d\:\:SetSndExplosion
@@ -334,6 +356,8 @@ Set sound explosion for the fireball object
 **Remarks**
 
 
+
+----
 
 .. _CGameFireball3dSetSpriteSplashVidCell:
 

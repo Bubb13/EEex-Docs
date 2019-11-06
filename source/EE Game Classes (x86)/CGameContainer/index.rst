@@ -89,6 +89,8 @@ The structure used for this class is :ref:`CGameContainer<CGameContainer>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -125,6 +127,8 @@ Constructs a ``CGameContainer`` object
 Constructs a ``CGameContainer`` object
 
 
+----
+
 CGameContainer\:\:CGameContainer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -157,6 +161,8 @@ Constructs a ``CGameContainer`` object
 
 
 
+----
+
 .. _CGameContainer~CGameContainer:
 
 CGameContainer\:\:~CGameContainer
@@ -174,6 +180,8 @@ Destroys the ``CGameContainer`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -268,6 +276,9 @@ CGameContainer\:\:AIUpdate
 
 
 
+
+----
+
 .. _CGameContainerAddEffect:
 
 CGameContainer\:\:AddEffect
@@ -294,6 +305,9 @@ Add a game effect to a container
 
 Used for setting trap effects on containers, eg. fireball, lightning, poison, or piercing, slashing damage etc
 
+
+
+----
 
 .. _CGameContainerCanSaveGame:
 
@@ -323,6 +337,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CGameContainerCompressContainer:
 
 CGameContainer\:\:CompressContainer
@@ -338,6 +355,9 @@ CGameContainer\:\:CompressContainer
 
 
 
+
+
+----
 
 .. _CGameContainerCompressTime:
 
@@ -362,6 +382,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CGameContainerCountItem:
 
 CGameContainer\:\:CountItem
@@ -385,6 +408,9 @@ Returns a ``short`` value reprenting the number of items in the container
 
 
 
+
+----
+
 .. _CGameContainerDebugDump:
 
 CGameContainer\:\:DebugDump
@@ -406,6 +432,9 @@ Debug message from container class
 **Remarks**
 
 
+
+
+----
 
 .. _CGameContainerDoAIUpdate:
 
@@ -433,6 +462,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CGameContainerFindItemSlot:
 
 CGameContainer\:\:FindItemSlot
@@ -457,6 +489,9 @@ Returns a ``short`` value representing the slot id for the item in a container
 Does this return 0 or -1 if item not found in container ?
 
 
+
+----
+
 .. _CGameContainerGetBounding:
 
 CGameContainer\:\:GetBounding
@@ -475,6 +510,9 @@ Returns a :ref:`CRect<CRect>` which defines the bounding dimensions of the conta
 **Remarks**
 
 
+
+
+----
 
 .. _CGameContainerGetItem:
 
@@ -499,6 +537,9 @@ Returns :ref:`CItem<CItem>`\*
 
 
 
+
+----
+
 .. _CGameContainerGetNPoly:
 
 CGameContainer\:\:GetNPoly
@@ -521,6 +562,9 @@ Polygons are used when highlighting containers with a bright colored outline
 See also :ref:`CGameContainer\:\:GetPoly<CGameContainerGetPoly>` and :ref:`CGameContainer\:\:SetDrawPoly<CGameContainerSetDrawPoly>`
 
 
+
+----
+
 .. _CGameContainerGetNumTrueItems:
 
 CGameContainer\:\:GetNumTrueItems
@@ -539,6 +583,9 @@ Returns ``short``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameContainerGetPoly:
 
@@ -562,6 +609,9 @@ Polygons are used when highlighting containers with a bright colored outline
 See also :ref:`CGameContainer\:\:GetNPoly<CGameContainerGetNPoly>` and :ref:`CGameContainer\:\:SetDrawPoly<CGameContainerSetDrawPoly>`
 
 
+
+----
+
 .. _CGameContainerHasItemType:
 
 CGameContainer\:\:HasItemType
@@ -584,6 +634,9 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameContainerHasItemWithFlag:
 
@@ -612,6 +665,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CGameContainerIsOver:
 
 CGameContainer\:\:IsOver
@@ -635,6 +691,9 @@ Returns an ``int`` value representing ``1`` true, or ``0`` false
 
 
 
+
+----
+
 .. _CGameContainerMarshal:
 
 CGameContainer\:\:Marshal
@@ -653,6 +712,9 @@ CGameContainer\:\:Marshal
 **Remarks**
 
 
+
+
+----
 
 .. _CGameContainerMarshalMessage:
 
@@ -676,6 +738,9 @@ CGameContainer\:\:MarshalMessage
 
 
 
+
+----
+
 .. _CGameContainerOnActionButton:
 
 CGameContainer\:\:OnActionButton
@@ -694,6 +759,9 @@ Event action for when mouse is clicked on the container
 **Remarks**
 
 
+
+
+----
 
 .. _CGameContainerOpenContainer:
 
@@ -714,6 +782,9 @@ Opens container by the specified character
 
 
 
+
+----
+
 .. _CGameContainerPlaceAllGold:
 
 CGameContainer\:\:PlaceAllGold
@@ -732,6 +803,9 @@ Takes gold and places the specified amount into the shared party gold stash
 **Remarks**
 
 
+
+
+----
 
 .. _CGameContainerPlaceItemInBlankSlot:
 
@@ -764,6 +838,9 @@ Returns ``unsigned char``
 
 
 
+
+----
+
 .. _CGameContainerRefreshRenderPile:
 
 CGameContainer\:\:RefreshRenderPile
@@ -778,6 +855,9 @@ CGameContainer\:\:RefreshRenderPile
 **Remarks**
 
 
+
+
+----
 
 .. _CGameContainerRender:
 
@@ -801,6 +881,9 @@ CGameContainer\:\:Render
 
 
 
+
+----
+
 .. _CGameContainerSetCursor:
 
 CGameContainer\:\:SetCursor
@@ -819,6 +902,9 @@ Set the cursor and tooltip when mouse is over the container
 **Remarks**
 
 
+
+
+----
 
 .. _CGameContainerSetDrawPoly:
 
@@ -843,6 +929,9 @@ See also :ref:`CGameContainer\:\:GetNPoly<CGameContainerGetNPoly>` and :ref:`CGa
 
 
 
+
+----
+
 .. _CGameContainerSetFlags:
 
 CGameContainer\:\:SetFlags
@@ -861,6 +950,9 @@ Set container flags
 **Remarks**
 
 
+
+
+----
 
 .. _CGameContainerSetItem:
 
@@ -884,6 +976,9 @@ Set an item in a container slot
 
 
 
+
+----
+
 .. _CGameContainerSetTrapActivated:
 
 CGameContainer\:\:SetTrapActivated
@@ -904,6 +999,9 @@ Sets or clears if a trap is activated on the container
 if trap is to be activated or already sprung, or not enabled
 
 
+
+----
+
 .. _CGameContainerSetTrapDetected:
 
 CGameContainer\:\:SetTrapDetected
@@ -923,6 +1021,9 @@ Sets if a trap on a container has been detected yet
 
 
 
+
+----
+
 .. _CGameContainerTakeAllGold:
 
 CGameContainer\:\:TakeAllGold
@@ -941,6 +1042,9 @@ Returns ``unsigned long``
 **Remarks**
 
 
+
+
+----
 
 .. _CGameContainerTakeCreatureItems:
 
@@ -964,6 +1068,9 @@ Take items from a creature
 
 Typically a dead creature is seen as a container for looting purposes.
 
+
+
+----
 
 .. _CGameContainerRemoveFromArea:
 

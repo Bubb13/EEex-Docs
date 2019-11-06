@@ -22,6 +22,8 @@ The structure used for this class is :ref:`CImmunitiesItemTypeEquipList<CImmunit
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -51,6 +53,8 @@ CImmunitiesItemTypeEquipList\:\:ClearAll
 
 
 
+----
+
 .. _CImmunitiesItemTypeEquipListOnList:
 
 CImmunitiesItemTypeEquipList\:\:OnList
@@ -79,6 +83,8 @@ Returns ``int``
 
 
 
+
+----
 
 ---------------
 Operators

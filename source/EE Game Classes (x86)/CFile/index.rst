@@ -52,6 +52,8 @@ CFile Class
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -81,6 +83,8 @@ Constructs a ``CFile`` object
 Constructs a ``CFile`` object
 
 
+----
+
 .. _CFile~CFile:
 
 CFile\:\:~CFile
@@ -96,6 +100,8 @@ Destroys the ``CFile`` object
 
 Destroys the ``CFile`` object
 
+
+----
 
 ---------------
 Methods
@@ -158,6 +164,9 @@ If you haven't closed the file before destroying the object, the destructor clos
 When handling exceptions, :ref:`CFile\:\:Abort<CFileAbort>` differs from :ref:`CFile\:\:Close<CFileClose>` in that it won't throw an exception on failures, because failures are ignored by Abort.
 
 
+
+----
+
 .. _CFileClose:
 
 CFile\:\:Close
@@ -174,6 +183,9 @@ Closes a file and deletes the object
 If you haven't closed the file before destroying the object, the destructor closes it for you.
 
 
+
+----
+
 .. _CFileFlush:
 
 CFile\:\:Flush
@@ -188,6 +200,9 @@ Flushes any data yet to be written
 **Remarks**
 
 
+
+
+----
 
 .. _CFileGetBufferPtr:
 
@@ -215,6 +230,9 @@ Returns ``unsigned int``
 
 
 
+
+----
+
 .. _CFileGetFileName:
 
 CFile\:\:GetFileName
@@ -234,6 +252,9 @@ Returns a :ref:`CString<CString>`
 
 To return the entire path of the file, including the name, call :ref:`CFile\:\:GetFilePath<CFileGetFilePath>`. To return the title of the file (myfile), call :ref:`CFile\:\:GetFileTitle<CFileGetFileTitle>`.
 
+
+
+----
 
 .. _CFileGetFilePath:
 
@@ -255,6 +276,9 @@ Returns a :ref:`CString<CString>`
 To return just the name of the file (myfile.wri), call :ref:`CFile\:\:GetFileName<CFileGetFileName>`. To return the title of the file (myfile), call :ref:`CFile\:\:GetFileTitle<CFileGetFileTitle>`.
 
 
+
+----
+
 .. _CFileGetFileTitle:
 
 CFile\:\:GetFileTitle
@@ -274,6 +298,9 @@ Returns a :ref:`CString<CString>`
 
 To return the entire path of the file, including the name, call :ref:`CFile\:\:GetFilePath<CFileGetFilePath>`. To return just the name of the file, call :ref:`CFile\:\:GetFileName<CFileGetFileName>`.
 
+
+
+----
 
 .. _CFileGetLength:
 
@@ -295,6 +322,9 @@ Returns ``unsigned long``
 
 
 
+
+----
+
 .. _CFileGetPosition:
 
 CFile\:\:GetPosition
@@ -313,6 +343,9 @@ Returns ``unsigned long``
 **Remarks**
 
 
+
+
+----
 
 .. _CFileGetStatus:
 
@@ -353,6 +386,9 @@ The CFileStatus structure has the following fields:
 * ``char`` m_szFullName[_MAX_PATH] - The absolute filename in the Windows character set.
 
 
+
+----
+
 .. _CFileOpen:
 
 CFile\:\:Open
@@ -382,6 +418,9 @@ Nonzero if the open was successful; otherwise ``0``.
 "safe" method for opening a file, where a failure is a normal, expected condition.
 
 
+
+----
+
 .. _CFileRead:
 
 CFile\:\:Read
@@ -409,6 +448,9 @@ The number of bytes transferred to the buffer.
 For all CFile classes, the return value may be less than nCount if the end of file was reached.
 
 
+
+----
+
 .. _CFileRemove:
 
 CFile\:\:Remove
@@ -428,6 +470,9 @@ Deletes the specified file
 
 :ref:`CFile\:\:Remove<CFileRemove>` won't remove a directory.
 
+
+
+----
 
 .. _CFileSeek:
 
@@ -467,6 +512,9 @@ The exception handler for this method must delete the exception object after the
 
 
 
+
+----
+
 .. _CFileSetFilePath:
 
 CFile\:\:SetFilePath
@@ -487,6 +535,9 @@ Sets the full file path of the selected file
 :ref:`CFile\:\:SetFilePath<CFileSetFilePath>` does not open the file or create the file; it simply associates the :ref:`CFile<CFile>` object with a path name, which can then be used.
 
 
+
+----
+
 .. _CFileSetLength:
 
 CFile\:\:SetLength
@@ -502,6 +553,9 @@ Changes the length of the file
 
 * ``unsigned long`` *dwNewLen* - Desired length of the file in bytes. This value can be larger or smaller than the current length of the file. The file will be extended or truncated as appropriate.
 
+
+
+----
 
 .. _CFileWrite:
 

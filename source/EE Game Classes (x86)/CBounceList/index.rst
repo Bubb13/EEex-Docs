@@ -21,6 +21,8 @@ The structure used for this class is :ref:`CBounceList<CBounceList>`
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -70,6 +72,8 @@ CBounceList\:\:Add
 
 
 
+----
+
 .. _CBounceListClearAll:
 
 CBounceList\:\:ClearAll
@@ -84,6 +88,8 @@ CBounceList\:\:ClearAll
 **Remarks**
 
 
+
+----
 
 .. _CBounceListProcess:
 

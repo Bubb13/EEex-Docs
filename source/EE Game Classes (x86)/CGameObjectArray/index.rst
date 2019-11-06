@@ -29,6 +29,8 @@ The structure used for this class is :ref:`CGameObjectArray<CGameObjectArray>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -57,6 +59,8 @@ Destroys the ``CGameObjectArray`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -106,6 +110,8 @@ Returns ``unsigned char``
 
 
 
+----
+
 .. _CGameObjectArrayChangeEntry:
 
 CGameObjectArray\:\:ChangeEntry
@@ -132,6 +138,8 @@ Returns ``unsigned char``
 
 
 
+----
+
 .. _CGameObjectArrayClean:
 
 CGameObjectArray\:\:Clean
@@ -146,6 +154,8 @@ CGameObjectArray\:\:Clean
 **Remarks**
 
 
+
+----
 
 .. _CGameObjectArrayDelete:
 
@@ -169,6 +179,8 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+----
 
 .. _CGameObjectArrayGetDeny:
 
@@ -195,6 +207,8 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+----
 
 .. _CGameObjectArrayGetShare:
 

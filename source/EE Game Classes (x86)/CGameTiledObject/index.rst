@@ -20,6 +20,8 @@ CGameTiledObject Class
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -58,6 +60,8 @@ Constructs a ``CGameTiledObject`` object
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -86,6 +90,8 @@ CGameTiledObject\:\:RemoveFromArea
 
 
 
+
+----
 
 .. _CGameTiledObjectToggleState:
 

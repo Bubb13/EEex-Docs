@@ -25,6 +25,8 @@ The structure used for this class is :ref:`CImmunitiesWeapon<CImmunitiesWeapon>`
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -58,6 +60,8 @@ CImmunitiesWeapon\:\:ClearAll
 
 
 
+----
+
 .. _CImmunitiesWeaponMarshal:
 
 CImmunitiesWeapon\:\:Marshal
@@ -80,6 +84,8 @@ Returns ``unsigned long``
 **Remarks**
 
 
+
+----
 
 .. _CImmunitiesWeaponOnList:
 
@@ -104,6 +110,8 @@ Returns ``int``
 
 
 
+----
+
 .. _CImmunitiesWeaponUnmarshal:
 
 CImmunitiesWeapon\:\:Unmarshal
@@ -126,6 +134,8 @@ CImmunitiesWeapon\:\:Unmarshal
 
 
 
+
+----
 
 ---------------
 Operators

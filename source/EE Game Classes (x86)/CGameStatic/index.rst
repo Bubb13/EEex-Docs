@@ -44,6 +44,8 @@ The structure used for this class is :ref:`CGameStatic<CGameStatic>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -80,6 +82,8 @@ Constructs a ``CGameStatic`` object
 
 
 
+----
+
 .. _CGameStatic~CGameStatic:
 
 CGameStatic\:\:~CGameStatic
@@ -97,6 +101,8 @@ Destroys the ``CGameStatic`` object
 
 
 
+
+----
 
 ---------------
 Methods
@@ -147,6 +153,8 @@ CGameStatic\:\:AIUpdate
 
 
 
+----
+
 .. _CGameStaticCanSaveGame:
 
 CGameStatic\:\:CanSaveGame
@@ -175,6 +183,8 @@ Returns ``unsigned char``
 
 
 
+----
+
 .. _CGameStaticCompressTime:
 
 CGameStatic\:\:CompressTime
@@ -197,6 +207,8 @@ Returns ``unsigned char``
 **Remarks**
 
 
+
+----
 
 .. _CGameStaticDoAIUpdate:
 
@@ -224,6 +236,8 @@ Returns ``unsigned char``
 
 
 
+----
+
 .. _CGameStaticMarshal:
 
 CGameStatic\:\:Marshal
@@ -243,6 +257,8 @@ CGameStatic\:\:Marshal
 
 
 
+----
+
 .. _CGameStaticRemoveFromArea:
 
 CGameStatic\:\:RemoveFromArea
@@ -257,6 +273,8 @@ CGameStatic\:\:RemoveFromArea
 **Remarks**
 
 
+
+----
 
 .. _CGameStaticRender:
 
@@ -282,6 +300,8 @@ CGameStatic\:\:Render
 
 
 
+----
+
 .. _CGameStaticRenderBam:
 
 CGameStatic\:\:RenderBam
@@ -304,6 +324,8 @@ Render BAM image
 
 
 
+
+----
 
 .. _CGameStaticRenderPVR:
 
@@ -328,6 +350,8 @@ Render PowerVR based image
 Enhanced Edition games use PVR/PVRZ based MOS, TIS and BAM file formats
 
 
+----
+
 .. _CGameStaticRenderWebm:
 
 CGameStatic\:\:RenderWebm
@@ -351,6 +375,8 @@ Render WBM movie frame
 WebM is an audiovisual media file format. Movie files in the Enhanced Edition games use the .WBM extension
 
 
+----
+
 .. _CGameStaticSetActivated:
 
 CGameStatic\:\:SetActivated
@@ -369,6 +395,8 @@ CGameStatic\:\:SetActivated
 **Remarks**
 
 
+
+----
 
 .. _CGameStaticSetPalette:
 

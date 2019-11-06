@@ -21,6 +21,8 @@ The structure used for this class is :ref:`CImmunitiesSchoolAndSecondaryDecremen
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -50,6 +52,8 @@ CImmunitiesSchoolAndSecondaryDecrementing\:\:ClearAll
 
 
 
+----
+
 .. _CImmunitiesSchoolAndSecondaryDecrementingOnList:
 
 CImmunitiesSchoolAndSecondaryDecrementing\:\:OnList
@@ -73,6 +77,8 @@ Returns ``int``
 
 
 
+
+----
 
 ---------------
 Operators

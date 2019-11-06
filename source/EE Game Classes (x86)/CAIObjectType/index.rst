@@ -52,6 +52,8 @@ The structure used for this class is :ref:`CAIObjectType<CAIObjectType>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -98,6 +100,8 @@ Constructs a ``CAIObjectType`` object
 Constructs a ``CAIObjectType`` object
 
 
+----
+
 CAIObjectType\:\:CAIObjectType
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -135,6 +139,8 @@ Constructs a ``CAIObjectType`` object
 Constructs a ``CAIObjectType`` object
 
 
+
+----
 
 ---------------
 Methods
@@ -193,6 +199,8 @@ Decode CAIObjectType
 
 
 
+----
+
 .. _CAIObjectTypeGetActiveInactiveClasses:
 
 CAIObjectType\:\:GetActiveInactiveClasses
@@ -215,6 +223,8 @@ Gets active and inactive classes
 
 
 
+----
+
 .. _CAIObjectTypeGetClass:
 
 CAIObjectType\:\:GetClass
@@ -234,6 +244,8 @@ Get class
 
 
 
+----
+
 .. _CAIObjectTypeGetEnemyOf:
 
 CAIObjectType\:\:GetEnemyOf
@@ -252,6 +264,8 @@ CAIObjectType\:\:GetEnemyOf
 **Remarks**
 
 
+
+----
 
 .. _CAIObjectTypeGetShare:
 
@@ -278,6 +292,8 @@ Returns a pointer to :ref:`CGameObject<CGameObject>`
 **Remarks**
 
 
+
+----
 
 .. _CAIObjectTypeGetShareType:
 
@@ -307,6 +323,8 @@ Returns a pointer to :ref:`CGameObject<CGameObject>`
 
 
 
+----
+
 .. _CAIObjectTypeIsAllyOf:
 
 CAIObjectType\:\:IsAllyOf
@@ -331,6 +349,8 @@ CAIObjectType\:\:IsAllyOf
 
 
 
+----
+
 .. _CAIObjectTypeIsEnemyOf:
 
 CAIObjectType\:\:IsEnemyOf
@@ -354,6 +374,8 @@ CAIObjectType\:\:IsEnemyOf
 
 
 
+
+----
 
 .. _CAIObjectTypeIsUsableSubClass:
 
@@ -382,6 +404,8 @@ CAIObjectType\:\:IsUsableSubClass
 
 
 
+----
+
 .. _CAIObjectTypeMatch:
 
 CAIObjectType\:\:Match
@@ -405,6 +429,8 @@ CAIObjectType\:\:Match
 
 
 
+
+----
 
 .. _CAIObjectTypeOfType:
 
@@ -437,6 +463,8 @@ CAIObjectType\:\:OfType
 
 
 
+----
+
 .. _CAIObjectTypeRead:
 
 CAIObjectType\:\:Read
@@ -456,6 +484,8 @@ CAIObjectType\:\:Read
 
 
 
+
+----
 
 .. _CAIObjectTypeSet:
 
@@ -477,6 +507,8 @@ CAIObjectType\:\:Set
 
 
 
+----
+
 .. _CAIObjectTypeSetSpecialCase:
 
 CAIObjectType\:\:SetSpecialCase
@@ -495,6 +527,8 @@ CAIObjectType\:\:SetSpecialCase
 **Remarks**
 
 
+
+----
 
 ---------------
 Operators
@@ -529,6 +563,8 @@ Assign ``y`` to a :ref:`CAIObjectType<CAIObjectType>` object
 
 **Remarks**
 
+
+----
 
 .. _CAIObjectTypeOpEquEqu:
 

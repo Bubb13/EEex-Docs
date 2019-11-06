@@ -25,6 +25,8 @@ The structure used for this class is :ref:`CAIAction<CAIAction>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -53,6 +55,8 @@ Constructs a ``CAIAction`` object
 Constructs a ``CAIAction`` object
 
 
+----
+
 .. _CAIAction~CAIAction:
 
 CAIAction\:\:~CAIAction
@@ -70,6 +74,8 @@ Destroys the ``CAIAction`` object
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -83,6 +89,7 @@ Methods
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CAIAction\:\:Read<CAIActionRead>`                  | Reads                                                                                   |
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
+
 
 .. _CAIActionDecode:
 
@@ -103,6 +110,8 @@ Decode action
 
 Decodes action
 
+
+----
 
 .. _CAIActionOfType:
 
@@ -126,6 +135,8 @@ Returns as an ``unsigned char``
 **Remarks**
 
 
+
+----
 
 .. _CAIActionRead:
 

@@ -26,6 +26,8 @@ The structure used for this class is :ref:`CAICondition<CAICondition>`
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -52,6 +54,8 @@ Destroys the ``CAICondition`` object
 
 Destroys the ``CAICondition`` object
 
+
+----
 
 ---------------
 Methods
@@ -92,6 +96,8 @@ Adds a trigger to a condition
 
 
 
+----
+
 .. _CAIConditionHold:
 
 CAICondition\:\:Hold
@@ -118,6 +124,8 @@ CAICondition\:\:Hold
 
 
 
+----
+
 .. _CAIConditionRead:
 
 CAICondition\:\:Read
@@ -137,6 +145,8 @@ CAICondition\:\:Read
 
 
 
+----
+
 .. _CAIConditionSet:
 
 CAICondition\:\:Set
@@ -155,6 +165,8 @@ CAICondition\:\:Set
 **Remarks**
 
 
+
+----
 
 .. _CAIConditionTriggerHolds:
 

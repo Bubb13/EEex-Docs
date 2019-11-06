@@ -31,6 +31,8 @@ The structure used for this class is :ref:`C2DArray<C2DArray>`
 | void **C2DArray\:\:~C2DArray**\()                                                                                                                                               |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -57,6 +59,8 @@ Destroys the ``C2DArray`` object.
 Destroys the ``C2DArray`` object.
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -74,6 +78,7 @@ Methods
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`C2DArray\:\:LoadLines<C2DArrayLoadLines>`          | Load a 2da resource into the C2DArray class                                             |
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
+
 
 .. _C2DArrayFind:
 
@@ -106,6 +111,8 @@ Returns the result of the search as an unsigned char.
 *bSearchLabels* can be set to ``TRUE`` to search labels.
 
 
+----
+
 C2DArray\:\:Find
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -133,6 +140,8 @@ Returns the result of the search as an unsigned char.
 *bSearchLabels* can be set to ``TRUE`` to search labels.
 
 
+----
+
 .. _C2DArrayGetAt:
 
 C2DArray\:\:GetAt
@@ -156,6 +165,8 @@ Get a text value from the specified x and y coordinates
 Returns the text value as :ref:`CString<CString>`\&
 
 
+----
+
 .. _C2DArrayGetAtLong:
 
 C2DArray\:\:GetAtLong
@@ -176,6 +187,8 @@ Get a numeric value from the specified x and y coordinates
 
 Returns the numeric value as a long integer 
 
+
+----
 
 .. _C2DArrayLoad:
 
@@ -220,6 +233,8 @@ The equivalant in C++ might be:
    }
 
 
+
+----
 
 .. _C2DArrayLoadLines:
 

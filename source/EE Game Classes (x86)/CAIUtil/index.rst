@@ -29,6 +29,8 @@ Utility class
 
 
 
+----
+
 ---------------
 Methods
 ---------------
@@ -79,6 +81,8 @@ Returns a ``long`` value representing the count of squares
 
 
 
+----
+
 .. _CAIUtilReadAfterChar:
 
 CAIUtil\:\:ReadAfterChar
@@ -105,6 +109,8 @@ Returns a :ref:`CString<CString>` as the portion of the string read
 
 
 
+----
+
 .. _CAIUtilReadBetween:
 
 CAIUtil\:\:ReadBetween
@@ -130,6 +136,8 @@ Reads a string and returns the portion of the string that matches the pattern sp
 **Remarks**
 
 
+
+----
 
 .. _CAIUtilReadTo:
 
@@ -159,6 +167,8 @@ Reads a string and returns the portion of the string that matches up to the patt
 
 
 
+----
+
 .. _CAIUtilReadToChar:
 
 CAIUtil\:\:ReadToChar
@@ -185,6 +195,8 @@ Returns a :ref:`CString<CString>` as the portion of the string read
 
 
 
+----
+
 .. _CAIUtilRemoveAllWS:
 
 CAIUtil\:\:RemoveAllWS
@@ -207,6 +219,8 @@ Returns a :ref:`CString<CString>` which has all the whitespace characters remove
 **Remarks**
 
 
+
+----
 
 .. _CAIUtilRangeSquared:
 

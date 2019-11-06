@@ -49,6 +49,8 @@ The structure used for this class is :ref:`CGameTrigger<CGameTrigger>`
 
 
 
+----
+
 ---------------
 Constructors
 ---------------
@@ -86,6 +88,8 @@ Constructs a ``CGameTrigger`` object
 Constructs a ``CGameTrigger`` object
 
 
+
+----
 
 ---------------
 Methods
@@ -144,6 +148,8 @@ CGameTrigger\:\:AIUpdate
 
 
 
+----
+
 .. _CGameTriggerAddEffect:
 
 CGameTrigger\:\:AddEffect
@@ -169,6 +175,8 @@ Add a game effect to a trigger object
 **Remarks**
 
 
+
+----
 
 .. _CGameTriggerCanSaveGame:
 
@@ -198,6 +206,8 @@ Returns ``unsigned char``
 
 
 
+----
+
 .. _CGameTriggerCompressTime:
 
 CGameTrigger\:\:CompressTime
@@ -221,6 +231,8 @@ Returns ``unsigned char``
 
 
 
+----
+
 .. _CGameTriggerDebugDump:
 
 CGameTrigger\:\:DebugDump
@@ -242,6 +254,8 @@ Debug message from CGameTrigger class
 **Remarks**
 
 
+
+----
 
 .. _CGameTriggerDoAIUpdate:
 
@@ -269,6 +283,8 @@ Returns ``unsigned char``
 
 
 
+----
+
 .. _CGameTriggerGetBounding:
 
 CGameTrigger\:\:GetBounding
@@ -287,6 +303,8 @@ Returns a :ref:`CRect<CRect>` which defines the bounding dimensions of the trigg
 **Remarks**
 
 
+
+----
 
 .. _CGameTriggerGetTrapActivated:
 
@@ -307,6 +325,8 @@ Returns ``short``
 
 
 
+
+----
 
 .. _CGameTriggerIsOver:
 
@@ -331,6 +351,8 @@ Returns ``int``
 
 
 
+----
+
 .. _CGameTriggerIsOverActivate:
 
 CGameTrigger\:\:IsOverActivate
@@ -354,6 +376,8 @@ Returns ``int``
 
 
 
+----
+
 .. _CGameTriggerMarshal:
 
 CGameTrigger\:\:Marshal
@@ -372,6 +396,8 @@ CGameTrigger\:\:Marshal
 **Remarks**
 
 
+
+----
 
 .. _CGameTriggerOnActionButton:
 
@@ -392,6 +418,8 @@ CGameTrigger\:\:OnActionButton
 
 
 
+----
+
 .. _CGameTriggerRemoveFromArea:
 
 CGameTrigger\:\:RemoveFromArea
@@ -406,6 +434,8 @@ CGameTrigger\:\:RemoveFromArea
 **Remarks**
 
 
+
+----
 
 .. _CGameTriggerRender:
 
@@ -429,6 +459,8 @@ CGameTrigger\:\:Render
 
 
 
+----
+
 .. _CGameTriggerSetCursor:
 
 CGameTrigger\:\:SetCursor
@@ -448,6 +480,8 @@ CGameTrigger\:\:SetCursor
 
 
 
+
+----
 
 .. _CGameTriggerSetDrawPoly:
 
