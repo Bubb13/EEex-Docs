@@ -684,7 +684,7 @@ Methods
 +------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CScreenCreateChar\:\:ResetSpellTables<CScreenCreateCharResetSpellTables>`                                        | Reset spell tables                                                                      |
 +------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CScreenCreateChar\:\:SetAbilityHelpInfo<CScreenCreateCharSetAbilityHelpInfo>`                                    | Set ability score description and help information                                      |
+| :ref:`CScreenCreateChar\:\:SetAbilityHelpInfo<CScreenCreateCharSetAbilityHelpInfo>`                                    | Set tokens for ability score information                                                |
 +------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CScreenCreateChar\:\:SetSystemKeyCapsLock<CScreenCreateCharSetSystemKeyCapsLock>`                                | Set caps lock key on or off                                                             |
 +------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
@@ -3855,7 +3855,7 @@ Spells avaialble for each spell level for character at a experience level
 CScreenCreateChar\:\:SetAbilityHelpInfo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Set ability score description and help information
+Set tokens for ability score information
 
 ::
 
@@ -3863,13 +3863,32 @@ Set ability score description and help information
 
 **Parameters**
 
-* ``int`` stat - * *
+* ``int`` *stat* - value representing the ability score to set token information for
 
 **Remarks**
 
-Sets text in the panel that displays the specifics of each ability score, recommended scores and minimum required scores for specific classes
 
+Sets ability score tokens ``<MINIMUM>`` and ``<MAXIMUM>`` for the panel that displays the specifics of each ability score, recommended scores and minimum required scores for specific classes. 
 
+.. Note:: The full text and description for the ability score help information is fetched outside of this function. By using the :ref:`Infinity_FetchString<Infinity_FetchString>` function in ``UI.MENU`` to fetch a string reference (StrRef) and combining with the ability score tokens fetched by :ref:`createCharScreen\:SetAbilityHelpInfo<createCharScreen_SetAbilityHelpInfo>` (or :ref:`CScreenCreateChar\:\:SetAbilityHelpInfo<CScreenCreateCharSetAbilityHelpInfo>`), this full text is then output into the help panel.
+
+The *stat* parameter can be one of the following values, which equate to the ability score to set information for:
+
++----------+--------------+
+| **Stat** | **Ability**  |
++----------+--------------+
+| 1        | Strength     |
++----------+--------------+
+| 2        | Dexterity    |
++----------+--------------+
+| 3        | Constituion  |
++----------+--------------+
+| 4        | Intelligence |
++----------+--------------+
+| 5        | Wisdom       |
++----------+--------------+
+| 6        | Charisma     |
++----------+--------------+
 
 ----
 
