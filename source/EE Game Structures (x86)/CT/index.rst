@@ -54,6 +54,8 @@ Asm Definition
    CTiledObject     ends
 
 
+----
+
 .. _CTime:
 
 CTime
@@ -74,6 +76,8 @@ Asm Definition
    CTime    ends
 
 
+----
+
 .. _CTimeSpan:
 
 CTimeSpan
@@ -93,6 +97,8 @@ Asm Definition
      m_timeSpan dq ?
    CTimeSpan    ends
 
+
+----
 
 .. _CTimer:
 
@@ -135,6 +141,8 @@ Asm Definition
    CTimer               ends
 
 
+----
+
 .. _CTimerWorld:
 
 CTimerWorld
@@ -165,6 +173,8 @@ Asm Definition
    CTimerWorld          ends
 
 
+----
+
 .. _CTlkFileOverride:
 
 CTlkFileOverride
@@ -187,6 +197,8 @@ Asm Definition
      m_UserAddedCount   dd ?
    CTlkFileOverride     ends
 
+
+----
 
 .. _CTlkTable:
 
@@ -231,6 +243,8 @@ Asm Definition
    CTlkTable             ends
 
 
+----
+
 .. _CTypedPtrArray:
 
 CTypedPtrArray
@@ -250,6 +264,8 @@ Asm Definition
      m_cPtrArray    CPtrArray <>
    CTypedPtrArray   ends
 
+
+----
 
 .. _CTypedPtrList:
 

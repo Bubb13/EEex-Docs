@@ -228,6 +228,8 @@ Asm Definition
    CNetwork                         ends
       
 
+----
+
 .. _CNetworkConnectionSettings:
 
 CNetworkConnectionSettings
@@ -253,6 +255,8 @@ Asm Definition
      sPlayerName                CString <>
    CNetworkConnectionSettings   ends
 
+
+----
 
 .. _CNetworkWindow:
 

@@ -47,6 +47,8 @@ Asm Definition
    CWarp            ends
 
 
+----
+
 .. _CWeaponIdentification:
 
 CWeaponIdentification
@@ -78,6 +80,8 @@ Asm Definition
      m_attributes           dd ?
    CWeaponIdentification    ends
 
+
+----
 
 .. _CWeather:
 
@@ -177,6 +181,8 @@ Asm Definition
    CWeather                     ends
 
 
+----
+
 .. _CWildSurge:
 
 CWildSurge
@@ -221,6 +227,8 @@ Asm Definition
    CWildSurge                   ends
 
 
+----
+
 .. _CWnd:
 
 CWnd
@@ -243,6 +251,8 @@ Asm Definition
      m_hWnd         dd ? ; HWND*
    CWnd             ends
 
+
+----
 
 .. _CWorldMap:
 
@@ -275,6 +285,8 @@ Asm Definition
      m_ppLinks  dd ? ; CWorldMapLinks** 
    CWorldMap    ends
 
+
+----
 
 .. _CWorldMapArea:
 
@@ -350,6 +362,8 @@ Asm Definition
    CWorldMapArea                ends
 
 
+----
+
 .. _CWorldMapData:
 
 CWorldMapData
@@ -409,6 +423,8 @@ Asm Definition
    CWorldMapData            ends
 
 
+----
+
 .. _CWorldMapFile:
 
 CWorldMapFile
@@ -428,6 +444,8 @@ Asm Definition
      m_cResHelper   CResHelper <>
    CWorldMapFile    ends
 
+
+----
 
 .. _CWorldMapHeader:
 
@@ -451,6 +469,8 @@ Asm Definition
      m_nMapOffset   dd ?
    CWorldMapHeader  ends
 
+
+----
 
 .. _CWorldMapLinks:
 

@@ -141,6 +141,8 @@ Asm Definition
    BAMHEADERV2        ends
 
 
+----
+
 .. _Item_Header_st:
 
 Item_Header_st
@@ -274,6 +276,8 @@ Asm Definition
    Item_Header_st           ends
 
 
+----
+
 .. _Item_ability_st:
 
 Item_ability_st
@@ -371,6 +375,8 @@ Asm Definition
    Item_ability_st        ends
 
 
+----
+
 .. _Item_effect_st:
 
 Item_effect_st
@@ -439,6 +445,8 @@ Asm Definition
    Item_effect_st       ends
 
 
+----
+
 .. _KeyFileHeader_st:
 
 KeyFileHeader_st
@@ -479,6 +487,8 @@ Asm Definition
    KeyFileHeader_st     ends
 
 
+----
+
 .. _KeyFileKeyEntry_st:
 
 KeyFileKeyEntry_st
@@ -509,6 +519,8 @@ Asm Definition
      nID                dd ?
    KeyFileKeyEntry_st   ends
 
+
+----
 
 .. _KeyFileResFileName_st:
 
@@ -544,6 +556,8 @@ Asm Definition
    KeyFileResFileName_st    ends
 
 
+----
+
 .. _Marker:
 
 Marker
@@ -573,6 +587,8 @@ Asm Definition
    Marker    ends
 
 
+----
+
 .. _MAP_CHAR_POSITIONS:
 
 MAP_CHAR_POSITIONS
@@ -595,6 +611,8 @@ Asm Definition
      id                 dd ?
    MAP_CHAR_POSITIONS   ends
 
+
+----
 
 .. _MOSAICHEADERV2:
 
@@ -635,6 +653,8 @@ Asm Definition
      nOffsetToQuads dd ?
    MOSAICHEADERV2   ends
 
+
+----
 
 .. _MOSAICQUAD:
 
@@ -680,6 +700,8 @@ Asm Definition
    MOSAICQUAD       ends
 
 
+----
+
 .. _Mod_t:
 
 Mod_t
@@ -705,6 +727,8 @@ Asm Definition
      modName        CString <>
    Mod_t            ends
 
+
+----
 
 .. _PLTHeader_st:
 
@@ -740,6 +764,8 @@ Asm Definition
      nHeight        dd ?
    PLTHeader_st     ends
 
+
+----
 
 .. _PVRTextureHeaderV3:
 
@@ -796,6 +822,8 @@ Asm Definition
      u32MetaDataSize    dd ?
    PVRTextureHeaderV3   ends
 
+
+----
 
 .. _RLEDestFormat:
 
@@ -856,6 +884,8 @@ Asm Definition
    RLEDestFormat    ends
 
 
+----
+
 .. _ResFixedHeader_st:
 
 ResFixedHeader_st
@@ -893,6 +923,8 @@ Asm Definition
    ResFixedHeader_st    ends
 
 
+----
+
 .. _SAreaFileCreatureWrapper:
 
 SAreaFileCreatureWrapper
@@ -915,6 +947,8 @@ Asm Definition
      pCreatureOffset        dd ? ; unsigned char* 
    SAreaFileCreatureWrapper ends
 
+
+----
 
 .. _SAreaFileDoorWrapper:
 
@@ -948,6 +982,8 @@ Asm Definition
    SAreaFileDoorWrapper         ends
 
 
+----
+
 .. _SAreaFileWrapper:
 
 SAreaFileWrapper
@@ -973,6 +1009,8 @@ Asm Definition
      pPickPointStart dd ? ; CAreaPoint* 
    SAreaFileWrapper  ends
 
+
+----
 
 .. _SDL_Rect:
 
@@ -1003,6 +1041,8 @@ Asm Definition
    SDL_Rect  ends
 
 
+----
+
 .. _STR_RES:
 
 STR_RES
@@ -1025,6 +1065,8 @@ Asm Definition
      cSound CSound <>
    STR_RES  ends
 
+
+----
 
 .. _STR_RES_HEADER:
 
@@ -1066,6 +1108,8 @@ Asm Definition
      strSize        dd ?
    STR_RES_HEADER   ends
 
+
+----
 
 .. _Spell_Header_st:
 
@@ -1203,6 +1247,8 @@ Asm Definition
    Spell_Header_st          ends
 
 
+----
+
 .. _Spell_ability_st:
 
 Spell_ability_st
@@ -1279,6 +1325,8 @@ Asm Definition
    Spell_ability_st  ends
 
 
+----
+
 .. _SProjectileWrapper:
 
 SProjectileWrapper
@@ -1302,6 +1350,8 @@ Asm Definition
    SProjectileWrapper   ends
 
 
+----
+
 .. _SSavedGamePartyCreatureReferenceWrapper:
 
 SSavedGamePartyCreatureReferenceWrapper
@@ -1324,6 +1374,8 @@ Asm Definition
      pCreatureOffset    dd ? ; unsigned char* 
    SProjectileWrapper   ends
 
+
+----
 
 .. _StatRating:
 
@@ -1351,6 +1403,8 @@ Asm Definition
    StatRating   ends
 
 
+----
+
 .. _STriggerObjectWrapper:
 
 STriggerObjectWrapper
@@ -1375,6 +1429,8 @@ Asm Definition
 
 
 
+----
+
 .. _TILE_CODE:
 
 TILE_CODE
@@ -1393,6 +1449,8 @@ TILE_CODE
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
 
 .. _TLK_FILE_HEADER:
 
@@ -1430,6 +1488,8 @@ Asm Definition
      strEntriesOffset dd ?
    TLK_FILE_HEADER    ends
 
+
+----
 
 .. _TLK_FILE_OVERRIDE_ENTRY:
 
@@ -1471,6 +1531,8 @@ Asm Definition
    TLK_FILE_OVERRIDE_ENTRY  ends
 
 
+----
+
 .. _TLK_FILE_OVERRIDE_HEADER:
 
 TLK_FILE_OVERRIDE_HEADER
@@ -1508,6 +1570,8 @@ Asm Definition
    TLK_FILE_OVERRIDE_HEADER ends
 
 
+----
+
 .. _TLK_FILE_OVERRIDE_TEXT_BLOCK:
 
 TLK_FILE_OVERRIDE_TEXT_BLOCK
@@ -1537,6 +1601,8 @@ Asm Definition
    TLK_FILE_OVERRIDE_TEXT_BLOCK ends
 
 
+----
+
 .. _TLK_FILE_OVERRIDE_TEXT_HEADER:
 
 TLK_FILE_OVERRIDE_TEXT_HEADER
@@ -1556,6 +1622,8 @@ Asm Definition
      m_nOffsetToFirstFree           dd ?
    TLK_FILE_OVERRIDE_TEXT_HEADER    ends
 
+
+----
 
 .. _UI_ControlTableEntry_st:
 
@@ -1579,6 +1647,8 @@ Asm Definition
      nControlSize           dd ?
    UI_ControlTableEntry_st  ends
 
+
+----
 
 .. _UI_Control_Button_st:
 
@@ -1647,6 +1717,8 @@ Asm Definition
      refPtYHigher       db ?
    UI_Control_Button_st ends
 
+
+----
 
 .. _UI_Control_Edit_st:
 
@@ -1731,6 +1803,8 @@ Asm Definition
    UI_Control_Edit_st     ends
 
 
+----
+
 .. _UI_Control_Label_st:
 
 UI_Control_Label_st
@@ -1780,6 +1854,8 @@ Asm Definition
      nLabelType         dw ?
    UI_Control_Label_st  ends
 
+
+----
 
 .. _UI_Control_ScrollBar_st:
 
@@ -1842,6 +1918,8 @@ Asm Definition
      nControlWindowId       dd ?
    UI_Control_ScrollBar_st  ends
 
+
+----
 
 .. _UI_Control_Slider_st:
 
@@ -1917,6 +1995,8 @@ Asm Definition
    UI_Control_Slider_st  ends
 
 
+----
+
 .. _UI_Control_TextDisplay_st:
 
 UI_Control_TextDisplay_st
@@ -1970,6 +2050,8 @@ Asm Definition
    UI_Control_TextDisplay_st    ends
 
 
+----
+
 .. _UI_Control_st:
 
 UI_Control_st
@@ -2005,6 +2087,8 @@ Asm Definition
    UI_Control_st    ends
 
 
+----
+
 .. _UI_Header_st:
 
 UI_Header_st
@@ -2036,6 +2120,8 @@ Asm Definition
      nOffsetToPanelTable    dd ?
    UI_Header_st             ends
 
+
+----
 
 .. _UI_PanelHeader_st:
 
@@ -2084,6 +2170,8 @@ Asm Definition
    UI_PanelHeader_st    ends
 
 
+----
+
 .. _WAV_Header:
 
 WAV_Header
@@ -2121,6 +2209,8 @@ Asm Definition
      cbSize          dw ?
    WAV_Header        ends
 
+
+----
 
 .. _WED_LayerHeader_st:
 
@@ -2160,6 +2250,8 @@ Asm Definition
    WED_LayerHeader_st   ends
 
 
+----
+
 .. _WED_PolyHeader_st:
 
 WED_PolyHeader_st
@@ -2191,6 +2283,8 @@ Asm Definition
      nOffsetToScreenPolyList    dd ?
    WED_PolyHeader_st            ends
 
+
+----
 
 .. _WED_PolyList_st:
 
@@ -2233,6 +2327,8 @@ Asm Definition
    WED_PolyList_st  ends
 
 
+----
+
 .. _WED_PolyPoint_st:
 
 WED_PolyPoint_st
@@ -2256,6 +2352,8 @@ Asm Definition
    WED_PolyPoint_st ends
 
 
+----
+
 .. _WED_ScreenSectionList:
 
 WED_ScreenSectionList
@@ -2278,6 +2376,8 @@ Asm Definition
      nNumPolys              dw ?
    WED_ScreenSectionList    ends
 
+
+----
 
 .. _WED_TILE:
 
@@ -2304,6 +2404,8 @@ Asm Definition
      y       dd ?
    WED_TILE  ends
 
+
+----
 
 .. _WED_TileData_st:
 
@@ -2339,6 +2441,8 @@ Asm Definition
      wFlags         dw ?
    WED_TileData_st  ends
 
+
+----
 
 .. _WED_TiledObject_st:
 
@@ -2378,6 +2482,8 @@ Asm Definition
      nOffsetToSecondaryPolys dd ?
    WED_TiledObject_st        ends
 
+
+----
 
 .. _WED_WedHeader_st:
 
@@ -2435,6 +2541,8 @@ Asm Definition
    WED_WedHeader_st          ends
 
 
+----
+
 .. _bamHeader_st:
 
 bamHeader_st
@@ -2481,6 +2589,8 @@ Asm Definition
    bamHeader_st         ends
 
 
+----
+
 .. _biffFixedTableEntry_st:
 
 biffFixedTableEntry_st
@@ -2517,6 +2627,8 @@ Asm Definition
      nType                  dd ?
    biffFixedTableEntry_st   ends
 
+
+----
 
 .. _biffHeader_st:
 
@@ -2555,6 +2667,8 @@ Asm Definition
    biffHeader_st    ends
 
 
+----
+
 .. _biffVarTableEntry_st:
 
 biffVarTableEntry_st
@@ -2589,6 +2703,8 @@ Asm Definition
    biffVarTableEntry_st ends
 
 
+----
+
 .. _biff_t:
 
 biff_t
@@ -2621,6 +2737,8 @@ Asm Definition
    biff_t   ends
 
 
+----
+
 .. _campaignTable:
 
 campaignTable
@@ -2643,6 +2761,8 @@ Asm Definition
      table          dd ? ; C2DArray* 
    campaignTable    ends
 
+
+----
 
 .. _forcedTooltip:
 
@@ -2673,6 +2793,8 @@ Asm Definition
    forcedTooltip    ends
 
 
+----
+
 .. _frame:
 
 frame
@@ -2698,6 +2820,8 @@ Asm Definition
      next   dd ? ; frame* 
    frame    ends
 
+
+----
 
 .. _frameTableEntry_st:
 
@@ -2739,6 +2863,8 @@ Asm Definition
    frameTableEntry_st   ends
 
 
+----
+
 .. _frameTableEntry_stv2:
 
 frameTableEntry_st\:\:<unnamed-tag>\:\:<unnamed-type-v2
@@ -2767,6 +2893,8 @@ Asm Definition
      nQuadCount         dw ?
    frameTableEntry_stv2 ends
 
+
+----
 
 .. _mosHeader_st:
 
@@ -2815,6 +2943,8 @@ Asm Definition
    mosHeader_st         ends
 
 
+----
+
 .. _st_tiledef:
 
 st_tiledef
@@ -2844,6 +2974,8 @@ Asm Definition
    st_tiledef       ends
 
 
+----
+
 .. _uiColumn:
 
 uiColumn
@@ -2868,6 +3000,9 @@ Asm Definition
      items  dd ? ; uiItem* 
      next   dd ? ; uiColumn* 
    uiColumn ends
+
+
+----
 
 .. _uiItem:
 
@@ -3046,6 +3181,8 @@ Asm Definition
      ITEM_TEMPLATE = 11
    }
 
+----
+
 .. _uiItembam:
 
 uiItem\:\:\<unnamed-type-bam\>
@@ -3084,6 +3221,8 @@ Asm Definition
    uiItembam        ends
 
 
+----
+
 .. _uiItembmp:
 
 uiItem\:\:\<unnamed-type-bmp\>
@@ -3103,6 +3242,8 @@ Asm Definition
      resname    dd ?
    uiItembmp    ends
 
+
+----
 
 .. _uiItembutton:
 
@@ -3154,6 +3295,8 @@ Asm Definition
    uiItembutton     ends
 
 
+----
+
 .. _uiItemedit:
 
 uiItem\:\:\<unnamed-type-edit\>
@@ -3191,6 +3334,8 @@ Asm Definition
      selectEnd      dd ?
    uiItemedit       ends
 
+
+----
 
 .. _uiItemlist:
 
@@ -3251,6 +3396,8 @@ Asm Definition
    uiItemlist       ends
 
 
+----
+
 .. _uiItemmap:
 
 uiItem\:\:\<unnamed-type-map\>
@@ -3270,6 +3417,8 @@ Asm Definition
      type       dd ?
    uiItemmap    ends
 
+
+----
 
 .. _uiItemmosaic:
 
@@ -3293,6 +3442,8 @@ Asm Definition
      respectClipping    dd ?
    uiItemmosaic         ends
 
+
+----
 
 .. _uiItemmovie:
 
@@ -3329,6 +3480,8 @@ Asm Definition
    uiItemmovie      ends
 
 
+----
+
 .. _uiItemprogressBar:
 
 uiItem\:\:\<unnamed-type-progressBar\>
@@ -3355,6 +3508,8 @@ Asm Definition
    uiItemprogressBar    ends
 
 
+----
+
 .. _uiItemrectangle:
 
 uiItem\:\:\<unnamed-type-rectangle\>
@@ -3377,6 +3532,8 @@ Asm Definition
      opacity        dd ? ; uiVariant* 
    uiItemrectangle  ends
 
+
+----
 
 .. _uiItemscrollbar:
 
@@ -3425,6 +3582,8 @@ Asm Definition
    uiItemscrollbar      ends
 
 
+----
+
 .. _uiItemslider:
 
 uiItem\:\:\<unnamed-type-slider\>
@@ -3457,6 +3616,8 @@ Asm Definition
    uiItemslider ends
 
 
+----
+
 .. _uiItemslot:
 
 uiItem\:\:\<unnamed-type-slot\>
@@ -3488,6 +3649,8 @@ Asm Definition
      tint       dd ? ; uiVariant* 
    uiItemslot   ends
 
+
+----
 
 .. _uiItemtext:
 
@@ -3536,6 +3699,8 @@ Asm Definition
    uiItemtext       ends
 
 
+----
+
 .. _uiItemtooltip:
 
 uiItem\:\:\<unnamed-type-tooltip\>
@@ -3568,6 +3733,8 @@ Asm Definition
    uiItemtooltip    ends
 
 
+----
+
 .. _uiItemuiTemplate:
 
 uiItem\:\:\<unnamed-type-uiTemplate\>
@@ -3587,6 +3754,8 @@ Asm Definition
      item           dd ? ; uiItem* 
    uiItemuiTemplate ends
 
+
+----
 
 .. _uiMenu:
 
@@ -3655,6 +3824,8 @@ Asm Definition
      ignoreEsc  dd ?
    uiMenu       ends
 
+
+----
 
 .. _uiVariant:
 

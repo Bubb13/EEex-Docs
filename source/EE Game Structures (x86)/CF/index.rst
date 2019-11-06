@@ -61,6 +61,8 @@ Asm Definition
    CFeedbackEntry   ends
 
 
+----
+
 .. _CFile:
 
 CFile
@@ -90,6 +92,8 @@ Asm Definition
    CFile                ends
 
 
+----
+
 .. _CFileException:
 
 CFileException
@@ -118,6 +122,8 @@ Asm Definition
      m_strFileName  CString <> 
    CFileException   ends
 
+
+----
 
 .. _CFileFind:
 
@@ -161,7 +167,9 @@ Asm Definition
                         db ? ; padding
                         db ? ; padding
    CFileFind            ends
-     
+
+
+----
 
 .. _CFileReaderParms:
 
@@ -188,6 +196,8 @@ Asm Definition
      m_nSrcLength   dd ?
    CFileReaderParms ends
 
+
+----
 
 .. _CFileStatus:
 
@@ -234,6 +244,8 @@ Asm Definition
    CFileStatus      ends
 
 
+----
+
 .. _CFileView:
 
 CFileView
@@ -262,6 +274,8 @@ Asm Definition
      filePos    dd ?
    CFileView    ends
 
+
+----
 
 .. _CFixedAlloc:
 
@@ -292,6 +306,8 @@ Asm Definition
    CFixedAlloc      ends
 
 
+----
+
 .. _CFixedAllocCNode:
 
 CFixedAlloc::CNode
@@ -311,6 +327,8 @@ Asm Definition
      pNext          dd ? ; CFixedAlloc::CNode*
    CFixedAlloc      ends
 
+
+----
 
 .. _CFog:
 

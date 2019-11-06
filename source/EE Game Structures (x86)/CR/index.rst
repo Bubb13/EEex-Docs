@@ -65,6 +65,8 @@ Asm Definition
    CRainDrop     ends
 
 
+----
+
 .. _CRainStorm:
 
 CRainStorm
@@ -103,6 +105,8 @@ Asm Definition
    CRainStorm            ends
 
 
+----
+
 .. _CRect:
 
 CRect
@@ -134,6 +138,8 @@ Asm Definition
      bottom dd ?
    CRect    ends
 
+
+----
 
 .. _CRes:
 
@@ -192,6 +198,8 @@ Asm Definition
    CRes             ends
 
 
+----
+
 .. _CResArea:
 
 CResArea
@@ -212,6 +220,8 @@ Asm Definition
    CResArea ends
 
 
+----
+
 .. _CResBIO:
 
 CResBIO
@@ -231,6 +241,8 @@ Asm Definition
      m_cRes CRes <>
    CResBIO  ends
 
+
+----
 
 .. _CResBinary:
 
@@ -254,6 +266,8 @@ Asm Definition
      m_resVersion   db 4 dup (?)
    CResBinary       ends
 
+
+----
 
 .. _CResBitmap:
 
@@ -299,6 +313,8 @@ Asm Definition
    CResBitmap               ends
 
 
+----
+
 .. _CResCHR:
 
 CResCHR
@@ -319,6 +335,8 @@ Asm Definition
    CResCHR  ends
 
 
+----
+
 .. _CResCRE:
 
 CResCRE
@@ -338,6 +356,8 @@ Asm Definition
      m_cRes CRes <>
    CResCRE  ends
 
+
+----
 
 .. _CResCell:
 
@@ -395,6 +415,8 @@ Asm Definition
    CResCell             ends
 
 
+----
+
 .. _CResDLG:
 
 CResDLG
@@ -415,6 +437,8 @@ Asm Definition
      m_cRes CRes <>
    CResDLG  ends
 
+
+----
 
 .. _CResEffect:
 
@@ -437,6 +461,8 @@ Asm Definition
      m_cRes     CRes <>
    CResEffect   ends
 
+
+----
 
 .. _CResFont:
 
@@ -461,6 +487,8 @@ Asm Definition
    CResGame     ends
 
 
+----
+
 .. _CResGame:
 
 CResGame
@@ -481,6 +509,8 @@ Asm Definition
      m_cRes     CRes <>
    CResGame     ends
 
+
+----
 
 .. _CResHelper:
 
@@ -515,6 +545,8 @@ Asm Definition
    CResHelper      ends ; size 0xC
 
 
+----
+
 .. _CResINI:
 
 CResINI
@@ -538,6 +570,8 @@ Asm Definition
      bLoaded    dd ?
    CResINI      ends
 
+
+----
 
 .. _CResInfTile:
 
@@ -576,6 +610,8 @@ Asm Definition
    CResInfTile      ends
 
 
+----
+
 .. _CResItem:
 
 CResItem
@@ -604,6 +640,8 @@ Asm Definition
      pHeader    dd ? ; Item_Header_st*
    CResItem     ends
 
+
+----
 
 .. _CResMosaic:
 
@@ -652,6 +690,8 @@ Asm Definition
    CResMosaic           ends
 
 
+----
+
 .. _CResPLT:
 
 CResPLT
@@ -677,6 +717,8 @@ Asm Definition
      m_pHeader  dd ? ; PLTHeader_st* 
    CResPLT      ends
 
+
+----
 
 .. _CResPVR:
 
@@ -710,6 +752,8 @@ Asm Definition
    CResPVR      ends
 
 
+----
+
 .. _CResPng:
 
 CResPng
@@ -735,6 +779,8 @@ Asm Definition
      texture    dd ?
    CResPng      ends
 
+
+----
 
 .. _CResRef:
 
@@ -765,6 +811,8 @@ Asm Definition
    CResRef         ends ; size 0x8
 
 
+----
+
 .. _CResSpell:
 
 CResSpell
@@ -794,6 +842,8 @@ Asm Definition
    CResSpell    ends
 
 
+----
+
 .. _CResStore:
 
 CResStore
@@ -814,6 +864,8 @@ Asm Definition
      m_cRes     CRes <>
    CResStore    ends
 
+
+----
 
 .. _CResText:
 
@@ -837,6 +889,8 @@ Asm Definition
      m_string   CString <>
    CResText     ends
 
+
+----
 
 .. _CResTile:
 
@@ -864,6 +918,8 @@ Asm Definition
    CResTile     ends
 
 
+----
+
 .. _CResTileSet:
 
 CResTileSet
@@ -886,6 +942,8 @@ Asm Definition
      h          dd ? ; ResFixedHeader_st
    CResTileSet  ends
 
+
+----
 
 .. _CResUI:
 
@@ -915,6 +973,8 @@ Asm Definition
      pControlTable  dd ? ; UI_ControlTableEntry_st*
    CResUI           ends
 
+
+----
 
 .. _CResWED:
 
@@ -954,6 +1014,8 @@ Asm Definition
    CResWED              ends
 
 
+----
+
 .. _CResWave:
 
 CResWave
@@ -991,6 +1053,8 @@ Asm Definition
      m_pWaveFormatEx        dd ? ; WAV_Header*
    CResWave                 ends
 
+
+----
 
 .. _CResWebm:
 
@@ -1070,6 +1134,8 @@ Asm Definition
    CResWebm             ends
 
 
+----
+
 .. _CResWorldMap:
 
 CResWorldMap
@@ -1090,6 +1156,8 @@ Asm Definition
      m_cRes     CRes <>
    CResWorldMap ends
 
+
+----
 
 .. _CRuleTables:
 

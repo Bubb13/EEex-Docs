@@ -27,6 +27,8 @@ CLUACheats
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CLUAConsole:
 
 CLUAConsole
@@ -38,6 +40,8 @@ CLUAConsole
 |            | 1        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CLightning:
 
@@ -90,6 +94,8 @@ Asm Definition
    CLightning           ends
 
 
+----
+
 .. _CList:
 
 CList
@@ -130,6 +136,8 @@ Asm Definition
      m_nBlockSize   dd ?
    CList            ends ; size 0x1C
 
+
+----
 
 .. _CListCNode:
 

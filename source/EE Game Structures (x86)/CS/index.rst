@@ -144,6 +144,8 @@ Asm Definition
    CSaveGameSlot        ends
 
 
+----
+
 .. _CSavedGameFamiliars:
 
 CSavedGameFamiliars
@@ -169,6 +171,8 @@ Asm Definition
      m_resrefCount      dd (9 * 9) dup (?)
    CSavedGameFamiliars  ends
 
+
+----
 
 .. _CSavedGameHeader:
 
@@ -289,6 +293,8 @@ Asm Definition
    CSavedGameHeader                 ends
 
 
+----
+
 .. _CSavedGameJournalEntry:
 
 CSavedGameJournalEntry
@@ -323,6 +329,8 @@ Asm Definition
      m_character            db ?
    CSavedGameJournalEntry   ends
 
+
+----
 
 .. _CSavedGamePartyCreature:
 
@@ -461,6 +469,8 @@ Asm Definition
    CSavedGamePartyCreature          ends
 
 
+----
+
 .. _CSavedGameStoredLocation:
 
 CSavedGameStoredLocation
@@ -487,6 +497,8 @@ Asm Definition
    CSavedGameStoredLocation ends
 
 
+----
+
 .. _CSchoolAndSecondaryDecrementing:
 
 CSchoolAndSecondaryDecrementing
@@ -509,6 +521,8 @@ Asm Definition
      m_nLevels                      dd ?
    CSchoolAndSecondaryDecrementing  ends
 
+
+----
 
 .. _CScreenAI:
 
@@ -569,6 +583,8 @@ Asm Definition
                             db ? ; padding
    CScreenAI                ends
 
+
+----
 
 .. _CScreenChapter:
 
@@ -660,6 +676,8 @@ Asm Definition
      m_destinationEngine    dd ? ; CWarp* 
    CScreenChapter           ends
 
+
+----
 
 .. _CScreenCharacter:
 
@@ -811,6 +829,8 @@ Asm Definition
    CScreenCharacter             ends
 
 
+----
+
 .. _CScreenCharacterStoredMageSpell:
 
 CScreenCharacterStoredMageSpell
@@ -833,6 +853,8 @@ Asm Definition
      m_nSpellLevel                  db ?
    CScreenCharacterStoredMageSpell  ends
 
+
+----
 
 .. _CScreenConnection:
 
@@ -954,6 +976,8 @@ Asm Definition
      m_nWaitingForProviderCount  dd ?
    CScreenConnection             ends
 
+
+----
 
 .. _CScreenCreateChar:
 
@@ -1341,6 +1365,8 @@ Asm Definition
    CScreenCreateChar            ends
 
 
+----
+
 .. _CScreenCreateParty:
 
 CScreenCreateParty
@@ -1381,6 +1407,8 @@ Asm Definition
      m_nCharacterSlot       dd ?
    CScreenCreateParty       ends
 
+
+----
 
 .. _CScreenDLC:
 
@@ -1454,6 +1482,8 @@ Asm Definition
      m_nDlcState            dd ?
    CScreenDLC               ends
 
+
+----
 
 .. _CScreenInventory:
 
@@ -1560,6 +1590,8 @@ Asm Definition
    CScreenInventory              ends
 
 
+----
+
 .. _CScreenJournal:
 
 CScreenJournal
@@ -1620,6 +1652,8 @@ Asm Definition
      m_bPauseState          dd ?
    CScreenJournal           ends
 
+
+----
 
 .. _CScreenLoad:
 
@@ -1696,6 +1730,8 @@ Asm Definition
      m_bHideToB             dd ?
    CScreenLoad              ends
 
+
+----
 
 .. _CScreenMap:
 
@@ -1842,6 +1878,8 @@ Asm Definition
    CScreenMap               ends
 
 
+----
+
 .. _CScreenMovies:
 
 CScreenMovies
@@ -1879,6 +1917,8 @@ Asm Definition
      m_sSelectedMovie       CString <>
    CScreenMovies            ends
 
+
+----
 
 .. _CScreenMultiPlayer:
 
@@ -1972,6 +2012,8 @@ Asm Definition
      m_characterPortrait    CString 6 dup ({})
    CScreenMultiPlayer       ends
 
+
+----
 
 .. _CScreenOptions:
 
@@ -2088,6 +2130,8 @@ Asm Definition
 
 
 
+----
+
 .. _CScreenPriestSpell:
 
 CScreenPriestSpell
@@ -2157,6 +2201,8 @@ Asm Definition
      m_bControlled          dd ?
    CScreenPriestSpell       ends
 
+
+----
 
 .. _CScreenSave:
 
@@ -2239,6 +2285,8 @@ Asm Definition
      m_bPauseState          dd ?
    CScreenSave              ends
 
+
+----
 
 .. _CScreenStart:
 
@@ -2327,6 +2375,8 @@ Asm Definition
      m_preloadFontStnSml    CVidFont <>
    CScreenStart             ends
 
+
+----
 
 .. _CScreenStore:
 
@@ -2502,6 +2552,8 @@ Asm Definition
    CScreenStore             ends
 
 
+----
+
 .. _CScreenStoreItem:
 
 CScreenStoreItem
@@ -2548,6 +2600,8 @@ Asm Definition
      m_nStoreCount  dd ?
    CScreenStoreItem ends
 
+
+----
 
 .. _CScreenWizSpell:
 
@@ -2638,6 +2692,8 @@ Asm Definition
      m_bContingency         dd ?
   CScreenWizSpell           ends
 
+
+----
 
 .. _CScreenWorld:
 
@@ -3166,6 +3222,8 @@ Asm Definition
    CScreenWorld                     ends
 
 
+----
+
 .. _CScreenWorldMap:
 
 CScreenWorldMap
@@ -3325,6 +3383,8 @@ Asm Definition
    CScreenWorldMap           ends
 
 
+----
+
 .. _CScriptCache:
 
 CScriptCache
@@ -3347,6 +3407,8 @@ Asm Definition
      m_nTableEntries    dd ?
    CScriptCache         ends
 
+
+----
 
 .. _CSearchBitmap:
 
@@ -3392,6 +3454,8 @@ Asm Definition
                              db ? ; padding
    CSearchBitmap ends
 
+
+----
 
 .. _CSearchRequest:
 
@@ -3497,6 +3561,8 @@ Asm Definition
    CSearchRequest            ends
 
 
+----
+
 .. _CSelectiveBonus:
 
 CSelectiveBonus
@@ -3520,6 +3586,8 @@ Asm Definition
    CSelectiveBonus  ends
 
 
+----
+
 .. _CSelectiveBonusList:
 
 CSelectiveBonusList
@@ -3539,6 +3607,8 @@ Asm Definition
      m_cTypedPtrList    CTypedPtrList <>
    CSelectiveBonusList  ends
 
+
+----
 
 .. _CSelectiveWeaponType:
 
@@ -3566,6 +3636,8 @@ Asm Definition
    CSelectiveWeaponType ends
 
 
+----
+
 .. _CSelectiveWeaponTypeList:
 
 CSelectiveWeaponTypeList
@@ -3585,6 +3657,8 @@ Asm Definition
      m_cTypedPtrList        CTypedPtrList <>
    CSelectiveWeaponTypeList ends
 
+
+----
 
 .. _CSequenceSound:
 
@@ -3608,6 +3682,8 @@ Asm Definition
      m_offset       dd ?
    CSequenceSound   ends
 
+
+----
 
 .. _CSequenceSoundList:
 
@@ -3638,6 +3714,8 @@ Asm Definition
    CSequenceSoundList   ends
 
 
+----
+
 .. _CSize:
 
 CSize
@@ -3662,6 +3740,8 @@ Asm Definition
      cy     dd ?
    CSize    ends
 
+
+----
 
 .. _CSnowFlake:
 
@@ -3695,6 +3775,8 @@ Asm Definition
    CSnowFlake               ends
 
 
+----
+
 .. _CSnowStorm:
 
 CSnowStorm
@@ -3724,6 +3806,8 @@ Asm Definition
    CSnowStorm               ends
 
 
+----
+
 .. _CSound:
 
 CSound
@@ -3749,6 +3833,8 @@ Asm Definition
      pimpl          dd ? ; CSoundImp* 
    CSound           ends
 
+
+----
 
 .. _CSoundChannel:
 
@@ -3793,6 +3879,8 @@ Asm Definition
    CSoundChannel        ends
 
 
+----
+
 .. _CSoundExtensionBase:
 
 CSoundExtensionBase
@@ -3825,6 +3913,8 @@ Asm Definition
    CSoundExtensionBase  ends
 
 
+----
+
 .. _CSoundExtensionFile:
 
 CSoundExtensionFile
@@ -3844,6 +3934,8 @@ Asm Definition
      m_cResHelper       CResHelper <>
    CSoundExtensionFile  ends
 
+
+----
 
 .. _CSoundImp:
 
@@ -3963,6 +4055,8 @@ Asm Definition
    CSoundImp             ends
 
 
+----
+
 .. _CSoundMixer:
 
 CSoundMixer
@@ -3982,6 +4076,8 @@ Asm Definition
      pimpl      dd ? ; CSoundMixerImp* 
    CSoundMixer  ends
 
+
+----
 
 .. _CSoundMixerImp:
 
@@ -4101,6 +4197,8 @@ Asm Definition
    CSoundMixerImp        ends
 
 
+----
+
 .. _CSoundProperties:
 
 CSoundProperties
@@ -4120,6 +4218,8 @@ Asm Definition
      m_iEAXpreset   _EAXPRESET <>
    CSoundProperties ends
 
+
+----
 
 .. _CSparkle:
 
@@ -4182,6 +4282,8 @@ Asm Definition
      m_pTargetAction    dd ? ; CAIAction* 
    CSparkle             ends
 
+
+----
 
 .. _CSparkleCluster:
 
@@ -4263,6 +4365,8 @@ Asm Definition
      m_nGravity         dd ?
 CSparkleCluster         ends
 
+
+----
 
 .. _CSpawn:
 
@@ -4436,6 +4540,8 @@ Asm Definition
    CSpawn                       ends
 
 
+----
+
 .. _CSpawnFile:
 
 CSpawnFile
@@ -4464,6 +4570,8 @@ Asm Definition
      m_bInSpawn         dd ?
    CSpawnFile           ends
 
+
+----
 
 .. _CSpawnList:
 
@@ -4506,6 +4614,8 @@ Asm Definition
    CSpawnList               ends
 
 
+----
+
 .. _CSpawnPoint:
 
 CSpawnPoint
@@ -4532,6 +4642,8 @@ Asm Definition
    CSpawnPoint  ends
 
 
+----
+
 .. _CSpawnPointArray:
 
 CSpawnPointArray
@@ -4555,6 +4667,8 @@ Asm Definition
    CSpawnPointArray     ends
 
 
+----
+
 .. _CSpawnPointVar:
 
 CSpawnPointVar
@@ -4574,6 +4688,8 @@ Asm Definition
      m_cSpawnVar    CSpawnVar <>
    CSpawnPointVar   ends
 
+
+----
 
 .. _CSpawnVar:
 
@@ -4598,6 +4714,8 @@ Asm Definition
    CSpawnVar        ends
 
 
+----
+
 .. _CSpell:
 
 CSpell
@@ -4617,6 +4735,8 @@ Asm Definition
      m_cResHelper   CResHelper <>
    CSpell           ends
 
+
+----
 
 .. _CSpellLevelDecrementing:
 
@@ -4640,6 +4760,8 @@ Asm Definition
      m_nLevels             dd ?
    CSpellLevelDecrementing ends
 
+
+----
 
 .. _CSteam:
 
@@ -4721,6 +4843,8 @@ Asm Definition
    CSteam                         ends
 
 
+----
+
 .. _CSteamIDSubscribedItems:
 
 CSteam::SubscribedItems
@@ -4747,6 +4871,8 @@ Asm Definition
    CSteamIDSubscribedItems  ends
 
 
+----
+
 .. _CSteamID:
 
 CSteamID
@@ -4766,6 +4892,8 @@ Asm Definition
      m_steamid  CSteamIDSteamID <> ; CSteamID::SteamID_t
    CSteamID     ends
 
+
+----
 
 .. _CSteamIDSteamID:
 
@@ -4791,6 +4919,8 @@ Asm Definition
    ends
    CSteamIDSteamID  ends
 
+
+----
 
 .. _CSteamIDSteamIDSteamIDComponent:
 
@@ -4822,6 +4952,8 @@ Asm Definition
      ; EUniverse m_EUniverse : 8
    CSteamIDSteamIDSteamIDComponent  ends
 
+
+----
 
 .. _CStore:
 
@@ -4873,6 +5005,8 @@ Asm Definition
    CStore           ends
 
 
+----
+
 .. _CStoreFile:
 
 CStoreFile
@@ -4892,6 +5026,8 @@ Asm Definition
      m_cResHelper   CResHelper <>
    CStoreFile       ends
 
+
+----
 
 .. _CStoreFileDrinks:
 
@@ -4921,6 +5057,8 @@ Asm Definition
      m_nRumorChance dd ?
    CStoreFileDrinks ends
 
+
+----
 
 .. _CStoreFileHeader:
 
@@ -5044,6 +5182,8 @@ Asm Definition
    CStoreFileHeader         ends
 
 
+----
+
 .. _CStoreFileItem:
 
 CStoreFileItem
@@ -5079,6 +5219,8 @@ Asm Definition
    CStoreFileItem   ends
 
 
+----
+
 .. _CStoreFileSpell:
 
 CStoreFileSpell
@@ -5101,6 +5243,8 @@ Asm Definition
      m_cost         dd ?
    CStoreFileSpell  ends
 
+
+----
 
 .. _CString:
 
@@ -5131,6 +5275,8 @@ Asm Definition
    CString         ends ; size 0x4
 
 
+----
+
 .. _CStringData:
 
 CStringData
@@ -5156,6 +5302,8 @@ Asm Definition
      nAllocLength   dd ?
    CStringData      ends
 
+
+----
 
 .. _CStringList:
 
@@ -5194,6 +5342,8 @@ Asm Definition
      m_nBlockSize   dd ?
    CStringList      ends
 
+
+----
 
 .. _CStringListCNode:
 

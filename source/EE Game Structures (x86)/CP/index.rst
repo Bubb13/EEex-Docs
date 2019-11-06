@@ -125,6 +125,8 @@ Asm Definition
    CParticle        ends
 
 
+----
+
 .. _CPARTICLEPOINT:
 
 CPARTICLE_POINT
@@ -150,6 +152,8 @@ Asm Definition
      z              dd ?
    CPARTICLE_POINT  ends
 
+
+----
 
 .. _CPathNode:
 
@@ -195,6 +199,8 @@ Asm Definition
    CPathNode            ends
 
 
+----
+
 .. _CPathSearch:
 
 CPathSearch
@@ -235,6 +241,8 @@ Asm Definition
      m_pathCurrent   dw ?
    CPathSearch       ends
 
+
+----
 
 .. _CPersistantEffect:
 
@@ -280,6 +288,8 @@ Asm Definition
    CPersistantEffect    ends
 
 
+----
+
 .. _CPersistantEffectApplyEffect:
 
 CPersistantEffectApplyEffect
@@ -305,6 +315,8 @@ Asm Definition
      m_pSourceEffect            dd ? ; CGameEffect* 
    CPersistantEffectApplyEffect ends
 
+
+----
 
 .. _CPersistantEffectBurningDeath:
 
@@ -334,6 +346,8 @@ Asm Definition
                                     db ? ; padding
    CPersistantEffectBurningDeath    ends
 
+
+----
 
 .. _CPersistantEffectColorEffect:
 
@@ -392,6 +406,8 @@ Asm Definition
    CPersistantEffectColorEffect ends
 
 
+----
+
 .. _CPersistantEffectDamage:
 
 CPersistantEffectDamage
@@ -428,6 +444,8 @@ Asm Definition
    CPersistantEffectDamage  ends
 
 
+----
+
 .. _CPersistantEffectDisease:
 
 CPersistantEffectDisease
@@ -451,6 +469,8 @@ Asm Definition
    CPersistantEffectDisease     ends
 
 
+----
+
 .. _CPersistantEffectElectricDeath:
 
 CPersistantEffectElectricDeath
@@ -470,6 +490,8 @@ Asm Definition
      m_cPersistantEffectBurningDeath CPersistantEffectBurningDeath <>
    CPersistantEffectElectricDeath    ends
 
+
+----
 
 .. _CPersistantEffectFadeEffect:
 
@@ -503,6 +525,8 @@ Asm Definition
    CPersistantEffectFadeEffect  ends
 
 
+----
+
 .. _CPersistantEffectFireDeath:
 
 CPersistantEffectFireDeath
@@ -523,6 +547,8 @@ Asm Definition
    CPersistantEffectFireDeath        ends
 
 
+----
+
 .. _CPersistantEffectList:
 
 CPersistantEffectList
@@ -542,6 +568,8 @@ Asm Definition
      m_cTypedPtrList        CTypedPtrList <>
    CPersistantEffectList    ends
 
+
+----
 
 .. _CPersistantEffectListRegenerated:
 
@@ -565,6 +593,8 @@ Asm Definition
      m_nCounter                     dd ?
    CPersistantEffectListRegenerated ends
 
+
+----
 
 .. _CPersistantEffectMove:
 
@@ -601,6 +631,8 @@ Asm Definition
    CPersistantEffectMove    ends
 
 
+----
+
 .. _CPersistantEffectPoison:
 
 CPersistantEffectPoison
@@ -620,6 +652,8 @@ Asm Definition
      m_cPersistantEffectDamage  CPersistantEffectDamage <>
    CPersistantEffectPoison      ends
 
+
+----
 
 .. _CPersistantEffectRegeneration:
 
@@ -641,6 +675,8 @@ Asm Definition
    CPersistantEffectRegeneration    ends
 
 
+----
+
 .. _CPlatform:
 
 CPlatform
@@ -652,6 +688,8 @@ CPlatform
 |            | 1        |                                        |                               |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CPlex:
 
@@ -675,6 +713,8 @@ Asm Definition
      dwReserved dd ?
    CPlex        ends
 
+
+----
 
 .. _CPoint:
 
@@ -702,6 +742,8 @@ Asm Definition
    CPoint   ends
 
 
+----
+
 .. _CPortraitIcon:
 
 CPortraitIcon
@@ -727,6 +769,8 @@ Asm Definition
      bam            CVidCell <>
    CPortraitIcon    ends
 
+
+----
 
 .. _CProgressBar:
 
@@ -798,6 +842,8 @@ Asm Definition
      m_nRemoteWaitingReason  dd 6 dup (?)
    CProgressBar              ends
 
+
+----
 
 .. _CProjectile:
 
@@ -981,6 +1027,8 @@ Asm Definition
    CProjectile              ends
 
 
+----
+
 .. _CProjectileAmbiant:
 
 CProjectileAmbiant
@@ -1003,6 +1051,8 @@ Asm Definition
                             dw ? ; padding
    CProjectileAmbiant       ends
 
+
+----
 
 .. _CProjectileArea:
 
@@ -1175,6 +1225,8 @@ Asm Definition
    CProjectileArea                ends
 
 
+----
+
 .. _CProjectileAreaFileFormat:
 
 CProjectileAreaFileFormat
@@ -1266,6 +1318,8 @@ Asm Definition
      reservedSpace                  dd 45 dup (?)
    CProjectileAreaFileFormat        ends
 
+
+----
 
 .. _CProjectileBAM:
 
@@ -1390,6 +1444,8 @@ Asm Definition
    CProjectileBAM         ends
 
 
+----
+
 .. _CProjectileBAMFileFormat:
 
 CProjectileBAMFileFormat
@@ -1476,6 +1532,8 @@ Asm Definition
    CProjectileBAMFileFormat     ends
 
 
+----
+
 .. _CProjectileCallLightning:
 
 CProjectileCallLightning
@@ -1495,6 +1553,8 @@ Asm Definition
      m_cProjectileInstant   CProjectileInstant <>
    CProjectileCallLightning ends
 
+
+----
 
 .. _CProjectileCastingGlow:
 
@@ -1536,6 +1596,8 @@ Asm Definition
      m_delay                db ?
    CProjectileCastingGlow   ends
 
+
+----
 
 .. _CProjectileChain:
 
@@ -1599,6 +1661,8 @@ Asm Definition
    CProjectileChain             ends
 
 
+----
+
 .. _CProjectileColorSpray:
 
 CProjectileColorSpray
@@ -1625,6 +1689,8 @@ Asm Definition
    CProjectileColorSpray    ends
 
 
+----
+
 .. _CProjectileConeOfCold:
 
 CProjectileConeOfCold
@@ -1650,6 +1716,8 @@ Asm Definition
                             dw ? ; padding
    CProjectileConeOfCold    ends
 
+
+----
 
 .. _CProjectileFall:
 
@@ -1689,6 +1757,8 @@ Asm Definition
    CProjectileFall      ends
 
 
+----
+
 .. _CProjectileFile:
 
 CProjectileFile
@@ -1708,6 +1778,8 @@ Asm Definition
      m_cResHelper   CResHelper <>
    CProjectileFile  ends
 
+
+----
 
 .. _CProjectileFileFormat:
 
@@ -1789,6 +1861,8 @@ Asm Definition
    CProjectileFileFormat    ends
 
 
+----
+
 .. _CProjectileFireHands:
 
 CProjectileFireHands
@@ -1815,6 +1889,8 @@ Asm Definition
    CProjectileFireHands     ends
 
 
+----
+
 .. _CProjectileInstant:
 
 CProjectileInstant
@@ -1834,6 +1910,8 @@ Asm Definition
      m_cProjectile      CProjectile <>
    CProjectileInstant   ends
 
+
+----
 
 .. _CProjectileInvisibleTravelling:
 
@@ -1855,6 +1933,8 @@ Asm Definition
    CProjectileInvisibleTravelling   ends
 
 
+----
+
 .. _CProjectileLightningBolt:
 
 CProjectileLightningBolt
@@ -1874,6 +1954,8 @@ Asm Definition
      m_cProjectileBAM       CProjectileBAM <>
    CProjectileLightningBolt ends
 
+
+----
 
 .. _CProjectileLightningBoltGround:
 
@@ -1898,6 +1980,8 @@ Asm Definition
    CProjectileLightningBoltGround   ends
 
 
+----
+
 .. _CProjectileLightningBounce:
 
 CProjectileLightningBounce
@@ -1920,6 +2004,8 @@ Asm Definition
      m_lifeSpan                 dd ?
    CProjectileLightningBounce   ends
 
+
+----
 
 .. _CProjectileLightningStorm:
 
@@ -1944,6 +2030,8 @@ Asm Definition
    CProjectileLightningStorm    ends
 
 
+----
+
 .. _CProjectileMagicMissileMulti:
 
 CProjectileMagicMissileMulti
@@ -1963,6 +2051,8 @@ Asm Definition
      m_cProjectileMulti         CProjectileMulti <>
    CProjectileMagicMissileMulti ends
 
+
+----
 
 .. _CProjectileMulti:
 
@@ -1987,6 +2077,8 @@ Asm Definition
    CProjectileMulti   ends
 
 
+----
+
 .. _CProjectileMushroom:
 
 CProjectileMushroom
@@ -2006,6 +2098,8 @@ Asm Definition
      m_cProjectileBAM   CProjectileBAM <>
    CProjectileMushroom  ends
 
+
+----
 
 .. _CProjectileNewScorcher:
 
@@ -2056,6 +2150,8 @@ Asm Definition
    CProjectileNewScorcher               ends
 
 
+----
+
 .. _CProjectileScorcher:
 
 CProjectileScorcher
@@ -2097,6 +2193,8 @@ Asm Definition
    CProjectileScorcher  ends
 
 
+----
+
 .. _CProjectileSegment:
 
 CProjectileSegment
@@ -2122,6 +2220,8 @@ Asm Definition
                         dw ? ; padding
    CProjectileSegment   ends
 
+
+----
 
 .. _CProjectileSkyStrike:
 
@@ -2158,6 +2258,8 @@ Asm Definition
    CProjectileSkyStrike ends
 
 
+----
+
 .. _CProjectileSkyStrikeBAM:
 
 CProjectileSkyStrikeBAM
@@ -2177,6 +2279,8 @@ Asm Definition
      m_cProjectileBAM       CProjectileBAM <>
    CProjectileSkyStrikeBAM  ends
 
+
+----
 
 .. _CProjectileSpellHit:
 
@@ -2216,6 +2320,8 @@ Asm Definition
                         db ? ; padding
    CProjectileSpellHit  ends
 
+
+----
 
 .. _CProjectileTravelDoor:
 
@@ -2267,6 +2373,8 @@ Asm Definition
    CProjectileTravelDoor    ends
 
 
+----
+
 .. _CPtrArray:
 
 CPtrArray
@@ -2298,6 +2406,8 @@ Asm Definition
      m_nGrowBy  dd ?
    CPtrArray    ends
 
+
+----
 
 .. _CPtrList:
 
@@ -2336,6 +2446,8 @@ Asm Definition
      m_nBlockSize   dd ?
    CPtrList         ends
 
+
+----
 
 .. _CPtrListCNode:
 

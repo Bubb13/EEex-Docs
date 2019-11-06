@@ -104,6 +104,8 @@ Asm Definition
    CGameAIArea      ends
 
 
+----
+
 .. _CGameAIBase:
 
 CGameAIBase
@@ -345,6 +347,8 @@ Asm Definition
    CGameAIBase              ends
 
 
+----
+
 .. _CGameAIGame:
 
 CGameAIGame
@@ -364,6 +368,8 @@ Asm Definition
      m_cGameAIBase  CGameAIBase <>
    CGameAIGame      ends
 
+
+----
 
 .. _CGameAbilityList:
 
@@ -385,6 +391,8 @@ Asm Definition
    CGameAbilityList     ends
 
 
+----
+
 .. _CGameAddMapNote:
 
 CGameAddMapNote
@@ -404,6 +412,8 @@ Asm Definition
      m_cGameEffect  CGameEffect <>
    CGameAddMapNote  ends
 
+
+----
 
 .. _CGameAnimation:
 
@@ -444,6 +454,8 @@ Asm Definition
                              db ? ; padding
    CGameAnimation            ends
 
+
+----
 
 .. _CGameAnimationType:
 
@@ -540,6 +552,8 @@ Asm Definition
    CGameAnimationType    ends
 
 
+----
+
 .. _CGameAnimationTypeAmbient:
 
 CGameAnimationTypeAmbient
@@ -606,6 +620,8 @@ Asm Definition
    CGameAnimationTypeAmbient    ends
 
 
+----
+
 .. _CGameAnimationTypeAmbientStatic:
 
 CGameAnimationTypeAmbientStatic
@@ -663,6 +679,8 @@ Asm Definition
                                     db ? ; padding
    CGameAnimationTypeAmbientStatic  ends
 
+
+----
 
 .. _CGameAnimationTypeCharacter:
 
@@ -869,6 +887,8 @@ Asm Definition
                                 db ? ; padding
    CGameAnimationTypeCharacter  ends
 
+
+----
 
 .. _CGameAnimationTypeCharacterOld:
 
@@ -1190,6 +1210,8 @@ Asm Definition
    CGameAnimationTypeCharacterOld   ends
 
 
+----
+
 .. _CGameAnimationTypeEffect:
 
 CGameAnimationTypeEffect
@@ -1250,6 +1272,8 @@ Asm Definition
    CGameAnimationTypeEffect ends
 
 
+----
+
 .. _CGameAnimationTypeFlying:
 
 CGameAnimationTypeFlying
@@ -1298,6 +1322,8 @@ Asm Definition
                             db ? ; padding
    CGameAnimationTypeFlying ends
 
+
+----
 
 .. _CGameAnimationTypeMonster:
 
@@ -1435,6 +1461,8 @@ Asm Definition
    CGameAnimationTypeMonster    ends
 
 
+----
+
 .. _CGameAnimationTypeMonsterAnkheg:
 
 CGameAnimationTypeMonsterAnkheg
@@ -1531,6 +1559,8 @@ Asm Definition
      m_bMirrorBam               dd ?
    CGameAnimationTypeMonsterAnkheg ends
 
+
+----
 
 .. _CGameAnimationTypeMonsterIcewind:
 
@@ -1754,6 +1784,8 @@ Asm Definition
    CGameAnimationTypeMonsterIcewind     ends
 
 
+----
+
 .. _CGameAnimationTypeMonsterLarge:
 
 CGameAnimationTypeMonsterLarge
@@ -1823,6 +1855,8 @@ Asm Definition
                                 db ? ; padding
    CGameAnimationTypeMonsterLarge  ends
 
+
+----
 
 .. _CGameAnimationTypeMonsterLarge16:
 
@@ -1894,6 +1928,8 @@ Asm Definition
                                 db ? ; padding
    CGameAnimationTypeMonsterLarge16  ends
 
+
+----
 
 .. _CGameAnimationTypeMonsterLayered:
 
@@ -1994,6 +2030,8 @@ Asm Definition
      m_resrefWeapon                 CString 2 dup ({})
    CGameAnimationTypeMonsterLayered ends
 
+
+----
 
 .. _CGameAnimationTypeMonsterLayeredSpell:
 
@@ -2106,6 +2144,8 @@ Asm Definition
    CGameAnimationTypeMonsterLayeredSpell ends
 
 
+----
+
 .. _CGameAnimationTypeMonsterMulti:
 
 CGameAnimationTypeMonsterMulti
@@ -2205,6 +2245,8 @@ Asm Definition
                                    db ? ; padding
    CGameAnimationTypeMonsterMulti  ends
 
+
+----
 
 .. _CGameAnimationTypeMonsterMultiNew:
 
@@ -2311,6 +2353,8 @@ Asm Definition
    CGameAnimationTypeMonsterMultiNew    ends
 
 
+----
+
 .. _CGameAnimationTypeMonsterOld:
 
 CGameAnimationTypeMonsterOld
@@ -2379,6 +2423,8 @@ Asm Definition
                                 db ? ; padding
    CGameAnimationTypeMonsterOld ends
 
+
+----
 
 .. _CGameAnimationTypeMonsterQuadrant:
 
@@ -2461,6 +2507,8 @@ Asm Definition
    CGameAnimationTypeMonsterQuadrant ends
 
 
+----
+
 .. _CGameAnimationTypeTownStatic:
 
 CGameAnimationTypeTownStatic
@@ -2509,6 +2557,8 @@ Asm Definition
                                 db ? ; padding
    CGameAnimationTypeTownStatic ends
 
+
+----
 
 .. _CGameArea:
 
@@ -2873,6 +2923,8 @@ Asm Definition
    CGameArea                    ends
 
 
+----
+
 .. _CGameAreaClairvoyanceEntry:
 
 CGameAreaClairvoyanceEntry
@@ -2913,6 +2965,8 @@ Asm Definition
      m_pVisMapExploredArea      dd ? ; 
    CGameAreaClairvoyanceEntry   ends
 
+
+----
 
 .. _CGameAreaNotes:
 
@@ -2968,6 +3022,8 @@ Asm Definition
    CGameAreaNotes           ends
 
 
+----
+
 .. _CGameButtonList:
 
 CGameButtonList
@@ -2990,6 +3046,8 @@ Asm Definition
      m_nFirstMageSpellIndex dd ?
    CGameButtonList          ends
 
+
+----
 
 .. _CGameChunk:
 
@@ -3043,6 +3101,8 @@ Asm Definition
      m_sound                CSound <>
    CGameChunk               ends
 
+
+----
 
 .. _CGameContainer:
 
@@ -3152,6 +3212,8 @@ Asm Definition
    CGameContainer               ends
 
 
+----
+
 .. _CGameDialogEntry:
 
 CGameDialogEntry
@@ -3195,6 +3257,8 @@ Asm Definition
    CGameDialogEntry             ends
 
 
+----
+
 .. _CGameDialogIdentifier:
 
 CGameDialogIdentifier
@@ -3217,6 +3281,8 @@ Asm Definition
      m_index                dd ?
    CGameDialogIdentifier    ends
 
+
+----
 
 .. _CGameDialogReply:
 
@@ -3285,6 +3351,8 @@ Asm Definition
    CGameDialogReply         ends
 
 
+----
+
 .. _CGameDialogSprite:
 
 CGameDialogSprite
@@ -3352,6 +3420,8 @@ Asm Definition
      m_UpdateTime               dd ?
    CGameDialogSprite            ends
 
+
+----
 
 .. _CGameDoor:
 
@@ -3502,6 +3572,8 @@ Asm Definition
    CGameDoor                    ends
 
 
+----
+
 .. _CGameFile:
 
 CGameFile
@@ -3521,6 +3593,8 @@ Asm Definition
      m_cResGame CResHelper <>
    CGameFile    ends
 
+
+----
 
 .. _CGameFireball3d:
 
@@ -3678,6 +3752,8 @@ Asm Definition
    CGameFireball3d          ends
 
 
+----
+
 .. _CGameID:
 
 CGameID
@@ -3702,6 +3778,8 @@ Asm Definition
      ends
    CGameID          ends
 
+
+----
 
 .. _CGameIDGameID_t:
 
@@ -3730,6 +3808,8 @@ Asm Definition
    CGameIDGameID_t  ends
 
 
+----
+
 .. _CGameJournal:
 
 CGameJournal
@@ -3749,6 +3829,8 @@ Asm Definition
      m_aChapters CTypedPtrArray <>
    CGameJournal  ends
 
+
+----
 
 .. _CGameJournalAlphabetizer:
 
@@ -3772,6 +3854,8 @@ Asm Definition
      stText                 CString  <>
    CGameJournalAlphabetizer ends
 
+
+----
 
 .. _CGameJournalEntry:
 
@@ -3818,6 +3902,8 @@ Asm Definition
      CGJEInUse = 2
    }
 
+
+----
 
 .. _CGameObject:
 
@@ -3897,6 +3983,8 @@ Asm Definition
    CGameObject          ends
 
 
+----
+
 .. _CGameObjectArray:
 
 CGameObjectArray
@@ -3908,6 +3996,8 @@ CGameObjectArray
 |            | 1        |                                        |                               |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CGameObjectArrayEntry:
 
@@ -3934,6 +4024,8 @@ Asm Definition
      m_objectPtr            dd ? ; CGameObject*
    CGameObjectArrayEntry    ends
 
+
+----
 
 .. _CGameOptions:
 
@@ -4412,6 +4504,8 @@ Asm Definition
       data +0x258 [sizeof=4] long m_nDifficultyLevel
 
 
+----
+
 .. _CGamePermission:
 
 CGamePermission
@@ -4431,6 +4525,8 @@ Asm Definition
      m_permission   db 8 dup (?)
    CGamePermission  ends
 
+
+----
 
 .. _CGameRemoteObjectArray:
 
@@ -4492,6 +4588,8 @@ Asm Definition
    CGameRemoteObjectArray
 
 
+----
+
 .. _CGameRemoteObjectControlChange:
 
 CGameRemoteObjectControlChange
@@ -4532,6 +4630,8 @@ Asm Definition
    CGameRemoteObjectControlChange   ends
 
 
+----
+
 .. _CGameRemoteObjectDeletion:
 
 CGameRemoteObjectDeletion
@@ -4557,6 +4657,8 @@ Asm Definition
      pNext                      dd ? ; CGameRemoteObjectDeletion* 
    CGameRemoteObjectDeletion    ends
 
+
+----
 
 .. _CGameRemoteObjectListEntry:
 
@@ -4587,6 +4689,8 @@ Asm Definition
    CGameRemoteObjectListEntry   ends
 
 
+----
+
 .. _CGameRemoveMapNote:
 
 CGameRemoveMapNote
@@ -4606,6 +4710,8 @@ Asm Definition
      m_cGameEffect      CGameEffect <>
    CGameRemoveMapNote   ends
 
+
+----
 
 .. _CGameSave:
 
@@ -4663,6 +4769,8 @@ Asm Definition
    CGameSave                    ends
 
 
+----
+
 .. _CGameSaveCharacter:
 
 CGameSaveCharacter
@@ -4691,6 +4799,8 @@ Asm Definition
      m_quickItems       CButtonData 3 dup ({})
    CGameSaveCharacter   ends
 
+
+----
 
 .. _CGameSound:
 
@@ -4741,6 +4851,8 @@ Asm Definition
    CGameSound           ends
 
 
+----
+
 .. _CGameSpawning:
 
 CGameSpawning
@@ -4778,6 +4890,8 @@ Asm Definition
      m_weightSum            dd ?
    CGameSpawning            ends
 
+
+----
 
 .. _CGameSprite:
 
@@ -5535,6 +5649,8 @@ CGameSprite
 +------------+----------+-----------------------------------------------------------------------------+-------------------------------------+
 
 
+----
+
 .. _CGameSpriteGroundItem:
 
 CGameSprite\:\:GroundItem
@@ -5573,6 +5689,8 @@ Asm Definition
    CGameSpriteGroundItem    ends
 
 
+----
+
 .. _CGameSpriteRenderHealthBar:
 
 CGameSprite\:\:RenderHealthBar
@@ -5595,6 +5713,8 @@ Asm Definition
      c                          dd ?
    CGameSpriteRenderHealthBar   ends
 
+
+----
 
 .. _CGameSpriteEquipment:
 
@@ -5630,6 +5750,8 @@ Asm Definition
      m_pSprite                  dd ? ; CGameSprite* 
    CGameSpriteEquipment         ends
 
+
+----
 
 .. _CGameSpriteLastUpdate:
 
@@ -5719,6 +5841,8 @@ CGameSpriteLastUpdate
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CGameStatic:
 
 CGameStatic
@@ -5769,6 +5893,8 @@ Asm Definition
    CGameStatic              ends
 
 
+----
+
 .. _CGameStatsRes:
 
 CGameStatsRes
@@ -5797,6 +5923,8 @@ Asm Definition
                     dw ? ; padding
    CGameStatsRes    ends
 
+
+----
 
 .. _CGameStatsSprite:
 
@@ -5847,6 +5975,8 @@ Asm Definition
      m_pWeaponStats             CGameStatsRes 4 dup ({})
    CGameStatsSprite             ends
 
+
+----
 
 .. _CGameTemporal:
 
@@ -5910,6 +6040,8 @@ Asm Definition
    CGameTemporal            ends
 
 
+----
+
 .. _CGameText:
 
 CGameText
@@ -5956,6 +6088,8 @@ Asm Definition
      m_pTarget      dd ? ; CGameObject*
    CGameText        ends
 
+
+----
 
 .. _CGameTiledObject:
 
@@ -6007,6 +6141,8 @@ Asm Definition
    CGameTiledObject     ends
 
 
+----
+
 .. _CGameTimer:
 
 CGameTimer
@@ -6034,6 +6170,8 @@ Asm Definition
                 db ? ; padding
    CGameTimer   ends
 
+
+----
 
 .. _CGameTrigger:
 

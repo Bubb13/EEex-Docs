@@ -395,6 +395,11 @@ CGameEffect
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
+
+----
+
 .. _CGameEffectAC:
 
 CGameEffectAC
@@ -406,6 +411,11 @@ CGameEffectAC
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
+
+
+----
 
 .. _CGameEffectAIChange:
 
@@ -419,6 +429,11 @@ CGameEffectAIChange
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
+
+----
+
 .. _CGameEffectAddInnateAbility:
 
 CGameEffectAddInnateAbility
@@ -430,6 +445,11 @@ CGameEffectAddInnateAbility
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
+
+
+----
 
 .. _CGameEffectAlignmentChange:
 
@@ -443,6 +463,11 @@ CGameEffectAlignmentChange
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
+
+----
+
 .. _CGameEffectAlignmentReversal:
 
 CGameEffectAlignmentReversal
@@ -454,6 +479,11 @@ CGameEffectAlignmentReversal
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
+
+
+----
 
 .. _CGameEffectAnimationChange:
 
@@ -467,6 +497,11 @@ CGameEffectAnimationChange
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
+
+----
+
 .. _CGameEffectApplyEffect:
 
 CGameEffectApplyEffect
@@ -478,6 +513,11 @@ CGameEffectApplyEffect
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
+
+
+----
 
 .. _CGameEffectApplyEffectEquipItem:
 
@@ -491,6 +531,11 @@ CGameEffectApplyEffectEquipItem
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
+
+----
+
 .. _CGameEffectApplyEffectEquipItemType:
 
 CGameEffectApplyEffectEquipItemType
@@ -502,6 +547,9 @@ CGameEffectApplyEffectEquipItemType
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectApplySpell:
 
@@ -515,6 +563,9 @@ CGameEffectApplySpell
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectApplySpellOnMove:
 
 CGameEffectApplySpellOnMove
@@ -526,6 +577,9 @@ CGameEffectApplySpellOnMove
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectAssassination:
 
@@ -539,6 +593,9 @@ CGameEffectAssassination
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectAttackNo:
 
 CGameEffectAttackNo
@@ -550,6 +607,9 @@ CGameEffectAttackNo
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectAuraCleansing:
 
@@ -563,6 +623,9 @@ CGameEffectAuraCleansing
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectAwaken:
 
 CGameEffectAwaken
@@ -574,6 +637,9 @@ CGameEffectAwaken
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectBackStabMod:
 
@@ -587,6 +653,9 @@ CGameEffectBackStabMod
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectBackStabSpell:
 
 CGameEffectBackStabSpell
@@ -599,6 +668,9 @@ CGameEffectBackStabSpell
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectBardSong:
 
 CGameEffectBardSong
@@ -610,6 +682,9 @@ CGameEffectBardSong
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectBase:
 
@@ -704,6 +779,9 @@ Related to `EFF V2.0 file format <https://gibberlings3.github.io/iesdp/file_form
 
 
 
+
+----
+
 .. _CGameEffectBerserk:
 
 CGameEffectBerserk
@@ -715,6 +793,9 @@ CGameEffectBerserk
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectBerserkStage1:
 
@@ -728,6 +809,9 @@ CGameEffectBerserkStage1
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectBerserkStage2:
 
 CGameEffectBerserkStage2
@@ -739,6 +823,9 @@ CGameEffectBerserkStage2
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectBlindness:
 
@@ -752,6 +839,9 @@ CGameEffectBlindness
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectBlur:
 
 CGameEffectBlur
@@ -763,6 +853,9 @@ CGameEffectBlur
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectBounceEffect:
 
@@ -776,6 +869,9 @@ CGameEffectBounceEffect
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectBounceLevel:
 
 CGameEffectBounceLevel
@@ -787,6 +883,9 @@ CGameEffectBounceLevel
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectBounceLevelDecrement:
 
@@ -800,6 +899,9 @@ CGameEffectBounceLevelDecrement
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectBounceProjectile:
 
 CGameEffectBounceProjectile
@@ -811,6 +913,9 @@ CGameEffectBounceProjectile
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectBounceSchool:
 
@@ -824,6 +929,9 @@ CGameEffectBounceSchool
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectBounceSchoolDecrement:
 
 CGameEffectBounceSchoolDecrement
@@ -834,6 +942,9 @@ CGameEffectBounceSchoolDecrement
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectBounceSecondaryType:
 
@@ -847,6 +958,9 @@ CGameEffectBounceSecondaryType
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectBounceSecondaryTypeDecrement:
 
 CGameEffectBounceSecondaryTypeDecrement
@@ -858,6 +972,9 @@ CGameEffectBounceSecondaryTypeDecrement
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectBounceSpell:
 
@@ -871,6 +988,9 @@ CGameEffectBounceSpell
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectCHR:
 
 CGameEffectCHR
@@ -882,6 +1002,9 @@ CGameEffectCHR
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectCON:
 
@@ -895,6 +1018,9 @@ CGameEffectCON
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectCalm:
 
 CGameEffectCalm
@@ -906,6 +1032,9 @@ CGameEffectCalm
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectCannotSaveOrRest:
 
@@ -919,6 +1048,9 @@ CGameEffectCannotSaveOrRest
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectCastSpell:
 
 CGameEffectCastSpell
@@ -930,6 +1062,9 @@ CGameEffectCastSpell
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectCastSpellPoint:
 
@@ -943,6 +1078,9 @@ CGameEffectCastSpellPoint
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectCastingFailure:
 
 CGameEffectCastingFailure
@@ -954,6 +1092,9 @@ CGameEffectCastingFailure
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectCastingGlow:
 
@@ -967,6 +1108,9 @@ CGameEffectCastingGlow
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectCastingLevelBonus:
 
 CGameEffectCastingLevelBonus
@@ -978,6 +1122,9 @@ CGameEffectCastingLevelBonus
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectChangeStatic:
 
@@ -992,6 +1139,9 @@ CGameEffectChangeStatic
 
 
 
+
+----
+
 .. _CGameEffectChangeWeather:
 
 CGameEffectChangeWeather
@@ -1005,6 +1155,9 @@ CGameEffectChangeWeather
 
 
 
+
+----
+
 .. _CGameEffectChaosShield:
 
 CGameEffectChaosShield
@@ -1016,6 +1169,9 @@ CGameEffectChaosShield
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectCharm:
 
@@ -1029,6 +1185,9 @@ CGameEffectCharm
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectCheckForBerserk:
 
 CGameEffectCheckForBerserk
@@ -1040,6 +1199,9 @@ CGameEffectCheckForBerserk
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectClairvoyance:
 
@@ -1053,6 +1215,9 @@ CGameEffectClairvoyance
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectClassStringOverride:
 
 CGameEffectClassStringOverride
@@ -1064,6 +1229,9 @@ CGameEffectClassStringOverride
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectCleanAir:
 
@@ -1077,6 +1245,9 @@ CGameEffectCleanAir
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectColorChange:
 
 CGameEffectColorChange
@@ -1088,6 +1259,9 @@ CGameEffectColorChange
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectColorGlowDissipate:
 
@@ -1101,6 +1275,9 @@ CGameEffectColorGlowDissipate
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectColorGlowPulse:
 
 CGameEffectColorGlowPulse
@@ -1112,6 +1289,9 @@ CGameEffectColorGlowPulse
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectColorGlowSolid:
 
@@ -1125,6 +1305,9 @@ CGameEffectColorGlowSolid
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectColorLightSolid:
 
 CGameEffectColorLightSolid
@@ -1136,6 +1319,9 @@ CGameEffectColorLightSolid
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectColorTintSolid:
 
@@ -1149,6 +1335,9 @@ CGameEffectColorTintSolid
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectConfusion:
 
 CGameEffectConfusion
@@ -1160,6 +1349,9 @@ CGameEffectConfusion
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectContingencyInstance:
 
@@ -1173,6 +1365,9 @@ CGameEffectContingencyInstance
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectContingencyStart:
 
 CGameEffectContingencyStart
@@ -1184,6 +1379,9 @@ CGameEffectContingencyStart
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectCopySelf:
 
@@ -1197,6 +1395,9 @@ CGameEffectCopySelf
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectCreateItem:
 
 CGameEffectCreateItem
@@ -1208,6 +1409,9 @@ CGameEffectCreateItem
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectCreateWeapon:
 
@@ -1221,6 +1425,9 @@ CGameEffectCreateWeapon
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectCriticalHitBonus:
 
 CGameEffectCriticalHitBonus
@@ -1232,6 +1439,9 @@ CGameEffectCriticalHitBonus
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectCriticalHitSpell:
 
@@ -1245,6 +1455,9 @@ CGameEffectCriticalHitSpell
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectCriticalMissModifier:
 
 CGameEffectCriticalMissModifier
@@ -1256,6 +1469,9 @@ CGameEffectCriticalMissModifier
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectCriticalMissSpell:
 
@@ -1269,6 +1485,9 @@ CGameEffectCriticalMissSpell
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectCureBlindness:
 
 CGameEffectCureBlindness
@@ -1280,6 +1499,9 @@ CGameEffectCureBlindness
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectCureDeafness:
 
@@ -1293,6 +1515,9 @@ CGameEffectCureDeafness
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectCureDisease:
 
 CGameEffectCureDisease
@@ -1304,6 +1529,9 @@ CGameEffectCureDisease
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectCureFeebleMindedness:
 
@@ -1317,6 +1545,9 @@ CGameEffectCureFeebleMindedness
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectCurePoison:
 
 CGameEffectCurePoison
@@ -1328,6 +1559,9 @@ CGameEffectCurePoison
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectCurseApplyEffect:
 
@@ -1341,6 +1575,9 @@ CGameEffectCurseApplyEffect
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDEX:
 
 CGameEffectDEX
@@ -1352,6 +1589,9 @@ CGameEffectDEX
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectDamage:
 
@@ -1365,6 +1605,9 @@ CGameEffectDamage
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDamageLuck:
 
 CGameEffectDamageLuck
@@ -1376,6 +1619,9 @@ CGameEffectDamageLuck
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectDamageMod:
 
@@ -1389,6 +1635,9 @@ CGameEffectDamageMod
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDamageVisualEffect:
 
 CGameEffectDamageVisualEffect
@@ -1400,6 +1649,9 @@ CGameEffectDamageVisualEffect
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectDeafness:
 
@@ -1413,6 +1665,9 @@ CGameEffectDeafness
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDeath:
 
 CGameEffectDeath
@@ -1424,6 +1679,9 @@ CGameEffectDeath
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectDefrost:
 
@@ -1437,6 +1695,9 @@ CGameEffectDefrost
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDestroyItem:
 
 CGameEffectDestroyItem
@@ -1448,6 +1709,9 @@ CGameEffectDestroyItem
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectDestroySelf:
 
@@ -1461,6 +1725,9 @@ CGameEffectDestroySelf
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDestroyWeapon:
 
 CGameEffectDestroyWeapon
@@ -1472,6 +1739,9 @@ CGameEffectDestroyWeapon
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectDetectAlignment:
 
@@ -1485,6 +1755,9 @@ CGameEffectDetectAlignment
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDetectIllusion:
 
 CGameEffectDetectIllusion
@@ -1496,6 +1769,9 @@ CGameEffectDetectIllusion
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectDetectTraps:
 
@@ -1509,6 +1785,9 @@ CGameEffectDetectTraps
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDisableButton:
 
 CGameEffectDisableButton
@@ -1520,6 +1799,9 @@ CGameEffectDisableButton
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectDisableCircle:
 
@@ -1533,6 +1815,9 @@ CGameEffectDisableCircle
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDisableSpellType:
 
 CGameEffectDisableSpellType
@@ -1544,6 +1829,9 @@ CGameEffectDisableSpellType
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectDisease:
 
@@ -1557,6 +1845,9 @@ CGameEffectDisease
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDisintegrate:
 
 CGameEffectDisintegrate
@@ -1568,6 +1859,9 @@ CGameEffectDisintegrate
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectDispelEffects:
 
@@ -1581,6 +1875,9 @@ CGameEffectDispelEffects
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDispelInvisible:
 
 CGameEffectDispelInvisible
@@ -1592,6 +1889,9 @@ CGameEffectDispelInvisible
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectDispelSanctuary:
 
@@ -1605,6 +1905,9 @@ CGameEffectDispelSanctuary
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDispelSchool:
 
 CGameEffectDispelSchool
@@ -1616,6 +1919,9 @@ CGameEffectDispelSchool
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectDispelSchoolOne:
 
@@ -1629,6 +1935,9 @@ CGameEffectDispelSchoolOne
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDispelSecondaryType:
 
 CGameEffectDispelSecondaryType
@@ -1640,6 +1949,9 @@ CGameEffectDispelSecondaryType
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectDispelSecondaryTypeOne:
 
@@ -1653,6 +1965,9 @@ CGameEffectDispelSecondaryTypeOne
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDisplayString:
 
 CGameEffectDisplayString
@@ -1664,6 +1979,9 @@ CGameEffectDisplayString
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectDither:
 
@@ -1677,6 +1995,9 @@ CGameEffectDither
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDoNotDraw:
 
 CGameEffectDoNotDraw
@@ -1688,6 +2009,9 @@ CGameEffectDoNotDraw
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectDrainChargeFromAllItems:
 
@@ -1701,6 +2025,9 @@ CGameEffectDrainChargeFromAllItems
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectDurationCasting:
 
 CGameEffectDurationCasting
@@ -1712,6 +2039,9 @@ CGameEffectDurationCasting
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectEnableButton:
 
@@ -1725,6 +2055,9 @@ CGameEffectEnableButton
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectEndNonDetection:
 
 CGameEffectEndNonDetection
@@ -1736,6 +2069,9 @@ CGameEffectEndNonDetection
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectEntangle:
 
@@ -1749,6 +2085,9 @@ CGameEffectEntangle
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectEquipWeapon:
 
 CGameEffectEquipWeapon
@@ -1760,6 +2099,9 @@ CGameEffectEquipWeapon
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectEvadeAreaOfEffect:
 
@@ -1773,6 +2115,9 @@ CGameEffectEvadeAreaOfEffect
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectExistanceDelayOverride:
 
 CGameEffectExistanceDelayOverride
@@ -1784,6 +2129,9 @@ CGameEffectExistanceDelayOverride
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectExplore:
 
@@ -1797,6 +2145,9 @@ CGameEffectExplore
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectFamiliarBlock:
 
 CGameEffectFamiliarBlock
@@ -1808,6 +2159,9 @@ CGameEffectFamiliarBlock
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectFatigue:
 
@@ -1821,6 +2175,9 @@ CGameEffectFatigue
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectFeebleMindedness:
 
 CGameEffectFeebleMindedness
@@ -1832,6 +2189,9 @@ CGameEffectFeebleMindedness
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectFile:
 
@@ -1845,6 +2205,9 @@ CGameEffectFile
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectFindFamiliar:
 
 CGameEffectFindFamiliar
@@ -1856,6 +2219,9 @@ CGameEffectFindFamiliar
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectFistDamageBonus:
 
@@ -1869,6 +2235,9 @@ CGameEffectFistDamageBonus
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectFistTHAC0Bonus:
 
 CGameEffectFistTHAC0Bonus
@@ -1880,6 +2249,9 @@ CGameEffectFistTHAC0Bonus
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectFloatText:
 
@@ -1893,6 +2265,9 @@ CGameEffectFloatText
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectForceSurge:
 
 CGameEffectForceSurge
@@ -1904,6 +2279,9 @@ CGameEffectForceSurge
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectForceVisible:
 
@@ -1917,6 +2295,9 @@ CGameEffectForceVisible
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectFreedom:
 
 CGameEffectFreedom
@@ -1928,6 +2309,9 @@ CGameEffectFreedom
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectGold:
 
@@ -1941,6 +2325,9 @@ CGameEffectGold
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectGreasePool:
 
 CGameEffectGreasePool
@@ -1952,6 +2339,9 @@ CGameEffectGreasePool
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectHaste:
 
@@ -1965,6 +2355,9 @@ CGameEffectHaste
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectHaste2:
 
 CGameEffectHaste2
@@ -1976,6 +2369,9 @@ CGameEffectHaste2
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectHeal:
 
@@ -1989,6 +2385,9 @@ CGameEffectHeal
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectHideInShadows:
 
 CGameEffectHideInShadows
@@ -2000,6 +2399,9 @@ CGameEffectHideInShadows
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectHighLevelAbility:
 
@@ -2013,6 +2415,9 @@ CGameEffectHighLevelAbility
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectHitMod:
 
 CGameEffectHitMod
@@ -2024,6 +2429,9 @@ CGameEffectHitMod
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectHitPoints:
 
@@ -2037,6 +2445,9 @@ CGameEffectHitPoints
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectHitPointsOnDeath:
 
 CGameEffectHitPointsOnDeath
@@ -2048,6 +2459,9 @@ CGameEffectHitPointsOnDeath
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectHoldCreature:
 
@@ -2061,6 +2475,9 @@ CGameEffectHoldCreature
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectHoldCreatureSpell:
 
 CGameEffectHoldCreatureSpell
@@ -2072,6 +2489,9 @@ CGameEffectHoldCreatureSpell
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectINT:
 
@@ -2085,6 +2505,9 @@ CGameEffectINT
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectIdentify:
 
 CGameEffectIdentify
@@ -2096,6 +2519,9 @@ CGameEffectIdentify
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectIgnoreDialogPause:
 
@@ -2109,6 +2535,9 @@ CGameEffectIgnoreDialogPause
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectIgnoreDrainDeath:
 
 CGameEffectIgnoreDrainDeath
@@ -2120,6 +2549,9 @@ CGameEffectIgnoreDrainDeath
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectIgnoreReputationBreak:
 
@@ -2133,6 +2565,9 @@ CGameEffectIgnoreReputationBreak
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectImmuneToTracking:
 
 CGameEffectImmuneToTracking
@@ -2144,6 +2579,9 @@ CGameEffectImmuneToTracking
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectImmuneToWeapon:
 
@@ -2157,6 +2595,9 @@ CGameEffectImmuneToWeapon
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectImmunityLevelDecrement:
 
 CGameEffectImmunityLevelDecrement
@@ -2168,6 +2609,9 @@ CGameEffectImmunityLevelDecrement
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectImmunitySchool:
 
@@ -2181,6 +2625,9 @@ CGameEffectImmunitySchool
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectImmunitySchoolDecrement:
 
 CGameEffectImmunitySchoolDecrement
@@ -2192,6 +2639,9 @@ CGameEffectImmunitySchoolDecrement
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectImmunitySecondaryType:
 
@@ -2205,6 +2655,9 @@ CGameEffectImmunitySecondaryType
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectImmunitySecondaryTypeDecrement:
 
 CGameEffectImmunitySecondaryTypeDecrement
@@ -2216,6 +2669,9 @@ CGameEffectImmunitySecondaryTypeDecrement
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectImmunitySpell:
 
@@ -2229,6 +2685,9 @@ CGameEffectImmunitySpell
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectImmunitySpellIWD:
 
 CGameEffectImmunitySpellIWD
@@ -2240,6 +2699,9 @@ CGameEffectImmunitySpellIWD
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectImmunityToBackstab:
 
@@ -2253,6 +2715,9 @@ CGameEffectImmunityToBackstab
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectImmunityToDisplayString:
 
 CGameEffectImmunityToDisplayString
@@ -2264,6 +2729,9 @@ CGameEffectImmunityToDisplayString
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectImmunityToEffect:
 
@@ -2277,6 +2745,9 @@ CGameEffectImmunityToEffect
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectImmunityToPortraitIcon:
 
 CGameEffectImmunityToPortraitIcon
@@ -2288,6 +2759,9 @@ CGameEffectImmunityToPortraitIcon
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectImmunityToProjectile:
 
@@ -2301,6 +2775,9 @@ CGameEffectImmunityToProjectile
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectImmunityToSequester:
 
 CGameEffectImmunityToSequester
@@ -2312,6 +2789,9 @@ CGameEffectImmunityToSequester
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectImmunityToSpellLevel:
 
@@ -2325,6 +2805,9 @@ CGameEffectImmunityToSpellLevel
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectImmunityToTimeStop:
 
 CGameEffectImmunityToTimeStop
@@ -2336,6 +2819,9 @@ CGameEffectImmunityToTimeStop
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectImmunityToTurnUndead:
 
@@ -2349,6 +2835,9 @@ CGameEffectImmunityToTurnUndead
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectImmunityToVisualEffect:
 
 CGameEffectImmunityToVisualEffect
@@ -2360,6 +2849,9 @@ CGameEffectImmunityToVisualEffect
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectImprisonment:
 
@@ -2373,6 +2865,9 @@ CGameEffectImprisonment
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectInfravision:
 
 CGameEffectInfravision
@@ -2384,6 +2879,9 @@ CGameEffectInfravision
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectInfravisionOff:
 
@@ -2397,6 +2895,9 @@ CGameEffectInfravisionOff
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectIntoxication:
 
 CGameEffectIntoxication
@@ -2408,6 +2909,9 @@ CGameEffectIntoxication
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectInvisible:
 
@@ -2421,6 +2925,9 @@ CGameEffectInvisible
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectJumpToArea:
 
 CGameEffectJumpToArea
@@ -2432,6 +2939,9 @@ CGameEffectJumpToArea
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectJumpToPocketPlane:
 
@@ -2445,6 +2955,9 @@ CGameEffectJumpToPocketPlane
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectKnock:
 
 CGameEffectKnock
@@ -2456,6 +2969,9 @@ CGameEffectKnock
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectLearnSpell:
 
@@ -2469,6 +2985,9 @@ CGameEffectLearnSpell
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectLevel:
 
 CGameEffectLevel
@@ -2480,6 +2999,9 @@ CGameEffectLevel
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectLevelDrain:
 
@@ -2493,6 +3015,9 @@ CGameEffectLevelDrain
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectLevelRestoration:
 
 CGameEffectLevelRestoration
@@ -2504,6 +3029,9 @@ CGameEffectLevelRestoration
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectList:
 
@@ -2517,6 +3045,9 @@ CGameEffectList
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectLore:
 
 CGameEffectLore
@@ -2528,6 +3059,9 @@ CGameEffectLore
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectLuck:
 
@@ -2541,6 +3075,9 @@ CGameEffectLuck
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectMakeUnselectable:
 
 CGameEffectMakeUnselectable
@@ -2552,6 +3089,9 @@ CGameEffectMakeUnselectable
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectMaze:
 
@@ -2565,6 +3105,9 @@ CGameEffectMaze
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectMeleeDamageBonus:
 
 CGameEffectMeleeDamageBonus
@@ -2576,6 +3119,9 @@ CGameEffectMeleeDamageBonus
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectMeleeEffect:
 
@@ -2589,6 +3135,9 @@ CGameEffectMeleeEffect
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectMeleeTHAC0Bonus:
 
 CGameEffectMeleeTHAC0Bonus
@@ -2600,6 +3149,9 @@ CGameEffectMeleeTHAC0Bonus
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectMentalSpeed:
 
@@ -2613,6 +3165,9 @@ CGameEffectMentalSpeed
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectMinHitPoints:
 
 CGameEffectMinHitPoints
@@ -2624,6 +3179,9 @@ CGameEffectMinHitPoints
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectMinorGlobe:
 
@@ -2637,6 +3195,9 @@ CGameEffectMinorGlobe
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectMirrorImage:
 
 CGameEffectMirrorImage
@@ -2648,6 +3209,9 @@ CGameEffectMirrorImage
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectMirrorImageRun:
 
@@ -2661,6 +3225,9 @@ CGameEffectMirrorImageRun
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectMissileDamageBonus:
 
 CGameEffectMissileDamageBonus
@@ -2672,6 +3239,9 @@ CGameEffectMissileDamageBonus
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectMissileTHAC0Bonus:
 
@@ -2685,6 +3255,9 @@ CGameEffectMissileTHAC0Bonus
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectMorale:
 
 CGameEffectMorale
@@ -2696,6 +3269,9 @@ CGameEffectMorale
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectMoraleBreak:
 
@@ -2709,6 +3285,9 @@ CGameEffectMoraleBreak
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectMovementRate:
 
 CGameEffectMovementRate
@@ -2720,6 +3299,9 @@ CGameEffectMovementRate
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectMovementRateModal:
 
@@ -2733,6 +3315,9 @@ CGameEffectMovementRateModal
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectNPCBump:
 
 CGameEffectNPCBump
@@ -2744,6 +3329,9 @@ CGameEffectNPCBump
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectName:
 
@@ -2757,6 +3345,9 @@ CGameEffectName
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectNoPermanentDeath:
 
 CGameEffectNoPermanentDeath
@@ -2768,6 +3359,9 @@ CGameEffectNoPermanentDeath
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectNonDetection:
 
@@ -2781,6 +3375,9 @@ CGameEffectNonDetection
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectNon_CumulativeAid:
 
 CGameEffectNon_CumulativeAid
@@ -2792,6 +3389,9 @@ CGameEffectNon_CumulativeAid
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectNon_CumulativeBless:
 
@@ -2805,6 +3405,9 @@ CGameEffectNon_CumulativeBless
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectNon_CumulativeChant:
 
 CGameEffectNon_CumulativeChant
@@ -2816,6 +3419,9 @@ CGameEffectNon_CumulativeChant
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectNon_CumulativeChantBad:
 
@@ -2829,6 +3435,9 @@ CGameEffectNon_CumulativeChantBad
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectNon_CumulativeDrawUponHolyMight:
 
 CGameEffectNon_CumulativeDrawUponHolyMight
@@ -2840,6 +3449,9 @@ CGameEffectNon_CumulativeDrawUponHolyMight
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectNon_CumulativeLuck:
 
@@ -2853,6 +3465,9 @@ CGameEffectNon_CumulativeLuck
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectOverrideAnimation:
 
 CGameEffectOverrideAnimation
@@ -2864,6 +3479,9 @@ CGameEffectOverrideAnimation
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectOverrideWeaponType:
 
@@ -2877,6 +3495,9 @@ CGameEffectOverrideWeaponType
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectPanic:
 
 CGameEffectPanic
@@ -2888,6 +3509,9 @@ CGameEffectPanic
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectPauseCaster:
 
@@ -2901,6 +3525,9 @@ CGameEffectPauseCaster
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectPetrification:
 
 CGameEffectPetrification
@@ -2912,6 +3539,9 @@ CGameEffectPetrification
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectPhysicalSpeed:
 
@@ -2925,6 +3555,9 @@ CGameEffectPhysicalSpeed
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectPlayMovie:
 
 CGameEffectPlayMovie
@@ -2936,6 +3569,9 @@ CGameEffectPlayMovie
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectPlaySound:
 
@@ -2949,6 +3585,9 @@ CGameEffectPlaySound
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectPoison:
 
 CGameEffectPoison
@@ -2960,6 +3599,9 @@ CGameEffectPoison
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectPolymorph:
 
@@ -2973,6 +3615,9 @@ CGameEffectPolymorph
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectPortrait:
 
 CGameEffectPortrait
@@ -2984,6 +3629,9 @@ CGameEffectPortrait
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectPortraitIcon:
 
@@ -2997,6 +3645,9 @@ CGameEffectPortraitIcon
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectPowerWordKill:
 
 CGameEffectPowerWordKill
@@ -3008,6 +3659,9 @@ CGameEffectPowerWordKill
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectPowerWordSleep:
 
@@ -3021,6 +3675,9 @@ CGameEffectPowerWordSleep
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectPowerWordStun:
 
 CGameEffectPowerWordStun
@@ -3032,6 +3689,9 @@ CGameEffectPowerWordStun
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectPreventAISlowDown:
 
@@ -3045,6 +3705,9 @@ CGameEffectPreventAISlowDown
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectPreventSpellProtectionEffects:
 
 CGameEffectPreventSpellProtectionEffects
@@ -3056,6 +3719,9 @@ CGameEffectPreventSpellProtectionEffects
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectProficiency:
 
@@ -3069,6 +3735,9 @@ CGameEffectProficiency
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectProtectionCircle:
 
 CGameEffectProtectionCircle
@@ -3080,6 +3749,9 @@ CGameEffectProtectionCircle
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectProtectionFromCreature:
 
@@ -3093,6 +3765,9 @@ CGameEffectProtectionFromCreature
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectPuppetMaster:
 
 CGameEffectPuppetMaster
@@ -3104,6 +3779,9 @@ CGameEffectPuppetMaster
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectPushPull:
 
@@ -3117,6 +3795,9 @@ CGameEffectPushPull
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectRandomDrop:
 
 CGameEffectRandomDrop
@@ -3128,6 +3809,9 @@ CGameEffectRandomDrop
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectRandomPhase:
 
@@ -3141,6 +3825,9 @@ CGameEffectRandomPhase
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectRandomSummon:
 
 CGameEffectRandomSummon
@@ -3152,6 +3839,9 @@ CGameEffectRandomSummon
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectRandomTeleport:
 
@@ -3165,6 +3855,9 @@ CGameEffectRandomTeleport
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectRangeEffect:
 
 CGameEffectRangeEffect
@@ -3176,6 +3869,9 @@ CGameEffectRangeEffect
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectRegeneration:
 
@@ -3189,6 +3885,9 @@ CGameEffectRegeneration
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectRememorizeSpell:
 
 CGameEffectRememorizeSpell
@@ -3200,6 +3899,9 @@ CGameEffectRememorizeSpell
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectRemoveAllOfType:
 
@@ -3213,6 +3915,9 @@ CGameEffectRemoveAllOfType
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectRemoveConfusion:
 
 CGameEffectRemoveConfusion
@@ -3224,6 +3929,9 @@ CGameEffectRemoveConfusion
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectRemoveCurse:
 
@@ -3237,6 +3945,9 @@ CGameEffectRemoveCurse
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectRemoveEffectOfResource:
 
 CGameEffectRemoveEffectOfResource
@@ -3248,6 +3959,9 @@ CGameEffectRemoveEffectOfResource
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectRemoveHold:
 
@@ -3261,6 +3975,9 @@ CGameEffectRemoveHold
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectRemoveInnateAbility:
 
 CGameEffectRemoveInnateAbility
@@ -3272,6 +3989,9 @@ CGameEffectRemoveInnateAbility
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectRemoveIntoxication:
 
@@ -3285,6 +4005,9 @@ CGameEffectRemoveIntoxication
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectRemovePanic:
 
 CGameEffectRemovePanic
@@ -3296,6 +4019,9 @@ CGameEffectRemovePanic
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectRemovePortraitIcon:
 
@@ -3309,6 +4035,9 @@ CGameEffectRemovePortraitIcon
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectRemoveRandomSpell:
 
 CGameEffectRemoveRandomSpell
@@ -3320,6 +4049,9 @@ CGameEffectRemoveRandomSpell
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectRemoveSpellImmunity:
 
@@ -3333,6 +4065,9 @@ CGameEffectRemoveSpellImmunity
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectRepeatingApplyEffect:
 
 CGameEffectRepeatingApplyEffect
@@ -3344,6 +4079,9 @@ CGameEffectRepeatingApplyEffect
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectReplaceItem:
 
@@ -3357,6 +4095,9 @@ CGameEffectReplaceItem
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectReplaceSelf:
 
 CGameEffectReplaceSelf
@@ -3368,6 +4109,9 @@ CGameEffectReplaceSelf
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectReputation:
 
@@ -3381,6 +4125,9 @@ CGameEffectReputation
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectResistAcid:
 
 CGameEffectResistAcid
@@ -3392,6 +4139,9 @@ CGameEffectResistAcid
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectResistCold:
 
@@ -3405,6 +4155,9 @@ CGameEffectResistCold
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectResistCrushing:
 
 CGameEffectResistCrushing
@@ -3416,6 +4169,9 @@ CGameEffectResistCrushing
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectResistElectricity:
 
@@ -3429,6 +4185,9 @@ CGameEffectResistElectricity
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectResistFire:
 
 CGameEffectResistFire
@@ -3440,6 +4199,9 @@ CGameEffectResistFire
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectResistMagic:
 
@@ -3453,6 +4215,9 @@ CGameEffectResistMagic
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectResistMagicCold:
 
 CGameEffectResistMagicCold
@@ -3464,6 +4229,9 @@ CGameEffectResistMagicCold
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectResistMagicFire:
 
@@ -3477,6 +4245,9 @@ CGameEffectResistMagicFire
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectResistMissile:
 
 CGameEffectResistMissile
@@ -3488,6 +4259,9 @@ CGameEffectResistMissile
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectResistPiercing:
 
@@ -3501,6 +4275,9 @@ CGameEffectResistPiercing
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectResistSlashing:
 
 CGameEffectResistSlashing
@@ -3512,6 +4289,9 @@ CGameEffectResistSlashing
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectResistanceToMagic:
 
@@ -3525,6 +4305,9 @@ CGameEffectResistanceToMagic
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectResistanceToPoison:
 
 CGameEffectResistanceToPoison
@@ -3536,6 +4319,9 @@ CGameEffectResistanceToPoison
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectRest:
 
@@ -3549,6 +4335,9 @@ CGameEffectRest
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectRestoreMovementRate:
 
 CGameEffectRestoreMovementRate
@@ -3560,6 +4349,9 @@ CGameEffectRestoreMovementRate
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectRestrictEquipItem:
 
@@ -3573,6 +4365,9 @@ CGameEffectRestrictEquipItem
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectRestrictEquipItemType:
 
 CGameEffectRestrictEquipItemType
@@ -3584,6 +4379,9 @@ CGameEffectRestrictEquipItemType
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectResurrect:
 
@@ -3597,6 +4395,9 @@ CGameEffectResurrect
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectResurrectParty:
 
 CGameEffectResurrectParty
@@ -3608,6 +4409,9 @@ CGameEffectResurrectParty
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectRetreatFrom:
 
@@ -3621,6 +4425,9 @@ CGameEffectRetreatFrom
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectRevealMagic:
 
 CGameEffectRevealMagic
@@ -3632,6 +4439,9 @@ CGameEffectRevealMagic
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSTR:
 
@@ -3645,6 +4455,9 @@ CGameEffectSTR
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSTRExtra:
 
 CGameEffectSTRExtra
@@ -3656,6 +4469,9 @@ CGameEffectSTRExtra
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSanctuary:
 
@@ -3669,6 +4485,9 @@ CGameEffectSanctuary
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSaveVsBreath:
 
 CGameEffectSaveVsBreath
@@ -3680,6 +4499,9 @@ CGameEffectSaveVsBreath
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSaveVsDeath:
 
@@ -3693,6 +4515,9 @@ CGameEffectSaveVsDeath
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSaveVsPoly:
 
 CGameEffectSaveVsPoly
@@ -3704,6 +4529,9 @@ CGameEffectSaveVsPoly
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSaveVsSchoolMod:
 
@@ -3717,6 +4545,9 @@ CGameEffectSaveVsSchoolMod
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSaveVsSpell:
 
 CGameEffectSaveVsSpell
@@ -3728,6 +4559,9 @@ CGameEffectSaveVsSpell
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSaveVsWands:
 
@@ -3741,6 +4575,9 @@ CGameEffectSaveVsWands
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSavingThrowChange:
 
 CGameEffectSavingThrowChange
@@ -3752,6 +4589,9 @@ CGameEffectSavingThrowChange
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectScreenShake:
 
@@ -3765,6 +4605,9 @@ CGameEffectScreenShake
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectScriptingState:
 
 CGameEffectScriptingState
@@ -3776,6 +4619,9 @@ CGameEffectScriptingState
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSecondaryCastList:
 
@@ -3789,6 +4635,9 @@ CGameEffectSecondaryCastList
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSeeInvisible:
 
 CGameEffectSeeInvisible
@@ -3800,6 +4649,9 @@ CGameEffectSeeInvisible
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSelectiveDamageBonus:
 
@@ -3813,6 +4665,9 @@ CGameEffectSelectiveDamageBonus
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSelectiveEnchantmentBonus:
 
 CGameEffectSelectiveEnchantmentBonus
@@ -3824,6 +4679,9 @@ CGameEffectSelectiveEnchantmentBonus
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSelectiveToHitBonus:
 
@@ -3837,6 +4695,9 @@ CGameEffectSelectiveToHitBonus
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSequencerFire:
 
 CGameEffectSequencerFire
@@ -3848,6 +4709,9 @@ CGameEffectSequencerFire
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSequencerFirePoint:
 
@@ -3861,6 +4725,9 @@ CGameEffectSequencerFirePoint
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSequencerInstance:
 
 CGameEffectSequencerInstance
@@ -3872,6 +4739,9 @@ CGameEffectSequencerInstance
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSequencerStart:
 
@@ -3885,6 +4755,9 @@ CGameEffectSequencerStart
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSetAIScript:
 
 CGameEffectSetAIScript
@@ -3896,6 +4769,9 @@ CGameEffectSetAIScript
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSetDoNotJump:
 
@@ -3909,6 +4785,9 @@ CGameEffectSetDoNotJump
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSetGlobal:
 
 CGameEffectSetGlobal
@@ -3920,6 +4799,9 @@ CGameEffectSetGlobal
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSetLocalExternal:
 
@@ -3933,6 +4815,9 @@ CGameEffectSetLocalExternal
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSetLocalVariable:
 
 CGameEffectSetLocalVariable
@@ -3944,6 +4829,9 @@ CGameEffectSetLocalVariable
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSetSequence:
 
@@ -3957,6 +4845,9 @@ CGameEffectSetSequence
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSetSnare:
 
 CGameEffectSetSnare
@@ -3968,6 +4859,9 @@ CGameEffectSetSnare
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSetSpellState:
 
@@ -3981,6 +4875,9 @@ CGameEffectSetSpellState
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSetTrap:
 
 CGameEffectSetTrap
@@ -3992,6 +4889,9 @@ CGameEffectSetTrap
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSevenEyes:
 
@@ -4005,6 +4905,9 @@ CGameEffectSevenEyes
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSevenEyesRun:
 
 CGameEffectSevenEyesRun
@@ -4016,6 +4919,9 @@ CGameEffectSevenEyesRun
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSexChange:
 
@@ -4029,6 +4935,9 @@ CGameEffectSexChange
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectShieldGlobe:
 
 CGameEffectShieldGlobe
@@ -4040,6 +4949,9 @@ CGameEffectShieldGlobe
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectShowArea:
 
@@ -4053,6 +4965,9 @@ CGameEffectShowArea
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectShowCreatures:
 
 CGameEffectShowCreatures
@@ -4064,6 +4979,9 @@ CGameEffectShowCreatures
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSilence:
 
@@ -4077,6 +4995,9 @@ CGameEffectSilence
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSingleColorPulseAll:
 
 CGameEffectSingleColorPulseAll
@@ -4088,6 +5009,9 @@ CGameEffectSingleColorPulseAll
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSkillLockPicking:
 
@@ -4101,6 +5025,9 @@ CGameEffectSkillLockPicking
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSkillPickPocket:
 
 CGameEffectSkillPickPocket
@@ -4112,6 +5039,9 @@ CGameEffectSkillPickPocket
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSkillStealth:
 
@@ -4125,6 +5055,9 @@ CGameEffectSkillStealth
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSkillTracking:
 
 CGameEffectSkillTracking
@@ -4136,6 +5069,9 @@ CGameEffectSkillTracking
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSkillTraps:
 
@@ -4149,6 +5085,9 @@ CGameEffectSkillTraps
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSlay:
 
 CGameEffectSlay
@@ -4160,6 +5099,9 @@ CGameEffectSlay
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSleep:
 
@@ -4173,6 +5115,9 @@ CGameEffectSleep
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSlow:
 
 CGameEffectSlow
@@ -4184,6 +5129,9 @@ CGameEffectSlow
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSlowPoison:
 
@@ -4197,6 +5145,9 @@ CGameEffectSlowPoison
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSparkle:
 
 CGameEffectSparkle
@@ -4208,6 +5159,9 @@ CGameEffectSparkle
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSpecificDamageMod:
 
@@ -4221,6 +5175,9 @@ CGameEffectSpecificDamageMod
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSpellMemorizationCleric:
 
 CGameEffectSpellMemorizationCleric
@@ -4232,6 +5189,9 @@ CGameEffectSpellMemorizationCleric
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSpellMemorizationMage:
 
@@ -4245,6 +5205,9 @@ CGameEffectSpellMemorizationMage
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSpellTrapLevelDecrement:
 
 CGameEffectSpellTrapLevelDecrement
@@ -4256,6 +5219,9 @@ CGameEffectSpellTrapLevelDecrement
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectStaticCharge:
 
@@ -4269,6 +5235,9 @@ CGameEffectStaticCharge
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectStoneSkins:
 
 CGameEffectStoneSkins
@@ -4280,6 +5249,9 @@ CGameEffectStoneSkins
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectStoneSkinsGolem:
 
@@ -4293,6 +5265,9 @@ CGameEffectStoneSkinsGolem
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectStoneToFlesh:
 
 CGameEffectStoneToFlesh
@@ -4304,6 +5279,9 @@ CGameEffectStoneToFlesh
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectStun:
 
@@ -4317,6 +5295,9 @@ CGameEffectStun
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSummon:
 
 CGameEffectSummon
@@ -4328,6 +5309,9 @@ CGameEffectSummon
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSummonDisable:
 
@@ -4341,6 +5325,9 @@ CGameEffectSummonDisable
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectSurgeMod:
 
 CGameEffectSurgeMod
@@ -4352,6 +5339,9 @@ CGameEffectSurgeMod
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectSwapHitpoints:
 
@@ -4365,6 +5355,9 @@ CGameEffectSwapHitpoints
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectTeleport:
 
 CGameEffectTeleport
@@ -4376,6 +5369,9 @@ CGameEffectTeleport
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectThac0:
 
@@ -4389,6 +5385,9 @@ CGameEffectThac0
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectThac0Left:
 
 CGameEffectThac0Left
@@ -4400,6 +5399,9 @@ CGameEffectThac0Left
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectThac0Right:
 
@@ -4413,6 +5415,9 @@ CGameEffectThac0Right
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectTimeStop:
 
 CGameEffectTimeStop
@@ -4424,6 +5429,9 @@ CGameEffectTimeStop
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectTracking:
 
@@ -4437,6 +5445,9 @@ CGameEffectTracking
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectTranslucent:
 
 CGameEffectTranslucent
@@ -4448,6 +5459,9 @@ CGameEffectTranslucent
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectTurnUndead:
 
@@ -4461,6 +5475,9 @@ CGameEffectTurnUndead
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectTurnUndeadModifier:
 
 CGameEffectTurnUndeadModifier
@@ -4472,6 +5489,9 @@ CGameEffectTurnUndeadModifier
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectUnpauseCaster:
 
@@ -4485,6 +5505,9 @@ CGameEffectUnpauseCaster
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectUnstun:
 
 CGameEffectUnstun
@@ -4496,6 +5519,9 @@ CGameEffectUnstun
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectUnsummon:
 
@@ -4509,6 +5535,9 @@ CGameEffectUnsummon
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectUsability:
 
 CGameEffectUsability
@@ -4520,6 +5549,9 @@ CGameEffectUsability
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectUsabilityList:
 
@@ -4533,6 +5565,9 @@ CGameEffectUsabilityList
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectUseAnyItem:
 
 CGameEffectUseAnyItem
@@ -4544,6 +5579,9 @@ CGameEffectUseAnyItem
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectVisible:
 
@@ -4557,6 +5595,9 @@ CGameEffectVisible
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectVisualAnimationEffect:
 
 CGameEffectVisualAnimationEffect
@@ -4568,6 +5609,9 @@ CGameEffectVisualAnimationEffect
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectVisualEffect:
 
@@ -4581,6 +5625,9 @@ CGameEffectVisualEffect
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectVisualRange:
 
 CGameEffectVisualRange
@@ -4592,6 +5639,9 @@ CGameEffectVisualRange
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectVisualSpellHit:
 
@@ -4605,6 +5655,9 @@ CGameEffectVisualSpellHit
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectVisualSpellHitIWD:
 
 CGameEffectVisualSpellHitIWD
@@ -4616,6 +5669,9 @@ CGameEffectVisualSpellHitIWD
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectVocalize:
 
@@ -4629,6 +5685,9 @@ CGameEffectVocalize
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectWIS:
 
 CGameEffectWIS
@@ -4640,6 +5699,9 @@ CGameEffectWIS
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectWebHold:
 
@@ -4653,6 +5715,9 @@ CGameEffectWebHold
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+
+----
+
 .. _CGameEffectWish:
 
 CGameEffectWish
@@ -4664,6 +5729,9 @@ CGameEffectWish
 | 0x00       | 324      | :ref:`CGameEffect<CGameEffect>`        | m_cGameEffect                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+
+----
 
 .. _CGameEffectXP:
 

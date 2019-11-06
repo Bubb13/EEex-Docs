@@ -112,6 +112,7 @@ Asm Definition
      m_source           CString <>
    CAIAction            ends ; size 0x64
 
+----
 
 .. _CAICondition:
 
@@ -132,6 +133,7 @@ Asm Definition
      m_triggerList  CTypedPtrList <>
    CAICondition     ends
 
+----
 
 .. _CAIConditionResponse:
 
@@ -155,6 +157,7 @@ Asm Definition
      m_responseSet      CAIResponseSet <>
    CAIConditionResponse ends
 
+----
 
 .. _CAIGroup:
 
@@ -185,6 +188,7 @@ Asm Definition
      m_memberList   CTypedPtrList <>
    CAIGroup         ends ; size 0x24
 
+----
 
 .. _CAIId:
 
@@ -211,6 +215,8 @@ Asm Definition
      m_start    CString <>
    CAIId        ends
 
+
+----
 
 .. _CAIIdList:
 
@@ -250,6 +256,8 @@ Asm Definition
    CAIIdList        ends ; size 0x3C
 
 
+----
+
 .. _CAINonPlayerScript:
 
 CAINonPlayerScript
@@ -269,6 +277,8 @@ Asm Definition
      m_cResHelper       CResHelper <>
    CAINonPlayerScript   ends ; size 0xC
 
+
+----
 
 .. _CAIObjectType:
 
@@ -329,6 +339,8 @@ Valid values for the following fields can be found in specific .IDS files:
 * **m_Alignment** valid values can be found in the ``ALIGN.IDS`` file
 
 
+----
+
 .. _CAIPlayerScript:
 
 CAIPlayerScript
@@ -348,6 +360,8 @@ Asm Definition
      m_cResHelper   CResHelper <>
    CAIPlayerScript  ends ; size 0xC
 
+
+----
 
 .. _CAIResponse:
 
@@ -381,6 +395,8 @@ Asm Definition
    CAIResponse          ends ; size 0x24
 
 
+----
+
 .. _CAIResponseSet:
 
 CAIResponseSet
@@ -404,6 +420,8 @@ Asm Definition
    CAIResponseSet       ends ; size 0x20
 
 
+----
+
 .. _CAIScript:
 
 CAIScript
@@ -426,6 +444,8 @@ Asm Definition
      m_caList   CTypedPtrList <>
    CAIScript    ends ; size 0x24
 
+
+----
 
 .. _CAIScriptFile:
 
@@ -487,6 +507,8 @@ Asm Definition
    CAIScriptFile        ends ; size 0xE8
 
 
+----
+
 .. _CAITrigger:
 
 CAITrigger
@@ -532,6 +554,8 @@ Asm Definition
    CAITrigger       ends ; size 0x30
 
 
+----
+
 .. _CAIUtil:
 
 CAIUtil
@@ -543,6 +567,8 @@ CAIUtil
 |            | 1        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CAOEEntry:
 
@@ -583,6 +609,8 @@ Asm Definition
      AOE_LINE = 3
    }
 
+
+----
 
 .. _CAbilityData:
 
@@ -628,6 +656,8 @@ Asm Definition
    CAbilityData                 ends
 
 
+----
+
 .. _CAbilityId:
 
 CAbilityId
@@ -666,6 +696,8 @@ Asm Definition
    CAbilityId       ends ; size 0x14
 
 
+----
+
 .. _CApplyEffectList:
 
 CApplyEffectList
@@ -686,6 +718,8 @@ Asm Definition
    CApplyEffectList  ends ; size 0x1C
 
 
+----
+
 .. _CAreaFile:
 
 CAreaFile
@@ -705,6 +739,8 @@ Asm Definition
      m_cResHelper   CResHelper <>
    CAreaFile        ends ; size 0xC
 
+
+----
 
 .. _CAreaFileCharacterEntryPoint:
 
@@ -737,6 +773,8 @@ Asm Definition
      m_notUsed                  db 64 dup (?)
    CAreaFileCharacterEntryPoint ends
 
+
+----
 
 .. _CAreaFileContainer:
 
@@ -835,6 +873,8 @@ Asm Definition
      m_notUsed                  db 56 dup (?)
    CAreaFileContainer           ends
 
+
+----
 
 .. _CAreaFileCreature:
 
@@ -939,6 +979,8 @@ Asm Definition
      m_notUsed                  db 96 dup (?)
    CAreaFileCreature            ends
 
+
+----
 
 .. _CAreaFileDoorObject:
 
@@ -1080,6 +1122,8 @@ Asm Definition
    CAreaFileDoorObject           ends
 
 
+----
+
 .. _CAreaFileHeader:
 
 CAreaFileHeader
@@ -1150,6 +1194,8 @@ Asm Definition
      m_unused               db ?
    CAreaFileHeader          ends
 
+
+----
 
 .. _CAreaFileOffsets:
 
@@ -1282,6 +1328,8 @@ Asm Definition
    CAreaFileOffsets                             ends
 
 
+----
+
 .. _CAreaFileProjectileObject:
 
 CAreaFileProjectileObject
@@ -1331,6 +1379,8 @@ Asm Definition
      m_portraitNum              db ?
    CAreaFileProjectileObject    ends
 
+
+----
 
 .. _CAreaFileRandomMonsterSpawningPoint:
 
@@ -1409,6 +1459,8 @@ Asm Definition
    CAreaFileRandomMonsterSpawningPoint  ends
 
 
+----
+
 .. _CAreaFileRestEncounter:
 
 CAreaFileRestEncounter
@@ -1470,6 +1522,8 @@ Asm Definition
      m_notUsed              dd 11 dup (?)
    CAreaFileRestEncounter   ends
 
+
+----
 
 .. _CAreaFileSoundObject:
 
@@ -1536,6 +1590,8 @@ Asm Definition
    CAreaFileSoundObject     ends
 
 
+----
+
 .. _CAreaFileStaticObject:
 
 CAreaFileStaticObject
@@ -1598,6 +1654,8 @@ Asm Definition
    CAreaFileStaticObject    ends
 
 
+----
+
 .. _CAreaFileTiledObject:
 
 CAreaFileTiledObject
@@ -1638,6 +1696,8 @@ Asm Definition
      m_notUsed                      dd 12 dup (?)
    CAreaFileTiledObject             ends
 
+
+----
 
 .. _CAreaFileTriggerObject:
 
@@ -1731,6 +1791,8 @@ Asm Definition
    CAreaFileTriggerObject       ends
 
 
+----
+
 .. _CAreaPoint:
 
 CAreaPoint
@@ -1753,6 +1815,8 @@ Asm Definition
      m_yPos     dw ?
    CAreaPoint   ends
 
+
+----
 
 .. _CAreaSoundsAndMusic:
 
@@ -1822,6 +1886,8 @@ Asm Definition
    CAreaSoundsAndMusic          ends
 
 
+----
+
 .. _CAreaUserNote:
 
 CAreaUserNote
@@ -1856,6 +1922,8 @@ Asm Definition
      m_notUsed      dd 9 dup(?)
    CAreaUserNote    ends ; size 0x34
 
+
+----
 
 .. _CAreaVariable:
 
@@ -1895,6 +1963,8 @@ Asm Definition
    CAreaVariable    ends ; size 0x54
 
 
+----
+
 .. _CArray:
 
 CArray
@@ -1929,6 +1999,8 @@ Asm Definition
      m_nGrowBy      dd ?
    CArray           ends ; size 0x14
 
+
+----
 
 .. _CArrayCDLC:
 
@@ -1965,6 +2037,8 @@ Asm Definition
    CArray           ends ; size 0x14
 
 
+----
+
 .. _CArrayCDLC_Content:
 
 CArray (CDLC_Content)
@@ -1999,6 +2073,8 @@ Asm Definition
      m_nGrowBy      dd ?
    CArray           ends ; size 0x14
 
+
+----
 
 .. _CArrayCOverridePath:
 
@@ -2035,6 +2111,8 @@ Asm Definition
    CArray           ends ; size 0x14
 
 
+----
+
 .. _CArrayCRect:
 
 CArray (CRect)
@@ -2069,6 +2147,8 @@ Asm Definition
      m_nGrowBy      dd ?
    CArray           ends ; size 0x14
 
+
+----
 
 .. _CArrayCZipFile:
 
@@ -2105,6 +2185,8 @@ Asm Definition
    CArray           ends ; size 0x14
 
 
+----
+
 .. _CArrayMod_t:
 
 CArray (Mod_t)
@@ -2140,6 +2222,8 @@ Asm Definition
    CArray           ends ; size 0x14
 
 
+----
+
 .. _CArrayStatRating:
 
 CArray (StatRating)
@@ -2174,6 +2258,8 @@ Asm Definition
      m_nGrowBy      dd ?
    CArray           ends ; size 0x14
 
+
+----
 
 .. _CArrayzip_t:
 

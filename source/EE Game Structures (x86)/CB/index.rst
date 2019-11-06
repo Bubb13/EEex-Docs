@@ -193,6 +193,8 @@ Asm Definition
    CBaldurChitin            ends ; size 0x12B8
 
 
+----
+
 .. _CBaldurEngine:
 
 CBaldurEngine
@@ -218,6 +220,8 @@ Asm Definition
      m_nPickedCharacter     dd ?
    CBaldurEngine            ends
 
+
+----
 
 .. _CBaldurMessage:
 
@@ -404,6 +408,8 @@ Asm Definition
    CBaldurMessage                           ends
 
 
+----
+
 .. _CBaldurProjector:
 
 CBaldurProjector
@@ -473,6 +479,8 @@ Asm Definition
    CBaldurProjector             ends
 
 
+----
+
 .. _CBiographyFile:
 
 CBiographyFile
@@ -492,6 +500,8 @@ Asm Definition
      m_cResHelper   CResHelper <>
    CBiographyFile   ends ; size 0xC
 
+
+----
 
 .. _CBlood:
 
@@ -563,6 +573,8 @@ Asm Definition
    CBlood                   ends
 
 
+----
+
 .. _CBloodPool:
 
 CBloodPool
@@ -611,6 +623,8 @@ Asm Definition
    CBloodPool           ends
 
 
+----
+
 .. _CBmpFile:
 
 CBmpFile
@@ -630,6 +644,8 @@ Asm Definition
      m_cResHelper   CResHelper <>
    CBmpFile         ends ; size 0xC
 
+
+----
 
 .. _CBounceEntry:
 
@@ -669,6 +685,8 @@ Asm Definition
    CBounceEntry             ends
 
 
+----
+
 .. _CBounceList:
 
 CBounceList
@@ -688,6 +706,8 @@ Asm Definition
      m_cTypedPtrList CTypedPtrList <>
    CBounceList       ends
 
+
+----
 
 .. _CButtonData:
 

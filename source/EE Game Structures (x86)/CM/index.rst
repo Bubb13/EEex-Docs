@@ -195,6 +195,8 @@ Asm Definition
    CMachineState    ends
 
 
+----
+
 .. _CMachineStates:
 
 CMachineStates
@@ -214,6 +216,8 @@ Asm Definition
      m_machineStates    CMachineState 6 dup ({})
    CMachineStates       ends
 
+
+----
 
 .. _CMapStringToPtr:
 
@@ -253,6 +257,8 @@ Asm Definition
    CMapStringToPtr      ends
 
 
+----
+
 .. _CMapStringToPtrCAssoc:
 
 CMapStringToPtr\:\:CAssoc
@@ -280,6 +286,8 @@ Asm Definition
       data +0x0c [sizeof=4] void* value
 
 
+----
+
 .. _CMapStringToString:
 
 CMapStringToString
@@ -304,6 +312,8 @@ CMapStringToString
 +------------+----------+-------------------------------------------------------------------+--------------+
 
 
+----
+
 .. _CMapStringToStringCAssoc:
 
 CMapStringToString\:\:CAssoc
@@ -321,6 +331,8 @@ CMapStringToString\:\:CAssoc
 | 0x0C       | 4        | :ref:`CString<CString>`                                         | value      |
 +------------+----------+-----------------------------------------------------------------+------------+
 
+
+----
 
 .. _CMapWordToPtr:
 
@@ -346,6 +358,8 @@ CMapWordToPtr
 +------------+----------+-------------------------------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMapWordToPtrCAssoc:
 
 CMapWordToPtr\:\:CAssoc
@@ -363,6 +377,8 @@ CMapWordToPtr\:\:CAssoc
 | 0x08       | 4        | void\*                                                      | value                         |
 +------------+----------+-------------------------------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMarker:
 
@@ -396,6 +412,8 @@ CMarker
 +------------+----------+---------------------------------------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMemINI:
 
 CMemINI
@@ -411,6 +429,8 @@ CMemINI
 | 0x20       | 4        | :ref:`CMemINISection<CMemINISection>`\*| mpLastSection   |
 +------------+----------+----------------------------------------+-----------------+
 
+
+----
 
 .. _CMemINIFile:
 
@@ -431,6 +451,8 @@ CMemINIFile
 | 0x1C       | 4        | int                                    | mFileOpen                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMemINIRes:
 
@@ -454,6 +476,8 @@ CMemINIRes
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMemINISection:
 
 CMemINISection
@@ -467,6 +491,8 @@ CMemINISection
 | 0x1C       | 4        | :ref:`CString<CString>`                | mSectionName                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMemINIValue:
 
@@ -484,6 +510,8 @@ CMemINIValue
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessage:
 
 CMessage
@@ -500,6 +528,8 @@ CMessage
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageAddAction:
 
 CMessageAddAction
@@ -513,6 +543,8 @@ CMessageAddAction
 | 0x0C       | 100      | :ref:`CAIAction<CAIAction>`            | m_action                      |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageAddClairvoyance:
 
@@ -529,6 +561,8 @@ CMessageAddClairvoyance
 | 0x14       | 4        | long                                   | m_nDuration                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageAddEffect:
 
@@ -548,6 +582,8 @@ CMessageAddEffect
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageAddItem:
 
 CMessageAddItem
@@ -562,6 +598,8 @@ CMessageAddItem
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageAddVVCInternal:
 
 CMessageAddVVCInternal
@@ -575,6 +613,8 @@ CMessageAddVVCInternal
 | 0x0C       | 8        | :ref:`CResRef<CResRef>`                | m_res                         |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageAllowDialogInterrupt:
 
@@ -592,6 +632,8 @@ CMessageAllowDialogInterrupt
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageAnimationChange:
 
 CMessageAnimationChange
@@ -608,6 +650,8 @@ CMessageAnimationChange
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageChangeDirection:
 
 CMessageChangeDirection
@@ -623,6 +667,8 @@ CMessageChangeDirection
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageChangeStoreMarkup:
 
@@ -642,6 +688,8 @@ CMessageChangeStoreMarkup
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageCheckForForcedDialogEnd:
 
 CMessageCheckForForcedDialogEnd
@@ -657,6 +705,8 @@ CMessageCheckForForcedDialogEnd
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageCleanAir:
 
@@ -674,6 +724,8 @@ CMessageCleanAir
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageClearActions:
 
 CMessageClearActions
@@ -685,6 +737,8 @@ CMessageClearActions
 | 0x00       | 12       | :ref:`CMessage<CMessage>`              | m_cMessage                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageClearDialogActions:
 
@@ -698,6 +752,8 @@ CMessageClearDialogActions
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageClearDialogOnMachine:
 
 CMessageClearDialogOnMachine
@@ -709,6 +765,8 @@ CMessageClearDialogOnMachine
 | 0x00       | 12       | :ref:`CMessage<CMessage>`              | m_cMessage                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageClearGroupSlot:
 
@@ -726,6 +784,8 @@ CMessageClearGroupSlot
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageClearTriggers:
 
 CMessageClearTriggers
@@ -737,6 +797,8 @@ CMessageClearTriggers
 | 0x00       | 12       | :ref:`CMessage<CMessage>`              | m_cMessage                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageColorChange:
 
@@ -754,6 +816,8 @@ CMessageColorChange
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageColorReset:
 
 CMessageColorReset
@@ -765,6 +829,8 @@ CMessageColorReset
 | 0x00       | 12       | :ref:`CMessage<CMessage>`              | m_cMessage                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageColorUpdate:
 
@@ -781,6 +847,8 @@ CMessageColorUpdate
 | 0x28       | 28       | :ref:`CColorEffects<CColorEffects>`    | m_appliedColorEffects         |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageContainerAddItem:
 
@@ -802,6 +870,8 @@ CMessageContainerAddItem
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageContainerItems:
 
 CMessageContainerItems
@@ -819,6 +889,8 @@ CMessageContainerItems
 | 0x10       | 4        | :ref:`CItem<CItem>`\*\*                | m_pItems                      |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageContainerStatus:
 
@@ -838,6 +910,8 @@ CMessageContainerStatus
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageCutSceneLite:
 
 CMessageCutSceneLite
@@ -853,6 +927,8 @@ CMessageCutSceneLite
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageCutSceneModeStatus:
 
@@ -870,6 +946,8 @@ CMessageCutSceneModeStatus
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageDisableAI:
 
 CMessageDisableAI
@@ -883,6 +961,8 @@ CMessageDisableAI
 | 0x0C       | 4        | int                                    | m_bDisable                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageDisplayText:
 
@@ -913,6 +993,8 @@ CMessageDisplayText
 |            | 1        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageDisplayTextRef:
 
@@ -948,6 +1030,8 @@ CMessageDisplayTextRef
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageDisplayTextRefPoint:
 
 CMessageDisplayTextRefPoint
@@ -965,6 +1049,8 @@ CMessageDisplayTextRefPoint
 | 0x14       | 8        | :ref:`CPoint<CPoint>`                  | m_point                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageDisplayTextRefSend:
 
@@ -994,6 +1080,8 @@ CMessageDisplayTextRefSend
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageDoorOpen:
 
 CMessageDoorOpen
@@ -1009,6 +1097,8 @@ CMessageDoorOpen
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageDoorStatus:
 
@@ -1032,6 +1122,8 @@ CMessageDoorStatus
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageDreamScriptResRef:
 
 CMessageDreamScriptResRef
@@ -1046,6 +1138,8 @@ CMessageDreamScriptResRef
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageDropPath:
 
 CMessageDropPath
@@ -1057,6 +1151,8 @@ CMessageDropPath
 | 0x00       | 12       | :ref:`CMessage<CMessage>`              | m_cMessage                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageEnterDialog:
 
@@ -1080,6 +1176,8 @@ CMessageEnterDialog
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageEnterDialogMode:
 
 CMessageEnterDialogMode
@@ -1091,6 +1189,8 @@ CMessageEnterDialogMode
 | 0x00       | 12       | :ref:`CMessage<CMessage>`              | m_cMessage                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageEnterStoreMode:
 
@@ -1110,6 +1210,8 @@ CMessageEnterStoreMode
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageEscapeArea:
 
 CMessageEscapeArea
@@ -1121,6 +1223,8 @@ CMessageEscapeArea
 | 0x00       | 12       | :ref:`CMessage<CMessage>`              | m_cMessage                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageExitDialogMode:
 
@@ -1138,6 +1242,8 @@ CMessageExitDialogMode
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageExitStoreMode:
 
 CMessageExitStoreMode
@@ -1149,6 +1255,8 @@ CMessageExitStoreMode
 | 0x00       | 12       | :ref:`CMessage<CMessage>`              | m_cMessage                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageExploreArea:
 
@@ -1163,6 +1271,8 @@ CMessageExploreArea
 | 0x0C       | 4        | :ref:`CString<CString>`                | m_sAreaString                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageFadeColor:
 
@@ -1184,6 +1294,8 @@ CMessageFadeColor
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageFakeExpireCheck:
 
 CMessageFakeExpireCheck
@@ -1197,6 +1309,8 @@ CMessageFakeExpireCheck
 | 0x0C       | 4        | long                                   | m_nTime                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageFamiliarAdd:
 
@@ -1213,6 +1327,8 @@ CMessageFamiliarAdd
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageFamiliarRemoveResRef:
 
@@ -1233,6 +1349,8 @@ CMessageFamiliarRemoveResRef
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageFireProjectile:
 
@@ -1256,6 +1374,8 @@ CMessageFireProjectile
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageFireSpell:
 
 CMessageFireSpell
@@ -1272,6 +1392,8 @@ CMessageFireSpell
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageForcePosition:
 
 CMessageForcePosition
@@ -1285,6 +1407,8 @@ CMessageForcePosition
 | 0x0C       | 8        | :ref:`CPoint<CPoint>`                  | m_face                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageForceRandomEncounter:
 
@@ -1302,6 +1426,8 @@ CMessageForceRandomEncounter
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageHandler:
 
 CMessageHandler
@@ -1318,6 +1444,8 @@ CMessageHandler
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageInsertAction:
 
 CMessageInsertAction
@@ -1331,6 +1459,8 @@ CMessageInsertAction
 | 0x0C       | 100      | :ref:`CAIAction<CAIAction>`            | m_action                      |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageInsertResponse:
 
@@ -1350,6 +1480,8 @@ CMessageInsertResponse
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageLeaveParty:
 
 CMessageLeaveParty
@@ -1361,6 +1493,8 @@ CMessageLeaveParty
 | 0x00       | 12       | :ref:`CMessage<CMessage>`              | m_cMessage                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageLoadDialog:
 
@@ -1380,6 +1514,8 @@ CMessageLoadDialog
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageMakeGlobal:
 
 CMessageMakeGlobal
@@ -1391,6 +1527,8 @@ CMessageMakeGlobal
 | 0x00       | 12       | :ref:`CMessage<CMessage>`              | m_cMessage                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageMoveGlobal:
 
@@ -1408,6 +1546,8 @@ CMessageMoveGlobal
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageNonControlledDialogReturn:
 
 CMessageNonControlledDialogReturn
@@ -1424,6 +1564,8 @@ CMessageNonControlledDialogReturn
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageNonControlledDialogStart:
 
 CMessageNonControlledDialogStart
@@ -1439,6 +1581,8 @@ CMessageNonControlledDialogStart
 | 0x10       | 4        | long                                   | m_NPCId                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessagePartyGold:
 
@@ -1460,6 +1604,8 @@ CMessagePartyGold
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessagePlaySound:
 
 CMessagePlaySound
@@ -1479,6 +1625,8 @@ CMessagePlaySound
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessagePlaySoundRef:
 
@@ -1502,6 +1650,8 @@ CMessagePlaySoundRef
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageRemoveItem:
 
 CMessageRemoveItem
@@ -1517,6 +1667,8 @@ CMessageRemoveItem
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageRemoveReplies:
 
@@ -1538,6 +1690,8 @@ CMessageRemoveReplies
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageRemoveVVCInternal:
 
 CMessageRemoveVVCInternal
@@ -1556,6 +1710,8 @@ CMessageRemoveVVCInternal
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageReplaceItem:
 
 CMessageReplaceItem
@@ -1571,6 +1727,8 @@ CMessageReplaceItem
 | 0x74       | 8        | :ref:`CResRef<CResRef>`                | m_cRes                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageReputationChange:
 
@@ -1588,6 +1746,8 @@ CMessageReputationChange
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageResetMorale:
 
 CMessageResetMorale
@@ -1604,6 +1764,8 @@ CMessageResetMorale
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSaveGame:
 
 CMessageSaveGame
@@ -1619,6 +1781,8 @@ CMessageSaveGame
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageScreenShake:
 
@@ -1642,6 +1806,8 @@ CMessageScreenShake
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetAISpeed:
 
 CMessageSetAISpeed
@@ -1658,6 +1824,8 @@ CMessageSetAISpeed
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetActive:
 
 CMessageSetActive
@@ -1672,6 +1840,8 @@ CMessageSetActive
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetActiveImprisonment:
 
 CMessageSetActiveImprisonment
@@ -1685,6 +1855,8 @@ CMessageSetActiveImprisonment
 | 0x0C       | 4        | int                                    | m_active                      |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetAreaFlag:
 
@@ -1701,6 +1873,8 @@ CMessageSetAreaFlag
 | 0x10       | 4        | int                                    | m_bSet                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetAreaScript:
 
@@ -1720,6 +1894,8 @@ CMessageSetAreaScript
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetBanterBlockFlag:
 
 CMessageSetBanterBlockFlag
@@ -1736,6 +1912,8 @@ CMessageSetBanterBlockFlag
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetBanterBlockTime:
 
 CMessageSetBanterBlockTime
@@ -1750,6 +1928,8 @@ CMessageSetBanterBlockTime
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetCampaign:
 
 CMessageSetCampaign
@@ -1763,6 +1943,8 @@ CMessageSetCampaign
 | 0x0C       | 8        | :ref:`CResRef<CResRef>`                | m_campaign                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetCommandPause:
 
@@ -1780,6 +1962,8 @@ CMessageSetCommandPause
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetCurrentActionId:
 
 CMessageSetCurrentActionId
@@ -1796,6 +1980,8 @@ CMessageSetCurrentActionId
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetCurrentArea:
 
 CMessageSetCurrentArea
@@ -1809,6 +1995,8 @@ CMessageSetCurrentArea
 | 0x0C       | 8        | :ref:`CResRef<CResRef>`                | m_cResRefDialog               |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetDialogPausing:
 
@@ -1826,6 +2014,8 @@ CMessageSetDialogPausing
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetDialogResRef:
 
 CMessageSetDialogResRef
@@ -1839,6 +2029,8 @@ CMessageSetDialogResRef
 | 0x0C       | 8        | :ref:`CResRef<CResRef>`                | m_cResRefDialog               |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetDialogWait:
 
@@ -1856,6 +2048,8 @@ CMessageSetDialogWait
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetDirection:
 
 CMessageSetDirection
@@ -1869,6 +2063,8 @@ CMessageSetDirection
 | 0x0C       | 8        | :ref:`CPoint<CPoint>`                  | m_face                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetDrawPoly:
 
@@ -1886,6 +2082,8 @@ CMessageSetDrawPoly
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetFamiliarSummoner:
 
 CMessageSetFamiliarSummoner
@@ -1901,6 +2099,8 @@ CMessageSetFamiliarSummoner
 |            | 4        | int                                    | m_nSummoner                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetForceActionPick:
 
@@ -1918,6 +2118,8 @@ CMessageSetForceActionPick
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetHappiness:
 
 CMessageSetHappiness
@@ -1934,6 +2136,8 @@ CMessageSetHappiness
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetInCutScene:
 
 CMessageSetInCutScene
@@ -1947,6 +2151,8 @@ CMessageSetInCutScene
 | 0x0C       | 4        | int                                    | m_status                      |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetInDialog:
 
@@ -1966,6 +2172,8 @@ CMessageSetInDialog
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetInStore:
 
 CMessageSetInStore
@@ -1982,6 +2190,8 @@ CMessageSetInStore
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetLastAttacker:
 
 CMessageSetLastAttacker
@@ -1995,6 +2205,8 @@ CMessageSetLastAttacker
 | 0x0C       | 20       | :ref:`CAIObjectType<CAIObjectType>`    | m_lAttacker                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetLastObject:
 
@@ -2013,6 +2225,8 @@ CMessageSetLastObject
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetMusic:
 
@@ -2034,6 +2248,8 @@ CMessageSetMusic
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetNumTimesTalkedTo:
 
 CMessageSetNumTimesTalkedTo
@@ -2047,6 +2263,8 @@ CMessageSetNumTimesTalkedTo
 | 0x0C       | 4        | long                                   | m_nNumTimesTalkedTo           |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetPath:
 
@@ -2076,6 +2294,8 @@ CMessageSetPath
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetPortraitLarge:
 
 CMessageSetPortraitLarge
@@ -2090,6 +2310,8 @@ CMessageSetPortraitLarge
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetPortraitSmall:
 
 CMessageSetPortraitSmall
@@ -2103,6 +2325,8 @@ CMessageSetPortraitSmall
 | 0x0C       | 8        | :ref:`CResRef<CResRef>`                | m_cResRefDialog               |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetRestEncounterProbability:
 
@@ -2124,6 +2348,8 @@ CMessageSetRestEncounterProbability
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetSequence:
 
 CMessageSetSequence
@@ -2139,6 +2365,8 @@ CMessageSetSequence
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetSound:
 
@@ -2158,6 +2386,8 @@ CMessageSetSound
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetStateOverrideFlag:
 
 CMessageSetStateOverrideFlag
@@ -2174,6 +2404,8 @@ CMessageSetStateOverrideFlag
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetStateOverrideTime:
 
 CMessageSetStateOverrideTime
@@ -2187,6 +2419,8 @@ CMessageSetStateOverrideTime
 | 0x0C       | 4        | long                                   | m_time                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetTarget:
 
@@ -2208,6 +2442,8 @@ CMessageSetTarget
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetTimeStop:
 
 CMessageSetTimeStop
@@ -2222,6 +2458,8 @@ CMessageSetTimeStop
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetTrigger:
 
 CMessageSetTrigger
@@ -2235,6 +2473,8 @@ CMessageSetTrigger
 | 0x0C       | 48       | :ref:`CAITrigger<CAITrigger>`          | m_trigger                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetVariable:
 
@@ -2258,6 +2498,8 @@ CMessageSetVariable
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetVariableAll:
 
 CMessageSetVariableAll
@@ -2274,6 +2516,8 @@ CMessageSetVariableAll
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSetWorldmap:
 
 CMessageSetWorldmap
@@ -2287,6 +2531,8 @@ CMessageSetWorldmap
 | 0x0C       | 8        | :ref:`CResRef<CResRef>`                | m_worldmap                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSetWorldmapAreaFlag:
 
@@ -2306,6 +2552,8 @@ CMessageSetWorldmapAreaFlag
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSpawnPtActivate:
 
 CMessageSpawnPtActivate
@@ -2322,6 +2570,8 @@ CMessageSpawnPtActivate
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSpawnPtSpawn:
 
 CMessageSpawnPtSpawn
@@ -2336,6 +2586,8 @@ CMessageSpawnPtSpawn
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageSpriteDeath:
 
 CMessageSpriteDeath
@@ -2349,6 +2601,8 @@ CMessageSpriteDeath
 | 0x0C       | 4        | unsigned long                          | m_nDeathType                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSpriteEquipment:
 
@@ -2379,6 +2633,8 @@ CMessageSpritePetrify
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageSpriteUpdate:
 
@@ -2476,6 +2732,8 @@ CMessageSpriteUpdate
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageStartCombatMusic:
 
 CMessageStartCombatMusic
@@ -2488,6 +2746,8 @@ CMessageStartCombatMusic
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageStartFollow:
 
 CMessageStartFollow
@@ -2499,6 +2759,8 @@ CMessageStartFollow
 | 0x00       | 12       | :ref:`CMessage<CMessage>`              | m_cMessage                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageStartScroll:
 
@@ -2522,6 +2784,8 @@ CMessageStartScroll
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageStartSong:
 
 CMessageStartSong
@@ -2540,6 +2804,8 @@ CMessageStartSong
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageStartTextScreen:
 
 CMessageStartTextScreen
@@ -2553,6 +2819,8 @@ CMessageStartTextScreen
 | 0x0C       | 8        | :ref:`CResRef<CResRef>`                | m_screen                      |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageStartVEF:
 
@@ -2578,6 +2846,8 @@ CMessageStartVEF
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageStaticPalette:
 
 CMessageStaticPalette
@@ -2591,6 +2861,8 @@ CMessageStaticPalette
 | 0x0C       | 8        | :ref:`CResRef<CResRef>`                | m_res                         |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageStaticSequence:
 
@@ -2608,6 +2880,8 @@ CMessageStaticSequence
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageStaticStart:
 
 CMessageStaticStart
@@ -2624,6 +2898,8 @@ CMessageStaticStart
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageStopActions:
 
 CMessageStopActions
@@ -2635,6 +2911,8 @@ CMessageStopActions
 | 0x00       | 12       | :ref:`CMessage<CMessage>`              | m_cMessage                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageStopEscapeArea:
 
@@ -2648,6 +2926,8 @@ CMessageStopEscapeArea
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageStopFollow:
 
 CMessageStopFollow
@@ -2659,6 +2939,8 @@ CMessageStopFollow
 | 0x00       | 12       | :ref:`CMessage<CMessage>`              | m_cMessage                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageStoreAddItem:
 
@@ -2678,6 +2960,8 @@ CMessageStoreAddItem
 +------------+----------+--------------------------------------------+--------------+
 
 
+----
+
 .. _CMessageStoreDemand:
 
 CMessageStoreDemand
@@ -2692,6 +2976,8 @@ CMessageStoreDemand
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageStoreRelease:
 
 CMessageStoreRelease
@@ -2705,6 +2991,8 @@ CMessageStoreRelease
 | 0x0C       | 8        | :ref:`CResRef<CResRef>`                | m_store                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageStoreRemoveItem:
 
@@ -2724,6 +3012,8 @@ CMessageStoreRemoveItem
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageStoreReplaceItem:
 
 CMessageStoreReplaceItem
@@ -2742,6 +3032,8 @@ CMessageStoreReplaceItem
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageTakeCreatureItems:
 
 CMessageTakeCreatureItems
@@ -2755,6 +3047,8 @@ CMessageTakeCreatureItems
 | 0x0C       | 4        | unsigned long                          | m_itemType                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageTransformItem:
 
@@ -2771,6 +3065,8 @@ CMessageTransformItem
 | 0x74       | 8        | :ref:`CResRef<CResRef>`                | m_cRes                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageTriggerStatus:
 
@@ -2790,6 +3086,8 @@ CMessageTriggerStatus
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageUnlock:
 
 CMessageUnlock
@@ -2803,6 +3101,8 @@ CMessageUnlock
 | 0x0C       | 4        | unsigned long                          | m_dwFlags                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageUpdateImmunities:
 
@@ -2818,6 +3118,8 @@ CMessageUpdateImmunities
 +------------+----------+---------------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageUpdateMachineState:
 
 CMessageUpdateMachineState
@@ -2832,6 +3134,8 @@ CMessageUpdateMachineState
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageUpdateReaction:
 
 CMessageUpdateReaction
@@ -2845,6 +3149,8 @@ CMessageUpdateReaction
 | 0x0C       | 4        | long                                   | m_nReaction                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageUpdateScript:
 
@@ -2864,6 +3170,8 @@ CMessageUpdateScript
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageUpdateStoredPartyLocations:
 
 CMessageUpdateStoredPartyLocations
@@ -2881,6 +3189,8 @@ CMessageUpdateStoredPartyLocations
 | 0x10       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_storedLocations             |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageUseItemCharges:
 
@@ -2902,6 +3212,8 @@ CMessageUseItemCharges
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageVerbalConstant:
 
 CMessageVerbalConstant
@@ -2920,6 +3232,8 @@ CMessageVerbalConstant
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageVisibilityMapMove:
 
 CMessageVisibilityMapMove
@@ -2935,6 +3249,8 @@ CMessageVisibilityMapMove
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMessageVisualEffect:
 
@@ -2954,6 +3270,8 @@ CMessageVisualEffect
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMessageWeaponImmumityUpdate:
 
 CMessageWeaponImmumityUpdate
@@ -2968,6 +3286,8 @@ CMessageWeaponImmumityUpdate
 +------------+----------+---------------------------------------------+-------------------------------+
 
 
+----
+
 .. _CMoveList:
 
 CMoveList
@@ -2979,6 +3299,8 @@ CMoveList
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMoveListEntry:
 
@@ -3003,6 +3325,8 @@ CMoveListEntry
 | 0x20       | 4        | long                                   | m_nDelay                      |
 +------------+----------+----------------------------------------+-------------------------------+
 
+
+----
 
 .. _CMultiplayerSettings:
 
@@ -3067,6 +3391,8 @@ CMultiplayerSettings
 | 0xb8       | 4        | :ref:`CString<CString>`                | m_sCampaignType                    |
 +------------+----------+----------------------------------------+------------------------------------+
 
+
+----
 
 .. _CMusicPosition:
 

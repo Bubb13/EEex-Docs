@@ -62,6 +62,8 @@ Asm Definition
    CDLC           ends
 
 
+----
+
 .. _CDLC_Content:
 
 CDLC_Content
@@ -84,6 +86,8 @@ Asm Definition
      dlc_id     dd ?
    CDLC_Content ends
 
+
+----
 
 .. _CDWordArray:
 
@@ -116,6 +120,8 @@ Asm Definition
      m_nGrowBy  dd ?
    CDWordArray  ends
 
+
+----
 
 .. _CDeathSound:
 
@@ -151,6 +157,8 @@ Asm Definition
      m_pTrigger     dd ? ; CAITrigger*
    CDeathSound      ends
 
+
+----
 
 .. _CDerivedStats:
 
@@ -301,6 +309,8 @@ Asm Definition
      m_spellStates                      dd 8 dup (?)
    CDerivedStats                        ends
 
+
+----
 
 .. _CDerivedStatsTemplate:
 
@@ -922,6 +932,8 @@ Asm Definition
    CDerivedStatsTemplate                    ends
 
 
+----
+
 .. _CDialogFile:
 
 CDialogFile
@@ -941,6 +953,8 @@ Asm Definition
      cResHelper CResHelper <>
    CDialogFile  ends
 
+
+----
 
 .. _CDialogFile_ActionScript:
 
@@ -964,6 +978,8 @@ Asm Definition
      m_ScriptSize           dd ?
    CDialogFile_ActionScript ends
 
+
+----
 
 .. _CDialogFile_Dialog:
 
@@ -993,6 +1009,8 @@ Asm Definition
      m_StartingConditionalScript dd ?
    CDialogFile_Dialog            ends
 
+
+----
 
 .. _CDialogFile_Header:
 
@@ -1044,6 +1062,8 @@ Asm Definition
    CDialogFile_Header           ends
 
 
+----
+
 .. _CDialogFile_Reply:
 
 CDialogFile_Reply
@@ -1082,6 +1102,8 @@ Asm Definition
    CDialogFile_Reply            ends
 
 
+----
+
 .. _CDialogFile_ReplyConditional:
 
 CDialogFile_ReplyConditional
@@ -1105,6 +1127,8 @@ Asm Definition
    CDialogFile_ReplyConditional ends
 
 
+----
+
 .. _CDialogFile_StartingConditional:
 
 CDialogFile_StartingConditional
@@ -1127,6 +1151,8 @@ Asm Definition
      m_ScriptSize                  dd ?
    CDialogFile_StartingConditional ends
 
+
+----
 
 .. _CDungeonMaster:
 

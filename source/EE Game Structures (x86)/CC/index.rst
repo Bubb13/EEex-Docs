@@ -113,6 +113,8 @@ Asm Definition
    CCacheStatus              ends
 
 
+----
+
 .. _CCallResult:
 
 CCallResult
@@ -145,6 +147,8 @@ Asm Definition
    CCallResult          ends
 
 
+----
+
 .. _CCallbackBase:
 
 CCallbackBase
@@ -176,6 +180,8 @@ Asm Definition
    CCallbackBase        ends
 
 
+----
+
 .. _CCharacterFile:
 
 CCharacterFile
@@ -195,6 +201,8 @@ Asm Definition
      cResHelper     CResHelper <>
    CCharacterFile   ends
 
+
+----
 
 .. _CChatBuffer:
 
@@ -224,6 +232,8 @@ Asm Definition
      m_nDisplayCount    dd ?
    CChatBuffer          ends
 
+
+----
 
 .. _CChitin:
 
@@ -591,6 +601,8 @@ Asm Definition
    CChitin                               ends
 
 
+----
+
 .. _CClosure:
 
 CClosure
@@ -617,6 +629,8 @@ CClosure
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CCmdTarget:
 
 CCmdTarget
@@ -636,6 +650,8 @@ Asm Definition
      m_cObject  CObject <>
    CCmdTarget   ends
 
+
+----
 
 .. _CColorEffect:
 
@@ -675,6 +691,8 @@ Asm Definition
    CColorEffect ends
 
 
+----
+
 .. _CColorEffects:
 
 CColorEffects
@@ -695,6 +713,8 @@ Asm Definition
    CColorEffects        ends ; size 0x1C
 
 
+
+----
 
 .. _CColorRange:
 
@@ -719,6 +739,8 @@ Asm Definition
    CColorRange  ends
 
 
+----
+
 .. _CColorRanges:
 
 CColorRanges
@@ -738,6 +760,8 @@ Asm Definition
      m_cTypedPtrList    CTypedPtrList <>
    CColorRanges         ends ; size 0x1C
 
+
+----
 
 .. _CContingency:
 
@@ -786,6 +810,8 @@ Asm Definition
    CContingency     ends
 
 
+----
+
 .. _CContingencyList:
 
 CContingencyList
@@ -805,6 +831,8 @@ Asm Definition
      m_cTypedPtrList    CTypedPtrList <>
    CContingencyList     ends ; size 0x1C
 
+
+----
 
 .. _CContingencySpell:
 
@@ -832,6 +860,8 @@ Asm Definition
    CContingencySpell    ends
 
 
+----
+
 .. _CCreatureFile:
 
 CCreatureFile
@@ -851,6 +881,8 @@ Asm Definition
      cResHelper     CResHelper <>
    CCreatureFile    ends
 
+
+----
 
 .. _CCreatureFileEquipment:
 
@@ -918,6 +950,8 @@ Asm Definition
      m_selectedWeaponAbility dw ?
    CCreatureFileEquipment    ends
 
+
+----
 
 .. _CCreatureFileHeader:
 
@@ -1192,6 +1226,8 @@ Asm Definition
    CCreatureFileHeader              ends
 
 
+----
+
 .. _CCreatureFileItem:
 
 CCreatureFileItem
@@ -1230,6 +1266,8 @@ Asm Definition
    CCreatureFileItem    ends
 
 
+----
+
 .. _CCreatureFileKnownSpell:
 
 CCreatureFileKnownSpell
@@ -1263,6 +1301,8 @@ Asm Definition
    CCreatureFileKnownSpell  ends
 
 
+----
+
 .. _CCreatureFileMemorizedSpell:
 
 CCreatureFileMemorizedSpell
@@ -1295,6 +1335,8 @@ Asm Definition
      structureAlignment1        db 2 dup (?)
    CCreatureFileMemorizedSpell  ends
 
+
+----
 
 .. _CCreatureFileMemorizedSpellLevel:
 
@@ -1339,6 +1381,8 @@ Asm Definition
      m_memorizedCount               dd ?
    CCreatureFileMemorizedSpellLevel ends
 
+
+----
 
 .. _CCreatureFileOffsets:
 
@@ -1431,6 +1475,8 @@ Asm Definition
    CCreatureFileOffsets             ends
 
 
+----
+
 .. _CCriticalEntry:
 
 CCriticalEntry
@@ -1466,6 +1512,8 @@ Asm Definition
    CCriticalEntry   ends
 
 
+----
+
 .. _CCriticalEntryList:
 
 CCriticalEntryList
@@ -1485,6 +1533,8 @@ Asm Definition
      m_cTypedPtrList    CTypedPtrList <>
    CCriticalEntryList   ends ; size 0x1C
 
+
+----
 
 .. _CCrypt:
 

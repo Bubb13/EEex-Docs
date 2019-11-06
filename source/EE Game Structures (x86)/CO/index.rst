@@ -48,6 +48,8 @@ Asm Definition
    CObArray     ends
 
 
+----
+
 .. _CObList:
 
 CObList
@@ -86,6 +88,8 @@ Asm Definition
    CObList          ends
 
 
+----
+
 .. _CObListCNode:
 
 CObList::CNode
@@ -112,6 +116,8 @@ Asm Definition
    CObListCNode ends
 
 
+----
+
 .. _CObject:
 
 CObject
@@ -131,6 +137,8 @@ Asm Definition
      vfptr dd ?
    CObject ends
 
+
+----
 
 .. _CObjectMarker:
 
@@ -165,6 +173,8 @@ Asm Definition
                         db ? ; padding
    CObjectMarker        ends
 
+
+----
 
 .. _COverridePath:
 

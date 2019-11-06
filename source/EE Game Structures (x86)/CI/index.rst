@@ -46,6 +46,8 @@ CIcon
 +------------+----------+----------------------------------------+-------------------------------+
 
 
+----
+
 .. _CImmunitiesAIType:
 
 CImmunitiesAIType
@@ -66,6 +68,8 @@ Asm Definition
    CImmunitiesAIType    ends
 
 
+----
+
 .. _CImmunitiesEffect:
 
 CImmunitiesEffect
@@ -85,6 +89,8 @@ Asm Definition
      m_cTypedPtrList    CTypedPtrList <>
    CImmunitiesEffect    ends
 
+
+----
 
 .. _CImmunitiesItemEquip:
 
@@ -112,6 +118,8 @@ Asm Definition
    CImmunitiesItemEquip ends
 
 
+----
+
 .. _CImmunitiesItemEquipList:
 
 CImmunitiesItemEquipList
@@ -131,6 +139,8 @@ Asm Definition
      m_cTypedPtrList        CTypedPtrList <>
    CImmunitiesItemEquipList ends
 
+
+----
 
 .. _CImmunitiesItemTypeEquip:
 
@@ -158,6 +168,8 @@ Asm Definition
    CImmunitiesItemTypeEquip ends
 
 
+----
+
 .. _CImmunitiesItemTypeEquipList:
 
 CImmunitiesItemTypeEquipList
@@ -177,6 +189,8 @@ Asm Definition
      m_cTypedPtrList            CTypedPtrList <>
    CImmunitiesItemTypeEquipList ends
 
+
+----
 
 .. _CImmunitiesProjectile:
 
@@ -198,6 +212,8 @@ Asm Definition
    CImmunitiesProjectile    ends
 
 
+----
+
 .. _CImmunitiesSchoolAndSecondary:
 
 CImmunitiesSchoolAndSecondary
@@ -217,6 +233,8 @@ Asm Definition
      m_cTypedPtrList                CTypedPtrList <>
    CImmunitiesSchoolAndSecondary    ends
 
+
+----
 
 .. _CImmunitiesSchoolAndSecondaryDecrementing:
 
@@ -238,6 +256,8 @@ Asm Definition
    CImmunitiesSchoolAndSecondaryDecrementing    ends
 
 
+----
+
 .. _CImmunitiesSpellLevel:
 
 CImmunitiesSpellLevel
@@ -257,6 +277,8 @@ Asm Definition
      m_levels               dd 10 dup (?)
    CImmunitiesSpellLevel    ends
 
+
+----
 
 .. _CImmunitiesSpellLevelDecrementing:
 
@@ -278,6 +300,8 @@ Asm Definition
    CImmunitiesSpellLevelDecrementing    ends
 
 
+----
+
 .. _CImmunitiesSpellList:
 
 CImmunitiesSpellList
@@ -298,6 +322,8 @@ Asm Definition
    CImmunitiesSpellList ends
 
 
+----
+
 .. _CImmunitiesWeapon:
 
 CImmunitiesWeapon
@@ -317,6 +343,8 @@ Asm Definition
      m_cTypedPtrList    CTypedPtrList <>
    CImmunitiesWeapon    ends
 
+
+----
 
 .. _CImmunitySpell:
 
@@ -343,6 +371,8 @@ Asm Definition
      m_item         dd ?
    CImmunitySpell   ends
 
+
+----
 
 .. _CImportGame:
 
@@ -404,6 +434,8 @@ Asm Definition
    CImportGame              ends
 
 
+----
+
 .. _CInfButtonArray:
 
 CInfButtonArray
@@ -463,6 +495,8 @@ Asm Definition
    CInfButtonArray              ends
 
 
+----
+
 .. _CInfButtonSettings:
 
 CInfButtonSettings
@@ -519,6 +553,8 @@ Asm Definition
    CInfButtonSettings       ends
 
 
+----
+
 .. _CInfCursor:
 
 CInfCursor
@@ -573,6 +609,8 @@ Asm Definition
                         db ? ; padding
    CInfCursor           ends
 
+
+----
 
 .. _CInfGame:
 
@@ -1010,6 +1048,8 @@ Asm Definition
       
       
 
+----
+
 .. _CInfTileSet:
 
 CInfTileSet
@@ -1044,6 +1084,8 @@ Asm Definition
      nTileSize  dd ?
    CInfTileSet  ends
 
+
+----
 
 .. _CInfToolTip:
 
@@ -1084,6 +1126,8 @@ Asm Definition
      m_openSnd          CSound <>
    CInfToolTip          ends
 
+
+----
 
 .. _CInfinity:
 
@@ -1376,7 +1420,9 @@ Asm Definition
      m_bZoomEnabled                 dd ?
      m_bZooming                     dd ?
    CInfinity                        ends
-      
+
+
+----
 
 .. _CItem:
 

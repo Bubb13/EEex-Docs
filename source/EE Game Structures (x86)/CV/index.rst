@@ -82,6 +82,8 @@ Asm Definition
    CVEFEvent        ends
 
 
+----
+
 .. _CVEFVidCell:
 
 CVEFVidCell
@@ -156,6 +158,8 @@ Asm Definition
      m_priority         dd ?
    CVEFVidCell          ends
 
+
+----
 
 .. _CVEFVidCellBase:
 
@@ -258,6 +262,8 @@ Asm Definition
    CVEFVidCellBase       ends
 
 
+----
+
 .. _CVEFVidCellFile:
 
 CVEFVidCellFile
@@ -277,6 +283,8 @@ Asm Definition
      m_cResHelper   CResHelper <>
    CVEFVidCellFile  ends
 
+
+----
 
 .. _CVIDIMG_PALETTEAFFECT:
 
@@ -325,6 +333,8 @@ Asm Definition
    CVIDIMG_PALETTEAFFECT    ends
 
 
+----
+
 .. _CVIDMODE_CLIP_OUTCODE:
 
 CVIDMODE_CLIP_OUTCODE
@@ -357,6 +367,8 @@ Asm Definition
                          top:       4
    CVIDMODE_CLIP_OUTCODE ends
 
+
+----
 
 .. _CVIDMODE_RECTICLE_DESCRIPTION:
 
@@ -409,6 +421,8 @@ Asm Definition
    CVIDMODE_RECTICLE_DESCRIPTION    ends
 
 
+----
+
 .. _CVIDPALETTE_COLOR:
 
 CVIDPALETTE_COLOR
@@ -435,6 +449,8 @@ Asm Definition
    CVIDPALETTE_COLOR    ends
 
 
+----
+
 .. _CVIDPOLY_VERTEX:
 
 CVIDPOLY_VERTEX
@@ -457,6 +473,8 @@ Asm Definition
      y              dw ?
    CVIDPOLY_VERTEX  ends
 
+
+----
 
 .. _CVRamPool:
 
@@ -481,6 +499,8 @@ Asm Definition
    CVRamPool  ends
 
 
+----
+
 .. _CVVCHash:
 
 CVVCHash
@@ -503,6 +523,8 @@ Asm Definition
      m_nTableEntries dd ?
    CVVCHash          ends
 
+
+----
 
 .. _CVVCHashEntry:
 
@@ -536,6 +558,8 @@ Asm Definition
    CVVCHashEntry     ends
 
 
+----
+
 .. _CVariable:
 
 CVariable
@@ -554,6 +578,9 @@ Asm Definition
    CVariable            struct
      m_cAreaVariable    CAreaVariable <>
    CVariable            ends
+
+
+----
 
 .. _CVariableHash:
 
@@ -577,6 +604,8 @@ Asm Definition
      m_nTableEntries dd ?
    CVariableHash     ends
 
+
+----
 
 .. _CVidBitmap:
 
@@ -609,6 +638,8 @@ Asm Definition
      m_szResFileName CString <>
    CVidBitmap        ends
 
+
+----
 
 .. _CVidCell:
 
@@ -658,6 +689,8 @@ Asm Definition
       
 
 
+----
+
 .. _CVidCellFont:
 
 CVidCellFont
@@ -683,6 +716,8 @@ Asm Definition
    CVidCellFont ends
 
 
+----
+
 .. _CVidDrawable:
 
 CVidDrawable
@@ -705,6 +740,8 @@ Asm Definition
      tex        dd ? ; void* 
    CVidDrawable ends
 
+
+----
 
 .. _CVidFont:
 
@@ -741,6 +778,8 @@ Asm Definition
    CVidFont         ends
 
 
+----
+
 .. _CVidImage:
 
 CVidImage
@@ -763,6 +802,8 @@ Asm Definition
      mPaletteAffects CVIDIMG_PALETTEAFFECT <>
    CVidImage         ends
 
+
+----
 
 .. _CVidMode:
 
@@ -924,6 +965,8 @@ Asm Definition
    CVidMode                 ends
 
 
+----
+
 .. _CVidMosaic:
 
 CVidMosaic
@@ -946,6 +989,8 @@ Asm Definition
      m_cResHelper   CResHelper <>
    CVidMosaic       ends
 
+
+----
 
 .. _CVidPalette:
 
@@ -997,6 +1042,8 @@ Asm Definition
    CVidPalette              ends
 
 
+----
+
 .. _CVidPng:
 
 CVidPng
@@ -1019,6 +1066,8 @@ Asm Definition
      m_cResHelper   CResHelper <>
    CVidPng          ends
 
+
+----
 
 .. _CVidPoly:
 
@@ -1053,6 +1102,8 @@ Asm Definition
    CVidPoly                 ends
 
 
+----
+
 .. _CVidTile:
 
 CVidTile
@@ -1079,6 +1130,8 @@ Asm Definition
    CVidTile         ends
 
 
+----
+
 .. _CVideo:
 
 CVideo
@@ -1098,6 +1151,8 @@ Asm Definition
      pCurrentMode   dd ? ; CVidMode* 
    CVideo           ends
 
+
+----
 
 .. _CVisibilityMap:
 
@@ -1148,6 +1203,8 @@ Asm Definition
    CVisibilityMap       ends
 
 
+----
+
 .. _CVisibilityMapEllipse:
 
 CVisibilityMapEllipse
@@ -1187,6 +1244,8 @@ Asm Definition
    CVisibilityMapEllipse    ends
 
 
+----
+
 .. _CVisibilityMapTreeNode:
 
 CVisibilityMapTreeNode
@@ -1218,6 +1277,8 @@ Asm Definition
                             dw ? ; padding
    CVisibilityMapTreeNode   ends
 
+
+----
 
 .. _CVisualEffect:
 
@@ -1293,6 +1354,8 @@ Asm Definition
    CVisualEffect            ends
  
 
+----
+
 .. _CVisualEffectBase:
 
 CVisualEffectBase
@@ -1346,6 +1409,8 @@ Asm Definition
    CVisualEffectBase         ends
 
 
+----
+
 .. _CVisualEffectFile:
 
 CVisualEffectFile
@@ -1365,6 +1430,8 @@ Asm Definition
      m_cResHelper    CResHelper <>
    CVisualEffectFile ends
 
+
+----
 
 .. _CVoice:
 
