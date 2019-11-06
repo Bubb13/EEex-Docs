@@ -87,6 +87,7 @@ The following cheat key combination are available once cheat keys has been enabl
 
 In addition CTRL+8 during character creation will set all attributes to 18 (STR 18/00)
 
+CTRL+SHIFT+Z while hovering over a character will grant every spell file in the game - may crash due to invalid spells
 
 **Example**
 

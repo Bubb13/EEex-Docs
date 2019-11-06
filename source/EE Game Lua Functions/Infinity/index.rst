@@ -316,6 +316,8 @@ Infinity_ActivateInventory
 
 
 
+----
+
 .. _Infinity_ActivateRecord:
 
 Infinity_ActivateRecord
@@ -338,6 +340,8 @@ Infinity_ActivateRecord
 
 
 
+
+----
 
 .. _Infinity_AddDLC:
 
@@ -367,6 +371,8 @@ Infinity_AddDLC
 
 
 
+----
+
 .. _Infinity_AddDLCContent:
 
 Infinity_AddDLCContent
@@ -391,6 +397,8 @@ Infinity_AddDLCContent
 
 
 
+----
+
 .. _Infinity_CanCloudSave:
 
 Infinity_CanCloudSave
@@ -413,6 +421,8 @@ Infinity_CanCloudSave
 
 
 
+
+----
 
 .. _Infinity_CanLevelUp:
 
@@ -441,6 +451,8 @@ Infinity_CanLevelUp
 
 
 
+----
+
 .. _Infinity_ChangeOption:
 
 Infinity_ChangeOption
@@ -466,6 +478,8 @@ Infinity_ChangeOption
 
 
 
+----
+
 .. _Infinity_CheckItemIdentify:
 
 Infinity_CheckItemIdentify
@@ -488,6 +502,8 @@ Infinity_CheckItemIdentify
 
 
 
+
+----
 
 .. _Infinity_ClickItem:
 
@@ -516,6 +532,9 @@ Infinity_ClickItem
 
 
 
+
+----
+
 .. _Infinity_ClickObjectInWorld:
 
 Infinity_ClickObjectInWorld
@@ -542,6 +561,9 @@ Infinity_ClickObjectInWorld
 
 
 
+
+
+----
 
 .. _Infinity_ClickScreen:
 
@@ -570,6 +592,9 @@ Infinity_ClickScreen
 
 
 
+
+----
+
 .. _Infinity_ClickWorldAt:
 
 Infinity_ClickWorldAt
@@ -596,6 +621,9 @@ Infinity_ClickWorldAt
 
 
 
+
+
+----
 
 .. _Infinity_CloseEngine:
 
@@ -624,6 +652,9 @@ Infinity_CloseEngine
 
 
 
+
+----
+
 .. _Infinity_DestroyAnimation:
 
 Infinity_DestroyAnimation
@@ -650,6 +681,9 @@ Infinity_DestroyAnimation
 
 
 
+
+
+----
 
 .. _Infinity_DisplayString:
 
@@ -678,6 +712,9 @@ Infinity_DisplayString
 
 
 
+
+----
+
 .. _Infinity_DoFile:
 
 Infinity_DoFile
@@ -700,6 +737,9 @@ Loads and executes the lua file specified
 
 
 
+
+
+----
 
 .. _Infinity_EnterEdit:
 
@@ -728,6 +768,9 @@ Infinity_EnterEdit
 
 
 
+
+----
+
 .. _Infinity_FetchString:
 
 Infinity_FetchString
@@ -754,6 +797,9 @@ string
 
 
 
+
+
+----
 
 .. _Infinity_FindItemWithBam:
 
@@ -782,6 +828,9 @@ Infinity_FindItemWithBam
 
 
 
+
+----
+
 .. _Infinity_FindItemWithText:
 
 Infinity_FindItemWithText
@@ -808,6 +857,9 @@ Infinity_FindItemWithText
 
 
 
+
+
+----
 
 .. _Infinity_FindUIItemByName:
 
@@ -836,6 +888,9 @@ ref
 
 
 
+
+----
+
 .. _Infinity_FocusTextEdit:
 
 Infinity_FocusTextEdit
@@ -858,6 +913,9 @@ Infinity_FocusTextEdit
 
 
 
+
+
+----
 
 .. _Infinity_GetArea:
 
@@ -886,6 +944,9 @@ x,y,w,h
 
 
 
+
+----
+
 .. _Infinity_GetClockTicks:
 
 Infinity_GetClockTicks
@@ -908,6 +969,9 @@ Infinity_GetClockTicks
 
 
 
+
+
+----
 
 .. _Infinity_GetContainerItemDescription:
 
@@ -935,6 +999,9 @@ string
 
 
 
+
+
+----
 
 .. _Infinity_GetContentHeight:
 
@@ -968,6 +1035,9 @@ Infinity_GetContentHeight
 
 
 
+
+----
+
 .. _Infinity_GetCurrentGroundPage:
 
 Infinity_GetCurrentGroundPage
@@ -990,6 +1060,9 @@ Infinity_GetCurrentGroundPage
 
 
 
+
+
+----
 
 .. _Infinity_GetCurrentMovie:
 
@@ -1018,6 +1091,9 @@ Infinity_GetCurrentMovie
 
 
 
+
+----
+
 .. _Infinity_GetCurrentScreenName:
 
 Infinity_GetCurrentScreenName
@@ -1044,6 +1120,9 @@ Infinity_GetCurrentScreenName
 
 
 
+
+
+----
 
 .. _Infinity_GetFilesOfType:
 
@@ -1072,6 +1151,9 @@ list
 
 
 
+
+----
+
 .. _Infinity_GetFrameCounter:
 
 Infinity_GetFrameCounter
@@ -1095,6 +1177,9 @@ Infinity_GetFrameCounter
 
 
 
+
+----
+
 .. _Infinity_GetGameTicks:
 
 Infinity_GetGameTicks
@@ -1117,6 +1202,9 @@ Infinity_GetGameTicks
 
 
 
+
+
+----
 
 .. _Infinity_GetGroundItemDescription:
 
@@ -1147,6 +1235,9 @@ string
 
 
 
+
+----
+
 .. _Infinity_GetGroupItemDescription:
 
 Infinity_GetGroupItemDescription
@@ -1174,6 +1265,9 @@ string
 
 
 
+
+----
+
 .. _Infinity_GetInCutsceneMode:
 
 Infinity_GetInCutsceneMode
@@ -1200,6 +1294,9 @@ Infinity_GetInCutsceneMode
 
 
 
+
+
+----
 
 .. _Infinity_GetINIString:
 
@@ -1229,6 +1326,9 @@ string
 
 
 
+
+
+----
 
 .. _Infinity_GetINIValue:
 
@@ -1260,6 +1360,9 @@ Returns an integer value containing an ini section key value
 
 
 
+
+----
+
 .. _Infinity_GetListHeight:
 
 Infinity_GetListHeight
@@ -1287,6 +1390,9 @@ Infinity_GetListHeight
 
 
 
+
+----
+
 .. _Infinity_GetMaxChapterPage:
 
 Infinity_GetMaxChapterPage
@@ -1310,6 +1416,9 @@ Infinity_GetMaxChapterPage
 
 
 
+
+----
+
 .. _Infinity_GetMaxGroundPage:
 
 Infinity_GetMaxGroundPage
@@ -1332,6 +1441,9 @@ Infinity_GetMaxGroundPage
 
 
 
+
+
+----
 
 .. _Infinity_GetMenuArea:
 
@@ -1360,6 +1472,9 @@ x,y,w,h
 
 
 
+
+----
+
 .. _Infinity_GetMenuItemByName:
 
 Infinity_GetMenuItemByName
@@ -1387,6 +1502,9 @@ Infinity_GetMenuItemByName
 
 
 
+
+----
+
 .. _Infinity_GetMousePosition:
 
 Infinity_GetMousePosition
@@ -1410,6 +1528,9 @@ x,y
 
 
 
+
+----
+
 .. _Infinity_GetNumCharacters:
 
 Infinity_GetNumCharacters
@@ -1432,6 +1553,9 @@ Infinity_GetNumCharacters
 
 
 
+
+
+----
 
 .. _Infinity_GetOffset:
 
@@ -1459,6 +1583,9 @@ x,y
 
 
 
+
+
+----
 
 .. _Infinity_GetOption:
 
@@ -1488,6 +1615,9 @@ Infinity_GetOption
 
 
 
+
+----
+
 .. _Infinity_GetPasswordRequired:
 
 Infinity_GetPasswordRequired
@@ -1510,6 +1640,9 @@ Infinity_GetPasswordRequired
 
 
 
+
+
+----
 
 .. _Infinity_GetPortraitTooltip:
 
@@ -1538,6 +1671,9 @@ string
 
 
 
+
+----
+
 .. _Infinity_GetScreenSize:
 
 Infinity_GetScreenSize
@@ -1560,6 +1696,9 @@ w,h
 
 
 
+
+
+----
 
 .. _Infinity_GetScriptVarInt:
 
@@ -1588,6 +1727,9 @@ Infinity_GetScriptVarInt
 
 
 
+
+----
+
 .. _Infinity_GetScrollIdentifyEnabled:
 
 Infinity_GetScrollIdentifyEnabled
@@ -1615,6 +1757,9 @@ Infinity_GetScrollIdentifyEnabled
 
 
 
+
+----
+
 .. _Infinity_GetSelectedCharacterName:
 
 Infinity_GetSelectedCharacterName
@@ -1637,6 +1782,9 @@ string
 
 
 
+
+
+----
 
 .. _Infinity_GetSpellIdentifyEnabled:
 
@@ -1665,6 +1813,9 @@ Infinity_GetSpellIdentifyEnabled
 
 
 
+
+----
+
 .. _Infinity_GetTimeString:
 
 Infinity_GetTimeString
@@ -1687,6 +1838,9 @@ string
 
 
 
+
+
+----
 
 .. _Infinity_GetTransitionInProgress:
 
@@ -1714,6 +1868,9 @@ Infinity_GetTransitionInProgress
 
 
 
+
+
+----
 
 .. _Infinity_GetUseButtonText:
 
@@ -1743,6 +1900,9 @@ string
 
 
 
+
+----
+
 .. _Infinity_GooglePlaySignedIn:
 
 Infinity_GooglePlaySignedIn
@@ -1766,6 +1926,9 @@ Infinity_GooglePlaySignedIn
 
 
 
+
+----
+
 .. _Infinity_HighlightJournalButton:
 
 Infinity_HighlightJournalButton
@@ -1784,6 +1947,9 @@ Infinity_HighlightJournalButton
 
 
 
+
+
+----
 
 .. _Infinity_HoverMouseOver:
 
@@ -1812,6 +1978,9 @@ Infinity_HoverMouseOver
 
 
 
+
+----
+
 .. _Infinity_HoverMouseOverObject:
 
 Infinity_HoverMouseOverObject
@@ -1838,6 +2007,9 @@ Infinity_HoverMouseOverObject
 
 
 
+
+
+----
 
 .. _Infinity_InstanceAnimation:
 
@@ -1869,6 +2041,9 @@ Infinity_InstanceAnimation
 
 
 
+
+----
+
 .. _Infinity_IsItemEnabled:
 
 Infinity_IsItemEnabled
@@ -1895,6 +2070,9 @@ Infinity_IsItemEnabled
 
 
 
+
+
+----
 
 .. _Infinity_IsMenuOnStack:
 
@@ -1923,6 +2101,9 @@ Infinity_IsMenuOnStack
 
 
 
+
+----
+
 .. _Infinity_IsPlayerMoving:
 
 Infinity_IsPlayerMoving
@@ -1950,6 +2131,9 @@ Infinity_IsPlayerMoving
 
 
 
+
+----
+
 .. _Infinity_JoinMultiplayerGame:
 
 Infinity_JoinMultiplayerGame
@@ -1968,6 +2152,9 @@ Infinity_JoinMultiplayerGame
 
 
 
+
+
+----
 
 .. _Infinity_LaunchURL:
 
@@ -1996,6 +2183,9 @@ Infinity_LaunchURL
 
 
 
+
+----
+
 .. _Infinity_LevelUp:
 
 Infinity_LevelUp
@@ -2023,6 +2213,9 @@ Infinity_LevelUp
 
 
 
+
+----
+
 .. _Infinity_Log:
 
 Infinity_Log
@@ -2045,6 +2238,9 @@ Infinity_Log
 
 
 
+
+
+----
 
 .. _Infinity_LookAtObjectInWorld:
 
@@ -2073,6 +2269,9 @@ Infinity_LookAtObjectInWorld
 
 
 
+
+----
+
 .. _Infinity_LuaConsoleInput:
 
 Infinity_LuaConsoleInput
@@ -2097,6 +2296,9 @@ Infinity_LuaConsoleInput
 
 
 
+
+----
+
 .. _Infinity_OnAddUserEntry:
 
 Infinity_OnAddUserEntry
@@ -2119,6 +2321,9 @@ Infinity_OnAddUserEntry
 
 
 
+
+
+----
 
 .. _Infinity_OnCharacterImportItemSelect:
 
@@ -2143,6 +2348,9 @@ Infinity_OnCharacterImportItemSelect
 
 
 
+
+----
+
 .. _Infinity_OnCharacterItemSelect:
 
 Infinity_OnCharacterItemSelect
@@ -2165,6 +2373,9 @@ Infinity_OnCharacterItemSelect
 
 
 
+
+
+----
 
 .. _Infinity_OnEditUserEntry:
 
@@ -2194,6 +2405,9 @@ Infinity_OnEditUserEntry
 
 
 
+
+----
+
 .. _Infinity_OnGroundPage:
 
 Infinity_OnGroundPage
@@ -2217,6 +2431,9 @@ Infinity_OnGroundPage
 
 
 
+
+----
+
 .. _Infinity_OnPortraitDblClick:
 
 Infinity_OnPortraitDblClick
@@ -2239,6 +2456,9 @@ Event action when mouse double clicks a character portrait
 
 
 
+
+
+----
 
 .. _Infinity_OnPortraitItemSelect:
 
@@ -2267,6 +2487,9 @@ Event action when character portrait is selected
 
 
 
+
+----
+
 .. _Infinity_OnPortraitLClick:
 
 Infinity_OnPortraitLClick
@@ -2289,6 +2512,9 @@ Event action when mouse left clicks a character portrait
 
 
 
+
+
+----
 
 .. _Infinity_OnPortraitRClick:
 
@@ -2313,6 +2539,9 @@ Event action when mouse right clicks a character portrait
 
 
 
+
+----
+
 .. _Infinity_OnRemoveUserEntry:
 
 Infinity_OnRemoveUserEntry
@@ -2335,6 +2564,9 @@ Infinity_OnRemoveUserEntry
 
 
 
+
+
+----
 
 .. _Infinity_OnRest:
 
@@ -2363,6 +2595,9 @@ Infinity_OnRest
 
 
 
+
+----
+
 .. _Infinity_OnScriptItemSelect:
 
 Infinity_OnScriptItemSelect
@@ -2387,6 +2622,9 @@ Infinity_OnScriptItemSelect
 
 
 
+
+----
+
 .. _Infinity_OnScrollIdentify:
 
 Infinity_OnScrollIdentify
@@ -2409,6 +2647,9 @@ Event action when a scroll identifies an item
 
 
 
+
+
+----
 
 .. _Infinity_OnSoundItemSelect:
 
@@ -2433,6 +2674,9 @@ Infinity_OnSoundItemSelect
 
 
 
+
+
+----
 
 .. _Infinity_OnSpellIdentify:
 
@@ -2461,6 +2705,9 @@ Event action when a spell identifies an item
 
 
 
+
+----
+
 .. _Infinity_OnUseButtonClick:
 
 Infinity_OnUseButtonClick
@@ -2485,6 +2732,9 @@ Infinity_OnUseButtonClick
 
 
 
+
+----
+
 .. _Infinity_OpenInventoryContainer:
 
 Infinity_OpenInventoryContainer
@@ -2507,6 +2757,9 @@ Infinity_OpenInventoryContainer
 
 
 
+
+
+----
 
 .. _Infinity_PlayMovie:
 
@@ -2532,6 +2785,9 @@ Plays a movie (a WebM file format)
 
 
 
+
+----
+
 .. _Infinity_PlaySound:
 
 Infinity_PlaySound
@@ -2555,6 +2811,9 @@ Plays a sound
 
 
 
+
+----
+
 .. _Infinity_PopMenu:
 
 Infinity_PopMenu
@@ -2577,6 +2836,9 @@ Infinity_PopMenu
 
 
 
+
+
+----
 
 .. _Infinity_PressKeyboardButton:
 
@@ -2605,6 +2867,9 @@ Infinity_PressKeyboardButton
 
 
 
+
+----
+
 .. _Infinity_PushMenu:
 
 Infinity_PushMenu
@@ -2627,6 +2892,9 @@ Infinity_PushMenu
 
 
 
+
+
+----
 
 .. _Infinity_RandomNumber:
 
@@ -2656,6 +2924,9 @@ Returns an random number
 
 
 
+
+----
+
 .. _Infinity_RemoveINIEntry:
 
 Infinity_RemoveINIEntry
@@ -2679,6 +2950,9 @@ Removes an ini section key value
 
 
 
+
+
+----
 
 .. _Infinity_RequestMultiplayerGameDetails:
 
@@ -2707,6 +2981,9 @@ Infinity_RequestMultiplayerGameDetails
 
 
 
+
+----
+
 .. _Infinity_ScaleToText:
 
 Infinity_ScaleToText
@@ -2729,6 +3006,9 @@ Infinity_ScaleToText
 
 
 
+
+
+----
 
 .. _Infinity_ScrollLists:
 
@@ -2757,6 +3037,9 @@ Infinity_ScrollLists
 
 
 
+
+----
+
 .. _Infinity_SelectDialogueOption:
 
 Infinity_SelectDialogueOption
@@ -2784,6 +3067,9 @@ Infinity_SelectDialogueOption
 
 
 
+
+----
+
 .. _Infinity_SelectItemAbility:
 
 Infinity_SelectItemAbility
@@ -2808,6 +3094,9 @@ Infinity_SelectItemAbility
 
 
 
+
+
+----
 
 .. _Infinity_SelectListItem:
 
@@ -2836,6 +3125,9 @@ Infinity_SelectListItem
 
 
 
+
+----
+
 .. _Infinity_SendChatMessage:
 
 Infinity_SendChatMessage
@@ -2859,6 +3151,9 @@ Infinity_SendChatMessage
 
 
 
+
+
+----
 
 .. _Infinity_SetArea:
 
@@ -2891,6 +3186,9 @@ Infinity_SetArea
 
 
 
+
+----
+
 .. _Infinity_SetBackground:
 
 Infinity_SetBackground
@@ -2913,6 +3211,9 @@ Infinity_SetBackground
 
 
 
+
+
+----
 
 .. _Infinity_SetCloudEnabled:
 
@@ -2941,6 +3242,9 @@ Infinity_SetCloudEnabled
 
 
 
+
+----
+
 .. _Infinity_SetGooglePlaySigninState:
 
 Infinity_SetGooglePlaySigninState
@@ -2968,6 +3272,9 @@ Infinity_SetGooglePlaySigninState
 
 
 
+
+----
+
 .. _Infinity_SetHairColor:
 
 Infinity_SetHairColor
@@ -2990,6 +3297,9 @@ Infinity_SetHairColor
 
 
 
+
+
+----
 
 .. _Infinity_SetHighlightColors:
 
@@ -3025,6 +3335,9 @@ Infinity_SetHighlightColors
 
 
 
+
+----
+
 .. _Infinity_SetINIValue:
 
 Infinity_SetINIValue
@@ -3050,6 +3363,9 @@ Sets a value of an ini section key
 
 
 
+
+----
+
 .. _Infinity_SetKey:
 
 Infinity_SetKey
@@ -3073,6 +3389,9 @@ Sets key in C++ memory
 
 
 
+
+
+----
 
 .. _Infinity_SetLanguage:
 
@@ -3098,6 +3417,9 @@ Infinity_SetLanguage
 
 
 
+
+----
+
 .. _Infinity_SetMajorColor:
 
 Infinity_SetMajorColor
@@ -3121,6 +3443,9 @@ Infinity_SetMajorColor
 
 
 
+
+----
+
 .. _Infinity_SetMinorColor:
 
 Infinity_SetMinorColor
@@ -3143,6 +3468,9 @@ Infinity_SetMinorColor
 
 
 
+
+
+----
 
 .. _Infinity_SetOffset:
 
@@ -3173,6 +3501,9 @@ Infinity_SetOffset
 
 
 
+
+----
+
 .. _Infinity_SetOverlay:
 
 Infinity_SetOverlay
@@ -3195,6 +3526,9 @@ Infinity_SetOverlay
 
 
 
+
+
+----
 
 .. _Infinity_SetScreenSize:
 
@@ -3219,6 +3553,9 @@ Infinity_SetScreenSize
 
 
 
+
+
+----
 
 .. _Infinity_SetScrollTop:
 
@@ -3247,6 +3584,9 @@ Infinity_SetScrollTop
 
 
 
+
+----
+
 .. _Infinity_SetSkinColor:
 
 Infinity_SetSkinColor
@@ -3269,6 +3609,9 @@ Infinity_SetSkinColor
 
 
 
+
+
+----
 
 .. _Infinity_SetToken:
 
@@ -3294,6 +3637,9 @@ Infinity_SetToken
 
 
 
+
+----
+
 .. _Infinity_ShutdownGame:
 
 Infinity_ShutdownGame
@@ -3312,6 +3658,9 @@ Infinity_ShutdownGame
 
 
 
+
+
+----
 
 .. _Infinity_SignInOutButtonEnabled:
 
@@ -3339,6 +3688,9 @@ Infinity_SignInOutButtonEnabled
 
 
 
+
+
+----
 
 .. _Infinity_SplitItemStack:
 
@@ -3369,6 +3721,9 @@ Infinity_SplitItemStack
 
 
 
+
+----
+
 .. _Infinity_StartItemCapture:
 
 Infinity_StartItemCapture
@@ -3393,6 +3748,9 @@ Infinity_StartItemCapture
 
 
 
+
+----
+
 .. _Infinity_StartKeybind:
 
 Infinity_StartKeybind
@@ -3415,6 +3773,9 @@ Infinity_StartKeybind
 
 
 
+
+
+----
 
 .. _Infinity_StopItemCapture:
 
@@ -3439,6 +3800,9 @@ Infinity_StopItemCapture
 
 
 
+
+----
+
 .. _Infinity_StopKeybind:
 
 Infinity_StopKeybind
@@ -3457,6 +3821,9 @@ Infinity_StopKeybind
 
 
 
+
+
+----
 
 .. _Infinity_StopMovie:
 
@@ -3480,6 +3847,9 @@ Infinity_StopMovie
 
 
 
+
+
+----
 
 .. _Infinity_SwapSlot:
 
@@ -3508,6 +3878,9 @@ Infinity_SwapSlot
 
 
 
+
+----
+
 .. _Infinity_SwapWithAppearance:
 
 Infinity_SwapWithAppearance
@@ -3526,6 +3899,9 @@ Infinity_SwapWithAppearance
 
 
 
+
+
+----
 
 .. _Infinity_SwapWithPortrait:
 
@@ -3550,6 +3926,9 @@ Infinity_SwapWithPortrait
 
 
 
+
+----
+
 .. _Infinity_TakeScreenshot:
 
 Infinity_TakeScreenshot
@@ -3568,6 +3947,9 @@ Infinity_TakeScreenshot
 
 
 
+
+
+----
 
 .. _Infinity_TextEditHasFocus:
 
@@ -3592,6 +3974,9 @@ Infinity_TextEditHasFocus
 
 
 
+
+----
+
 .. _Infinity_TransitionMenu:
 
 Infinity_TransitionMenu
@@ -3615,6 +4000,9 @@ Infinity_TransitionMenu
 
 
 
+
+----
+
 .. _Infinity_UpdateCharacterRecordExportPanel:
 
 Infinity_UpdateCharacterRecordExportPanel
@@ -3634,6 +4022,9 @@ Infinity_UpdateCharacterRecordExportPanel
 
 
 
+
+----
+
 .. _Infinity_UpdateCloudSaveState:
 
 Infinity_UpdateCloudSaveState
@@ -3652,6 +4043,9 @@ Infinity_UpdateCloudSaveState
 
 
 
+
+
+----
 
 .. _Infinity_UpdateInventoryRequesterPanel:
 
@@ -3680,6 +4074,9 @@ Infinity_UpdateInventoryRequesterPanel
 
 
 
+
+----
+
 .. _Infinity_UpdateLuaStats:
 
 Infinity_UpdateLuaStats
@@ -3698,6 +4095,9 @@ Infinity_UpdateLuaStats
 
 
 
+
+
+----
 
 .. _Infinity_UpdateStoreMainPanel:
 
@@ -3726,6 +4126,9 @@ Infinity_UpdateStoreMainPanel
 
 
 
+
+----
+
 .. _Infinity_UpdateStoreRequesterPanel:
 
 Infinity_UpdateStoreRequesterPanel
@@ -3752,6 +4155,9 @@ Infinity_UpdateStoreRequesterPanel
 
 
 
+
+
+----
 
 .. _Infinity_WriteINILine:
 
