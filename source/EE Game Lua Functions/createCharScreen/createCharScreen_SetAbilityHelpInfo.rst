@@ -34,7 +34,7 @@ The *stat* parameter can be one of the following values, which equate to the abi
 +----------+--------------+
 | 2        | Dexterity    |
 +----------+--------------+
-| 3        | Constituion  |
+| 3        | Constitution |
 +----------+--------------+
 | 4        | Intelligence |
 +----------+--------------+

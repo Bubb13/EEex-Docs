@@ -7,6 +7,8 @@ CScreenStart Class
 .. toctree::
    :maxdepth: 1
 
+.. note:: The **CScreenStart** class handles the main title screen dialogs and buttons, including game options, game campaign, singleplayer, multiplayer, credits, etc
+
 The structure used for this class is :ref:`CScreenStart<CScreenStart>`
 
 +-------------------------------------------------------------------------------------------------------------------------------------+

@@ -23,7 +23,7 @@ None
 
 The lua ``action`` occurs if the button is enabled (clickable) and is clicked
 
-Calls the :ref:`tolua_BaldurLUA_CScreenChapter_OnReplayButtonClick00<tolua_BaldurLUA_CScreenChapter_OnReplayButtonClick00>` function
+Calls the :ref:`tolua_BaldurLUA_CScreenChapter_OnReplayButtonClick00<tolua_BaldurLUA_CScreenChapter_OnReplayButtonClick00>` function which calls the :ref:`CScreenChapter\:\:OnReplayButtonClick<CScreenChapterOnReplayButtonClick>` method
 
 **Example**
 

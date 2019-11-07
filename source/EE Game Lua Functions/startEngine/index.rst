@@ -11,6 +11,9 @@ startEngine Functions
 
    startEngine_*
 
+.. note:: The **startEngine** functions are related to the handling of the main title screen dialogs and buttons, including game options, game campaign, singleplayer, multiplayer, credits, etc
+
+
 +---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
 | **Function**                                                                                | **Description**                                                                             |
 +---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+

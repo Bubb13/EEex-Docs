@@ -33,6 +33,7 @@ EE Game Lua Functions
    startEngine/index
    storeScreen/index
    timer/index
+   Util/index
    worldMapScreen/index
    worldScreen/index
    

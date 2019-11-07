@@ -1,21 +1,18 @@
-.. _CNetwork Functions:
+.. _CNetwork Class:
 
 ==========================
-CNetwork Functions
+CNetwork Class
 ==========================
 
 .. toctree::
    :maxdepth: 1
 
+.. note:: The **CNetwork** class handles network session management, messaging and information for multiplayer games
+
+The structure used for this class is :ref:`CNetwork<CNetwork>`
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Functions**                                                                                                                                                                                                             |
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| void **CNetwork\:\:RemoveInitializeConnection**\()                                                                                                                                                                        |
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| int **CNetwork\:\:GetHostPlayerID**\()                                                                                                                                                                                    |
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| void **CNetwork\:\:GetHostPlayerName**\(:ref:`CString<CString>`\& sHostName)                                                                                                                                              |
+| **Quick Ref**                                                                                                                                                                                                             |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CNetwork\:\:CNetwork**\()                                                                                                                                                                                          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -51,6 +48,10 @@ CNetwork Functions
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | int **CNetwork\:\:FindPlayerNumberByName**\(:ref:`CString<CString>`\& sPlayerName)                                                                                                                                        |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| int **CNetwork\:\:GetHostPlayerID**\()                                                                                                                                                                                    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void **CNetwork\:\:GetHostPlayerName**\(:ref:`CString<CString>`\& sHostName)                                                                                                                                              |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | unsigned char **CNetwork\:\:GetPasswordRequiredForSelectedSession**\()                                                                                                                                                    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | int **CNetwork\:\:GetPlayerID**\(const int nPlayerNumber)                                                                                                                                                                 |
@@ -83,6 +84,8 @@ CNetwork Functions
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CNetwork\:\:RemoveAllPlayersFromList**\()                                                                                                                                                                          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void **CNetwork\:\:RemoveInitializeConnection**\()                                                                                                                                                                        |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | unsigned char **CNetwork\:\:RemovePlayerFromList**\(int dpID, unsigned char bAIResponsible)                                                                                                                               |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CNetwork\:\:RequestSessionDetails**\(int sessionNumber)                                                                                                                                                            |
@@ -113,4 +116,1338 @@ CNetwork Functions
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CNetwork\:\:UnselectSession**\()                                                                                                                                                                                   |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+
+----
+
+---------------
+Constructors
+---------------
+
++----------------------------------------------------------+------------------------------------------------------+
+| **Name**                                                 | **Description**                                      |
++----------------------------------------------------------+------------------------------------------------------+
+| :ref:`CNetwork\:\:CNetwork<CNetworkCNetwork>`            | Constructs a ``CNetwork`` object                     |
++----------------------------------------------------------+------------------------------------------------------+
+| :ref:`CNetwork\:\:~CNetwork<CNetwork~CNetwork>`          | Destroys a ``CNetwork`` object                       |
++----------------------------------------------------------+------------------------------------------------------+
+
+.. _CNetworkCNetwork:
+
+CNetwork\:\:CNetwork
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Constructs a ``CNetwork`` object
+
+::
+
+   void CNetwork::CNetwork();
+
+**Remarks**
+
+Constructs a ``CNetwork`` object
+
+
+----
+
+.. _CNetwork~CNetwork:
+
+CNetwork\:\:~CNetwork
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Destroys the ``CNetwork`` object
+
+::
+
+   void CNetwork::~CNetwork();
+
+**Remarks**
+
+Destroys the ``CNetwork`` object
+
+
+
+
+----
+
+---------------
+Methods
+---------------
+
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| **Name**                                                                                                | **Description**                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:AddMessageToWindow<CNetworkAddMessageToWindow>`                                       |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:AddPlayerToList<CNetworkAddPlayerToList>`                                             |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:CheckForServiceProviderConnection<CNetworkCheckForServiceProviderConnection>`         |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:CheckSessionStatus<CNetworkCheckSessionStatus>`                                       |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:CloseSession<CNetworkCloseSession>`                                                   |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:CreatePlayer<CNetworkCreatePlayer>`                                                   |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:EnumeratePlayers<CNetworkEnumeratePlayers>`                                           |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:EnumerateServiceProviders<CNetworkEnumerateServiceProviders>`                         |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:FetchFrame<CNetworkFetchFrame>`                                                       |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:FetchMessage<CNetworkFetchMessage>`                                                   |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:FetchSpecificMessage<CNetworkFetchSpecificMessage>`                                   |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:FindPlayerIDByName<CNetworkFindPlayerIDByName>`                                       |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:FindPlayerLocationByID<CNetworkFindPlayerLocationByID>`                               |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:FindPlayerLocationByName<CNetworkFindPlayerLocationByName>`                           |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:FindPlayerNumberByName<CNetworkFindPlayerNumberByName>`                               |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:GetHostPlayerID<CNetworkGetHostPlayerID>`                                             |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:GetHostPlayerName<CNetworkGetHostPlayerName>`                                         |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:GetPasswordRequiredForSelectedSession<CNetworkGetPasswordRequiredForSelectedSession>` |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:GetPlayerID<CNetworkGetPlayerID>`                                                     |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:GetPlayerName<CNetworkGetPlayerName>`                                                 |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:GetRawPlayerID<CNetworkGetRawPlayerID>`                                               |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:GetRawPlayerName<CNetworkGetRawPlayerName>`                                           |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:GetServiceProviderType<CNetworkGetServiceProviderType>`                               |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:HostNewSession<CNetworkHostNewSession>`                                               |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:InitializeConnectionToServiceProvider<CNetworkInitializeConnectionToServiceProvider>` |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:JoinSelectedSession<CNetworkJoinSelectedSession>`                                     |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:KickPlayer<CNetworkKickPlayer>`                                                       |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:MakePlayersVisible<CNetworkMakePlayersVisible>`                                       |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:OnCloseSession<CNetworkOnCloseSession>`                                               |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:OnOpenSession<CNetworkOnOpenSession>`                                                 |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:PeekMessageA<CNetworkPeekMessageA>`                                                   |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:PeekSpecificMessage<CNetworkPeekSpecificMessage>`                                     |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:RemoveAllPlayersFromList<CNetworkRemoveAllPlayersFromList>`                           |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:RemoveInitializeConnection<CNetworkRemoveInitializeConnection>`                       |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:RemovePlayerFromList<CNetworkRemovePlayerFromList>`                                   |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:RequestSessionDetails<CNetworkRequestSessionDetails>`                                 |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:SelectServiceProvider<CNetworkSelectServiceProvider>`                                 |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:SelectSession<CNetworkSelectSession>`                                                 |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:SendMessageA<CNetworkSendMessageA>`                                                   |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:SendSpecificMessage<CNetworkSendSpecificMessage>`                                     |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:SetApplicationOptions<CNetworkSetApplicationOptions>`                                 |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:SetInSessionOptions<CNetworkSetInSessionOptions>`                                     |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:SetJoinEnabled<CNetworkSetJoinEnabled>`                                               |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:SetMaxPlayers<CNetworkSetMaxPlayers>`                                                 |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:SlidingWindowReceive<CNetworkSlidingWindowReceive>`                                   |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:SlidingWindowSend<CNetworkSlidingWindowSend>`                                         |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:ThreadLoop<CNetworkThreadLoop>`                                                       |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:UnselectServiceProvider<CNetworkUnselectServiceProvider>`                             |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| :ref:`CNetwork\:\:UnselectSession<CNetworkUnselectSession>`                                             |                                                                                         |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+
+
+.. _CNetworkAddMessageToWindow:
+
+CNetwork\:\:AddMessageToWindow
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::AddMessageToWindow(
+      int idDPTo, 
+      unsigned long dwFlags, 
+      void* lpData, 
+      unsigned long dwDataSize);
+
+**Parameters**
+
+* ``int`` *idDPTo* - 
+* ``unsigned long`` *dwFlags* - 
+* ``void``\* *lpData* - 
+* ``unsigned long`` *dwDataSize* - 
+
+**Remarks**
+
+
+
+
+----
+
+.. _CNetworkAddPlayerToList:
+
+CNetwork\:\:AddPlayerToList
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::AddPlayerToList(
+      int dpID, 
+      CString& sPlayerName, 
+      unsigned char bIsHost, 
+      unsigned char bMakeVisible);
+
+**Parameters**
+
+* ``int`` *dpID* - 
+* :ref:`CString<CString>`\& *sPlayerName* - 
+* ``unsigned char`` *bIsHost* - 
+* ``unsigned char`` *bMakeVisible* - 
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkCheckForServiceProviderConnection:
+
+CNetwork\:\:CheckForServiceProviderConnection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   bool CNetwork::CheckForServiceProviderConnection();
+
+**Return Value**
+
+Returns ``bool``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkCheckSessionStatus:
+
+CNetwork\:\:CheckSessionStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::CheckSessionStatus(unsigned char bInThreadLoop);
+
+**Parameters**
+
+* ``unsigned char`` *bInThreadLoop* - 
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkCloseSession:
+
+CNetwork\:\:CloseSession
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::CloseSession(unsigned char bAIResponsible);
+
+**Parameters**
+
+* ``unsigned char`` *bAIResponsible* - 
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkCreatePlayer:
+
+CNetwork\:\:CreatePlayer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::CreatePlayer(int& nErrorCode);
+
+**Parameters**
+
+* ``int``\& *nErrorCode* - 
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkEnumeratePlayers:
+
+CNetwork\:\:EnumeratePlayers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::EnumeratePlayers(unsigned char bProtectList);
+
+**Parameters**
+
+* ``unsigned char`` *bProtectList* - 
+
+**Remarks**
+
+
+
+
+----
+
+.. _CNetworkEnumerateServiceProviders:
+
+CNetwork\:\:EnumerateServiceProviders
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::EnumerateServiceProviders();
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkFetchFrame:
+
+CNetwork\:\:FetchFrame
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char* CNetwork::FetchFrame(
+      int& dpIDFrom, 
+      unsigned long& dwSize);
+
+**Parameters**
+
+* ``int``\& *dpIDFrom* - 
+* ``unsigned long``\& *dwSize* - 
+
+**Return Value**
+
+Returns ``unsigned char``\*
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkFetchMessage:
+
+CNetwork\:\:FetchMessage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char* CNetwork::FetchMessage(
+      int& nMsgFrom, 
+      int& nMsgTo, 
+      unsigned long& dwSize);
+
+**Parameters**
+
+* ``int``\& *nMsgFrom* - 
+* ``int``\& *nMsgTo* - 
+* ``unsigned long``\& *dwSize* - 
+
+**Return Value**
+
+Returns ``unsigned char``\*
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkFetchSpecificMessage:
+
+CNetwork\:\:FetchSpecificMessage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char* CNetwork::FetchSpecificMessage(
+      CString& sPlayerName, 
+      unsigned char nSpecMsgType, 
+      unsigned char nSpecMsgSubType, 
+      unsigned long& dwSize);
+
+**Parameters**
+
+* :ref:`CString<CString>`\& *sPlayerName* - 
+* ``unsigned char`` *nSpecMsgType* - 
+* ``unsigned char`` *nSpecMsgSubType* - 
+* ``unsigned long``\& *dwSize* - 
+
+**Return Value**
+
+Returns ``unsigned char``\*
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkFindPlayerIDByName:
+
+CNetwork\:\:FindPlayerIDByName
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   int CNetwork::FindPlayerIDByName(
+      CString& sPlayerName, 
+      unsigned char bInvisible);
+
+**Parameters**
+
+* :ref:`CString<CString>`\& *sPlayerName* - 
+* ``unsigned char`` *bInvisible* - 
+
+**Return Value**
+
+Returns ``int``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkFindPlayerLocationByID:
+
+CNetwork\:\:FindPlayerLocationByID
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   int CNetwork::FindPlayerLocationByID(
+      int dpID, 
+      unsigned char bInvisible);
+
+**Parameters**
+
+* ``int`` *dpID* - 
+* ``unsigned char`` *bInvisible* - 
+
+**Return Value**
+
+Returns ``int``
+
+**Remarks**
+
+
+
+
+----
+
+.. _CNetworkFindPlayerLocationByName:
+
+CNetwork\:\:FindPlayerLocationByName
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   int CNetwork::FindPlayerLocationByName(
+      CString& sPlayerName, 
+      unsigned char bInvisible);
+
+**Parameters**
+
+* :ref:`CString<CString>`\& *sPlayerName* - 
+* ``unsigned char`` *bInvisible* - 
+
+**Return Value**
+
+Returns ``int``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkFindPlayerNumberByName:
+
+CNetwork\:\:FindPlayerNumberByName
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   int CNetwork::FindPlayerNumberByName(CString& sPlayerName);
+
+**Parameters**
+
+* :ref:`CString<CString>`\& *sPlayerName* - 
+
+**Return Value**
+
+Returns ``int``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkGetHostPlayerID:
+
+CNetwork\:\:GetHostPlayerID
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   int CNetwork::GetHostPlayerID();
+
+**Return Value**
+
+Returns ``int``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkGetHostPlayerName:
+
+CNetwork\:\:GetHostPlayerName
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::GetHostPlayerName(CString& sHostName);
+
+**Parameters**
+
+* :ref:`CString<CString>`\& *sHostName* - 
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkGetPasswordRequiredForSelectedSession:
+
+CNetwork\:\:GetPasswordRequiredForSelectedSession
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::GetPasswordRequiredForSelectedSession();
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkGetPlayerID:
+
+CNetwork\:\:GetPlayerID
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   int CNetwork::GetPlayerID(const int nPlayerNumber);
+
+**Parameters**
+
+* ``const int`` *nPlayerNumber* - 
+
+**Return Value**
+
+Returns ``int``
+
+**Remarks**
+
+
+
+
+----
+
+.. _CNetworkGetPlayerName:
+
+CNetwork\:\:GetPlayerName
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::GetPlayerName(
+      const int nPlayerNumber, 
+      CString& sPlayerName);
+
+**Parameters**
+
+* ``const int`` *nPlayerNumber* - 
+* :ref:`CString<CString>`\& *sPlayerName* - 
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkGetRawPlayerID:
+
+CNetwork\:\:GetRawPlayerID
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   int CNetwork::GetRawPlayerID(const int nPlayerNumber);
+
+**Parameters**
+
+* ``const int`` *nPlayerNumber* - 
+
+**Return Value**
+
+Returns ``int``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkGetRawPlayerName:
+
+CNetwork\:\:GetRawPlayerName
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::GetRawPlayerName(
+      const int nPlayerNumber, 
+      CString& sPlayerName);
+
+**Parameters**
+
+* ``const int`` *nPlayerNumber* - 
+* :ref:`CString<CString>`\& *sPlayerName* - 
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkGetServiceProviderType:
+
+CNetwork\:\:GetServiceProviderType
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::GetServiceProviderType(
+      int nServiceProviderNumber, 
+      int& nServiceProviderType);
+
+**Parameters**
+
+* ``int`` *nServiceProviderNumber* - 
+* ``int``\& *nServiceProviderType* - 
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkHostNewSession:
+
+CNetwork\:\:HostNewSession
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::HostNewSession();
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkInitializeConnectionToServiceProvider:
+
+CNetwork\:\:InitializeConnectionToServiceProvider
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::InitializeConnectionToServiceProvider(unsigned char bHostingGame);
+
+**Parameters**
+
+* ``unsigned char`` *bHostingGame* - 
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+
+----
+
+.. _CNetworkJoinSelectedSession:
+
+CNetwork\:\:JoinSelectedSession
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::JoinSelectedSession(int& nErrorCode);
+
+**Parameters**
+
+* ``int``\& *nErrorCode* - 
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkKickPlayer:
+
+CNetwork\:\:KickPlayer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::KickPlayer(
+      int dpID, 
+      unsigned char bAIResponsible);
+
+**Parameters**
+
+* ``int`` *dpID* - 
+* ``unsigned char`` *bAIResponsible* - 
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkMakePlayersVisible:
+
+CNetwork\:\:MakePlayersVisible
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::MakePlayersVisible();
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkOnCloseSession:
+
+CNetwork\:\:OnCloseSession
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::OnCloseSession();
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkOnOpenSession:
+
+CNetwork\:\:OnOpenSession
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::OnOpenSession();
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkPeekMessageA:
+
+CNetwork\:\:PeekMessageA
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::PeekMessageA();
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+
+----
+
+.. _CNetworkPeekSpecificMessage:
+
+CNetwork\:\:PeekSpecificMessage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::PeekSpecificMessage(
+      CString& sPlayerName, 
+      unsigned char nSpecMsgType, 
+      unsigned char nSpecMsgSubType);
+
+**Parameters**
+
+* :ref:`CString<CString>`\& *sPlayerName* - 
+* ``unsigned char`` *nSpecMsgType* - 
+* ``unsigned char`` *nSpecMsgSubType* - 
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkRemoveAllPlayersFromList:
+
+CNetwork\:\:RemoveAllPlayersFromList
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::RemoveAllPlayersFromList();
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkRemoveInitializeConnection:
+
+CNetwork\:\:RemoveInitializeConnection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::RemoveInitializeConnection();
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkRemovePlayerFromList:
+
+CNetwork\:\:RemovePlayerFromList
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::RemovePlayerFromList(
+      int dpID, 
+      unsigned char bAIResponsible);
+
+**Parameters**
+
+* ``int`` *dpID* - 
+* ``unsigned char`` *bAIResponsible* - 
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkRequestSessionDetails:
+
+CNetwork\:\:RequestSessionDetails
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::RequestSessionDetails(int sessionNumber);
+
+**Parameters**
+
+* ``int`` *sessionNumber* - 
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkSelectServiceProvider:
+
+CNetwork\:\:SelectServiceProvider
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::SelectServiceProvider(int nServiceProviderNumber);
+
+**Parameters**
+
+* ``int`` *nServiceProviderNumber* - 
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+
+----
+
+.. _CNetworkSelectSession:
+
+CNetwork\:\:SelectSession
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::SelectSession(int nSessionNumber);
+
+**Parameters**
+
+* ``int`` *nSessionNumber* - 
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkSendMessageA:
+
+CNetwork\:\:SendMessageA
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::SendMessageA(
+      CString& sPlayerName, 
+      unsigned long dwFlags, 
+      void* lpData, 
+      unsigned long nDataSize);
+
+**Parameters**
+
+* :ref:`CString<CString>`\& *sPlayerName* - 
+* ``unsigned long`` *dwFlags* - 
+* ``void``\* *lpData* - 
+* ``unsigned long`` *nDataSize* - 
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkSendSpecificMessage:
+
+CNetwork\:\:SendSpecificMessage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::SendSpecificMessage(
+      CString& sPlayerName, 
+      unsigned long dwFlags, 
+      unsigned char nSpecMsgType, 
+      unsigned char nSpecMsgSubType, 
+      void* lpData, 
+      unsigned long nDataSize);
+
+**Parameters**
+
+* :ref:`CString<CString>`\& *sPlayerName* - 
+* ``unsigned long`` *dwFlags* - 
+* ``unsigned char`` *nSpecMsgType* - 
+* ``unsigned char`` *nSpecMsgSubType* - 
+* ``void``\* *lpData* -
+* ``unsigned long`` *nDataSize* -
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkSetApplicationOptions:
+
+CNetwork\:\:SetApplicationOptions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::SetApplicationOptions(
+      unsigned char bKeepAlive, 
+      unsigned char bMigrateHost);
+
+**Parameters**
+
+* ``unsigned char`` *bKeepAlive* - 
+* ``unsigned char`` *bMigrateHost* - 
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkSetInSessionOptions:
+
+CNetwork\:\:SetInSessionOptions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   unsigned char CNetwork::SetInSessionOptions();
+
+**Return Value**
+
+Returns ``unsigned char``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkSetJoinEnabled:
+
+CNetwork\:\:SetJoinEnabled
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::SetJoinEnabled(unsigned char bJoinEnabled);
+
+**Parameters**
+
+* ``unsigned char`` *bJoinEnabled* - 
+
+**Return Value**
+
+ 
+
+**Remarks**
+
+
+
+
+----
+
+.. _CNetworkSetMaxPlayers:
+
+CNetwork\:\:SetMaxPlayers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::SetMaxPlayers(int nMaxPlayers);
+
+**Parameters**
+
+* ``int`` *nMaxPlayers* - 
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkSlidingWindowReceive:
+
+CNetwork\:\:SlidingWindowReceive
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::SlidingWindowReceive();
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkSlidingWindowSend:
+
+CNetwork\:\:SlidingWindowSend
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::SlidingWindowSend();
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkThreadLoop:
+
+CNetwork\:\:ThreadLoop
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   int CNetwork::ThreadLoop();
+
+**Return Value**
+
+Returns ``int``
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkUnselectServiceProvider:
+
+CNetwork\:\:UnselectServiceProvider
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::UnselectServiceProvider();
+
+**Remarks**
+
+
+
+----
+
+.. _CNetworkUnselectSession:
+
+CNetwork\:\:UnselectSession
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   void CNetwork::UnselectSession();
+
+**Remarks**
+
 

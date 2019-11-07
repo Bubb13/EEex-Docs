@@ -7,6 +7,8 @@ CScreenCreateChar Class
 .. toctree::
    :maxdepth: 1
 
+.. note:: The **CScreenCreateChar** class handles character generation
+
 The structure used for this class is :ref:`CScreenCreateChar<CScreenCreateChar>`
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -756,8 +758,8 @@ CScreenCreateChar\:\:AbilityCountInEffectList
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
-* :ref:`CString<CString>`\& sAbility - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
+* :ref:`CString<CString>`\& *sAbility* - 
 
 **Return Value**
 
@@ -786,8 +788,8 @@ CScreenCreateChar\:\:AbilityExistsInEffectList
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
-* :ref:`CString<CString>`\& sPrereq - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
+* :ref:`CString<CString>`\& *sPrereq* - 
 
 **Return Value**
 
@@ -813,7 +815,7 @@ CScreenCreateChar\:\:AcceptCharacter
 
 **Parameters**
 
-* ``int`` selectedDifficulty - * *
+* ``int`` *selectedDifficulty* - 
 
 **Remarks**
 
@@ -835,7 +837,7 @@ CScreenCreateChar\:\:AddChosenSpellsToKnown
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -955,8 +957,8 @@ Determines if an ability is enabled
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
-* :ref:`CAbilityData<CAbilityData>`\* pAbility - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
+* :ref:`CAbilityData<CAbilityData>`\* *pAbility* - 
 
 **Return Value**
 
@@ -988,12 +990,12 @@ Determines if equiptment is compatable with character class, sub-class or kit
 
 **Parameters**
 
-* ``unsigned char`` nClass - * *
-* ``unsigned char`` nActiveClass - * *
-* ``unsigned char`` nInactiveClass - * *
-* ``int`` bInactiveUsable - * *
-* ``unsigned long`` baseFlags - * *
-* ``unsigned long`` nSpecialist - * *
+* ``unsigned char`` *nClass* - 
+* ``unsigned char`` *nActiveClass* - 
+* ``unsigned char`` *nInactiveClass* - 
+* ``int`` *bInactiveUsable* - 
+* ``unsigned long`` *baseFlags* - 
+* ``unsigned long`` *nSpecialist* - 
 
 **Return Value**
 
@@ -1026,13 +1028,13 @@ CScreenCreateChar\:\:CheckCompatibleSlot
 
 **Parameters**
 
-* ``int`` nSlot - * *
-* ``unsigned char`` nClass - * *
-* ``unsigned char`` nActiveClass - * *
-* ``unsigned char`` nInactiveClass - * *
-* ``int`` bInactiveUsable - * *
-* ``unsigned long`` baseFlags - * *
-* ``unsigned long`` nSpecialist - * *
+* ``int`` *nSlot* - 
+* ``unsigned char`` *nClass* - 
+* ``unsigned char`` *nActiveClass* - 
+* ``unsigned char`` *nInactiveClass* - 
+* ``int`` *bInactiveUsable* - 
+* ``unsigned long`` *baseFlags* - 
+* ``unsigned long`` *nSpecialist* - 
 
 **Return Value**
 
@@ -1076,7 +1078,7 @@ CScreenCreateChar\:\:CheckDropSlot
 
 **Parameters**
 
-* ``int`` nSlot - * *
+* ``int`` *nSlot* - 
 
 **Remarks**
 
@@ -1231,7 +1233,7 @@ Complete the character abilities part of the character creation
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -1253,7 +1255,7 @@ Complete the character class part of the character creation
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -1276,7 +1278,7 @@ Complete the character high level abilities (HLA) part of the character creation
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -1298,7 +1300,7 @@ Initialize the complete character creation process
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -1320,7 +1322,7 @@ Complete the character skills part of the character creation
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -1342,7 +1344,7 @@ Complete the character sound set (voice) part of the character creation
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -1364,7 +1366,7 @@ CScreenCreateChar\:\:CompleteCharacterWrapup
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -1386,7 +1388,7 @@ CScreenCreateChar\:\:CountInSelectedList
 
 **Parameters**
 
-* :ref:`CString<CString>`\& sAbility - * *
+* :ref:`CString<CString>`\& *sAbility* - 
 
 **Return Value**
 
@@ -1412,7 +1414,7 @@ Decrement the current portrait selection for the character
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -1564,7 +1566,7 @@ Determines if a specified ability exists in a selected list
 
 **Parameters**
 
-* :ref:`CString<CString>`\& sAbility - * *
+* :ref:`CString<CString>`\& *sAbility* - 
 
 **Return Value**
 
@@ -1615,9 +1617,9 @@ Gets character version
 
 **Parameters**
 
-* :ref:`CAIObjectType<CAIObjectType>`\* TypeAI - * *
-* :ref:`CDerivedStats<CDerivedStats>`\* pDStats - * *
-* :ref:`CRuleTables<CRuleTables>`\& cRule - * *
+* :ref:`CAIObjectType<CAIObjectType>`\* *TypeAI* - 
+* :ref:`CDerivedStats<CDerivedStats>`\* *pDStats* - 
+* :ref:`CRuleTables<CRuleTables>`\& *cRule* - 
 
 **Return Value**
 
@@ -1668,7 +1670,7 @@ Returns the current portrait set for the specified character
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 * ``char`` size - * *
 
 **Return Value**
@@ -1827,7 +1829,7 @@ Returns count of bonus spells available for a specialise mage for specified leve
 **Parameters**
 
 * ``int`` level - *spell level for bonus specialist spells*
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Return Value**
 
@@ -1853,7 +1855,7 @@ Returns stored skill value
 
 **Parameters**
 
-* ``unsigned char`` index - *index of skill ability to return stored value for*
+* ``unsigned char`` *index* - index of skill ability to return stored value for
 
 **Return Value**
 
@@ -1924,7 +1926,7 @@ Import a previously saved character into character creation
 
 **Parameters**
 
-* :ref:`CString<CString>`\& sCharacter - * *
+* :ref:`CString<CString>`\& *sCharacter* - 
 
 **Remarks**
 
@@ -1946,7 +1948,7 @@ Import a previously saved game for importing of a character in the saved game
 
 **Parameters**
 
-* :ref:`CString<CString>`\& sFileName - * *
+* :ref:`CString<CString>`\& *sFileName* - 
 
 **Remarks**
 
@@ -1986,7 +1988,7 @@ Increment the current portrait selection for the character
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -2210,7 +2212,7 @@ Level up character during character creation
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Return Value**
 
@@ -2238,8 +2240,8 @@ Determines if mage spells from a specified level are available to character
 
 **Parameters**
 
-* ``unsigned char`` nSpellLevel - * *
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* ``unsigned char`` *nSpellLevel* - 
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Return Value**
 
@@ -2267,7 +2269,7 @@ Changes a character from single class to dual class
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 * ``unsigned char`` nNewClass - * *
 
 **Remarks**
@@ -2290,7 +2292,7 @@ Changes a character from dual class to single class
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -2314,8 +2316,8 @@ Event action for when ability plus (+) or minus (-) buttons are clicked
 
 **Parameters**
 
-* ``int`` stat - * *
-* ``bool`` plus - * *
+* ``int`` *stat* - 
+* ``bool`` *plus* - 
 
 **Remarks**
 
@@ -2410,7 +2412,7 @@ Event action for when an alignment button is clicked
 
 **Parameters**
 
-* ``int`` alignment - * *
+* ``int`` *alignment* - 
 
 **Remarks**
 
@@ -2468,7 +2470,7 @@ Event action for when export of character item button is clicked
 
 **Parameters**
 
-* ``int`` nMarker - * *
+* ``int`` *nMarker* - 
 
 **Remarks**
 
@@ -2490,7 +2492,7 @@ Event action for when import of character item button is clicked
 
 **Parameters**
 
-* ``int`` nMarker - * *
+* ``int`` *nMarker* - 
 
 **Remarks**
 
@@ -2533,7 +2535,7 @@ Event action for when character class button is clicked
 
 **Parameters**
 
-* ``int`` classId - * *
+* ``int`` *classId* - 
 
 **Remarks**
 
@@ -2573,7 +2575,7 @@ Callback for when finishing character creation and done button is clicked
 
 **Parameters**
 
-* ``void``\* batton - * *
+* ``void``\* *batton* - 
 
 **Remarks**
 
@@ -2595,7 +2597,7 @@ Event action for when a gender selection button is clicked
 
 **Parameters**
 
-* ``int`` value - * *
+* ``int`` *value* - 
 
 **Remarks**
 
@@ -2619,8 +2621,8 @@ Event action for when a specific high level ability (HLA) button is clicked
 
 **Parameters**
 
-* ``int`` HLA - * *
-* ``int`` change - * *
+* ``int`` *HLA* - 
+* ``int`` *change* - 
 
 **Remarks**
 
@@ -2715,7 +2717,7 @@ Key press event for when a key has been pressed (down)
 
 **Parameters**
 
-* ``int`` nKeysFlags - * *
+* ``int`` *nKeysFlags* - 
 
 **Remarks**
 
@@ -2737,7 +2739,7 @@ Event action for when class kit button is clicked
 
 **Parameters**
 
-* ``int`` kitId - * *
+* ``int`` *kitId* - 
 
 **Remarks**
 
@@ -2759,7 +2761,7 @@ Mouse button event for when the left mouse has been double clicked
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>` cPoint - *x and y coordinate for the mouse position*
+* :ref:`CPoint<CPoint>` *cPoint* - x and y coordinate for the mouse position
 
 **Remarks**
 
@@ -2781,7 +2783,7 @@ Mouse button event for when the left mouse has been clicked (down)
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>` cPoint - *x and y coordinate for the mouse position*
+* :ref:`CPoint<CPoint>` *cPoint* - x and y coordinate for the mouse position
 
 **Remarks**
 
@@ -2804,7 +2806,7 @@ Mouse button event for when the left mouse has been released (up)
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>` cPoint - *x and y coordinate for the mouse position*
+* :ref:`CPoint<CPoint>` *cPoint* - x and y coordinate for the mouse position
 
 **Remarks**
 
@@ -2826,7 +2828,7 @@ Event action for when learn mage spell button is clicked
 
 **Parameters**
 
-* ``int`` spell - * *
+* ``int`` *spell* - 
 
 **Remarks**
 
@@ -2850,8 +2852,8 @@ Event action for when level up button is clicked
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
-* ``unsigned long`` nExperience - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
+* ``unsigned long`` *nExperience* - 
 
 **Remarks**
 
@@ -2912,8 +2914,8 @@ Event action for when a mage spell to memorize button is clicked
 
 **Parameters**
 
-* ``int`` spell - * *
-* ``int`` amount - * *
+* ``int`` *spell* - 
+* ``int`` *amount* - 
 
 **Remarks**
 
@@ -2937,8 +2939,8 @@ Event action for when a priest spell to memorize button is clicked
 
 **Parameters**
 
-* ``int`` spell - * *
-* ``int`` amount - * *
+* ``int`` *spell* - 
+* ``int`` *amount* - 
 
 **Remarks**
 
@@ -2979,7 +2981,7 @@ Event action for when the mouse moves
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>` cPoint - *x and y coordinate of mouse position*
+* :ref:`CPoint<CPoint>` *cPoint* - x and y coordinate of mouse position
 
 **Remarks**
 
@@ -3039,7 +3041,7 @@ Event action for when clicking on a pregenerated character
 
 **Parameters**
 
-* ``int`` nId - * *
+* ``int`` *nId* - 
 
 **Remarks**
 
@@ -3064,8 +3066,8 @@ Event action for when proficiency plus (+) or minus (-) buttons are clicked
 
 **Parameters**
 
-* ``int`` id - * *
-* ``bool`` plus - * *
+* ``int`` *id* - 
+* ``bool`` *plus* - 
 
 **Remarks**
 
@@ -3088,7 +3090,7 @@ Event action for when a race button is clicked
 
 **Parameters**
 
-* ``int`` raceId - * *
+* ``int`` *raceId* - 
 
 **Remarks**
 
@@ -3111,7 +3113,7 @@ Event action for when a racial enemy button is clicked
 
 **Parameters**
 
-* ``int`` enemy - * *
+* ``int`` *enemy* - 
 
 **Remarks**
 
@@ -3134,7 +3136,7 @@ Mouse button event for when the right mouse has been clicked (down)
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>` cPoint - * *
+* :ref:`CPoint<CPoint>` *cPoint* - x and y coordinate of mouse position
 
 **Remarks**
 
@@ -3156,7 +3158,7 @@ Mouse button event for when the right mouse has been released (up)
 
 **Parameters**
 
-* :ref:`CPoint<CPoint>` cPoint - * *
+* :ref:`CPoint<CPoint>` *cPoint* - x and y coordinate of mouse position
 
 **Remarks**
 
@@ -3178,7 +3180,7 @@ Event action for when a reset skills button is clicked
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3201,7 +3203,7 @@ Event action for when a sound set button is selected
 
 **Parameters**
 
-* ``int`` nIndex - * *
+* ``int`` *nIndex* - 
 
 **Remarks**
 
@@ -3225,8 +3227,8 @@ Event action for when thieving skills plus (+) or minus (-) buttons are clicked
 
 **Parameters**
 
-* ``int`` thiefSkillId - * *
-* ``bool`` plus - * *
+* ``int`` *thiefSkillId* - 
+* ``bool`` *plus* - 
 
 **Remarks**
 
@@ -3257,14 +3259,14 @@ Recall previously stored ability scores. Stores ability scores in the addresses 
 
 **Parameters**
 
-* ``unsigned char``\& nSTR - *strength ability score*
-* ``unsigned char``\& nSTRExtra - *strength extra (percentile) ability score*
-* ``unsigned char``\& nDEX - *dexterity ability score*
-* ``unsigned char``\& nCON - *constitution ability score*
-* ``unsigned char``\& nINT - *intelligence ability score*
-* ``unsigned char``\& nWIS - *wisdom ability score*
-* ``unsigned char``\& nCHR - *charisma ability score*
-* ``int``\& nExtra - *extra ability score*
+* ``unsigned char``\& *nSTR* - strength ability score
+* ``unsigned char``\& *nSTRExtra* - strength extra (percentile) ability score
+* ``unsigned char``\& *nDEX* - dexterity ability score
+* ``unsigned char``\& *nCON* - constitution ability score
+* ``unsigned char``\& *nINT* - intelligence ability score
+* ``unsigned char``\& *nWIS* - wisdom ability score
+* ``unsigned char``\& *nCHR* - charisma ability score
+* ``int``\& *nExtra* - extra ability score
 
 **Remarks**
 
@@ -3290,9 +3292,9 @@ Remove abilities from character
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
-* ``int`` nNewClass - * *
-* ``int`` bRemoveInnates - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
+* ``int`` *nNewClass* - 
+* ``int`` *bRemoveInnates* - 
 
 **Remarks**
 
@@ -3314,7 +3316,7 @@ Remove items from character
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3336,7 +3338,7 @@ Remove specific selected ability from character
 
 **Parameters**
 
-* ``unsigned char`` nButtonIndex - * *
+* ``unsigned char`` *nButtonIndex* - 
 
 **Remarks**
 
@@ -3360,8 +3362,8 @@ Reset character abilities
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
-* ``int`` bForced - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
+* ``int`` *bForced* - 
 
 **Remarks**
 
@@ -3383,7 +3385,7 @@ Reset character ability scores panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3412,13 +3414,13 @@ Reset a specific ability score of a character
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
-* :ref:`CString<CString>`\& sMin - * *
-* :ref:`CString<CString>`\& sMax - * *
-* :ref:`CString<CString>`\& sMod - * *
-* unsigned char\& nAbility - * *
-* unsigned char\& nMin - * *
-* unsigned char\& nMax - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
+* :ref:`CString<CString>`\& *sMin* - 
+* :ref:`CString<CString>`\& *sMax* - 
+* :ref:`CString<CString>`\& *sMod* - 
+* unsigned char\& *nAbility* - 
+* unsigned char\& *nMin* - 
+* unsigned char\& *nMax* - 
 
 **Return Value**
 
@@ -3444,7 +3446,7 @@ Reset alignment selection panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3467,7 +3469,7 @@ Reset biography panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3489,7 +3491,7 @@ Reset mage specialist selection panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3511,7 +3513,7 @@ Reset class selection panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3533,7 +3535,7 @@ Reset custom sound set selection panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3555,7 +3557,7 @@ Reset dual classing with mage panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3577,7 +3579,7 @@ Reset dual class proficiencies panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3599,7 +3601,7 @@ Reset export character panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3622,7 +3624,7 @@ Reset gender selection panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3644,7 +3646,7 @@ Reset racial enemy panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3666,7 +3668,7 @@ Reset import character panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3688,7 +3690,7 @@ Reset level up panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3710,7 +3712,7 @@ Reset memorized mage spells panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3732,7 +3734,7 @@ Reset memorized priest spells panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3754,7 +3756,7 @@ Reset character name panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3795,7 +3797,7 @@ Reset proficiencies panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3818,7 +3820,7 @@ Reset race selection panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3840,7 +3842,7 @@ Reset spell tables
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -3881,7 +3883,7 @@ The *stat* parameter can be one of the following values, which equate to the abi
 +----------+--------------+
 | 2        | Dexterity    |
 +----------+--------------+
-| 3        | Constituion  |
+| 3        | Constitution |
 +----------+--------------+
 | 4        | Intelligence |
 +----------+--------------+
@@ -3905,7 +3907,7 @@ Set caps lock key on or off
 
 **Parameters**
 
-* ``int`` bValue - * *
+* ``int`` *bValue* - 
 
 **Remarks**
 
@@ -3927,7 +3929,7 @@ Set control key on or off
 
 **Parameters**
 
-* ``unsigned char`` bValue - * *
+* ``unsigned char`` *bValue* - 
 
 **Remarks**
 
@@ -3950,7 +3952,7 @@ Set shift key on or off
 
 **Parameters**
 
-* ``int`` bValue - * *
+* ``int`` *bValue* - 
 
 **Remarks**
 
@@ -3972,7 +3974,7 @@ Show next spell screen
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -4014,8 +4016,8 @@ Start the charaction creation process
 
 **Parameters**
 
-* ``int`` nCharacterSlot - *slot for new character to occupy*
-* ``int`` nEngineState - *engine state*
+* ``int`` *nCharacterSlot* - slot for new character to occupy
+* ``int`` *nEngineState* - engine state
 
 **Remarks**
 
@@ -4041,7 +4043,7 @@ CScreenCreateChar\:\:StartEditing
 **Parameters**
 
 * ``int`` nSprite - * *
-* ``CScreenCreateCharStep`` nStep - * *
+* ``CScreenCreateCharStep`` *nStep* - 
 
 **Remarks**
 
@@ -4119,7 +4121,7 @@ Update ability scores panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -4141,7 +4143,7 @@ Update alignement selection panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -4163,7 +4165,7 @@ Update character list selection panel
 
 **Parameters**
 
-* :ref:`CString<CString>` luaVar - * *
+* :ref:`CString<CString>` *luaVar* - 
 
 **Remarks**
 
@@ -4185,7 +4187,7 @@ Update dual class selection panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -4207,7 +4209,7 @@ Update mage specialist selection panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -4229,7 +4231,7 @@ Update class selection
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Return Value**
 
@@ -4263,13 +4265,13 @@ Update class entry (sub-class) selection
 
 **Parameters**
 
-* :ref:`CAIObjectType<CAIObjectType>`\& TypeAI - * *
-* :ref:`CDerivedStats<CDerivedStats>`\& DStats - * *
-* ``unsigned long`` nSpecialist - * *
-* ``unsigned char`` nActiveClass - * *
-* ``unsigned char`` nInactiveClass - * *
-* ``unsigned char`` nSubClass - * *
-* ``unsigned long`` dwFlags - * *
+* :ref:`CAIObjectType<CAIObjectType>`\& *TypeAI* - 
+* :ref:`CDerivedStats<CDerivedStats>`\& *DStats* - 
+* ``unsigned long`` *nSpecialist* - 
+* ``unsigned char`` *nActiveClass* - 
+* ``unsigned char`` *nInactiveClass* - 
+* ``unsigned char`` *nSubClass* - 
+* ``unsigned long`` *dwFlags* -  
 
 **Return Value**
 
@@ -4295,7 +4297,7 @@ Update class selection panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -4317,7 +4319,7 @@ Update racial enemy selection panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -4339,7 +4341,7 @@ Update high level abilities (HLA) panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -4361,7 +4363,7 @@ Update class kit panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -4383,7 +4385,7 @@ Update main panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -4405,7 +4407,7 @@ Update memorized mage spells panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -4428,7 +4430,7 @@ Update memorized priest spells panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -4450,7 +4452,7 @@ Update character name panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -4472,7 +4474,7 @@ Update proficienies panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 
@@ -4494,7 +4496,7 @@ Update race selection panel
 
 **Parameters**
 
-* :ref:`CGameSprite<CGameSprite>`\* pSprite - * *
+* :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 
 **Remarks**
 

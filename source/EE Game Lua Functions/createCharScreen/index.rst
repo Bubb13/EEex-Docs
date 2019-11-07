@@ -1,8 +1,8 @@
 .. _createCharScreen Functions:
 
-=====================
+==========================
 createCharScreen Functions
-=====================
+==========================
 
 .. toctree::
    :maxdepth: 1
@@ -10,6 +10,8 @@ createCharScreen Functions
    :glob:
 
    createCharScreen_*
+
+.. note:: The **createCharScreen** functions are related to the handling of character generation
 
 +-----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+
 | **Function**                                                                                                          | **Description**                                            |
