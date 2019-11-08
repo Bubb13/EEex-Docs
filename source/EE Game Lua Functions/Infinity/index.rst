@@ -540,27 +540,30 @@ Infinity_ClickItem
 Infinity_ClickObjectInWorld
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Clicks the ground at the location of the object in the world
 
 ::
 
-   Infinity_ClickObjectInWorld(???)
+   Infinity_ClickObjectInWorld(ScriptName)
 
 **Parameters**
 
-???
+* ``string`` *ScriptName* - name of the script (for the object) to click the ground at
 
 **Return Value**
 
-???
+None
 
 **Notes**
 
 
 **Example**
 
+Click the ground at ``MINSC.BS``:
 
+::
 
+   Infinity_ClickObjectInWorld("Minsc")
 
 
 ----
@@ -570,27 +573,25 @@ Infinity_ClickObjectInWorld
 Infinity_ClickScreen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Clicks the center of the viewscreen
 
 ::
 
-   Infinity_ClickScreen(???)
+   Infinity_ClickScreen()
 
 **Parameters**
 
-???
+None
 
 **Return Value**
 
-???
-
-**Notes**
-
+None
 
 **Example**
 
+::
 
-
+   Infinity_ClickScreen()
 
 
 ----
@@ -600,26 +601,43 @@ Infinity_ClickScreen
 Infinity_ClickWorldAt
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Clicks the ground at the specified coordinates, relative to the viewscreen
 
 ::
 
-   Infinity_ClickWorldAt(???)
+   Infinity_ClickWorldAt(x,y)
 
 **Parameters**
 
-???
+* ``integer`` *x* - x coordinate to click world at
+* ``integer`` *y* - y coordinate to click world at
 
 **Return Value**
 
-???
+None
 
 **Notes**
 
+   "Appears entirely broken. It seems to always click the top-left of the current viewscreen"
+   
+   --`Bubb <https://forums.beamdog.com/discussion/comment/1065334/#Comment_1065334>`_
+   
+If your mouse cursor is not in the world (such as on the ActionBar or on a SideBar), it clicks on the world coordinates at ``0``, ``0``
+
+If you don't include :ref:`Infinity_HoverMouseOver<Infinity_HoverMouseOver>` before :ref:`Infinity_ClickWorldAt<Infinity_ClickWorldAt>`, it will click at world coordinates ``0``, ``0`` by assuming your cursor is over the interface.
+
+You can force a click in the game world like so:
+
+::
+
+   Infinity_HoverMouseOver(x,y)
+   Infinity_ClickWorldAt(x,y)
 
 **Example**
 
+::
 
+   Infinity_ClickWorldAt(100,200)
 
 
 
@@ -776,27 +794,29 @@ Infinity_EnterEdit
 Infinity_FetchString
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns the string for the string reference specified
 
 ::
 
-   Infinity_FetchString(strref)
+   Infinity_FetchString(StrRef)
 
 **Parameters**
 
-* *strref* - 
+* ``integer`` *StrRef* - the string reference (StrRef) to fetch
 
 **Return Value**
 
-string
+Returns the string for the StrRef specified in the *StrRef* parameter
 
 **Notes**
 
+Calls the :ref:`CTlkTable\:\:Fetch<CTlkTableFetch>` method to fetch the StrRef string into a :ref:`STR_RES<STR_RES>` structure and pushes :ref:`STR_RES<STR_RES>`.szText => CString.m_pchData onto the lua stack.
 
 **Example**
 
+Returns the string for StrRef ``38848`` (*“Greetings, good customer. A pearl to you.”*):
 
-
+   pearl = Infinity_FetchString(38848)
 
 
 ----
@@ -806,26 +826,58 @@ string
 Infinity_FindItemWithBam
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Find a UI control that has the specified bam resource reference
 
 ::
 
-   Infinity_FindItemWithBam(???)
+   Infinity_FindItemWithBam(BamResRef,Sequence)
 
 **Parameters**
 
-???
+* ``string`` - *BamResRef* - the resource reference (ResRef) to search for that matches an existing UI control's bam ResRef
+* ``integer`` - *Sequence* - the bam sequence to match as well (optional)
 
 **Return Value**
 
-???
+Returns a pointer to the :ref:`uiItem<uiItem>` structure of the matched UI control or a lua ``NIL``
+
+See notes for further details.
 
 **Notes**
 
+Searches through all UI controls from the main stack menu and linked list of UI controls:
+
+* Reads :ref:`uiMenu<uiMenu>`.items for an array of pointers. Each pointer in the array is a :ref:`uiItem<uiItem>` structure. 
+
+* Reads offset ``0x98``: :ref:`uiItem<uiItem>`.bam => :ref:`uiItem\:\:bam<uiItembam>`.resref
+
+* If the :ref:`uiItem\:\:bam<uiItembam>`.resref field is ``0`` then the process looks for next uiItem in the linked list to process: reads :ref:`uiItem<uiItem>`.next field (offset ``0x22C``) and repeats the same step above by reading the :ref:`uiItem\:\:bam<uiItembam>`.resref field. If the :ref:`uiItem<uiItem>`.next field is ``0`` then the next pointer in the array of pointers from :ref:`uiMenu<uiMenu>`.items is read and repeats the same step above by reading the :ref:`uiItem\:\:bam<uiItembam>`.resref field.
+
+* If the :ref:`uiItem\:\:bam<uiItembam>`.resref field is not ``0`` then it converts the field value (a :ref:`uiVariant<uiVariant>` type field) to a string. This string is a ResRef. This is then used in comparison with the *BamResRef* ResRef  string parameter.
+
+* If the ResRef strings compared match, and the *Sequence* parameter is **not** specified, then the pointer the :ref:`uiItem<uiItem>` structure of the currently matched UI control, is pushed onto the lua stack and the function exits. 
+
+* If the ResRef strings compared match, and the *Sequence* parameter is specified and matches the value in the :ref:`uiItem::bam<uiItembam>`.sequence field, then the pointer to the :ref:`uiItem<uiItem>` structure of the currently matched UI control, is pushed onto the lua stack and the function exits. 
+
+* If the ResRef strings compared match, and the *Sequence* parameter does **not** match the value in the :ref:`uiItem::bam<uiItembam>`.sequence field, then the :ref:`uiItem<uiItem>`.slot => :ref:`uiItem::slot<uiItemslot>`.icon field (a :ref:`uiVariant<uiVariant>` type) is read, the value converted to a ResRef string and compared to the *BamResRef* string parameter. If this comparison matches then the pointer to the :ref:`uiItem<uiItem>` structure of the currently matched UI control, is pushed onto the lua stack and the function exits.
+
+* If the ResRef strings compared do **not** match, then the :ref:`uiItem<uiItem>`.slot => :ref:`uiItem::slot<uiItemslot>`.icon field (a :ref:`uiVariant<uiVariant>` type) is read, the value converted to a ResRef string and compared to the *BamResRef* string parameter. If this comparison matches then the pointer to the :ref:`uiItem<uiItem>` structure of the currently matched UI control, is pushed onto the lua stack and the function exits.
+
+* If the ResRef strings compared do **not** match, and there is a valid :ref:`uiItem<uiItem>`.next then the search and comparison process continues.
+
+* If the ResRef strings compared do **not** match, and there is a no valid :ref:`uiItem<uiItem>`.next, but there is another pointer in array of pointers found at :ref:`uiMenu<uiMenu>`.items then the search and comparison process continues.
+
+* If the ResRef strings compared do **not** match and there are no more :ref:`uiItem<uiItem>` (via :ref:`uiItem<uiItem>`.next or :ref:`uiMenu<uiMenu>`.items) then a lua nil is pushed to the lua stack and the function exits.
+
+It is unknown how to exactly use this function as there are no known examples.
 
 **Example**
 
+Find the UI control that uses sequence ``3`` of ``GUIOSTLM.BAM`` (*which is the reform party button*)
 
+::
+
+   Infinity_FindItemWithBam("GUIOSTLM",3)
 
 
 
@@ -836,27 +888,53 @@ Infinity_FindItemWithBam
 Infinity_FindItemWithText
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Find a UI control that has the specified text
 
 ::
 
-   Infinity_FindItemWithText(???)
+   Infinity_FindItemWithText(OriginalText)
 
 **Parameters**
 
-???
+* ``string`` *OriginalText* - the text to search for that matches an existing UI control's text
 
 **Return Value**
 
-???
+Returns a pointer to the :ref:`uiItem<uiItem>` structure of the matched UI control or a lua ``NIL``
+
+See notes for further details.
 
 **Notes**
 
+Searches through all UI controls from the main stack menu and linked list of UI controls:
+
+* Reads :ref:`uiMenu<uiMenu>`.items for an array of pointers. Each pointer in the array is a :ref:`uiItem<uiItem>` structure. 
+
+* Reads 140 bytes of the :ref:`uiItem<uiItem>` structure into a local buffer and checks offset ``0x70`` of the local buffer, which corresponds to the :ref:`uiItem<uiItem>`.text => :ref:`uiItem\:\:text<uiItemtext>`.text field. 
+
+* If the :ref:`uiItem\:\:text<uiItemtext>`.text field is ``0`` then the process looks for next uiItem in the linked list to process: reads :ref:`uiItem<uiItem>`.next field (offset ``0x22C``) and repeats the same step above by reading the :ref:`uiItem\:\:text<uiItemtext>`.text field. If the :ref:`uiItem<uiItem>`.next field is ``0`` then the next pointer in the array of pointers from :ref:`uiMenu<uiMenu>`.items is read and repeats the same step above by reading the :ref:`uiItem\:\:text<uiItemtext>`.text field.
+
+* If the :ref:`uiItem\:\:text<uiItemtext>`.text field is not ``0`` then it converts the field value (a :ref:`uiVariant<uiVariant>` type field) to an integer. This integer is a string reference (StrRef) id from the TLK table. The (StrRef) string is loaded into a buffer and this is then used in comparison with the *OriginalText* string parameter.
+
+* If the strings compared match, then the pointer to the :ref:`uiItem<uiItem>` structure of the currently matched UI control, is pushed onto the lua stack and the function exits. 
+
+* If the strings compared do **not** match, and there is a valid :ref:`uiItem<uiItem>`.next then the search and comparison process continues.
+
+* If the strings compared do **not** match, and there is a no valid :ref:`uiItem<uiItem>`.next, but there is another pointer in array of pointers found at :ref:`uiMenu<uiMenu>`.items then the search and comparison process continues.
+
+* If the strings compared do **not** match and there are no more :ref:`uiItem<uiItem>` (via :ref:`uiItem<uiItem>`.next or :ref:`uiMenu<uiMenu>`.items) then a lua nil is pushed to the lua stack and the function exits.
+
+It is unknown how to exactly use this function as there are no known examples.
 
 **Example**
 
+::
 
-
+   --]
+   Find the text control that has "Hello" 
+   --[
+   
+   Infinity_FindItemWithText("Hello")
 
 
 ----
@@ -866,27 +944,56 @@ Infinity_FindItemWithText
 Infinity_FindUIItemByName
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Find a UI item by the name specified
 
 ::
 
-   Infinity_FindUIItemByName(element_name)
+   Infinity_FindUIItemByName(UIItemName)
 
 **Parameters**
 
-* *element_name* - name of the element
+* ``string`` *UIItemName* - name of the UI item to find
 
 **Return Value**
 
-ref
+Returns a pointer to a UI item
 
 **Notes**
 
+Returns the pointer to the item stored in the ``nameToItem`` array, which is defined internally in the game executable as:
+
+::
+
+   nameToItem = {}
+
+Items are stored in the array like so:
+
+::
+
+   nameToItem['%s'] = nameToItemPointer
+
+
+The ``nameToItem`` array can be accessed directly in ``UI.MENU`` or other lua files.
+
+For example, :ref:`Infinity_ClickItem<Infinity_ClickItem>` takes a menuItem userdata type and clicks the center of its area:
+
+::
+
+   Infinity_ClickItem(nameToItem["whaterNameHere"])
 
 **Example**
 
+Get the inventory menu item:
 
+::
 
+   inventory = Infinity_FindUIItemByName("INVENTORY")
+
+Get the button control for the peasant room to rent at an inn:
+
+::
+
+   selectedRoom = Infinity_FindUIItemByName('BUTTON_room_peasant')
 
 
 ----
@@ -1956,26 +2063,42 @@ Infinity_HighlightJournalButton
 Infinity_HoverMouseOver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Moves where your mouse cursor is in the game world
 
 ::
 
-   Infinity_HoverMouseOver(???)
+   Infinity_HoverMouseOver(x,y)
 
 **Parameters**
 
-???
+* ``integer`` *x* - x coordinate to click world at
+* ``integer`` *y* - y coordinate to click world at
 
 **Return Value**
 
-???
+None
 
 **Notes**
+
+It doesn't actaully move the mouse cursor, but the game engine thinks it does. 
+
+:ref:`Infinity_HoverMouseOver<Infinity_HoverMouseOver>` will instantly move your mouse into the game world, but it won't move to the proper x,y for one frame (I think?). 
+
+If you don't include :ref:`Infinity_HoverMouseOver<Infinity_HoverMouseOver>` before :ref:`Infinity_ClickWorldAt<Infinity_ClickWorldAt>`, it will click at world coordinates ``0``, ``0`` by assuming your cursor is over the interface.
+
+You can force a click in the game world like so:
+
+::
+
+   Infinity_HoverMouseOver(x,y)
+   Infinity_ClickWorldAt(x,y)
 
 
 **Example**
 
+::
 
+   Infinity_HoverMouseOver(100,200)
 
 
 
@@ -3306,7 +3429,7 @@ Infinity_SetHairColor
 Infinity_SetHighlightColors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Set a color or color gradient for UI elements in the options dialogs that are currently selected
 
 ::
 
@@ -3314,26 +3437,29 @@ Infinity_SetHighlightColors
 
 **Parameters**
 
-* *lr* - 
-* *lg* - 
-* *lb* - 
-* *la* - 
-* *cr* - 
-* *cg* - 
-* *cb* - 
-* *ca* - 
-* *rr* - 
-* *rg* - 
-* *rb* - 
-* *ra* - 
+* ``hexidecimal`` *lr* - left color: the intensity of the red color channel
+* ``hexidecimal`` *lg* - left color: the intensity of the green color channel
+* ``hexidecimal`` *lb* - left color: the intensity of the blue color channel
+* ``hexidecimal`` *la* - left color: the transparency level of the alpha channel
+* ``hexidecimal`` *cr* - center color: the intensity of the red color channel
+* ``hexidecimal`` *cg* - center color: the intensity of the green color channel
+* ``hexidecimal`` *cb* - center color: the intensity of the blue color channel
+* ``hexidecimal`` *ca* - center color: the transparency level of the alpha channel
+* ``hexidecimal`` *rr* - right color: the intensity of the red color channel
+* ``hexidecimal`` *rg* - right color: the intensity of the green color channel
+* ``hexidecimal`` *rb* - right color: the intensity of the blue color channel
+* ``hexidecimal`` *ra* - right color: the transparency level of the alpha channel
 
 **Notes**
 
+User three color definitions: left, center and right
+
+Parameters use **hexidecimal** values (prefixed with ``0x``) for each color color and the alpha channel level
 
 **Example**
 
 
-
+   Infinity_SetHighlightColors(0x7F,0x00,0x7F,0xff, 0x00,0x7F,0x00,0xff, 0x00,0x00,0x7F,0xff)
 
 
 ----
