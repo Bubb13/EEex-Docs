@@ -7,6 +7,9 @@ CInfinity Class
 .. toctree::
    :maxdepth: 1
 
+.. note:: The **CInfinity** class handles drawing geometric and primitive shapes and rendering effects (zoom, weather, etc) on the world screen
+
+The structure used for this class is :ref:`CInfinity<CInfinity>`
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                                                                                                                                                       |
@@ -397,18 +400,16 @@ CInfinity\:\:AddAOECircle
 
 ::
 
-   x;
+   void CInfinity::AddAOECircle(
+      CPoint center, 
+      int radius, 
+      unsigned long color);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* :ref:`CPoint<CPoint>` *center* - 
+* ``int`` *radius* - 
+* ``unsigned long`` *color* - 
 
 **Remarks**
 
@@ -427,18 +428,18 @@ CInfinity\:\:AddAOECone
 
 ::
 
-   x;
+   void CInfinity::AddAOECone(
+      CPoint center, 
+      int radius, 
+      int cone, 
+      unsigned long color);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* :ref:`CPoint<CPoint>` *center* - 
+* ``int`` *radius* - 
+* ``int`` *cone* - 
+* ``unsigned long`` *color* - 
 
 **Remarks**
 
@@ -456,18 +457,17 @@ CInfinity\:\:AddAOELine
 
 ::
 
-   x;
+   void CInfinity::AddAOELine(
+      CPoint center, 
+      CPoint target, 
+      unsigned long color);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CPoint<CPoint>` *center* - 
+* :ref:`CPoint<CPoint>` *target* - 
+* ``unsigned long`` *color* - 
 
-**Return Value**
-
- 
 
 **Remarks**
 
@@ -485,18 +485,18 @@ CInfinity\:\:AddAOERectangle
 
 ::
 
-   x;
+   void CInfinity::AddAOERectangle(
+      CPoint center, 
+      int width, 
+      int height, 
+      unsigned long color);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* :ref:`CPoint<CPoint>` *center* - 
+* ``int`` *width* - 
+* ``int`` *height* - 
+* ``unsigned long`` *color* - 
 
 **Remarks**
 
@@ -514,18 +514,11 @@ CInfinity\:\:AdjustViewPosition
 
 ::
 
-   x;
+   void CInfinity::AdjustViewPosition(unsigned char nScrollState);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* ``unsigned char`` *nScrollState* - 
 
 **Remarks**
 
@@ -543,18 +536,7 @@ CInfinity\:\:AdjustViewportForZoom
 
 ::
 
-   x;
-
-**Parameters**
-
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+   void CInfinity::AdjustViewportForZoom();
 
 **Remarks**
 
@@ -572,18 +554,11 @@ CInfinity\:\:AdjustZoom
 
 ::
 
-   x;
+   void CInfinity::AdjustZoom(float amount);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* ``float`` *amount* - 
 
 **Remarks**
 
@@ -602,18 +577,7 @@ CInfinity\:\:AIUpdate
 
 ::
 
-   x;
-
-**Parameters**
-
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+   void CInfinity::AIUpdate();
 
 **Remarks**
 
@@ -632,18 +596,11 @@ CInfinity\:\:ApplyNightGlobalTint
 
 ::
 
-   x;
-
-**Parameters**
-
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+   unsigned char CInfinity::ApplyNightGlobalTint();
 
 **Return Value**
 
- 
+Returns ``unsigned char``
 
 **Remarks**
 
@@ -661,18 +618,15 @@ CInfinity\:\:AttachVRamPool
 
 ::
 
-   x;
+   int CInfinity::AttachVRamPool(CVRamPool* pNewVRPool);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CVRamPool<CVRamPool>`\* *pNewVRPool* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -690,18 +644,22 @@ CInfinity\:\:AttachVRamRect
 
 ::
 
-   x;
+   int CInfinity::AttachVRamRect(
+      int x1, 
+      int y1, 
+      int x2, 
+      int y2);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* ``int`` *x1* - 
+* ``int`` *y1* - 
+* ``int`` *x2* - 
+* ``int`` *y2* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -719,18 +677,20 @@ CInfinity\:\:AttachWED
 
 ::
 
-   x;
+   int CInfinity::AttachWED(
+      CResWED* resNewWED, 
+      unsigned short areaType, 
+      unsigned char dayNightCode);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CResWED<CResWED>`\* *resNewWED* - 
+* ``unsigned short`` *areaType* - 
+* ``unsigned char`` *dayNightCode* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -748,18 +708,14 @@ CInfinity\:\:CallLightning
 
 ::
 
-   x;
+   void CInfinity::CallLightning(
+      int xWorldPos, 
+      int yWorldPos);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* ``int`` *xWorldPos* - 
+* ``int`` *yWorldPos* - 
 
 **Remarks**
 
@@ -777,18 +733,7 @@ CInfinity\:\:ClearAOE
 
 ::
 
-   x;
-
-**Parameters**
-
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+   void CInfinity::ClearAOE();
 
 **Remarks**
 
@@ -807,18 +752,11 @@ CInfinity\:\:DetachVRamRect
 
 ::
 
-   x;
-
-**Parameters**
-
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+   int CInfinity::DetachVRamRect();
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -837,18 +775,24 @@ CInfinity\:\:DrawCone
 
 ::
 
-   x;
+   void CInfinity::DrawCone(
+      CVidMode* pVidMode, 
+      int degrees, 
+      CPoint ptCenter, 
+      CPoint ptDest, 
+      int radiusX, 
+      int radiusY, 
+      unsigned long rgbColor);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* :ref:`CVidMode<CVidMode>`\* *pVidMode* - 
+* ``int`` *degrees* - 
+* :ref:`CPoint<CPoint>` *ptCenter* - 
+* :ref:`CPoint<CPoint>` *ptDest* - 
+* ``int`` *radiusX* - 
+* ``int`` *radiusY* - 
+* ``unsigned long`` *rgbColor* - 
 
 **Remarks**
 
@@ -866,18 +810,20 @@ CInfinity\:\:DrawEllipse
 
 ::
 
-   x;
+   unsigned char CInfinity::DrawEllipse(
+      CPoint& ptCenter, 
+      CSize& axes, 
+      unsigned long rgbColor);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CPoint<CPoint>`\& *ptCenter* - 
+* :ref:`CSize<CSize>`\& *axes* - 
+* ``unsigned long`` *rgbColor* - 
 
 **Return Value**
 
- 
+Returns ``unsigned char``
 
 **Remarks**
 
@@ -895,18 +841,20 @@ CInfinity\:\:DrawHighlightRect
 
 ::
 
-   x;
+   int CInfinity::DrawHighlightRect(
+      CRect& rSquare, 
+      unsigned long rgbColor, 
+      unsigned char width);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CRect<CRect>`\& *rSquare* - 
+* ``unsigned long`` *rgbColor* - 
+* ``unsigned char`` *width* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -924,18 +872,18 @@ CInfinity\:\:DrawLine
 
 ::
 
-   x;
+   void CInfinity::DrawLine(
+      CVidMode* pVidMode, 
+      CPoint ptCenter, 
+      CPoint ptDest, 
+      unsigned long rgbColor);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* :ref:`CVidMode<CVidMode>`\* *pVidMode* - 
+* :ref:`CPoint<CPoint>` *ptCenter* - 
+* :ref:`CPoint<CPoint>` *ptDest* - 
+* ``unsigned long`` *rgbColor* - 
 
 **Remarks**
 
@@ -953,18 +901,22 @@ CInfinity\:\:DrawRectangle
 
 ::
 
-   x;
+   void CInfinity::DrawRectangle(
+      CVidMode* pVidMode, 
+      CPoint ptCenter, 
+      CPoint ptDest, 
+      int radiusX, 
+      int radiusY, 
+      unsigned long rgbColor);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* :ref:`CVidMode<CVidMode>`\* *pVidMode* - 
+* :ref:`CPoint<CPoint>` *ptCenter* - 
+* :ref:`CPoint<CPoint>` *ptDest* - 
+* ``int`` *radiusX* - 
+* ``int`` *radiusY* - 
+* ``unsigned long`` *rgbColor* - 
 
 **Remarks**
 
@@ -982,18 +934,22 @@ CInfinity\:\:FillPoly
 
 ::
 
-   x;
+   unsigned char CInfinity::FillPoly(
+      CPoint* pPoly, 
+      const short nVertices, 
+      CRect& rClip, 
+      unsigned long rgbColor);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CPoint<CPoint>`\* *pPoly* - 
+* ``const short`` *nVertices* - 
+* :ref:`CRect<CRect>`\& *rClip* - 
+* ``unsigned long`` *rgbColor* - 
 
 **Return Value**
 
- 
+Returns ``unsigned char``
 
 **Remarks**
 
@@ -1012,18 +968,16 @@ CInfinity\:\:FitViewPosition
 
 ::
 
-   x;
+   void CInfinity::FitViewPosition(
+      int& x, 
+      int& y, 
+      CRect r);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* int``\& *x* - 
+* int``\& *y* - 
+* :ref:`CRect<CRect>` *r* - 
 
 **Remarks**
 
@@ -1042,18 +996,11 @@ CInfinity\:\:FreeWED
 
 ::
 
-   x;
-
-**Parameters**
-
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+   int CInfinity::FreeWED();
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -1071,18 +1018,26 @@ CInfinity\:\:FXBltFrom<CInfinityFXBltFrom
 
 ::
 
-   x;
+   int CInfinity::FXBltFrom(
+      CRect& rFXRect, 
+      int x, 
+      int y, 
+      int nRefPointX, 
+      int nRefPointY, 
+      unsigned long dwFlags);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CRect<CRect>`\& *rFXRect* - 
+* ``int`` *x* - 
+* ``int`` *y* - 
+* ``int`` *nRefPointX* - 
+* ``int`` *nRefPointY* - 
+* ``unsigned long`` *dwFlags* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -1100,18 +1055,28 @@ CInfinity\:\:FXBltFromClipped
 
 ::
 
-   x;
+   int CInfinity::FXBltFromClipped(
+      CRect& rFXRect, 
+      int x, 
+      int y, 
+      int nRefPointX, 
+      int nRefPointY, 
+      unsigned long dwFlags, 
+      CRect rClip);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CRect<CRect>`\& *rFXRect* - 
+* ``int`` *x* - 
+* ``int`` *y* - 
+* ``int`` *nRefPointX* - 
+* ``int`` *nRefPointY* - 
+* ``unsigned long`` *dwFlags* - 
+* :ref:`CRect<CRect>` *rClip* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -1129,18 +1094,18 @@ CInfinity\:\:FXLock
 
 ::
 
-   x;
+   int CInfinity::FXLock(
+      CRect& rFXRect, 
+      unsigned long dwFlags);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CRect<CRect>`\& *rFXRect* - 
+* ``unsigned long`` *dwFlags* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -1158,18 +1123,28 @@ CInfinity\:\:FXLockPrepForLighting
 
 ::
 
-   x;
+   int CInfinity::FXLockPrepForLighting(
+      CRect& rFx, 
+      CPoint& ptOnBkGrnd, 
+      CPoint& ptReference, 
+      CSize& dimensions, 
+      unsigned long rgbIntensities, 
+      unsigned long rgbLocalTint, 
+      unsigned long dwFlags);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CRect<CRect>`\& *rFx* - 
+* :ref:`CPoint<CPoint>`\& *ptOnBkGrnd* - 
+* :ref:`CPoint<CPoint>`\& *ptReference* - 
+* :ref:`CSize<CSize>`\& *dimensions* - 
+* ``unsigned long`` *rgbIntensities* - 
+* ``unsigned long`` *rgbLocalTint* - 
+* ``unsigned long`` *dwFlags* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -1187,18 +1162,22 @@ CInfinity\:\:FXPrep
 
 ::
 
-   x;
+   int CInfinity::FXPrep(
+      CRect& rFXRect, 
+      unsigned long dwFlags, 
+      CPoint& ptPos, 
+      CPoint& ptReference);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CRect<CRect>`\& *rFXRect* - 
+* ``unsigned long`` *dwFlags* - 
+* :ref:`CPoint<CPoint>`\& *ptPos* - 
+* :ref:`CPoint<CPoint>`\& *ptReference* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -1217,18 +1196,24 @@ CInfinity\:\:FXRender
 
 ::
 
-   x;
+   int CInfinity::FXRender(
+      CVidCell* pVidCell, 
+      int nRefPointX, 
+      int nRefPointY, 
+      unsigned long dwFlags, 
+      int nTransValue);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CVidCell<CVidCell>`\* *pVidCell* - 
+* ``int`` *nRefPointX* - 
+* ``int`` *nRefPointY* - 
+* ``unsigned long`` *dwFlags* - 
+* ``int`` *nTransValue* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -1247,18 +1232,24 @@ CInfinity\:\:FXRenderAlpha
 
 ::
 
-   x;
+   int CInfinity::FXRenderAlpha(
+      CVidCell* pVidCell, 
+      int nRefPointX, 
+      int nRefPointY, 
+      unsigned long dwFlags, 
+      int nTransValue);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CVidCell<CVidCell>`\* *pVidCell* - 
+* ``int`` *nRefPointX* - 
+* ``int`` *nRefPointY* - 
+* ``unsigned long`` *dwFlags* - 
+* ``int`` *nTransValue* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -1276,18 +1267,28 @@ CInfinity\:\:FXRenderClippingPolys
 
 ::
 
-   x;
+   int CInfinity::FXRenderClippingPolys(
+      int nPosX, 
+      int nPosY, 
+      int nPosZ, 
+      CPoint& ptRef, 
+      CRect& rGCBounds, 
+      const unsigned char bDithered, 
+      unsigned long dwBlitFlags);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* ``int`` *nPosX* - 
+* ``int`` *nPosY* - 
+* ``int`` *nPosZ* - 
+* :ref:`CPoint<CPoint>`\& *ptRef* - 
+* :ref:`CRect<CRect>`\& *rGCBounds* - 
+* ``const unsigned char`` *bDithered* - 
+* ``unsigned long`` *dwBlitFlags* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -1305,18 +1306,20 @@ CInfinity\:\:FXUnlock
 
 ::
 
-   x;
+   int CInfinity::FXUnlock(
+      unsigned long dwFlags, 
+      CRect* pFxRect, 
+      CPoint& ptRef);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* ``unsigned long`` *dwFlags* - 
+* :ref:`CRect<CRect>`\* *pFxRect* - 
+* :ref:`CPoint<CPoint>`\& *ptRef* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -1334,18 +1337,20 @@ CInfinity\:\:GetFadedColor
 
 ::
 
-   x;
+   unsigned long CInfinity::GetFadedColor(
+      unsigned long rgbBrighter, 
+      unsigned long rgbDarker, 
+      unsigned char nIntensity);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* ``unsigned long`` *rgbBrighter* - 
+* ``unsigned long`` *rgbDarker* - 
+* ``unsigned char`` *nIntensity* - 
 
 **Return Value**
 
- 
+Returns ``unsigned long``
 
 **Remarks**
 
@@ -1363,18 +1368,15 @@ CInfinity\:\:GetGlobalLighting
 
 ::
 
-   x;
+   unsigned long CInfinity::GetGlobalLighting(int bIgnoreTimeOfDay);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* ``int`` *bIgnoreTimeOfDay* - 
 
 **Return Value**
 
- 
+Returns ``unsigned long``
 
 **Remarks**
 
@@ -1392,18 +1394,22 @@ CInfinity\:\:GetPointsOctant0
 
 ::
 
-   x;
+   void CInfinity::GetPointsOctant0(
+      POINT* pPoints, 
+      int nStartX, 
+      int nStartY, 
+      int nDx, 
+      int nDy, 
+      int nXDirection);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* POINT\* *pPoints* - 
+* ``int`` *nStartX* - 
+* ``int`` *nStartY* - 
+* ``int`` *nDx* - 
+* ``int`` *nDy* - 
+* ``int`` *nXDirection* - 
 
 **Remarks**
 
@@ -1422,18 +1428,22 @@ CInfinity\:\:GetPointsOctant1
 
 ::
 
-   x;
+   void CInfinity::GetPointsOctant1(
+      POINT* pPoints, 
+      int nStartX,
+      int nStartY, 
+      int nDx, 
+      int nDy, 
+      int nXDirection);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* POINT\* *pPoints* - 
+* ``int`` *nStartX* - 
+* ``int`` *nStartY* - 
+* ``int`` *nDx* - 
+* ``int`` *nDy* - 
+* ``int`` *nXDirection* - 
 
 **Remarks**
 
@@ -1452,18 +1462,24 @@ CInfinity\:\:GetSegmentPoints
 
 ::
 
-   x;
+   int CInfinity::GetSegmentPoints(
+      POINT** ppPoints, 
+      int nStartX, 
+      int nStartY, 
+      int nEndX, 
+      int nEndY);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* POINT\*\* *ppPoints* - 
+* ``int`` *nStartX* - 
+* ``int`` *nStartY* - 
+* ``int`` *nEndX* - 
+* ``int`` *nEndY* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -1481,18 +1497,15 @@ CInfinity\:\:GetScreenCoordinates
 
 ::
 
-   x;
+   CPoint CInfinity::GetScreenCoordinates(CPoint pntWorld);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CPoint<CPoint>` *pntWorld* - 
 
 **Return Value**
 
- 
+Returns :ref:`CPoint<CPoint>`
 
 **Remarks**
 
@@ -1510,18 +1523,14 @@ CInfinity\:\:GetViewPosition
 
 ::
 
-   x;
+   void CInfinity::GetViewPosition(
+      int& x, 
+      int& y);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* ``int``\& *x* - 
+* ``int``\& *y* - 
 
 **Remarks**
 
@@ -1539,18 +1548,15 @@ CInfinity\:\:GetWorldCoordinates
 
 ::
 
-   x;
+   CPoint CInfinity::GetWorldCoordinates(CPoint& pntScreen);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CPoint<CPoint>`\& *pntScreen* - 
 
 **Return Value**
 
- 
+Returns :ref:`CPoint<CPoint>`
 
 **Remarks**
 
@@ -1561,6 +1567,32 @@ CInfinity\:\:GetWorldCoordinates
 
 .. _CInfinityInitViewPort:
 
+CInfinity\:\:InitViewPort
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+::
+
+   int CInfinity::InitViewPort(CRect& rRect);
+
+**Parameters**
+
+* :ref:`CRect<CRect>`\& *rRect* - 
+
+**Return Value**
+
+Returns ``int``
+
+**Remarks**
+
+
+
+
+----
+
+.. _CInfinityInvalidateRainTiles:
+
 CInfinity\:\:InvalidateRainTiles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1568,21 +1600,9 @@ CInfinity\:\:InvalidateRainTiles
 
 ::
 
-   x;
-
-**Parameters**
-
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+   void CInfinity::InvalidateRainTiles();
 
 **Remarks**
-
 
 
 
@@ -1597,18 +1617,22 @@ CInfinity\:\:OutlinePoly
 
 ::
 
-   x;
+   unsigned char CInfinity::OutlinePoly(
+      CPoint* pPoly, 
+      const short nVertices, 
+      CRect& rClip, 
+      unsigned long rgbColor);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CPoint<CPoint>`\* *pPoly* - 
+* ``const short`` *nVertices* - 
+* :ref:`CRect<CRect>`\& *rClip* - 
+* ``unsigned long`` *rgbColor* - 
 
 **Return Value**
 
- 
+Returns ``unsigned char``
 
 **Remarks**
 
@@ -1627,18 +1651,18 @@ CInfinity\:\:PostRender
 
 ::
 
-   x;
+   int CInfinity::PostRender(
+      CVidMode* pNewVidMode, 
+      CSearchBitmap* pVisibilityMap);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CVidMode<CVidMode>`\* *pNewVidMode* - 
+* :ref:`CSearchBitmap<CSearchBitmap>`\* *pVisibilityMap* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -1657,18 +1681,7 @@ CInfinity\:\:ReleaseZoom
 
 ::
 
-   x;
-
-**Parameters**
-
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+   void CInfinity::ReleaseZoom();
 
 **Remarks**
 
@@ -1686,18 +1699,18 @@ CInfinity\:\:Render
 
 ::
 
-   x;
+   unsigned long CInfinity::Render(
+      CVidMode* pNewVidMode, 
+      int nScrollState);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CVidMode<CVidMode>`\* *pNewVidMode* - 
+* ``int`` *nScrollState* - 
 
 **Return Value**
 
- 
+Returns ``unsigned long``
 
 **Remarks**
 
@@ -1715,18 +1728,11 @@ CInfinity\:\:RenderAOE
 
 ::
 
-   x;
+   void CInfinity::RenderAOE(CVidMode* pVidMode);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* :ref:`CVidMode<CVidMode>`\* *pVidMode* - 
 
 **Remarks**
 
@@ -1744,18 +1750,14 @@ CInfinity\:\:RenderEdgeFade
 
 ::
 
-   x;
+   void CInfinity::RenderEdgeFade(
+      CVidMode* pVidMode,
+      CVisibilityMap* pVisibilityMap);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* :ref:`CVidMode<CVidMode>`\* *pVidMode* - 
+* :ref:`CVisibilityMap<CVisibilityMap>`\* *pVisibilityMap* - 
 
 **Remarks**
 
@@ -1773,18 +1775,16 @@ CInfinity\:\:RenderFlash
 
 ::
 
-   x;
+   void CInfinity::RenderFlash(
+      CVidMode* pVidMode, 
+      unsigned long screenFlashRGB, 
+      unsigned char nTranslucency);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* :ref:`CVidMode<CVidMode>`\* *pVidMode* - 
+* ``unsigned long`` *screenFlashRGB* - 
+* ``unsigned char`` *nTranslucency* - 
 
 **Remarks**
 
@@ -1802,18 +1802,14 @@ CInfinity\:\:RenderFog
 
 ::
 
-   x;
+   void CInfinity::RenderFog(
+      CVidMode* pVidMode, 
+      CVisibilityMap* pVisibilityMap);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* :ref:`CVidMode<CVidMode>`\* *pVidMode* - 
+* :ref:`CVisibilityMap<CVisibilityMap>`\* *pVisibilityMap* - 
 
 **Remarks**
 
@@ -1832,18 +1828,30 @@ CInfinity\:\:RenderLightning
 
 ::
 
-   x;
+   int CInfinity::RenderLightning(
+      CRect& rSurface, 
+      int nStartX, 
+      int nStartY, 
+      int nEndX, 
+      int nEndY, 
+      unsigned long rgbCenter, 
+      unsigned long rgbMiddle, 
+      unsigned long rgbOuter);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CRect<CRect>`\& rSurface* - 
+* ``int`` nStartX* - 
+* ``int`` nStartY* - 
+* ``int`` nEndX* - 
+* ``int`` nEndY* - 
+* ``unsigned long`` *rgbCenter* - 
+* ``unsigned long`` *rgbMiddle* - 
+* ``unsigned long`` *rgbOuter* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -1862,18 +1870,15 @@ CInfinity\:\:RenderMessageScreen
 
 ::
 
-   x;
+   int CInfinity::RenderMessageScreen(CVidMode* pVidMode);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CVidMode<CVidMode>`\* *pVidMode* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -1891,18 +1896,14 @@ CInfinity\:\:RenderTransitions
 
 ::
 
-   x;
+   void CInfinity::RenderTransitions(
+      CVidMode* pVidMode, 
+      CSearchBitmap* pSearchMap);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* :ref:`CVidMode<CVidMode>`\* *pVidMode* - 
+* :ref:`CSearchBitmap<CSearchBitmap>`\* *pSearchMap* - 
 
 **Remarks**
 
@@ -1920,18 +1921,7 @@ CInfinity\:\:RestoreZoom
 
 ::
 
-   x;
-
-**Parameters**
-
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+   void CInfinity::RestoreZoom();
 
 **Remarks**
 
@@ -1949,18 +1939,15 @@ CInfinity\:\:ScreenToViewport
 
 ::
 
-   x;
+   CPoint CInfinity::ScreenToViewport(CPoint& p);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CPoint<CPoint>`\& *p* - 
 
 **Return Value**
 
- 
+Returns :ref:`CPoint<CPoint>`
 
 **Remarks**
 
@@ -1978,18 +1965,15 @@ CInfinity\:\:ScreenToWorld
 
 ::
 
-   x;
+   CPoint CInfinity::ScreenToWorld(CPoint& p);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CPoint<CPoint>`\& *p* - 
 
 **Return Value**
 
- 
+Returns :ref:`CPoint<CPoint>`
 
 **Remarks**
 
@@ -2007,18 +1991,14 @@ CInfinity\:\:Scroll
 
 ::
 
-   x;
+   void CInfinity::Scroll(
+      CPoint ptDest, 
+      short speed);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* :ref:`CPoint<CPoint>` *ptDest* - 
+* ``short`` *speed* - 
 
 **Remarks**
 
@@ -2037,18 +2017,18 @@ CInfinity\:\:SetCurrentWeather
 
 ::
 
-   x;
+   void CInfinity::SetCurrentWeather(
+      unsigned long rgbOvercast, 
+      short nWeather, 
+      int nWeatherLevel, 
+      int nLightningFrequency);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* ``unsigned long`` *rgbOvercast* - 
+* ``short`` *nWeather* - 
+* ``int`` *nWeatherLevel* - 
+* ``int`` *nLightningFrequency* - 
 
 **Remarks**
 
@@ -2067,18 +2047,7 @@ CInfinity\:\:SetApproachingDawn
 
 ::
 
-   x;
-
-**Parameters**
-
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+   void CInfinity::SetApproachingDawn();
 
 **Remarks**
 
@@ -2096,18 +2065,7 @@ CInfinity\:\:SetApproachingDusk
 
 ::
 
-   x;
-
-**Parameters**
-
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+   void CInfinity::SetApproachingDusk();
 
 **Remarks**
 
@@ -2125,18 +2083,14 @@ CInfinity\:\:SetDawn
 
 ::
 
-   x;
+   void CInfinity::SetDawn(
+      unsigned char nIntensity, 
+      unsigned char bPlayDayNightMovie);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* ``unsigned char`` *nIntensity* - 
+* ``unsigned char`` *bPlayDayNightMovie* - 
 
 **Remarks**
 
@@ -2154,18 +2108,11 @@ CInfinity\:\:SetDawnMultiHost
 
 ::
 
-   x;
+   void CInfinity::SetDawnMultiHost(unsigned char nIntensity);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* ``unsigned char`` *nIntensity* - 
 
 **Remarks**
 
@@ -2183,18 +2130,7 @@ CInfinity\:\:SetDay
 
 ::
 
-   x;
-
-**Parameters**
-
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+   void CInfinity::SetDay();
 
 **Remarks**
 
@@ -2212,18 +2148,14 @@ CInfinity\:\:SetDusk<CInfinitySetDusk
 
 ::
 
-   x;
+   void CInfinity::SetDusk(
+      unsigned char nIntensity, 
+      unsigned char bPlayDayNightMovie);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* ``unsigned char`` *nIntensity* - 
+* ``unsigned char`` *bPlayDayNightMovie* - 
 
 **Remarks**
 
@@ -2242,18 +2174,11 @@ CInfinity\:\:SetDuskMultiHost
 
 ::
 
-   x;
+   void CInfinity::SetDuskMultiHost(unsigned char nIntensity);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* ``unsigned char`` *nIntensity* - 
 
 **Remarks**
 
@@ -2272,18 +2197,16 @@ CInfinity\:\:SetMessageScreen
 
 ::
 
-   x;
+   void CInfinity::SetMessageScreen(
+      CResRef rrBitmap, 
+      unsigned long strId, 
+      unsigned long nDuration);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* :ref:`CResRef<CResRef>` *rrBitmap* - 
+* ``unsigned long`` *strId* - 
+* ``unsigned long`` *nDuration* - 
 
 **Remarks**
 
@@ -2301,18 +2224,7 @@ CInfinity\:\:SetNight
 
 ::
 
-   x;
-
-**Parameters**
-
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+   void CInfinity::SetNight();
 
 **Remarks**
 
@@ -2330,18 +2242,16 @@ CInfinity\:\:SetScreenShake
 
 ::
 
-   x;
+   void CInfinity::SetScreenShake(
+      int bScreenShake, 
+      unsigned short duration, 
+      CPoint& screenShakeDelta);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* ``int`` *bScreenShake* - 
+* ``unsigned short`` *duration* - 
+* :ref:`CPoint<CPoint>`\& *screenShakeDelta* - 
 
 **Remarks**
 
@@ -2359,18 +2269,11 @@ CInfinity\:\:SetScrollDest
 
 ::
 
-   x;
+   void CInfinity::SetScrollDest(CPoint& ptDest);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* :ref:`CPoint<CPoint>`\& *ptDest* - 
 
 **Remarks**
 
@@ -2388,18 +2291,15 @@ CInfinity\:\:SetViewPort
 
 ::
 
-   x;
+   int CInfinity::SetViewPort(CRect& rRect);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* :ref:`CRect<CRect>`\& *rRect* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -2417,18 +2317,20 @@ CInfinity\:\:SetViewPosition
 
 ::
 
-   x;
+   int CInfinity::SetViewPosition(
+      int x, 
+      int y, 
+      unsigned char bSetExactScale);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
+* ``int`` *x* - 
+* ``int`` *y* - 
+* ``unsigned char`` *bSetExactScale* - 
 
 **Return Value**
 
- 
+Returns ``int``
 
 **Remarks**
 
@@ -2447,18 +2349,11 @@ CInfinity\:\:SetZoom
 
 ::
 
-   x;
+   void CInfinity::SetZoom(float fZoom);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* ``float`` *fZoom* - 
 
 **Remarks**
 
@@ -2477,18 +2372,11 @@ CInfinity\:\:SetZoomEnabled
 
 ::
 
-   x;
+   void CInfinity::SetZoomEnabled(int zoomEnabled);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* ``int`` *zoomEnabled* - 
 
 **Remarks**
 
@@ -2506,18 +2394,14 @@ CInfinity\:\:SetZoomViewport
 
 ::
 
-   x;
+   void CInfinity::SetZoomViewport(
+      int width, 
+      int height);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* ``int`` *width* - 
+* ``int`` *height* - 
 
 **Remarks**
 
@@ -2535,18 +2419,7 @@ CInfinity\:\:StoreZoom
 
 ::
 
-   x;
-
-**Parameters**
-
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+   void CInfinity::StoreZoom();
 
 **Remarks**
 
@@ -2564,18 +2437,14 @@ CInfinity\:\:SwapVRamTiles
 
 ::
 
-   x;
+   void CInfinity::SwapVRamTiles(
+      unsigned short wFromTile, 
+      unsigned short wToTile);
 
 **Parameters**
 
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+* ``unsigned short`` *wFromTile* - 
+* ``unsigned short`` *wToTile* - 
 
 **Remarks**
 
@@ -2593,18 +2462,7 @@ CInfinity\:\:UpdateLighting
 
 ::
 
-   x;
-
-**Parameters**
-
-*  * - 
-*  * - 
-*  * - 
-*  * - 
-
-**Return Value**
-
- 
+   void CInfinity::UpdateLighting();
 
 **Remarks**
 

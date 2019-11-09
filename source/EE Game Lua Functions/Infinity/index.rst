@@ -35,29 +35,29 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_ClickItem<Infinity_ClickItem>`                                               |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_ClickObjectInWorld<Infinity_ClickObjectInWorld>`                             |                                                                                               |
+| :ref:`Infinity_ClickObjectInWorld<Infinity_ClickObjectInWorld>`                             | Clicks the ground at the location of the object in the world                                  |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_ClickScreen<Infinity_ClickScreen>`                                           |                                                                                               |
+| :ref:`Infinity_ClickScreen<Infinity_ClickScreen>`                                           | Clicks the center of the viewscreen                                                           |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_ClickWorldAt<Infinity_ClickWorldAt>`                                         |                                                                                               |
+| :ref:`Infinity_ClickWorldAt<Infinity_ClickWorldAt>`                                         | Clicks the ground at the specified coordinates, relative to the viewscreen                    |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_CloseEngine<Infinity_CloseEngine>`                                           |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_DestroyAnimation<Infinity_DestroyAnimation>`                                 |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_DisplayString<Infinity_DisplayString>`                                       |                                                                                               |
+| :ref:`Infinity_DisplayString<Infinity_DisplayString>`                                       | Displays to the screen the passed content as a string                                         |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_DoFile<Infinity_DoFile>`                                                     |                                                                                               |
+| :ref:`Infinity_DoFile<Infinity_DoFile>`                                                     | Loads and executes the lua file specified                                                     |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_EnterEdit<Infinity_EnterEdit>`                                               |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_FetchString<Infinity_FetchString>`                                           |                                                                                               |
+| :ref:`Infinity_FetchString<Infinity_FetchString>`                                           | Returns the string for the string reference id specified                                      |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_FindItemWithBam<Infinity_FindItemWithBam>`                                   |                                                                                               |
+| :ref:`Infinity_FindItemWithBam<Infinity_FindItemWithBam>`                                   | Find a UI control that has the specified bam resource reference                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_FindItemWithText<Infinity_FindItemWithText>`                                 |                                                                                               |
+| :ref:`Infinity_FindItemWithText<Infinity_FindItemWithText>`                                 | Find a UI control that has the specified text                                                 |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_FindUIItemByName<Infinity_FindUIItemByName>`                                 |                                                                                               |
+| :ref:`Infinity_FindUIItemByName<Infinity_FindUIItemByName>`                                 | Find a UI item by the name specified                                                          |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_FocusTextEdit<Infinity_FocusTextEdit>`                                       |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -71,15 +71,15 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetCurrentGroundPage<Infinity_GetCurrentGroundPage>`                         |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetCurrentMovie<Infinity_GetCurrentMovie>`                                   |                                                                                               |
+| :ref:`Infinity_GetCurrentMovie<Infinity_GetCurrentMovie>`                                   | Returns the current movie                                                                     |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetCurrentScreenName<Infinity_GetCurrentScreenName>`                         |                                                                                               |
+| :ref:`Infinity_GetCurrentScreenName<Infinity_GetCurrentScreenName>`                         | Returns current menu name                                                                     |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetFilesOfType<Infinity_GetFilesOfType>`                                     |                                                                                               |
+| :ref:`Infinity_GetFilesOfType<Infinity_GetFilesOfType>`                                     | Returns a list of files that match the specified file extension                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetFrameCounter<Infinity_GetFrameCounter>`                                   |                                                                                               |
+| :ref:`Infinity_GetFrameCounter<Infinity_GetFrameCounter>`                                   | Returns frame counter                                                                         |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetGameTicks<Infinity_GetGameTicks>`                                         |                                                                                               |
+| :ref:`Infinity_GetGameTicks<Infinity_GetGameTicks>`                                         | Returns game ticks                                                                            |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetGroundItemDescription<Infinity_GetGroundItemDescription>`                 |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -87,9 +87,9 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetInCutsceneMode<Infinity_GetInCutsceneMode>`                               |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetINIString<Infinity_GetINIString>`                                         |                                                                                               |
+| :ref:`Infinity_GetINIString<Infinity_GetINIString>`                                         | Returns a string containing an ini section key value                                          |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetINIValue<Infinity_GetINIValue>`                                           |                                                                                               |
+| :ref:`Infinity_GetINIValue<Infinity_GetINIValue>`                                           | Returns an integer value containing an ini section key value                                  |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetListHeight<Infinity_GetListHeight>`                                       |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -111,7 +111,7 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetPasswordRequired<Infinity_GetPasswordRequired>`                           |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetPortraitTooltip<Infinity_GetPortraitTooltip>`                             |                                                                                               |
+| :ref:`Infinity_GetPortraitTooltip<Infinity_GetPortraitTooltip>`                             | Returns a string containing the tooltip for a specified portrait index                        |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetScreenSize<Infinity_GetScreenSize>`                                       |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -119,7 +119,7 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetScrollIdentifyEnabled<Infinity_GetScrollIdentifyEnabled>`                 |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetSelectedCharacterName<Infinity_GetSelectedCharacterName>`                 |                                                                                               |
+| :ref:`Infinity_GetSelectedCharacterName<Infinity_GetSelectedCharacterName>`                 | Returns a string containing the currently selected character's name                           |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetSpellIdentifyEnabled<Infinity_GetSpellIdentifyEnabled>`                   |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -133,7 +133,7 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_HighlightJournalButton<Infinity_HighlightJournalButton>`                     |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_HoverMouseOver<Infinity_HoverMouseOver>`                                     |                                                                                               |
+| :ref:`Infinity_HoverMouseOver<Infinity_HoverMouseOver>`                                     | Moves where your mouse cursor is in the game world                                            |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_HoverMouseOverObject<Infinity_HoverMouseOverObject>`                         |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -229,9 +229,9 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_SetHairColor<Infinity_SetHairColor>`                                         |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_SetHighlightColors<Infinity_SetHighlightColors>`                             |                                                                                               |
+| :ref:`Infinity_SetHighlightColors<Infinity_SetHighlightColors>`                             | Set a color or color gradient for UI elements in the options dialogs                          |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_SetINIValue<Infinity_SetINIValue>`                                           |                                                                                               |
+| :ref:`Infinity_SetINIValue<Infinity_SetINIValue>`                                           | Sets a value of an ini section key                                                            |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_SetKey<Infinity_SetKey>`                                                     |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -708,28 +708,51 @@ Infinity_DestroyAnimation
 Infinity_DisplayString
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Displays to the screen the passed content as a string
 
 ::
 
-   Infinity_DisplayString(???)
+   Infinity_DisplayString(...)
 
 **Parameters**
 
-???
+* *...* - special, see notes
 
 **Return Value**
 
-???
+None
 
 **Notes**
 
+Similar to printf function, this function can accept a variable amount of parameters. Each parameter passed is evaluated, converted to a string if necessary and concatenated to form the final string to display on the screen. 
 
-**Example**
+Parameters that are:
 
+* Integers - converted to a string.
+* Variables - evaluated and the value of the variable is taken and converted to a string. 
+* Functions - evaluated and the result used in other nested functions and/or evaluated to a string.
 
+Paramters supports simple math and other lua functions.
 
+You can inline concatenate strings and variables by using ``..`` between the string and variable and/or the next parameter, for example the ``class`` variable is concatenated to the string:
 
+::
+
+   Infinity_DisplayString("WARNING: unrecognized class argument: " .. class)
+
+**Examples**
+
+Display to screen using inline concatenate using 2 parameters, both using a string and a variable to evaluate:
+
+::
+
+   Infinity_DisplayString("config: "..config..", state: "..state)
+
+Display to screen the result of simple math: (result is displayed as ``20000001``):
+
+::
+
+   Infinity_DisplayString(20000000 + 1)
 
 ----
 
@@ -750,11 +773,15 @@ Loads and executes the lua file specified
 
 **Notes**
 
+The ``includes.lua`` file used by the game engine uses :ref:`Infinity_DoFile<Infinity_DoFile>` to setup the lua environement for the ``UI.MENU`` and provides support for running any lua file that begins with ``M_`` found in the games ``override`` folder. The ``M_`` lua files are designated for modders.
 
 **Example**
 
+Load and execute the lua file: ``MyLuaFile.lua``:
 
+::
 
+   Infinity_DoFile("MyLuaFile")
 
 
 ----
@@ -794,7 +821,7 @@ Infinity_EnterEdit
 Infinity_FetchString
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Returns the string for the string reference specified
+Returns the string for the string reference id specified
 
 ::
 
@@ -802,11 +829,11 @@ Returns the string for the string reference specified
 
 **Parameters**
 
-* ``integer`` *StrRef* - the string reference (StrRef) to fetch
+* ``integer`` *StrRef* - the string reference (StrRef) id to fetch
 
 **Return Value**
 
-Returns the string for the StrRef specified in the *StrRef* parameter
+Returns the string for the StrRef id specified in the *StrRef* parameter
 
 **Notes**
 
@@ -1176,26 +1203,36 @@ Infinity_GetCurrentGroundPage
 Infinity_GetCurrentMovie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns the current movie
 
 ::
 
-   Infinity_GetCurrentMovie(???)
+   Infinity_GetCurrentMovie()
 
 **Parameters**
 
-???
+None
 
 **Return Value**
 
-???
+Returns a ``string`` containing the resource reference (ResRef) of the current movie file (WebM file format)
 
 **Notes**
+
+Reads CBaldurChitin.m_pEngineProjector => CBaldurProjector.m_pMovie => CResWebM.CRes
+
+Compares active engine (CWarp)
+
+Pushes lua string onto stack or lua ``nil``
+
+Note: more research required.
 
 
 **Example**
 
+::
 
+   curMovie = Infinity_GetCurrentMovie()
 
 
 
@@ -1206,27 +1243,46 @@ Infinity_GetCurrentMovie
 Infinity_GetCurrentScreenName
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Returns current menu name
 
 
 ::
 
-   Infinity_GetCurrentScreenName(???)
+   Infinity_GetCurrentScreenName()
 
 **Parameters**
 
-???
+None
 
 **Return Value**
 
-???
+Returns a ``string`` of the current menu name, or an empty string if no menu active
 
 **Notes**
 
+Uses getMenuStackTop and getStackMenu functions, and if successful, reads the value at :ref:`uiMenu<uiMenu>`.name and pushes this value to the lua stack as a lua string.
 
-**Example**
+**Examples**
 
+Get the current menu name:
 
+::
 
+   curMenuName = Infinity_GetCurrentScreenName()
+
+Sets the button to clickable only if the current menu equals ``CHARGEN``
+
+::
+
+   button
+   {
+       area 770 552 204 44
+       text "IMPORT_BUTTON"
+       text style "button"
+       bam GUIOSTUM
+       clickable lua "Infinity_GetCurrentScreenName() == 'CHARGEN'"
+       action "createCharScreen:OnImportCharacterButtonClick()"
+   }
 
 
 ----
@@ -1244,18 +1300,21 @@ Returns a list of files that match the specified file extension
 
 **Parameters**
 
-* *extension* - string containing file extension
+* ``string`` *extension* - string containing file extension
 
 **Return Value**
 
-list
+An array of filenames that matched the specified file extension
 
 **Notes**
 
+Converts extension to resource file type using the chExtToType function and fetches those filenames that match the resource type and stores them into an array.
 
 **Example**
 
+::
 
+   bamfilelist = Infinity_GetFilesOfType("bam")
 
 
 
@@ -1266,7 +1325,7 @@ list
 Infinity_GetFrameCounter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns frame counter
 
 ::
 
@@ -1274,14 +1333,17 @@ Infinity_GetFrameCounter
 
 **Return Value**
 
-``int``
+Returns an ``int`` value representing frame counter
 
 **Notes**
 
+Reads the value stored at offset ``0xC48`` of :ref:`CChitin<CChitin>`: :ref:`CChitin<CChitin>`.nAUCounter, converts it to a float and pushes it onto the lua stack.
 
 **Example**
 
+::
 
+   framcounter = Infinity_GetFrameCounter()
 
 
 
@@ -1292,7 +1354,7 @@ Infinity_GetFrameCounter
 Infinity_GetGameTicks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns game ticks
 
 ::
 
@@ -1300,14 +1362,19 @@ Infinity_GetGameTicks
 
 **Return Value**
 
-``int``
+Returns an ``int`` value representing game ticks
 
 **Notes**
 
+Reads CBaldurChitin.m_pObjectGame => CInfGame.m_worldTime => CTimerWorld.m_gameTime and multiplies it by the value stored in the variable ``TIMER_UPDATES_PER_SECOND``. The result is added together with itself, converted to a float and pushed onto the lua stack.
+
+The variable ``TIMER_UPDATES_PER_SECOND`` located at offset ``0x00938778`` is initially set to ``30`` (``0x1E``)
 
 **Example**
 
+::
 
+   ticks = Infinity_GetGameTicks()
 
 
 
@@ -1424,7 +1491,7 @@ Returns a string containing an ini section key value
 
 **Return Value**
 
-string
+``string``
 
 **Notes**
 
@@ -1764,18 +1831,22 @@ Returns a string containing the tooltip for a specified portrait index
 
 **Parameters**
 
-* *index* - index of the portrait to return the tooltip text for
+* ``integer`` *index* - a 0 based index of the portrait to return the tooltip text for
 
 **Return Value**
 
-string
+Returns a ``string`` containing the tooltip for a specified portrait index 
 
 **Notes**
 
 
 **Example**
 
+Get tooltip for portrait of character 1:
 
+::
+
+   char1tooltip = Infinity_GetPortraitTooltip(0)
 
 
 
@@ -1880,14 +1951,24 @@ Returns a string containing the currently selected character's name
 
 **Return Value**
 
-string
+Returns a ``string`` containing the currently selected character's name
 
 **Notes**
 
 
 **Example**
 
+Set a label UI control's text with the current characters name:
 
+::
+
+   label
+   {
+       area 467 116 250 30
+       text  lua "Infinity_GetSelectedCharacterName()"
+       text style "label"
+       align left center
+   }
 
 
 
@@ -3477,16 +3558,23 @@ Sets a value of an ini section key
 
 **Parameters**
 
-* *section_name* - ini section to set the key value for
-* *value_name* - the key in the ini section to set the value for
-* *value* - the new value of the key
+* ``string`` *section_name* - ini section to set the key value for
+* ``string`` *value_name* - the key in the ini section to set the value for
+* ``string`` *value* - the new value of the key
 
 **Notes**
 
 
 **Example**
 
+Set the ``Player Name`` key in ``Multiplayer`` section to the value of the variable ``connectionPlayerNameEdit``
 
+::
+
+   if connectionPlayerNameEdit == "" then
+       connectionPlayerNameEdit = Infinity_GetINIString('Multiplayer', 'Player Name', player)
+       Infinity_SetINIValue('Multiplayer', 'Player Name', connectionPlayerNameEdit)
+   end
 
 
 

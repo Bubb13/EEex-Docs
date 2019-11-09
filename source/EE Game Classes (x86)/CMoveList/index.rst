@@ -7,6 +7,7 @@ CMoveList Class
 .. toctree::
    :maxdepth: 1
 
+The structure used for this class is :ref:`CMoveList<CMoveList>`
 
 +------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                      |
