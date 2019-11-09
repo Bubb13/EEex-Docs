@@ -17,19 +17,19 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | **Function**                                                                                | **Description**                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_ActivateInventory<Infinity_ActivateInventory>`                               |                                                                                               |
+| :ref:`Infinity_ActivateInventory<Infinity_ActivateInventory>`                               | Opens and activates the inventory screen and updates stats for the character                  |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_ActivateRecord<Infinity_ActivateRecord>`                                     |                                                                                               |
+| :ref:`Infinity_ActivateRecord<Infinity_ActivateRecord>`                                     | Opens and activates the level up dialog                                                       |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_AddDLC<Infinity_AddDLC>`                                                     |                                                                                               |
+| :ref:`Infinity_AddDLC<Infinity_AddDLC>`                                                     | Add DLC to game                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_AddDLCContent<Infinity_AddDLCContent>`                                       |                                                                                               |
+| :ref:`Infinity_AddDLCContent<Infinity_AddDLCContent>`                                       | Add DLC content to game                                                                       |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_CanCloudSave<Infinity_CanCloudSave>`                                         |                                                                                               |
+| :ref:`Infinity_CanCloudSave<Infinity_CanCloudSave>`                                         | Determines if cloud saves are supported by the platform                                       |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_CanLevelUp<Infinity_CanLevelUp>`                                             |                                                                                               |
+| :ref:`Infinity_CanLevelUp<Infinity_CanLevelUp>`                                             | Determines if the specified character can level up                                            |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_ChangeOption<Infinity_ChangeOption>`                                         |                                                                                               |
+| :ref:`Infinity_ChangeOption<Infinity_ChangeOption>`                                         | Set the value of an option in a panel                                                         |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_CheckItemIdentify<Infinity_CheckItemIdentify>`                               |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -41,15 +41,15 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_ClickWorldAt<Infinity_ClickWorldAt>`                                         | Clicks the ground at the specified coordinates, relative to the viewscreen                    |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_CloseEngine<Infinity_CloseEngine>`                                           |                                                                                               |
+| :ref:`Infinity_CloseEngine<Infinity_CloseEngine>`                                           | Close active engine - unknown                                                                 |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_DestroyAnimation<Infinity_DestroyAnimation>`                                 |                                                                                               |
+| :ref:`Infinity_DestroyAnimation<Infinity_DestroyAnimation>`                                 | Remove UI items that match the specified template name                                        |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_DisplayString<Infinity_DisplayString>`                                       | Displays to the screen the passed content as a string                                         |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_DoFile<Infinity_DoFile>`                                                     | Loads and executes the lua file specified                                                     |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_EnterEdit<Infinity_EnterEdit>`                                               |                                                                                               |
+| :ref:`Infinity_EnterEdit<Infinity_EnterEdit>`                                               | Enters new text into a UI edit control                                                        |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_FetchString<Infinity_FetchString>`                                           | Returns the string for the string reference id specified                                      |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -59,7 +59,7 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_FindUIItemByName<Infinity_FindUIItemByName>`                                 | Find a UI item by the name specified                                                          |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_FocusTextEdit<Infinity_FocusTextEdit>`                                       |                                                                                               |
+| :ref:`Infinity_FocusTextEdit<Infinity_FocusTextEdit>`                                       | Set the keyboard focus to the specified text edit contol                                      |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetArea<Infinity_GetArea>`                                                   |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -107,7 +107,7 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetOffset<Infinity_GetOffset>`                                               |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetOption<Infinity_GetOption>`                                               |                                                                                               |
+| :ref:`Infinity_GetOption<Infinity_GetOption>`                                               | Get the value of an option in a panel                                                         |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetPasswordRequired<Infinity_GetPasswordRequired>`                           |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -149,7 +149,7 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_LaunchURL<Infinity_LaunchURL>`                                               |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_LevelUp<Infinity_LevelUp>`                                                   |                                                                                               |
+| :ref:`Infinity_LevelUp<Infinity_LevelUp>`                                                   | Opens level up dialog                                                                         |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_Log<Infinity_Log>`                                                           |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -302,7 +302,7 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 Infinity_ActivateInventory
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Opens and activates the inventory screen and updates stats for the character
 
 ::
 
@@ -310,10 +310,16 @@ Infinity_ActivateInventory
 
 **Notes**
 
+Calls :ref:`CScreenInventory\:\:ResetGroundPile<CScreenInventoryResetGroundPile>` and
+:ref:`CScreenInventory\:\:UpdateLua<CScreenInventoryUpdateLua>`, which in turn calls :ref:`CGameSprite\:\:UpdateLuaStats<CGameSpriteUpdateLuaStats>`
+
+Updates ability scores, stats, skills, equiptment, paperdoll and items for display in the inventory screen for the current character
 
 **Example**
 
+::
 
+   Infinity_ActivateInventory()
 
 
 ----
@@ -323,7 +329,7 @@ Infinity_ActivateInventory
 Infinity_ActivateRecord
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Opens and activates the level up dialog
 
 ::
 
@@ -331,14 +337,27 @@ Infinity_ActivateRecord
 
 **Parameters**
 
-* *index* - 
+* ``integer`` *index* - 0 based index of the character to level up
 
 **Notes**
 
+Calls :ref:`CScreenCharacter\:\:OnLevelUpButtonClick<CScreenCharacterOnLevelUpButtonClick>` to open and activate the level up dialog
 
 **Example**
 
+Enables the level up button if character 5 (index 4) can level up, and on clicking the enabled button, the ``action`` opens the level up dialog via :ref:`Infinity_ActivateRecord<Infinity_ActivateRecord>`:
 
+::
+
+   button
+   {
+       enabled "Infinity_CanLevelUp(4)"
+       bam GUIOSW
+       area 0 382 44 44
+       sequence 0
+       action "Infinity_ActivateRecord(4)"
+       pulse 1
+   }
 
 
 ----
@@ -348,27 +367,37 @@ Infinity_ActivateRecord
 Infinity_AddDLC
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Add DLC to game
 
 ::
 
-   Infinity_AddDLC(string1,string2,int1,int2,string3,string4)
+   Infinity_AddDLC(name,image,title,description,ios_name,purchased,android_name)
 
 **Parameters**
 
-* *string1* - 
-* *string2* - 
-* *int1* - 
-* *int2* - 
-* *string3* - 
-* *string4* - 
+* ``string`` *name* - text or ResRef ?
+* ``string`` *image* - DLC image - ResRef to image ?
+* ``integer`` *title* - long pointer to string or StrRef ?
+* ``integer`` *description* - long pointer to string or StrRef ?
+* ``string`` *ios_name* - text or ResRef ?
+* ``integer`` *purchased* - date time stamp ?
+* ``string`` *android_name* - text or ResRef ?
 
 **Notes**
 
+Fills in a :ref:`CDLC<CDLC>` structure from the parameters passed and calls the DLCInsert function, which is defined as:
+
+::
+
+   void __cdecl DLCInsert(CDLC toInsert);
+
+Only available on ios or android builds ?
+
+See also :ref:`Infinity_AddDLCContent<Infinity_AddDLCContent>`
 
 **Example**
 
-
+No known example
 
 
 ----
@@ -378,22 +407,32 @@ Infinity_AddDLC
 Infinity_AddDLCContent
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Add DLC content to game
 
 ::
 
-   Infinity_AddDLCContent(string,int)
+   Infinity_AddDLCContent(name,dlc_id)
 
 **Parameters**
 
-* *string* - 
-* *int* - 
+* ``string`` *name* - text or ResRef ?
+* ``integer`` *dlc_id* - dlc id
 
 **Notes**
 
+Fills in a :ref:`CDLC_Content<CDLC_Content>` structure from the parameters passed and calls the DLCInsertContent function, which is defined as:
+
+::
+
+   void __cdecl DLCInsertContent(CDLC_Content toInsert);
+
+Only available on ios or android builds ?
+
+See also :ref:`Infinity_AddDLC<Infinity_AddDLC>`
 
 **Example**
 
+No known example
 
 
 
@@ -404,7 +443,7 @@ Infinity_AddDLCContent
 Infinity_CanCloudSave
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Determines if cloud saves are supported by the platform, for example Steam.
 
 ::
 
@@ -412,14 +451,19 @@ Infinity_CanCloudSave
 
 **Return Value**
 
-``bool``
+Returns a ``boolean`` value: ``true`` if cloud saves are supported on the platform or ``false`` otherwise
 
 **Notes**
 
+Calls :ref:`CPlatform\:\:IsPlatformServiceConnected<CPlatformIsPlatformServiceConnected>` and reads :ref:`CBaldurChitin<CBaldurChitin>`.m_cChitin => :ref:`CChitin<CChitin>`.cSteam => :ref:`CSteam<CSteam>`.m_isSteamConnected
 
 **Example**
 
+::
 
+   if Infinity_CanCloudSave() == false and (toggleTitles[1][3] == 60 or toggleTitles[2][3] == 60) then
+       removeOptionFromList(toggleTitles,60)
+   end
 
 
 ----
@@ -429,7 +473,7 @@ Infinity_CanCloudSave
 Infinity_CanLevelUp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Determines if the specified character can level up - has enough experience points to qualify for a level up.
 
 ::
 
@@ -437,17 +481,30 @@ Infinity_CanLevelUp
 
 **Parameters**
 
-* *index* - 
+* ``integer`` *index* - 0 based index of the character to check if level up is available for
 
 **Return Value**
 
-``bool``
+Returns a ``boolean`` value: ``true`` if character can level up or ``false`` otherwise
 
 **Notes**
 
 
 **Example**
 
+Enables the level up button if character 5 (index 4) can level up, and on clicking the enabled button, the ``action`` opens the level up dialog via :ref:`Infinity_ActivateRecord<Infinity_ActivateRecord>`:
+
+::
+
+   button
+   {
+       enabled "Infinity_CanLevelUp(4)"
+       bam GUIOSW
+       area 0 382 44 44
+       sequence 0
+       action "Infinity_ActivateRecord(4)"
+       pulse 1
+   }
 
 
 
@@ -458,7 +515,7 @@ Infinity_CanLevelUp
 Infinity_ChangeOption
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Set the value of an option in a panel
 
 ::
 
@@ -466,17 +523,26 @@ Infinity_ChangeOption
 
 **Parameters**
 
-* *option_id* - 
-* *value* - 
-* *panel_id* - 
+* ``integer`` *option_id* - id of the option to set
+* ``integer`` *value* - value to set the option to
+* ``integer`` *panel_id* - id of the panel
 
 **Notes**
 
+Calls :ref:`CGameOptions\:\:SetOption<CGameOptionsSetOption>`
 
 **Example**
 
+Get the value of option id ``1`` in panel id ``8`` (``panelID`` = ``8``) to a variable ``ttDelaySLDR`` and then set option id ``1`` in panel id ``8`` (``panelID`` = ``8``) to the value of the ``ttDelaySLDR`` variable
+
+::
+
+   panelID = 8
+   ttDelaySLDR = Infinity_GetOption(1, panelID)
+   Infinity_ChangeOption( 1, ttDelaySLDR, panelID)
 
 
+See also :ref:`Infinity_GetOption<Infinity_GetOption>`
 
 ----
 
@@ -485,22 +551,36 @@ Infinity_ChangeOption
 Infinity_CheckItemIdentify
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Checks lore skill for identifying an item in an inventory slot
 
 ::
 
-   Infinity_CheckItemIdentify(item_id)
+   Infinity_CheckItemIdentify(nSlot)
 
 **Parameters**
 
-* *item_id* - 
+* ``integer`` *nSlot* - slot number that item occupies
 
 **Notes**
 
+Calls the :ref:`CScreenInventory\:\:CheckItemIdentify<CScreenInventoryCheckItemIdentify>` method.
+
+If character has a high enough lore skill value then the item specified in the inventory slot *nSlot* is identified, the item's name and description is updated in the inventory slot and in any quick slot buttons that it currently occupies.
 
 **Example**
 
+::
 
+   function showItemDescriptionInventory(slotName)
+       if(characters[id].equipment[slotName].empty ~= 0) then
+           return
+       end
+       
+       selectedSlot = slotName
+       
+       Infinity_CheckItemIdentify(characters[id].equipment[slotName].id)
+       showItemDescription(characters[id].equipment[slotName].item, 0)
+   end
 
 
 ----
@@ -648,26 +728,32 @@ You can force a click in the game world like so:
 Infinity_CloseEngine
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Close active engine - unknown
 
 ::
 
-   Infinity_CloseEngine(???)
+   Infinity_CloseEngine()
 
 **Parameters**
 
-???
+None
 
 **Return Value**
 
-???
+None
 
 **Notes**
 
+* Reads :ref:`CBaldurChitin<CBaldurChitin>`.m_pEngineJournal => CScreenJournal*
+* Pushes :ref:`CBaldurChitin<CBaldurChitin>`.m_pEngineWorld => CScreenWorld*
+* Reads :ref:`CScreenJournal<CScreenJournal>`.m_cBaldurEngine => :ref:`CBaldurEngine<CBaldurEngine>`.m_cWarp => :ref:`CWarp<CWarp>`.m_cObject => :ref:`CObject<CObject>`.vfptr
+* Calls :ref:`CObject<CObject>`.vfptr + ``0x28`` = :ref:`CWarp\:\:EngineDeactivated<CWarpEngineDeactivated>` ?
+
+Unknown as to the purpose of this function - best leave it alone.
 
 **Example**
 
-
+No known examples
 
 
 
@@ -678,26 +764,32 @@ Infinity_CloseEngine
 Infinity_DestroyAnimation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Remove and free memory for the UI items that match the template name and instance id specified
 
 ::
 
-   Infinity_DestroyAnimation(???)
+   Infinity_DestroyAnimation(instanceId,templateName)
 
 **Parameters**
 
-???
+* ``integer`` *instanceId* - instance id
+* ``string`` *templateName* - name of the template to remove
 
 **Return Value**
 
-???
+None
 
 **Notes**
 
+Calls :ref:`uiRemoveFromTemplate<uiRemoveFromTemplate>` function, defined as:
+
+::
+
+   void __cdecl uiRemoveFromTemplate(CString sTemplate, int id);
 
 **Example**
 
-
+No known examples
 
 
 
@@ -791,26 +883,34 @@ Load and execute the lua file: ``MyLuaFile.lua``:
 Infinity_EnterEdit
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Enters new text into a UI edit control
 
 ::
 
-   Infinity_EnterEdit(???)
+   Infinity_EnterEdit(newText,oldText)
 
 **Parameters**
 
-???
+* ``string`` *newText* - string containing the new text content
+* ``string`` *oldText* - string containing the old text content to replace
 
 **Return Value**
 
-???
+None
 
 **Notes**
 
+Searches through all UI edit controls looking for one that has a string containing *oldText* and replaces it with the *newText* string.
+
+Reads :ref:`uiItem<uiItem>`.edit => :ref:`uiItem::edit<uiItemedit>`.var to compare against *oldText*, if it matches then it is replaced with *newText*
+
+Not tested or verified
 
 **Example**
 
+::
 
+   Infinity_EnterEdit("New text to replace","This is a test")
 
 
 
@@ -1030,7 +1130,7 @@ Get the button control for the peasant room to rent at an inn:
 Infinity_FocusTextEdit
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Set the keyboard focus to the specified text edit contol, so that typing will occur in the text edit control.
 
 ::
 
@@ -1038,15 +1138,31 @@ Infinity_FocusTextEdit
 
 **Parameters**
 
-* *element_name* - name of the element
+* ``string`` *element_name* - name of the text edit control to set the keyboard focus to
 
 **Notes**
 
+Calls the :ref:`uiFocusTextEdit<uiFocusTextEdit>` function
 
 **Example**
 
+Partial example of the CLUAConsole cheat text edit control being displayed and the focus moving to it so that typing occurs in that text edit control:
 
+::
 
+   name 'cheatConsole'
+   align center bottom
+   ignoreEsc
+   
+   onOpen 
+   "
+       toolbarTop = 50
+       Infinity_PushMenu('WORLD_MESSAGES')
+       Infinity_PushMenu('cheatMenu', 0, 0);
+       Infinity_FocusTextEdit('luaEditArea'); 
+       luaEdit = trim(luaEdit)
+       loadLuaHistory()
+   "
 
 
 ----
@@ -1766,7 +1882,7 @@ x,y
 Infinity_GetOption
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Get the value of an option in a panel
 
 ::
 
@@ -1774,21 +1890,27 @@ Infinity_GetOption
 
 **Parameters**
 
-* *option_id* - 
-* *panel_id* - 
+* ``integer`` *option_id* - id of the option to get value for
+* ``integer`` *panel_id* - id of the panel
 
 **Return Value**
 
-``int``
+Returns an ``integer`` value of the option id specified: *option_id* in *panel_id*
 
 **Notes**
 
 
+See also :ref:`Infinity_ChangeOption<Infinity_ChangeOption>`
+
 **Example**
 
+Get the value of option id ``1`` in panel id ``8`` (``panelID`` = ``8``) to a variable ``ttDelaySLDR`` and then set option id ``1`` in panel id ``8`` (``panelID`` = ``8``) to the value of the ``ttDelaySLDR`` variable
 
+::
 
-
+   panelID = 8
+   ttDelaySLDR = Infinity_GetOption(1, panelID)
+   Infinity_ChangeOption( 1, ttDelaySLDR, panelID)
 
 ----
 
@@ -2395,26 +2517,29 @@ Infinity_LaunchURL
 Infinity_LevelUp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Opens level up dialog
 
 ::
 
-   Infinity_LevelUp(index)
+   Infinity_LevelUp()
 
 **Parameters**
 
-* *index* - 
+None
 
 **Return Value**
 
-???
+None
 
 **Notes**
 
+Calls :ref:`CScreenCharacter\:\:OnLevelUpButtonClick<CScreenCharacterOnLevelUpButtonClick>` to open the level up dialog.
+
+Unknown if calling this will work without specifying a character like :ref:`Infinity_ActivateRecord<Infinity_ActivateRecord>` does.
 
 **Example**
 
-
+No known examples
 
 
 
