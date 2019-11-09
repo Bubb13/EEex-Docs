@@ -1,15 +1,16 @@
-.. _CVariableHash Functions:
+.. _CVariableHash Class:
 
 ==========================
-CVariableHash Functions
+CVariableHash Class
 ==========================
 
 .. toctree::
    :maxdepth: 1
 
+The structure used for this class is :ref:`CVariableHash<CVariableHash>`
 
 +------------------------------------------------------------------------------------------------------+
-| **Functions**                                                                                        |
+| **Quick Ref**                                                                                        |
 +------------------------------------------------------------------------------------------------------+
 | void **CVariableHash\:\:CVariableHash**\(long nSize)                                                 |
 +------------------------------------------------------------------------------------------------------+

@@ -40,6 +40,8 @@ CC Structures
 CCacheStatus
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CCacheStatus Class<CCacheStatus Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
@@ -85,34 +87,6 @@ CCacheStatus
 +------------+----------+----------------------------------------+-------------------------------+
 
 
-Asm Definition
-
-::
-
-   CCacheStatus              struct
-     m_nDrawnBars            dd ?
-     m_nScreensDrawn         dd ?
-     m_bDemandedResources    dd ?
-     m_bTravelScreen         dd ?
-     m_nProgressBarCaption   dd ?
-     m_nParchmentCaption     dd ?
-     m_dwLastUpdateTickCount dd ?
-     m_nTimeToNewHint        dd ?
-     m_nCurrentHint          dd ?
-     m_nCurrentHintRef       dd ?
-     m_bWaiting              dd ?
-     m_vidFont               CVidFont <>
-     m_initialsFont          CVidFont <>
-     m_parchmentFont         CVidFont <>
-     m_titleBar              CVidMosaic <>
-     m_skullAnimating        CVidCell <>
-     m_progressBar           CVidCell <>
-     m_nAnimationFrame       dd ?
-     m_nAnimationDirection   dd ?
-     m_bActivateEngine       dd ?
-   CCacheStatus              ends
-
-
 ----
 
 .. _CCallResult:
@@ -134,18 +108,6 @@ CCallResult
 | 0x1C       | 4        | void                                   | __thiscall \* m_Func          |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CCallResult          struct
-     m_cCallbackBase    CCallbackBase <>
-                        dd ? ; padding
-     m_hAPICall         dq ?    
-     m_pObj             dd ?
-     m_Func             dd ?
-   CCallResult          ends
-
 
 ----
 
@@ -166,19 +128,6 @@ CCallbackBase
 | 0x08       | 4        | int                                    | m_iCallback                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CCallbackBase        struct
-     vfptr              dd ?
-     m_nCallbackFlags   db ?
-                            db ? ; padding
-                        db ? ; padding
-                        db ? ; padding
-     m_iCallback        dd ?
-   CCallbackBase        ends
-
 
 ----
 
@@ -193,14 +142,6 @@ CCharacterFile
 | 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | cResHelper                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CCharacterFile   struct
-     cResHelper     CResHelper <>
-   CCharacterFile   ends
-
 
 ----
 
@@ -208,6 +149,8 @@ Asm Definition
 
 CChatBuffer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CChatBuffer Class<CChatBuffer Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -221,17 +164,6 @@ CChatBuffer
 | 0x3C       | 4        | int                                    | m_nDisplayCount               |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CChatBuffer          stuct
-     m_lLabels          CTypedPtrList <>
-     m_lMessages        CTypedPtrList <>
-     m_nMessageCount    dd ?
-     m_nDisplayCount    dd ?
-   CChatBuffer          ends
-
 
 ----
 
@@ -239,6 +171,8 @@ Asm Definition
 
 CChitin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CChitin Class<CChitin Class>`
 
 +------------+----------+-------------------------------------------+--------------------------------------+
 | **Offset** | **Size** | **Type**                                  | **Field**                            |
@@ -470,136 +404,6 @@ CChitin
 | 0xD0C      | 4        | int                                       | m_bReverseMouseWheelZoom             |
 +------------+----------+-------------------------------------------+--------------------------------------+
 
-Asm Definition
-
-::
-
-   CChitin                               struct
-     vfptr                               dd ?
-                                         dd ? ; padding
-     m_mouseLButton                      dd ?
-     m_mouseRButton                      dd ?
-     m_bMouseLButtonDown                 dd ?
-     m_mouseLDblClickPoint               POINT
-     m_mouseLDblClickCount               dd ?
-     m_bMouseRButtonDown                 dd ?
-     m_mouseRDblClickPoint               POINT <>
-     m_mouseRDblClickCount               dd ?
-     m_bMouseMButtonDown                 dd ?
-     m_mouseMDblClickPoint               POINT <>
-     m_mouseMDblClickCount               dd ?
-     m_mouseDblClickTime                 dd ?
-     m_mouseDblClickSize                 SIZE <>
-     bEngineActive                       dd ?
-     bServicingEnabled                   dd ?
-     bMessagesEnabled                    dd ?
-     lEngines                            CObList <>
-     nIterations                         dd ?
-     pStartingEngine                     dd ? ; CWarp* 
-     nTimer                              dd ?
-     nTimerRes                           dd ?
-     m_sCommandLine                      CString <>
-     m_rClient                           CRect <>
-     m_bReInitializing                   db ?
-     m_bScreenEdgeScroll                 db ?
-                                         db ? ; padding
-                                         db ? ; padding
-     m_opSystemPlatformId                dd ?
-     m_capsLockState                     dw ?
-                                         dw ? ; padding
-     m_ptScreen                          CPoint <>
-     m_bStartUpHost                      dd ?
-     m_bStartUpConnect                   dd ?
-     m_sStartUpAddress                   CString <>
-     m_sStartUpPort                      CString <>
-     m_sStartUpPlayer                    CString <>
-     m_sStartUpPassword                  CString <>
-     m_bStartUpNewGame                   dd ?
-     m_bStartUpLoadGame                  dd ?
-     m_sStartUpSession                   CString <>
-     m_bStartUpDirectPlayLobby           db ?
-     m_bStartUpGameSpyLocation           db ?
-                                         db ? ; padding
-                                         db ? ; padding
-     m_sStartUpGameSpyLocation           CString <>
-     m_bStartUpThroneOfBhaal             db ?
-                                         db ? ; padding
-                                         db ? ; padding
-                                         db ? ; padding
-     cSoundMixer                         dd ? ; CSoundMixer*
-     m_nMaxPlayers                       dd ?
-     m_nCurrentSong                      dd ?
-     m_nSoundEnvironment                 _EAXPRESET <>
-     m_bSoundInitialized                 dd ?
-     padding                             db ?
-                                         db ? ; padding
-                                         db ? ; padding
-                                         db ? ; padding
-     m_bInMouseWheelQueue                dd ?
-     m_lstMouseWheel                     CTypedPtrList <>
-     m_wheelScrollLines                  dd ?
-     m_bIsMouseInWindow                  dd ?
-     m_bFrameOutline                     dd ?
-     m_bUseMirrorFX                      dd ?
-     m_msgAutoPlay                       dd ?
-     m_hEvent                            dd ? ; void*
-     m_bUsePlanescapeSoundReductionCurve db ?
-                                         db ? ; padding
-                                         db ? ; padding
-                                         db ? ; padding
-     m_nSoundReductionCurveRadius        dd ?
-     m_nTickCount                        dd ?
-     m_nAIPerSec                         dd ?
-     m_nAIElasped                        dd ?
-     m_nRenderTickCount                  dd ?
-     m_nRenderPerSec                     dd ?
-     m_nRenderElasped                    dd ?
-     m_nAISleeper                        dd ?
-     m_bIsTouchUI                        dd ?
-     m_bUseBGRA                          dd ?
-     m_bRenderTilesLinear                dd ?
-     m_sFontName                         CString <>
-     m_nFullFrameTimer                   dd ?
-     m_nGameTimer                        dd ?
-     m_nRenderTimer                      dd ?
-     m_nSearchTimer                      dd ?
-     pActiveEngine                       dd ? ; CWarp* 
-     cVideo                              CVideo <>
-     cNetwork                            CNetwork <>
-                                         dd ? ; padding
-     cSteam                              CSteam <>
-     padding2                            db ?
-                                         db ? ; padding
-                                         db ? ; padding
-                                         db ? ; padding
-     bPointerUpdated                     dd ?
-     cMousePosition                      CPoint <>
-     nAUCounter                          dd ?
-     bInTimer                            dd ?
-     m_AIStale                           dd ?
-     m_displayStale                      dd ?
-     m_bInSyncUpdate                     dd ?
-     m_keyRepeatDelay                    dd ?
-     m_keyRepeatRate                     dd ?
-     cProgressBar                        CProgressBar <>
-     m_nAICounter                        dw ?
-                                         dw ? ; padding
-     m_bManualFrameControl               dd ?
-     m_displayDebug                      dd ?
-     m_displaySerialize                  dd ?
-     m_bExitOnError                      dd ?
-     m_bEnableCucumber                   dd ?
-     pCurRes                             dd ? ; CResRef*
-     m_sFontNameNormal                   CString <>
-     m_sFontNameRealms                   CString <>
-     m_sFontNameStoneBig                 CString <>
-     m_sFontNameStoneSml                 CString <>
-     m_sFontNameToolFont                 CString <>
-     m_sFontNameFloatTxt                 CString <>
-     m_bDisplaySubtitles                 dd ?
-     m_bReverseMouseWheelZoom            dd ?
-   CChitin                               ends
-
 
 ----
 
@@ -642,14 +446,6 @@ CCmdTarget
 | 0x00       | 4        | :ref:`CObject<CObject>`                | m_cObject                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CCmdTarget   struct
-     m_cObject  CObject <>
-   CCmdTarget   ends
-
 
 ----
 
@@ -674,22 +470,6 @@ CColorEffect
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CColorEffect     struct
-     m_effectType   db ?
-     m_range        db ?
-                    db ? ; padding
-                    db ? ; padding
-     m_tintColor    dd ?
-     m_periodLength db ?
-                    db ? ; padding
-                    db ? ; padding
-                    db ? ; padding
-   CColorEffect ends
-
 
 ----
 
@@ -703,15 +483,6 @@ CColorEffects
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CColorEffects        struc
-     m_cTypedPtrList    CTypedPtrList <>
-   CColorEffects        ends ; size 0x1C
-
 
 
 ----
@@ -729,15 +500,6 @@ CColorRange
 | 0x01       | 1        | unsigned char                          | m_color                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CColorRange  struct
-     m_range    db ?
-     m_color    db ?
-   CColorRange  ends
-
 
 ----
 
@@ -751,14 +513,6 @@ CColorRanges
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CColorRanges         struc
-     m_cTypedPtrList    CTypedPtrList <>
-   CColorRanges         ends ; size 0x1C
 
 
 ----
@@ -792,23 +546,6 @@ CContingency
 | 0x1AC      | 4        | unsigned long                          | m_nLastCheck                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CContingency     struct
-     m_cTrigger     CAITrigger <>
-     m_cSpellRes    CResRef <>
-     m_cSpellRes2   CResRef <>
-     m_cSpellRes3   CResRef <>
-     m_cTarget      CAIObjectType <>
-     m_dwFlags      dd ?
-     m_parentEffect CGameEffect <>
-     m_dwTarget     dd ?
-     m_dwCondition  dd ?
-     m_nLastCheck   dd ?
-   CContingency     ends
-
 
 ----
 
@@ -822,14 +559,6 @@ CContingencyList
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CContingencyList     struc
-     m_cTypedPtrList    CTypedPtrList <>
-   CContingencyList     ends ; size 0x1C
 
 
 ----
@@ -849,16 +578,6 @@ CContingencySpell
 | 0x10       | 2        | unsigned short                         | m_flags                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CContingencySpell    struct
-     m_spellId          db 8 dup (?)
-     m_origId           db 8 dup (?)
-     m_flags            dw ?
-   CContingencySpell    ends
-
 
 ----
 
@@ -872,14 +591,6 @@ CCreatureFile
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | cResHelper                    |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CCreatureFile    struct
-     cResHelper     CResHelper <>
-   CCreatureFile    ends
 
 
 ----
@@ -926,29 +637,6 @@ CCreatureFileEquipment
 **Notes**
 
 Related to `CRE V1.0 Item Slots <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/cre_v1.htm#CREV1_0_ItemSlots>`_
-
-
-Asm Definition
-
-::
-
-   CCreatureFileEquipment    struct
-     m_helmetItem            dw ?
-     m_armorItem             dw ?
-     m_shieldItem            dw ?
-     m_gauntletsItem         dw ?
-     m_ringLeftItem          dw ?
-     m_ringRightItem         dw ?
-     m_amuletItem            dw ?
-     m_beltItem              dw ?
-     m_bootsItem             dw ?
-     m_weaponItem            dw 4 dup (?)
-     m_ammoItem              dw 4 dup (?)
-     m_cloakItem             dw ?
-     m_miscItem              dw 20 dup (?)
-     m_selectedWeapon        dw ?
-     m_selectedWeaponAbility dw ?
-   CCreatureFileEquipment    ends
 
 
 ----
@@ -1136,96 +824,6 @@ Related to `CRE V1.0 Header <https://gibberlings3.github.io/iesdp/file_formats/i
 * **m_hatedRace** (offset ``0x239``) contains racial enemy values found in ``RACE.IDS``
 
 
-Asm Definition
-
-::
-
-   CCreatureFileHeader              struct
-     m_name                         dd ?
-     m_apparentName                 dd ?
-     m_flags                        dd ?
-     m_xpValue                      dd ?
-     m_xp                           dd ?
-     m_gold                         dd ?
-     m_generalState                 dd ?
-     m_hitPoints                    dw ?
-     m_maxHitPointsBase             dw ?
-     m_animationType                dd ?
-     m_colors                       db 7 dup (?)
-     m_effectVersion                db ?
-     m_portraitSmall                db 8 dup (?)
-     m_portraitLarge                db 8 dup (?)
-     m_reputation                   db ?
-     m_hideInShadowsBase            db ?
-     m_armorClass                   dw ?
-     m_armorClassBase               dw ?
-     m_armorClassCrushingAdjustment dw ?
-     m_armorClassMissileAdjustment  dw ?
-     m_armorClassPiercingAdjustment dw ?
-     m_armorClassSlashingAdjustment dw ?
-     m_toHitArmorClass0Base         db ?
-     m_numberOfAttacksBase          db ?
-     m_saveVSDeathBase              db ?
-     m_saveVSWandsBase              db ?
-     m_saveVSPolyBase               db ?
-     m_saveVSBreathBase             db ?
-     m_saveVSSpellBase              db ?
-     m_resistFireBase               db ?
-     m_resistColdBase               db ?
-     m_resistElectricityBase        db ?
-     m_resistAcidBase               db ?
-     m_resistMagicBase              db ?
-     m_resistMagicFireBase          db ?
-     m_resistMagicColdBase          db ?
-     m_resistSlashingBase           db ?
-     m_resistCrushingBase           db ?
-     m_resistPiercingBase           db ?
-     m_resistMissileBase            db ?
-     m_detectIllusionBase           db ?
-     m_setTrapsBase                 db ?
-     m_loreBase                     db ?
-     m_lockPickingBase              db ?
-     m_moveSilentlyBase             db ?
-     m_trapsBase                    db ?
-     m_pickPocketBase               db ?
-     m_fatigue                      db ?
-     m_intoxication                 db ?
-     m_luckBase                     db ?
-     m_proficiencies                db 15 dup (?)
-     m_bNightmare                   db ?
-     m_nTranslucent                 db ?
-     m_repChangeKilled              db ?
-     m_repChangeJoined              db ?
-     m_repChangeKicked              db ?
-     m_undeadLevel                  db ?
-     m_trackingBase                 db ?
-     m_trackingTarget               db 32 dup (?)
-     m_speech                       dd 100 dup (?)
-     m_level1                       db ?
-     m_level2                       db ?
-     m_level3                       db ?
-     m_sex                          db ?
-     m_STRBase                      db ?
-     m_STRExtraBase                 db ?
-     m_INTBase                      db ?
-     m_WISBase                      db ?
-     m_DEXBase                      db ?
-     m_CONBase                      db ?
-     m_CHRBase                      db ?
-     m_morale                       db ?
-     m_moraleBreak                  db ?
-     m_hatedRace                    db ?
-     m_moraleRecoveryTime           dw ?
-     m_mageSpecUpperWord            dw ?
-     m_mageSpecialization           dw ?
-     m_scriptOverRide               db 8 dup (?)
-     m_scriptClass                  db 8 dup (?)
-     m_scriptRace                   db 8 dup (?)
-     m_scriptGeneral                db 8 dup (?)
-     m_scriptDefault                db 8 dup (?)
-   CCreatureFileHeader              ends
-
-
 ----
 
 .. _CCreatureFileItem:
@@ -1254,18 +852,6 @@ Related to `CRE V1.0 Items Table <https://gibberlings3.github.io/iesdp/file_form
 * **m_dynamicFlags** (offset ``0x10``) contains: bit ``0`` = Identified, bit ``1`` = Unstealable, bit ``2`` = Stolen, bit ``3`` = Undroppable
 
 
-Asm Definition
-
-::
-
-   CCreatureFileItem    struct
-     m_itemId           db 8 dup (?)
-     m_wear             dw ?
-     m_usageCount       dw 3 dup (?)
-     m_dynamicFlags     dd ?
-   CCreatureFileItem    ends
-
-
 ----
 
 .. _CCreatureFileKnownSpell:
@@ -1290,17 +876,6 @@ Related to `CRE V1.0 Known Spells <https://gibberlings3.github.io/iesdp/file_for
 * **m_magicType** (offset ``0x0A``) contains: ``0`` = Priest, ``1`` = Wizard, ``2`` = Innate
 
 
-Asm Definition
-
-::
-
-   CCreatureFileKnownSpell  struct
-     m_knownSpellId         db 8 dup (?)
-     m_spellLevel           dw ?
-     m_magicType            dw ?
-   CCreatureFileKnownSpell  ends
-
-
 ----
 
 .. _CCreatureFileMemorizedSpell:
@@ -1323,17 +898,6 @@ CCreatureFileMemorizedSpell
 Related to `CRE V1.0 Memorized Spells Table <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/cre_v1.htm#CREV1_0_MemSpell>`_
 
 * **m_flags** (offset ``0x08``) contains: bit ``0`` = Memorised or bit ``1`` = Disabled
-
-
-Asm Definition
-
-::
-
-   CCreatureFileMemorizedSpell  struct
-     m_spellId                  db 8 dup (?)
-     m_flags                    dw ?
-     structureAlignment1        db 2 dup (?)
-   CCreatureFileMemorizedSpell  ends
 
 
 ----
@@ -1366,20 +930,6 @@ Related to `CRE V1.0 Spell Memorization Info <https://gibberlings3.github.io/ies
 * **m_magicType** (offset ``0x06``) contains: ``0`` = Priest, ``1`` = Wizard, ``2`` = Innate
 * **m_memorizedStartingSpell** (offset ``0x08``) index into memorized spells (array of :ref:`CCreatureFileMemorizedSpell<CCreatureFileMemorizedSpell>` structures) of first memorized spell of this type in this level
 * **m_memorizedCount** (offset ``0x0C``) count of memorized spell entries in memorized spells array of memorized spells of this type in this level
-
-
-Asm Definition
-
-::
-
-   CCreatureFileMemorizedSpellLevel struct
-     m_spellLevel                   dw ?
-     m_baseCount                    dw ?
-     m_count                        dw ?
-     m_magicType                    dw ?
-     m_memorizedStartingSpell       dd ?
-     m_memorizedCount               dd ?
-   CCreatureFileMemorizedSpellLevel ends
 
 
 ----
@@ -1443,38 +993,6 @@ CCreatureFileOffsets
 Related to offset ``0x0270`` of `CRE V1.0 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/cre_v1.htm#CREV1_0_Header>`_
 
 
-
-
-Asm Definition
-
-::
-
-   CCreatureFileOffsets             struct
-     m_enemyAlly                    db ?
-     m_general                      db ?
-     m_race                         db ?
-     m_class                        db ?
-     m_specifics                    db ?
-     m_gender                       db ?
-     m_specialCase                  db 5 dup (?)
-     m_alignment                    db ?
-     m_instance                     dd ?
-     m_name                         db 32 dup (?)
-     m_knownSpellListOffset         dd ?
-     m_knownSpellListCount          dd ?
-     m_memorizationLevelListOffset  dd ?
-     m_memorizationLevelListCount   dd ?
-     m_memorizationSpellListOffset  dd ?
-     m_memorizationSpellListCount   dd ?
-     m_equipmentListOffset          dd ?
-     m_itemListOffset               dd ?
-     m_itemListCount                dd ?
-     m_effectListOffset             dd ?
-     m_effectListCount              dd ?
-     m_dialog                       db 8 dup (?)
-   CCreatureFileOffsets             ends
-
-
 ----
 
 .. _CCriticalEntry:
@@ -1498,19 +1016,6 @@ CCriticalEntry
 | 0x18       | 4        | int                                    | m_bonus                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CCriticalEntry   struct
-     m_res          CResRef <>
-     m_hitOrMiss    dd ?
-     m_slot         dd ?
-     m_attackType   dd ?
-     m_itemType     dd ?
-     m_bonus        dd ?
-   CCriticalEntry   ends
-
 
 ----
 
@@ -1525,14 +1030,6 @@ CCriticalEntryList
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CCriticalEntryList   struc
-     m_cTypedPtrList    CTypedPtrList <>
-   CCriticalEntryList   ends ; size 0x1C
-
 
 ----
 
@@ -1546,5 +1043,4 @@ CCrypt
 +------------+----------+----------------------------------------+-------------------------------+
 |            | 1        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
-
 

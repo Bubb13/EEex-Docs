@@ -9,6 +9,8 @@ CScreenCreateParty Class
 
 .. note:: The **CScreenCreateParty** class handles party and character generation
 
+The structure used for this class is :ref:`CScreenCreateParty<CScreenCreateParty>`
+
 +-------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                       |
 +-------------------------------------------------------------------------------------------------------------------------------------+

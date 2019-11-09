@@ -186,14 +186,6 @@ CMachineState
 | 0x00       | 4        | unsigned long                          | m_inputState                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CMachineState    struct
-     m_inputState   dd ?
-   CMachineState    ends
-
 
 ----
 
@@ -202,19 +194,13 @@ Asm Definition
 CMachineStates
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CMachineStates Class<CMachineStates Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 24       | :ref:`CMachineState<CMachineState>`    | m_machineStates[6]            |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CMachineStates       struct
-     m_machineStates    CMachineState 6 dup ({})
-   CMachineStates       ends
 
 
 ----
@@ -242,20 +228,6 @@ CMapStringToPtr
 | 0x18       | 4        | int                                                         | m_nBlockSize     |
 +------------+----------+-------------------------------------------------------------+------------------+
 
-Asm Definition
-
-::
-
-   CMapStringToPtr      struct
-     m_cObject          CObject <>
-     m_pHashTable       dd ? ; CMapStringToPtr::CAssoc** 
-     m_nHashTableSize   dd ?
-     m_nCount           dd ?
-     m_pFreeList        dd ? ; CMapStringToPtr::CAssoc* 
-     m_pBlocks          dd ? ; CPlex* 
-     m_nBlockSize       dd ?
-   CMapStringToPtr      ends
-
 
 ----
 
@@ -276,15 +248,6 @@ CMapStringToPtr\:\:CAssoc
 | 0x0C       | 4        | void\*                                                      | value      |
 +------------+----------+-------------------------------------------------------------+------------+
 
-Asm Definition
-
-::
-
-      data +0x00 [sizeof=4] CMapStringToPtr::CAssoc* pNext
-      data +0x04 [sizeof=4] unsigned int nHashValue
-      data +0x08 [sizeof=4] CString key
-      data +0x0c [sizeof=4] void* value
-
 
 ----
 
@@ -292,6 +255,8 @@ Asm Definition
 
 CMapStringToString
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CMapStringToString Class<CMapStringToString Class>`
 
 +------------+----------+-------------------------------------------------------------------+--------------+
 | **Offset** | **Size** | **Type**                                                          | **Field**    |
@@ -419,6 +384,8 @@ CMarker
 CMemINI
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CMemINI Class<CMemINI Class>`
+
 +------------+----------+----------------------------------------+-----------------+
 | **Offset** | **Size** | **Type**                               | **Field**       |
 +------------+----------+----------------------------------------+-----------------+
@@ -483,6 +450,8 @@ CMemINIRes
 CMemINISection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CMemINI Class<CMemINI Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
@@ -498,6 +467,8 @@ CMemINISection
 
 CMemINIValue
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CMemINI Class<CMemINI Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -516,6 +487,8 @@ CMemINIValue
 
 CMessage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CMessage Class<CMessage Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -3293,6 +3266,8 @@ CMessageWeaponImmumityUpdate
 CMoveList
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CMoveList Class<CMoveList Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
@@ -3332,6 +3307,8 @@ CMoveListEntry
 
 CMultiplayerSettings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CMultiplayerSettings Class<CMultiplayerSettings Class>`
 
 +------------+----------+----------------------------------------+------------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                          |

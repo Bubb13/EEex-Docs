@@ -1,14 +1,16 @@
-.. _CScreenCharacter Functions:
+.. _CScreenCharacter Class:
 
 ==========================
-CScreenCharacter Functions
+CScreenCharacter Class
 ==========================
 
 .. toctree::
    :maxdepth: 1
 
+The structure used for this class is :ref:`CScreenCharacter<CScreenCharacter>`
+
 +-------------------------------------------------------------------------------------------------------------------------------------+
-| **Functions**                                                                                                                       |
+| **Quick Ref**                                                                                                                       |
 +-------------------------------------------------------------------------------------------------------------------------------------+
 | virtual void **CScreenCharacter\:\:CancelEngine**\()                                                                                |
 +-------------------------------------------------------------------------------------------------------------------------------------+

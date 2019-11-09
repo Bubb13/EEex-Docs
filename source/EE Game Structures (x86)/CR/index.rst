@@ -56,14 +56,6 @@ CRainDrop
 | 0x00       | 52       | :ref:`CParticle<CParticle>`            | m_cParticle                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CRainDrop     struct
-     m_cParticle CParticle <>
-   CRainDrop     ends
-
 
 ----
 
@@ -90,20 +82,6 @@ CRainStorm
 | 0x1C       | 4        | int                                    | m_nRainDrops                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CRainStorm            struct
-     m_pRainDrops        dd ? ; CRainDrop* 
-     m_nCurrentDensity   dw ?
-                         dw ? ; padding
-     m_rOldWorldViewPort CRect <>
-     m_nWindGustCounter  dw ?
-                         dw ? ; padding
-     m_nRainDrops        dd ?
-   CRainStorm            ends
-
 
 ----
 
@@ -114,6 +92,7 @@ CRect
 
 .. note:: Actually defined as `RECT <https://docs.microsoft.com/en-us/windows/win32/api/windef/ns-windef-rect>`_ but adapted/recreated as its own structure.
 
+Used by the :ref:`CRect Class<CRect Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -126,17 +105,6 @@ CRect
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x0C       | 4        | long                                   | bottom                        |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CRect    struct
-     left   dd ?
-     top    dd ?
-     right  dd ?
-     bottom dd ?
-   CRect    ends
 
 
 ----
@@ -176,27 +144,6 @@ CRes
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CRes             struct
-     vfptr          dd ? 
-     resref         dd ? ; const char* 
-     type           dd ? 
-     view           view_t <>
-     nID            dd ? 
-     zip_id         dd ? 
-     override_id    dd ? 
-     pData          dd ? ; void* 
-     nSize          dd ? 
-     nCount         dd ? 
-     bWasMalloced   db ?
-     bLoaded        db ?
-                    db ? ; padding
-                    db ? ; padding
-   CRes             ends
-
 
 ----
 
@@ -211,14 +158,6 @@ CResArea
 | 0x00       | 56       | :ref:`CRes<CRes>`                      | m_cRes                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CResArea struct
-     m_cRes CRes <>
-   CResArea ends
-
 
 ----
 
@@ -232,14 +171,6 @@ CResBIO
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 56       | :ref:`CRes<CRes>`                      | m_cRes                        |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CResBIO  struct
-     m_cRes CRes <>
-   CResBIO  ends
 
 
 ----
@@ -256,15 +187,6 @@ CResBinary
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x38       | 4        | char                                   | m_resVersion[4]               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CResBinary       struct
-     m_cRes         CRes <>
-     m_resVersion   db 4 dup (?)
-   CResBinary       ends
 
 
 ----
@@ -296,22 +218,6 @@ CResBitmap
 | 0x54       | 4        | `RGBQUAD <https://docs.microsoft.com/en-us/windows/win32/api/wingdi/ns-wingdi-rgbquad>`_\*                   | pColorTable         |
 +------------+----------+--------------------------------------------------------------------------------------------------------------+---------------------+
 
-Asm Definition
-
-::
-
-   CResBitmap               struct
-     m_cRes                 CRes <>
-     m_pDataDecompressed    dd ? ; unsigned char*
-     texture                dd ? 
-     nColors                dd ? 
-     nXWords                dd ? 
-     m_pData                dd ? ; unsigned char*
-     pBitmapFileHeader      dd ? ; BITMAPFILEHEADER*
-     pBitmapInfoHeader      dd ? ; BITMAPINFOHEADER*
-     pColorTable            dd ? ; RGBQUAD*
-   CResBitmap               ends
-
 
 ----
 
@@ -326,14 +232,6 @@ CResCHR
 | 0x00       | 56       | :ref:`CRes<CRes>`                      | m_cRes                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CResCHR  struct
-     m_cRes CRes <>
-   CResCHR  ends
-
 
 ----
 
@@ -347,14 +245,6 @@ CResCRE
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 56       | :ref:`CRes<CRes>`                      | m_cRes                        |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CResCRE  struct
-     m_cRes CRes <>
-   CResCRE  ends
 
 
 ----
@@ -381,7 +271,7 @@ CResCell
 +------------+----------+--------------------------------------------------------------------------------------------+-------------------+
 | 0x4C       | 4        | :ref:`frameTableEntry_st<frameTableEntry_st>`\*                                            | m_pFrames         |
 +------------+----------+--------------------------------------------------------------------------------------------+-------------------+
-| 0x50       | 4        | :ref:`sequenceTableEntry_st<sequenceTableEntry_st>`\*                                      | m_pSequences      |
+| 0x50       | 4        | ``sequenceTableEntry_st``\*                                                                | m_pSequences      |
 +------------+----------+--------------------------------------------------------------------------------------------+-------------------+
 | 0x54       | 4        | unsigned short\*                                                                           | m_pFrameList      |
 +------------+----------+--------------------------------------------------------------------------------------------+-------------------+
@@ -393,26 +283,6 @@ CResCell
 +------------+----------+--------------------------------------------------------------------------------------------+-------------------+
 | 0x60       | 4        | int                                                                                        | m_bParsing        |
 +------------+----------+--------------------------------------------------------------------------------------------+-------------------+
-
-Asm Definition
-
-::
-
-   CResCell             struct
-     m_cRes             CRes <>
-     pUncompressedData  dd ? ;void* 
-     nUncompressedSize  dd ?
-     m_pBamHeader       dd ? ; bamHeader_st* 
-     m_pBamHeaderV2     dd ? ; BAMHEADERV2* 
-     m_pQuads           dd ? ; MOSAICQUAD* 
-     m_pFrames          dd ? ; frameTableEntry_st* 
-     m_pSequences       dd ? ; sequenceTableEntry_st* 
-     m_pFrameList       dd ? ; unsigned short* 
-     m_nFrameList       dw ?
-                        dw ? ; padding
-     m_pPalette         dd ? ; tagRGBQUAD* 
-     m_bParsing         dd ?
-   CResCell             ends
 
 
 ----
@@ -429,15 +299,6 @@ CResDLG
 +------------+----------+----------------------------------------+-------------------------------+
 
 
-Asm Definition
-
-::
-
-   CResDLG  struct
-     m_cRes CRes <>
-   CResDLG  ends
-
-
 ----
 
 .. _CResEffect:
@@ -450,16 +311,6 @@ CResEffect
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 56       | :ref:`CRes<CRes>`                      | m_cRes                        |
 +------------+----------+----------------------------------------+-------------------------------+
-
-
-Asm Definition
-
-::
-
-
-   CResEffect   struct
-     m_cRes     CRes <>
-   CResEffect   ends
 
 
 ----
@@ -477,15 +328,6 @@ CResFont
 | 0x38       | 4        | void\*                                 | font                          |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CResGame     struct
-     m_cRes     CRes <>
-     font       dd ? ; void*
-   CResGame     ends
-
 
 ----
 
@@ -499,15 +341,6 @@ CResGame
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 56       | :ref:`CRes<CRes>`                      | m_cRes                        |
 +------------+----------+----------------------------------------+-------------------------------+
-
-
-Asm Definition
-
-::
-
-   CResGame     struct
-     m_cRes     CRes <>
-   CResGame     ends
 
 
 ----
@@ -525,25 +358,6 @@ CResHelper
 | 0x04       | 8        | :ref:`CResRef<CResRef>`                | cResRef                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-C Definition
-
-::
-
-   typedef struct tagCResHelper {
-     DWORD         pRes;
-     CResRef       cResRef;
-   } CResHelper;   // size 0xC 
-
-
-Asm Definition
-
-::
-
-   CResHelper      struc
-     pRes          dd ?
-     cResRef       CResRef <>
-   CResHelper      ends ; size 0xC
-
 
 ----
 
@@ -559,16 +373,6 @@ CResINI
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x38       | 4        | int                                    | bLoaded                       |
 +------------+----------+----------------------------------------+-------------------------------+
-
-
-Asm Definition
-
-::
-
-   CResINI      struct
-     m_cRes     CRes <>
-     bLoaded    dd ?
-   CResINI      ends
 
 
 ----
@@ -594,21 +398,6 @@ CResInfTile
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CResInfTile      struct
-     m_cResTile     CResTile <>
-     nVRamTile      dd ?
-     renderCode     dd ? ; TILE_CODE 
-     pDualTileRes   dd ? ; CResTile* 
-     flags          db ? ; VRAM_FLAGS 
-                    db ? ; padding
-                    db ? ; padding
-                    db ? ; padding
-   CResInfTile      ends
-
 
 ----
 
@@ -628,17 +417,6 @@ CResItem
 +------------+----------+-------------------------------------------+-------------------------------+
 | 0x40       | 4        | :ref:`Item_Header_st<Item_Header_st>`\*   | pHeader                       |
 +------------+----------+-------------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CResItem     struct
-     m_cRes     CRes <>
-     pAbilities dd ? ; Item_ability_st*
-     pEffects   dd ? ; Item_effect_st*
-     pHeader    dd ? ; Item_Header_st*
-   CResItem     ends
 
 
 ----
@@ -672,23 +450,6 @@ CResMosaic
 | 0x58       | 4        | unsigned long\*                                                                            | pOffsets          |
 +------------+----------+--------------------------------------------------------------------------------------------+-------------------+
 
-Asm Definition
-
-::
-
-   CResMosaic           struct
-     m_cRes             CRes <>
-     pUncompressedData  dd ? ; void* 
-     nUncompressedSize  dd ? 
-     texture            dd ?
-     pMosaicHeaderV2    dd ? ; MOSAICHEADERV2* 
-     quads              dd ? ; MOSAICQUAD* 
-     pMosaicHeader      dd ? ; mosHeader_st* 
-     pPalettes          dd ? ; RGBQUAD* 
-     m_pData            dd ? ; unsigned char* 
-     pOffsets           dd ? ; unsigned long* 
-   CResMosaic           ends
-
 
 ----
 
@@ -706,16 +467,6 @@ CResPLT
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x3C       | 4        | :ref:`PLTHeader_st<PLTHeader_st>`\*    | m_pHeader                     |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CResPLT      struct
-     m_cRes     CRes <>
-     m_pData    dd ? ; unsigned char* 
-     m_pHeader  dd ? ; PLTHeader_st* 
-   CResPLT      ends
 
 
 ----
@@ -739,18 +490,6 @@ CResPVR
 | 0x44       |          | :ref:`CSize<CSize>`                    | size                          |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CResPVR      struct
-     m_cRes     CRes <>
-     texture    dd ?
-     format     dd ? 
-     filtering  dd ? 
-     _size      CSize <>
-   CResPVR      ends
-
 
 ----
 
@@ -769,16 +508,6 @@ CResPng
 | 0x40       | 4        | int                                    | texture                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CResPng      struct
-     m_cRes     CRes <>
-     _size      CSize <>
-     texture    dd ?
-   CResPng      ends
-
 
 ----
 
@@ -787,28 +516,13 @@ Asm Definition
 CResRef
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CResRef Class<CResRef Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 8        | unsigned char                          | m_resRef[8]                   |
 +------------+----------+----------------------------------------+-------------------------------+
-
-C Definition
-
-::
-
-   typedef struct tagCResRef {
-     CHAR          m_pchData[8];
-   } CResRef;      // size 0x8
-
-
-Asm Definition
-
-::
-
-   CResRef         struc
-     m_resRef      db 8 dup(?)
-   CResRef         ends ; size 0x8
 
 
 ----
@@ -830,17 +544,6 @@ CResSpell
 | 0x40       | 4        | :ref:`Spell_Header_st<Spell_Header_st>`\*   | pHeader                       |
 +------------+----------+---------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CResSpell    struct
-     m_cRes     CRes <>
-     pAbilities dd ? ; Spell_ability_st*
-     pEffects   dd ? ; Item_effect_st*
-     pHeader    dd ? ; Spell_Header_st*
-   CResSpell    ends
-
 
 ----
 
@@ -854,15 +557,6 @@ CResStore
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 56       | :ref:`CRes<CRes>`                      | m_cRes                        |
 +------------+----------+----------------------------------------+-------------------------------+
-
-
-Asm Definition
-
-::
-
-   CResStore    struct
-     m_cRes     CRes <>
-   CResStore    ends
 
 
 ----
@@ -879,15 +573,6 @@ CResText
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x38       | 4        | :ref:`CString<CString>`                | m_string                      |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CResText     struct
-     m_cRes     CRes <>
-     m_string   CString <>
-   CResText     ends
 
 
 ----
@@ -907,16 +592,6 @@ CResTile
 | 0x08       | 4        | :ref:`CResPVR<CResPVR>`\*              | pvr                           |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CResTile     struct
-     tis        CResTileSet <>
-     tileIndex  dd ?
-     pvr        CResPVR <>
-   CResTile     ends
-
 
 ----
 
@@ -932,15 +607,6 @@ CResTileSet
 +------------+----------+-----------------------------------------------+-------------------------------+
 | 0x38       | 4        | :ref:`ResFixedHeader_st<ResFixedHeader_st>`\* | h                             |
 +------------+----------+-----------------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CResTileSet  struct
-     m_cRes     CRes <>
-     h          dd ? ; ResFixedHeader_st
-   CResTileSet  ends
 
 
 ----
@@ -961,17 +627,6 @@ CResUI
 +------------+----------+-----------------------------------------------------------+-------------------------------+
 | 0x40       | 4        | :ref:`UI_ControlTableEntry_st<UI_ControlTableEntry_st>`\* | pControlTable                 |
 +------------+----------+-----------------------------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CResUI           struct
-     m_cRes         CRes <>
-     pHeader        dd ? ; UI_Header_st*
-     pPanels        dd ? ; UI_PanelHeader_st*
-     pControlTable  dd ? ; UI_ControlTableEntry_st*
-   CResUI           ends
 
 
 ----
@@ -999,20 +654,6 @@ CResWED
 | 0x4C       | 4        | :ref:`WED_PolyPoint_st<WED_PolyPoint_st>`\*           | pPolyPoints                   |
 +------------+----------+-------------------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CResWED              struct
-     m_cRes             CRes <>
-     pWEDHeader         dd ? ; WED_WedHeader_st*
-     pLayers            dd ? ; WED_LayerHeader_st*
-     pPolyHeader        dd ? ; WED_PolyHeader_st*
-     pScreenSectionList dd ? ; WED_ScreenSectionList*
-     pPolyList          dd ? ; WED_PolyList_st*
-     pPolyPoints        dd ? ; WED_PolyPoint_st*
-   CResWED              ends
-
 
 ----
 
@@ -1038,20 +679,6 @@ CResWave
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x4C       | 4        | :ref:`WAV_Header<WAV_Header>`\*        | m_pWaveFormatEx               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CResWave                 struct
-     m_cRes                 CRes <>
-     m_bCompressed          dd ?
-     m_bIsOgg               dd ?
-     m_nWaveNormalSize      dd ?
-     m_nWaveCompressedSize  dd ?
-     m_pWaveData            dd ? ; unsigned char*
-     m_pWaveFormatEx        dd ? ; WAV_Header*
-   CResWave                 ends
 
 
 ----
@@ -1103,36 +730,6 @@ CResWebm
 | 0x74       | 4        | float                                  | m_nOffsetY                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CResWebm             struct
-     m_cRes             CRes <>
-     m_pCodec           dd ? ; void* 
-     m_nFirstFrameTime  dd ?
-     m_nFrameWaitTime   dd ?
-     m_bComplete        db ?
-     m_bLooping         db ?
-                        db ? ; padding
-                        db ? ; padding
-     m_rRender          CRect <>
-     m_texture          dd ?
-     m_bGreyscale       db ?
-     m_bTiled           db ?
-                        db ? ; padding
-                        db ? ; padding
-     m_nTransparent     dd ?
-     m_bUseTone         db ?
-                        db ? ; padding
-                        db ? ; padding
-                        db ? ; padding
-     m_nDeltaX          real4 ?
-     m_nDeltaY          real4 ?
-     m_nOffsetX         real4 ?
-     m_nOffsetY         real4 ?
-   CResWebm             ends
-
 
 ----
 
@@ -1148,21 +745,14 @@ CResWorldMap
 +------------+----------+----------------------------------------+-------------------------------+
 
 
-Asm Definition
-
-::
-
-   CResWorldMap struct
-     m_cRes     CRes <>
-   CResWorldMap ends
-
-
 ----
 
 .. _CRuleTables:
 
 CRuleTables
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CRuleTables Class<CRuleTables Class>`
 
 +------------+----------+----------------------------------------+--------------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                            |
@@ -1655,256 +1245,4 @@ CRuleTables
 +------------+----------+----------------------------------------+--------------------------------------+
 | 0x2438     | 200      | int                                    | m_speechNums[50]                     |
 +------------+----------+----------------------------------------+--------------------------------------+
-
-Asm Definition
-
-::
-
-   CRuleTables                      struct
-     m_tReactionModCharisma         C2DArray <>
-     m_tReactionModReputation       C2DArray <>
-     m_tReputationMod               C2DArray <>
-     m_lNoDecodeList                CAIIdList <>
-     m_tProficiencySlots            C2DArray <>
-     m_tProficiencySlotsMax         C2DArray <>
-     m_tSkillPointsRace             C2DArray <>
-     m_tSkillPointsDex              C2DArray <>
-     m_tSkillPointsBard             C2DArray <>
-     m_tSkillPointsRanger           C2DArray <>
-     m_tSkillPointsShaman           C2DArray <>
-     m_tAbilityRaceReq              C2DArray <>
-     m_tAbilityRaceAdj              C2DArray <>
-     m_tAbilityClassReq             C2DArray <>
-     m_tAbilityClassMod             C2DArray <>
-     m_tAbilityDualClassSrcReq      C2DArray <>
-     m_tAbilityDualClassDstReq      C2DArray <>
-     m_tSavingThrowPriest           C2DArray <>
-     m_tSavingThrowWarrior          C2DArray <>
-     m_tSavingThrowWizard           C2DArray <>
-     m_tSavingThrowRogue            C2DArray <>
-     m_tSavingThrowDwarfHalfling    C2DArray <>
-     m_tSavingThrowGnome            C2DArray <>
-     m_tSavingThrowMonk             C2DArray <>
-     m_tClassHitPointsTables        C2DArray <>
-     m_tHitPointsCONBonus           C2DArray <>
-     m_tStartingGold                C2DArray <>
-     m_tTHAC0                       C2DArray <>
-     m_tMaxSpellsPriest             C2DArray <>
-     m_tMaxSpellsPriestPaladin      C2DArray <>
-     m_tMaxSpellsPriestRanger       C2DArray <>
-     m_tMaxSpellsMage               C2DArray <>
-     m_tMaxSpellsMageBard           C2DArray <>
-     m_tMaxSpellsMageSorcerer       C2DArray <>
-     m_tMaxSpellsMageDragonDisciple C2DArray <>
-     m_tMaxSpellsShaman             C2DArray <>
-     m_tMaxSpellsPriestWISBonus     C2DArray <>
-     m_tMaxSpellsPriestDruid        C2DArray <>
-     m_tKnownSpellsSorcerer         C2DArray <>
-     m_tKnownSpellsShaman           C2DArray <>
-     m_tBackstabMultiplier          C2DArray <>
-     m_tSneakAttack                 C2DArray <>
-     m_tCripplingStrike             C2DArray <>
-     m_tExperienceLevels            C2DArray <>
-     m_tLayOnHandsAmount            C2DArray <>
-     m_lInstantActions              CAIIdList <>
-     m_lAllowWhileSleepingActions   CAIIdList <>
-     m_tMonsterSummon1              C2DArray <>
-     m_tMonsterSummon2              C2DArray <>
-     m_tMonsterSummon3              C2DArray <>
-     m_tAnimalSummon1               C2DArray <>
-     m_tAnimalSummon2               C2DArray <>
-     m_tStrengthMod                 C2DArray <>
-     m_tStrengthModExtra            C2DArray <>
-     m_tIntoxicationMod             C2DArray <>
-     m_tFatigueMod                  C2DArray <>
-     m_tEffectText                  C2DArray <>
-     m_tPlayerInteraction           C2DArray <>
-     m_tNumSpells                   C2DArray <>
-     m_tToolTips                    C2DArray <>
-     m_tStartArea                   C2DArray <>
-     m_tStartPos                    C2DArray <>
-     m_tSparkleColors               C2DArray <>
-     m_tMonths                      C2DArray <>
-     m_tYears                       C2DArray <>
-     m_tDexterityMod                C2DArray <>
-     m_tPostDialog                  C2DArray <>
-     m_tCharacterSounds             C2DArray <>
-     m_tRandomEquipment             C2DArray <>
-     m_tRandomTreasure              C2DArray <>
-     m_tRandomTreasureIWD           C2DArray <>
-     m_tRandomMagic                 C2DArray <>
-     m_tRandomScroll                C2DArray <>
-     m_tRandomWeapon                C2DArray <>
-     m_tInteractionDialog           C2DArray <>
-     m_tIntelligenceMod             C2DArray <>
-     m_tDonateRumor                 C2DArray <>
-     m_tAreaLinkageCaching          C2DArray <>
-     m_tAreaLinkageCachingSingle    C2DArray <>
-     m_tCacheValidation             C2DArray <>
-     m_tScriptDescription           C2DArray <>
-     m_tCharacterStateDescription   C2DArray <>
-     m_tMasterArea                  C2DArray <>
-     m_tMovieDescription            C2DArray <>
-     m_tSpellDescription            C2DArray <>
-     m_tBountyChance                C2DArray <>
-     m_tNPCLevel                    C2DArray <>
-     m_tNPCLevel25                  C2DArray <>
-     m_tDeathSounds                 C2DArray <>
-     m_tAlignment                   C2DArray <>
-     m_tReputationStoreMod          C2DArray <>
-     m_tReputationStart             C2DArray <>
-     m_tXPCap                       C2DArray <>
-     m_tWeaponSpecialization        C2DArray <>
-     m_tWeaponAttacks               C2DArray <>
-     m_tLore                        C2DArray <>
-     m_tLoreBonus                   C2DArray <>
-     m_tCharismaStoreMod            C2DArray <>
-     m_tRaiseDeadCost               C2DArray <>
-     m_tHappiness                   C2DArray <>
-     m_tReputationDescription       C2DArray <>
-     m_tPortraitReplacement         C2DArray <>
-     m_tIntoxication                C2DArray <>
-     m_tCustomSound                 C2DArray <>
-     m_tExclusiveItems              C2DArray <>
-     m_lChaseActions                CAIIdList <>
-     m_lVEFProjectile               CAIIdList <>
-     m_lProjectile                  CAIIdList <>
-     m_tContingencyConditions       C2DArray <>
-     m_tContingencyTargets          C2DArray <>
-     m_tAbilitiesStart              C2DArray <>
-     m_tWeaponProficiencies         C2DArray <>
-     m_tClassAbilitiesFighterTrue   C2DArray <>
-     m_tClassAbilitiesFighterBerserker C2DArray <>
-     m_tClassAbilitiesFighterWizardslayer C2DArray <>
-     m_tClassAbilitiesFighterKensai C2DArray <>
-     m_tClassAbilitiesPaladinTrue   C2DArray <>
-     m_tClassAbilitiesPaladinCavalier C2DArray <>
-     m_tClassAbilitiesPaladinInquisitor C2DArray <>
-     m_tClassAbilitiesPaladinUndeadhunter C2DArray <>
-     m_tClassAbilitiesPaladinFallen C2DArray <>
-     m_tClassAbilitiesRangerTrue    C2DArray <>
-     m_tClassAbilitiesRangerFeralan C2DArray <>
-     m_tClassAbilitiesRangerStalker C2DArray <>
-     m_tClassAbilitiesRangerBeastmaster C2DArray <>
-     m_tClassAbilitiesRangerFallen  C2DArray <>
-     m_tClassAbilitiesThiefTrue     C2DArray <>
-     m_tClassAbilitiesThiefAssassin C2DArray <>
-     m_tClassAbilitiesThiefBountyhunter C2DArray <>
-     m_tClassAbilitiesThiefSwashbuckler C2DArray <>
-     m_tClassAbilitiesBardTrue      C2DArray <>
-     m_tClassAbilitiesBardBlade     C2DArray <>
-     m_tClassAbilitiesBardJester    C2DArray <>
-     m_tClassAbilitiesBardSkald     C2DArray <>
-     m_tClassAbilitiesDruidTrue     C2DArray <>
-     m_tClassAbilitiesShamanTrue    C2DArray <>
-     m_tClassAbilitiesDruidTotemicdruid C2DArray <>
-     m_tClassAbilitiesDruidShapeshifter C2DArray <>
-     m_tClassAbilitiesDruidBeastfriend C2DArray <>
-     m_tClassAbilitiesClericTrue    C2DArray <>
-     m_tClassAbilitiesClericTalos   C2DArray <>
-     m_tClassAbilitiesClericHelm    C2DArray <>
-     m_tClassAbilitiesClericLathander C2DArray <>
-     m_tClassAbilitiesMageTrue      C2DArray <>
-     m_tClassAbilitiesMageAbjurer   C2DArray <>
-     m_tClassAbilitiesMageNecromancer C2DArray <>
-     m_tClassAbilitiesMageTransmuter C2DArray <>
-     m_tClassAbilitiesMageDiviner   C2DArray <>
-     m_tClassAbilitiesMageConjurer  C2DArray <>
-     m_tClassAbilitiesMageInvoker   C2DArray <>
-     m_tClassAbilitiesMageIllusionist C2DArray <>
-     m_tClassAbilitiesMageEnchanter C2DArray <>
-     m_tClassAbilitiesMonkTrue      C2DArray <>
-     m_tClassAbilitiesMonkDarkMoon  C2DArray <>
-     m_tClassAbilitiesMonkSunSoul   C2DArray <>
-     m_tClassAbilitiesBarbarianTrue C2DArray <>
-     m_tSpellAutmaticPicker         C2DArray <>
-     m_tSpellAutmaticPickerShaman   C2DArray <>
-     m_tDualClassAllowed            C2DArray <>
-     m_tRandomColors                C2DArray <>
-     m_tSpawnGroup                  C2DArray <>
-     m_tItemUseAnimation            C2DArray <>
-     m_tRangerHatedRace             C2DArray <>
-     m_tXPBonus                     C2DArray <>
-     m_tCleanAir                    C2DArray <>
-     m_tSplashScreens               C2DArray <>
-     m_tLevelModWildMage            C2DArray <>
-     m_tKitTable                    C2DArray <>
-     m_tKitList                     C2DArray <>
-     m_apKitList                    dd 256 dup (?) ; C2DArray*
-     m_tSoundEnvironmentResRef      C2DArray <>
-     m_tSoundEnvironmentEnvirons    C2DArray <>
-     m_tItemDialog                  C2DArray <>
-     m_tLoadingHints                C2DArray <>
-     m_tSchoolMessage               C2DArray <>
-     m_tSecTypeMessage              C2DArray <>
-     m_tContingencyExceptions       C2DArray <>
-     m_tClassAbbreviations          C2DArray <>
-     m_tNumLevelUpAbilities         C2DArray <>
-     m_tXPList                      C2DArray <>
-     m_tTracking                    C2DArray <>
-     m_tMovieSoundOverride          C2DArray <>
-     m_t25StartEquipment            C2DArray <>
-     m_tWish                        C2DArray <>
-     m_tEntries                     C2DArray <>
-     m_tLoadingHints25              C2DArray <>
-     m_tStartingWeapon              C2DArray <>
-     m_tFamiliars                   C2DArray <>
-     m_tThiefSkills                 C2DArray <>
-     m_tThiefScaling                C2DArray <>
-     m_tClassTHAC0                  C2DArray <>
-     m_tClassInnateSkills           C2DArray <>
-     m_tTBPStartparty               C2DArray <>
-     m_tExtraAnimations             C2DArray <>
-     m_tExtraAnimationSpeeds        C2DArray <>
-     m_tWildMagic                   C2DArray <>
-     m_tItemType                    C2DArray <>
-     m_tRaceTHAC0Bonus              C2DArray <>
-     m_tClassColours                C2DArray <>
-     m_tRaceColours                 C2DArray <>
-     m_tSlotSteal                   C2DArray <>
-     m_tNumWeaponSlots              C2DArray <>
-     m_tItemUse                     C2DArray <>
-     m_tRaceText                    C2DArray <>
-     m_tTokenText                   C2DArray <>
-     m_tClassText                   C2DArray <>
-     m_tSetSnareLimit               C2DArray <>
-     m_tSummonLimit                 C2DArray <>
-     m_tWeaponStyleBonus            C2DArray <>
-     m_tBanterTimings               C2DArray <>
-     m_tClassRaceRestrictions       C2DArray <>
-     m_tMageRaceRestrictions        C2DArray <>
-     m_tClassSpecialBonuses         C2DArray <>
-     m_tMonkFists                   C2DArray <>
-     m_tSpellsToHide                C2DArray <>
-     m_tSpellProtections            C2DArray <>
-     m_tSpellAbilities              C2DArray <>
-     m_tSummoningTables             C2DArray <>
-     m_apSummoningList              dd ? ; C2DArray*
-     m_tSevenEyes                   C2DArray <>
-     m_tItemSpec                    C2DArray <>
-     m_tRaceFeatures                C2DArray <>
-     m_tAreaCreatureNodes           C2DArray <>
-     m_tFogAreaSettings             C2DArray <>
-     m_tFogPointSettings            C2DArray <>
-     m_tCampaign                    C2DArray <>
-     m_tPartyAI                     C2DArray <>
-     m_tContainerIcons              C2DArray <>
-     m_tFallen                      C2DArray <>
-     m_tAchievements                C2DArray <>
-     m_tStatValues                  C2DArray <>
-     m_lStats                       CAIIdList <>
-     m_tSaveName                    C2DArray <>
-     m_bPPHostile                   db ?
-     m_bPPReport                    db ?
-     m_bPPBreakInvis                db ?
-                                    db ? ; padding
-     m_nConcentration               dd ?
-     m_damageSounds                 CResRef 16 dup ({})
-     m_damageEffectAnims            CResRef 16 dup ({})
-     m_damageSplashAnims            CResRef 16 dup ({})
-     m_damageStrings                dd 16 dup (?)
-     m_speechOffsets                dd 50 dup (?)
-     m_speechNums                   dd 50 dup (?)
-   CRuleTables                      ends
-
 

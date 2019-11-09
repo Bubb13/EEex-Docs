@@ -47,20 +47,6 @@ CDLC
 | 0x18       | 4        | :ref:`CString<CString>`                | android_name                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CDLC           struct
-     name         CString <>
-     image        CString <>
-     title        dd ?
-     description  dd ?
-     ios_name     CString <>
-     purchased    dd ?
-     android_name CString <>
-   CDLC           ends
-
 
 ----
 
@@ -76,15 +62,6 @@ CDLC_Content
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x04       | 4        | int                                    | dlc_id                        |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CDLC_Content struct
-     name       CString <>
-     dlc_id     dd ?
-   CDLC_Content ends
 
 
 ----
@@ -107,18 +84,6 @@ CDWordArray
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x10       | 4        | int                                    | m_nGrowBy                     |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CDWordArray  struct
-     m_cObject  CObject <>
-     m_pData    dd ?
-     m_nSize    dd ?
-     m_nMaxSize dd ?
-     m_nGrowBy  dd ?
-   CDWordArray  ends
 
 
 ----
@@ -144,19 +109,6 @@ CDeathSound
 | 0x10       | 4        | :ref:`CAITrigger<CAITrigger>`\*        | m_pTrigger                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CDeathSound      struct
-     m_soundLength  dd ?
-     m_characterId  dd ?
-     m_soundNum     dw ?
-                    dw ? ; padding
-     m_started      dd ?
-     m_pTrigger     dd ? ; CAITrigger*
-   CDeathSound      ends
-
 
 ----
 
@@ -164,6 +116,8 @@ Asm Definition
 
 CDerivedStats
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CDerivedStats Class<CDerivedStats Class>`
 
 +------------+----------+---------------------------------------------------------------------------------------------+------------------------------------+
 | **Offset** | **Size** | **Type**                                                                                    | **Field**                          |
@@ -256,58 +210,6 @@ CDerivedStats
 +------------+----------+---------------------------------------------------------------------------------------------+------------------------------------+
 | 0x904      | 32       | unsigned long                                                                               | m_spellStates[8]                   |
 +------------+----------+---------------------------------------------------------------------------------------------+------------------------------------+
-
-Asm Definition
-
-::
-
-
-   CDerivedStats                        struct
-     m_cDerivedStatsTemplate            CDerivedStatsTemplate <>
-     m_cImmunitiesProjectile            CImmunitiesProjectile <>
-     m_cImmunitiesEffect                CImmunitiesEffect <>
-     m_cImmunitiesAIType                CImmunitiesAIType <>
-     m_cImmunitiesSpellLevel            CImmunitiesSpellLevel <>
-     m_cImmunitiesWeapon                CImmunitiesWeapon <>
-     m_cToHitBonusList                  CSelectiveBonusList <>
-     m_cDamageBonusList                 CSelectiveBonusList <>
-     m_cImmunitiesItemEquip             CImmunitiesItemEquipList <>
-     m_cImmunitiesItemTypeEquip         CImmunitiesItemTypeEquipList <>
-     m_cBounceProjectile                CImmunitiesProjectile <>
-     m_cBounceEffect                    CImmunitiesEffect <>
-     m_cBounceSpellLevel                CImmunitiesSpellLevel <>
-     m_cBounceProjectileLevelDec        CImmunitiesSpellLevelDecrementing <>
-     m_cImmunitiesProjectileLevelDec    CImmunitiesSpellLevelDecrementing <>
-     m_cImmunitiesSchool                CImmunitiesSchoolAndSecondary <>
-     m_cImmunitiesSecondaryType         CImmunitiesSchoolAndSecondary <>
-     m_cBounceSchool                    CImmunitiesSchoolAndSecondary <>
-     m_cBounceSecondaryType             CImmunitiesSchoolAndSecondary <>
-     m_cImmunitiesItemUse               CImmunitiesItemEquipList <>
-     m_cImmunitiesItemTypeUse           CImmunitiesItemTypeEquipList <>
-     m_cImmunitiesSpell                 CImmunitiesSpellList <>
-     m_cBounceSpell                     CImmunitiesSpellList <>
-     m_cImmunitiesSchoolLevelDec        CImmunitiesSchoolAndSecondaryDecrementing <>
-     m_cImmunitiesSecondaryTypeLevelDec CImmunitiesSchoolAndSecondaryDecrementing <>
-     m_cBounceSchoolLevelDec            CImmunitiesSchoolAndSecondaryDecrementing <>
-     m_cBounceSecondaryTypeLevelDec     CImmunitiesSchoolAndSecondaryDecrementing <>
-     m_cContingencyList                 CContingencyList <>
-     m_cRegeneratedPersistantEffectList CPersistantEffectListRegenerated <>
-     m_cSpellTrapLevelDec               CImmunitiesSpellLevelDecrementing <>
-     m_cSequencerList                   CContingencyList <>
-     m_appliedColorRanges               CColorRanges <>
-     m_appliedColorEffects              CColorEffects <>
-     m_memorizedSpellsLevelMage         CCreatureFileMemorizedSpellLevel 9 dup ({})
-     m_memorizedSpellsLevelPriest       CCreatureFileMemorizedSpellLevel 7 dup ({})
-     m_disabledButtons                  dd 16 dup (?)
-     m_disabledSpellTypes               dd 3 dup (?)
-     m_disableSpells                    dd ?
-     m_cExtraMeleeEffects               CApplyEffectList <>
-     m_cExtraRangedEffects              CApplyEffectList <>
-     m_cProtectionList                  CSelectiveBonusList <>
-     m_cSelectiveWeaponTypeList         CSelectiveWeaponTypeList <>
-     m_cCriticalEntryList               CCriticalEntryList <>
-     m_spellStates                      dd 8 dup (?)
-   CDerivedStats                        ends
 
 
 ----
@@ -723,214 +625,6 @@ CDerivedStatsTemplate
 | 0x2EC      | 4        | int                                    | m_bIgnoreDrainDeath                    |
 +------------+----------+----------------------------------------+----------------------------------------+
 
-Asm Definition
-
-::
-
-   CDerivedStatsTemplate                    struct
-     m_generalState                         dd ?
-     m_nMaxHitPoints                        dw ?
-     m_nArmorClass                          dw ?
-     m_nACCrushingMod                       dw ?
-     m_nACMissileMod                        dw ?
-     m_nACPiercingMod                       dw ?
-     m_nACSlashingMod                       dw ?
-     m_nTHAC0                               dw ?
-     m_nNumberOfAttacks                     dw ?
-     m_nSaveVSDeath                         dw ?
-     m_nSaveVSWands                         dw ?
-     m_nSaveVSPoly                          dw ?
-     m_nSaveVSBreath                        dw ?
-     m_nSaveVSSpell                         dw ?
-     m_nResistFire                          dw ?
-     m_nResistCold                          dw ?
-     m_nResistElectricity                   dw ?
-     m_nResistAcid                          dw ?
-     m_nResistMagic                         dw ?
-     m_nResistMagicFire                     dw ?
-     m_nResistMagicCold                     dw ?
-     m_nResistSlashing                      dw ?
-     m_nResistCrushing                      dw ?
-     m_nResistPiercing                      dw ?
-     m_nResistMissile                       dw ?
-     m_nLore                                dw ?
-     m_nLockPicking                         dw ?
-     m_nMoveSilently                        dw ?
-     m_nTraps                               dw ?
-     m_nPickPocket                          dw ?
-     m_nFatigue                             dw ?
-     m_nIntoxication                        dw ?
-     m_nLuck                                dw ?
-     m_nTracking                            dw ?
-     short m_nLevel1                        dw ?
-     short m_nLevel2                        dw ?
-     short m_nLevel3                        dw ?
-     m_nSex                                 dw ?
-     m_nSTR                                 dw ?
-     m_nSTRExtra                            dw ?
-     m_nINT                                 dw ?
-     m_nWIS                                 dw ?
-     m_nDEX                                 dw ?
-     m_nCON                                 dw ?
-     m_nCHR                                 dw ?
-     m_nXPValue                             dd ?
-     m_nXP                                  dd ?
-     m_nGold                                dd ?
-     m_nMoraleBreak                         dd ?
-     m_nMoraleRecoveryTime                  dd ?
-     m_nReputation                          dw ?
-     m_nHatedRace                           dw ?
-     m_nHideInShadows                       dd ?
-     m_nDetectIllusion                      dd ?
-     m_nSetTraps                            dd ?
-     m_nDamageBonus                         dw ?
-     m_nSpellFailureMage                    dw ?
-     m_nSpellFailurePriest                  dw ?
-     m_nSpellDurationModMage                dw ?
-     m_nSpellDurationModPriest              dw ?
-     m_nTurnUndeadLevel                     dw ?
-     m_nBackstabDamageMultiplier            dw ?
-     m_nLayOnHandsAmount                    dw ?
-     m_bHeld                                dd ?
-     m_bPolymorphed                         dd ?
-     m_bIdentifyMode                        dd ?
-     m_bEntangle                            dd ?
-     m_bSanctuary                           dd ?
-     m_bMinorGlobe                          dd ?
-     m_bShieldGlobe                         dd ?
-     m_bGrease                              dd ?
-     m_bWeb                                 dd ?
-     m_bCasterHold                          dd ?
-     m_nTranslucent                         dw ?
-     m_nEncumberance                        dw ?
-     m_nMissileTHAC0Bonus                   dw ?
-     m_nMagicDamageResistance               dw ?
-     m_nResistPoison                        dw ?
-     m_nSpellDurationModBard                dw ?
-     m_bDoNotJump                           dd ?
-     m_bAuraCleansing                       dd ?
-     m_nCastingType                         dd ?
-     m_nMentalSpeed                         dw ?
-     m_nPhysicalSpeed                       dw ?
-     m_nCastingLevelBonusMage               dw ?
-     m_nCastingLevelBonusCleric             dw ?
-     m_bSeeInvisible                        dd ?
-     m_bIgnoreDialogPause                   dd ?
-     m_nMinHitPoints                        dd ?
-     m_THAC0BonusRight                      dd ?
-     m_THAC0BonusLeft                       dd ?
-     m_DamageBonusRight                     dd ?
-     m_DamageBonusLeft                      dd ?
-     m_nStoneSkins                          dd ?
-     m_nProficiencyBastardSword             dd ?
-     m_nProficiencyLongSword                dd ?
-     m_nProficiencyShortSword               dd ?
-     m_nProficiencyAxe                      dd ?
-     m_nProficiencyTwoHandedSword           dd ?
-     m_nProficiencyKatana                   dd ?
-     m_nProficiencyScimitarWakisashiNinjaTo dd ?
-     m_nProficiencyDagger                   dd ?
-     m_nProficiencyWarhammer                dd ?
-     m_nProficiencySpear                    dd ?
-     m_nProficiencyHalberd                  dd ?
-     m_nProficiencyFlailMorningStar         dd ?
-     m_nProficiencyMace                     dd ?
-     m_nProficiencyQuarterStaff             dd ?
-     m_nProficiencyCrossbow                 dd ?
-     m_nProficiencyLongBow                  dd ?
-     m_nProficiencyShortBow                 dd ?
-     m_nProficiencyDart                     dd ?
-     m_nProficiencySling                    dd ?
-     m_nProficiencyBlackjack                dd ?
-     m_nProficiencyGun                      dd ?
-     m_nProficiencyMartialArts              dd ?
-     m_nProficiency2Handed                  dd ?
-     m_nProficiencySwordAndShield           dd ?
-     m_nProficiencySingleWeapon             dd ?
-     m_nProficiency2Weapon                  dd ?
-     m_nProficiencyClub                     dd ?
-     m_nExtraProficiency2                   dd ?
-     m_nExtraProficiency3                   dd ?
-     m_nExtraProficiency4                   dd ?
-     m_nExtraProficiency5                   dd ?
-     m_nExtraProficiency6                   dd ?
-     m_nExtraProficiency7                   dd ?
-     m_nExtraProficiency8                   dd ?
-     m_nExtraProficiency9                   dd ?
-     m_nExtraProficiency10                  dd ?
-     m_nExtraProficiency11                  dd ?
-     m_nExtraProficiency12                  dd ?
-     m_nExtraProficiency13                  dd ?
-     m_nExtraProficiency14                  dd ?
-     m_nExtraProficiency15                  dd ?
-     m_nExtraProficiency16                  dd ?
-     m_nExtraProficiency17                  dd ?
-     m_nExtraProficiency18                  dd ?
-     m_nExtraProficiency19                  dd ?
-     m_nExtraProficiency20                  dd ?
-     m_nPuppetMasterId                      dd ?
-     m_nPuppetMasterType                    dd ?
-     m_nPuppetType                          dd ?
-     m_nPuppetId                            dd ?
-     m_bCheckForBerserk                     dd ?
-     m_bBerserkStage1                       dd ?
-     m_bBerserkStage2                       dd ?
-     m_nDamageLuck                          dd ?
-     m_cBardSong                            CResRef <>
-     m_cBackStab                            CResRef <>
-     m_nVisualRange                         dd ?
-     m_bExplore                             dd ?
-     m_bThrullCharm                         dd ?
-     m_bSummonDisable                       dd ?
-     m_bSummonDisableAction                 dd ?
-     m_nHitBonus                            dw ?
-     m_nSpecificDamageBonus                 dw 11 dup (?)
-     m_nSchoolSaveBonus                     dw 12 dup (?)
-     m_nKit                                 dd ?
-     m_bForceSurge                          dd ?
-     m_nSurgeMod                            dd ?
-     m_bImprovedHaste                       dd ?
-     m_nScriptingStates                     dd 10 dup (?)
-     m_nMeleeTHAC0Bonus                     dd ?
-     m_nMeleeDamageBonus                    dd ?
-     m_nMissileDamageBonus                  dd ?
-     m_bDisableCircle                       dd ?
-     m_nFistTHAC0Bonus                      dd ?
-     m_nFistDamageBonus                     dd ?
-     m_sClassStringOverrideMixed            dd ?
-     m_sClassStringOverrideLower            dd ?
-     m_nClassTypeOverrideMixed              dw ?
-     m_nClassTypeOverrideLower              dw ?
-     m_bPreventSpellProtectionEffects       dd ?
-     m_bImmunityToBackStab                  dd ?
-     m_nLockPickingMTPBonus                 dd ?
-     m_nMoveSilentlyMTPBonus                dd ?
-     m_nTrapsMTPBonus                       dd ?
-     m_nPickPocketMTPBonus                  dd ?
-     m_nHideInShadowsMTPBonus               dd ?
-     m_nDetectIllusionMTPBonus              dd ?
-     m_nSetTrapsMTPBonus                    dd ?
-     m_bPreventAISlowDown                   dd ?
-     m_nExistanceDelayOverride              dd ?
-     m_bAnimationOnlyHaste                  dd ?
-     m_bNoPermanentDeath                    dd ?
-     m_bImmuneToTurnUndead                  dd ?
-     m_nChaosShield                         dd ?
-     m_bNPCBump                             dd ?
-     m_bUseAnyItem                          dd ?
-     m_nAssassinate                         dd ?
-     m_bSexChanged                          dd ?
-     m_nSpellFailureInnate                  dd ?
-     m_bImmuneToTracking                    dd ?
-     m_bDeadMagic                           dd ?
-     m_bImmuneToTimeStop                    dd ?
-     m_bImmuneToSequester                   dd ?
-     m_nStoneSkinsGolem                     dd ?
-     m_nLevelDrain                          dd ?
-     m_bDoNotDraw                           dd ?
-     m_bIgnoreDrainDeath                    dd ?
-   CDerivedStatsTemplate                    ends
-
 
 ----
 
@@ -944,14 +638,6 @@ CDialogFile
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | cResHelper                    |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CDialogFile  struct
-     cResHelper CResHelper <>
-   CDialogFile  ends
 
 
 ----
@@ -968,15 +654,6 @@ CDialogFile_ActionScript
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x04       | 4        | unsigned long                          | m_ScriptSize                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CDialogFile_ActionScript struct
-     m_ScriptOffset         dd ?
-     m_ScriptSize           dd ?
-   CDialogFile_ActionScript ends
 
 
 ----
@@ -997,17 +674,6 @@ CDialogFile_Dialog
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x0C       | 4        | unsigned long                          | m_StartingConditionalScript   |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CDialogFile_Dialog            struct
-     m_DialogText                dd ?
-     m_StartingReply             dd ?
-     m_ReplyCount                dd ?
-     m_StartingConditionalScript dd ?
-   CDialogFile_Dialog            ends
 
 
 ----
@@ -1043,24 +709,6 @@ CDialogFile_Header
 | 0x28       | 4        | unsigned long                          | m_Flags                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CDialogFile_Header           struct
-     m_DialogEntryCount         dd ?
-     m_DialogEntriesOffset      dd ?
-     m_ReplyEntryCount          dd ?
-     m_ReplyEntriesOffset       dd ?
-     m_StartingConditionsOffset dd ?
-     m_StartingConditionsCount  dd ?
-     m_ReplyConditionsOffset    dd ?
-     m_ReplyConditionsCount     dd ?
-     m_ActionsOffset            dd ?
-     m_ActionCount              dd ?
-     m_Flags                    dd ?
-   CDialogFile_Header           ends
-
 
 ----
 
@@ -1087,20 +735,6 @@ CDialogFile_Reply
 | 0x1C       | 4        | unsigned long                          | m_LinkedObjectDialogEntry     |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CDialogFile_Reply            struct
-     m_Flags                    dd ?
-     m_ReplyText                dd ?
-     m_JournalEntry             dd ?
-     m_ReplyConditional         dd ?
-     m_ActionScript             dd ?
-     m_LinkedObject             db 8 dup (?)
-     m_LinkedObjectDialogEntry  dd ?
-   CDialogFile_Reply            ends
-
 
 ----
 
@@ -1116,15 +750,6 @@ CDialogFile_ReplyConditional
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x04       | 4        | unsigned long                          | m_ScriptSize                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CDialogFile_ReplyConditional struct
-     m_ScriptOffset             dd ?
-     m_ScriptSize               dd ?
-   CDialogFile_ReplyConditional ends
 
 
 ----
@@ -1142,15 +767,6 @@ CDialogFile_StartingConditional
 | 0x04       | 4        | unsigned long                          | m_ScriptSize                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CDialogFile_StartingConditional struct
-     m_ScriptOffset                dd ?
-     m_ScriptSize                  dd ?
-   CDialogFile_StartingConditional ends
-
 
 ----
 
@@ -1159,17 +775,11 @@ Asm Definition
 CDungeonMaster
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CDungeonMaster Class<CDungeonMaster Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 44       | :ref:`CBaldurEngine<CBaldurEngine>`    | m_cBaldurEngine               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CDungeonMaster       struct
-     m_cBaldurEngine    CBaldurEngine <>
-   CDungeonMaster       ends
 

@@ -1,15 +1,16 @@
-.. _CVideoFunctions:
+.. _CVideo Class:
 
 ==========================
-CVideo Functions
+CVideo Class
 ==========================
 
 .. toctree::
    :maxdepth: 1
 
+The structure used for this class is :ref:`CVideo<CVideo>`
 
 +----------------------------------+
-| **Functions**                    |
+| **Quick Ref**                    |
 +----------------------------------+
 | void **CVideo\:\:~CVideo**\()    |
 +----------------------------------+

@@ -1,15 +1,16 @@
-.. _CVoice Functions:
+.. _CVoice Class:
 
 ==========================
-CVoice Functions
+CVoice Class
 ==========================
 
 .. toctree::
    :maxdepth: 1
 
+The structure used for this class is :ref:`CVoice<CVoice>`
 
 +-----------------------------------------------------------------------------+
-| **Functions**                                                               |
+| **Quick Ref**                                                               |
 +-----------------------------------------------------------------------------+
 | :ref:`CSound<CSound>`\* **CVoice\:\:GetSound**\()                           |
 +-----------------------------------------------------------------------------+

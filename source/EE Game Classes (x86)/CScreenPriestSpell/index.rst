@@ -1,15 +1,16 @@
-.. _CScreenPriestSpell Functions:
+.. _CScreenPriestSpell Class:
 
 ============================
-CScreenPriestSpell Functions
+CScreenPriestSpell Class
 ============================
 
 .. toctree::
    :maxdepth: 1
 
+The structure used for this class is :ref:`CScreenPriestSpell<CScreenPriestSpell>`
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
-| **Functions**                                                                                                                       |
+| **Quick Ref**                                                                                                                       |
 +-------------------------------------------------------------------------------------------------------------------------------------+
 | virtual void **CScreenPriestSpell\:\:EngineDestroyed**\()                                                                           |
 +-------------------------------------------------------------------------------------------------------------------------------------+

@@ -1,15 +1,16 @@
-.. _CScriptCache Functions:
+.. _CScriptCache Class:
 
 ==========================
-CScriptCache Functions
+CScriptCache Class
 ==========================
 
 .. toctree::
    :maxdepth: 1
 
+The structure used for this class is :ref:`CScriptCache<CScriptCache>`
 
 +-------------------------------------------------------------------------------------------------+
-| **Functions**                                                                                   |
+| **Quick Ref**                                                                                   |
 +-------------------------------------------------------------------------------------------------+
 | void **CScriptCache\:\:CScriptCache**\(long nSize)                                              |
 +-------------------------------------------------------------------------------------------------+

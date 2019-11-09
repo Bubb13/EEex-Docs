@@ -1,15 +1,16 @@
-.. _CSoundExtensionFile Functions:
+.. _CSoundExtensionFile Class:
 
 =============================
-CSoundExtensionFile Functions
+CSoundExtensionFile Class
 =============================
 
 .. toctree::
    :maxdepth: 1
 
+The structure used for this class is :ref:`CSoundExtensionFile<CSoundExtensionFile>`
 
 +----------------------------------------------------------------------------------------------------------+
-| **Functions**                                                                                            |
+| **Quick Ref**                                                                                            |
 +----------------------------------------------------------------------------------------------------------+
 | void **CSoundExtensionFile\:\:~CSoundExtensionFile**\()                                                  |
 +----------------------------------------------------------------------------------------------------------+

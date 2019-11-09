@@ -168,6 +168,15 @@ PLT
 * :ref:`PLTHeader_st<PLTHeader_st>`
 * :ref:`CResPLT<CResPLT>`
 
+.._PRO:
+
+PRO
+^^^^^^^^^^^
+
+* :ref:`CProjectileAreaFileFormat<CProjectileAreaFileFormat>`
+* :ref:`CProjectileBAMFileFormat<CProjectileBAMFileFormat>`
+* :ref:`CProjectileFileFormat<CProjectileFileFormat>`
+
 .. _SAV:
 
 SAV
@@ -235,6 +244,13 @@ TLK
 * :ref:`TLK_FILE_OVERRIDE_TEXT_BLOCK<TLK_FILE_OVERRIDE_TEXT_BLOCK>`
 * :ref:`TLK_FILE_OVERRIDE_TEXT_HEADER<TLK_FILE_OVERRIDE_TEXT_HEADER>`
 
+.. _WBM:
+
+WBM
+^^^^^^^^^^^
+
+* :ref:`CResWebm<CResWebm>`
+
 .. _WED:
 
 WED
@@ -251,9 +267,9 @@ WED
 * :ref:`WED_TiledObject_st<WED_TiledObject_st>`
 * :ref:`WED_WedHeader_st<WED_WedHeader_st>`
 
-.. _WMP:
+.. _WMAP:
 
-WMP
+WMAP
 ^^^^^^^^^^^
 
 * :ref:`CResWorldMap<CResWorldMap>`

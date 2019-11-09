@@ -35,18 +35,6 @@ CObArray
 | 0x10       | 4        | int                                    | m_nGrowBy                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CObArray     struct
-     m_cObject  CObject <>
-     m_pData    dd ? ; CObject**
-     m_nSize    dd ?
-     m_nMaxSize dd ?
-     m_nGrowBy  dd ?
-   CObArray     ends
-
 
 ----
 
@@ -54,6 +42,8 @@ Asm Definition
 
 CObList
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CObList Class<CObList Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -73,20 +63,6 @@ CObList
 | 0x18       | 4        | int                                    | m_nBlockSize                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CObList          struct
-     m_cObject      CObject <>
-     m_pNodeHead    dd ; CObList::CNode*
-     m_pNodeTail    dd ; CObList::CNode*
-     m_nCount       dd ?
-     m_pNodeFree    dd ; CObList::CNode*
-     m_pBlocks      dd ? ; CPlex* 
-     m_nBlockSize   dd ?
-   CObList          ends
-
 
 ----
 
@@ -105,16 +81,6 @@ CObList::CNode
 | 0x08       | 4        | :ref:`CObject<CObject>`                | data                          |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CObListCNode struct
-     pNext      dd ? ; CObList::CNode* 
-     pPrev      dd ? ; CObList::CNode* 
-     data       dd ? ; CObject* 
-   CObListCNode ends
-
 
 ----
 
@@ -128,14 +94,6 @@ CObject
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 4        | DWORD                                  | vfptr                         |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CObject stuct
-     vfptr dd ?
-   CObject ends
 
 
 ----
@@ -159,20 +117,6 @@ CObjectMarker
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CObjectMarker        stuct
-     m_cGameObject      CGameObject <>
-                        db ? ; padding
-     m_lstObjectIds     CList <>
-     m_bHealthBarMarker db ?
-                        db ? ; padding
-                        db ? ; padding
-                        db ? ; padding
-   CObjectMarker        ends
-
 
 ----
 
@@ -188,13 +132,4 @@ COverridePath
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x04       | 4        | int                                    | priority                      |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   COverridePath    struct
-     path           CString <>
-     priority       dd ?
-   COverridePath    ends
 

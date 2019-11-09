@@ -26,6 +26,8 @@ CW Structures
 CWarp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CWarp Class<CWarp Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
@@ -35,16 +37,6 @@ CWarp
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x08       | 28       | :ref:`CObList<CObList>`                | lTimers                       |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CWarp            struct
-     m_cObject      CObject <>
-     pLastEngine    dd ? ; CWarp* 
-     lTimers        CObList <>
-   CWarp            ends
 
 
 ----
@@ -68,18 +60,6 @@ CWeaponIdentification
 | 0x0C       | 4        | unsigned long                          | m_attributes                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CWeaponIdentification    struct
-     m_itemType             dw ?
-                            dw ? ; padding
-     m_itemFlags            dd ?
-     m_itemFlagMask         dd ?
-     m_attributes           dd ?
-   CWeaponIdentification    ends
-
 
 ----
 
@@ -87,6 +67,8 @@ Asm Definition
 
 CWeather
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CWeather Class<CWeather Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -144,42 +126,6 @@ CWeather
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CWeather                     struct
-     m_bOverCast                db ?
-                                db ? ; padding
-     m_nLightningFreq           dw ?
-     m_nCurrentWeather          dw ?
-     m_nWeatherLevel            dw ?
-     m_nWeatherEndTime          dd ?
-     m_nWeatherStageEndTime     dd ?
-     m_nWeatherDuration         dd ?
-     m_nLastTimeChecked         dd ?
-     m_nWindLevel               dw ?
-                                dw ? ; padding
-     m_rgbCurrentOverCastColor  dd ?
-     m_nDurationCounter         dd ?
-     m_snowStorm                CSnowStorm <>
-     m_rainStorm                CRainStorm <>
-     m_fog                      CFog <>
-     m_sndRain                  CSound <>
-     m_sndWind                  CSound <>
-     m_bWindOn                  db ?
-     m_bUpgrading               db ?
-                                db ? ; padding
-                                db ? ; padding
-     m_nNextTimeToStartChecking dd ?
-     m_nWindVolumeLevel         dd ?
-     m_nRainVolumeLevel         dd ?
-     m_bReInitialize            db ?
-                                db ? ; padding
-                                db ? ; padding
-                                db ? ; padding
-   CWeather                     ends
-
 
 ----
 
@@ -210,22 +156,6 @@ CWildSurge
 | 0x1C       | 4        | int                                    | m_bClearSelfRestriction       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CWildSurge                   struct
-     m_projectileOverride       dw ?
-                                dw ? ; padding
-     m_projectileSpeedMod       dd ?
-     m_durationMod              dd ?
-     m_levelMod                 dd ?
-     m_bApplyEffects            dd ?
-     m_saveMod                  dd ?
-     m_bClearTargetRestriction  dd ?
-     m_bClearSelfRestriction    dd ?
-   CWildSurge                   ends
-
 
 ----
 
@@ -242,15 +172,6 @@ CWnd
 | 0x04       | 4        | HWND\*                                 | m_hWnd                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CWnd             struct
-     m_cCmdTarget   CCmdTarget <>
-     m_hWnd         dd ? ; HWND*
-   CWnd             ends
-
 
 ----
 
@@ -258,6 +179,8 @@ Asm Definition
 
 CWorldMap
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CWorldMap Class<CWorldMap Class>`
 
 +------------+----------+-------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                  | **Field**                     |
@@ -272,18 +195,6 @@ CWorldMap
 +------------+----------+-------------------------------------------+-------------------------------+
 | 0x18       | 4        | :ref:`CWorldMapLinks<CWorldMapLinks>`\*\* | m_ppLinks                     |
 +------------+----------+-------------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CWorldMap    struct
-     m_cResRef  CResRef <>
-     m_cHeader  CWorldMapHeader <>
-     m_pData    dd ? ; CWorldMapData* 
-     m_ppAreas  dd ? ; CWorldMapArea** 
-     m_ppLinks  dd ? ; CWorldMapLinks** 
-   CWorldMap    ends
 
 
 ----
@@ -335,32 +246,6 @@ CWorldMapArea
 | 0x70       | 128      | unsigned long                          | nUnused[32]                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CWorldMapArea                struct
-     m_resCurrentArea           db 8 dup (?)
-     m_resOriginalArea          db 8 dup (?)
-     m_strName                  db 32 dup (?)
-     m_dwFlags                  dd ?
-     m_sequence                 dd ?
-     m_mapLocationX             dd ?
-     m_mapLocationY             dd ?
-     m_strLabel                 dd ?
-     m_strAreaName              dd ?
-     m_resAreaLoadMosaic        db 8 dup (?)
-     m_nNorthEdgeStartingLink   dd ?
-     m_nNorthEdgeCount          dd ?
-     m_nWestEdgeStartingLink    dd ?
-     m_nWestEdgeCount           dd ?
-     m_nSouthEdgeStartingLink   dd ?
-     m_nSouthEdgeCount          dd ?
-     m_nEastEdgeStartingLink    dd ?
-     m_nEastEdgeCount           dd ?
-     nUnused                    dd 32 dup (?)
-   CWorldMapArea                ends
-
 
 ----
 
@@ -401,27 +286,6 @@ CWorldMapData
 | 0x3C       | 124      | unsigned long                          | nUnused[31]                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CWorldMapData            struct
-     m_resMosaic            db 8 dup (?)
-     m_nWidth               dd ?
-     m_nHeight              dd ?
-     m_nMapID               dd ?
-     m_strTitle             dd ?
-     m_nStartCenteredOnX    dd ?
-     m_nStartCenteredOnY    dd ?
-     m_nAreas               dd ?
-     m_nAreasOffset         dd ?
-     m_nOffsetToLinks       dd ?
-     m_nLinks               dd ?
-     m_resAreaIcons         db 8 dup (?)
-     m_dwFlags              dd ?
-     nUnused                dd 31 dup (?)
-   CWorldMapData            ends
-
 
 ----
 
@@ -435,14 +299,6 @@ CWorldMapFile
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CWorldMapFile    struct
-     m_cResHelper   CResHelper <>
-   CWorldMapFile    ends
 
 
 ----
@@ -459,15 +315,6 @@ CWorldMapHeader
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x04       | 4        | unsigned long                          | m_nMapOffset                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CWorldMapHeader  struct
-     m_nMapCount    dd ?
-     m_nMapOffset   dd ?
-   CWorldMapHeader  ends
 
 
 ----
@@ -502,22 +349,4 @@ CWorldMapLinks
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x58       | 128      | unsigned long                          | nUnused[32]                   |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CWorldMapLinks               struct
-     m_nArea                    dd ?
-     m_entryPoint               db 32 dup (?)
-     m_nDistanceScale           dd ?
-     m_dwLinkFlags              dd ?
-     m_resRandomEncounterArea0  db 8 dup (?)
-     m_resRandomEncounterArea1  db 8 dup (?)
-     m_resRandomEncounterArea2  db 8 dup (?)
-     m_resRandomEncounterArea3  db 8 dup (?)
-     m_resRandomEncounterArea4  db 8 dup (?)
-     m_nEncounterProbability    dd ?
-     nUnused                    dd 32 dup (?)
-   CWorldMapLinks               ends
 

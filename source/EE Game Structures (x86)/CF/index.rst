@@ -45,21 +45,6 @@ CFeedbackEntry
 | 0x18       | 4        | :ref:`CString<CString>`                | stringIn                      |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CFeedbackEntry   struct
-     feedBackId     dw ?
-                    dw ? ; padding
-     int1           dd ?
-     int2           dd ?
-     int3           dd ?
-     ref1           dd ?
-     int4           dd ?
-     stringIn       CString <>
-   CFeedbackEntry   ends
-
 
 ----
 
@@ -67,6 +52,8 @@ Asm Definition
 
 CFile
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CFile Class<CFile Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -80,17 +67,6 @@ CFile
 | 0x0C       | 4        | :ref:`CString<CString>`                | m_strFileName                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CFile                struct
-     m_cObject          CObject <>
-     m_hFile            dd ?
-     m_bCloseOnDelete   dd ?
-     m_strFileName      CString <>
-   CFile                ends
-
 
 ----
 
@@ -98,6 +74,8 @@ Asm Definition
 
 CFileException
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CFileException Class<CFileException Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -111,17 +89,6 @@ CFileException
 | 0x14       | 4        | :ref:`CString<CString>`                | m_strFileName                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CFileException   struct
-     m_cException   CException <>
-     m_cause        dd ?
-     m_lOsError     dd ?
-     m_strFileName  CString <> 
-   CFileException   ends
-
 
 ----
 
@@ -129,6 +96,8 @@ Asm Definition
 
 CFileFind
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CFileFind Class<CFileFind Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -151,24 +120,6 @@ CFileFind
 +------------+----------+----------------------------------------+-------------------------------+
 
 
-Asm Definition
-
-::
-
-   CFileFind            struct
-     m_cObject          CObject <>
-     m_strRoot          CString <> 
-     m_pFoundInfo       dd ? ; void*
-     m_pNextInfo        dd ? ; void*
-     m_hContext         dd ? ; void*
-     m_bGotLast         dd ?
-     m_chDirSeparator   db ?
-                        db ? ; padding
-                        db ? ; padding
-                        db ? ; padding
-   CFileFind            ends
-
-
 ----
 
 .. _CFileReaderParms:
@@ -185,16 +136,6 @@ CFileReaderParms
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x08       | 4        | int                                    | m_nSrcLength                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CFileReaderParms struct
-     m_pSrc         dd ? ; unsigned char* 
-     m_pSrcCurrent  dd ? ; unsigned char* 
-     m_nSrcLength   dd ?
-   CFileReaderParms ends
 
 
 ----
@@ -226,23 +167,6 @@ CFileStatus
 |            | 4        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CFileStatus      struct
-     m_ctime        CTime <>
-     m_mtime        CTime <>
-     m_atime        CTime <>
-     m_size         dd ?
-     m_attribute    db ?
-     _m_padding     db ?
-                    db ? ; padding
-                    db ? ; padding
-     m_sFullName    CString <> 
-                    dd ? ; padding
-   CFileStatus      ends
-
 
 ----
 
@@ -250,6 +174,8 @@ Asm Definition
 
 CFileView
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CFileView Class<CFileView Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -262,17 +188,6 @@ CFileView
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x28       | 4        | long                                   | filePos                       |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CFileView    struct
-     f          file_t <>
-     v          view_t <>
-     fileSize   dd ?
-     filePos    dd ?
-   CFileView    ends
 
 
 ----
@@ -294,17 +209,6 @@ CFixedAlloc
 | 0x0C       | 4        | :ref:`CFixedAlloc::CNode<CFixedAllocCNode>`\* | m_pNodeFree                   |
 +------------+----------+-----------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CFixedAlloc      struct
-     m_nAllocSize   dd ?
-     m_nBlockSize   dd ?
-     m_pBlocks      dd ? ; CPlex*
-     m_pNodeFree    dd ? ; CFixedAlloc::CNode*
-   CFixedAlloc      ends
-
 
 ----
 
@@ -318,14 +222,6 @@ CFixedAlloc::CNode
 +------------+----------+-----------------------------------------------+-------------------------------+
 | 0x00       | 4        | :ref:`CFixedAlloc::CNode<CFixedAllocCNode>`\* | pNext                         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CFixedAlloc      struct
-     pNext          dd ? ; CFixedAlloc::CNode*
-   CFixedAlloc      ends
 
 
 ----
@@ -402,46 +298,4 @@ CFog
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x78       | 4        | unsigned long                          | outerColor                    |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CFog             struct
-     densityLast    dd ? ; float*
-     densityCurrent dd ? ; float*
-     densityNext    dd ? ; float*
-     N              dd ?
-     dt             real4 ?
-     diff           real4 ?
-     visc           real4 ?
-     force          real4 ?
-     source         real4 ?
-     dvel           dd ?
-     u              dd ? ; float*
-     v              dd ? ; float*
-     u_prev         dd ? ; float*
-     v_prev         dd ? ; float*
-     dens           dd ? ; float*
-     dens_prev      dd ? ; float*
-     pointEnabled   db ?
-                    db ? ; padding
-                    db ? ; padding
-                    db ? ; padding
-     pointAmount    dd ?
-     pointDuration  dd ?
-     pointPos       CPoint <>
-     pointUForce    real4 ?
-     pointVForce    real4 ?
-     explosionPos   CPoint <>
-     updateCounter  dd ?
-     fading         db ?
-     initialized    db ?
-                    db ? ; padding
-                    db ? ; padding
-     alpha          real4 ?
-     contrast       dd ?
-     innerColor     dd ?
-     outerColor     dd ?
-   CFog             ends
 

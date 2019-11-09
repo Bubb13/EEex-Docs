@@ -34,6 +34,8 @@ CLUACheats
 CLUAConsole
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+See :ref:`CLUAConsole Class<CLUAConsole Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
@@ -74,25 +76,6 @@ CLightning
 | 0x68       | 4        | :ref:`CAIAction<CAIAction>`\*          | m_pTargetAction               |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CLightning           struct
-    m_cGameObject       CGameObject <>
-                        db ? ; padding
-     m_nType            dw ?
-                        db ? ; padding
-                        db ? ; padding
-     m_posDest          CPoint <>
-     m_posSrc           CPoint <>
-     m_nConjureDuration dw ?
-     m_nSpellDuration   dw ?
-     m_destId           dd ?
-     m_srcId            dd ? 
-     m_pTargetAction    dd ? ; CAIAction*
-   CLightning           ends
-
 
 ----
 
@@ -122,20 +105,6 @@ CList
 | 0x18       | 4        | int                                    | m_nBlockSize                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CList            struct
-     m_cObject      CObject ?
-     m_pNodeHead    dd ? ; offset
-     m_pNodeTail    dd ? ; offset
-     m_nCount       dd ?
-     m_pNodeFree    dd ? ; offset
-     m_pBlocks      dd ? ; offset
-     m_nBlockSize   dd ?
-   CList            ends ; size 0x1C
-
 
 ----
 
@@ -156,15 +125,4 @@ CList::CNode
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x08       | 4        | long (or unsigned long)                | data                          |
 +------------+----------+----------------------------------------+-------------------------------+
-
-
-Asm Definition
-
-::
-
-   CListCNode   struct
-     pNext      dd ? ; offset
-     pPrev      dd ? ; offset
-     data       dd ?
-   CListCNode   ends
 

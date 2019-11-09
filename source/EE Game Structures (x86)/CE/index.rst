@@ -27,16 +27,6 @@ CException
 | 0x08       | 4        | int                                    | m_bReadyForDelete             |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CException           struct
-     m_cObject          CObject
-     m_bAutoDelete      dd ?
-     m_bReadyForDelete  dd ?
-   CException           ends
-
 
 ----
 
@@ -64,20 +54,4 @@ CExportCharacterHeader
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x56       | 6        | short                                  | m_quickItemsAbilityNum[3]     |
 +------------+----------+----------------------------------------+-------------------------------+
-
-
-Asm Definition
-
-::
-
-   CExportCharacterHeader       struct
-     m_name                     db 32 dup (?)
-     m_characterOffset          dd ?
-     m_characterSize            dd ?
-     m_quickWeaponsItemNum      dw 4 dup (?)
-     m_quickWeaponsAbilityNum   dw 4 dup (?)
-     m_quickSpellsSpellId       db (3 * 8) dup (?)
-     m_quickItemsItemNum        dw 3 dup (?)
-     m_quickItemsAbilityNum     dw 3 dup (?)
-   CExportCharacterHeader       ends
 

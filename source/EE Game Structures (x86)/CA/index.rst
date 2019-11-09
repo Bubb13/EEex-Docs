@@ -61,6 +61,8 @@ CA Structures
 CAIAction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CAIAction Class<CAIAction Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
@@ -91,26 +93,6 @@ CAIAction
 | 0x60       | 4        | :ref:`CString<CString>`                | m_source                      |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAIAction            struc
-     m_actionID         dw ?
-                        db ? ; padding
-                        db ? ; padding
-     m_actorID          CAIObjectType <>
-     m_acteeID          CAIObjectType <>
-     m_acteeID2         CAIObjectType <>
-     m_specificID       dd ?
-     m_specificID2      dd ?
-     m_specificID3      dd ?
-     m_string1          CString <>
-     m_string2          CString <>
-     m_dest             CPoint <>
-     m_internalFlags    dd ?
-     m_source           CString <>
-   CAIAction            ends ; size 0x64
 
 ----
 
@@ -119,19 +101,14 @@ Asm Definition
 CAICondition
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CAICondition Class<CAICondition Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_triggerList                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAICondition     struct
-     m_triggerList  CTypedPtrList <>
-   CAICondition     ends
 
 ----
 
@@ -148,14 +125,6 @@ CAIConditionResponse
 | 0x1C       | 32       | :ref:`CAIResponseSet<CAIResponseSet>`  | m_responseSet                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAIConditionResponse struct
-     m_condition        CAICondition <>
-     m_responseSet      CAIResponseSet <>
-   CAIConditionResponse ends
 
 ----
 
@@ -163,6 +132,8 @@ Asm Definition
 
 CAIGroup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CAIGroup Class<CAIGroup Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -176,17 +147,6 @@ CAIGroup
 | 0x08       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_memberList                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAIGroup         struc
-     m_groupId      dw ?
-                    db ? ; padding
-                    db ? ; padding
-     m_groupChanged dd ?
-     m_memberList   CTypedPtrList <>
-   CAIGroup         ends ; size 0x24
 
 ----
 
@@ -205,16 +165,6 @@ CAIId
 | 0x08       |          | :ref:`CString<CString>`                | m_start                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAIId        struct
-     m_id       dd ?
-     m_line     CString <>
-     m_start    CString <>
-   CAIId        ends
-
 
 ----
 
@@ -222,6 +172,8 @@ Asm Definition
 
 CAIIdList
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CAIIdList Class<CAIIdList Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -241,20 +193,6 @@ CAIIdList
 | 0x38       | 4        | long                                   | m_nArray                      |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAIIdList        struc
-     vfptr          dd ?
-     m_cResHelper   CResHelper <>
-     m_fileName     CString <>
-     m_idList       CTypedPtrList <>
-     m_faster       dd ?
-     m_pIdArray     dd ?
-     m_nArray       dd ?
-   CAIIdList        ends ; size 0x3C
-
 
 ----
 
@@ -269,14 +207,6 @@ CAINonPlayerScript
 | 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAINonPlayerScript   struc
-     m_cResHelper       CResHelper <>
-   CAINonPlayerScript   ends ; size 0xC
-
 
 ----
 
@@ -284,6 +214,8 @@ Asm Definition
 
 CAIObjectType
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CAIObjectType Class<CAIObjectType Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -308,23 +240,6 @@ CAIObjectType
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x13       | 1        | unsigned char                          | m_Alignment                   |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CAIObjectType    struc
-     m_name         CString <>
-     m_EnemyAlly    db ?
-     m_General      db ?
-     m_Race         db ?
-     m_Class        db ?
-     m_Instance     dd ?
-     m_SpecialCase  db 5 dup(?)
-     m_Specifics    db ?
-     m_Gender       db ?
-     m_Alignment    db ?
-   CAIObjectType    ends ; size 0x14
 
 **Notes**
 
@@ -352,14 +267,6 @@ CAIPlayerScript
 | 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAIPlayerScript  struc
-     m_cResHelper   CResHelper <>
-   CAIPlayerScript  ends ; size 0xC
-
 
 ----
 
@@ -367,6 +274,8 @@ Asm Definition
 
 CAIResponse
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CAIResponse Class<CAIResponse Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -381,18 +290,6 @@ CAIResponse
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x08       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_actionList                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CAIResponse          struc
-     m_weight           dw ?
-     m_responseNum      dw ?
-     m_responseSetNum   dw ?
-     m_scriptNum        dw ?
-     m_actionList       CTypedPtrList <>
-   CAIResponse          ends ; size 0x24
 
 
 ----
@@ -410,15 +307,6 @@ CAIResponseSet
 | 0x1C       | 4        | long                                   | m_weightTotal                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAIResponseSet       struc
-     m_responseList     CTypedPtrList <>
-     m_weightTotal      dd ?
-   CAIResponseSet       ends ; size 0x20
-
 
 ----
 
@@ -426,6 +314,8 @@ Asm Definition
 
 CAIScript
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CAIScript Class<CAIScript Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -435,15 +325,6 @@ CAIScript
 | 0x08       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_caList                      |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAIScript    struc
-     cResRef    CResRef ?
-     m_caList   CTypedPtrList <>
-   CAIScript    ends ; size 0x24
-
 
 ----
 
@@ -451,6 +332,8 @@ Asm Definition
 
 CAIScriptFile
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CAIScriptFile Class<CAIScriptFile Class>`
 
 +------------+----------+-------------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                        | **Field**                     |
@@ -484,28 +367,6 @@ CAIScriptFile
 | 0xAC       | 60       | :ref:`CAIIdList<CAIIdList>`                     | m_objects                     |
 +------------+----------+-------------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAIScriptFile        struc
-     m_parseMode        dw ?
-                        db ? ; padding
-                        db ? ; padding
-     m_lineNumber       dd ?
-     m_curScript        dd ?
-     m_curResponseSet   dd ?
-     m_curCondition     dd ?
-     m_curResponse      dd ?
-     m_errors           CString <>
-     m_file             CFile <>
-     source             CString <>
-     m_decompiledText   CString <>
-     m_actions          CAIIdList <>
-     m_triggers         CAIIdList <>
-     m_objects          CAIIdList <>
-   CAIScriptFile        ends ; size 0xE8
-
 
 ----
 
@@ -513,6 +374,8 @@ Asm Definition
 
 CAITrigger
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CAITrigger Class<CAITrigger Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -536,23 +399,6 @@ CAITrigger
 | 0x2C       | 4        | :ref:`CString<CString>`                | m_string2                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAITrigger       struc
-     m_triggerID    dw ?
-                    db ? ; padding
-                    db ? ; padding
-     m_specificID   dd ?
-     m_triggerCause CAIObjectType <>
-     m_flags        dd ?
-     m_specific2    dd ?
-     m_specific3    dd ?
-     m_string1      CString <>
-     m_string2      CString <>
-   CAITrigger       ends ; size 0x30
-
 
 ----
 
@@ -560,6 +406,8 @@ Asm Definition
 
 CAIUtil
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See :ref:`CAIUtil Class<CAIUtil Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -586,17 +434,6 @@ CAOEEntry
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x14       | 4        | unsigned long                          | m_color                       |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CAOEEntry    struc
-     m_type     dd ?
-     m_center   CPoint <>
-     m_radius   CPoint <>
-     m_color    dd ?
-   CAOEEntry    ends
 
 **Notes**
 
@@ -639,22 +476,6 @@ CAbilityData
 | 0x24       | 4        | :ref:`CString<CString>`                | m_sAlignmentRestriction       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAbilityData                 struct
-     m_icon                     CResRef <>
-     m_name                     dd ?
-     m_effect                   CString <>
-     m_nMinLevel                dd ?
-     m_nMaxLevel                dd ?
-     m_nNumAllowed              dd ?
-     m_sPrereq                  CString <>
-     m_sExcludedBy              CString <>
-     m_sAlignmentRestriction    CString <>
-   CAbilityData                 ends
-
 
 ----
 
@@ -681,20 +502,6 @@ CAbilityId
 | 0x10       | 4        | unsigned long                          | m_toolTip                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAbilityId       struc
-     m_itemType     dw ?
-     m_itemNum      dw ?
-     m_abilityNum   dw ?
-     m_res          CResRef <>
-     m_targetType   db ?
-     m_targetCount  db ?
-     m_toolTip      dd ?
-   CAbilityId       ends ; size 0x14
-
 
 ----
 
@@ -709,14 +516,6 @@ CApplyEffectList
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CApplyEffectList  struc
-     m_cTypedPtrList CTypedPtrList <>
-   CApplyEffectList  ends ; size 0x1C
-
 
 ----
 
@@ -730,14 +529,6 @@ CAreaFile
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CAreaFile        struc
-     m_cResHelper   CResHelper <>
-   CAreaFile        ends ; size 0xC
 
 
 ----
@@ -760,18 +551,6 @@ CAreaFileCharacterEntryPoint
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x28       | 64       | unsigned char                          | m_notUsed[64]                 |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CAreaFileCharacterEntryPoint struct
-     m_entryName                db 32 dup (?)
-     m_startX                   dw ?
-     m_startY                   dw ?
-     m_facing                   dd ?
-     m_notUsed                  db 64 dup (?)
-   CAreaFileCharacterEntryPoint ends
 
 
 ----
@@ -838,40 +617,6 @@ CAreaFileContainer
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x88       | 56       | unsigned char                          | m_notUsed[56]                 |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CAreaFileContainer           struct
-     m_scriptName               db 32 dup (?)
-     m_posX                     dw ?
-     m_posY                     dw ?
-     m_containerType            dw ?
-     m_lockDifficulty           dw ?
-     m_dwFlags                  dd ?
-     m_trapDetectionDifficulty  dw ?
-     m_trapRemovalDifficulty    dw ?
-     m_trapActivated            dw ?
-     m_trapDetected             dw ?
-     m_posXTrapOrigin           dw ?
-     m_posYTrapOrigin           dw ?
-     m_boundingRectLeft         dw ?
-     m_boundingRectTop          dw ?
-     m_boundingRectRight        dw ?
-     m_boundingRectBottom       dw ?
-     m_startingItem             dd ?
-     m_itemCount                dd ?
-     m_script                   db 8 dup (?)
-     m_pickPointStart           dd ?
-     m_pickPointCount           dw ?
-     m_triggerRange             dw ?
-     m_ownedBy                  db 32 dup (?)
-     m_keyType                  db 8 dup (?)
-     m_breakDifficulty          dd ?
-     m_strNotPickable           dd ?
-     m_notUsed                  db 56 dup (?)
-   CAreaFileContainer           ends
 
 
 ----
@@ -942,42 +687,6 @@ CAreaFileCreature
 +------------+----------+----------------------------------------+-------------------------------+
 | 0xB0       | 96       | unsigned char                          | m_notUsed[96]                 |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CAreaFileCreature            struct
-     m_scriptName               db 32 dup (?)
-     m_posX                     dw ?
-     m_posY                     dw ?
-     m_startingPosX             dw ?
-     m_startingPosY             dw ?
-     m_dwFlags                  dd ?
-     m_type                     dw ?
-     m_cFirstResSlot            db ?
-                                db ? ; structureAlignment1
-     m_animationType            dd ?
-     m_facing                   dw ?
-                                dw ? ; structureAlignment2
-     m_expirationTime           dd ?
-     m_huntingRange             dw ?
-     m_followRange              dw ?
-     m_timeOfDayVisible         dd ?
-     m_numberTimesTalkedTo      dd ?
-     m_dialogOverride           db 8 dup (?)
-     m_overrideScriptOverride   db 8 dup (?)
-     m_generalScriptOverride    db 8 dup (?)
-     m_classScriptOverride      db 8 dup (?)
-     m_raceScriptOverride       db 8 dup (?)
-     m_defaultScriptOverride    db 8 dup (?)
-     m_specificScriptOverride   db 8 dup (?)
-     m_creatureData             db 8 dup (?)
-     m_creatureOffset           dd ?
-     m_creatureSize             dd ?
-     m_sName                    db 32 dup (?)
-     m_notUsed                  db 96 dup (?)
-   CAreaFileCreature            ends
 
 
 ----
@@ -1073,54 +782,6 @@ CAreaFileDoorObject
 | 0xBC       | 12       | unsigned long                          | m_notUsed[3]                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAreaFileDoorObject           struct
-     m_scriptName                db 32 dup (?)
-     m_doorID                    db 8 dup (?)
-     m_dwFlags                   dd ?
-     m_openSelectionPointStart   dd ?
-     m_openSelectionPointCount   dw ?
-     m_closedSelectionPointCount dw ?
-     m_closedSelectionPointStart dd ?
-     m_openBoundingRectLeft      dw ?
-     m_openBoundingRectTop       dw ?
-     m_openBoundingRectRight     dw ?
-     m_openBoundingRectBottom    dw ?
-     m_closedBoundingRectLeft    dw ?
-     m_closedBoundingRectTop     dw ?
-     m_closedBoundingRectRight   dw ?
-     m_closedBoundingRectBottom  dw ?
-     m_openSearchSquaresStart    dd ?
-     m_openSearchSquaresCount    dw ?
-     m_closedSearchSquaresCount  dw ?
-     m_closedSearchSquaresStart  dd ?
-     m_hitPoints                 dw ?
-     m_armourClass               dw ?
-     m_openSound                 db 8 dup (?)
-     m_closeSound                db 8 dup (?)
-     m_cursorType                dd ?
-     m_trapDetectionDifficulty   dw ?
-     m_trapDisarmingDifficulty   dw ?
-     m_trapActivated             dw ?
-     m_trapDetected              dw ?
-     m_posXTrapOrigin            dw ?
-     m_posYTrapOrigin            dw ?
-     m_keyType                   db 8 dup (?)
-     m_script                    db 8 dup (?)
-     m_detectionDifficulty       dd ?
-     m_lockDifficulty            dd ?
-     m_posXWalkTo1               dw ?
-     m_posYWalkTo1               dw ?
-     m_posXWalkTo2               dw ?
-     m_posYWalkTo2               dw ?
-     m_strNotPickable            dd ?
-     m_triggerName               db 32 dup (?)
-     m_notUsed                   dd 3 dup (?)
-   CAreaFileDoorObject           ends
-
 
 ----
 
@@ -1168,31 +829,6 @@ CAreaFileHeader
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x4B       | 1        | unsigned char                          | m_unused                      |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CAreaFileHeader          struct
-     m_areaName             db 8 dup (?)
-     m_lastSaved            dd ?
-     m_flags                dd ?
-     m_areaEdgeNorth        db 8 dup (?)
-     m_flagsEdgeNorth       dd ?
-     m_areaEdgeEast         db 8 dup (?)
-     m_flagsEdgeEast        dd ?
-     m_areaEdgeSouth        db 8 dup (?)
-     m_flagsEdgeSouth       dd ?
-     m_areaEdgeWest         db 8 dup (?)
-     m_flagsEdgeWest        dd ?
-     m_areaType             dw ?
-     m_rainProbability      dw ?
-     m_snowProbability      dw ?
-     m_fogProbability       dw ?
-     m_lightningProbability dw ?
-     m_waterAlpha           db ?
-     m_unused               db ?
-   CAreaFileHeader          ends
 
 
 ----
@@ -1282,51 +918,6 @@ CAreaFileOffsets
 | 0x90       | 56       | unsigned long                          | m_notUsed[14]                           |
 +------------+----------+----------------------------------------+-----------------------------------------+
 
-Asm Definition
-
-::
-
-   CAreaFileOffsets                             struct
-     m_creatureTableOffset                      dd ?
-     m_creatureTableCount                       dw ?
-     m_triggerObjectListCount                   dw ?
-     m_triggerObjectListOffset                  dd ?
-     m_randomMonsterSpawningPointTableOffset    dd ?
-     m_randomMonsterSpawningPointTableCount     dd ?
-     m_characterEntryPointTableOffset           dd ?
-     m_characterEntryPointTableCount            dd ?
-     m_containerListOffset                      dd ?
-     m_containerListCount                       dw ?
-     m_itemObjectsCount                         dw ?
-     m_itemObjectsOffset                        dd ?
-     m_pointsOffset                             dd ?
-     m_pointsCount                              dw ?
-     m_soundObjectCount                         dw ?
-     m_soundObjectOffset                        dd ?
-     m_areaScriptVariablesOffset                dd ?
-     m_areaScriptVariablesCount                 dw ?
-     m_tiledObjectFlagsCount                    dw ?
-     m_tiledObjectFlagsOffset                   dd ?
-     m_script                                   db 8 dup (?)
-     m_visibilityMapCount                       dd ?
-     m_visibilityMapOffset                      dd ?
-     m_doorObjectListCount                      dd ?
-     m_doorObjectListOffset                     dd ?
-     m_staticObjectListCount                    dd ?
-     m_staticObjectListOffset                   dd ?
-     m_tiledObjectListCount                     dd ?
-     m_tiledObjectListOffset                    dd ?
-     m_areaSoundsAndMusicOffset                 dd ?
-     m_restingEncounterOffset                   dd ?
-     m_userMapNotesOffset                       dd ?
-     m_userMapNotesCount                        dd ?
-     m_projectileTableOffset                    dd ?
-     m_projectileTableCount                     dd ?
-     m_restMovieDay                             db 8 dup (?)
-     m_restMovieNight                           db 8 dup (?)
-     m_notUsed                                  dd 14 dup (?)
-   CAreaFileOffsets                             ends
-
 
 ----
 
@@ -1360,24 +951,6 @@ CAreaFileProjectileObject
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x1B       | 1        | char                                   | m_portraitNum                 |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CAreaFileProjectileObject    struct
-     m_resref                   db 8 dup (?)
-     m_effectListOffset         dd ?
-     m_effectListCount          dw ?
-     m_projectileID             dw ?
-     m_nDelayCount              dw ?
-     m_nRepetitionCount         dw ?
-     m_posX                     dw ?
-     m_posY                     dw ?
-     m_posZ                     dw ?
-     m_targetType               db ?
-     m_portraitNum              db ?
-   CAreaFileProjectileObject    ends
 
 
 ----
@@ -1431,33 +1004,6 @@ CAreaFileRandomMonsterSpawningPoint
 | 0xA2       | 38       | unsigned short                         | m_notUsed[19]                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAreaFileRandomMonsterSpawningPoint  struct
-     m_scriptName                       db 32 dup (?)
-     m_posX                             dw ?
-     m_posY                             dw ?
-     m_randomCreature                   db (10 * 8) dup (?) 
-     m_randomCreatureNum                dw ?
-     m_difficulty                       dw ?
-     m_spawningRate                     dw ?
-     m_wFlags                           dw ?
-     m_lifeSpan                         dd ?
-     m_huntingRange                     dw ?
-     m_followRange                      dw ?
-     m_maxTypeNum                       dw ?
-     m_activated                        dw ?
-     m_timeOfDayVisible                 dd ?
-     m_probDay                          dw ?
-     m_probNight                        dw ?
-     m_frequency                        dd ?
-     m_countdown                        dd ?
-     m_weights                          db 10 dup (?)
-     m_notUsed                          dw 19 dup (?) 
-   CAreaFileRandomMonsterSpawningPoint  ends
-
 
 ----
 
@@ -1499,28 +1045,6 @@ CAreaFileRestEncounter
 +------------+----------+----------------------------------------+-------------------------------+
 | 0xB8       | 44       | unsigned long                          | m_notUsed[11]                 |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CAreaFileRestEncounter   struct
-     m_scriptName           db 32 dup (?)
-     m_randomCreatureString dd 10 dup (?)
-     m_randomCreature       db (10 * 8) dup (?) 
-     m_randomCreatureNum    dw ?
-     m_difficulty           dw ?
-     m_lifeSpan             dd ?
-     m_huntingRange         dw ?
-     m_followRange          dw ?
-     m_maxTypeNum           dw ?
-     m_activated            dw ?
-     m_probDay              dw ?
-     m_probNight            dw ?
-     m_wFlags               dw ?
-     m_weights              db 10 dup (?)
-     m_notUsed              dd 11 dup (?)
-   CAreaFileRestEncounter   ends
 
 
 ----
@@ -1566,29 +1090,6 @@ CAreaFileSoundObject
 | 0x94       | 64       | unsigned long                          | m_notUsed[16]                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAreaFileSoundObject     struct
-     m_scriptName           db 32 dup (?)
-     m_posX                 dw ?
-     m_posY                 dw ?
-     m_range                dw ?
-     structureAlignment1    dw ?
-     m_pitchVariance        dd ?
-     m_volumeVariance       dw ?
-     m_volume               dw ?
-     m_soundObject          db (10 * 8) dup (?)
-     m_soundObjectNum       dw ?
-     structureAlignment2    dw ?
-     m_period               dd ?
-     m_periodVariance       dd ?
-     m_timeOfDayActive      dd ?
-     m_dwFlags              dd ?
-     m_notUsed              dd 16 dup (?)
-   CAreaFileSoundObject     ends
-
 
 ----
 
@@ -1631,28 +1132,6 @@ CAreaFileStaticObject
 | 0x4A       | 2        | unsigned short                         | m_sizeY                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAreaFileStaticObject    struct
-     m_scriptName           db 32 dup (?)
-     m_posX                 dw ?
-     m_posY                 dw ?
-     m_timeOfDayVisible     dd ?
-     m_resref               db 8 dup (?)
-     m_nSequence            dd ?
-     m_dwFlags              dd ?
-     m_height               dw ?
-     m_translucency         dw ?
-     m_startFrameRange      dw ?
-     m_probability          db ?
-     m_period               db ?
-     m_paletteResref        db 8 dup (?)
-     m_sizeX                dw ?
-     m_sizeY                dw ?
-   CAreaFileStaticObject    ends
-
 
 ----
 
@@ -1680,21 +1159,6 @@ CAreaFileTiledObject
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x38       | 48       | unsigned long                          | m_notUsed[12]                 |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CAreaFileTiledObject             struct
-     m_scriptName                   db 32 dup (?)
-     m_tileID                       db 8 dup (?)
-     m_dwFlags                      dd ?
-     m_primarySearchSquaresStart    dd ?
-     m_primarySearchSquaresCount    dw ?
-     m_secondarySearchSquaresCount  dw ?
-     m_secondarySearchSquaresStart  dd ?
-     m_notUsed                      dd 12 dup (?)
-   CAreaFileTiledObject             ends
 
 
 ----
@@ -1758,38 +1222,6 @@ CAreaFileTriggerObject
 | 0x88       | 60       | unsigned long                          | m_notUsed[15]                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAreaFileTriggerObject       struct
-     m_scriptName               db 32 dup (?)
-     m_triggerType              dw ?
-     m_boundingRectLeft         dw ?
-     m_boundingRectTop          dw ?
-     m_boundingRectRight        dw ?
-     m_boundingRectBottom       dw ?
-     m_pickPointCount           dw ?
-     m_pickPointStart           dd ?
-     m_triggerValue             dd ?
-     m_cursorType               dd ?
-     m_newArea                  db 8 dup (?)
-     m_newEntryPoint            db 32 dup (?)
-     m_dwFlags                  dd ?
-     m_description              dd ?
-     m_trapDetectionDifficulty  dw ?
-     m_trapDisarmingDifficulty  dw ?
-     m_trapActivated            dw ?
-     m_trapDetected             dw ?
-     m_posXTrapOrigin           dw ?
-     m_posYTrapOrigin           dw ?
-     m_keyType                  db 8 dup (?)
-     m_script                   db 8 dup (?)
-     m_transitionWalkToX        dw ?
-     m_transitionWalkToY        dw ?
-     m_notUsed                  dd 15 dup (?)
-   CAreaFileTriggerObject       ends
-
 
 ----
 
@@ -1805,15 +1237,6 @@ CAreaPoint
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x02       | 2        | unsigned short                         | m_yPos                        |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CAreaPoint   struct
-     m_xPos     dw ?
-     m_yPos     dw ?
-   CAreaPoint   ends
 
 
 ----
@@ -1861,30 +1284,6 @@ CAreaSoundsAndMusic
 | 0x50       | 64       | unsigned long                          | m_notUsed[16]                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAreaSoundsAndMusic          struct
-     m_dayMusic
-     m_nightMusic
-     m_battleWinningMusic
-     m_battleStandOffMusic
-     m_battleLosingMusic
-     m_alt1Music0
-     m_alt1Music1
-     m_alt1Music2
-     m_alt1Music3
-     m_alt1Music4
-     m_dayAmbient[8]
-     m_dayAmbientExtended[8]
-     m_dayAmbientVolume
-     m_nightAmbient[8]
-     m_nightAmbientExtended[8]
-     m_nightAmbientVolume
-     m_notUsed[16]
-   CAreaSoundsAndMusic          ends
-
 
 ----
 
@@ -1908,19 +1307,6 @@ CAreaUserNote
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x10       | 36       | unsigned long                          | m_notUsed[9]                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CAreaUserNote    struc
-     m_startX       dw ?
-     m_startY       dw ?
-     m_note         dd ?
-     m_dwflags      dd ?
-     m_id           dd ?
-     m_notUsed      dd 9 dup(?)
-   CAreaUserNote    ends ; size 0x34
 
 
 ----
@@ -1948,20 +1334,6 @@ CAreaVariable
 | 0x34       | 32       | char                                   | m_stringValue[32]             |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CAreaVariable    struc
-     m_name         db 32 dup(?)
-     m_type         dw ?
-     m_resRefType   dw ?
-     m_dWValue      dd ?
-     m_intValue     dd ?
-     m_floatValue   dq ?
-     m_stringValue  db 32 dup(?)
-   CAreaVariable    ends ; size 0x54
-
 
 ----
 
@@ -1986,18 +1358,6 @@ CArray
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x10       | 4        | int                                    | m_nGrowBy                     |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CArray           struc
-     m_cObject      CObject ?
-     m_pData        dd ?
-     m_nSize        dd ?
-     m_nMaxSize     dd ?
-     m_nGrowBy      dd ?
-   CArray           ends ; size 0x14
 
 
 ----
@@ -2024,18 +1384,6 @@ CArray (CDLC)
 | 0x10       | 4        | int                                    | m_nGrowBy                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CArray           struc
-     m_cObject      CObject ?
-     m_pData        dd ? ; pointer to CDLC
-     m_nSize        dd ?
-     m_nMaxSize     dd ?
-     m_nGrowBy      dd ?
-   CArray           ends ; size 0x14
-
 
 ----
 
@@ -2060,18 +1408,6 @@ CArray (CDLC_Content)
 +------------+----------+---------------------------------------------+-------------------------------+
 | 0x10       | 4        | int                                         | m_nGrowBy                     |
 +------------+----------+---------------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CArray           struc
-     m_cObject      CObject ?
-     m_pData        dd ? ; pointer to CDLC_Content
-     m_nSize        dd ?
-     m_nMaxSize     dd ?
-     m_nGrowBy      dd ?
-   CArray           ends ; size 0x14
 
 
 ----
@@ -2098,18 +1434,6 @@ CArray (COverridePath)
 | 0x10       | 4        | int                                           | m_nGrowBy                     |
 +------------+----------+-----------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CArray           struc
-     m_cObject      CObject ?
-     m_pData        dd ? ; pointer to COverridePath
-     m_nSize        dd ?
-     m_nMaxSize     dd ?
-     m_nGrowBy      dd ?
-   CArray           ends ; size 0x14
-
 
 ----
 
@@ -2134,18 +1458,6 @@ CArray (CRect)
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x10       | 4        | int                                    | m_nGrowBy                     |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CArray           struc
-     m_cObject      CObject ?
-     m_pData        dd ? ; pointer to CRect
-     m_nSize        dd ?
-     m_nMaxSize     dd ?
-     m_nGrowBy      dd ?
-   CArray           ends ; size 0x14
 
 
 ----
@@ -2172,18 +1484,6 @@ CArray (CZipFile)
 | 0x10       | 4        | int                                    | m_nGrowBy                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CArray           struc
-     m_cObject      CObject ?
-     m_pData        dd ? ; pointer to CZipFile
-     m_nSize        dd ?
-     m_nMaxSize     dd ?
-     m_nGrowBy      dd ?
-   CArray           ends ; size 0x14
-
 
 ----
 
@@ -2208,18 +1508,6 @@ CArray (Mod_t)
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x10       | 4        | int                                    | m_nGrowBy                     |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CArray           struc
-     m_cObject      CObject ?
-     m_pData        dd ? ; pointer to Mod_t
-     m_nSize        dd ?
-     m_nMaxSize     dd ?
-     m_nGrowBy      dd ?
-   CArray           ends ; size 0x14
 
 
 ----
@@ -2246,18 +1534,6 @@ CArray (StatRating)
 | 0x10       | 4        | int                                    | m_nGrowBy                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CArray           struc
-     m_cObject      CObject ?
-     m_pData        dd ? ; pointer to StatRating
-     m_nSize        dd ?
-     m_nMaxSize     dd ?
-     m_nGrowBy      dd ?
-   CArray           ends ; size 0x14
-
 
 ----
 
@@ -2282,17 +1558,4 @@ CArray (zip_t)
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x10       | 4        | int                                    | m_nGrowBy                     |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CArray           struc
-     m_cObject      CObject ?
-     m_pData        dd ? ; pointer to zip_t
-     m_nSize        dd ?
-     m_nMaxSize     dd ?
-     m_nGrowBy      dd ?
-   CArray           ends ; size 0x14
-
 

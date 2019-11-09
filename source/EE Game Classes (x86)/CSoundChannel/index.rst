@@ -1,15 +1,16 @@
-.. _CSoundChannel Functions:
+.. _CSoundChannel Class:
 
 ==========================
-CSoundChannel Functions
+CSoundChannel Class
 ==========================
 
 .. toctree::
    :maxdepth: 1
 
+The structure used for this class is :ref:`CSoundChannel<CSoundChannel>`
 
 +----------------------------------------------------------------------------------------------+
-| **Functions**                                                                                |
+| **Quick Ref**                                                                                |
 +----------------------------------------------------------------------------------------------+
 | int **CSoundChannel\:\:GetType**\()                                                          |
 +----------------------------------------------------------------------------------------------+

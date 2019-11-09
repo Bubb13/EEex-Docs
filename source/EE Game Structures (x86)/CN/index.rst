@@ -18,6 +18,8 @@ CN Structures
 CNetwork
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CNetwork Class<CNetwork Class>`
+
 +------------+----------+---------------------------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                                      | **Field**                     |
 +------------+----------+---------------------------------------------------------------+-------------------------------+
@@ -148,85 +150,6 @@ CNetwork
 | 0x964      | 4        | unsigned long                                                 | m_lastMessage                 |
 +------------+----------+---------------------------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-
-   CNetwork                         struct
-     m_nApplicationGuid             GUID <>
-     m_bApplicationGuidDefined      db ?
-     m_bAutoConnectCheck            db ?
-     m_bServiceProviderEnumerated   db ?
-     m_bServiceProviderSelected     db ?
-     m_nServiceProvider             dd ?
-     m_nTotalServiceProviders       dd ?
-     m_ppszServiceProviderNames     CString 4 dup ({})
-     m_pnServiceProviderIDS         DP_ProviderID 4 dup ({})
-     m_bConnectionInitialized       db ?
-     m_bSocketConnecting            db ?
-     m_bSocketConnected             db ?
-                                    db ? ; padding
-     m_sIPAddress                   CString <>
-     padding2                       db ?
-                                    db ? ; padding
-                                    db ? ; padding
-                                    db ? ; padding
-     m_lpDPAddress                  dd ? ; void*
-     m_dwDPAddressSize              dd ?
-     m_version                      CString <>
-     m_bSessionSelected             db ?
-                                    db ? ; padding
-                                    db ? ; padding
-                                    db ? ; padding
-     m_nSession                     dd ?
-     m_bSessionNameToMake           db ?
-     padding3                       db ?
-                                    db ? ; padding
-                                    db ? ; padding
-     m_sSessionNameToMake           CString <>
-     m_sSessionDescriptionToMake    CString <>
-     m_bSessionPasswordEnabled      db ?
-     padding4                       db ?
-                                    db ? ; padding
-                                    db ? ; padding
-     m_sSessionPassword             CString <>
-     m_bAllowNewConnections         db ?
-     m_bConnectionEstablished       db ?
-     m_bIsHost                      db ?
-                                    db ? ; padding
-     m_directPlay                   DPWrapper <>
-     m_nMaxPlayers                  dd ?
-     m_dwSessionFlags               dd ?
-     m_bMaxPlayersDefined           db ?
-     m_bSessionOptionsDefined       db ?
-                                    db ? ; padding
-                                    db ? ; padding
-     m_sJoinedGame                  CString <>
-     m_sLeftGame                    CString <>
-     m_sDroppedGame                 CString <>
-     m_bPlayerNameToMake            db ?
-     m_bPlayerCreated               db ?
-                                    db ? ; padding
-                                    db ? ; padding
-     m_idLocalPlayer                dd ?
-     m_sLocalPlayerName             CString <>
-     m_nTotalPlayers                dd ?
-     m_psPlayerName                 CString 6 dup ({})
-     m_pPlayerID                    dd 6 dup (?)
-     m_pbPlayerVisible              db 6 dup (?)
-     m_pbPlayerEnumerateFlag        db 6 dup (?)
-     m_nLocalPlayer                 dd ?
-     m_nHostPlayer                  dd ?
-     m_sHostIPAddress               CString <>
-     m_bAnnounceNewPlayers          dd ?
-     m_pSlidingWindow               CNetworkWindow 6 dup ({})
-     m_SystemWindow                 CNetworkWindow <>
-     m_dwCRC32                      dd 256 dup (?)
-     m_connectionSettings           CNetworkConnectionSettings <>
-     m_lastMessage                  dd ?
-   CNetwork                         ends
-      
 
 ----
 
@@ -244,16 +167,6 @@ CNetworkConnectionSettings
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x08       | 4        | :ref:`CString<CString>`                | sPlayerName                   |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CNetworkConnectionSettings   struct
-     dwFlags                    dd ?
-     dwMaxPlayers               dd ?
-     sPlayerName                CString <>
-   CNetworkConnectionSettings   ends
 
 
 ----
@@ -328,46 +241,4 @@ CNetworkWindow
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x94       | 4        | unsigned long                          | m_nNoMessageTimeout           |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CNetworkWindow               struct
-     m_bInitialized             db ?
-     m_bVSSent                  db ?
-     m_bVSReceived              db ?
-     m_nPlayerNumber            db ?
-     m_nAckExpected             dw ?
-     m_nNextFrameToSend         dw ?
-     m_nFrameExpected           dw ?
-     m_nTooFar                  dw ?
-     m_nOldestFrame             dw ?
-                                dw ? ; padding
-     m_pOutgoingBuffers         cnetworkwindow_queueentry_st <>
-     m_pIncomingBuffers         cnetworkwindow_queueentry_st <>
-     m_lQueueIncomingMessages   CTypedPtrList <>
-     m_lQueueOutgoingMessages   CTypedPtrList <>
-     m_pbTimeOutSet             db ?
-                                db ? ; padding
-                                db ? ; padding
-                                db ? ; padding
-     m_pnTimeOut                dd ?
-     m_pbArrived                db ?
-                                db ? ; padding
-     m_nNumBuffered             dw ?
-     m_bNoNak                   db ?
-     padding                    db ?
-                                db ? ; padding
-                                db ? ; padding
-     m_nPacketTimeout           dd ?
-     m_nAckTimer                dd ?
-     m_bAckTimerSet             db ?
-     m_bSomethingHappened       db ?
-                                db ? ; padding
-                                db ? ; padding
-     m_nNextEvent               dd ?
-     m_nPlayerTimeout           dd ?
-     m_nNoMessageTimeout        dd ?
-   CNetworkWindow               ends
 

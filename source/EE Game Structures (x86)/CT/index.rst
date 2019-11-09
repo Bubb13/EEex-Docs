@@ -24,6 +24,8 @@ CT Structures
 CTiledObject
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CTiledObject Class<CTiledObject Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
@@ -40,19 +42,6 @@ CTiledObject
 | 0x10       | 8        | :ref:`CResRef<CResRef>`                | m_resId                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CTiledObject     struct
-     m_nWedIndex    dd ?
-     m_pResWed      dd ? ; CResWED* 
-     m_wAIState     dw ?
-     m_wRenderState dw ?
-     m_posAreaList  dd ? ; __POSITION* 
-     m_resId        CResRef <>
-   CTiledObject     ends
-
 
 ----
 
@@ -61,19 +50,13 @@ Asm Definition
 CTime
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CTime Class<CTime Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 8        | __int64                                | m_time                        |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CTime    struct
-     m_time dq ?
-   CTime    ends
 
 
 ----
@@ -88,14 +71,6 @@ CTimeSpan
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 8        | __int64                                | m_timeSpan                    |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CTimeSpan    struct
-     m_timeSpan dq ?
-   CTimeSpan    ends
 
 
 ----
@@ -125,21 +100,6 @@ CTimer
 | 0x1C       | 4        | long                                   | nElaspedTime                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CTimer               struct
-     m_cObject          CObject <>
-     bEveryIteration    dd ?
-     bOnceOnly          dd ?
-     bTimerStarted      dd ?
-     pEngine            dd ? ; CWarp* 
-     pos                dd ? ; __POSITION* 
-     nTimerInterval     dd ?
-     nElaspedTime       dd ?
-   CTimer               ends
-
 
 ----
 
@@ -147,6 +107,8 @@ Asm Definition
 
 CTimerWorld
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CTimerWorld Class<CTimerWorld Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -160,18 +122,6 @@ CTimerWorld
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CTimerWorld          struct
-     m_gameTime         dd ?
-     m_active           db ?
-     m_nLastPercentage  db ?
-                        db ? ; padding
-                        db ? ; padding
-   CTimerWorld          ends
-
 
 ----
 
@@ -179,6 +129,8 @@ Asm Definition
 
 CTlkFileOverride
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CTlkFileOverride Class<CTlkFileOverride Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -188,15 +140,6 @@ CTlkFileOverride
 | 0x04       | 4        | int                                    | m_UserAddedCount              |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CTlkFileOverride     struct
-     bLoaded            dd ?
-     m_UserAddedCount   dd ?
-   CTlkFileOverride     ends
-
 
 ----
 
@@ -204,6 +147,8 @@ Asm Definition
 
 CTlkTable
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CTlkTable Class<CTlkTable Class>`
 
 +------------+----------+-----------------------------------------------+---------------------+
 | **Offset** | **Size** | **Type**                                      | **Field**           |
@@ -225,23 +170,6 @@ CTlkTable
 | 0x38       | 4        | unsigned long                                 | m_nEngineStringBase |
 +------------+----------+-----------------------------------------------+---------------------+
 
-Asm Definition
-
-::
-
-   CTlkTable             struct
-     m_mapTokens         CMapStringToString <>
-     m_currentGender     db ?
-                         db ? ; padding
-                         db ? ; padding
-                         db ? ; padding
-     m_override          CTlkFileOverride <>
-     m_tlkFiles          dd 2 dup (?) ; CFileView*
-     m_engineStrings     dd ? ; unsigned long* 
-     m_nEngineStrings    dd ?
-     m_nEngineStringBase dd ?
-   CTlkTable             ends
-
 
 ----
 
@@ -255,14 +183,6 @@ CTypedPtrArray
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 20       | :ref:`CPtrArray<CPtrArray>`            | m_cPtrArray                   |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CTypedPtrArray   struct
-     m_cPtrArray    CPtrArray <>
-   CTypedPtrArray   ends
 
 
 ----
@@ -278,10 +198,3 @@ CTypedPtrList
 | 0x00       | 28       | :ref:`CPtrList<CPtrList>`              | m_cPtrList                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CTypedPtrList    struct
-     m_cPtrList     CPtrList <>
-   CTypedPtrList    ends

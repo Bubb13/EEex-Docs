@@ -1,15 +1,16 @@
-.. _CSequenceSoundList Functions:
+.. _CSequenceSoundList Class:
 
 ==========================
-CSequenceSoundList Functions
+CSequenceSoundList Class
 ==========================
 
 .. toctree::
    :maxdepth: 1
 
+The structure used for this class is :ref:`CSequenceSoundList<CSequenceSoundList>`
 
 +----------------------------------------------------------------------------------------------------+
-| **Functions**                                                                                      |
+| **Quick Ref**                                                                                      |
 +----------------------------------------------------------------------------------------------------+
 | virtual void **CSequenceSoundList\:\:~CSequenceSoundList**\()                                      |
 +----------------------------------------------------------------------------------------------------+

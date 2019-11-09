@@ -30,16 +30,3 @@ CKeyInfo
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CKeyInfo         struc
-     m_repeatCount  dd ?
-     m_keyCode      dd ?
-     m_repeatDelay  db ?
-     m_repeatRate   db ?
-                    db ? ; padding
-                    db ? ; padding
-   CKeyInfo         ends ; size 0xC
-

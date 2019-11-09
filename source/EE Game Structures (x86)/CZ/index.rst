@@ -32,16 +32,3 @@ CZipFile
 | 0x14       | 4        | long                                   | size                          |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CZipFile struct
-     zip    dd ?
-     path   dd ? ; const char* 
-     name   dd ? ; const char* 
-     ext    dd ? ; const char* 
-     offset dd ?
-     size   dd ?
-   CZipFile ends
-

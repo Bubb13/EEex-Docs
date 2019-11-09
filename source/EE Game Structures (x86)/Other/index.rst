@@ -96,22 +96,6 @@ BAMHEADERV2
 Related to `BAM v2 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bam_v2.htm#bamv2_Header>`_
 
 
-Asm Definition
-
-::
-
-   BAMHEADERV2        struct
-     nFileType        dd ?
-     nFileVersion     dd ?
-     nFrames          dd ?
-     nSequences       dd ?
-     nQuads           dd ?
-     nFramesOffset    dd ?
-     nSequencesOffset dd ?
-     nQuadsOffset     dd ?
-   BAMHEADERV2        ends
-
-
 ----
 
 .. _Item_Header_st:
@@ -202,51 +186,6 @@ Item_Header_st
 Related to `ITM V1.0 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/itm_v1.htm#itmv1_Header>`_
 
 
-Asm Definition
-
-::
-
-   Item_Header_st           struct
-     nFileType              dd ?
-     nFileVersion           dd ?
-     genericName            dd ?
-     identifiedName         dd ?
-     usedUpItemID           db 8 dup (?)
-     itemFlags              dd ?
-     itemType               dw ?
-     notUsableBy            dd ?
-     animationType          db 2 dup (?)
-     minLevelRequired       dw ?
-     minSTRRequired         dw ?
-     minSTRBonusRequired    db ?
-     notUsableBy2a          db ?
-     minINTRequired         db ?
-     notUsableBy2b          db ?
-     minDEXRequired         db ?
-     notUsableBy2c          db ?
-     minWISRequired         db ?
-     notUsableBy2d          db ?
-     minCONRequired         db ?
-     proficiencyType        db ?
-     minCHRRequired         dw ?
-     baseValue              dd ?
-     maxStackable           dw ?
-     itemIcon               db 8 dup (?)
-     loreValue              dw ?
-     groundIcon             db 8 dup (?)
-     baseWeight             dd ?
-     genericDescription     dd ?
-     identifiedDescription  dd ?
-     descriptionPicture     db 8 dup (?)
-     attributes             dd ?
-     abilityOffset          dd ?
-     abilityCount           dw ?
-     effectsOffset          dd ?
-     equipedStartingEffect  dw ?
-     equipedEffectCount     dw ?
-   Item_Header_st           ends
-
-
 ----
 
 .. _Item_ability_st:
@@ -313,39 +252,6 @@ Item_ability_st
 Related to `ITM V1.0 Extended Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/itm_v1.htm#itmv1_Extended_Header>`_
 
 
-Asm Definition
-
-::
-
-   Item_ability_st        struct
-     type                 dw ?
-     quickSlotType        db ?
-     largeDamageDice      db ?
-     quickSlotIcon        db 8 dup (?)
-     actionType           db ?
-     actionCount          db ?
-     range                dw ?
-     launcherType         db ?
-     largeDamageDiceCount db ?
-     speedFactor          db ?
-     largeDamageDiceBonus db ?
-     thac0Bonus           dw ?
-     damageDice           db ?
-     school               db ?
-     damageDiceCount      db ?
-     secondaryType        db ?
-     damageDiceBonus      dw ?
-     damageType           dw ?
-     effectCount          dw ?
-     startingEffect       dw ?
-     maxUsageCount        dw ?
-     usageFlags           dw ?
-     abilityFlags         dd ?
-     missileType          dw ?
-     attackProbability    dw 6 dup (?)
-   Item_ability_st        ends
-
-
 ----
 
 .. _Item_effect_st:
@@ -392,30 +298,6 @@ Item_effect_st
 Related to `ITM V1.0 Feature Block <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/itm_v1.htm#itmv1_Feature_Block>`_ and `SPL V1 Feature Block <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/spl_v1.htm#splv1_Feature_Block>`_
 
 
-
-Asm Definition
-
-::
-
-   Item_effect_st       struct
-     effectID           dw ?
-     targetType         db ?
-     spellLevel         db ?
-     effectAmount       dd ?
-     dwFlags            dd ?
-     durationType       dw ?
-     duration           dd ?
-     probabilityUpper   db ?
-     probabilityLower   db ?
-     res                db 8 dup (?)
-     numDice            dd ?
-     diceSize           dd ?
-     savingThrow        dd ?
-     saveMod            dd ?
-     special            dd ?
-   Item_effect_st       ends
-
-
 ----
 
 .. _KeyFileHeader_st:
@@ -444,20 +326,6 @@ KeyFileHeader_st
 Related to `KEY V1 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/key_v1.htm#keyv1_Header>`_
 
 
-Asm Definition
-
-::
-
-   KeyFileHeader_st     struct
-     nFileType          dd ?
-     nFileVersion       dd ?
-     nResFiles          dd ?
-     nKeys              dd ?
-     nOffsetToFileTable dd ?
-     nOffsetToKeyTable  dd ?
-   KeyFileHeader_st     ends
-
-
 ----
 
 .. _KeyFileKeyEntry_st:
@@ -478,17 +346,6 @@ KeyFileKeyEntry_st
 **Notes**
 
 Related to `KEY V1 Resource Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/key_v1.htm#keyv1_ResIndices>`_
-
-
-Asm Definition
-
-::
-
-   KeyFileKeyEntry_st   struct
-     resRef             db 8 dup (?)
-     nType              dw ?
-     nID                dd ?
-   KeyFileKeyEntry_st   ends
 
 
 ----
@@ -515,18 +372,6 @@ KeyFileResFileName_st
 Related to `KEY V1 Bif Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/key_v1.htm#keyv1_BifIndices>`_
 
 
-Asm Definition
-
-::
-
-   KeyFileResFileName_st    struct
-     nFileSize              dd ?
-     nFileNameOffset        dd ?
-     nFileNameSize          dw ?
-     bDrives                dw ?
-   KeyFileResFileName_st    ends
-
-
 ----
 
 .. _Marker:
@@ -546,17 +391,6 @@ Marker
 | 0x0C       | 4        | int                                    | line                          |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   Marker    struct
-     src     dd ? ; const char*
-     start   dd ?
-     count   dd ?
-     line    dd ?
-   Marker    ends
-
 
 ----
 
@@ -572,15 +406,6 @@ MAP_CHAR_POSITIONS
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x08       | 4        | long                                   | id                            |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   MAP_CHAR_POSITIONS   struct
-     ptPos              CPoint <>
-     id                 dd ?
-   MAP_CHAR_POSITIONS   ends
 
 
 ----
@@ -609,20 +434,6 @@ MOSAICHEADERV2
 **Notes**
 
 Related to `MOS V2 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/mos_v2.htm#mos_v2_Header>`_
-
-
-Asm Definition
-
-::
-
-   MOSAICHEADERV2   struct
-     nFileType      dd ?
-     nFileVersion   dd ?
-     nWidth         dd ?
-     nHeight        dd ?
-     nQuads         dd ?
-     nOffsetToQuads dd ?
-   MOSAICHEADERV2   ends
 
 
 ----
@@ -655,22 +466,6 @@ MOSAICQUAD
 Related to `MOS V2 Data Block <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/mos_v2.htm#mos_v2_DataBlock>`_ and `BAM V2 Data Block <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bam_v2.htm#bamv2_DataBlock>`_
 
 
-
-Asm Definition
-
-::
-
-   MOSAICQUAD       struct
-     textureIndex   dd ?
-     x              dd ?
-     y              dd ?
-     w              dd ?
-     h              dd ?
-     sx             dd ?
-     sy             dd ?
-   MOSAICQUAD       ends
-
-
 ----
 
 .. _Mod_t:
@@ -687,16 +482,6 @@ Mod_t
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x08       | 4        | :ref:`CString<CString>`                | modName                       |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   Mod_t            struct
-     archiveName    CString <>
-     osPath         CString <>
-     modName        CString <>
-   Mod_t            ends
 
 
 ----
@@ -721,19 +506,6 @@ PLTHeader_st
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x14       | 4        | unsigned long                          | nHeight                       |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   PLTHeader_st     struct
-     nType          dd ?
-     nVersion       dd ?
-     nLayers        dd ?
-     nCompressed    dd ?
-     nWidth         dd ?
-     nHeight        dd ?
-   PLTHeader_st     ends
 
 
 ----
@@ -772,26 +544,6 @@ PVRTextureHeaderV3
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x30       | 4        | unsigned int                           | u32MetaDataSize               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   PVRTextureHeaderV3   struct
-     u32Version         dd ?
-     u32Flags           dd ?
-     u64PixelFormatlo   dd ?
-     u64PixelFormathi   dd ?
-     u32ColourSpace     dd ?
-     u32ChannelType     dd ?
-     u32Height          dd ?
-     u32Width           dd ?
-     u32Depth           dd ?
-     u32NumSurfaces     dd ?
-     u32NumFaces        dd ?
-     u32MIPMapCount     dd ?
-     u32MetaDataSize    dd ?
-   PVRTextureHeaderV3   ends
 
 
 ----
@@ -833,27 +585,6 @@ RLEDestFormat
 | 0x1B       | 1        | unsigned char                          | Ashift                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   RLEDestFormat    struct
-     BytesPerPixel  db ?
-     padding        db 3 dup (?)
-     Rmask          dd ?
-     Gmask          dd ?
-     Bmask          dd ?
-     Amask          dd ?
-     Rloss          db ?
-     Gloss          db ?
-     Bloss          db ?
-     Aloss          db ?
-     Rshift         db ?
-     Gshift         db ?
-     Bshift         db ?
-     Ashift         db ?
-   RLEDestFormat    ends
-
 
 ----
 
@@ -881,19 +612,6 @@ ResFixedHeader_st
 Related to `TIS V1 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/tis_v1.htm>`_
 
 
-Asm Definition
-
-::
-
-   ResFixedHeader_st    struct
-     nFileType          dd ?
-     nFileVersion       dd ?
-     nNumber            dd ?
-     nSize              dd ?
-     nTableOffset       dd ?
-   ResFixedHeader_st    ends
-
-
 ----
 
 .. _SAreaFileCreatureWrapper:
@@ -908,15 +626,6 @@ SAreaFileCreatureWrapper
 +------------+----------+----------------------------------------------+-----------------------+
 | 0x04       | 4        | unsigned char\*                              | pCreatureOffset       |
 +------------+----------+----------------------------------------------+-----------------------+
-
-Asm Definition
-
-::
-
-   SAreaFileCreatureWrapper struct
-     creature               dd ? ; CAreaFileCreature* 
-     pCreatureOffset        dd ? ; unsigned char* 
-   SAreaFileCreatureWrapper ends
 
 
 ----
@@ -940,18 +649,6 @@ SAreaFileDoorWrapper
 | 0x10       | 4        | :ref:`CAreaPoint<CAreaPoint>`\*                  | pOpenSelectionPointStart   |
 +------------+----------+--------------------------------------------------+----------------------------+
 
-Asm Definition
-
-::
-
-   SAreaFileDoorWrapper         struct
-     pDoorObject                dd ? ; CAreaFileDoorObject* 
-     pClosedSearchSquaresStart  dd ? ; CAreaPoint* 
-     pOpenSearchSquaresStart    dd ? ; CAreaPoint* 
-     pClosedSelectionPointStart dd ? ; CAreaPoint* 
-     pOpenSelectionPointStart   dd ? ; CAreaPoint* 
-   SAreaFileDoorWrapper         ends
-
 
 ----
 
@@ -969,16 +666,6 @@ SAreaFileWrapper
 +------------+----------+------------------------------------------------+------------------+
 | 0x08       | 4        | :ref:`CAreaPoint<CAreaPoint>`\*                | pPickPointStart  |
 +------------+----------+------------------------------------------------+------------------+
-
-Asm Definition
-
-::
-
-   SAreaFileWrapper  struct
-     pContainer      dd ? ; CAreaFileContainer* 
-     pStartingItem   dd ? ; CCreatureFileItem* 
-     pPickPointStart dd ? ; CAreaPoint* 
-   SAreaFileWrapper  ends
 
 
 ----
@@ -1000,17 +687,6 @@ SDL_Rect
 | 0x0C       | 4        | int                | h         |
 +------------+-------------------------------+-----------+
 
-Asm Definition
-
-::
-
-   SDL_Rect  struct
-     x       dd ?
-     y       dd ?
-     w       dd ?
-     h       dd ?
-   SDL_Rect  ends
-
 
 ----
 
@@ -1026,15 +702,6 @@ STR_RES
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x04       | 20       | :ref:`CSound<CSound>`                  | cSound                        |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   STR_RES  struct
-     szText CString <>
-     cSound CSound <>
-   STR_RES  ends
 
 
 ----
@@ -1063,21 +730,6 @@ STR_RES_HEADER
 **Notes**
 
 Related to `TLK V1 Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/tlk_v1.htm#tlkv1_Entry>`_
-
-
-
-Asm Definition
-
-::
-
-   STR_RES_HEADER   struct
-     wFlags         dw ?
-     sndResRef      db 8 dup (?)
-     volumeVariance dd ?
-     pitchVariance  dd ?
-     offsetToStr    dd ?
-     strSize        dd ?
-   STR_RES_HEADER   ends
 
 
 ----
@@ -1172,52 +824,6 @@ Spell_Header_st
 Related to `SPL V1 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/spl_v1.htm#splv1_Header>`_
 
 
-Asm Definition
-
-::
-
-   Spell_Header_st          struct
-     nFileType              dd ?
-     nFileVersion           dd ?
-     genericName            dd ?
-     identifiedName         dd ?
-     usedUpItemID           db 8 dup (?)
-     itemFlags              dd ?
-     itemType               dw ?
-     notUsableBy            dd ?
-     castingAnimationType   dw ?
-     minLevelRequired       db ?
-     school                 db ?
-     minSTRRequired         db ?
-     secondaryType          db ?
-     minSTRBonusRequired    db ?
-     notUsableBy2a          db ?
-     minINTRequired         db ?
-     notUsableBy2b          db ?
-     minDEXRequired         db ?
-     notUsableBy2c          db ?
-     minWISRequired         db ?
-     notUsableBy2d          db ?
-     minCONRequired         dw ?
-     minCHRRequired         dw ?
-     spellLevel             dd ?
-     maxStackable           dw ?
-     itemIcon               db 8 dup (?)
-     loreValue              dw ?
-     groundIcon             db 8 dup (?)
-     baseWeight             dd ?
-     genericDescription     dd ?
-     identifiedDescription  dd ?
-     descriptionPicture     db 8 dup (?)
-     attributes             dd ?
-     abilityOffset          dd ?
-     abilityCount           dw ?
-     effectsOffset          dd ?
-     castingStartingEffect  dw ?
-     castingEffectCount     dw ?
-   Spell_Header_st          ends
-
-
 ----
 
 .. _Spell_ability_st:
@@ -1270,32 +876,6 @@ Spell_ability_st
 Related to `SPL V1 Extended Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/spl_v1.htm#splv1_Extended_Header>`_
 
 
-Asm Definition
-
-::
-
-   Spell_ability_st  struct
-     type            dw ?
-     quickSlotType   dw ?
-     quickSlotIcon   db 8 dup (?)
-     actionType      db ?
-     actionCount     db ?
-     range           dw ?
-     minCasterLevel  dw ?
-     speedFactor     dw ?
-     timesPerDay     dw ?
-     damageDice      dw ?
-     damageDiceCount dw ?
-     damageDiceBonus dw ?
-     damageType      dw ?
-     effectCount     dw ?
-     startingEffect  dw ?
-     maxUsageCount   dw ?
-     usageFlags      dw ?
-     missileType     dw ?
-   Spell_ability_st  ends
-
-
 ----
 
 .. _SProjectileWrapper:
@@ -1310,15 +890,6 @@ SProjectileWrapper
 +------------+----------+---------------------------------------------------------------+-------------------+
 | 0x04       | 4        | unsigned char\*                                               | pEffectList       |
 +------------+----------+---------------------------------------------------------------+-------------------+
-
-Asm Definition
-
-::
-
-   SProjectileWrapper   struct
-     pProjectileObject  dd ? ; CAreaFileProjectileObject* 
-     pEffectList        dd ? ; unsigned char* 
-   SProjectileWrapper   ends
 
 
 ----
@@ -1335,15 +906,6 @@ SSavedGamePartyCreatureReferenceWrapper
 +------------+----------+---------------------------------------------------------+-----------------+
 | 0x160      | 4        | unsigned char\*                                         | pCreatureOffset |
 +------------+----------+---------------------------------------------------------+-----------------+
-
-Asm Definition
-
-::
-
-   SProjectileWrapper   struct
-     creature           CSavedGamePartyCreature <>
-     pCreatureOffset    dd ? ; unsigned char* 
-   SProjectileWrapper   ends
 
 
 ----
@@ -1363,16 +925,6 @@ StatRating
 | 0x08       | 4        | float                                  | rating                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   StatRating   struct
-     name       CString <>
-     value      real4 ?
-     rating     real4 ?
-   StatRating   ends
-
 
 ----
 
@@ -1388,16 +940,6 @@ STriggerObjectWrapper
 +------------+----------+---------------------------------------------------------+------------------+
 | 0x04       | 4        | :ref:`CAreaPoint<CAreaPoint>`\*                         | pPickPointStart  |
 +------------+----------+---------------------------------------------------------+------------------+
-
-Asm Definition
-
-::
-
-   STriggerObjectWrapper    struct
-     pTriggerObject         dd ? ; CAreaFileTriggerObject* 
-     pPickPointStart        dd ? ; CAreaPoint* 
-   STriggerObjectWrapper    ends
-
 
 
 ----
@@ -1418,7 +960,6 @@ TILE_CODE
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x03       | 1        | unsigned char                          | tileSE                        |
 +------------+----------+----------------------------------------+-------------------------------+
-
 
 
 ----
@@ -1445,19 +986,6 @@ TLK_FILE_HEADER
 **Notes**
 
 Related to `TLK V1 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/tlk_v1.htm#tlkv1_Header>`_
-
-
-Asm Definition
-
-::
-
-   TLK_FILE_HEADER    struct
-     fileType         dd ?
-     versionNum       dd ?
-     LanguageType     dw ?
-     nStrEntries      dd ?
-     strEntriesOffset dd ?
-   TLK_FILE_HEADER    ends
 
 
 ----
@@ -1488,20 +1016,6 @@ TLK_FILE_OVERRIDE_ENTRY
 Related to `TLK V1 Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/tlk_v1.htm#tlkv1_Entry>`_
 
 
-Asm Definition
-
-::
-
-   TLK_FILE_OVERRIDE_ENTRY  struct
-     strRef                 dd ?
-     wFlags                 dd ?
-     sndResRef              db 8 dup (?)
-     volumeVariance         dd ?
-     pitchVariance          dd ?
-     offsetToStr            dd ?
-   TLK_FILE_OVERRIDE_ENTRY  ends
-
-
 ----
 
 .. _TLK_FILE_OVERRIDE_HEADER:
@@ -1528,19 +1042,6 @@ TLK_FILE_OVERRIDE_HEADER
 Related to `TLK V1 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/tlk_v1.htm#tlkv1_Header>`_
 
 
-Asm Definition
-
-::
-
-   TLK_FILE_OVERRIDE_HEADER struct
-     fileType               dd ?
-     versionNum             dd ?
-     LanguageType           dd ?
-     nStrEntries            dd ?
-     strEntriesOffset       dd ?
-   TLK_FILE_OVERRIDE_HEADER ends
-
-
 ----
 
 .. _TLK_FILE_OVERRIDE_TEXT_BLOCK:
@@ -1560,17 +1061,6 @@ TLK_FILE_OVERRIDE_TEXT_BLOCK
 | 0x208      | 4        | unsigned long                          | m_nOffsetToNext               |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   TLK_FILE_OVERRIDE_TEXT_BLOCK struct
-     m_dwFlags                  dd ?
-     m_nOffsetToPrevious        dd ?
-     m_text                     db 512 dup (?)
-     m_nOffsetToNext            dd ?
-   TLK_FILE_OVERRIDE_TEXT_BLOCK ends
-
 
 ----
 
@@ -1584,14 +1074,6 @@ TLK_FILE_OVERRIDE_TEXT_HEADER
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 4        | unsigned long                          | m_nOffsetToFirstFree          |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   TLK_FILE_OVERRIDE_TEXT_HEADER    struct
-     m_nOffsetToFirstFree           dd ?
-   TLK_FILE_OVERRIDE_TEXT_HEADER    ends
 
 
 ----
@@ -1619,20 +1101,6 @@ WAV_Header
 | 0x10       | 2        | unsigned short                         | cbSize                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   WAV_Header        struct
-     wFormatTag      dw ?
-     nChannels       dw ?
-     nSamplesPerSec  dd ?
-     nAvgBytesPerSec dd ?
-     nBlockAlign     dw ?
-     wBitsPerSample  dw ?
-     cbSize          dw ?
-   WAV_Header        ends
-
 
 ----
 
@@ -1659,20 +1127,6 @@ WED_LayerHeader_st
 | 0x14       | 4        | unsigned long                          | nOffsetToTileList             |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   WED_LayerHeader_st   struct
-     nTilesAcross       dw ?
-     nTilesDown         dw ?
-     rrTileSet          db 8 dup (?)
-     nNumUniqueTiles    dw ?
-     nLayerFlags        dw ?
-     nOffsetToTileData  dd ?
-     nOffsetToTileList  dd ?
-   WED_LayerHeader_st   ends
-
 
 ----
 
@@ -1694,18 +1148,6 @@ WED_PolyHeader_st
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x10       | 4        | unsigned long                          | nOffsetToScreenPolyList       |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   WED_PolyHeader_st            struct
-     nPolys                     dd ?
-     nOffsetToPolyList          dd ?
-     nOffsetToPointList         dd ?
-     nOffsetToScreenSectionList dd ?
-     nOffsetToScreenPolyList    dd ?
-   WED_PolyHeader_st            ends
 
 
 ----
@@ -1735,21 +1177,6 @@ WED_PolyList_st
 | 0x10       | 2        | unsigned short                         | nBottom                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   WED_PolyList_st  struct
-     nStartingPoint dd ?
-     nNumPoints     dd ?
-     nType          db ?
-     nHeight        db ?
-     nLeft          dw ?
-     nRight         dw ?
-     nTop           dw ?
-     nBottom        dw ?
-   WED_PolyList_st  ends
-
 
 ----
 
@@ -1766,15 +1193,6 @@ WED_PolyPoint_st
 | 0x02       | 2        | unsigned short                         | y                             |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   WED_PolyPoint_st struct
-     x              dw ?
-     y              dw ?
-   WED_PolyPoint_st ends
-
 
 ----
 
@@ -1790,15 +1208,6 @@ WED_ScreenSectionList
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x02       | 2        | unsigned short                         | nNumPolys                     |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   WED_ScreenSectionList    struct
-     nStartingPoly          dw ?
-     nNumPolys              dw ?
-   WED_ScreenSectionList    ends
 
 
 ----
@@ -1817,16 +1226,6 @@ WED_TILE
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x08       | 4        | int                                    | y                             |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   WED_TILE  struct
-     texture dd ?
-     x       dd ?
-     y       dd ?
-   WED_TILE  ends
 
 
 ----
@@ -1851,19 +1250,6 @@ WED_TileData_st
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x08       | 2        | unsigned short                         | wFlags                        |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   WED_TileData_st  struct
-     nStartingTile  dw ?
-     nNumTiles      dw ?
-     nSecondary     dw ?
-     bFlags         db ?
-     bAnimSpeed     db ?
-     wFlags         dw ?
-   WED_TileData_st  ends
 
 
 ----
@@ -1890,21 +1276,6 @@ WED_TiledObject_st
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x16       | 4        | unsigned long                          | nOffsetToSecondaryPolys       |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   WED_TiledObject_st        struct
-     resID                   db 8 dup (?)
-     bType                   dw ?
-     nStartingTile           dw ?
-     nNumTiles               dw ?
-     nNumPrimaryPolys        dw ?
-     nNumSecondaryPolys      dw ?
-     nOffsetToPrimaryPolys   dd ?
-     nOffsetToSecondaryPolys dd ?
-   WED_TiledObject_st        ends
 
 
 ----
@@ -1944,26 +1315,6 @@ WED_WedHeader_st
 | 0x28       | 4        | unsigned long                          | dwFlags                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   WED_WedHeader_st          struct
-     nFileType               dd ?
-     nFileVersion            dd ?
-     nLayers                 dd ?
-     nTiledObjects           dd ?
-     nOffsetToLayerHeaders   dd ?
-     nOffsetToPolyHeader     dd ?
-     nOffsetToTiledObjects   dd ?
-     nOffsetToObjectTileList dd ?
-     nVisiblityRange         dw ?
-     nChanceOfRain           dw ?
-     nChanceOfFog            dw ?
-     nChanceOfSnow           dw ?
-     dwFlags                 dd ?
-   WED_WedHeader_st          ends
-
 
 ----
 
@@ -1997,22 +1348,6 @@ bamHeader_st
 Related to `BAM V1 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bam_v1.htm#bamv1_Header>`_
 
 
-Asm Definition
-
-::
-
-   bamHeader_st         struct
-     nFileType          dd ?
-     nFileVersion       dd ?
-     nFrames            dw ?
-     nSequences         db ?
-     nTransparentColor  db ?
-     nTableOffset       dd ?
-     nPaletteOffset     dd ?
-     nFrameListOffset   dd ?
-   bamHeader_st         ends
-
-
 ----
 
 .. _biffFixedTableEntry_st:
@@ -2037,19 +1372,6 @@ biffFixedTableEntry_st
 **Notes**
 
 Related to `BIFF V1 Tileset Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bif_v1.htm#bif_v1_TilesetEntry>`_
-
-
-Asm Definition
-
-::
-
-   biffFixedTableEntry_st   struct
-     nID                    dd ?
-     nOffset                dd ?
-     nNumber                dd ?
-     nSize                  dd ?
-     nType                  dd ?
-   biffFixedTableEntry_st   ends
 
 
 ----
@@ -2078,19 +1400,6 @@ biffHeader_st
 Related to `BIFF V1 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bif_v1.htm#bif_v1_Header>`_
 
 
-Asm Definition
-
-::
-
-   biffHeader_st    struct
-     dwFileType     dd ?
-     dwVersion      dd ?
-     nVarRes        dd ?
-     nFixedRes      dd ?
-     nTableOffset   dd ?
-   biffHeader_st    ends
-
-
 ----
 
 .. _biffVarTableEntry_st:
@@ -2115,18 +1424,6 @@ biffVarTableEntry_st
 Related to `BIFF V1 File Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bif_v1.htm#bif_v1_FileEntry>`_
 
 
-Asm Definition
-
-::
-
-   biffVarTableEntry_st struct
-     nID                dd ?
-     nOffset            dd ?
-     nSize              dd ?
-     nType              dd ?
-   biffVarTableEntry_st ends
-
-
 ----
 
 .. _biff_t:
@@ -2148,18 +1445,6 @@ biff_t
 | 0x2C       | 4        | :ref:`biffFixedTableEntry_st<biffFixedTableEntry_st>`\* | f         |
 +------------+----------+---------------------------------------------------------+-----------+
 
-Asm Definition
-
-::
-
-   biff_t   struct
-     name   dd ? ; const char* 
-     file   file_t <>
-     view   view_t <>
-     v      dd ? ; biffVarTableEntry_st* 
-     f      dd ? ; biffFixedTableEntry_st* 
-   biff_t   ends
-
 
 ----
 
@@ -2175,15 +1460,6 @@ campaignTable
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x04       | 4        | :ref:`C2DArray<C2DArray>`\*            | table                         |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   campaignTable    struct
-     column         dd ? ; char* 
-     table          dd ? ; C2DArray* 
-   campaignTable    ends
 
 
 ----
@@ -2205,17 +1481,6 @@ forcedTooltip
 | 0x18       | 4        | int                                    | alpha                         |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   forcedTooltip    struct
-     current        dd ? ; uiItem* 
-     r              SDL_Rect <>
-     next           dd ? ; forcedTooltip* 
-     alpha          dd ?
-   forcedTooltip    ends
-
 
 ----
 
@@ -2233,16 +1498,6 @@ frame
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x08       | 4        | :ref:`frame<frame>`\*                  | next                          |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   frame    struct
-     data   dd ? ; unsigned char* 
-     length dd ?
-     next   dd ? ; frame* 
-   frame    ends
 
 
 ----
@@ -2273,20 +1528,6 @@ frameTableEntry_st
 Related to `BAM v2 Frame Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bam_v2.htm#bamv2_FrameEntry>`_
 
 
-Asm Definition
-
-::
-
-   frameTableEntry_st   struct
-     nWidth             dw ?
-     nHeight            dw ?
-     nCenterX           dw ?
-     nCenterY           dw ?
-     nOffset            dd ?
-     v2                 frameTableEntry_stv2 <>
-   frameTableEntry_st   ends
-
-
 ----
 
 .. _frameTableEntry_stv2:
@@ -2302,20 +1543,9 @@ frameTableEntry_st\:\:<unnamed-tag>\:\:<unnamed-type-v2
 | 0x02       | 2        | short                                  | nQuadCount                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
-
 **Notes**
 
 Related to `BAM v2 Cycle Entries <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/bam_v2.htm#bamv2_CycleEntry>`_
-
-
-Asm Definition
-
-::
-
-   frameTableEntry_stv2 struct
-     nQuadStart         dw ?
-     nQuadCount         dw ?
-   frameTableEntry_stv2 ends
 
 
 ----
@@ -2349,23 +1579,6 @@ mosHeader_st
 | 0x14       | 4        | unsigned long                          | nPaletteOffset                |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   mosHeader_st         struct
-     nFileType          dd ?
-     nFileVersion       dd ?
-     nWidth             dw ?
-     nHeight            dw ?
-     nXTiles            dw ?
-     nYTiles            dw ?
-     nTileSize          dw ?
-     nTransparentColor  db ?
-     nCompressed        db ?
-     nPaletteOffset     dd ?
-   mosHeader_st         ends
-
 
 ----
 
@@ -2385,15 +1598,4 @@ st_tiledef
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x0C       | 4        | :ref:`CInfTileSet<CInfTileSet>`\*      | pTileSet                      |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   st_tiledef       struct
-     nTile          dd ?
-     nUsageCount    dd ?
-     texture        dd ?
-     pTileSet       dd ? ; CInfTileSet* 
-   st_tiledef       ends
 

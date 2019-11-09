@@ -1799,6 +1799,7 @@ The command line accepts the following recognised options and parameters:
 
 Options are preceded with a ``+``, parameter values can be enclosed in quotes ``"``
 
+.. note:: After some reasech it has been determined that this method does not work in the EE games, it can be considered legacy code that was originally intended to work with GameSpy networking.
 
 
 ----

@@ -16,6 +16,8 @@ C2 Structures
 C2DArray
 ^^^^^^^^^^^
 
+The class that uses this structure is :ref:`C2DArray Class<C2DArray Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
@@ -34,32 +36,3 @@ C2DArray
 | 0x1E       | 2        | short                                  | m_nSizeY                      |
 +------------+----------+----------------------------------------+-------------------------------+
 
-
-C Definition
-
-::
-
-   typedef struct tagC2DArray {
-     CResHelper    baseclass_0;
-     DWORD         m_pNamesX;
-     DWORD         m_pNamesY;
-     DWORD         m_pArray;
-     CString       m_default;
-     DWORD         m_nSizeX;
-     DWORD         m_nSizeY;
-   } C2DArray;     // size 0x20
-
-Asm Definition
-
-::
-
-   C2DArray        struc
-     baseclass_0   CResHelper <>
-     m_pNamesX     dd ?
-     m_pNamesY     dd ?
-     m_pArray      dd ?
-     m_default     CString <>
-     m_nSizeX      dw ?
-     m_nSizeY      dw ?
-   C2DArray        ends ; size 0x20
-   

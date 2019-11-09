@@ -122,27 +122,6 @@ CSaveGameSlot
 | 0x284      | 4        | :ref:`CString<CString>`                | m_sChapter                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSaveGameSlot        struct
-     m_sFileName        CString <>
-     m_sSlotName        CString <>
-     m_cResScreenShot   CResBitmap <>
-     m_cBmpResPortrait0 CResBitmap <>
-     m_cBmpResPortrait1 CResBitmap <>
-     m_cBmpResPortrait2 CResBitmap <>
-     m_cBmpResPortrait3 CResBitmap <>
-     m_cBmpResPortrait4 CResBitmap <>
-     m_cBmpResPortrait5 CResBitmap <>
-     m_cResPortrait     CResRef <>
-     m_sCharacterName   CString <>
-     m_nTime            dd ?
-     m_nChapter         dd ?
-     m_sChapter         CString <>
-   CSaveGameSlot        ends
-
 
 ----
 
@@ -160,17 +139,6 @@ CSavedGameFamiliars
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x4C       | 324      | unsigned long                          | m_resrefCount[9][9]           |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CSavedGameFamiliars  struct
-     m_resrefDefault    db (9 * 8) dup (?)
-     m_resrefOffset     dd ?
-     m_resrefCount      dd (9 * 9) dup (?)
-   CSavedGameFamiliars  ends
-
 
 ----
 
@@ -251,47 +219,6 @@ CSavedGameHeader
 | 0x98       | 20       | char                                   | m_encounterEntry[20]               |
 +------------+----------+----------------------------------------+------------------------------------+
 
-Asm Definition
-
-::
-
-   CSavedGameHeader                 struct
-     m_worldTime                    dd ?
-     m_curFormation                 dw ?
-     m_quickFormations              dw 5 dup (?)
-     m_nPartyGold                   dd ?
-     m_nPCAreaViewed                dw ?
-     m_wWeatherFlags                dw ?
-     m_partyCreatureTableOffset     dd ?
-     m_partyCreatureTableCount      dd ?
-     m_partyInventoryTableOffset    dd ?
-     m_partyInventoryTableCount     dd ?
-     m_globalCreatureTableOffset    dd ?
-     m_globalCreatureTableCount     dd ?
-     m_globalVariablesOffset        dd ?
-     m_globalVariablesCount         dd ?
-     m_currentWorldArea             db 8 dup (?)
-     m_currentLink                  dd ?
-     m_journalEntriesCount          dd ?
-     m_journalEntriesOffset         dd ?
-     m_reputation                   dd ?
-     m_masterArea                   db 8 dup (?)
-     m_dwFlags                      dd ?
-     m_versionNumber                dd ?
-     m_familiarsOffset              dd ?
-     m_storedLocationsOffset        dd ?
-     m_storedLocationsCount         dd ?
-     m_gameTime                     dd ?
-     m_storedLocationsOffsetPocketPlane dd ?
-     m_storedLocationsCountPocketPlane dd ?
-     m_zoomLevel                    dd ?
-     m_encounterArea                db 8 dup (?)
-     m_worldMap                     db 8 dup (?)
-     m_campaign                     db 8 dup (?)
-     m_nFamiliarSummoner            dd ?
-     m_encounterEntry               db 20 dup (?)
-   CSavedGameHeader                 ends
-
 
 ----
 
@@ -315,19 +242,6 @@ CSavedGameJournalEntry
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x0B       | 1        | unsigned char                          | m_character                   |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CSavedGameJournalEntry   struct
-     m_strEntry             dd ?
-     m_time                 dd ?
-     m_chapter              db ?
-     m_read                 db ?
-     m_type                 db ?
-     m_character            db ?
-   CSavedGameJournalEntry   ends
 
 
 ----
@@ -424,51 +338,6 @@ Related to `GAM V2.0 file format <https://gibberlings3.github.io/iesdp/file_form
 * **m_nNumberOfTimesInteractedWith[24]** (offset ``0x2C``) doesnt appear to be used
 
 
-Asm Definition
-
-::
-
-   CSavedGamePartyCreature          struct
-     m_wFlags                       dw ?
-     m_portraitId                   dw ?
-     m_creatureOffset               dd ?
-     m_creatureSize                 dd ?
-     m_creatureResRef               db 8 dup (?)
-     m_creatureFacing               dd ?
-     m_areaName                     db 8 dup (?)
-     m_posX                         dw ?
-     m_posY                         dw ?
-     m_posViewX                     dw ?
-     m_posViewY                     dw ?
-     m_nModalState                  dw ?
-     m_nHappiness                   dw ?
-     m_nNumberOfTimesInteractedWith dd 24 dup (?)
-     m_quickWeaponsItemNum          dw 4 dup (?)
-     m_quickWeaponsAbilityNum       dw 4 dup (?)
-     m_quickSpellsSpellId           db (3 * 8) dup (?)
-     m_quickItemsItemNum            dw 3 dup (?)
-     m_quickItemsAbilityNum         dw 3 dup (?)
-     m_name                         db 32 dup (?)
-     m_numberTimesTalkedTo          dd ?
-     m_strStrongestKillName         dd ?
-     m_nStrongestKillXPValue        dd ?
-     m_nPreviousTimeWithParty       dd ?
-     m_nJoinPartyTime               dd ?
-     m_bWithParty                   db ?
-     m_pad1                         db 2 dup (?)
-     m_cFirstResSlot                db ?
-     m_nChapterKillsXPValue         dd ?
-     m_nChapterKillsNumber          dd ?
-     m_nGameKillsXPValue            dd ?
-     m_nGameKillsNumber             dd ?
-     m_lSpellStatsName              db (4 * 8) dup (?)
-     m_lSpellStatsCount             dw 4 dup (?)
-     m_lWeaponStatsName             db (4 * 8) dup (?)
-     m_lWeaponStatsCount            dw 4 dup (?)
-     m_secondarySounds              db 8 dup (?)
-   CSavedGamePartyCreature          ends
-
-
 ----
 
 .. _CSavedGameStoredLocation:
@@ -486,16 +355,6 @@ CSavedGameStoredLocation
 | 0x0A       | 2        | unsigned short                         | m_yPos                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSavedGameStoredLocation struct
-     m_areaName             db 8 dup (?)
-     m_xPos                 dw ?
-     m_yPos                 dw ?
-   CSavedGameStoredLocation ends
-
 
 ----
 
@@ -512,15 +371,6 @@ CSchoolAndSecondaryDecrementing
 | 0x04       | 4        | long                                   | m_nLevels                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSchoolAndSecondaryDecrementing  struct
-     m_nType                        dd ?
-     m_nLevels                      dd ?
-   CSchoolAndSecondaryDecrementing  ends
-
 
 ----
 
@@ -528,6 +378,8 @@ Asm Definition
 
 CScreenAI
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenAI Class<CScreenAI Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -559,30 +411,6 @@ CScreenAI
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenAI                struct
-     m_cBaldurEngine        CBaldurEngine <>
-     m_bmpScreen            CVidBitmap <>
-     m_tSplashScreens       C2DArray <>
-     m_nSplashScreen        dw ?
-                            dw ? ; padding
-     m_nSplashTimer         dd ?
-     m_bInteractiveDemoQuit dd ?
-     m_nBmpDraw             db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_pVirtualKeys         CKeyInfo 5 dup ({})
-     m_pVirtualKeysFlags    dd 5 dup (?)
-     m_bCtrlKeyDown         db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-   CScreenAI                ends
-
 
 ----
 
@@ -590,6 +418,8 @@ Asm Definition
 
 CScreenChapter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenChapter Class<CScreenChapter Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -643,39 +473,6 @@ CScreenChapter
 | 0x114      | 4        | :ref:`CWarp<CWarp>`\*                  | m_destinationEngine           |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenChapter           struct
-     m_cBaldurEngine        CBaldurEngine <>
-     m_pVirtualKeys         CKeyInfo 5 dup ({})
-     m_pVirtualKeysFlags    dd 5 dup (?)
-     m_bCtrlKeyDown         db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_nChapter             dd ?
-     m_nDream               dd ?
-     m_cResText             CResRef <>
-     m_pTextList            dd ? ; CList<unsigned long,unsigned long &>*
-     m_bmpList              CTypedPtrList <>
-     m_nBmpFlip             dd ?
-     m_nCurrBmp             dd ?
-     m_nParagraph           dd ?
-     m_nLine                dd ?
-     m_cVoiceSound          CSound <>
-     m_bStartSound          dd ?
-     m_nEngineState         dd ?
-     m_cResPower            CResRef <>
-     m_nSongCountDown       dd ?
-     m_preLoadFontRealms    CVidFont <>
-     m_bMPRemoveTextScreen  dd ?
-     m_nCustomSong          dd ?
-     m_waitingForNetwork    dd ?
-     m_destinationEngine    dd ? ; CWarp* 
-   CScreenChapter           ends
-
 
 ----
 
@@ -683,6 +480,8 @@ Asm Definition
 
 CScreenCharacter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenCharacter Class<CScreenCharacter Class>`
 
 +------------+----------+--------------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                         | **Field**                     |
@@ -774,60 +573,6 @@ CScreenCharacter
 | 0x784      | 4        | int                                              | m_bIsLevelingUp               |
 +------------+----------+--------------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenCharacter             struct
-     m_cBaldurEngine            CBaldurEngine <>
-     m_pVirtualKeys             CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags        dd 98 dup (?)
-     m_lPopupStack              CPtrList <>
-     m_nDualClass               db ?
-                                db ? ; padding
-                                db ? ; padding
-                                db ? ; padding
-     m_pScripts                 dd ? ; CStringList* 
-     m_nScriptIndex             dd ?
-     m_nErrorState              dd ?
-     m_nCharacterIndex          dd ?
-     m_pCharacters              dd ? ; CStringList* 
-     m_bMultiPlayerViewable     dd ?
-     m_bMultiPlayerModifyable   dd ?
-     m_nCurrentPortrait         dd ? ; __POSITION* 
-     m_pAppearancePortraits     dd ? ; CStringList* 
-     m_pPortraits               dd ? ; CStringList* 
-     m_nCustomSoundSetIndex     dd ?
-     m_nCustomSoundIndex        dd ? 
-     m_cResPortraitSmall        CResRef <>
-     m_cResPortraitLarge        CResRef <>
-     m_aColor                   db 7 dup (?)
-                                db ? ; padding
-     m_sScript                  CString <>
-     m_bSmartScriptFlags        dd 11 dup (?)
-     m_sNewScript               CString <>
-     m_cResPortraitSmallTemp    CResRef <>
-     m_cResPortraitMediumTemp   CResRef <>
-     m_nSpecialization          dd ?
-     m_pSounds                  dd ? ; CStringList* 
-     m_cResSoundSet             CResRef <>
-     m_pTempBaseStats           dd ? ; CCreatureFileHeader* 
-     m_pTempDerivedStats        dd ? ; CDerivedStats* 
-     m_lstMageSpells            CTypedPtrList <> 
-     m_bShiftKeyDown            dd ?
-     m_bCapsLockKeyOn           dd ?
-     m_bCtrlKeyDown             db ?
-                                db ? ; padding
-                                db ? ; padding
-                                db ? ; padding
-     m_sExportName              CString <>
-     m_bAddInactiveAbilities    dd ?
-     m_OldMageSpells            dd 9 dup (?)
-     m_OldPriestSpells          dd 7 dup (?)
-     m_bPauseState              dd ?
-    m_bIsLevelingUp             dd ?
-   CScreenCharacter             ends
-
 
 ----
 
@@ -844,15 +589,6 @@ CScreenCharacterStoredMageSpell
 | 0x08       | 1        | unsigned char                          | m_nSpellLevel                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenCharacterStoredMageSpell  struct
-     m_cResSpell                    CResRef <>
-     m_nSpellLevel                  db ?
-   CScreenCharacterStoredMageSpell  ends
-
 
 ----
 
@@ -860,6 +596,8 @@ Asm Definition
 
 CScreenConnection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenConnection Class<CScreenConnection Class>`
 
 +------------+----------+--------------------------------------------------+----------------------------------+
 | **Offset** | **Size** | **Type**                                         | **Field**                        |
@@ -933,49 +671,6 @@ CScreenConnection
 | 0x6B0      | 4        | int                                              | m_nWaitingForProviderCount       |
 +------------+----------+--------------------------------------------------+----------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenConnection             struct
-     m_cBaldurEngine             CBaldurEngine <>
-     m_pVirtualKeys              CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags         dd 98 dup (?)
-     m_bCtrlKeyDown              dd ?
-     m_bShiftKeyDown             dd ?
-     m_bCapsLockKeyOn            dd ?
-     m_nProtocol                 dd ?
-     m_nSessionIndex             dd ?
-     m_guidSession               GUID  <>
-     m_dwLastSessionRefresh      dd ?
-     m_nEnumServiceProvidersCountDown dd ?
-     m_bStartedCountDown         dd ?
-     m_bFirstRender              db ?
-     m_bEliminateInitialize      db ?
-     m_bEMSwapped                db ?
-     m_bEMValue                  db ?
-     m_bEMWaiting                db ?
-     m_nEMEvent                  db ?
-     m_nEMEventStage             db ?
-                                 db ? ; padding
-     m_nErrorState               dd ?
-     m_strErrorText              dd ?
-     m_nNumErrorButtons          dd ?
-     m_strErrorButtonText        dd 3 dup (?)
-     m_bAllowInput               dd ?
-     m_bEnumeratingAsynchronous  db ?
-     m_bJoinWaiting              db ?
-     m_bJoinComplete             db ?
-     m_nJoinEvent                db ?
-     m_nJoinErrorCode            dd ?
-     m_bJoinReturnValue          db ?
-                                 db ? ; padding
-                                 db ? ; padding
-                                 db ? ; padding
-     m_nWaitingForProviderNumber dd ?
-     m_nWaitingForProviderCount  dd ?
-   CScreenConnection             ends
-
 
 ----
 
@@ -983,6 +678,8 @@ Asm Definition
 
 CScreenCreateChar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenCreateChar Class<CScreenCreateChar Class>`
 
 +------------+----------+-----------------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                            | **Field**                     |
@@ -1003,11 +700,11 @@ CScreenCreateChar
 +------------+----------+-----------------------------------------------------+-------------------------------+
 | 0x6E0      | 4        | int                                                 | m_bCapsLockKeyOn              |
 +------------+----------+-----------------------------------------------------+-------------------------------+
-| 0x6E4      | 4        | :ref:`CScreenCreateCharStep<CScreenCreateCharStep>` | m_nFirstStep                  |
+| 0x6E4      | 4        | ``CScreenCreateCharStep``                           | m_nFirstStep                  |
 +------------+----------+-----------------------------------------------------+-------------------------------+
-| 0x6E8      | 4        | :ref:`CScreenCreateCharStep<CScreenCreateCharStep>` | m_nCurrentStep                |
+| 0x6E8      | 4        | ``CScreenCreateCharStep``                           | m_nCurrentStep                |
 +------------+----------+-----------------------------------------------------+-------------------------------+
-| 0x6EC      | 4        | :ref:`CScreenCreateCharStep<CScreenCreateCharStep>` | m_nNextStep                   |
+| 0x6EC      | 4        | ``CScreenCreateCharStep``                           | m_nNextStep                   |
 +------------+----------+-----------------------------------------------------+-------------------------------+
 | 0x6F0      | 4        | int                                                 | m_nGameSprite                 |
 +------------+----------+-----------------------------------------------------+-------------------------------+
@@ -1228,142 +925,6 @@ CScreenCreateChar
 | 0x914      | 4        | int                                                 | m_nSpecialization             |
 +------------+----------+-----------------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenCreateChar            struct
-     m_cBaldurEngine            CBaldurEngine <>
-     m_kitList                  C2DArray <>
-     m_importGame               CImportGame <>
-     m_pVirtualKeys             CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags        dd 98 dup (?)
-     m_bCtrlKeyDown             dd ?
-     m_bShiftKeyDown            dd ?
-     m_bCapsLockKeyOn           dd ?
-     m_nFirstStep               CScreenCreateCharStep <>
-     m_nCurrentStep             CScreenCreateCharStep <>
-     m_nNextStep                CScreenCreateCharStep <>
-     m_nGameSprite              dd ?
-     m_nExtraProficiencySlots   dd ?
-     m_nExtraAbilityPoints      dd ?
-     m_nExtraSpells             dd ?
-     m_nExtraSkillPoints        dd ?
-     m_nBasePickPockets         dd ?
-     m_nBaseOpenLocks           dd ?
-     m_nBaseDetectTraps         dd ?
-     m_nBaseMoveSilently        dd ?
-     m_nBaseHideInShadows       dd ?
-     m_nBaseDetectIllusion      dd ?
-     m_nBaseSetTraps            dd ?
-     m_nMinSTR                  db ?
-     m_nMinDEX                  db ?
-     m_nMinCON                  db ?
-     m_nMinINT                  db ?
-     m_nMinWIS                  db ?
-     m_nMinCHR                  db ?
-     m_nMaxSTR                  db ?
-     m_nMaxDEX                  db ?
-     m_nMaxCON                  db ?
-     m_nMaxINT                  db ?
-     m_nMaxWIS                  db ?
-     m_nMaxCHR                  db ?
-     m_nPreviousMin             db ?
-     m_nPreviousMax             db ?
-                                db ? ; padding
-                                db ? ; padding
-     m_nMaxProficiencySlots     dd ?
-     m_nCurrentPortrait         dd ? ; __POSITION* 
-     m_pAppearancePortraits     dd ? ; CStringList* 
-     m_lPopupStack              CPtrList <>
-     m_nEngineState             dd ?
-     m_nCharacterSlot           dd ?
-     m_nTopHatedRace            dd ?
-     m_nPickRange               db ?
-     m_nMemorySTR               db ?
-     m_nMemorySTRExtra          db ?
-     m_nMemoryDEX               db ?
-     m_nMemoryCON               db ?
-     m_nMemoryINT               db ?
-     m_nMemoryWIS               db ?
-     m_nMemoryCHR               db ?
-     m_nMemoryExtra             dd ?
-     m_nPortraitSmallIndex      dd ?
-     m_nPortraitMediumIndex     dd ?
-     m_pPortraits               dd ? ; CStringList* 
-     m_nCustomSoundSetIndex     dd ?
-     m_nCustomSoundIndex        dd ?
-     m_nCharacterIndex          dd ?
-     m_nPrerollTopIndex         dd ?
-     m_pCharacters              dd ? ; CStringList* 
-     m_bImported                dd ?
-     m_pSounds                  dd ? ; CStringList* 
-     m_preLoadFontRealms        CVidFont <>
-     m_preLoadFontStnSml        CVidFont <>
-     m_preLoadFontTool          CVidFont <>
-     m_nCurrentSpellLevel       db ?
-                                db ? ; padding
-                                db ? ; padding
-                                db ? ; padding
-     m_nExtraMageSpells         dd ?
-     m_pOldBaseStats            dd ? ; CCreatureFileHeader* 
-     m_pOldDerivedStatss        dd ? ; CDerivedStats* 
-     m_nOldConHPBonus           dd ?
-     m_nCurrentSpellLevelChoice db ?
-     m_nCurrentSpellLevelChoiceMax db ?
-     m_nImportedCharHPs         dw ?
-     m_nImportedCharConBonus    dw ?
-     m_nImportedDualClass       db ?
-                                db ? ; padding
-     m_nImportedDualKit         dd ?
-     m_nImportedDualReactivated dd ?
-     m_byImportedCharVersion    db ?
-                                db ? ; padding
-     m_nSelectedSpecialistSpells dw ?
-     m_nMemorizedSpecialistSpells dw ?
-                                dw ? ; padding
-     m_nTotalKits               dd ?
-     m_nHatedRaces              dw ?
-                                dw ? ; padding
-     m_importState              dd ? ; importStateType
-     m_strDefaultHelpString     dd ?
-     m_bUpdatedHelp             db ?
-                                db ? ; padding
-                                db ? ; padding
-                                db ? ; padding
-     m_strCurrentHelpString     dd ?
-     m_bGaveExtraXP             dd ?
-     m_nExtraXP                 dd ?
-     m_sImportCharName          CString <>
-     m_nErrorState              dd ?
-     m_strErrorText             dd ?
-     m_nNumErrorButtons         dd ?
-     m_strErrorButtonText       dd 3 dup (?)
-     m_OldMageSpells            dd 9 dup (?)
-     m_OldPriestSpells          dd 7 dup (?)
-     m_aBaseProficiencySlots    CTypedPtrArray <>
-     m_pTempBaseStats           dd ? ; CCreatureFileHeader* 
-     m_pTempDerivedStats        dd ? ; CDerivedStats* 
-     m_storedSkillPoints        dd 7 dup (?)
-     m_bAddInactiveAbilities    dd ?
-     m_szCharInfoStorage        dd ? ; CStringList* 
-     m_nSpellcasterLevel        dd ?
-     m_nNumLevelUpAbilities     dd ?
-     m_nCurrentAbilityLevelChoice db ?
-                                db ? ; padding
-                                db ? ; padding
-                                db ? ; padding
-     m_bFinishedAbilitySelection dd ?
-     m_lstLevelUpAbilitiesList  dd ? ; CGameAbilityList* 
-     m_lstSelectedAbility       db 24 dup (?)
-     m_nSelectedAbilityInd      db ?
-                                db ? ; padding
-                                db ? ; padding
-                                db ? ; padding
-     m_nDualClass               dd ?
-     m_nSpecialization          dd ?
-   CScreenCreateChar            ends
-
 
 ----
 
@@ -1371,6 +932,8 @@ Asm Definition
 
 CScreenCreateParty
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenCreateParty Class<CScreenCreateParty Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -1392,21 +955,6 @@ CScreenCreateParty
 | 0xA8       | 4        | int                                    | m_nCharacterSlot              |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenCreateParty       struct
-     m_cBaldurEngine        CBaldurEngine <>
-     m_pVirtualKeys         CKeyInfo 5 dup ({})
-     m_bCtrlKeyDown         dd ?
-     m_pVirtualKeysFlags    dd 5 dup (?)
-     m_nEngineState         dd ?
-     m_firstCall            dd ?
-     m_preloadFontStnSml    CVidFont <>
-     m_nCharacterSlot       dd ?
-   CScreenCreateParty       ends
-
 
 ----
 
@@ -1414,6 +962,8 @@ Asm Definition
 
 CScreenDLC
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenDLC Class<CScreenDLC Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -1455,33 +1005,6 @@ CScreenDLC
 | 0x6F0      | 4        | int                                    | m_nDlcState                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenDLC               struct
-     m_cBaldurEngine        CBaldurEngine <>
-     m_pVirtualKeys         CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags    dd 98 dup (?)
-     m_bExitProgram         dd ?
-     m_lPopupStack          CPtrList <>
-     m_dwErrorTextId        dd ?
-     m_dwErrorState         dd ?
-     m_nNumErrorButtons     dd ?
-     m_strErrorButtonText   dd 3 dup (?)
-     m_lOptionsStack        CTypedPtrList <>
-     m_bSpriteMirror        dd ?
-     m_bCtrlKeyDown         db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_preLoadFontRealms    CVidFont <>
-     m_preLoadFontStnSml    CVidFont <>
-     m_nNumDLC              dd ?
-     m_nCurrentDLC          dd ?
-     m_nDlcState            dd ?
-   CScreenDLC               ends
-
 
 ----
 
@@ -1489,6 +1012,8 @@ Asm Definition
 
 CScreenInventory
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenInventory Class<CScreenInventory Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -1550,45 +1075,6 @@ CScreenInventory
 | 0x728      | 4        | int                                    | m_bPauseState                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenInventory              struct
-     m_cBaldurEngine             CBaldurEngine <>
-     m_pTempItem                 dd ? ; CItem* 
-     m_pVirtualKeys              CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags         dd 98 dup (?)
-     m_bCtrlKeyDown              db ?
-                                 db ? ; padding
-                                 db ? ; padding
-                                 db ? ; padding
-     m_cLastMousePosition        CPoint <>
-     m_nTopGroundItem            dd ?
-     m_nGroundPile               dd 6 dup (?)
-     m_bGroundPileQueried        dd 6 dup (?)
-     m_nErrorState               dd ?
-     m_strErrorText              dd ?
-     m_nNumErrorButtons          dd ?
-     m_nLastSwapPortrait         dd ?
-     m_dwLastSwapButton          dd ?
-     m_bMultiPlayerViewable      dd ?
-     m_cCheckLearnSpellRes       CResRef <>
-     m_nCheckLearnSpellCountDown dd ?
-     m_bDroppedItemInHand        dd ?
-     m_bPauseWarningDisplayed    db ?
-                                 db ? ; padding
-                                 db ? ; padding
-                                 db ? ; padding
-     m_preLoadFontRealms         CVidFont <>
-     m_preLoadFontStnSml         CVidFont <>
-     m_preLoadFontTool           CVidFont <>
-     m_stSpellsDisabled          dd ?
-     m_bLearnSpellFailed         dd ?
-     m_strLearnSpellFailedReason dd ?
-     m_bPauseState               dd ?
-   CScreenInventory              ends
-
 
 ----
 
@@ -1596,6 +1082,8 @@ Asm Definition
 
 CScreenJournal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenJournal Class<CScreenJournal Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -1629,29 +1117,6 @@ CScreenJournal
 | 0x6B0      | 4        | int                                    | m_bPauseState                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenJournal           struct
-     m_cBaldurEngine        CBaldurEngine <>
-     m_pVirtualKeys         CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags    dd 98 dup (?)
-     m_bShiftKeyDown        dd ? 
-     m_bCapsLockKeyOn       dd ?
-     m_bCtrlKeyDown         db ?
-     m_oldMosaic            CResRef <>
-     m_oldFont              CResRef <>
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_rgbOldText           dd ?
-     m_rgbOldBackground     dd ?
-     m_preLoadFontRealms    CVidFont <>
-     m_preLoadFontTool      CVidFont <>
-     m_bPauseState          dd ?
-   CScreenJournal           ends
-
 
 ----
 
@@ -1659,6 +1124,8 @@ Asm Definition
 
 CScreenLoad
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenLoad Class<CScreenLoad Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -1702,34 +1169,6 @@ CScreenLoad
 | 0x11C      | 4        | int                                    | m_bHideToB                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenLoad              struct
-     m_cBaldurEngine        CBaldurEngine <>
-     m_pVirtualKeys         CKeyInfo 5 dup ({})
-     m_pVirtualKeysFlags    dd 5 dup (?)
-     m_bCtrlKeyDown         db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_nTopGameSlot         dd ?
-     m_nNumGameSlots        dd ?
-     m_nEngineState         dd ?
-     m_aGameSlots           CTypedPtrArray <>
-     m_nCurrentGameSlot     dd ?
-     m_strErrorText         dd ?
-     m_strErrorButtonText   dd 3 dup (?)
-     m_nNumErrorButtons     dd ?
-     m_lPopupStack          CPtrList <>
-     m_nMaxSlotNumber       dd ?
-     m_preLoadFontRealms    CVidFont <>
-     m_preLoadFontStnSml    CVidFont <>
-     m_bHideSoA             dd ?
-     m_bHideToB             dd ?
-   CScreenLoad              ends
-
 
 ----
 
@@ -1737,6 +1176,8 @@ Asm Definition
 
 CScreenMap
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenMap Class<CScreenMap Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -1822,61 +1263,6 @@ CScreenMap
 | 0x838      | 16       | :ref:`CRect<CRect>`                    | m_rMap                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenMap               struct
-     m_cBaldurEngine        CBaldurEngine <>
-     m_pVirtualKeys         CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags    dd 98 dup (?)
-     m_lPopupStack          CPtrList <>
-     m_nLastPicked          dw ?
-                            dw ? ; padding
-     m_nErrorState          dd ?
-     m_strErrorText         dd ?
-     m_nNumErrorButtons     dd ?
-     m_strErrorButtonText   dd 3 dup (?)
-     m_bSelectWorldOnUp     db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_preLoadFontRealms    CVidFont <>
-     m_preLoadFontTool      CVidFont <>
-     m_preLoadFontStnSml    CVidFont <>
-     m_noteStrref           dd ?
-     m_bShiftKeyDown        dd ?
-     m_bCapsLockKeyOn       dd ?
-     m_bCtrlKeyDown         db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_nClairvoyanceCaster  dd ?
-     m_nClairvoyanceDuration dd ?
-     m_bClairvoyanceCastInBlack db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_nScrollState         dd ?
-     m_nTimeLButtonHeld     dd ?
-     m_HoldArea             CRect <>
-     m_bDisplayExploredMap  db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_vmMap                CVidMosaic <>
-     m_bHaveMap             dd ?
-     m_mapTint              dd ?
-     m_pArea                dd ? ; CGameArea*  
-     m_rViewPort            CRect <>
-     m_charPositions        MAP_CHAR_POSITIONS 6 dup ({})
-     m_nCharInArea          dw ?
-                            dw ? ; padding
-     m_nCharactersChanged   dd ?
-     m_nUserNoteId          dd ?
-     m_rMap                 CRect <>
-   CScreenMap               ends
-
 
 ----
 
@@ -1884,6 +1270,8 @@ Asm Definition
 
 CScreenMovies
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenMovies Class<CScreenMovies Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -1903,20 +1291,6 @@ CScreenMovies
 | 0x658      | 4        | :ref:`CString<CString>`                | m_sSelectedMovie              |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenMovies            struct
-     m_cBaldurEngine        CBaldurEngine <>
-     m_pVirtualKeys         CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags    dd 98 dup (?)
-     m_nEngineState         dd ?
-     m_pMovies              dd ? ; CStringList* 
-     m_nMovieIndex          dd ?
-     m_sSelectedMovie       CString <>
-   CScreenMovies            ends
-
 
 ----
 
@@ -1924,6 +1298,8 @@ Asm Definition
 
 CScreenMultiPlayer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenMultiPlayer Class<CScreenMultiPlayer Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -1977,41 +1353,6 @@ CScreenMultiPlayer
 | 0x728      | 24       | :ref:`CString<CString>`                | m_characterPortrait[6]        |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenMultiPlayer       struct
-     m_cBaldurEngine        CBaldurEngine <>
-     m_pVirtualKeys         CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags    dd 98 dup (?)
-     m_bCtrlKeyDown         dd ?
-     m_bShiftKeyDown        dd ?
-     m_bCapsLockKeyOn       dd ?
-     m_lPopupStack          CPtrList <>
-     m_nModifiedCharacterSlot dd ?
-     m_nEngineState         dd ?
-     m_nChatMessageCount    dd ?
-     m_nPermissionsChatMessageCount dd ?
-     m_nKickPlayerSlot      dd ?
-     m_nCharacterSlot       dd ?
-     m_bMultiplayerStartup  db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_bLastLockAllowInput  dd ?
-     m_preLoadFontRealms    CVidFont <>
-     m_preLoadFontStnSml    CVidFont <>
-     m_preLoadFontTool      CVidFont <>
-     m_bSentGameDemand      db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_playerNames          CString 6 dup ({})
-     m_characterNames       CString 6 dup ({})
-     m_characterPortrait    CString 6 dup ({})
-   CScreenMultiPlayer       ends
-
 
 ----
 
@@ -2019,6 +1360,8 @@ Asm Definition
 
 CScreenOptions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenOptions Class<CScreenOptions Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -2086,49 +1429,6 @@ CScreenOptions
 |            |          |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenOptions                 struct
-     m_cBaldurEngine              CBaldurEngine <>
-     m_pVirtualKeys               CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags          dd 98 dup (?)
-     m_bExitProgram               dd ?
-     m_lPopupStack                CPtrList <>
-     m_dwErrorTextId              dd ?
-     m_dwErrorState               dd ?
-     m_nNumErrorButtons           dd ?
-     m_strErrorButtonText         dd 3 dup (?)
-     m_lOptionsStack              CTypedPtrList <>
-     m_bSpriteMirror              dd ?
-     m_bCtrlKeyDowne              db ?
-                                  db ? ; padding
-                                  db ? ; padding
-                                  db ? ; padding
-     m_preLoadFontRealms          CVidFont <>
-     m_preLoadFontStnSml          CVidFont <>
-     m_bFullScreenOptionse        db ?
-     m_bReQuietSounde             db ?
-                                  db ? ; padding
-                                  db ? ; padding
-     m_nTopKeymap                 dd ?
-     m_nSelectedKeymap            dd ?
-     m_nNumKeymapEntries          dd ?
-     m_nKeymapEditIndex           dd ?
-     m_cKeymapEditSection         dd ? ; char* 
-     m_cKeymapEditConflictSection dd ? ; char* 
-     m_cKeymapEditConflictKey     dd ? ; char* 
-     m_nKeymapEditConflictIndex   dd ?
-     m_cKeymapEditConflictValue   db ?
-                                  db ? ; padding
-                                  db ? ; padding
-                                  db ? ; padding
-     m_bPauseState                dd ?
-     m_nEngineState               dd ?
-   CScreenOptions                 ends
-
-
 
 ----
 
@@ -2136,6 +1436,8 @@ Asm Definition
 
 CScreenPriestSpell
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenPriestSpell Class<CScreenPriestSpell Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -2175,32 +1477,6 @@ CScreenPriestSpell
 | 0x688      | 4        | int                                    | m_bControlled                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenPriestSpell       struct
-     m_cBaldurEngine        CBaldurEngine <>
-     m_pVirtualKeys         CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags    dd 98 dup (?)
-     m_nSpellLevel          dd ?
-     m_cResCurrentSpell     CResRef <>
-     m_nErrorState          dd ?
-     m_strErrorText         dd ?
-     m_nNumErrorButtons     dd ?
-     m_strErrorButtonText   dd 3 dup (?)
-     m_bMultiPlayerViewable dd ?
-     m_nMemorizedSpellIndex dd ?
-     m_bCtrlKeyDown         db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_nEngineState         dd ?
-     m_bPriestPage          dd ?
-     m_bPauseState          dd ?
-     m_bControlled          dd ?
-   CScreenPriestSpell       ends
-
 
 ----
 
@@ -2208,6 +1484,8 @@ Asm Definition
 
 CScreenSave
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenSave Class<CScreenSave Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -2255,36 +1533,6 @@ CScreenSave
 | 0x6F4      | 4        | int                                    | m_bPauseState                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenSave              struct
-     m_cBaldurEngine        CBaldurEngine <>
-     m_bQuitGameSave        dd ?
-     m_pVirtualKeys         CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags    dd 98 dup (?)
-     m_bShiftKeyDown        dd ?
-     m_bCapsLockKeyOn       dd ?
-     m_nTopGameSlot         dd ?
-     m_nNumGameSlots        dd ?
-     m_nEngineState         dd ?
-     m_aGameSlots           CTypedPtrArray <>
-     m_lPopupStack          CPtrList <>
-     m_strErrorText         dd ?
-     m_strErrorButtonText   dd 3 dup (?)
-     m_nNumErrorButtons     dd ?
-     m_nCurrentGameSlot     dd ?
-     m_nMaxSlotNumber       dd ? 
-     m_bCtrlKeyDown         db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_preLoadFontRealms    CVidFont <>
-     m_preLoadFontStnSml    CVidFont <>
-     m_bPauseState          dd ?
-   CScreenSave              ends
-
 
 ----
 
@@ -2292,6 +1540,8 @@ Asm Definition
 
 CScreenStart
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenStart Class<CScreenStart Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -2343,38 +1593,6 @@ CScreenStart
 | 0xE8       | 32       | :ref:`CVidFont<CVidFont>`              | m_preloadFontStnSml           |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenStart             struct
-     m_cBaldurEngine        CBaldurEngine <>
-     m_bStartMusic          dd ?
-     m_bExitProgram         dd ?
-     m_pVirtualKeys         CKeyInfo 5 dup ({})
-     m_bCtrlKeyDown         dd ?
-     m_pVirtualKeysFlags    dd 5 dup (?)
-     m_bMovieOn             db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_nEngineState         dd ?
-     m_firstCall            dd ?
-     m_lPopupStack          CPtrList <>
-     m_nErrorState          dd ?
-     m_strErrorText         dd ?
-     m_nNumErrorButtons     dd ?
-     m_strErrorButtonText   dd 4 dup (?)
-     m_bPlayEndCredits      dd ?
-     m_bSplashScreens       dd ?
-     m_bNeedCDCheck         dd ?
-     m_nCurrentDLC          dd ?
-     m_nNumDLC              dd ?
-     m_nLastImageUpdate     dd ?
-     m_nDlcState            dd ?
-     m_preloadFontStnSml    CVidFont <>
-   CScreenStart             ends
-
 
 ----
 
@@ -2382,6 +1600,8 @@ Asm Definition
 
 CScreenStore
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenStore Class<CScreenStore Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -2489,68 +1709,6 @@ CScreenStore
 | 0x808      | 4        | float                                  | m_fPanStorage                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenStore             struct
-     m_cBaldurEngine        CBaldurEngine <>
-     m_pVirtualKeys         CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags    dd 98 dup (?)
-     m_bCtrlKeyDown         db ?
-     m_bShiftKeyDown        db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_bCapsLockKeyOn       dd ?
-     m_nTopGroupItem        dd ?
-     m_lGroupItems          CPtrList <>
-     m_nTopStoreItem        dd ?
-     m_lStoreItems          CPtrList <>
-     m_nTopSpellItem        dd ?
-     m_lSpellItems          CPtrList <>
-     m_nTopIdentifyItem     dd ?
-     m_lIdentifyItems       CPtrList <>
-     m_nTopDrinkItem        dd ?
-     m_cResStore            CResRef <>
-     m_cResBag              CResRef <>
-     m_adwButtonPanelId     dd 4 dup (?)
-     m_pStore               dd ? ; CStore* 
-     m_pBag                 dd ? ; CStore* 
-     m_nStoreCost           dd ?
-     m_nGroupCost           dd ?
-     m_dwSpellCost          dd ?
-     m_dwIdentifyCost       dd ?
-     m_dwRoomType           dd ?
-     m_cAIProprietor        CAIObjectType <>
-     m_cAICustomer          CAIObjectType <>
-     m_dwDonationAmount     dd ?
-     m_nDrinkRumorIndex     dd ?
-     m_nDonateRumorIndex    dd ?
-     m_lPopupStack          CPtrList <>
-     m_pHistoryItem         dd ? ; CItem* 
-     m_bHistoryUseEnabled   dd ?
-     m_cResInfoSpell        CResRef <>
-     m_nChatMessageCount    dd ?
-     m_nErrorState          dd ?
-     m_strErrorText         dd ?
-     m_nNumErrorButtons     dd ?
-     m_strErrorButtonText   dd 3 dup (?)
-     m_nCharisma            db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_preLoadFontRealms    CVidFont <>
-     m_preLoadFontStnSml    CVidFont <>
-     m_preLoadFontTool      CVidFont <>
-     m_nRequesterAmount     dd ?
-     m_nRequesterButtonId   dd ?
-     m_bStoreIndex          dd ?
-     m_bStoreStarted        dd ?
-     m_nBagCount            dd ?
-     m_fPanStorage          real4 ?
-   CScreenStore             ends
-
 
 ----
 
@@ -2583,23 +1741,6 @@ CScreenStoreItem
 | 0x28       | 4        | unsigned long                          | m_nStoreCount                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenStoreItem struct
-     m_cResSpell    CResRef <>
-     m_pItem        dd ? ; CItem* 
-     m_bSelected    dd ?
-     m_bEnabled     dd ?
-     m_nSlot        dd ?
-     m_nValue       dd ?
-     m_nSingleValue dd ?
-     m_nCount       dd ?
-     m_nMaxCount    dd ?
-     m_nStoreCount  dd ?
-   CScreenStoreItem ends
-
 
 ----
 
@@ -2607,6 +1748,8 @@ Asm Definition
 
 CScreenWizSpell
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenWizSpell Class<CScreenWizSpell Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -2658,40 +1801,6 @@ CScreenWizSpell
 | 0x6A0      | 4        | int                                    | m_bContingency                |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenWizSpell          struct
-     m_cBaldurEngine        CBaldurEngine <>
-     m_pVirtualKeys         CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags    dd 98 dup (?)
-     m_nSpellLevel          dd ?
-     m_bMultiPlayerViewable dd ?
-     m_nMemorizedSpellIndex dd ?
-     m_bCtrlKeyDown         db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_bMagePage            dd ?
-     m_nContingencyMaxLevel db ?
-     m_nContingencyMaxSpells db ?
-     m_bContingencyRestrictTarget dw ?
-     m_pOldEngine           dd ? ; CBaldurEngine* 
-     m_nContingencyCurrentLevel db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_bContingencyCleric   dd ?
-     m_nMaxContingencies    dw ?
-                            dw ? ; padding
-     m_spellList            CTypedPtrList <> 
-     m_refContingencyResRef CResRef <>
-     m_bControlled          dd ?
-     m_bPauseState          dd ?
-     m_bContingency         dd ?
-  CScreenWizSpell           ends
-
 
 ----
 
@@ -2699,6 +1808,8 @@ Asm Definition
 
 CScreenWorld
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenWorld Class<CScreenWorld Class>`
 
 +------------+----------+-----------------------------------------------+-----------------------------------+
 | **Offset** | **Size** | **Type**                                      | **Field**                         |
@@ -3036,191 +2147,6 @@ CScreenWorld
 | 0xAEC      | 4        | int                                           | m_nStoredGroupMembers             |
 +------------+----------+-----------------------------------------------+-----------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenWorld                     struct
-     m_cBaldurEngine                CBaldurEngine <>
-     m_nStupidMovieWait             dd ?
-     m_bProtagonistInStartArea      dd ?
-     m_nProtagonistMoveMax          dd ?
-     m_bWaitToRender                dd ?
-     flickEvent                     SDL_Event <>
-     m_bIgnoreDisplayTextTop        dd ?
-     nCounter                       dd ?
-     m_boredCount                   dd ?
-     m_bored                        dd ?
-     m_playerShutdown               dd ?
-     m_bShiftKeyDown                dd ?
-     m_bMenuKeyDown                 dd ?
-     m_bCtrlKeyDown                 dd ?
-     m_bCapsLockKeyOn               dd ?
-     m_bPaused                      db ?
-     m_bHardPaused                  db ?
-     m_bHostOnlyPaused              db ?
-     m_bVisualPaused                db ?
-     m_bFirstRender                 db ?
-                                    db ? ; padding
-                                    db ? ; padding
-                                    db ? ; padding
-     m_bPausedBeforePickParty       dd ?
-     m_bCheatKeys                   dd ?
-     m_bMButtonDown                 dd ?
-     m_bMButtonDragged              dd ?
-     m_bSetStartViewCenter          dd ?
-     m_ptStartViewCenter            CPoint <>
-     m_sequence                     dw ?
-     m_facing                       db ?
-     m_bloodLevel                   db ?
-     m_castingGlow                  dw ?
-     m_hitEffect                    db ?
-                                    db ? ; padding
-     m_renderText                   dw ?
-                                    dw ? ; padding
-     m_newText                      dd ?
-     m_vidFont                      CVidFont <>
-     m_vidFont2                     CVidFont <>
-     m_pVirtualKeys                 CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags            dd 98 dup (?)
-     m_internalLoadedDialog         CGameDialogSprite <>
-     m_pCurrentDialog               dd ? ; CGameDialogSprite* 
-     m_dialogStartPos               CPoint <>
-     m_dialogStartArea              CResRef <>
-     m_dialogPausing                dd ?
-     m_newViewSize                  CRect <>
-     m_bForceViewSize               dd ?
-     m_waitingOnResize              db ?
-     m_storeText                    db ?
-                                    db ? ; padding
-                                    db ? ; padding
-     m_consoleText                  CString <>
-     m_nTopContainerRow             dd ?
-     m_nTopGroupRow                 dd ?
-     m_bForceDitherToggledOn        db ?
-                                    db ? ; padding
-                                    db ? ; padding
-                                    db ? ; padding
-     m_WeatherController            CWeather <>
-     m_scrollLockId                 dd ?
-     m_nResponseMarker              dw ?
-                                    dw ? ; padding
-     m_bBlockStepDialog             dd ?
-     m_interactionIndex             dd ?
-     m_interactionTarget            dd ?
-     m_interactionString            CString <>
-     m_interactionCounter           dd ?
-     m_interactionForce             dd ?
-     m_interactionTime              dd ?
-     m_lastInteractionIndex         dd ?
-     m_bSetNightOnActivate          db ?
-     m_bSetDayOnActivate            db ?
-                                    db ? ; padding
-                                    db ? ; padding
-     m_ambianceForce                dd ?
-     m_deltaTime                    dd ?
-     m_nChatMessageCount            dd ?
-     m_movie                        CResRef <>
-     m_bInControlOfDialog           db ?
-     m_bInControlOfStore            db ?
-                                    db ? ; padding
-                                    db ? ; padding
-     m_bGameOverPanel               dd ?
-     m_movieDelay                   CResRef <>
-     m_autoPauseId                  dd ?
-     m_autoPauseRef                 dd ?
-     m_autoPauseColor               dd ?
-     m_autoPauseName                dd ?
-     m_nStoreChatMessageCount       dd ?
-     m_nPickPartyRemoveCharacterId  dd ?
-     m_aPickPartyCharacter          dd 10 dup (?)
-     m_nPickPartyNumCharacters      dd ?
-     m_strErrorText                 dd ?
-     m_strErrorButtonText           dd 3 dup (?)
-     m_nDialogPanelOnStartDialog    dd ?
-     m_bDialogPressedAButton        db ?
-     m_bEndMajorEventListenToJoin   db ?
-     m_bEndMajorEventPauseStatus    db ?
-     m_bChapterTransitionPending    db ?
-     m_nChapterTransition           dd ?
-     m_szChapterTransitionResRef    db 8 dup (?)
-     m_bTextScreenTransitionPending db ?
-     m_szTextScreenTransitionResRef db 8 dup (?)
-     m_bMoviePending                db ?
-     m_szMovieResRef                db 8 dup (?)
-     m_bPendingMapWorld             db ?
-                                    db ? ; padding
-     m_idPendingMapWorldController  dd ?
-     m_nPendingMapWorldDirection    dw ?
-     m_bRestPending                 db ?
-     m_bRestRenting                 db ?
-     m_bRestMovie                   db ?
-                                    db ? ; padding
-                                    db ? ; padding
-                                    db ? ; padding
-     m_nRestHP                      dd ?
-     m_nRestGP                      dd ?
-     m_nBattleCryTimeOut            dd ?
-     m_deathSoundList               CTypedPtrList <>
-     m_nPartySizeCheckStartDelay    dd ?
-     m_bPlayEndCredits              db ?
-     m_bPendingReformParty          db ?
-     m_bLeaveAreaLuaPanicPending    db ?
-                                    db ? ; padding
-     m_ulLeaveAreaLuaPanicTimer     dd ?
-     m_ptLeaveAreaLuaPanicLocation  CPoint <>
-     m_nLeaveAreaLuaPanicDirection  dw ?
-                                    dw ? ; padding
-     m_sLeaveAreaLuaPanicAreaName   CString <>
-     m_sLeaveAreaLuaPanicParchment  CString <>
-     m_dwPausedTickCount            dd ?
-     m_dwLastDialogTickCount        dd ?
-     m_lastAmbiance                 dd ?
-     m_comingOutOfDialog            dd ?
-     m_nAutoHideInterface           db ?
-     m_nAutoUnhideInterface         db ?
-                                    db ? ; padding
-                                    db ? ; padding
-     m_rCurrViewPort                CRect <>
-     m_bLeftPanel                   dd ?
-     m_bRightPanel                  dd ?
-     m_bCheckRestrict               db ?
-                                    db ? ; padding
-                                    db ? ; padding
-                                    db ? ; padding
-     m_otherTalkers                 CTypedPtrList <>
-     m_nInteractionBlockCnt         dd ?
-     m_bInteractionBlock            dd ?
-     m_nStateOverride               dd ?
-     m_nStateOverrideCnt            dd ?
-     m_nBlackOutCountDown           dd ?
-     m_nCutSceneDeadZoneCountDown   dd ?
-     m_nContainerOutline            dd ?
-     m_tutorialWaitTimer            dd ?
-     m_bPausedBeforeStore           dd ?
-     m_nPauseMessageUpdate          dd ?
-     m_deathStrRef                  dd ?
-     m_bHighlightEnabled            dd ?
-     m_fPanStorage                  real4 ?
-     m_bViewingContainer            dd ?
-     m_bInDialog                    dd ?
-     m_bDead                        dd ?
-     m_bInCommand                   dd ?
-     m_bPickingParty                dd ?
-     m_bAutoZooming                 dd ?
-     m_fPreviousZoom                real4 ?
-     m_fTargetZoom                  real4 ?
-     m_rPreviousViewPort            CRect <>
-     m_ptPreviousView               CPoint <>
-     m_ptTarget                     CPoint <>
-     m_nZoomCurStep                 dd ?
-     m_rOriginalViewPort            CRect <>
-     m_ptOriginalView               CPoint <>
-     m_fOriginalZoom                real4 ?
-     m_storedGroup                  dd ? ; long* 
-     m_nStoredGroupMembers          dd ?
-   CScreenWorld                     ends
-
 
 ----
 
@@ -3228,6 +2154,8 @@ Asm Definition
 
 CScreenWorldMap
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScreenWorldMap Class<CScreenWorldMap Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -3325,63 +2253,6 @@ CScreenWorldMap
 | 0xD8C      | 4        | int                                    | m_bFontDropShadow             |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScreenWorldMap           struct
-     m_cBaldurEngine         CBaldurEngine <>
-     m_pVirtualKeys          CKeyInfo 98 dup ({})
-     m_pVirtualKeysFlags     dd 98 dup (?)
-     m_bCtrlKeyDown          db ?
-     m_bShiftKeyDown         db ?
-                             db ? ; padding
-                             db ? ; padding
-     m_bCapsLockKeyOn        dd ?
-     m_lPopupStack           CPtrList <>
-     m_mapSize               CSize <>
-     m_nEngineState          dd ?
-     m_ptMapView             CPoint <>
-     m_vmMap                 CVidMosaic <>
-     m_vcAreas               CVidCell <>
-     m_vcMarker              CVidCell <>
-     m_vfLabel               CVidFont <>
-     m_aPalette              RGBQUAD 256 dup ?
-     m_wAreaForeground       dd ?
-     m_nHighlightArea        dd ?
-     m_nSelectedArea         dd ?
-     m_bSelectedReachable    dd ?
-     m_bOverSelectedArea     dd ?
-     m_ptMapStartMousePos    CPoint <>
-     m_ptMapStartView        CPoint <>
-     m_bMapLeftDown          dd ?
-     m_bMapDragging          dd ?
-     m_pCurrentArea          dd ? ; CGameArea* 
-     m_nLeaderSprite         dd ?
-     m_pPath                 dd ? ; CList<unsigned long,unsigned long &>* 
-     m_nLeavingEdge          dd ?
-     m_nCurrentLink          dd ?
-     m_cResCurrentArea       CResRef <>
-     m_aAreaRect             CArray<> 
-     m_pChatDisplay          dd ? ; CUIControlTextDisplay* 
-     m_nChatMessageCount     dd ?
-     m_bInControln           db ?
-     m_bClickedArean         db ?
-                             db ? ; padding
-                             db ? ; padding
-     m_nCurrentSong          dd ?
-     m_nToolTip              dd ?
-     m_preLoadFontRealms     CVidFont <>
-     m_preLoadFontTool       CVidFont <>
-     m_nScrollStaten         db ?
-     m_rForceRandomEncounter CResRef <>
-                             db ? ; padding
-                             db ? ; padding
-                             db ? ; padding
-     m_sForcedEncounterEntry CString <>
-     m_bFontDropShadow       dd ?
-   CScreenWorldMap           ends
-
 
 ----
 
@@ -3389,6 +2260,8 @@ Asm Definition
 
 CScriptCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CScriptCache Class<CScriptCache Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -3398,15 +2271,6 @@ CScriptCache
 | 0x04       | 4        | long                                   | m_nTableEntries               |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CScriptCache         struct
-     m_scriptMap        dd ? ; CAIScript** 
-     m_nTableEntries    dd ?
-   CScriptCache         ends
-
 
 ----
 
@@ -3414,6 +2278,8 @@ Asm Definition
 
 CSearchBitmap
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CSearchBitmap Class<CSearchBitmap Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -3436,23 +2302,6 @@ CSearchBitmap
 +------------+----------+----------------------------------------+-------------------------------+
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CSearchBitmap             struct
-     m_resSearch             CVidBitmap <>
-     m_pDynamicCost          dd ? ; unsigned char* 
-     m_snapshotDynamicCost   dd ? ; unsigned char* 
-     m_snapshotTerrainTable  dd ? ; const unsigned char* 
-     m_GridSquareDimensions  CSize <>
-     m_pArea                 dd ? ; CGameArea* 
-     m_sourceSide            db ?
-     m_snapshotPersonalSpace db ?
-                             db ? ; padding
-                             db ? ; padding
-   CSearchBitmap ends
 
 
 ----
@@ -3522,44 +2371,6 @@ CSearchRequest
 | 0x60       | 4        | long\*                                 | m_pPath                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSearchRequest            struct
-     m_serviceState          db ?
-     m_collisionDelay        db ?
-                             db ? ; padding
-                             db ? ; padding
-     m_collisionSearch       dd ?
-     m_sourceSide            db ?
-     m_nPartyIds             db ?
-     m_nTargetIds            db ?
-     m_nTargetPoints         db ?
-     m_removeSelf            dd ?
-     m_frontList             db ?
-                             db ? ; padding
-                             db ? ; padding
-                             db ? ; padding
-     m_searchBitmap          dd ? ; CSearchBitmap* 
-     m_terrainTable          db 16 dup (?)
-     m_pathSmooth            dd ?
-     m_exclusiveTargetPoints dd ?
-     m_sourceId              dd ?
-     m_sourcePt              POINT <>
-     m_partyIds              dd ? ; long* 
-     m_targetIds             dd ? ; long* 
-     m_targetPoints          dd ? ; tagPOINT* 
-     m_minNodes              dd ?
-     m_maxNodes              dd ?
-     m_minNodesBack          dd ?
-     m_maxNodesBack          dd ?
-     m_bBump                 dd ?
-     m_searchRc              dw ?
-     m_nPath                 dw ?
-     m_pPath                 dd ? ; long* 
-   CSearchRequest            ends
-
 
 ----
 
@@ -3576,15 +2387,6 @@ CSelectiveBonus
 | 0x14       | 4        | long                                   | m_bonus                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSelectiveBonus  struct
-     m_type         CAIObjectType <>
-     m_bonus        dd ?
-   CSelectiveBonus  ends
-
 
 ----
 
@@ -3598,14 +2400,6 @@ CSelectiveBonusList
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CSelectiveBonusList  struct
-     m_cTypedPtrList    CTypedPtrList <>
-   CSelectiveBonusList  ends
 
 
 ----
@@ -3625,16 +2419,6 @@ CSelectiveWeaponType
 | 0x18       | 16       | :ref:`CWeaponIdentification<CWeaponIdentification>` | m_weapon  |
 +------------+----------+-----------------------------------------------------+-----------+
 
-Asm Definition
-
-::
-
-   CSelectiveWeaponType struct
-     m_slot             dd ?
-     m_type             CAIObjectType <>
-     m_weapon           CWeaponIdentification <>
-   CSelectiveWeaponType ends
-
 
 ----
 
@@ -3648,14 +2432,6 @@ CSelectiveWeaponTypeList
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CSelectiveWeaponTypeList struct
-     m_cTypedPtrList        CTypedPtrList <>
-   CSelectiveWeaponTypeList ends
 
 
 ----
@@ -3673,15 +2449,6 @@ CSequenceSound
 | 0x08       | 4        | long                                   | m_offset                      |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSequenceSound   struct
-     m_sound        CResRef <>
-     m_offset       dd ?
-   CSequenceSound   ends
-
 
 ----
 
@@ -3689,6 +2456,8 @@ Asm Definition
 
 CSequenceSoundList
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CSequenceSoundList Class<CSequenceSoundList Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -3701,17 +2470,6 @@ CSequenceSoundList
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x24       | 4        | long                                   | m_channel                     |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CSequenceSoundList   struct
-     m_cTypedPtrList    CTypedPtrList <>
-     m_currentSound     dd ? ; __POSITION* 
-     m_soundPlaying     dd ?
-     m_channel          dd ?
-   CSequenceSoundList   ends
 
 
 ----
@@ -3730,15 +2488,6 @@ CSize
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x04       | 4        | long                                   | cy                            |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CSize    struct
-     cx     dd ?
-     cy     dd ?
-   CSize    ends
 
 
 ----
@@ -3762,18 +2511,6 @@ CSnowFlake
 | 0x38       | 4        | long                                   | m_nLastDriftVelocity          |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSnowFlake               struct
-     m_cParticle            CParticle <>
-     m_nDriftWidth          db ?
-     m_nDriftCounter        db ?
-     m_nMeltTime            dw ?
-     m_nLastDriftVelocity   dd ?
-   CSnowFlake               ends
-
 
 ----
 
@@ -3794,17 +2531,6 @@ CSnowStorm
 | 0x08       | 16       | CRect                                  | m_rOldWorldViewPort           |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSnowStorm               struct
-     m_pSnowFlakes          dd ? ; CSnowFlake* 
-     m_nCurrentDensity      dw ?
-                            dw ? ; padding
-     m_rOldWorldViewPort    CRect <>
-   CSnowStorm               ends
-
 
 ----
 
@@ -3812,6 +2538,8 @@ Asm Definition
 
 CSound
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CSound Class<CSound Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -3823,16 +2551,6 @@ CSound
 | 0x10       | 4        | :ref:`CSoundImp<CSoundImp>`\*          | pimpl                         |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSound           struct
-     m_cObject      CObject <>
-     m_cResHelper   CResHelper <>
-     pimpl          dd ? ; CSoundImp* 
-   CSound           ends
-
 
 ----
 
@@ -3840,6 +2558,8 @@ Asm Definition
 
 CSoundChannel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CSoundChannel Class<CSoundChannel Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -3860,23 +2580,6 @@ CSoundChannel
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x30       | 4        | int                                    | m_nDuckingAmount              |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CSoundChannel        struct
-     m_cObject          CObject <>
-     lQueue             CObList <>
-     m_nVolumeInit      dd ?
-     nVolume            dd ?
-     nType              dd ?
-     bDucked            db ?
-                        db ? ; padding
-                        db ? ; padding
-                        db ? ; padding 
-     m_nDuckingAmount   dd ?
-   CSoundChannel        ends
 
 
 ----
@@ -3900,18 +2603,6 @@ CSoundExtensionBase
 | 0x10       | 240      | unsigned long                          | reservedSpace[60]             |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSoundExtensionBase  struct
-     m_nRange           dd ?
-     m_dwFlags          dd ?
-     m_nPitchVariance   dd ?
-     m_nVolumeVariance  dd ?
-     reservedSpace      dd 60 dup (?)
-   CSoundExtensionBase  ends
-
 
 ----
 
@@ -3920,19 +2611,13 @@ Asm Definition
 CSoundExtensionFile
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CSoundExtensionFile Class<CSoundExtensionFile Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CSoundExtensionFile  struct
-     m_cResHelper       CResHelper <>
-   CSoundExtensionFile  ends
 
 
 ----
@@ -3941,6 +2626,8 @@ Asm Definition
 
 CSoundImp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CSoundImp Class<CSoundImp Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -4008,52 +2695,6 @@ CSoundImp
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSoundImp             struct
-     m_cObject           CObject <>
-     m_cResHelper        CResHelper <>
-     m_pParent           dd ? ; CSound* 
-     m_bPositionedSound  dd ?
-     m_dwBufferSize      dd ?
-     m_dwFrequency       dd ?
-     m_nBufferFormat     dd ?
-     m_nRange            dd ?
-     m_nRangeVolume      dd ?
-     m_nXCoordinate      dd ?
-     m_nYCoordinate      dd ?
-     m_nZCoordinate      dd ?
-     m_nPan              dd ?
-     m_nVolume           dd ?
-     m_bSoundInitialized db ?
-                        db ? ; padding
-                         db ? ; padding
-                         db ? ; padding
-     m_nChannel          dd ?
-     m_nPriority         dd ?
-     m_nLooping          dd ?
-     m_nPitchVariance    dd ?
-     m_nVolumeVariance   dd ?
-     m_b3DPositionning   db ?
-                         db ? ; padding
-                         db ? ; padding
-                         db ? ; padding
-     m_nSource           dd ?
-     m_nBuffer           dd ?
-     m_bFireForget       db ?
-                         db ? ; padding
-                         db ? ; padding
-                         db ? ; padding
-     m_nArea             dd ?
-     m_dwOverrideFlags   dd ?
-     m_bSoundIsntDucked  db ?
-                         db ? ; padding
-                         db ? ; padding
-                         db ? ; padding
-   CSoundImp             ends
-
 
 ----
 
@@ -4062,19 +2703,13 @@ Asm Definition
 CSoundMixer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CSoundMixer Class<CSoundMixer Class>`
+
 +------------+----------+-----------------------------------------+-----------+
 | **Offset** | **Size** | **Type**                                | **Field** |
 +------------+----------+-----------------------------------------+-----------+
 | 0x00       | 4        | :ref:`CSoundMixerImp<CSoundMixerImp>`\* | pimpl     |
 +------------+----------+-----------------------------------------+-----------+
-
-Asm Definition
-
-::
-
-   CSoundMixer  struct
-     pimpl      dd ? ; CSoundMixerImp* 
-   CSoundMixer  ends
 
 
 ----
@@ -4154,48 +2789,6 @@ CSoundMixerImp
 | 0x2808     | 28       | :ref:`CTypedPtrList<CTypedPtrList>`       | m_lMusicPositions             |
 +------------+----------+-------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSoundMixerImp        struct
-     alContext           dd ? ; ALCcontext_struct* 
-     alDevice            dd ? ; ALCdevice_struct* 
-     pos                 real4 3 dup (?)
-     bMixerInitialized   dd ?
-     bStreamPlaying      dd ?
-     m_bMusicInitialized dd ?
-     bInPositionUpdate   dd ?
-     bInSoundUpdate      dd ?
-     bInQueueUpdate      dd ?
-     bInLoopingUpdate    dd ?
-     m_dwEAXProperties   dd ?
-     m_soundProperties   CSoundProperties <>
-     m_nNumSongs         dd ?
-     m_nLastSong         dd ?
-     m_nCurrentSong      dd ?
-     m_nQuietMusicVolume dd ?
-     m_nActiveArea       dd ?
-     m_nDuckingOn        dd ?
-     m_aMusicSlots       CDWordArray <>
-     m_tSqrtTable        db 10001 dup (?)
-                         db ? ; padding
-                         db ? ; padding
-                         db ? ; padding
-     nMaxVoices          dd ?
-     lVoices             CObList <>
-     lWaiting            CObList <>
-     lLooping            CObList <>
-     aChannels           CObArray <>
-     nMaxChannels        dd ?
-     nGlobalVolume       dd ?
-     nPanRange           dd ?
-     nXCoordinate        dd ?
-     nYCoordinate        dd ?
-     nZCoordinate        dd ?
-     m_lMusicPositions   CTypedPtrList <> 
-   CSoundMixerImp        ends
-
 
 ----
 
@@ -4209,14 +2802,6 @@ CSoundProperties
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 16       | _EAXPRESET                             | m_iEAXpreset                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CSoundProperties struct
-     m_iEAXpreset   _EAXPRESET <>
-   CSoundProperties ends
 
 
 ----
@@ -4259,28 +2844,6 @@ CSparkle
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x84       | 4        | :ref:`CAIAction<CAIAction>`\*          | m_pTargetAction               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CSparkle             struct
-     m_cGameObject      CGameObject <>
-                        db ? ; padding
-     m_nType            dw ?
-                        dw ? ; padding
-     m_posExact         CPoint <>
-     m_posDelta         CPoint <>
-     m_posDest          CPoint <>
-     m_moveScale        db ?
-     m_terrainTable     db 16 dup (?)
-                        db ? ; padding
-     m_nConjureDuration dw ?
-     m_nTimer           dd ?
-     m_destId           dd ?
-     m_srcId            dd ?
-     m_pTargetAction    dd ? ; CAIAction* 
-   CSparkle             ends
 
 
 ----
@@ -4337,41 +2900,14 @@ CSparkleCluster
 +------------+----------+----------------------------------------+-------------------------------+
 
 
-Asm Definition
-
-::
-
-   CSparkleCluster      struct
-     m_cGameObject      CGameObject <>
-                        db ? ; padding
-     m_pVidMode         dd ? ; CVidMode* 
-     m_particleList     CTypedPtrList <> 
-     m_colorStart       dd ?
-     m_colorFade1       dd ?
-     m_colorFade2       dd ?
-     m_colorFade3       dd ?
-     m_colorFade4       dd ?
-     m_fade1Height      db ?
-     m_fade2Height      db ?
-     m_fade3Height      db ?
-     m_fade4Height      db ?
-     m_rBounding        CRect <>
-     m_wType            dw ?
-                        dw ? ; padding
-     m_nTimer           dd ?
-     m_nConjureDuration dw ?
-                        dw ? ; padding
-     m_explosionDir     CPoint <>
-     m_nGravity         dd ?
-CSparkleCluster         ends
-
-
 ----
 
 .. _CSpawn:
 
 CSpawn
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CSpawn Class<CSpawn Class>`
 
 +------------+----------+-------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                  | **Field**                     |
@@ -4479,66 +3015,6 @@ CSpawn
 | 0x118      | 4        | unsigned long                             | mTimeOfDay                    |
 +------------+----------+-------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSpawn                       struct
-     vfptr                      dd ?
-     Interval                   dd ?
-     SectionAlias               CString <>
-     SpawnFlags                 dd ?
-     DataIsValid                dd ?
-     mSearchAI                  CAIObjectType <>
-     mSearchQty                 dd ?
-     mSearchRegion              dd 4 dup (?)
-     mpSearchKeyVar             dd ? ; CSpawnVar* 
-     mpSearchQtyVar             dd ? ; CSpawnVar* 
-     mCREFiles                  CStringList <>
-     mCreateQty                 dd ?
-     mpCreateQtyScope           dd ? ; CString*
-     mpCreateQtyLabel           dd ? ; CString*
-     mpScriptName               dd ? ; CString*
-     mEA                        db ?
-     mGeneral                   db ?
-     mRace                      db ?
-     mClass                     db ?
-     mGender                    db ?
-     mSpecifics                 db ?
-     mFaction                   db ?
-     mTeam                      db ?
-     mAlignment                 db ?
-                                db ? ; padding
-                                db ? ; padding
-                                db ? ; padding
-     mpOverrideScript           dd ? ; CString* 
-     mpClassScript              dd ? ; CString*
-     mpRaceScript               dd ? ; CString*
-     mpGeneralScript            dd ? ; CString*
-     mpDefaultScript            dd ? ; CString*
-     mpAreaScript               dd ? ; CString*
-     mpSpecificsScript          dd ? ; CString*
-     mDialogFiles               CStringList <>
-     mDeathGoodModifier         dd ?
-     mDeathLawModifier          dd ?
-     mDeathLadyModifier         dd ?
-     mDeathMurderModifier       dd ?
-     Facing                     dd ?
-     mSpawnPointArray           CSpawnPointArray <>
-     mSpelectedPoint            CSpawnPoint <>
-     mPointSelectMode           dd ? ; CSpawn::ePMode 
-     pPointIndexScope           dd ? ; CString*
-     pPointIndexLabel           dd ? ; CString*
-     mpExplicitSpawnPoint       dd ? ; CSpawnPointVar* 
-     pExplicitSpawnFacingScope  dd ? ; CString*
-     pExplicitSpawnFacingLabel  dd ? ; CString*
-     mpSpawnPointStorage        dd ? ; CSpawnPointVar* 
-     pSpawnFacingStorageScope   dd ? ; CString*
-     pSpawnFacingStorageLabel   dd ? ; CString*
-     mSequentialStartValue      dd ?
-     mTimeOfDay                 dd ?
-   CSpawn                       ends
-
 
 ----
 
@@ -4546,6 +3022,8 @@ Asm Definition
 
 CSpawnFile
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CSpawnFile Class<CSpawnFile Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -4559,17 +3037,6 @@ CSpawnFile
 | 0x24       | 4        | int                                    | m_bInSpawn                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSpawnFile           struct
-     m_cTypedPtrList    CTypedPtrList <>
-     mpExitList         dd ? ; CSpawnList* 
-     mpEnterList        dd ? ; CSpawnList* 
-     m_bInSpawn         dd ?
-   CSpawnFile           ends
-
 
 ----
 
@@ -4577,6 +3044,8 @@ Asm Definition
 
 CSpawnList
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CSpawnList Class<CSpawnList Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -4598,21 +3067,6 @@ CSpawnList
 | 0x34       | 4        | :ref:`CSpawnVar<CSpawnVar>`\*          | pControlVar                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSpawnList               struct
-     m_cTypedPtrList        CTypedPtrList <>
-     mSectionAlias          CString <>
-     ReceivedFirstSpawnCall dd ?
-     LastSpawnTime          dd ?
-     CheckSpawnTimes        dd ?
-     SpawnTimeOfDay         dd ?
-     mInterval              dd ?
-     pControlVar            dd ? ; CSpawnVar* 
-   CSpawnList               ends
-
 
 ----
 
@@ -4620,6 +3074,8 @@ Asm Definition
 
 CSpawnPoint
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CSpawnPoint Class<CSpawnPoint Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -4630,16 +3086,6 @@ CSpawnPoint
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x0c       | 4        | int                                    | mFacing                       |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CSpawnPoint  struct
-     vfptr      dd ?
-     mLocation  CPoint  <>
-     mFacing    dd ?
-   CSpawnPoint  ends
 
 
 ----
@@ -4657,15 +3103,6 @@ CSpawnPointArray
 | 0x14       | 4        | int                                    | mDefaultFacing                |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSpawnPointArray     struct
-     m_cTypedPtrArray   CTypedPtrArray <>
-     mDefaultFacing     dd ?
-   CSpawnPointArray     ends
-
 
 ----
 
@@ -4679,14 +3116,6 @@ CSpawnPointVar
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 8        | :ref:`CSpawnVar<CSpawnVar>`            | m_cSpawnVar                   |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CSpawnPointVar   struct
-     m_cSpawnVar    CSpawnVar <>
-   CSpawnPointVar   ends
 
 
 ----
@@ -4704,15 +3133,6 @@ CSpawnVar
 | 0x04       | 4        | :ref:`CString<CString>`                | mLabel                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSpawnVar        struct
-     mScope         CString <>
-     mLabelmScope   CString <>
-   CSpawnVar        ends
-
 
 ----
 
@@ -4721,19 +3141,13 @@ Asm Definition
 CSpell
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CSpell Class<CSpell Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CSpell           struct
-     m_cResHelper   CResHelper <>
-   CSpell           ends
 
 
 ----
@@ -4751,15 +3165,6 @@ CSpellLevelDecrementing
 | 0x04       | 4        | long                                   | m_nLevels                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSpellLevelDecrementing struct
-     m_bImmune             dd ?
-     m_nLevels             dd ?
-   CSpellLevelDecrementing ends
-
 
 ----
 
@@ -4767,6 +3172,10 @@ Asm Definition
 
 CSteam
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note:: Only applies to Steam builds, which are built with Steamworks integrations
+
+Used by the :ref:`CSteam Class<CSteam Class>`
 
 +------------+----------+---------------------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                                | **Field**                     |
@@ -4810,38 +3219,6 @@ CSteam
 | 0x144      | 4        | void                                                    | (__cdecl * logger)            |
 +------------+----------+---------------------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSteam                         struct
-     m_isSteamConnected           db ?
-     m_SteamID                    CSteamID <>
-                                  db ? ; padding
-                                  db ? ; padding
-                                  db ? ; padding
-                                  db ? ; padding
-                                  db ? ; padding
-                                  db ? ; padding
-                                  db ? ; padding
-     m_CreateItemCompleted        CCallResult <>
-     m_PublishedQueryCompleted    CCallResult <>
-     m_SubmitItemUpdateCompleted  CCallResult <>
-     m_RemainingPublished         dd ?
-     m_CurPagePublished           dd ?
-     m_PublishingName             CString <>
-     m_PublishingDir              CString <>
-     m_CloudState                 dd ?
-                                  dd ? ; padding
-     m_RequestUGCDetailsCompleted CCallResult <>
-     m_Subscribed                 CSteamIDSubscribedItems <> ; CSteam::SubscribedItems
-     m_nUploadId                  dq ?
-     m_RemoteStorage              dd ? ; ISteamRemoteStorage* 
-     m_UGC                        dd ? ; ISteamUGC* 
-     m_UserStats                  dd ? ; ISteamUserStats* 
-     logger                       dd ? ; void  (__cdecl * logger)(const char*, ...)
-   CSteam                         ends
-
 
 ----
 
@@ -4849,6 +3226,8 @@ Asm Definition
 
 CSteam::SubscribedItems
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note:: Only applies to Steam builds, which are built with Steamworks integrations
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -4860,16 +3239,6 @@ CSteam::SubscribedItems
 | 0x84       | 4        | int                                    | numSubscribed                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSteamIDSubscribedItems  struct
-     vecPublished           dq 16 dup (?)
-     curSubscribed          dd ?
-     numSubscribed          dd ?
-   CSteamIDSubscribedItems  ends
-
 
 ----
 
@@ -4878,19 +3247,13 @@ Asm Definition
 CSteamID
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. note:: Only applies to Steam builds, which are built with Steamworks integrations
+
 +------------+----------+--------------------------------------------+-----------+
 | **Offset** | **Size** | **Type**                                   | **Field** |
 +------------+----------+--------------------------------------------+-----------+
 | 0x00       | 8        | :ref:`CSteamID::SteamID_t<CSteamIDSteamID>`| m_steamid |
 +------------+----------+--------------------------------------------+-----------+
-
-Asm Definition
-
-::
-
-   CSteamID     struct
-     m_steamid  CSteamIDSteamID <> ; CSteamID::SteamID_t
-   CSteamID     ends
 
 
 ----
@@ -4900,6 +3263,8 @@ Asm Definition
 CSteamID::SteamID_t (CSteamIDSteamID)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. note:: Only applies to Steam builds, which are built with Steamworks integrations
+
 +------------+----------+--------------------------------------------------------------------------------+---------------+
 | **Offset** | **Size** | **Type**                                                                       | **Field**     |
 +------------+----------+--------------------------------------------------------------------------------+---------------+
@@ -4908,17 +3273,6 @@ CSteamID::SteamID_t (CSteamIDSteamID)
 | 0x00       | 8        | unsigned __int64                                                               | m_unAll64Bits |
 +------------+----------+--------------------------------------------------------------------------------+---------------+
 
-Asm Definition
-
-::
-
-   CSteamIDSteamID  struct
-   union
-     m_comp         CSteamIDSteamIDSteamIDComponent <> ; CSteamID::SteamID_t::SteamIDComponent_t
-     m_unAll64Bits  dq ?
-   ends
-   CSteamIDSteamID  ends
-
 
 ----
 
@@ -4926,6 +3280,8 @@ Asm Definition
 
 CSteamID::SteamID_t::SteamIDComponent_t (CSteamIDSteamIDSteamIDComponent)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note:: Only applies to Steam builds, which are built with Steamworks integrations
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -4939,19 +3295,6 @@ CSteamID::SteamID_t::SteamIDComponent_t (CSteamIDSteamIDSteamIDComponent)
 | 0x04       | 4        | EUniverse                              | m_EUniverse : 8               |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CSteamIDSteamIDSteamIDComponent  struct
-     m_unAccountID                  dd ?
-                                    dd ?
-     ; m_unAccountID : 32
-     ; m_unAccountInstance : 20
-     ; m_EAccountType : 4
-     ; EUniverse m_EUniverse : 8
-   CSteamIDSteamIDSteamIDComponent  ends
-
 
 ----
 
@@ -4959,6 +3302,8 @@ Asm Definition
 
 CStore
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CStore Class<CStore Class>`
 
 +------------+----------+---------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                    | **Field**                     |
@@ -4986,24 +3331,6 @@ CStore
 | 0xD8       | 4        | int                                         | m_bLocalCopy                  |
 +------------+----------+---------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CStore           struct
-     m_resRef       CResRef <>
-     m_header       CStoreFileHeader <>
-     m_lInventory   CTypedPtrList <>
-     m_pBuyTypes    dd ? ; unsigned long* 
-     m_nBuyTypess   dd ?
-     m_pDrinks      dd ? ; CStoreFileDrinks* 
-     m_nDrinkss     dd ?
-     m_pSpells      dd ? ; CStoreFileSpell* 
-     m_nSpellss     dd ?
-     m_pVersion     db 8 dup (?)
-     m_bLocalCopy   dd ?
-   CStore           ends
-
 
 ----
 
@@ -5017,14 +3344,6 @@ CStoreFile
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CStoreFile       struct
-     m_cResHelper   CResHelper <>
-   CStoreFile       ends
 
 
 ----
@@ -5046,16 +3365,9 @@ CStoreFileDrinks
 | 0x10       | 4        | unsigned long                          | m_nRumorChance                |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
+**Notes**
 
-::
-
-   CStoreFileDrinks struct
-     m_icon         db 8 dup (?)
-     m_strName      dd ?
-     m_nCost        dd ?
-     m_nRumorChance dd ?
-   CStoreFileDrinks ends
+Related to `STOR V1.0 Drinks for Sale <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/sto_v1.htm#storv1_0_Drink>`_
 
 
 ----
@@ -5139,47 +3451,9 @@ CStoreFileHeader
 | 0x90       | 4        | unsigned long                          | m_wheelWinAmount              |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
+**Notes**
 
-::
-
-   CStoreFileHeader         struct
-     m_nStoreType           dd ?
-     m_strName              dd ?
-     m_nStoreFlags          dd ?
-     m_nBuyMarkUp           dd ?
-     m_nSellMarkDown        dd ?
-     m_nAdditionalMarkDown  dd ?
-     m_nStealDifficulty     dw ?
-     m_nMaxItems            dw ?
-     m_script               db 8 dup (?)
-     m_nbuyTypesOffset      dd ?
-     m_nbuyTypesCount       dd ?
-     m_nInventoryOffset     dd ?
-     m_nInventoryCount      dd ?
-     m_nLore                dd ?
-     m_nIdentifyCost        dd ?
-     m_resRumor             db 8 dup (?)
-     m_drinkOffset          dd ?
-     m_drinkCount           dd ?
-     m_resDonation          db 8 dup (?)
-     m_nInnFlags            dd ?
-     m_nRoomCostPeasant     dd ?
-     m_nRoomCostMerchant    dd ?
-     m_nRoomCostNoble       dd ?
-     m_nRoomCostRoyal       dd ?
-     m_spellOffset          dd ?
-     m_spellCount           dd ?
-     m_rouletMaxBet         dd ?
-     m_crapsMaxBet          dd ?
-     m_wheelMaxBet          dd ?
-     m_rouletWinChance      dd ?
-     m_crapsWinChance       dd ?
-     m_wheelWinChance       dd ?
-     m_rouletWinAmount      dd ?
-     m_crapsWinAmount       dd ?
-     m_wheelWinAmount       dd ?
-   CStoreFileHeader         ends
+Related to `STOR V1.0 Header <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/sto_v1.htm#storv1_0_Header>`_
 
 
 ----
@@ -5205,18 +3479,9 @@ CStoreFileItem
 | 0x18       | 4        | unsigned long                          | m_nStoreFlags                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
+**Notes**
 
-::
-
-   CStoreFileItem   struct
-     m_itemId       db 8 dup (?)
-     m_wear         dw ?
-     m_usageCount   dw 3 dup (?)
-     m_dynamicFlags dd ?
-     m_nInStock     dd ?
-     m_nStoreFlags  dd ?
-   CStoreFileItem   ends
+Related to `STOR V1.0 Items for Sale <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/sto_v1.htm#storv1_0_Sale>`_
 
 
 ----
@@ -5234,14 +3499,9 @@ CStoreFileSpell
 | 0x08       | 4        | unsigned long                          | m_cost                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
+**Notes**
 
-::
-
-   CStoreFileSpell  struct
-     m_spell        db 8 dup (?)
-     m_cost         dd ?
-   CStoreFileSpell  ends
+Related to `STOR V1.0 Cures for Sale <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/sto_v1.htm#storv1_0_Cure>`_
 
 
 ----
@@ -5250,6 +3510,8 @@ Asm Definition
 
 CString
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CString Class<CString Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -5264,15 +3526,6 @@ C Definition
    typedef struct tagCString {
      DWORD         m_pchData;
    } CString;      // size 0x4
-
-
-Asm Definition
-
-::
-
-   CString         struc
-     m_pchData     dd ?
-   CString         ends ; size 0x4
 
 
 ----
@@ -5292,16 +3545,6 @@ CStringData
 | 0x08       | 4        | int         | nAllocLength |
 +------------+----------+-------------+--------------+
 
-Asm Definition
-
-::
-
-   CStringData      struct
-     nRefs          dd ?
-     nDataLength    dd ?
-     nAllocLength   dd ?
-   CStringData      ends
-
 
 ----
 
@@ -5309,6 +3552,8 @@ Asm Definition
 
 CStringList
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CStringList Class<CStringList Class>`
 
 +------------+----------+-----------------------------------------------+--------------+
 | **Offset** | **Size** | **Type**                                      | **Field**    |
@@ -5328,20 +3573,6 @@ CStringList
 | 0x18       | 4        | int                                           | m_nBlockSize |
 +------------+----------+-----------------------------------------------+--------------+
 
-Asm Definition
-
-::
-
-   CStringList      struct
-     m_cObject      CObject <>
-     m_pNodeHead    dd ? ; CStringList::CNode*
-     m_pNodeTail    dd ? ; CStringList::CNode*
-     m_nCount       dd ?
-     m_pNodeFree    dd ? ; CStringList::CNode*
-     m_pBlocks      dd ? ; CPlex* 
-     m_nBlockSize   dd ?
-   CStringList      ends
-
 
 ----
 
@@ -5359,14 +3590,4 @@ CStringList::CNode
 +------------+----------+-----------------------------------------------+--------------+
 | 0x08       | 4        | :ref:`CString::CNode<CString>`                | data         |
 +------------+----------+-----------------------------------------------+--------------+
-
-Asm Definition
-
-::
-
-   CStringListCNode struct
-     pNext          dd ? ; CStringList::CNode*
-     pPrev          dd ? ; CStringList::CNode*
-     data           dd ?
-   CStringListCNode ends
 

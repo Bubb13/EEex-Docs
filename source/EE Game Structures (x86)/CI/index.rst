@@ -39,6 +39,8 @@ CI Structures
 CIcon
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+See :ref:`CIcon Class<CIcon Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
@@ -53,19 +55,13 @@ CIcon
 CImmunitiesAIType
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CImmunitiesAIType Class<CImmunitiesAIType Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CImmunitiesAIType    struct
-     m_cTypedPtrList    CTypedPtrList <>
-   CImmunitiesAIType    ends
 
 
 ----
@@ -75,19 +71,13 @@ Asm Definition
 CImmunitiesEffect
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CImmunitiesEffect Class<CImmunitiesEffect Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CImmunitiesEffect    struct
-     m_cTypedPtrList    CTypedPtrList <>
-   CImmunitiesEffect    ends
 
 
 ----
@@ -107,16 +97,6 @@ CImmunitiesItemEquip
 | 0x0C       | 4        | :ref:`CGameEffect<CGameEffect>`\*         | m_pEffect                     |
 +------------+----------+-------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CImmunitiesItemEquip struct
-     m_res              CResRef <>
-     m_error            dd ?
-     m_pEffect          dd ? ; CGameEffect*
-   CImmunitiesItemEquip ends
-
 
 ----
 
@@ -125,19 +105,13 @@ Asm Definition
 CImmunitiesItemEquipList
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CImmunitiesItemEquipList Class<CImmunitiesItemEquipList Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CImmunitiesItemEquipList struct
-     m_cTypedPtrList        CTypedPtrList <>
-   CImmunitiesItemEquipList ends
 
 
 ----
@@ -157,16 +131,6 @@ CImmunitiesItemTypeEquip
 | 0x08       | 4        | :ref:`CGameEffect<CGameEffect>`\*         | m_pEffect                     |
 +------------+----------+-------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CImmunitiesItemTypeEquip struct
-     m_type                 dd ?
-     m_error                dd ?
-     m_pEffect              dd ? ; CGameEffect*
-   CImmunitiesItemTypeEquip ends
-
 
 ----
 
@@ -175,19 +139,13 @@ Asm Definition
 CImmunitiesItemTypeEquipList
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CImmunitiesItemTypeEquipList Class<CImmunitiesItemTypeEquipList Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CImmunitiesItemTypeEquipList struct
-     m_cTypedPtrList            CTypedPtrList <>
-   CImmunitiesItemTypeEquipList ends
 
 
 ----
@@ -197,19 +155,13 @@ Asm Definition
 CImmunitiesProjectile
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CImmunitiesProjectile Class<CImmunitiesProjectile Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CImmunitiesProjectile    struct
-     m_cTypedPtrList        CTypedPtrList <>
-   CImmunitiesProjectile    ends
 
 
 ----
@@ -219,19 +171,13 @@ Asm Definition
 CImmunitiesSchoolAndSecondary
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CImmunitiesSchoolAndSecondary Class<CImmunitiesSchoolAndSecondary Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CImmunitiesSchoolAndSecondary    struct
-     m_cTypedPtrList                CTypedPtrList <>
-   CImmunitiesSchoolAndSecondary    ends
 
 
 ----
@@ -241,19 +187,13 @@ Asm Definition
 CImmunitiesSchoolAndSecondaryDecrementing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CImmunitiesSchoolAndSecondaryDecrementing Class<CImmunitiesSchoolAndSecondaryDecrementing Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CImmunitiesSchoolAndSecondaryDecrementing    struct
-     m_cTypedPtrList                            CTypedPtrList <>
-   CImmunitiesSchoolAndSecondaryDecrementing    ends
 
 
 ----
@@ -263,19 +203,13 @@ Asm Definition
 CImmunitiesSpellLevel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CImmunitiesSpellLevel Class<CImmunitiesSpellLevel Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 40       | int                                    | m_levels[10]                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CImmunitiesSpellLevel    struct
-     m_levels               dd 10 dup (?)
-   CImmunitiesSpellLevel    ends
 
 
 ----
@@ -285,19 +219,13 @@ Asm Definition
 CImmunitiesSpellLevelDecrementing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CImmunitiesSpellLevelDecrementing Class<CImmunitiesSpellLevelDecrementing Class>`
+
 +------------+----------+---------------------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                                | **Field**                     |
 +------------+----------+---------------------------------------------------------+-------------------------------+
 | 0x00       | 80       | :ref:`CSpellLevelDecrementing<CSpellLevelDecrementing>` | m_levels[10]                  |
 +------------+----------+---------------------------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CImmunitiesSpellLevelDecrementing    struct
-     m_levels                           dd 10 dup (?)
-   CImmunitiesSpellLevelDecrementing    ends
 
 
 ----
@@ -307,19 +235,13 @@ Asm Definition
 CImmunitiesSpellList
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CImmunitiesSpellList Class<CImmunitiesSpellList Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CImmunitiesSpellList struct
-     m_cTypedPtrList    CTypedPtrList <>
-   CImmunitiesSpellList ends
 
 
 ----
@@ -329,19 +251,13 @@ Asm Definition
 CImmunitiesWeapon
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CImmunitiesWeapon Class<CImmunitiesWeapon Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CImmunitiesWeapon    struct
-     m_cTypedPtrList    CTypedPtrList <>
-   CImmunitiesWeapon    ends
 
 
 ----
@@ -361,16 +277,6 @@ CImmunitySpell
 | 0x0C       | 4        | int                                    | m_item                        |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CImmunitySpell   struct
-     m_res          CResRef <>
-     m_error        dd ?
-     m_item         dd ?
-   CImmunitySpell   ends
-
 
 ----
 
@@ -378,6 +284,8 @@ Asm Definition
 
 CImportGame
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CImportGame Class<CImportGame Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -409,30 +317,6 @@ CImportGame
 | 0x68       | 4        | unsigned long                          | m_nReputation                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CImportGame              struct
-     m_bDrizztDead          db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_pGame                dd ? ; CGameFile* 
-     m_nVersion             db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     m_aPartyCreatures      CTypedPtrArray <>
-     m_aNonPartyCreatures   CTypedPtrArray <>
-     m_aCreatureData        CTypedPtrArray <>
-     m_aNPCData             CTypedPtrArray <>
-     m_nGlobalVariables     dd ?
-     m_pGlobalVariables     dd ? ; unsigned char*
-     m_nPartyGold           dd ?
-     m_nReputation          dd ?
-   CImportGame              ends
-
 
 ----
 
@@ -440,6 +324,8 @@ Asm Definition
 
 CInfButtonArray
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CInfButtonArray Class<CInfButtonArray Class>`
 
 +------------+----------+-----------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                      | **Field**                     |
@@ -472,27 +358,6 @@ CInfButtonArray
 +------------+----------+-----------------------------------------------+-------------------------------+
 | 0x1610     | 4        | int                                           | m_bToggleButtonCleric         |
 +------------+----------+-----------------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CInfButtonArray              struct
-     m_buttonArray              CInfButtonSettings 12 dup ({}) 
-     m_configIcons              dd 12 dup (?)
-     m_buttonTypes              dd 12 dup (?)
-     m_buttonToConfigure        dd ?
-     m_nState                   dd ?
-     m_nLastState               dd ?
-     m_bWayPointsOn             dd ?
-     m_vcButtons                CVidCell <>
-     m_vcActions                CVidCell <>
-     m_quickButtonToConfigure   dd ?
-     m_nListStartIndex          dd ?
-     m_nSelectedButton          dd ?
-     m_nFirstMageSpellIndex     dd ?
-     m_bToggleButtonCleric      dd ?
-   CInfButtonArray              ends
 
 
 ----
@@ -532,26 +397,6 @@ CInfButtonSettings
 | 0x1A8      | 4        | int                                    | m_bGreyOut                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CInfButtonSettings       struct
-     m_bEnabled             dd ?
-     m_bShowIcon            dd ?
-     m_bOverrideRender      dd ?
-     m_nButtonFrame         dd ?
-     m_nButtonSelectedFrame dd ?
-     m_vcIcon               CVidCell <>
-     m_vcLauncherIcon       CVidCell <>
-     m_bSelectable          dd ?
-     m_bSelected            dd ?
-     m_bHighlighted         dd ?
-     m_itemCount            dd ?
-     m_itemCharge           dd ?
-     m_bGreyOut             dd ?
-   CInfButtonSettings       ends
-
 
 ----
 
@@ -559,6 +404,8 @@ Asm Definition
 
 CInfCursor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CInfCursor Class<CInfCursor Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -588,27 +435,6 @@ CInfCursor
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CInfCursor           struct
-     bVisible           dd ?
-     vcCursors          CVidCell <>
-     vcArrow            CVidCell <>
-     vcCustom           CVidCell <>
-     vcToolTip          CInfToolTip <>
-     nAnimationCounter  dd ?
-     nAnimationSpeed    dd ?
-     nCurrentCursor     dd ?
-     nDirection         dd ?
-     nState             dd ?
-     bAnimatingCustom   db ?
-                        db ? ; padding
-                        db ? ; padding
-                        db ? ; padding
-   CInfCursor           ends
-
 
 ----
 
@@ -616,6 +442,8 @@ Asm Definition
 
 CInfGame
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CInfGame Class<CInfGame Class>`
 
 +------------+----------+-------------------------------------------------------+--------------------------------------+
 | **Offset** | **Size** | **Type**                                              | **Field**                            |
@@ -894,166 +722,14 @@ CInfGame
 +------------+----------+-------------------------------------------------------+--------------------------------------+
 
 
-Asm Definition
-
-::
-
-   CInfGame                     struct
-     m_ruleTables               CRuleTables <>
-     m_worldTime                CTimerWorld <>
-     m_bGameLoaded              dd ?
-     m_bInLoadGame              db ?
-     m_bInLoadArea              db ?
-     m_bInIniSpawn              db ?
-                                db ? ; padding
-     m_nUniqueAreaID            dd ?
-     m_nAreaFirstObject         dd ?
-     m_bFromNewGame             db ?
-     m_bInDestroyGame           db ?
-     m_bAnotherPlayerJoinedGame db ?
-     m_bInAreaTransition        db ?
-     m_bStartedDeathSequence    dd ?
-     m_lstTargetIds             CTypedPtrList <>
-     m_lstTargetPts             CTypedPtrList <>
-     m_nState                   dw ?
-                                db ? ; padding
-                                db ? ; padding
-     m_iconCount                dd ?
-     m_iconIndex                db ?
-     m_iconResRef               CResRef <>
-     m_tempCursor               db ?
-                                db ? ; padding
-                                db ? ; padding
-     m_iContainer               dd ?
-     m_iContainerSprite         dd ?
-     m_bAllowTargetDead         dd ?
-     m_singlePlayerPermissions  CGamePermission <>
-     m_multiPlayerSettings      CMultiplayerSettings <>
-     m_machineStates            CMachineStates <>
-     m_cButtonArray             CInfButtonArray <>
-     m_cVRamPool                CVRamPool <>
-     m_bSaveScreen              dd ?
-     m_sSaveScreenArea          CString <>
-     m_rgbMasterBitmap          CVidBitmap <>
-                                dd ? ; padding
-     m_remoteObjectsArray       CGameRemoteObjectArray <>
-     m_visibleArea              db ?
-     m_bPlayerScriptStyle       db ?
-                                db ? ; padding
-                                db ? ; padding
-     m_gameAreas                dd 12 dup (?) ; CGameArea*
-     m_pGameAreaMaster          dd ? ; CGameArea*
-     m_characters               dd 6 dup (?)
-     m_charactersPortrait       dd 6 dup (?)
-     m_nCharacters              dw ?
-                                dw ? ; padding
-     m_lstGlobalCreatures       CTypedPtrList <>
-     m_characterOverflow        CTypedPtrArray <>
-     m_nCharacterOverflowCount  dw ?
-     m_nReputation              dw ?
-     m_pathSearch               dd ? ; CPathSearch*
-     m_listGrid                 dd ? ; CPathNode**
-     m_group                    CAIGroup <>
-     m_allies                   CTypedPtrList <>
-     m_familiars                CTypedPtrList <>
-     m_resrefFamiliarsDefault   db (9 * 8) dup (?)
-     m_resrefFamiliars          CTypedPtrList (9 * 9) dup ({}) 
-     m_bFamiliarBlock           dd ?
-     m_nFamiliarSummoner        dd ?
-     m_sSaveGame                CString <>
-     m_bAllowCutSceneBreak      dd ?
-     m_gameSave                 CGameSave <>
-     m_options                  CGameOptions <>
-     m_cGameJournal             CGameJournal <>
-     m_cWorldMap                CWorldMap <>
-     m_pKeymap                  dd 500 dup (?)
-     m_pKeymapFlags             dd 500 dup (?)
-     m_variables                CVariableHash <>
-     m_namedCreatures           CVariableHash <>
-     m_soundNeedParty           STR_RES <>
-     m_soundAreaTransitionRefused STR_RES <>
-     m_bForceDither             db ?
-                                db ? ; padding
-                                db ? ; padding
-                                db ? ; padding
-     m_vcLocator                CVidCell <>
-     m_searchRequests           CTypedPtrList <>
-     m_searchRequestsBack       CTypedPtrList <>
-     m_searchRequestListEmpty   dd ?
-     m_searchShutdown           dd ?
-     m_lDisposableItems         CPtrList <>
-     m_currArmor                dw ?
-     m_currAnimation            dw ?
-     SAVE_OBJECT_LIST           CAIIdList <>
-     m_nProtagonistId           dd ?
-     m_bPartyAI                 db ?
-     m_bShowAreaNotes           db ?
-     m_nTravelScreenImageToUse  db ?
-     m_resrefTravelScreenImage  CResRef <>
-                                db ? ; padding
-     m_dwLastProgressRenderTickCount dd ?
-     m_dwLastProgressMsgTickCount dd ?
-     m_nLastSaveTime            dd ?
-     m_gameTime                 dd ?
-     m_zoomLevel                dd ?
-     m_zoomEnabled              dd ?
-     m_lastClick                CPoint <>
-     m_lastTarget               dd ?
-     m_bTriggerOutline          db ?
-                                db ? ; padding
-                                db ? ; padding
-                                db ? ; padding
-     m_entanglePalette          CVidPalette <>
-     m_webHoldPalette           CVidPalette <>
-     m_nCharacterTerminationSequenceDelay dd ?
-     m_bNoDreamTonight          dd ?
-     m_bContinueHealing         db ?
-                                db ? ; padding
-                                db ? ; padding
-                                db ? ; padding
-     m_cMoveList                CMoveList <>
-     m_cLimboList               CMoveList <>
-     m_lTransitionPiles         CTypedPtrList <>
-     m_transitionPilesResref    CString <>
-     m_transitionPilesPtDest    CPoint <>
-     m_bMissionPackInfo         dd ?
-     m_bMissionPackInfo25       dd ?
-     m_bMissionPackInfoTBP      dd ?
-     m_nAIIndex                 dd ?
-     m_nTimeStop                dd ?
-     m_nTimeStopCaster          dd ?
-     m_nGreyScale               dd ?
-     m_nBrownScale              dd ?
-     m_globalScriptFile         dd ? ; CAIScriptFile*
-     m_aServerStore             dd 12 dup (?) ; CStore*
-     m_nServerStoreDemands      db 12 dup (?)
-     m_appearanceWeapon         CString <>
-     m_appearanceBody           CString <>
-     m_appearanceShield         CString <>
-     m_appearanceHelmet         CString <>
-     m_appearanceColorsWeapon   db 7 dup (?)
-     m_appearanceColorsBody     db 7 dup (?)
-     m_appearanceColorsShield   db 7 dup (?)
-     m_appearanceColorsHelmet   db 7 dup (?)
-     m_bOverrideRestEncounter   dd ?
-     m_bAddOnActivated          dd ?
-     m_bAddInActivated          dd ?
-     m_sCurrentCampaign         CString <>
-     m_bCampaignEnabled         dd ?
-     m_storedLocations          CTypedPtrList <>
-     m_storedLocationsPocketPlane CTypedPtrList <>
-     m_VVCPriorities            CVVCHash <>
-     m_nCurrentVVCPriority      dd ?
-   CInfGame                     ends
-      
-      
-
 ----
 
 .. _CInfTileSet:
 
 CInfTileSet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CInfTileSet Class<CInfTileSet Class>`
 
 +------------+----------+---------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                    | **Field**                     |
@@ -1070,19 +746,6 @@ CInfTileSet
 +------------+----------+---------------------------------------------+-------------------------------+
 | 0xB8       | 4        | unsigned long                               | nTileSize                     |
 +------------+----------+---------------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CInfTileSet  struct
-     tis        dd 2 dup (?) ; CResTileSet* 
-     cVidTile   CVidTile <>
-     pVRPool    dd ? ; CVRamPool* 
-     pResTiles  dd ? ; CResInfTile** 
-     nTiles     dd ?
-     nTileSize  dd ?
-   CInfTileSet  ends
 
 
 ----
@@ -1109,22 +772,6 @@ CInfToolTip
 +------------+----------+----------------------------------------+-------------------------------+
 | 0xF8       | 20       | :ref:`CSound<CSound>`                  | m_openSnd                     |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CInfToolTip          struct
-     m_cVidCell         CVidCell <>
-                        db ? ; padding
-                        db ? ; padding
-                        db ? ; padding
-     m_sText            CString <>
-     m_rSource          CRect <>
-     m_bUseSourceRect   dd ?
-     m_textFont         CVidFont <>
-     m_openSnd          CSound <>
-   CInfToolTip          ends
 
 
 ----
@@ -1320,107 +967,6 @@ CInfinity
 | 0x328      | 4        | int                                            | m_bZooming                            |
 +------------+----------+------------------------------------------------+---------------------------------------+
 
-Asm Definition
-
-::
-
-   CInfinity                        struct
-     pTileSets                      dd 5 dup (?) ; CInfTileSet* 
-     pResWED                        dd ? ; CResWED* 
-     pVRPool                        dd ? ; CVRamPool* 
-     pVidMode                       dd ? ; CVidMode*
-     bUseDestSrc                    dd ?
-     bRefreshVRamRect               dd ?
-     bInitialized                   dd ?
-     bWEDDemanded                   dd ?
-     nOffsetX                       dd ?
-     nOffsetY                       dd ?
-     nTilesX                        dd ?
-     nTilesY                        dd ?
-     nNewX                          dd ?
-     nNewY                          dd ?
-     rViewPortNotZoomed             CRect <>
-     rViewPort                      CRect <>
-     rVRamRect                      CRect <>
-     rRequestRect                   CRect <>
-     nVisibleTilesX                 dd ?
-     nVisibleTilesY                 dd ?
-     nAreaX                         dd ?
-     nAreaY                         dd ?
-     nCurrentTileX                  dd ?
-     nCurrentTileY                  dd ?
-     nCurrentX                      dd ?
-     nCurrentY                      dd ?
-     nSub1XOffset                   dd ?
-     nSub1YOffset                   dd ?
-     nSub2XOffset                   dd ?
-     nSub2YOffset                   dd ?
-     nSub3XOffset                   dd ?
-     nSub3YOffset                   dd ?
-     nSub4XOffset                   dd ?
-     nSub4YOffset                   dd ?
-     sndThunder                     CSound <>
-     nCurrentLightningFrequency     dd ?
-     nNextLightningFrequency        dd ?
-     nNewLightningFrequency         dd ?
-     nCurrentRainLevel              dd ?
-     nNextRainLevel                 dd ?
-     nCurrentSnowLevel              dd ?
-     nCurrentWindLevel              dd ?
-     nCurrentFogLevel               dd ?
-     nNextWindLevel                 dd ?
-     nCurrentTimeOfDay              dd ?
-     nTimeToNextThunder             dd ?
-     nThunderLength                 dd ?
-     bRenderCallLightning           dd ?
-     nRenderLightningTimer          dd ?
-     cLightningPoint                CPoint <>
-     m_glowVidCell                  CVidCell <>
-     m_lAOE                         CTypedPtrList <>
-     m_areaType                     dw ?
-     m_renderDayNightCode           db ?
-     m_oldRenderDayNightCode        db ?
-     m_dayLightIntensity            db ?
-     m_requestDayNightCode          db ?
-     m_oldRequestDualTileCode       db ?
-     m_bResizedViewPort             db ?
-     m_nLastTickCount               dd ?
-     m_ptCurrentPosExact            CPoint <> 
-     m_autoScrollSpeed              dw ?
-                                    dw ? ; padding
-     m_ptScrollDest                 CPoint <> 
-     m_nScrollAttempts              dd ?
-     m_nOldScrollState              dd ?
-     m_nScrollDelay                 db ?
-     m_bMovieBroadcast              db ?
-                                    db ? ; padding
-                                    db ? ; padding
-     m_bStartLightning              dd ?
-     m_bStopLightning               dd ?
-     m_lightningStrikeProb          db ?
-                                    db ? ; padding
-                                    db ? ; padding
-                                    db ? ; padding
-     m_rgbRainColor                 dd ?
-     m_rgbLightningGlobalLighting   dd ?
-     m_rgbOverCastGlobalLighting    dd ?
-     m_rgbGlobalLighting            dd ?
-     m_rgbTimeOfDayGlobalLighting   dd ?
-     m_rgbTimeOfDayRainColor        dd ?
-     m_updateListenPosition         dd ?
-     m_pArea                        dd ? ; CGameArea* 
-     m_vbMessageScreen              CVidBitmap <>
-     m_strrefMessage                dd ?
-     m_bScreenShake                 dd ?
-     m_screenShakeDelta             CPoint <> 
-     m_screenShakeDecrease          CPoint <> 
-     m_fZoomSaved                   real4 ?
-     m_fZoom                        real4 ?
-     m_fStoredZoom                  real4 ?
-     m_bZoomEnabled                 dd ?
-     m_bZooming                     dd ?
-   CInfinity                        ends
-
 
 ----
 
@@ -1428,6 +974,8 @@ Asm Definition
 
 CItem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CItem Class<CItem Class>`
 
 +------------+----------+-----------------------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                                  | **Field**                     |
@@ -1469,25 +1017,4 @@ CItem
    8 NONDROPABLE
    
 **m_flags** field is checked for identified value in :ref:`CItem\:\:GetGenericName<CItemGetGenericName>` and :ref:`CItem\:\:GetDescription<CItemGetDescription>`
-
-
-Asm Definition
-
-::
-
-   CItem            struct 
-     vfptr          dd ? ; offset
-     m_cResHelper   CResHelper <>
-     m_nAbilities   dd ?
-     m_useCount1    dw ?
-     m_useCount2    dw ?
-     m_useCount3    dw ?
-     m_wear         dw ?
-     m_flags        dd ?
-     m_useSound     CSound 2 dup ({})
-     m_numSounds    dw ?
-                    db ? ; padding
-                    db ? ; padding
-     m_Usability    CGameEffectUsabilityList ?
-   CItem            ends ; size 0x68
 

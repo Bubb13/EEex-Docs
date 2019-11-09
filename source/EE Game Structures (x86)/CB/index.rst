@@ -26,6 +26,8 @@ CB Structures
 CBaldurChitin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CBaldurChitin Class<CBaldurChitin Class>`
+
 +------------+----------+---------------------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                                | **Field**                     |
 +------------+----------+---------------------------------------------------------+-------------------------------+
@@ -133,66 +135,6 @@ CBaldurChitin
 +------------+----------+---------------------------------------------------------+-------------------------------+
 
 
-Asm Definition
-
-::
-
-   CBaldurChitin            struct
-     m_cChitin              CChitin <>
-     m_pObjectCursor        dd ? ; CInfCursor*
-     m_pObjectGame          dd ? ; CInfGame*
-     m_pEngineDM            dd ? ; CDungeonMaster*
-     m_pEngineProjector     dd ? ; CBaldurProjector*
-     m_pEngineAI            dd ? ; CScreenAI*
-     m_pEngineCharacter     dd ? ; CScreenCharacter*
-     m_pEngineCreateChar    dd ? ; CScreenCreateChar*
-     m_pEngineCreateParty   dd ? ; CScreenCreateParty*
-     m_pEngineInventory     dd ? ; CScreenInventory*
-     m_pEngineJournal       dd ? ; CScreenJournal*
-     m_pEngineLoad          dd ? ; CScreenLoad*
-     m_pEngineMap           dd ? ; CScreenMap*
-     m_pEngineOptions       dd ? ; CScreenOptions*
-     m_pEnginePriestSpell   dd ? ; CScreenPriestSpell*
-     m_pEngineSave          dd ? ; CScreenSave*
-     m_pEngineStart         dd ? ; CScreenStart*
-     m_pEngineWizSpell      dd ? ; CScreenWizSpell*
-     m_pEngineWorld         dd ? ; CScreenWorld*
-     m_pEngineStore         dd ? ; CScreenStore*
-     m_pEngineMultiPlayer   dd ? ; CScreenMultiPlayer*
-     m_pEngineConnection    dd ? ; CScreenConnection*
-     m_pEngineWorldMap      dd ? ; CScreenWorldMap*
-     m_pEngineChapter       dd ? ; CScreenChapter*
-     m_pEngineMovies        dd ? ; CScreenMovies*
-     m_pEngineDLC           dd ? ; CScreenDLC*
-     m_cTlkTable            CTlkTable <>
-     m_cCachingStatus       CCacheStatus <>
-     m_scriptCache          CScriptCache <>
-     m_cBaldurMessage       CBaldurMessage <>
-     m_cMessageHandler      CMessageHandler <>
-     m_bFontRectOutline     dd ?
-     m_bCDScanDone          db ?
-     m_bCDFoundDrive        db ?
-                            db ? ; padding
-                            db ? ; padding
-     m_sCDDriveName         CString <>
-     m_bCDMediaInDrive      db ?
-     m_bCDFoundBaldurCD     db ?
-     m_bIsAutoStarting      db ?
-                            db ? ; padding
-     m_bDropPanels          dd ?
-     m_bDropCaps            dd ?
-     m_bDisableMovies       dd ?
-     m_bStartConfig         dd ?
-     m_bSuperSpeedAI        dd ?
-     m_bFirstRun            dd ?
-     m_nInstallType         dd ?
-     m_bUseNewGui           dd ?
-     m_preLoadedFont        CVidFont <>
-     m_tiledBackground      CVidMosaic <>
-                            dd ? ; padding
-   CBaldurChitin            ends ; size 0x12B8
-
-
 ----
 
 .. _CBaldurEngine:
@@ -210,16 +152,6 @@ CBaldurEngine
 | 0x28       | 4        | int                                    | m_nPickedCharacter            |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CBaldurEngine            stuct
-     m_cWarp                CWarp <>
-     m_nSelectedCharacter   dd ?
-     m_nPickedCharacter     dd ?
-   CBaldurEngine            ends
-
 
 ----
 
@@ -227,6 +159,8 @@ Asm Definition
 
 CBaldurMessage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CBaldurMessage Class<CBaldurMessage Class>`
 
 +------------+----------+----------------------------------------+---------------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                             |
@@ -340,73 +274,6 @@ CBaldurMessage
 |            | 1        |                                        | ``<padding>``                         |
 +------------+----------+----------------------------------------+---------------------------------------+
 
-Asm Definition
-
-::
-
-   CBaldurMessage                           struct
-     m_bInOnObjectAdd                       db ?
-     m_bInOnObjectDelete                    db ?
-     m_bInOnRestAnnounce                    db ?
-     m_bInOnJournalAnnounce                 db ?
-     m_bInOnAreaMapNoteAnnounce             db ?
-     m_bInOnAnnounceBiography               db ?
-     m_bInHandleBlockingMessages            db ?
-     m_bPlayerShutdown                      db ?
-     m_cChatBuffer                          CChatBuffer <>
-     m_nSignalQueueSize                     db ?
-     m_nSignalQueueStart                    db ?
-     m_nSignalQueueEnd                      db ?
-     m_pnSignalFrom                         db 24 dup (?)
-     m_pnSignalType                         db 24 dup (?)
-     m_pnSignalData                         db 24 dup (?)
-     m_bDeleteAreaPolling                   db ?
-     m_sDeleteAreaString                    CString <>
-     m_dwDeleteAreaTimeout                  dd ?
-     m_pnDeleteAreaVotes                    db 6 dup (?)    
-                                            db ? ; padding
-                                            db ? ; padding
-     m_pnDeleteAreaVoters                   dd 6 dup (?)
-     m_bCloseSessionPolling                 db ?
-                                            db ? ; padding
-                                            db ? ; padding
-                                            db ? ; padding
-     m_dwCloseSessionTimeout                dd ?
-     m_pnCloseSessionVotes                  db 6 dup (?)
-                                            db ? ; padding
-                                            db ? ; padding
-     m_pnCloseSessionVoters                 dd 6 dup (?)
-     m_pRemovedPlayerID                     dd 6 dup (?)
-     m_bRemovedPlayerID                     db ?
-     m_bDialogRequestPending                db ?
-     m_bDialogReplyReturned                 db ?
-     m_bDialogReplyValue                    db ?
-     m_nDialogReplyUpdates                  dd ?
-     m_bLeaveAreaLuaRequestPending          db ?
-     m_bLeaveAreaLuaReplyReturned           db ?
-     m_nLeaveAreaLuaReplyValue              db ?
-     m_bLeaveAreaNameRequestPending         db ?
-     m_bLeaveAreaNameReplyReturned          db ?
-     m_nLeaveAreaNameReplyValue             db ?
-     m_bMultiplayerSynchClientPending       db ?
-     m_bMultiplayerSynchClientFinished      db ?
-     m_bMultiplayerSynchServerPending       db ?
-     m_bMultiplayerSynchServerFinished      db ?
-     m_nMultiplayerSynchClientLocation      db ?
-     m_bVersionControlShutdown              db ?
-     m_sVersionControlShutdownClientString  CString <>
-     m_sVersionControlShutdownServerString  CString <>
-     m_nVersionControlShutdownReason        db ?
-                                            db ? ; padding
-                                            db ? ; padding
-                                            db ? ; padding
-     m_dwSignalSecondsToTimeout             dd ?
-     m_bMultiplayerSessionShutdown          db ?
-     m_bInReputationChange                  db ?
-     m_bInMessageSetDrawPoly                db ?
-                                            db ? ; padding
-   CBaldurMessage                           ends
-
 
 ----
 
@@ -414,6 +281,8 @@ Asm Definition
 
 CBaldurProjector
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CBaldurProjector Class<CBaldurProjector Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -453,31 +322,6 @@ CBaldurProjector
 | 0xC0       | 4        | int                                    | m_bDisplayTOBMovie            |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CBaldurProjector             struct
-     m_cBaldurEngine            CBaldurEngine <>
-     m_pMovie                   dd ? ; CResWebm*
-     bStretchToScreen           dd ?
-     mve_file                   dd ? ; CFile*
-     m_deactivateEngine         dd ?
-     m_pVirtualKeys             CKeyInfo 2 dup ({})
-     m_pVirtualKeysFlags        dd 2 dup (?)
-     CTypedPtrListm_movieResRef CTypedPtrList <>
-     m_bSelectEngine            db ?
-     m_bFirstRender             db ?
-                                db ? ; padding
-                                db ? ; padding
-     m_pCodec                   dd ? ; void*
-     m_nFirstFrameTime          dd ?
-     m_cSoundOverride           CSound <>
-     m_cSubtitles               CResRef <>
-     m_vidFont                  CVidFont <>
-     m_bDisplayTOBMovie         dd ?
-   CBaldurProjector             ends
-
 
 ----
 
@@ -491,14 +335,6 @@ CBiographyFile
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CBiographyFile   struc
-     m_cResHelper   CResHelper <>
-   CBiographyFile   ends ; size 0xC
 
 
 ----
@@ -546,32 +382,6 @@ CBlood
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CBlood                   struct
-     m_pArea                dd ? ; CGameArea*
-     m_particleList         CTypedPtrList <> 
-     m_lstSplashParticles   CTypedPtrList <> 
-     m_refPoint             CPoint <>
-     m_pos                  CPoint <>
-     m_posZ                 dd ?
-     m_nTimeStamp           dw ?
-                            dw ? ; padding
-     m_aColors              dd 3 dup (?)
-     m_rBounding            CRect <>
-     m_nDirection           dw ?
-     m_particleType         dw ?
-     m_bloodType            dw ?
-                            dw ? ; padding
-     m_nCharHeight          dd ?
-     m_bLeavePool           db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-   CBlood                   ends
-
 
 ----
 
@@ -604,24 +414,6 @@ CBloodPool
 | 0x78       | 16       | :ref:`CRect<CRect>`                    | m_rBounding                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CBloodPool           struct
-     m_cGameObject      CGameObject <>
-                        db ? ; padding
-     m_particleList     CTypedPtrList <>
-     m_nDensity         dw ?
-     m_nNumParticles    dw ?
-     m_nLifeTime        dw ?
-                        db ? ; padding
-                        db ? ; padding
-     m_rgbColor         dd ?
-     m_refPoint         CPoint <>
-     m_rBounding        CRect <>
-   CBloodPool           ends
-
 
 ----
 
@@ -635,14 +427,6 @@ CBmpFile
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CBmpFile         struc
-     m_cResHelper   CResHelper <>
-   CBmpFile         ends ; size 0xC
 
 
 ----
@@ -670,20 +454,6 @@ CBounceEntry
 | 0x18       | 4        | int                                       | m_recoverSpellLevels          |
 +------------+----------+-------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CBounceEntry             struct
-     m_levelDecrement       dd ?
-     m_effectId             dd ?
-     m_pProjectile          dd ? ; CProjectile*
-     m_decrementOnly        dd ?
-     m_string               dd ?
-     m_stringOnly           dd ?
-     m_recoverSpellLevels   dd ?
-   CBounceEntry             ends
-
 
 ----
 
@@ -692,19 +462,13 @@ Asm Definition
 CBounceList
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CBounceList Class<CBounceList Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CBounceList       struct
-     m_cTypedPtrList CTypedPtrList <>
-   CBounceList       ends
 
 
 ----
@@ -737,22 +501,4 @@ CButtonData
 +------------+----------+----------------------------------------+-------------------------------+
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CButtonData          struct
-     m_icon             CResRef <>
-     m_name             dd ?
-     m_launcherIcon     CResRef <>
-     m_launcherName     dd ?
-     m_count            dw ?
-                        dw ? ; padding
-     m_abilityId        CAbilityId <>
-     m_bDisabled        db ?
-     m_bDisplayCount    db ?
-                        db ? ; padding
-                        db ? ; padding
-   CButtonData          ends
 

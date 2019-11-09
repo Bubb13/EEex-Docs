@@ -8,33 +8,30 @@ CV Structures
    :maxdepth: 1
 
 
+* :ref:`CVariable<CVariable>`
+* :ref:`CVariableHash<CVariableHash>`
 * :ref:`CVEFEvent<CVEFEvent>`
 * :ref:`CVEFVidCell<CVEFVidCell>`
 * :ref:`CVEFVidCellBase<CVEFVidCellBase>`
 * :ref:`CVEFVidCellFile<CVEFVidCellFile>`
-* :ref:`CVIDIMG_PALETTEAFFECT<CVIDIMG_PALETTEAFFECT>`
-* :ref:`CVIDMODE_CLIP_OUTCODE<CVIDMODE_CLIP_OUTCODE>`
-* :ref:`CVIDMODE_RECTICLE_DESCRIPTION<CVIDMODE_RECTICLE_DESCRIPTION>`
-* :ref:`CVIDPALETTE_COLOR<CVIDPALETTE_COLOR>`
-* :ref:`CVIDPOLY_VERTEX<CVIDPOLY_VERTEX>`
-* :ref:`CVRamPool<CVRamPool>`
-* :ref:`CVVCHash<CVVCHash>`
-* :ref:`CVVCHashEntry<CVVCHashEntry>`
-* :ref:`CVariable<CVariable>`
-* :ref:`CVariableHash<CVariableHash>`
 * :ref:`CVidBitmap<CVidBitmap>`
 * :ref:`CVidCell<CVidCell>`
 * :ref:`CVidCellFont<CVidCellFont>`
 * :ref:`CVidDrawable<CVidDrawable>`
+* :ref:`CVideo<CVideo>`
 * :ref:`CVidFont<CVidFont>`
 * :ref:`CVidImage<CVidImage>`
+* :ref:`CVIDIMG_PALETTEAFFECT<CVIDIMG_PALETTEAFFECT>`
 * :ref:`CVidMode<CVidMode>`
 * :ref:`CVidMosaic<CVidMosaic>`
 * :ref:`CVidPalette<CVidPalette>`
 * :ref:`CVidPng<CVidPng>`
 * :ref:`CVidPoly<CVidPoly>`
 * :ref:`CVidTile<CVidTile>`
-* :ref:`CVideo<CVideo>`
+* :ref:`CVIDMODE_CLIP_OUTCODE<CVIDMODE_CLIP_OUTCODE>`
+* :ref:`CVIDMODE_RECTICLE_DESCRIPTION<CVIDMODE_RECTICLE_DESCRIPTION>`
+* :ref:`CVIDPALETTE_COLOR<CVIDPALETTE_COLOR>`
+* :ref:`CVIDPOLY_VERTEX<CVIDPOLY_VERTEX>`
 * :ref:`CVisibilityMap<CVisibilityMap>`
 * :ref:`CVisibilityMapEllipse<CVisibilityMapEllipse>`
 * :ref:`CVisibilityMapTreeNode<CVisibilityMapTreeNode>`
@@ -42,7 +39,42 @@ CV Structures
 * :ref:`CVisualEffectBase<CVisualEffectBase>`
 * :ref:`CVisualEffectFile<CVisualEffectFile>`
 * :ref:`CVoice<CVoice>`
+* :ref:`CVRamPool<CVRamPool>`
+* :ref:`CVVCHash<CVVCHash>`
+* :ref:`CVVCHashEntry<CVVCHashEntry>`
 
+
+.. _CVariable:
+
+CVariable
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 84       | :ref:`CAreaVariable<CAreaVariable>`    | m_cAreaVariable               |
++------------+----------+----------------------------------------+-------------------------------+
+
+
+----
+
+.. _CVariableHash:
+
+CVariableHash
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVariableHash Class<CVariableHash Class>`
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 4        | :ref:`CVariable<CVariable>`\*          | m_hashEntries                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | long                                   | m_nTableEntries               |
++------------+----------+----------------------------------------+-------------------------------+
+
+
+----
 
 .. _CVEFEvent:
 
@@ -67,20 +99,6 @@ CVEFEvent
 | 0x1C       | 196      | unsigned long                          | m_pad[49]                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CVEFEvent        struct
-     m_nTimeFrame   dd ?
-     m_dwFlags      dd ?
-     m_nRepeatRate  dd ?
-     m_nResType     dd ?
-     m_res          CResRef <>
-     m_specialFlags dd ?
-     m_pad          dd 49 dup (?)
-   CVEFEvent        ends
-
 
 ----
 
@@ -88,6 +106,8 @@ Asm Definition
 
 CVEFVidCell
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVEFVidCell Class<CVEFVidCell Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -130,33 +150,6 @@ CVEFVidCell
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x348      | 4        | unsigned long                          | m_priority                    |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVEFVidCell          struct
-     m_cGameObject      CGameObject <>
-                        db ? ; padding
-     m_cVEFVidCellBase  CVEFVidCellBase <> 
-     m_cVidCell         dd ? ; CVidCell* 
-     m_cShadowVidCell   dd ? ; CVidCell* 
-     m_palette          CVidPalette <>
-     m_newPalette       CVidBitmap <>
-     m_done             dd ?
-     m_newDirection     dd ?
-     m_terrainTable     db 16 dup (?)
-     m_sound            CSound <>
-     m_cAlphaBam        dd ? ; CVidCell* 
-     m_level            db ?
-     m_nCurSound        db ?
-                        db ? ; padding
-                        db ? ; padding
-     m_renderMask       dd ?
-     m_renderType       dd ?
-     m_myRenderMask     dd ?
-     m_priority         dd ?
-   CVEFVidCell          ends
 
 
 ----
@@ -226,41 +219,6 @@ CVEFVidCellBase
 | 0x94       | 336      | unsigned long                          | m_extra[84]                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CVEFVidCellBase       struct
-     m_cVidCellRef       CResRef <>
-     m_cShadowVidCellRef CResRef <>
-     m_bltFlags          dd ?
-     m_bltInfo           dd ?
-     m_bltFlagsExtra     dd ?
-     m_bltInfoExtra      dd ?
-     m_offset            CPoint <>
-     m_offsetFlags       dd ?
-     m_animationSpeed    dd ?
-     m_numDirections     dd ?
-     m_direction         dd ?
-     m_directionFlags    dd ?
-     m_cNewPaletteRef    CResRef <>
-     m_height            dd ?
-     m_glowSize          CPoint <>
-     m_glowIntensity     dd ?
-     m_nDuration         dd ?
-     m_cVVCResRes        CResRef <>
-     m_nStartSequence    dd ?
-     m_nLoopSequence     dd ?
-     m_nCurrentSequence  dd ?
-     m_sequenceFlags     dd ?
-     m_cStartSoundRef    CResRef <>
-     m_cLoopSoundRef     CResRef <>
-     m_cAlphaBamRef      CResRef <>
-     m_nEndSequence      dd ?
-     m_cEndSoundRef      CResRef <>
-     m_extra             dd 84 dup (?)
-   CVEFVidCellBase       ends
-
 
 ----
 
@@ -275,13 +233,157 @@ CVEFVidCellFile
 | 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
 
-::
+----
 
-   CVEFVidCellFile  struct
-     m_cResHelper   CResHelper <>
-   CVEFVidCellFile  ends
+.. _CVidBitmap:
+
+CVidBitmap
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVidBitmap Class<CVidBitmap Class>`
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 156      | :ref:`CVidImage<CVidImage>`            | m_cVidImage                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x9C       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0xa8       | 2        | short                                  | m_nBitCount                   |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0xAC       | 4        | :ref:`CString<CString>`                | m_szResFileName               |
++------------+----------+----------------------------------------+-------------------------------+
+
+
+----
+
+.. _CVidCell:
+
+CVidCell
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVidCell Class<CVidCell Class>`
+
++------------+----------+-------------------------------------------------+--------------------+
+| **Offset** | **Size** | **Type**                                        | **Field**          |
++------------+----------+-------------------------------------------------+--------------------+
+| 0x00       | 4        | DWORD                                           | vfptr              |
++------------+----------+-------------------------------------------------+--------------------+
+| 0x04       | 156      | :ref:`CVidImage<CVidImage>`                     | m_cVidImage        |
++------------+----------+-------------------------------------------------+--------------------+
+| 0xA0       | 12       | :ref:`CResHelper<CResHelper>`                   | m_cResHelper       |
++------------+----------+-------------------------------------------------+--------------------+
+| 0xAC       | 2        | short                                           | m_nCurrentFrame    |
++------------+----------+-------------------------------------------------+--------------------+
+| 0xAE       | 2        | unsigned short                                  | m_nCurrentSequence |
++------------+----------+-------------------------------------------------+--------------------+
+| 0xB0       | 4        | int                                             | m_nAnimType        |
++------------+----------+-------------------------------------------------+--------------------+
+| 0xB4       | 4        | int                                             | m_bPaletteChanged  |
++------------+----------+-------------------------------------------------+--------------------+
+| 0xB8       | 4        | :ref:`frameTableEntry_st<frameTableEntry_st>`\* | m_pFrame           |
++------------+----------+-------------------------------------------------+--------------------+
+| 0xBC       | 1        | unsigned char                                   | m_bShadowOn        |
++------------+----------+-------------------------------------------------+--------------------+
+|            | 3        |                                                 | ``<padding>``      |
++------------+----------+-------------------------------------------------+--------------------+
+
+
+----
+
+.. _CVidCellFont:
+
+CVidCellFont
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 189      | :ref:`CVidCell<CVidCell>`              | m_cVidCell                    |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 3        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+
+
+----
+
+.. _CVidDrawable:
+
+CVidDrawable
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVidDrawable Class<CVidDrawable Class>`
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 4        | int                                    | texType                       |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | void\*                                 | tex                           |
++------------+----------+----------------------------------------+-------------------------------+
+
+
+----
+
+.. _CVideo:
+
+CVideo
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVideo Class<CVideo Class>`
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 4        | :ref:`CVidMode<CVidMode>`\*            | pCurrentMode                  |
++------------+----------+----------------------------------------+-------------------------------+
+
+
+----
+
+.. _CVidFont:
+
+CVidFont
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVidFont Class<CVidFont Class>`
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0C       | 4        | :ref:`CVidCellFont<CVidCellFont>`\*    | vidCellFont                   |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x10       | 4        | unsigned long                          | foreground                    |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x14       | 4        | unsigned long                          | tintcolor                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x18       | 4        | int                                    | pointSize                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x1C       | 4        | int                                    | zoom                          |
++------------+----------+----------------------------------------+-------------------------------+
+
+
+----
+
+.. _CVidImage:
+
+CVidImage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVidImage Class<CVidImage Class>`
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 36       | :ref:`CVidPalette<CVidPalette>`        | m_cPalette                    |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x24       | 120      | CVIDIMG_PALETTEAFFECT                  | mPaletteAffects               |
++------------+----------+----------------------------------------+-------------------------------+
 
 
 ----
@@ -315,493 +417,6 @@ CVIDIMG_PALETTEAFFECT
 | 0x77       | 1        | unsigned char                          | suppressTints                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CVIDIMG_PALETTEAFFECT    struct
-     rgbTintColor           dd ?
-     rgbAddColor            dd ?
-     rgbLightColor          dd ?
-     pRangeTints            dd 7 dup (?)
-     aRangeTintPeriods      db 8 dup (?)
-     pRangeAdds             dd 7 dup (?)
-     aRangeAddPeriods       db 8 dup (?)
-     pRangeLights           dd 7 dup (?)
-     aRangeLightPeriods     db 7 dup (?)
-     suppressTints          db ?
-   CVIDIMG_PALETTEAFFECT    ends
-
-
-----
-
-.. _CVIDMODE_CLIP_OUTCODE:
-
-CVIDMODE_CLIP_OUTCODE
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 4        | unsigned int                           | all                           |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x04       | 4        | unsigned int                           | left : 4                      |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x04       | 4        | unsigned int                           | right : 4                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x04       | 4        | unsigned int                           | bottom : 4                    |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x04       | 4        | unsigned int                           | top : 4                       |
-+------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVIDMODE_CLIP_OUTCODE struct
-     all                 dd ?
-     _rect RECORD
-                         left:      4,
-                         right:     4,
-                         bottom:    4,
-                         top:       4
-   CVIDMODE_CLIP_OUTCODE ends
-
-
-----
-
-.. _CVIDMODE_RECTICLE_DESCRIPTION:
-
-CVIDMODE_RECTICLE_DESCRIPTION
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 8        | :ref:`CPoint<CPoint>`                  | ptCenter                      |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x08       | 2        | short                                  | xAxis                         |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x0A       | 2        | short                                  | yAxis                         |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x0c       | 2        | short                                  | piePiecePtXOffset             |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x0e       | 2        | short                                  | piePiecePtYOffset             |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x10       | 2        | short                                  | piePieceXOffset               |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x12       | 2        | short                                  | piePieceYOffset               |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x14       | 2        | short                                  | xGap                          |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x16       | 2        | short                                  | yGap                          |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x18       | 2        | short                                  | cursor                        |
-+------------+----------+----------------------------------------+-------------------------------+
-|            | 2        |                                        | ``<padding>``                 |
-+------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVIDMODE_RECTICLE_DESCRIPTION    struct
-     ptCenter                       CPoint <>
-     xAxis                          dw ?
-     yAxis                          dw ?
-     piePiecePtXOffset              dw ?
-     piePiecePtYOffset              dw ?
-     piePieceXOffset                dw ?
-     piePieceYOffset                dw ?
-     xGap                           dw ?
-     yGap                           dw ?
-     cursor                         dw ?
-                                    db ? ; padding
-                                    db ? ; padding
-   CVIDMODE_RECTICLE_DESCRIPTION    ends
-
-
-----
-
-.. _CVIDPALETTE_COLOR:
-
-CVIDPALETTE_COLOR
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 4        | int                                    | rgbRed                        |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x04       | 4        | int                                    | rgbGreen                      |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x08       | 4        | int                                    | rgbBlue                       |
-+------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVIDPALETTE_COLOR    struct
-     rgbRed             dd ?
-     rgbGreen           dd ?
-     rgbBlue            dd ?
-   CVIDPALETTE_COLOR    ends
-
-
-----
-
-.. _CVIDPOLY_VERTEX:
-
-CVIDPOLY_VERTEX
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 2        | unsigned short                         | x                             |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x02       | 2        | unsigned short                         | y                             |
-+------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVIDPOLY_VERTEX  struct
-     x              dw ?
-     y              dw ?
-   CVIDPOLY_VERTEX  ends
-
-
-----
-
-.. _CVRamPool:
-
-CVRamPool
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 4        | int                                    | nVTiles                       |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x04       | 4        | st_tiledef\*                           | pTileDef                      |
-+------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVRamPool  struct
-     nVTiles  dd ?
-     pTileDef dd ? ; st_tiledef*
-   CVRamPool  ends
-
-
-----
-
-.. _CVVCHash:
-
-CVVCHash
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 4        | :ref:`CVVCHashEntry<CVVCHashEntry>`\*  | m_hashEntries                 |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x04       | 4        | long                                   | m_nTableEntries               |
-+------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVVCHash          struct
-     m_hashEntries   dd ? ; CVVCHashEntry* 
-     m_nTableEntries dd ?
-   CVVCHash          ends
-
-
-----
-
-.. _CVVCHashEntry:
-
-CVVCHashEntry
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 8        | :ref:`CResRef<CResRef>`                | m_name                        |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x08       | 2        | unsigned short                         | m_priority                    |
-+------------+----------+----------------------------------------+-------------------------------+
-|            | 2        |                                        | ``<padding>``                 |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x0C       | 4        | unsigned long                          | m_renderType                  |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x10       | 4        | unsigned long                          | m_renderMask                  |
-+------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVVCHashEntry    struct
-     m_name         CResRef <>
-     m_priority     dw ?
-                    dw ? ; padding
-     m_renderType   dd ?
-     m_renderMask   dd ?
-   CVVCHashEntry     ends
-
-
-----
-
-.. _CVariable:
-
-CVariable
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 84       | :ref:`CAreaVariable<CAreaVariable>`    | m_cAreaVariable               |
-+------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVariable            struct
-     m_cAreaVariable    CAreaVariable <>
-   CVariable            ends
-
-
-----
-
-.. _CVariableHash:
-
-CVariableHash
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 4        | :ref:`CVariable<CVariable>`\*          | m_hashEntries                 |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x04       | 4        | long                                   | m_nTableEntries               |
-+------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVariableHash     struct
-     m_hashEntries   dd ? ; CVariable* 
-     m_nTableEntries dd ?
-   CVariableHash     ends
-
-
-----
-
-.. _CVidBitmap:
-
-CVidBitmap
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 156      | :ref:`CVidImage<CVidImage>`            | m_cVidImage                   |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x9C       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0xa8       | 2        | short                                  | m_nBitCount                   |
-+------------+----------+----------------------------------------+-------------------------------+
-|            | 2        |                                        | ``<padding>``                 |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0xAC       | 4        | :ref:`CString<CString>`                | m_szResFileName               |
-+------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVidBitmap        struct
-     m_cVidImage     CVidImage <>
-     m_cResHelper    CResHelper <>
-     m_nBitCount     dw ?
-                     dw ? ; padding
-     m_szResFileName CString <>
-   CVidBitmap        ends
-
-
-----
-
-.. _CVidCell:
-
-CVidCell
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------+----------+-------------------------------------------------+--------------------+
-| **Offset** | **Size** | **Type**                                        | **Field**          |
-+------------+----------+-------------------------------------------------+--------------------+
-| 0x00       | 4        | DWORD                                           | vfptr              |
-+------------+----------+-------------------------------------------------+--------------------+
-| 0x04       | 156      | :ref:`CVidImage<CVidImage>`                     | m_cVidImage        |
-+------------+----------+-------------------------------------------------+--------------------+
-| 0xA0       | 12       | :ref:`CResHelper<CResHelper>`                   | m_cResHelper       |
-+------------+----------+-------------------------------------------------+--------------------+
-| 0xAC       | 2        | short                                           | m_nCurrentFrame    |
-+------------+----------+-------------------------------------------------+--------------------+
-| 0xAE       | 2        | unsigned short                                  | m_nCurrentSequence |
-+------------+----------+-------------------------------------------------+--------------------+
-| 0xB0       | 4        | int                                             | m_nAnimType        |
-+------------+----------+-------------------------------------------------+--------------------+
-| 0xB4       | 4        | int                                             | m_bPaletteChanged  |
-+------------+----------+-------------------------------------------------+--------------------+
-| 0xB8       | 4        | :ref:`frameTableEntry_st<frameTableEntry_st>`\* | m_pFrame           |
-+------------+----------+-------------------------------------------------+--------------------+
-| 0xBC       | 1        | unsigned char                                   | m_bShadowOn        |
-+------------+----------+-------------------------------------------------+--------------------+
-|            | 3        |                                                 | ``<padding>``      |
-+------------+----------+-------------------------------------------------+--------------------+
-
-Asm Definition
-
-::
-
-   CVidCell             struc
-     vfptr              dd ? ; offset
-     m_cVidImage        CVidImage <>
-     m_cResHelper       CResHelper <>
-     m_nCurrentFrame    dw ?
-     m_nCurrentSequence dw ?
-     m_nAnimType        dd ?
-     m_bPaletteChanged  dd ?
-     m_pFrame           dd ?
-     m_bShadowOn        db ?
-                        db 3 dup(?) ; padding
-   CVidCell             ends ; size 0xC0
-      
-
-
-----
-
-.. _CVidCellFont:
-
-CVidCellFont
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 189      | :ref:`CVidCell<CVidCell>`              | m_cVidCell                    |
-+------------+----------+----------------------------------------+-------------------------------+
-|            | 3        |                                        | ``<padding>``                 |
-+------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVidCellFont struct
-     m_cVidCell CVidCell <>
-                db ? ; padding
-                db ? ; padding
-                db ? ; padding
-   CVidCellFont ends
-
-
-----
-
-.. _CVidDrawable:
-
-CVidDrawable
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 4        | int                                    | texType                       |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x04       | 4        | void\*                                 | tex                           |
-+------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVidDrawable struct
-     texType    dd ?
-     tex        dd ? ; void* 
-   CVidDrawable ends
-
-
-----
-
-.. _CVidFont:
-
-CVidFont
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x0C       | 4        | :ref:`CVidCellFont<CVidCellFont>`\*    | vidCellFont                   |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x10       | 4        | unsigned long                          | foreground                    |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x14       | 4        | unsigned long                          | tintcolor                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x18       | 4        | int                                    | pointSize                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x1C       | 4        | int                                    | zoom                          |
-+------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVidFont         struct
-     m_cResHelper   CResHelper <>
-     vidCellFont    dd ? ; CVidCellFont* 
-     foreground     dd ?
-     tintcolor      dd ?
-     pointSize      dd ?
-     zoom           dd ?
-   CVidFont         ends
-
-
-----
-
-.. _CVidImage:
-
-CVidImage
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 36       | :ref:`CVidPalette<CVidPalette>`        | m_cPalette                    |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x24       | 120      | CVIDIMG_PALETTEAFFECT                  | mPaletteAffects               |
-+------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVidImage         struct
-     m_cPalette      CVidPalette <>
-     mPaletteAffects CVIDIMG_PALETTEAFFECT <>
-   CVidImage         ends
-
 
 ----
 
@@ -809,6 +424,8 @@ Asm Definition
 
 CVidMode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVidMode Class<CVidMode Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -906,64 +523,6 @@ CVidMode
 | 0x15C      | 176      | :ref:`CVidBitmap<CVidBitmap>`          | m_rgbMasterBitmap             |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CVidMode                 struct
-     m_nPrintFile           dd ?
-     m_nPointerNumber       dd ?
-     m_dwCursorRenderFlags  dd ?
-     m_dwRedMask            dd ?
-     m_dwGreenMask          dd ?
-     m_dwBlueMask           dd ?
-     m_bFadeTo              db ?
-     m_nFade                db ?
-                            db ? ; padding
-                            db ? ; padding
-     m_pWindow              dd ? ; SDL_Window* 
-     m_glContext            dd ? ; void* 
-     m_circle               CVidBitmap  <>
-     nWidth                 dd ?
-     nHeight                dd ?
-     bRedrawEntireScreen    db ?
-     bHardwareMouseCursor   db ?
-                            db ? ; padding
-                            db ? ; padding
-     pPointerVidCell        dd ? ; CVidCell* 
-     pTooltipVidCell        dd ? ; CVidCell* 
-     m_bPrintScreen         db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-     nTickCount             dd ?
-     m_fInputScale          real4 ?
-     rgbGlobalTint          dd ?
-     m_nGammaCorrection     db ?
-     m_nBrightnessCorrection db ?
-                            db ? ; padding
-                            db ? ; padding
-     m_nScreenScrollY       dd ?
-     m_nScreenScrollX       dd ?
-     nRShift                dd ?
-     nGShift                dd ?
-     nBShift                dd ?
-     rgbTint                RGBQUAD <>
-     bPointerEnabled        dd ?
-     rPointerStorage        CRect <>
-     m_rLockedRect          CRect <>
-     m_lastCursor           dd ? ; CVidCell* 
-     m_lastCursorFrame      dd ?
-     m_lastCursorSequence   dd ?
-     m_lastCursorNumber     dd ?
-     m_lastCursorFlags      dd ?
-     m_lastCursorResId      dd ?
-     m_hwCursor             dd ? ; SDL_Cursor* 
-     m_hwCursorSurface      dd ? ; SDL_Surface* 
-     nVRamSurfaces          dd ?
-     m_rgbMasterBitmap      CVidBitmap  <>
-   CVidMode                 ends
-
 
 ----
 
@@ -971,6 +530,8 @@ Asm Definition
 
 CVidMosaic
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVidMosaic Class<CVidMosaic Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -980,15 +541,6 @@ CVidMosaic
 | 0x9C       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CVidMosaic       struct
-     m_cVidImage    CVidImage <>
-     m_cResHelper   CResHelper <>
-   CVidMosaic       ends
-
 
 ----
 
@@ -996,6 +548,8 @@ Asm Definition
 
 CVidPalette
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVidPalette Class<CVidPalette Class>`
 
 +------------+----------+--------------------------------------------------------------------------------------------+------------------------+
 | **Offset** | **Size** | **Type**                                                                                   | **Field**              |
@@ -1023,24 +577,6 @@ CVidPalette
 |            | 1        |                                                                                            | ``<padding>``          |
 +------------+----------+--------------------------------------------------------------------------------------------+------------------------+
 
-Asm Definition
-
-::
-
-   CVidPalette              struct
-     m_nAUCounter           dd ?
-     m_nAUCounterBase       dd ?
-     m_pPalette             dd ? ; tagRGBQUAD*
-     m_nEntries             dd ?
-     rgbGlobalTint          dd ?
-     m_nType                dw ?
-     m_bPaletteOwner        db ?
-                            db ? ; padding
-     m_bSubRangesCalculated dd ?
-     m_rangeColors          db 7 dup (?)
-                            db ? ; padding
-   CVidPalette              ends
-
 
 ----
 
@@ -1048,6 +584,8 @@ Asm Definition
 
 CVidPng
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVidPng Class<CVidPng Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -1057,15 +595,6 @@ CVidPng
 | 0x9C       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CVidPng          struct
-     m_cVidImage    CVidImage <>
-     m_cResHelper   CResHelper <>
-   CVidPng          ends
-
 
 ----
 
@@ -1073,6 +602,8 @@ Asm Definition
 
 CVidPoly
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVidPoly Class<CVidPoly Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -1089,25 +620,14 @@ CVidPoly
 +------------+----------+----------------------------------------+-------------------------------+
 
 
-Asm Definition
-
-::
-
-   CVidPoly                 struct
-     m_pVertices            dd ? ; CVIDPOLY_VERTEX*
-     m_nVertices            dd ?
-     m_pET                  dd ? ; _EdgeDescription*
-     m_pAET                 dd ? ; _EdgeDescription*
-     m_pDrawHLineFunction   dd ? ; void CVidPoly:: (__thiscall * m_pDrawHLineFunction)
-   CVidPoly                 ends
-
-
 ----
 
 .. _CVidTile:
 
 CVidTile
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVidTile Class<CVidTile Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -1119,37 +639,95 @@ CVidTile
 | 0xA0       | 4        | unsigned long                          | m_dwFlags                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CVidTile         struct
-     m_cVidImage    CVidImage <>
-     pRes           dd ? ; CResTile*
-     m_dwFlags      dd ?
-   CVidTile         ends
-
 
 ----
 
-.. _CVideo:
+.. _CVIDMODE_CLIP_OUTCODE:
 
-CVideo
+CVIDMODE_CLIP_OUTCODE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 4        | :ref:`CVidMode<CVidMode>`\*            | pCurrentMode                  |
+| 0x00       | 4        | unsigned int                           | all                           |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | unsigned int                           | left : 4                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | unsigned int                           | right : 4                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | unsigned int                           | bottom : 4                    |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | unsigned int                           | top : 4                       |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
 
-::
+----
 
-   CVideo           struct
-     pCurrentMode   dd ? ; CVidMode* 
-   CVideo           ends
+.. _CVIDMODE_RECTICLE_DESCRIPTION:
+
+CVIDMODE_RECTICLE_DESCRIPTION
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 8        | :ref:`CPoint<CPoint>`                  | ptCenter                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 2        | short                                  | xAxis                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0A       | 2        | short                                  | yAxis                         |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0c       | 2        | short                                  | piePiecePtXOffset             |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0e       | 2        | short                                  | piePiecePtYOffset             |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x10       | 2        | short                                  | piePieceXOffset               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x12       | 2        | short                                  | piePieceYOffset               |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x14       | 2        | short                                  | xGap                          |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x16       | 2        | short                                  | yGap                          |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x18       | 2        | short                                  | cursor                        |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+
+
+----
+
+.. _CVIDPALETTE_COLOR:
+
+CVIDPALETTE_COLOR
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 4        | int                                    | rgbRed                        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | int                                    | rgbGreen                      |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 4        | int                                    | rgbBlue                       |
++------------+----------+----------------------------------------+-------------------------------+
+
+
+----
+
+.. _CVIDPOLY_VERTEX:
+
+CVIDPOLY_VERTEX
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 2        | unsigned short                         | x                             |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x02       | 2        | unsigned short                         | y                             |
++------------+----------+----------------------------------------+-------------------------------+
 
 
 ----
@@ -1158,6 +736,8 @@ Asm Definition
 
 CVisibilityMap
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVisibilityMap Class<CVisibilityMap Class>`
 
 +------------+----------+-----------------------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                                  | **Field**                     |
@@ -1182,25 +762,6 @@ CVisibilityMap
 +------------+----------+-----------------------------------------------------------+-------------------------------+
 | 0x54       | 4        | :ref:`CVisibilityMapEllipse<CVisibilityMapEllipse>`\*     | m_pVisMapEllipses             |
 +------------+----------+-----------------------------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CVisibilityMap       struct
-     m_pMap             dd ? ; unsigned short*
-     m_nMapSize         dd ?
-     m_nWidth           dw ?
-     m_nHeight          dw ?
-     m_bOutDoor         db ?
-                        db ? ; padding
-                        db ? ; padding
-                        db ? ; padding
-     m_pSearchMap       dd ? ; CSearchBitmap* 
-     m_aCharacterIds    dd 15 dup (?)
-     m_pVisMapTrees     dd ? ; CVisibilityMapTreeNode** 
-     m_pVisMapEllipses  dd ? ; CVisibilityMapEllipse* 
-   CVisibilityMap       ends
 
 
 ----
@@ -1228,21 +789,6 @@ CVisibilityMapEllipse
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CVisibilityMapEllipse    struct
-     m_nXExploreRange       dw ?
-     m_nYExploreRange       dw ?
-     m_pXEllipsePts         dd ? ; unsigned char* 
-     m_pYEllipsePts         dd ? ; unsigned char* 
-     m_nXPtsSize            db ?
-     m_nYPtsSize            db ?
-                            db ? ; padding
-                            db ? ; padding
-   CVisibilityMapEllipse    ends
-
 
 ----
 
@@ -1265,18 +811,6 @@ CVisibilityMapTreeNode
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CVisibilityMapTreeNode   struct
-     m_relativePos          CPoint <>
-     m_nRange               dw ?
-     m_aChildren            dw 3 dup (?)
-     m_parent               dw ?
-                            dw ? ; padding
-   CVisibilityMapTreeNode   ends
-
 
 ----
 
@@ -1284,6 +818,8 @@ Asm Definition
 
 CVisualEffect
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVisualEffect Class<CVisualEffect Class>`
 
 +------------+----------+---------------------------------------------+---------------------+
 | **Offset** | **Size** | **Type**                                    | **Field**           |
@@ -1326,32 +862,6 @@ CVisualEffect
 +------------+----------+---------------------------------------------+---------------------+
 | 0x2A8      | 4        | unsigned long                               | m_renderMask        |
 +------------+----------+---------------------------------------------+---------------------+
-
-Asm Definition
-
-::
-
-   CVisualEffect            struct
-     m_cGameObject          CGameObject <>
-                            db ? ; padding
-     m_cVisualEffectBase    CVisualEffectBase <>
-     m_activeAnimations     CTypedPtrList <>
-     m_timedEvents          CTypedPtrList <>
-     m_triggeredEvents      CTypedPtrList <>
-     m_ptTargetPos          CPoint <>
-     m_nTargetId            dd ?
-     m_posExact             CPoint <>
-     m_posOld               CPoint <>
-     m_nExistanceCounter    dd ?
-     m_nDirection           dd ?
-     m_nNewDirection        dd ?
-     m_posDelta             CPoint <>
-     m_terrainTable         db 16 dup (?)
-     pList                  dd ? ; CStringList* 
-     m_listPos              dd ? ; __POSITION* 
-     m_startedList          dd ?
-     m_renderMask           dd ?
-   CVisualEffect            ends
  
 
 ----
@@ -1389,25 +899,6 @@ CVisualEffectBase
 | 0x30       | 400      | unsigned long                          | m_extra[100]                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CVisualEffectBase         struct
-     m_nTimedEventOffset     dd ?
-     m_nTimedEventCount      dd ?
-     m_nTriggeredEventOffset dd ?
-     m_nTriggeredEventCount  dd ?
-     m_nTargetType           dd ?
-     m_nSpeed                dd ?
-     m_nDuration             dd ?
-     m_ptStartDeltaV         CPoint  <>
-     m_nDeltaVDec            dd ?
-     m_nHeight               dd ?
-     m_flags                 dd ?
-     m_extra                 dd 100 dup (?)
-   CVisualEffectBase         ends
-
 
 ----
 
@@ -1422,14 +913,6 @@ CVisualEffectFile
 | 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CVisualEffectFile struct
-     m_cResHelper    CResHelper <>
-   CVisualEffectFile ends
-
 
 ----
 
@@ -1437,6 +920,8 @@ Asm Definition
 
 CVoice
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CVoice Class<CVoice Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -1458,20 +943,57 @@ CVoice
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
 
-::
+----
 
-   CVoice            struct
-     m_cObject       CObject <>
-     m_pSound        dd ? ; CSound* 
-     m_nBuffer       dd ?
-     m_nSource       dd ?
-     m_nChannel      dd ?
-     m_nPriority     dd ?
-     m_bDuckedOthers db ?
-                     db ? ; padding
-                     db ? ; padding
-                     db ? ; padding
-   CVoice            ends
+.. _CVRamPool:
+
+CVRamPool
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 4        | int                                    | nVTiles                       |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | st_tiledef\*                           | pTileDef                      |
++------------+----------+----------------------------------------+-------------------------------+
+
+
+----
+
+.. _CVVCHash:
+
+CVVCHash
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 4        | :ref:`CVVCHashEntry<CVVCHashEntry>`\*  | m_hashEntries                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x04       | 4        | long                                   | m_nTableEntries               |
++------------+----------+----------------------------------------+-------------------------------+
+
+
+----
+
+.. _CVVCHashEntry:
+
+CVVCHashEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------+----------+----------------------------------------+-------------------------------+
+| **Offset** | **Size** | **Type**                               | **Field**                     |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x00       | 8        | :ref:`CResRef<CResRef>`                | m_name                        |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x08       | 2        | unsigned short                         | m_priority                    |
++------------+----------+----------------------------------------+-------------------------------+
+|            | 2        |                                        | ``<padding>``                 |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x0C       | 4        | unsigned long                          | m_renderType                  |
++------------+----------+----------------------------------------+-------------------------------+
+| 0x10       | 4        | unsigned long                          | m_renderMask                  |
++------------+----------+----------------------------------------+-------------------------------+
 

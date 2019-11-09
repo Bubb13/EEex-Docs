@@ -1,15 +1,16 @@
-.. _CScreenAI Functions:
+.. _CScreenAI Class:
 
 ==========================
-CScreenAI Functions
+CScreenAI Class
 ==========================
 
 .. toctree::
    :maxdepth: 1
 
+The structure used for this class is :ref:`CScreenAI<CScreenAI>`
 
 +--------------------------------------------------------------------------------+
-| **Functions**                                                                  |
+| **Quick Ref**                                                                  |
 +--------------------------------------------------------------------------------+
 | virtual void **CScreenAI\:\:EngineDeactivated**\()                             |
 +--------------------------------------------------------------------------------+

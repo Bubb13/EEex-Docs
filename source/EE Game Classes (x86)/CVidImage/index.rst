@@ -1,15 +1,16 @@
-.. _CVidImage Functions:
+.. _CVidImage Class:
 
 ==========================
-CVidImage Functions
+CVidImage Class
 ==========================
 
 .. toctree::
    :maxdepth: 1
 
+The structure used for this class is :ref:`CVidImage<CVidImage>`
 
 +---------------------------------------------------------------------+
-| **Functions**                                                       |
+| **Quick Ref**                                                       |
 +---------------------------------------------------------------------+
 | void **CVidImage\:\:SetTintColor**\(unsigned long rgbNewColor)      |
 +---------------------------------------------------------------------+

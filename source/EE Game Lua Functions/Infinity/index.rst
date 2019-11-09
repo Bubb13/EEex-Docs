@@ -814,7 +814,7 @@ Calls the :ref:`CTlkTable\:\:Fetch<CTlkTableFetch>` method to fetch the StrRef s
 
 **Example**
 
-Returns the string for StrRef ``38848`` (*“Greetings, good customer. A pearl to you.”*):
+Returns the string for StrRef ``38848`` (*"Greetings, good customer. A pearl to you."*):
 
    pearl = Infinity_FetchString(38848)
 
@@ -839,7 +839,7 @@ Find a UI control that has the specified bam resource reference
 
 **Return Value**
 
-Returns a pointer to the :ref:`uiItem<uiItem>` structure of the matched UI control or a lua ``NIL``
+Returns userdata version of the item (a pointer to the :ref:`uiItem<uiItem>` structure of the matched UI control or a lua ``NIL``)
 
 See notes for further details.
 
@@ -877,7 +877,7 @@ Find the UI control that uses sequence ``3`` of ``GUIOSTLM.BAM`` (*which is the 
 
 ::
 
-   Infinity_FindItemWithBam("GUIOSTLM",3)
+   reformpartycontrol = Infinity_FindItemWithBam("GUIOSTLM",3)
 
 
 
@@ -900,7 +900,7 @@ Find a UI control that has the specified text
 
 **Return Value**
 
-Returns a pointer to the :ref:`uiItem<uiItem>` structure of the matched UI control or a lua ``NIL``
+Returns userdata version of the item (a pointer to the :ref:`uiItem<uiItem>` structure of the matched UI control or a lua ``NIL``)
 
 See notes for further details.
 
@@ -934,7 +934,7 @@ It is unknown how to exactly use this function as there are no known examples.
    Find the text control that has "Hello" 
    --[
    
-   Infinity_FindItemWithText("Hello")
+   hellocontrol = Infinity_FindItemWithText("Hello")
 
 
 ----

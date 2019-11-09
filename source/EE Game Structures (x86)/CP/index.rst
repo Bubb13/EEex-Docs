@@ -72,6 +72,8 @@ CP Structures
 CParticle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CParticle Class<CParticle Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
@@ -102,28 +104,6 @@ CParticle
 | 0x30       | 4        | long                                   | m_nGravity                    |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CParticle        struct
-     m_nTimeStamp   dw ?
-     m_nTailLength  dw ?
-     m_nRenderTime  dw ?
-                    dw ? ; padding
-     m_rgbColor     dd ?
-     m_wType        dw ?
-                    dw ? ; padding
-     m_nLifeSpan    dd ?
-     m_bTag         db ?
-                    db ? ; padding
-                    db ? ; padding
-                    db ? ; padding
-     m_pos          CPARTICLE_POINT <>
-     m_vel          CPARTICLE_POINT <>
-     m_nGravity     dd ?
-   CParticle        ends
-
 
 ----
 
@@ -141,16 +121,6 @@ CPARTICLE_POINT
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x08       | 4        | long                                   | z                             |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CPARTICLE_POINT  struct
-     x              dd ?
-     y              dd ?
-     z              dd ?
-   CPARTICLE_POINT  ends
 
 
 ----
@@ -182,22 +152,6 @@ CPathNode
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CPathNode            struct
-     m_pathNodePrev     dd ? ; CPathNode* 
-     m_listOpenLeft     dd ? ; CPathNode* 
-     m_listOpenRight    dd ? ; CPathNode* 
-     m_listOpenParent   dd ? ; CPathNode* 
-     m_gridPosition     dd ?
-     m_costStart        dd ?
-     m_costTotal        dd ?
-     m_fIsOpen          db ?
-                        db ? ; padding
-   CPathNode            ends
-
 
 ----
 
@@ -205,6 +159,8 @@ Asm Definition
 
 CPathSearch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CPathSearch Class<CPathSearch Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -226,21 +182,6 @@ CPathSearch
 | 0x16       | 2        | short                                  | m_pathCurrent                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CPathSearch       struct
-     PATH_SMOOTH     dd ?
-     m_pListGrid     dd ? ; CPathNode** 
-     m_openList      dd ? ; CPathNode* 
-     m_openListLevel dw ?
-     m_nOpenList     dw ?
-     m_pathBegin     dd ? ; long* 
-     m_nPathNodes    dw ?
-     m_pathCurrent   dw ?
-   CPathSearch       ends
-
 
 ----
 
@@ -248,6 +189,8 @@ Asm Definition
 
 CPersistantEffect
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CPersistantEffect Class<CPersistantEffect Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -271,22 +214,6 @@ CPersistantEffect
 | 0x18       | 4        | long                                   | m_counter                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CPersistantEffect    struct
-     vfptr              dd ?
-     m_done             dd ?
-     m_deleted          dd ?
-     m_numDamage        dw ?
-     m_persistantType   dw ?
-     m_sourceID         dd ?
-     m_period           dw ?
-     m_periodCounter    dw ?
-     m_counter          dd ?
-   CPersistantEffect    ends
-
 
 ----
 
@@ -304,16 +231,6 @@ CPersistantEffectApplyEffect
 +------------+----------+---------------------------------------------------------+---------------------------+
 | 0x30       | 4        | :ref:`CGameEffect<CGameEffect>`\*                       | m_pSourceEffect           |
 +------------+----------+---------------------------------------------------------+---------------------------+
-
-Asm Definition
-
-::
-
-   CPersistantEffectApplyEffect struct
-     m_cPersistantEffectDamage  CPersistantEffectDamage <>
-     m_res                      CResRef <>
-     m_pSourceEffect            dd ? ; CGameEffect* 
-   CPersistantEffectApplyEffect ends
 
 
 ----
@@ -334,17 +251,6 @@ CPersistantEffectBurningDeath
 +------------+----------+---------------------------------------------+-------------------------------+
 |            | 2        |                                             | ``<padding>``                 |
 +------------+----------+---------------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CPersistantEffectBurningDeath    struct
-     m_cPersistantEffect            CPersistantEffect <>
-     m_charredDegree                db ?
-     m_charredIncrement             db ?
-                                    db ? ; padding
-   CPersistantEffectBurningDeath    ends
 
 
 ----
@@ -384,27 +290,6 @@ CPersistantEffectColorEffect
 |            | 2        |                                             | ``<padding>``                 |
 +------------+----------+---------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CPersistantEffectColorEffect struct
-     m_cPersistantEffect        CPersistantEffect <>
-     m_undo                     dd ?
-     m_effectFinalRed           db ?
-     m_effectDegreeRed          db ?
-     m_effectIncrementRed       db ?
-     m_effectFinalGreen         db ?
-     m_effectDegreeGreen        db ?
-     m_effectIncrementGreen     db ?
-     m_effectFinalBlue          db ?
-     m_effectDegreeBlue         db ?
-     m_effectIncrementBlue      db ?
-     m_colorEffect              db ?
-                                db ? ; padding
-                                db ? ; padding
-   CPersistantEffectColorEffect ends
-
 
 ----
 
@@ -429,20 +314,6 @@ CPersistantEffectDamage
 | 0x24       | 4        | long                                        | m_duration                    |
 +------------+----------+---------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CPersistantEffectDamage  struct
-     m_cPersistantEffect    CPersistantEffect <>
-     m_type                 dw ?
-     m_maxDamage            dw ?
-     m_damage               dw ?
-                            db ? ; padding
-                            db ? ; padding
-     m_duration             dd ?
-   CPersistantEffectDamage  ends
-
 
 ----
 
@@ -459,15 +330,6 @@ CPersistantEffectDisease
 | 0x28       | 8        | :ref:`CResRef<CResRef>`                                 | m_res                         |
 +------------+----------+---------------------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CPersistantEffectDisease     struct
-     m_cPersistantEffectDamage  CPersistantEffectDamage <>
-     m_res                      CResRef <>
-   CPersistantEffectDisease     ends
-
 
 ----
 
@@ -481,14 +343,6 @@ CPersistantEffectElectricDeath
 +------------+----------+---------------------------------------------------------------------+----------------------------------+
 | 0x00       | 32       | :ref:`CPersistantEffectBurningDeath<CPersistantEffectBurningDeath>` | m_cPersistantEffectBurningDeath  |
 +------------+----------+---------------------------------------------------------------------+----------------------------------+
-
-Asm Definition
-
-::
-
-   CPersistantEffectElectricDeath    struct
-     m_cPersistantEffectBurningDeath CPersistantEffectBurningDeath <>
-   CPersistantEffectElectricDeath    ends
 
 
 ----
@@ -512,18 +366,6 @@ CPersistantEffectFadeEffect
 |            | 2        |                                             | ``<padding>``                 |
 +------------+----------+---------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CPersistantEffectFadeEffect  struct
-     m_cPersistantEffect        CPersistantEffect <>
-     m_fade                     dw ?
-     m_type                     dw ?
-     m_increment                dw ?
-                                dw ? ;padding
-   CPersistantEffectFadeEffect  ends
-
 
 ----
 
@@ -538,14 +380,6 @@ CPersistantEffectFireDeath
 | 0x00       | 32       | :ref:`CPersistantEffectBurningDeath<CPersistantEffectBurningDeath>` | m_cPersistantEffectBurningDeath |
 +------------+----------+---------------------------------------------------------------------+---------------------------------+
 
-Asm Definition
-
-::
-
-   CPersistantEffectFireDeath        struct
-     m_cPersistantEffectBurningDeath CPersistantEffectBurningDeath <>
-   CPersistantEffectFireDeath        ends
-
 
 ----
 
@@ -559,14 +393,6 @@ CPersistantEffectList
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_cTypedPtrList               |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CPersistantEffectList    struct
-     m_cTypedPtrList        CTypedPtrList <>
-   CPersistantEffectList    ends
 
 
 ----
@@ -583,15 +409,6 @@ CPersistantEffectListRegenerated
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x1C       | 4        | unsigned long                          | m_nCounter                    |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CPersistantEffectListRegenerated struct
-     m_cTypedPtrList                CTypedPtrList <>
-     m_nCounter                     dd ?
-   CPersistantEffectListRegenerated ends
 
 
 ----
@@ -617,19 +434,6 @@ CPersistantEffectMove
 | 0x2C       | 4        | long                                        | m_target                      |
 +------------+----------+---------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CPersistantEffectMove    struct
-     m_cPersistantEffect    CPersistantEffect <>
-     m_type                 dw ?
-                            dw ? ; padding
-     m_speed                dd ?
-     m_dest                 CPoint <>
-     m_target               dd ?
-   CPersistantEffectMove    ends
-
 
 ----
 
@@ -644,14 +448,6 @@ CPersistantEffectPoison
 | 0x00       | 40       | :ref:`CPersistantEffectDamage<CPersistantEffectDamage>` | m_cPersistantEffectDamage     |
 +------------+----------+---------------------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CPersistantEffectPoison      struct
-     m_cPersistantEffectDamage  CPersistantEffectDamage <>
-   CPersistantEffectPoison      ends
-
 
 ----
 
@@ -665,14 +461,6 @@ CPersistantEffectRegeneration
 +------------+----------+---------------------------------------------------------+-------------------------------+
 | 0x00       | 40       | :ref:`CPersistantEffectDamage<CPersistantEffectDamage>` | m_cPersistantEffectDamage     |
 +------------+----------+---------------------------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CPersistantEffectRegeneration    struct
-     m_cPersistantEffectDamage      CPersistantEffectDamage <>
-   CPersistantEffectRegeneration    ends
 
 
 ----
@@ -696,6 +484,8 @@ CPlatform
 CPlex
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Used by the :ref:`CPlex Class<CPlex Class>`
+
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
@@ -703,15 +493,6 @@ CPlex
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x04       | 4        | unsigned long                          | dwReserved[1]                 |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CPlex        struct
-     pNext      dd ? ; CPlex* 
-     dwReserved dd ?
-   CPlex        ends
 
 
 ----
@@ -732,15 +513,6 @@ CPoint
 | 0x04       | 4        | long                                   | y                             |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CPoint   struct
-     x      dd ?
-     y      dd ?
-   CPoint   ends
-
 
 ----
 
@@ -758,16 +530,6 @@ CPortraitIcon
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x08       | 192      | :ref:`CVidCell<CVidCell>`              | bam                           |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CPortraitIcon    struct
-     icon           dd ?
-     frame          dd ?
-     bam            CVidCell <>
-   CPortraitIcon    ends
 
 
 ----
@@ -815,33 +577,6 @@ CProgressBar
 | 0x58       | 24       | long                                   | m_nRemoteWaitingReason[6]     |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CProgressBar              struct
-     m_nSecondsToTimeout     dd ?
-     m_nProgressBarCaption   dd ?
-     m_nParchmentCaption     dd ?
-     m_nActionProgress       dd ?
-     m_nActionTarget         dd ?
-     m_bTravelActive         db ?
-     m_bWaiting              db ?
-                             db ? ; padding
-                             db ? ; padding
-     m_nWaitingReason        dd ?
-     m_bDisableMinibars      db ?
-     m_bTimeoutVisible       db ?
-     m_bProgressBarActivated db ?
-     m_bRemoteWaiting        db 6 dup (?)
-                             db ? ; padding
-                             db ? ; padding
-                             db ? ; padding
-     m_nRemoteActionProgress dd 6 dup (?)
-     m_nRemoteActionTarget   dd 6 dup (?)
-     m_nRemoteWaitingReason  dd 6 dup (?)
-   CProgressBar              ends
-
 
 ----
 
@@ -849,6 +584,8 @@ Asm Definition
 
 CProjectile
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CProjectile Class<CProjectile Class>`
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -964,68 +701,6 @@ CProjectile
 | 0x154      | 8        | :ref:`CResRef<CResRef>`                | m_successSpell                |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CProjectile              struct
-     m_cGameObject          CGameObject <>
-                            db ? ; padding
-     m_projectileType       dw ?
-     m_addToListType        db ?
-                            db ? ; padding
-     m_speed                dw ?
-                            dw ? ; padding
-     m_sourceId             dd ?
-     m_targetId             dd ?
-     m_callBackProjectile   dd ?
-     m_effectList           CGameEffectList <>
-     m_nType                dw ?
-                            dw ? ; padding
-     m_posExact             CPoint <>
-     m_posDelta             CPoint <>
-     m_startDelta           CPoint <>
-     m_minRandomSpeed       CPoint <>
-     m_maxRandomSpeed       CPoint <>
-     m_startSpeed           dd ?
-     m_posDest              CPoint <>
-     m_terrainTable         db 16 dup (?)
-     m_decAmmount           dw ?
-                            dw ? ; padding
-     m_bSparkleTrail        dd ?
-     m_defaultRenderFlags   dd ?
-     m_bIgnoreTarget        dd ?
-     m_sound                CSound <>
-     m_fireSoundRef         CResRef <>
-     m_loopFireSound        dd ?
-     m_arrivalSoundRef      CResRef <>
-     m_loopArrivalSound     dd ?
-     m_bHasHeight           db ?
-                            db ? ; padding
-     m_nDeltaZ              dw ?
-     m_nDeltaZLast          dw ?
-                            dw ? ; padding
-     m_nOrigDistance        dd ?
-     m_ptBamSize            CPoint <>
-     m_dwFlags              dd ?
-     m_maxBounces           dd ?
-     m_visualEffectRef      CString <>
-     m_visualEffect         dd ?
-     m_maxDuration          dw ?
-     m_lanceWidth           dw ?
-     m_extFlags             dd ?
-     m_strRef               dd ?
-     m_color                dd ?
-     m_colorSpeed           dw ?
-     m_shake                dw ?
-     m_IDSValue1            dw ?
-     m_IDSType1             dw ?
-     m_IDSValue2            dw ?
-     m_IDSType2             dw ?
-     m_failureSpell         CResRef <>
-     m_successSpell         CResRef <>
-   CProjectile              ends
-
 
 ----
 
@@ -1041,15 +716,6 @@ CProjectileAmbiant
 +------------+----------+-------------------------------------------------+-----------------------+
 |            | 2        |                                                 | ``<padding>``         |
 +------------+----------+-------------------------------------------------+-----------------------+
-
-Asm Definition
-
-::
-
-   CProjectileAmbiant       struct
-     m_cProjectileSpellHit  CProjectileSpellHit <>
-                            dw ? ; padding
-   CProjectileAmbiant       ends
 
 
 ----
@@ -1163,67 +829,6 @@ CProjectileArea
 | 0x358      | 32       | :ref:`CPoint<CPoint>`                  | m_points[4]                   |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CProjectileArea                struct
-     m_cProjectileBAM             CProjectileBAM <>
-     m_resref                     CResRef <>
-     m_explosionRange             dw ?
-     m_triggerRange               dw ?
-     m_secondaryProjectile        dw ?
-     m_nRepetitionCount           dw ?
-     m_bReachedDestination        dd ?
-     m_nDelay                     dw ?
-     m_nDelayCount                dw ?
-     m_bDetonateOnlyIfTargets     dd ?
-     m_targetType                 CAIObjectType <>
-     m_fireBallType               db ?
-                                  db ? ; padding
-                                  db ? ; padding
-                                  db ? ; padding
-     m_bSparkleExplosion          dd ?
-     m_sparkleExplosionProjectile dw ?
-                                  dw ? ; padding
-     m_bDelayedTrigger            dd ?
-     m_bChunksExplosion           dd ?
-     m_checkForNonSprites         dd ?
-     m_centerBam                  dd ?
-     m_explodeId                  dw ?
-     m_explosionSound             CResRef <>
-     m_ringColor                  db ?
-                                  db ? ; padding
-     m_bVVCAtCenter               dd ?
-     m_centerVVC                  CResRef <>
-     m_bConeFromCaster            dd ?
-     m_coneSize                   dw ?
-                                  dw ? ; padding
-     m_bIgnoreLOS                 dd ?
-     m_portraitNum                db ?
-                                  db ? ; padding
-                                  db ? ; padding
-                                  db ? ; padding
-     m_bResolvePortraitNum        dd ?
-     m_centerBamWait              dd ?
-     m_forceInitialWait           dd ?
-     m_oneTargetOnly              dd ?
-     m_targetCount                dd ?
-     m_hpLimit                    dd ?
-     m_animationID                dd ?
-     m_animationIDStatic          dd ?
-     m_fireBallSound              CResRef <>
-     m_fireBallArea               CResRef <>
-     m_fireBallRing               CResRef <>
-     m_fireBallFlags              dd ?
-     m_granularity                dw ?
-     m_granDivider                dw ?
-     m_childCount                 dw ?
-                                  dw ? ; padding
-     m_bPointsInited              dd ?
-     m_points                     CPoint 4 dup ({})
-   CProjectileArea                ends
-
 
 ----
 
@@ -1286,37 +891,9 @@ CProjectileAreaFileFormat
 | 0x244      | 180      | unsigned long                                             | reservedSpace[45]             |
 +------------+----------+-----------------------------------------------------------+-------------------------------+
 
-Asm Definition
+**Notes**
 
-::
-
-   CProjectileAreaFileFormat        struct
-     m_cProjectileBAMFileFormat     CProjectileBAMFileFormat <>
-     m_dwAreaFlags                  dd ?
-     m_triggerRange                 dw ?
-     m_explosionRange               dw ?
-     m_explodeSound                 CResRef <>
-     m_nDelay                       dw ?
-     m_explodeId                    dw ?
-     m_sparkleExplosionProjectile   dw ?
-     m_nRepetitionCount             db ?
-     m_fireBallType                 db ?
-     m_ringColor                    db ?
-     padding1                       db ?
-     m_secondaryProjectile          dw ?
-     m_centerVVC                    CResRef <>
-     m_coneSize                     dw ?
-     padding2                       dw ?
-     m_fireBallArea                 CResRef <>
-     m_fireBallRing                 CResRef <>
-     m_fireBallSound                CResRef <>
-     m_fireBallFlags                dd ?
-     m_targetDiceCount              dw ?
-     m_targetDiceSize               dw ?
-     m_granularity                  dw ?
-     m_granDivider                  dw ?
-     reservedSpace                  dd 45 dup (?)
-   CProjectileAreaFileFormat        ends
+Related to `PRO V1 Projectile area of effect <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/pro_v1.htm>`_
 
 
 ----
@@ -1400,48 +977,9 @@ CProjectileBAM
 | 0x298      | 4        | long                                   | m_puffCounter                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
+**Notes**
 
-::
-
-   CProjectileBAM         struct
-     m_cProjectile        CProjectile <>
-     m_currentVidCell     dd ? ; CVidCell* 
-     m_shadowVidCell      dd ? ; CVidCell* 
-     m_palette            CVidPalette <>
-     m_tint               dd ?
-     m_height             dd ?
-     m_glow               dd ?
-     m_glowSize           CSize <>
-     m_glowIntensity      dw ?
-                          dw ? ; padding
-     m_shadow             dd ?
-     m_numDirections      dw ?
-     m_direction          dw ?
-     m_newDirection       dw ?
-                          dw ? ; padding
-     m_render             dd ?
-     m_newPalette         CVidBitmap <>
-     m_bNewPalette        db ?
-     m_bDuration          db ?
-                          db ? ; padding
-                          db ? ; padding
-     m_bSmoke             dd ?
-     m_smokePeriod        db ?
-     m_smokeColorRange    db 7 dup (?)
-     m_smokeCount         db ?
-                          db ? ; padding
-     m_smokeAnimationCode dw ?
-     m_cPuffEffect1       CResRef <>
-     m_cPuffEffect2       CResRef <>
-     m_cPuffEffect3       CResRef <>
-     m_nPuff1Spacing      dw ?
-     m_nPuff2Spacing      dw ?
-     m_nPuff3Spacing      dw ?
-                          dw ? ; padding
-     m_dwPuffFlags        dd ?
-     m_puffCounter        dd ?
-   CProjectileBAM         ends
+Related to `PRO V1 Projectile graphics <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/pro_v1.htm>`_
 
 
 ----
@@ -1501,35 +1039,9 @@ CProjectileBAMFileFormat
 | 0x150      | 168      | unsigned long                                       | reservedSpace[42]             |
 +------------+----------+-----------------------------------------------------+-------------------------------+
 
-Asm Definition
+**Notes**
 
-::
-
-   CProjectileBAMFileFormat     struct
-     m_cProjectileBAMFileFormat CProjectileFileFormat <>
-     m_dwBAMFlags               dd ?
-     m_vidCell                  CResRef <>
-     m_shadowVidCell            CResRef <>
-     m_seqVidCell               db ?
-     m_seqShadowVidCell         db ?
-     m_glowIntensity            dw ?
-     m_glowSizeX                dw ?
-     m_glowSizeY                dw ?
-     m_paletteResRef            CResRef <>
-     m_colors                   db 7 dup (?)
-     m_smokePeriod              db ?
-     m_smokeColors              db 7 dup (?)
-     m_numDirections            db ?
-     m_smokeAnimationCode       dw ?
-     m_cPuffEffect1             CResRef <>
-     m_cPuffEffect2             CResRef <>
-     m_cPuffEffect3             CResRef <>
-     m_nPuff1Spacing            dw ?
-     m_nPuff2Spacing            dw ?
-     m_nPuff3Spacing            dw ?
-     m_dwPuffFlags              dd ?
-     reservedSpace              dd 42 dup (?)
-   CProjectileBAMFileFormat     ends
+Related to `PRO V1 Projectile graphics <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/pro_v1.htm>`_
 
 
 ----
@@ -1544,14 +1056,6 @@ CProjectileCallLightning
 +------------+----------+-----------------------------------------------+-------------------------------+
 | 0x00       | 348      | :ref:`CProjectileInstant<CProjectileInstant>` | m_cProjectileInstant          |
 +------------+----------+-----------------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CProjectileCallLightning struct
-     m_cProjectileInstant   CProjectileInstant <>
-   CProjectileCallLightning ends
 
 
 ----
@@ -1580,21 +1084,6 @@ CProjectileCastingGlow
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x2D3      | 1        | unsigned char                          | m_delay                       |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CProjectileCastingGlow   struct
-     m_cProjectile          CProjectile <>
-     m_animation            CVidCell <>
-     m_newPalette           CVidBitmap <>
-     m_dwRenderFlags        dd ?
-     m_bNewPalette          db ?
-     m_transparency         db ?
-     m_duration             db ?
-     m_delay                db ?
-   CProjectileCastingGlow   ends
 
 
 ----
@@ -1638,28 +1127,6 @@ CProjectileChain
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CProjectileChain             struct
-     m_cProjectileBAM           CProjectileBAM <>
-     m_numProjectile            dw ?
-     m_nDelay                   dw ?
-     m_bOriginCaster            dd ?
-     m_secondaryProjectileType  dw ?
-                                dw ? ; padding
-     m_carrierProjectile        dd ? ; CProjectile* 
-     m_carrierArrived           dd ?
-     m_targetType               CAIObjectType <>
-     m_nHeight                  dd ?
-     m_nType                    dw ?
-                                dw ? ; padding
-     m_bUseLineOfSight          dd ?
-     m_nDelayCount              dw ?
-                                dw ? ; padding
-   CProjectileChain             ends
-
 
 ----
 
@@ -1678,16 +1145,6 @@ CProjectileColorSpray
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CProjectileColorSpray    struct
-     m_cProjectileBAM       CProjectileBAM <>
-     m_counter              dw ?
-                            dw ? ; padding
-   CProjectileColorSpray    ends
-
 
 ----
 
@@ -1705,16 +1162,6 @@ CProjectileConeOfCold
 +------------+----------+----------------------------------------+-------------------------------+
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CProjectileConeOfCold    struct
-     m_cProjectileBAM       CProjectileBAM <>
-     m_counter              dw ?
-                            dw ? ; padding
-   CProjectileConeOfCold    ends
 
 
 ----
@@ -1742,20 +1189,6 @@ CProjectileFall
 | 0x2AC      | 20       | :ref:`CAIObjectType<CAIObjectType>`    | m_targetType                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CProjectileFall      struct
-     m_cProjectileBAM   CProjectileBAM <>
-     m_sideMove         dd ?
-     m_nSideSpeed       dd ?
-     m_bAreaEffect      dd ?
-     m_nAreaRange       dw ?
-                        dw ? ; padding
-     m_targetType       CAIObjectType <>
-   CProjectileFall      ends
-
 
 ----
 
@@ -1769,14 +1202,6 @@ CProjectileFile
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 12       | :ref:`CResHelper<CResHelper>`          | m_cResHelper                  |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CProjectileFile  struct
-     m_cResHelper   CResHelper <>
-   CProjectileFile  ends
 
 
 ----
@@ -1832,33 +1257,11 @@ CProjectileFileFormat
 | 0x50       | 168      | unsigned long                          | reservedSpace[42]             |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
+**Notes**
 
-::
+Related to `PRO V1 File Format <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/pro_v1.htm>`_
 
-   CProjectileFileFormat    struct
-     m_wFileType            dw ?
-     m_speed                dw ?
-     m_dwFlags              dd ?
-     m_fireSoundRef         CResRef <>
-     m_arrivalSoundRef      CResRef <>
-     m_visualEffectRef      CResRef <>
-     m_sparkleColor         dw ?
-     m_lanceWidth           dw ?
-     m_extFlags             dd ?
-     m_strRef               dd ?
-     m_color                dd ?
-      m_colorSpeed          dw ?
-      m_shake               dw ?
-      m_IDSValue1           dw ?
-      m_IDSType1            dw ?
-      m_IDSValue2           dw ?
-      m_IDSType2            dw ?
-     m_failureSpell         CResRef <>
-     m_successSpell         CResRef <>
-     m_maxBounces           dd ?
-     reservedSpace          dd 42 dup (?)
-   CProjectileFileFormat    ends
+
 
 
 ----
@@ -1878,16 +1281,6 @@ CProjectileFireHands
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CProjectileFireHands     struct
-     m_cProjectileBAM       CProjectileBAM <>
-     m_counter              dw ?
-                            dw ? ; padding
-   CProjectileFireHands     ends
-
 
 ----
 
@@ -1901,14 +1294,6 @@ CProjectileInstant
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 348      | :ref:`CProjectile<CProjectile>`        | m_cProjectile                 |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CProjectileInstant   struct
-     m_cProjectile      CProjectile <>
-   CProjectileInstant   ends
 
 
 ----
@@ -1924,14 +1309,6 @@ CProjectileInvisibleTravelling
 | 0x00       | 668      | :ref:`CProjectileBAM<CProjectileBAM>`  | m_cProjectileBAM              |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CProjectileInvisibleTravelling   struct
-     m_cProjectileBAM               CProjectileBAM <>
-   CProjectileInvisibleTravelling   ends
-
 
 ----
 
@@ -1945,14 +1322,6 @@ CProjectileLightningBolt
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 668      | :ref:`CProjectileBAM<CProjectileBAM>`  | m_cProjectileBAM              |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CProjectileLightningBolt struct
-     m_cProjectileBAM       CProjectileBAM <>
-   CProjectileLightningBolt ends
 
 
 ----
@@ -1970,15 +1339,6 @@ CProjectileLightningBoltGround
 | 0x29C      | 4        | long                                   | m_maxBounces                  |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CProjectileLightningBoltGround   struct
-     m_cProjectileBAM               CProjectileBAM <>
-     m_maxBounces                   dd ?
-   CProjectileLightningBoltGround   ends
-
 
 ----
 
@@ -1994,15 +1354,6 @@ CProjectileLightningBounce
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x29C      | 4        | long                                   | m_lifeSpan                    |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CProjectileLightningBounce   struct
-     m_cProjectileBAM           CProjectileBAM <>
-     m_lifeSpan                 dd ?
-   CProjectileLightningBounce   ends
 
 
 ----
@@ -2020,15 +1371,6 @@ CProjectileLightningStorm
 |            | 2        |                                           | ``<padding>``                 |
 +------------+----------+-------------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CProjectileLightningStorm    struct
-     m_cProjectileChain         CProjectileChain <>
-                                dw ? ; padding
-   CProjectileLightningStorm    ends
-
 
 ----
 
@@ -2042,14 +1384,6 @@ CProjectileMagicMissileMulti
 +------------+----------+-------------------------------------------+-------------------------------+
 | 0x00       | 696      | :ref:`CProjectileMulti<CProjectileMulti>` | m_cProjectileMulti            |
 +------------+----------+-------------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CProjectileMagicMissileMulti struct
-     m_cProjectileMulti         CProjectileMulti <>
-   CProjectileMagicMissileMulti ends
 
 
 ----
@@ -2067,15 +1401,6 @@ CProjectileMulti
 | 0x29C      | 28       | :ref:`CTypedPtrList<CTypedPtrList>`    | m_projectiles                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CProjectileMulti   struct
-     m_cProjectileBAM CProjectileBAM <>
-     m_projectiles    CTypedPtrList <>
-   CProjectileMulti   ends
-
 
 ----
 
@@ -2089,14 +1414,6 @@ CProjectileMushroom
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 668      | :ref:`CProjectileBAM<CProjectileBAM>`  | m_cProjectileBAM              |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CProjectileMushroom  struct
-     m_cProjectileBAM   CProjectileBAM <>
-   CProjectileMushroom  ends
 
 
 ----
@@ -2130,25 +1447,6 @@ CProjectileNewScorcher
 | 0x3B4      | 4        | int                                    | itsTargetID                       |
 +------------+----------+----------------------------------------+-----------------------------------+
 
-Asm Definition
-
-::
-
-   CProjectileNewScorcher               struct
-     m_cProjectileBAM                   CProjectileBAM <>
-     m_nSegments                        db ?
-                                        db ? ; padding
-                                        db ? ; padding
-                                        db ? ; padding
-     m_deltaZ                           dd ?
-     itsAffectedCreatures               dd 64 dup (?)
-     itsNumAffectedCreatures            dd ?
-     itsAIUpdateCounter                 dd ?
-     itsApplyEffectsInterval            dd ?
-     itsClearAffectedCreaturesInterval  dd ?
-      itsTargetID                       dd ?
-   CProjectileNewScorcher               ends
-
 
 ----
 
@@ -2175,23 +1473,6 @@ CProjectileScorcher
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CProjectileScorcher  struct
-     m_cProjectileBAM   CProjectileBAM <>
-     m_lifeSpan         db ?
-     m_nSegments        db ?
-                        db ? ; padding
-                        db ? ; padding
-     m_deltaZ           dd ?
-     m_bGlow            db ?
-                        db ? ; padding
-                        db ? ; padding
-                        db ? ; padding
-   CProjectileScorcher  ends
-
 
 ----
 
@@ -2209,16 +1490,6 @@ CProjectileSegment
 +------------+----------+----------------------------------------+-------------------------------+
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CProjectileSegment   struct
-     m_cProjectileBAM   CProjectileBAM <>
-     m_counter          dw ?
-                        dw ? ; padding
-   CProjectileSegment   ends
 
 
 ----
@@ -2244,19 +1515,6 @@ CProjectileSkyStrike
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CProjectileSkyStrike struct
-     m_cProjectile      CProjectile <>
-     m_animation        CVidCell <>
-     m_palette          CVidPalette <>
-     m_bGlow            dd ?
-     m_duration         dw ?
-                        dw ? ; padding
-   CProjectileSkyStrike ends
-
 
 ----
 
@@ -2270,14 +1528,6 @@ CProjectileSkyStrikeBAM
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x00       | 668      | :ref:`CProjectileBAM<CProjectileBAM>`  | m_cProjectileBAM              |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CProjectileSkyStrikeBAM  struct
-     m_cProjectileBAM       CProjectileBAM <>
-   CProjectileSkyStrikeBAM  ends
 
 
 ----
@@ -2304,21 +1554,6 @@ CProjectileSpellHit
 +------------+----------+----------------------------------------+-------------------------------+
 |            | 2        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CProjectileSpellHit  struct
-     m_cProjectile      CProjectile <>
-     m_animation        CVidCell <>
-     m_newPalette       CVidBitmap <>
-     m_dwRenderFlags    dd ?
-     m_bNewPalette      db ?
-     m_transparency     db ?
-                        db ? ; padding
-                        db ? ; padding
-   CProjectileSpellHit  ends
 
 
 ----
@@ -2352,26 +1587,6 @@ CProjectileTravelDoor
 |            | 3        |                                        | ``<padding>``                 |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CProjectileTravelDoor    struct
-     m_cProjectile          CProjectile <>
-     m_animation            CVidCell <>
-     m_newPalette           CVidBitmap <>
-     m_dwRenderFlags        dd ?
-     m_bNewPalette          db ?
-     m_transparency         db ?
-                            db ? ; padding
-                            db ? ; padding
-     m_animationStr         CString <>
-     m_nState               db ?
-                            db ? ; padding
-                            db ? ; padding
-                            db ? ; padding
-   CProjectileTravelDoor    ends
-
 
 ----
 
@@ -2394,18 +1609,6 @@ CPtrArray
 | 0x10       | 4        | int                                    | m_nGrowBy                     |
 +------------+----------+----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CPtrArray    struct
-     m_cObject  CObject <>
-     m_pData    dd ? ; void** 
-     m_nSize    dd ?
-     m_nMaxSize dd ?
-     m_nGrowBy  dd ?
-   CPtrArray    ends
-
 
 ----
 
@@ -2413,6 +1616,8 @@ Asm Definition
 
 CPtrList
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Used by the :ref:`CPtrList Class<CPtrList Class>`
 
 +------------+----------+-----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                | **Field**                     |
@@ -2432,20 +1637,6 @@ CPtrList
 | 0x18       | 4        | int                                     | m_nBlockSize                  |
 +------------+----------+-----------------------------------------+-------------------------------+
 
-Asm Definition
-
-::
-
-   CPtrList         struct
-     m_cObject      CObject <>
-     m_pNodeHead    dd ? ; CPtrList::CNode*
-     m_pNodeTail    dd ? ; CPtrList::CNode*
-     m_nCount       dd ?
-     m_pNodeFree    dd ? ; CPtrList::CNode*
-     m_pBlocks      dd ? ; CPlex* 
-     m_nBlockSize   dd ?
-   CPtrList         ends
-
 
 ----
 
@@ -2463,14 +1654,4 @@ CPtrList::CNode
 +------------+----------+-----------------------------------------+-------------------------------+
 | 0x08       | 4        | void\*                                  | data                          |
 +------------+----------+-----------------------------------------+-------------------------------+
-
-Asm Definition
-
-::
-
-   CPtrListCNode    struct
-     pNext          dd ? ; CPtrList::CNode* 
-     pPrev          dd ? ; CPtrList::CNode* 
-     data           dd ? ; void* 
-   CPtrListCNode    ends
 
