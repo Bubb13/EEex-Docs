@@ -31,7 +31,7 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_ChangeOption<Infinity_ChangeOption>`                                         | Set the value of an option in a panel                                                         |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_CheckItemIdentify<Infinity_CheckItemIdentify>`                               |                                                                                               |
+| :ref:`Infinity_CheckItemIdentify<Infinity_CheckItemIdentify>`                               | Checks lore skill for identifying an item in an inventory slot                                |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_ClickItem<Infinity_ClickItem>`                                               |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -61,15 +61,15 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_FocusTextEdit<Infinity_FocusTextEdit>`                                       | Set the keyboard focus to the specified text edit contol                                      |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetArea<Infinity_GetArea>`                                                   |                                                                                               |
+| :ref:`Infinity_GetArea<Infinity_GetArea>`                                                   | Returns the bounding rectangle (area) for the specified UI control name                       |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetClockTicks<Infinity_GetClockTicks>`                                       |                                                                                               |
+| :ref:`Infinity_GetClockTicks<Infinity_GetClockTicks>`                                       | Returns the clock tick count in milliseconds                                                  |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetContainerItemDescription<Infinity_GetContainerItemDescription>`           |                                                                                               |
+| :ref:`Infinity_GetContainerItemDescription<Infinity_GetContainerItemDescription>`           | Updates the description of an item from a specified slot in a container                       |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetContentHeight<Infinity_GetContentHeight>`                                 |                                                                                               |
+| :ref:`Infinity_GetContentHeight<Infinity_GetContentHeight>`                                 | Returns the height of the text content in a UI control                                        |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetCurrentGroundPage<Infinity_GetCurrentGroundPage>`                         |                                                                                               |
+| :ref:`Infinity_GetCurrentGroundPage<Infinity_GetCurrentGroundPage>`                         | Returns the current page number of the ground inventory slots                                 |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetCurrentMovie<Infinity_GetCurrentMovie>`                                   | Returns the current movie                                                                     |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -113,7 +113,7 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetPortraitTooltip<Infinity_GetPortraitTooltip>`                             | Returns a string containing the tooltip for a specified portrait index                        |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetScreenSize<Infinity_GetScreenSize>`                                       |                                                                                               |
+| :ref:`Infinity_GetScreenSize<Infinity_GetScreenSize>`                                       | Returns the width and height of the screen                                                    |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetScriptVarInt<Infinity_GetScriptVarInt>`                                   |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -295,6 +295,8 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_WriteINILine<Infinity_WriteINILine>`                                         |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
+
+----
 
 
 .. _Infinity_ActivateInventory:
@@ -1172,7 +1174,7 @@ Partial example of the CLUAConsole cheat text edit control being displayed and t
 Infinity_GetArea
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns the bounding rectangle (area) for the specified UI control name
 
 ::
 
@@ -1180,19 +1182,33 @@ Infinity_GetArea
 
 **Parameters**
 
-* *element_name* - name of the element
+* ``string`` *element_name* - name of the UI control to return the bounding rectangle for
 
 **Return Value**
 
-x,y,w,h
+Returns as ``integer`` values: x, y, w, h - x coordinate, y coordinate, width and height of rectangle
 
 **Notes**
 
 
 **Example**
 
+With a label control named ``messagesRect``:
 
+::
 
+   label
+   {
+       name 'messagesRect'
+       area 0 111 863 142
+       rectangle 4
+   }
+
+To get the area of the ``messagesRect`` label control:
+
+::
+
+   local x,y,w,h = Infinity_GetArea('messagesRect')
 
 
 ----
@@ -1202,7 +1218,7 @@ x,y,w,h
 Infinity_GetClockTicks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns the clock tick count in milliseconds
 
 ::
 
@@ -1210,16 +1226,30 @@ Infinity_GetClockTicks
 
 **Return Value**
 
-``int``
+Returns an ``integer`` value of the clock tick in milliseconds
 
 **Notes**
 
+Calls the SDL_GetTicks function, coverts it to a lua number and pushes it onto the lua stack
+
+Can be used to measure the time elapsed between calls to :ref:`Infinity_GetClockTicks<Infinity_GetClockTicks>`
 
 **Example**
 
+Get tick count and store it to a variable:
 
+::
 
+   chatboxScrollTimeLast = Infinity_GetClockTicks()
 
+Later on, get tick count and use previously stored tick count value (``chatboxScrollTimeLast) to measure time elapsed, and store it to a ``dT`` variable:
+
+::
+
+   local dT = Infinity_GetClockTicks() - chatboxScrollTimeLast
+   chatboxScrollTimeLast = Infinity_GetClockTicks()
+
+The ``dT`` variable now contains the elapsed time since :ref:`Infinity_GetClockTicks<Infinity_GetClockTicks>` was last called.
 
 ----
 
@@ -1228,27 +1258,152 @@ Infinity_GetClockTicks
 Infinity_GetContainerItemDescription
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Updates the description and usability text of an item from a specified slot in a container
 
 ::
 
-   Infinity_GetContainerItemDescription(item_index)
+   Infinity_GetContainerItemDescription(nSlotNum)
 
 **Parameters**
 
-* *item_index* - 
+* ``integer`` *nSlotNum* - slot number to return the item description and and usability text for
 
 **Return Value**
 
-string
+Special, see notes
 
 **Notes**
 
+Calls the following class methods: :ref:`CGameContainer\:\:GetItem<CGameContainerGetItem>`, :ref:`CItem\:\:GetUsabilityText<CItemGetUsabilityText>` and :ref:`CItem\:\:GetDescription<CItemGetDescription>`
+
+Updates an existing array named ``loot``, which is defined in ``UI.MENU`` as:
+
+::
+
+   loot = 
+   {
+       containerItems = {},
+       groupItems = {},
+       groundItems = {}
+   }
+
+The ``loot`` array is updated with the description and usability text of the item occupying the slot *nSlotNum* in the container. 
 
 **Example**
 
+Update the item description using :ref:`Infinity_GetContainerItemDescription<Infinity_GetContainerItemDescription>` and then access the ``loot`` array via the internal ``UI.MENU`` function ``showItemDescription``:
 
+::
 
+   function showContainerItemDescription(index)
+       local idxScrolled = index + worldScreen:GetTopContainerItem()
+       if(loot.containerItems[idxScrolled] == nil or loot.containerItems[idxScrolled].item == nil) then
+           return nil
+       end
+       Infinity_GetContainerItemDescription(idxScrolled)
+       showItemDescription(loot.containerItems[idxScrolled].item, 2)
+   end
+
+The ``showItemDescription`` function, stores some of the ``loot`` array entries into another array ``itemDesc``. ``showItemDescription`` is defined as:
+
+::
+
+   itemDesc = {}
+   function showItemDescription(item, mode)
+       itemDesc.item = item
+       itemDesc.mode = mode
+       Infinity_PushMenu('ITEM_DESCRIPTION',0,0)
+   end
+
+The ``ITEM_DESCRIPTION`` menu, which uses the values in the ``itemDesc`` array is defined as:
+
+::
+
+   menu
+   {
+       name 'ITEM_DESCRIPTION'
+       align center center
+       modal
+       label
+       {
+           area 0 0 864 710
+           mosaic GUIINVHI
+       }
+       label
+       {
+           area 81 11 700 44
+           text "ITEM_TITLE"
+           text style title
+       }
+       label
+       {
+           area 402 66 52 52
+           icon lua "itemDesc.item.icon"
+       }
+       label
+       {
+           area 57 170 295 40
+           text lua "itemDesc.item.name"
+           text align center center
+           text style "label"
+           text color '5'
+       }
+       text
+       {
+           area 356 180 430 353
+           text lua "itemDesc.item.description"
+           scrollbar 'GUISCRC'
+           text style "normal_parchment"
+       }
+       label
+       {
+           area 66 210 280 327
+           bam lua "itemDesc.item.descPicture"
+           sequence 0
+           frame 0
+           align center center
+       }
+       button
+       {
+           bam         GUIOSTUL
+           sequence    6
+           area        57 638 234 44
+           enabled "itemDescLeftButtonEnabled()"
+           text lua "itemDescLeftButtonText()"
+           text style "button"
+           action
+           "
+               itemDescLeftButtonAction()
+           "
+       }
+       button
+       {
+           bam         GUIOSTUM
+           sequence    6
+           area        326 638 204 44
+           text  "DONE_BUTTON"
+           text style "button"
+           action
+           "
+               Infinity_PopMenu();
+           "
+       }
+       button
+       {
+           bam         GUIOSTUR
+           sequence    6
+           area        572 638 234 44
+           enabled "itemDescRightButtonEnabled()"
+           text lua "itemDescRightButtonText()"
+           text style "button"
+           action
+           "
+               itemDescRightButtonAction()
+           "
+       }
+   }
+
+Note the use of ``itemDesc.item.name`` and ``itemDesc.item.description`` etc
 
 
 ----
@@ -1258,33 +1413,44 @@ string
 Infinity_GetContentHeight
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns the height of the text content in a UI control
 
 ::
 
-   Infinity_GetContentHeight(font,w,string,font_size,int,zoom)
+   Infinity_GetContentHeight(font,width,textcontent,point,indent,useFontZoom)
 
 **Parameters**
 
-* *font* - 
-* *w* - 
-* *string* - 
-* *font_size* - 
-* *int* - 
-* *zoom* - 
+* ``string`` *font* - string containing resource reference (ResRef) of font
+* ``integer`` *width* - width of the UI control hosting the content
+* ``string`` *textcontent* - string containing the text content
+* ``integer`` *point* - font size
+* ``integer`` *indent* - a boolean value if indented ``1``, or ``0`` otherwise
+* ``integer`` *useFontZoom* - boolean value if using font zoom ``1``, or ``0`` otherwise
 
 **Return Value**
 
-``int``
+Returns an ``integer`` of the calculated content height
 
 **Notes**
 
+Calculates the height of the text content in a UI control, taking into account the font used, the font size, word wrapping for the width of the UI control, indentation and/or font zooming.
+
+You should account for the width of the scrollbar when specifying the *width* parameter
+
+*useFontZoom* is used for font scaling based on the font size (the *point* parameter). If *useFontZoom* is ``0``, the text content (the *textcontent* parameter) will always appear at the defined font size, if *useFontZoom* is ``1`` then font scaling will occur for the text content.
 
 **Example**
 
+::
 
+   --Calculate running total of dialog content height
+   local x,y,w,h = Infinity_GetArea("worldPlayerDialogChoicesList")
+   w = w - 18 --account for scrollbar influence on width
+   local delta = Infinity_GetContentHeight(styles.normal.font, w, text, styles.normal.point, 1, styles.normal.useFontZoom) --1 for indent.
+   chatboxContentHeight = chatboxContentHeight + delta
 
-
+Note: styles are defined in the ``BGEE.LUA`` file
 
 ----
 
@@ -1293,7 +1459,7 @@ Infinity_GetContentHeight
 Infinity_GetCurrentGroundPage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns the current page number of the ground inventory slots
 
 ::
 
@@ -1301,14 +1467,17 @@ Infinity_GetCurrentGroundPage
 
 **Return Value**
 
-``int``
+Returns an ``integer`` representing the page number of the ground inventory slots
 
 **Notes**
 
+Calls the :ref:`CScreenInventory\:\:GetCurrentGroundPage<CScreenInventoryGetCurrentGroundPage>` method
 
 **Example**
 
+::
 
+   curPage = Infinity_GetCurrentGroundPage()
 
 
 
@@ -1482,7 +1651,7 @@ Returns an ``int`` value representing game ticks
 
 **Notes**
 
-Reads CBaldurChitin.m_pObjectGame => CInfGame.m_worldTime => CTimerWorld.m_gameTime and multiplies it by the value stored in the variable ``TIMER_UPDATES_PER_SECOND``. The result is added together with itself, converted to a float and pushed onto the lua stack.
+Reads :ref:`CBaldurChitin<CBaldurChitin>`.m_pObjectGame => :ref:`CInfGame<CInfGame>`.m_worldTime => :ref:`CTimerWorld<CTimerWorld>`.m_gameTime and multiplies it by the value stored in the variable ``TIMER_UPDATES_PER_SECOND``. The result is added together with itself, converted to a float and pushed onto the lua stack.
 
 The variable ``TIMER_UPDATES_PER_SECOND`` located at offset ``0x00938778`` is initially set to ``30`` (``0x1E``)
 
@@ -1979,7 +2148,7 @@ Get tooltip for portrait of character 1:
 Infinity_GetScreenSize
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns the width and height of the screen - the screen resolution
 
 ::
 
@@ -1987,14 +2156,16 @@ Infinity_GetScreenSize
 
 **Return Value**
 
-w,h
+Returns as ``integer``: w, h - width and height
 
 **Notes**
 
 
 **Example**
 
+::
 
+   local screenWidth, screenHeight = Infinity_GetScreenSize()
 
 
 
