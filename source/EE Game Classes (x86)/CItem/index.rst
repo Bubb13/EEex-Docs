@@ -11,6 +11,7 @@ CItem Class
 * :ref:`Quick Reference<CItem_QuickRef>`
 * :ref:`Constructors<CItem_Constructors>`
 * :ref:`Methods<CItem_Methods>`
+* :ref:`Operators<CItem_Operators>`
 
 ----
 
@@ -1682,7 +1683,8 @@ CItem\:\:Unequip
 
 ----
 
----------------
+.. _CItem_Operators:
+
 Operators
 ---------------
 

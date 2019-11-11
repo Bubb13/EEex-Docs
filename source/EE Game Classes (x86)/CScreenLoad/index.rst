@@ -19,7 +19,7 @@ CScreenLoad Class
 Overview
 ---------------
 
-.. note:: The **CScreenLoad** class handles the management of saved games: selecting, loading and deleting
+.. note:: The **CScreenLoad** class handles the management of loading games
 
 The structure used for this class is :ref:`CScreenLoad<CScreenLoad>`
 
