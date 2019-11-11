@@ -7,9 +7,28 @@ CScreenChapter Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CScreenChapter_Overview>`
+* :ref:`Quick Reference<CScreenChapter_QuickRef>`
+* :ref:`Constructors<CScreenChapter_Constructors>`
+* :ref:`Methods<CScreenChapter_Methods>`
+
+----
+
+.. _CScreenChapter_Overview:
+
+Overview
+---------------
+
 .. note:: The **CScreenChapter** class handles chapter screens and dream transitions
 
 The structure used for this class is :ref:`CScreenChapter<CScreenChapter>`
+
+----
+
+.. _CScreenChapter_QuickRef:
+
+Quick Reference
+---------------
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                       |
@@ -107,10 +126,10 @@ The structure used for this class is :ref:`CScreenChapter<CScreenChapter>`
 | virtual void **CScreenChapter\:\:TimerSynchronousUpdate**\()                                                                        |
 +-------------------------------------------------------------------------------------------------------------------------------------+
 
-
 ----
 
----------------
+.. _CScreenChapter_Constructors:
+
 Constructors
 ---------------
 
@@ -156,11 +175,10 @@ Destroys the ``CScreenChapter`` object
 Destroys the ``CScreenChapter`` object
 
 
-
-
 ----
 
----------------
+.. _CScreenChapter_Methods:
+
 Methods
 ---------------
 
@@ -256,6 +274,7 @@ Methods
 | :ref:`CScreenChapter\:\:TimerSynchronousUpdate<CScreenChapterTimerSynchronousUpdate>`                 |                                                                                         |
 +-------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
+----
 
 .. _CScreenChapterCheckMouseLButton:
 

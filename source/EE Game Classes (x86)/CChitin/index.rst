@@ -7,7 +7,26 @@ CChitin Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CChitin_Overview>`
+* :ref:`Quick Reference<CChitin_QuickRef>`
+* :ref:`Constructors<CChitin_Constructors>`
+* :ref:`Methods<CChitin_Methods>`
+
+----
+
+.. _CChitin_Overview:
+
+Overview
+---------------
+
 The structure used for this class is :ref:`CChitin<CChitin>`
+
+----
+
+.. _CChitin_QuickRef:
+
+Quick Reference
+---------------
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                                                          |
@@ -181,10 +200,10 @@ The structure used for this class is :ref:`CChitin<CChitin>`
 
 
 
-
 ----
 
----------------
+.. _CChitin_Constructors:
+
 Constructors
 ---------------
 
@@ -240,11 +259,10 @@ Destroys the ``CChitin`` object
 Destroys the ``CChitin`` object
 
 
-
-
 ----
 
----------------
+.. _CChitin_Methods:
+
 Methods
 ---------------
 
@@ -413,6 +431,8 @@ Methods
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CChitin\:\:WinMain<CChitinWinMain>`                                                         |                                                                                         |
 +---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+
+----
 
 .. _CChitinAddEngine:
 

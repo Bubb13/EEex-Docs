@@ -7,9 +7,27 @@ CNetwork Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CNetwork_Overview>`
+* :ref:`Quick Reference<CNetwork_QuickRef>`
+* :ref:`Constructors<CNetwork_Constructors>`
+* :ref:`Methods<CNetwork_Methods>`
+
+----
+
+.. _CNetwork_Overview:
+
+Overview
+---------------
+
 .. note:: The **CNetwork** class handles network session management, messaging and information for multiplayer games
 
 The structure used for this class is :ref:`CNetwork<CNetwork>`
+-
+
+.. _CNetwork_QuickRef:
+
+Quick Reference
+---------------
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                                                                                                             |
@@ -118,10 +136,10 @@ The structure used for this class is :ref:`CNetwork<CNetwork>`
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-
 ----
 
----------------
+.. _CNetwork_Constructors:
+
 Constructors
 ---------------
 
@@ -168,10 +186,10 @@ Destroys the ``CNetwork`` object
 
 
 
-
 ----
 
----------------
+.. _CNetwork_Methods:
+
 Methods
 ---------------
 
@@ -277,6 +295,7 @@ Methods
 | :ref:`CNetwork\:\:UnselectSession<CNetworkUnselectSession>`                                             |                                                                                         |
 +---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
+----
 
 .. _CNetworkAddMessageToWindow:
 

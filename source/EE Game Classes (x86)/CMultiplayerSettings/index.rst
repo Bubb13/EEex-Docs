@@ -7,7 +7,28 @@ CMultiplayerSettings Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CMultiplayerSettings_Overview>`
+* :ref:`Quick Reference<CMultiplayerSettings_QuickRef>`
+* :ref:`Constructors<CMultiplayerSettings_Constructors>`
+* :ref:`Methods<CMultiplayerSettings_Methods>`
+
+----
+
+.. _CMultiplayerSettings_Overview:
+
+Overview
+---------------
+
+.. note:: The **CMultiplayerSettings** class handles settings for multiplayer game sessions
+
 The structure used for this class is :ref:`CMultiplayerSettings<CMultiplayerSettings>`
+
+----
+
+.. _CMultiplayerSettings_QuickRef:
+
+Quick Reference
+---------------
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                                              |
@@ -69,12 +90,10 @@ The structure used for this class is :ref:`CMultiplayerSettings<CMultiplayerSett
 | void **CMultiplayerSettings\:\:Unmarshal**\(unsigned char\* pData, unsigned long dwSize)                                                                   |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-
 ----
 
----------------
+.. _CMultiplayerSettings_Constructors:
+
 Constructors
 ---------------
 
@@ -120,12 +139,10 @@ Destroys the ``CMultiplayerSettings`` object
 
 Destroys the ``CMultiplayerSettings`` object
 
-
-
-
 ----
 
----------------
+.. _CMultiplayerSettings_Methods:
+
 Methods
 ---------------
 
@@ -183,6 +200,7 @@ Methods
 | :ref:`CMultiplayerSettings\:\:Unmarshal<CMultiplayerSettingsUnmarshal>`                                           |                                                                                         |
 +-------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
+----
 
 .. _CMultiplayerSettingsGetCharacterControlledByPlayer:
 

@@ -7,6 +7,28 @@ CLUAConsole Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CLUAConsole_Overview>`
+* :ref:`Quick Reference<CLUAConsole_QuickRef>`
+* :ref:`Methods<CLUAConsole_Methods>`
+
+----
+
+.. _CLUAConsole_Overview:
+
+Overview
+---------------
+
+.. note:: The **CLUAConsole** class handles the ingame Lua console for entering supported commands and functions
+
+There is no structure associated with this class
+
+----
+
+.. _CLUAConsole_QuickRef:
+
+Quick Reference
+---------------
+
 +-------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                       |
 +-------------------------------------------------------------------------------------------------------------------------------------+
@@ -78,10 +100,10 @@ CLUAConsole Class
 +-------------------------------------------------------------------------------------------------------------------------------------+
 
 
-
 ----
 
----------------
+.. _CLUAConsole_Methods:
+
 Methods
 ---------------
 
@@ -155,6 +177,7 @@ Methods
 | :ref:`CLUAConsole\:\:WriteScript<CLUAConsoleWriteScript>`               | Output scripts to directory                                                             |
 +-------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
+----
 
 .. _CLUAConsoleAddGold:
 

@@ -7,7 +7,26 @@ CDerivedStats Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CDerivedStats_Overview>`
+* :ref:`Quick Reference<CDerivedStats_QuickRef>`
+* :ref:`Constructors<CDerivedStats_Constructors>`
+* :ref:`Methods<CDerivedStats_Methods>`
+
+----
+
+.. _CDerivedStats_Overview:
+
+Overview
+---------------
+
 The structure used for this class is :ref:`CDerivedStats<CDerivedStats>`
+
+----
+
+.. _CDerivedStats_QuickRef:
+
+Quick Reference
+---------------
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                                                                                                                                                                             |
@@ -79,10 +98,10 @@ The structure used for this class is :ref:`CDerivedStats<CDerivedStats>`
 | :ref:`CDerivedStats<CDerivedStats>`\& **CDerivedStats\:\:operator+=**\(:ref:`CDerivedStats<CDerivedStats>`\& header)                                                                                                                                                                      |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
 ----
 
----------------
+.. _CDerivedStats_Constructors:
+
 Constructors
 ---------------
 
@@ -128,11 +147,10 @@ Destroys the ``CDerivedStats`` object
 Destroys the ``CDerivedStats`` object
 
 
-
-
 ----
 
----------------
+.. _CDerivedStats_Methods:
+
 Methods
 ---------------
 
@@ -197,6 +215,8 @@ Methods
 +-------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CDerivedStats\:\:Unmarshal<CDerivedStatsUnmarshal>`                           |                                                                                         |
 +-------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+
+----
 
 .. _CDerivedStatsBonusInit:
 

@@ -7,9 +7,28 @@ CBaldurProjector Class
 .. toctree::
    :maxdepth: 1
 
-Implements CBaldurProjector class methods for playing chapter movies
+* :ref:`Overview<CBaldurProjector_Overview>`
+* :ref:`Quick Reference<CBaldurProjector_QuickRef>`
+* :ref:`Constructors<CBaldurProjector_Constructors>`
+* :ref:`Methods<CBaldurProjector_Methods>`
+
+----
+
+.. _CBaldurProjector_Overview:
+
+Overview
+---------------
+
+.. note:: The **CBaldurProjector** class handles playing chapter movies
 
 The structure used for this class is :ref:`CBaldurProjector<CBaldurProjector>`
+
+----
+
+.. _CBaldurProjector_QuickRef:
+
+Quick Reference
+---------------
 
 +----------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                  |
@@ -55,10 +74,10 @@ The structure used for this class is :ref:`CBaldurProjector<CBaldurProjector>`
 
 
 
-
 ----
 
----------------
+.. _CBaldurProjector_Constructors:
+
 Constructors
 ---------------
 
@@ -104,10 +123,10 @@ Destroys the ``CBaldurProjector`` object
 
 
 
-
 ----
 
----------------
+.. _CBaldurProjector_Methods:
+
 Methods
 ---------------
 
@@ -149,6 +168,7 @@ Methods
 | :ref:`CBaldurProjector\:\:TimerSynchronousUpdate<CBaldurProjectorTimerSynchronousUpdate>`   | Timer synchronous update                                                                |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
+----
 
 .. _CBaldurProjectorCheckMouseLButton:
 

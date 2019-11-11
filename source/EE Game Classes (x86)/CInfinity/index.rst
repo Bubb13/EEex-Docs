@@ -7,9 +7,28 @@ CInfinity Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CInfinity_Overview>`
+* :ref:`Quick Reference<CInfinity_QuickRef>`
+* :ref:`Constructors<CInfinity_Constructors>`
+* :ref:`Methods<CInfinity_Methods>`
+
+----
+
+.. _CInfinity_Overview:
+
+Overview
+---------------
+
 .. note:: The **CInfinity** class handles drawing geometric and primitive shapes and rendering effects (zoom, weather, etc) on the world screen
 
 The structure used for this class is :ref:`CInfinity<CInfinity>`
+
+----
+
+.. _CInfinity_QuickRef:
+
+Quick Reference
+---------------
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                                                                                                                                                       |
@@ -177,7 +196,8 @@ The structure used for this class is :ref:`CInfinity<CInfinity>`
 
 ----
 
----------------
+.. _CInfinity_Constructors:
+
 Constructors
 ---------------
 
@@ -224,11 +244,10 @@ Destroys the ``CInfinity`` object
 Destroys the ``CInfinity`` object
 
 
-
-
 ----
 
----------------
+.. _CInfinity_Methods:
+
 Methods
 ---------------
 
@@ -390,6 +409,7 @@ Methods
 | :ref:`CInfinity\:\:UpdateLighting<CInfinityUpdateLighting>`               |                                                                                         |
 +---------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
+----
 
 .. _CInfinityAddAOECircle:
 

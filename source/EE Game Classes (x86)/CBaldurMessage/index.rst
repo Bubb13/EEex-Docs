@@ -7,7 +7,26 @@ CBaldurMessage Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CBaldurMessage_Overview>`
+* :ref:`Quick Reference<CBaldurMessage_QuickRef>`
+* :ref:`Constructors<CBaldurMessage_Constructors>`
+* :ref:`Methods<CBaldurMessage_Methods>`
+
+----
+
+.. _CBaldurMessage_Overview:
+
+Overview
+---------------
+
 The structure used for this class is :ref:`CBaldurMessage<CBaldurMessage>`
+
+----
+
+.. _CBaldurMessage_QuickRef:
+
+Quick Reference
+---------------
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                                                                                                                                     |
@@ -454,10 +473,10 @@ The structure used for this class is :ref:`CBaldurMessage<CBaldurMessage>`
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-
 ----
 
----------------
+.. _CBaldurMessage_Constructors:
+
 Constructors
 ---------------
 
@@ -508,7 +527,8 @@ Destroys the ``CBaldurMessage`` object
 
 ----
 
----------------
+.. _CBaldurMessage_Methods:
+
 Methods
 ---------------
 
@@ -951,6 +971,8 @@ Methods
 +----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CBaldurMessage\:\:WeatherBroadcast<CBaldurMessageWeatherBroadcast>`                                            |                                                                                         |
 +----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+
+----
 
 .. _CBaldurMessageAddDroppedPlayer:
 

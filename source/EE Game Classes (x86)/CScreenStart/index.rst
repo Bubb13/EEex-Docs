@@ -7,9 +7,28 @@ CScreenStart Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CScreenStart_Overview>`
+* :ref:`Quick Reference<CScreenStart_QuickRef>`
+* :ref:`Constructors<CScreenStart_Constructors>`
+* :ref:`Methods<CScreenStart_Methods>`
+
+----
+
+.. _CScreenStart_Overview:
+
+Overview
+---------------
+
 .. note:: The **CScreenStart** class handles the main title screen dialogs and buttons, including game options, game campaign, singleplayer, multiplayer, credits, etc
 
 The structure used for this class is :ref:`CScreenStart<CScreenStart>`
+
+----
+
+.. _CScreenStart_QuickRef:
+
+Quick Reference
+---------------
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                       |
@@ -85,11 +104,10 @@ The structure used for this class is :ref:`CScreenStart<CScreenStart>`
 | virtual void **CScreenStart\:\:TimerSynchronousUpdate**\()                                                                          |
 +-------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
 ----
 
----------------
+.. _CScreenStart_Constructors:
+
 Constructors
 ---------------
 
@@ -115,10 +133,10 @@ Constructs a ``CScreenStart`` object
 Constructs a ``CScreenStart`` object
 
 
-
 ----
 
----------------
+.. _CScreenStart_Methods:
+
 Methods
 ---------------
 
@@ -193,6 +211,8 @@ Methods
 +-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CScreenStart\:\:TimerSynchronousUpdate<CScreenStartTimerSynchronousUpdate>`             | Update timer synchronously                                                              |
 +-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+
+----
 
 .. _CScreenStartCheckMouseMove:
 

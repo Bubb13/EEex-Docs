@@ -7,7 +7,26 @@ CGameAIBase Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CGameAIBase_Overview>`
+* :ref:`Quick Reference<CGameAIBase_QuickRef>`
+* :ref:`Constructors<CGameAIBase_Constructors>`
+* :ref:`Methods<CGameAIBase_Methods>`
+
+----
+
+.. _CGameAIBase_Overview:
+
+Overview
+---------------
+
 The structure used for this class is :ref:`CGameAIBase<CGameAIBase>`
+
+----
+
+.. _CGameAIBase_QuickRef:
+
+Quick Reference
+---------------
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                                                                                                                                           |
@@ -313,7 +332,8 @@ The structure used for this class is :ref:`CGameAIBase<CGameAIBase>`
 
 ----
 
----------------
+.. _CGameAIBase_Constructors:
+
 Constructors
 ---------------
 
@@ -360,11 +380,10 @@ Destroys the ``CGameAIBase`` object
 Destroys the ``CGameAIBase`` object
 
 
-
-
 ----
 
----------------
+.. _CGameAIBase_Methods:
+
 Methods
 ---------------
 
@@ -658,6 +677,7 @@ Methods
 | :ref:`CGameAIBase\:\:XEquipItem<CGameAIBaseXEquipItem>`                               |                                                                                         |
 +---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
+----
 
 .. _CGameAIBaseAddAction:
 

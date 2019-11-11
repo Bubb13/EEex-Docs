@@ -7,7 +7,28 @@ CItem Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CItem_Overview>`
+* :ref:`Quick Reference<CItem_QuickRef>`
+* :ref:`Constructors<CItem_Constructors>`
+* :ref:`Methods<CItem_Methods>`
+
+----
+
+.. _CItem_Overview:
+
+Overview
+---------------
+
+.. note:: The **CItem** class handles game items and equiptment
+
 The structures used for this class are :ref:`CItem<CItem>`, :ref:`CResItem<CResItem>`, :ref:`Item_Header_st<Item_Header_st>`, :ref:`Item_ability_st<Item_ability_st>`, :ref:`Item_effect_st<Item_effect_st>`
+
+----
+
+.. _CItem_QuickRef:
+
+Quick Reference
+---------------
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                                                                |
@@ -113,10 +134,10 @@ The structures used for this class are :ref:`CItem<CItem>`, :ref:`CResItem<CResI
 
 
 
-
 ----
 
----------------
+.. _CItem_Constructors:
+
 Constructors
 ---------------
 
@@ -240,11 +261,10 @@ Destroys the ``CItem`` object
 Destroys the ``CItem`` object
 
 
-
-
 ----
 
----------------
+.. _CItem_Methods:
+
 Methods
 ---------------
 
@@ -336,6 +356,7 @@ Methods
 | :ref:`CItem\:\:Unequip<CItemUnequip>`                                   |                                                                                         |
 +-------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
+----
 
 .. _CItemDemand:
 

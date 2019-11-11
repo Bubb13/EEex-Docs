@@ -7,9 +7,28 @@ CScreenCreateParty Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CScreenCreateParty_Overview>`
+* :ref:`Quick Reference<CScreenCreateParty_QuickRef>`
+* :ref:`Constructors<CScreenCreateParty_Constructors>`
+* :ref:`Methods<CScreenCreateParty_Methods>`
+
+----
+
+.. _CScreenCreateParty_Overview:
+
+Overview
+---------------
+
 .. note:: The **CScreenCreateParty** class handles party and character generation
 
 The structure used for this class is :ref:`CScreenCreateParty<CScreenCreateParty>`
+
+----
+
+.. _CScreenCreateParty_QuickRef:
+
+Quick Reference
+---------------
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                       |
@@ -78,7 +97,8 @@ The structure used for this class is :ref:`CScreenCreateParty<CScreenCreateParty
 
 ----
 
----------------
+.. _CScreenCreateParty_Constructors:
+
 Constructors
 ---------------
 
@@ -104,10 +124,10 @@ Constructs a ``CScreenCreateParty`` object
 Constructs a ``CScreenCreateParty`` object
 
 
-
 ----
 
----------------
+.. _CScreenCreateParty_Methods:
+
 Methods
 ---------------
 
@@ -173,6 +193,7 @@ Methods
 | :ref:`CScreenCreateParty\:\:UpdateLuaTables<CScreenCreatePartyUpdateLuaTables>`                     |                                                                                         |
 +-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
+----
 
 .. _CScreenCreatePartyCheckMouseLButton:
 

@@ -7,7 +7,26 @@ CBaldurChitin Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CBaldurChitin_Overview>`
+* :ref:`Quick Reference<CBaldurChitin_QuickRef>`
+* :ref:`Constructors<CBaldurChitin_Constructors>`
+* :ref:`Methods<CBaldurChitin_Methods>`
+
+----
+
+.. _CBaldurChitin_Overview:
+
+Overview
+---------------
+
 The structure used for this class is :ref:`CBaldurChitin<CBaldurChitin>`
+
+----
+
+.. _CBaldurChitin_QuickRef:
+
+Quick Reference
+---------------
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                                                                                                                                                                                                                      |
@@ -122,11 +141,10 @@ The structure used for this class is :ref:`CBaldurChitin<CBaldurChitin>`
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-
-
 ----
 
----------------
+.. _CBaldurChitin_Constructors:
+
 Constructors
 ---------------
 
@@ -182,10 +200,10 @@ Destroys the ``CBaldurChitin`` object
 
 
 
-
 ----
 
----------------
+.. _CBaldurChitin_Methods:
+
 Methods
 ---------------
 
@@ -296,6 +314,8 @@ Methods
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CBaldurChitin\:\:UnloadFonts<CBaldurChitinUnloadFonts>`                                                 | Unload fonts previously loaded by game engine, typically when game is closing           |
 +---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+
+----
 
 
 .. _CBaldurChitinAddPlayedMovie:

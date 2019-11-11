@@ -7,9 +7,28 @@ CScreenCreateChar Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CScreenCreateChar_Overview>`
+* :ref:`Quick Reference<CScreenCreateChar_QuickRef>`
+* :ref:`Constructors<CScreenCreateChar_Constructors>`
+* :ref:`Methods<CScreenCreateChar_Methods>`
+
+----
+
+.. _CScreenCreateChar_Overview:
+
+Overview
+---------------
+
 .. note:: The **CScreenCreateChar** class handles character generation
 
 The structure used for this class is :ref:`CScreenCreateChar<CScreenCreateChar>`
+
+----
+
+.. _CScreenCreateChar_QuickRef:
+
+Quick Reference
+---------------
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                                                                                                                                                                       |
@@ -351,11 +370,10 @@ The structure used for this class is :ref:`CScreenCreateChar<CScreenCreateChar>`
 | void **CScreenCreateChar\:\:UpdateRacePanel**\(:ref:`CGameSprite<CGameSprite>`\* pSprite)                                                                                                                                                                                           |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
 ----
 
----------------
+.. _CScreenCreateChar_Constructors:
+
 Constructors
 ---------------
 
@@ -403,7 +421,8 @@ Destroys the ``CScreenCreateChar`` object
 
 ----
 
----------------
+.. _CScreenCreateChar_Methods:
+
 Methods
 ---------------
 
@@ -742,6 +761,8 @@ Methods
 +------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CScreenCreateChar\:\:UpdateRacePanel<CScreenCreateCharUpdateRacePanel>`                                          | Update race selection panel                                                             |
 +------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+
+----
 
 .. _CScreenCreateCharAbilityCountInEffectList:
 
