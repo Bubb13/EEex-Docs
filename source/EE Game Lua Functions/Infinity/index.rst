@@ -61,7 +61,7 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_FocusTextEdit<Infinity_FocusTextEdit>`                                       | Set the keyboard focus to the specified text edit contol                                      |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetArea<Infinity_GetArea>`                                                   | Returns the bounding rectangle (area) for the specified UI control name                       |
+| :ref:`Infinity_GetArea<Infinity_GetArea>`                                                   | Returns the bounding rectangle (area) for the specified UI Control name                       |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetClockTicks<Infinity_GetClockTicks>`                                       | Returns the clock tick count in milliseconds                                                  |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -91,39 +91,39 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetINIValue<Infinity_GetINIValue>`                                           | Returns an integer value containing an ini section key value                                  |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetListHeight<Infinity_GetListHeight>`                                       |                                                                                               |
+| :ref:`Infinity_GetListHeight<Infinity_GetListHeight>`                                       | Returns the height of the sepcified UI List control                                           |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetMaxChapterPage<Infinity_GetMaxChapterPage>`                               |                                                                                               |
+| :ref:`Infinity_GetMaxChapterPage<Infinity_GetMaxChapterPage>`                               | Returns the chapter number that the game campaign is at currently                             |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetMaxGroundPage<Infinity_GetMaxGroundPage>`                                 |                                                                                               |
+| :ref:`Infinity_GetMaxGroundPage<Infinity_GetMaxGroundPage>`                                 | Returns maximum ground pages                                                                  |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetMenuArea<Infinity_GetMenuArea>`                                           |                                                                                               |
+| :ref:`Infinity_GetMenuArea<Infinity_GetMenuArea>`                                           | Returns the bounding rectangle (area) for the specified UI Menu name                          |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetMenuItemByName<Infinity_GetMenuItemByName>`                               |                                                                                               |
+| :ref:`Infinity_GetMenuItemByName<Infinity_GetMenuItemByName>`                               | Returns the UI menu item that has the specified name                                          |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetMousePosition<Infinity_GetMousePosition>`                                 |                                                                                               |
+| :ref:`Infinity_GetMousePosition<Infinity_GetMousePosition>`                                 | Returns mouse position                                                                        |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetNumCharacters<Infinity_GetNumCharacters>`                                 |                                                                                               |
+| :ref:`Infinity_GetNumCharacters<Infinity_GetNumCharacters>`                                 | Returns total number of characters currently in the party                                     |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetOffset<Infinity_GetOffset>`                                               |                                                                                               |
+| :ref:`Infinity_GetOffset<Infinity_GetOffset>`                                               | Get the position of a menu on the screen                                                      |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetOption<Infinity_GetOption>`                                               | Get the value of an option in a panel                                                         |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetPasswordRequired<Infinity_GetPasswordRequired>`                           |                                                                                               |
+| :ref:`Infinity_GetPasswordRequired<Infinity_GetPasswordRequired>`                           | Updates the passwordReq lua variable with the password requirement                            |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetPortraitTooltip<Infinity_GetPortraitTooltip>`                             | Returns a string containing the tooltip for a specified portrait index                        |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetScreenSize<Infinity_GetScreenSize>`                                       | Returns the width and height of the screen                                                    |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetScriptVarInt<Infinity_GetScriptVarInt>`                                   |                                                                                               |
+| :ref:`Infinity_GetScriptVarInt<Infinity_GetScriptVarInt>`                                   | Returns the value of a script variable as an integer                                          |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetScrollIdentifyEnabled<Infinity_GetScrollIdentifyEnabled>`                 |                                                                                               |
+| :ref:`Infinity_GetScrollIdentifyEnabled<Infinity_GetScrollIdentifyEnabled>`                 | Determines if the specified item requires identification, and can be identified via a scroll  |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetSelectedCharacterName<Infinity_GetSelectedCharacterName>`                 | Returns a string containing the currently selected character's name                           |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetSpellIdentifyEnabled<Infinity_GetSpellIdentifyEnabled>`                   |                                                                                               |
+| :ref:`Infinity_GetSpellIdentifyEnabled<Infinity_GetSpellIdentifyEnabled>`                   | Determines if the specified item requires identification, and can be identified via a spell   |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetTimeString<Infinity_GetTimeString>`                                       |                                                                                               |
+| :ref:`Infinity_GetTimeString<Infinity_GetTimeString>`                                       | Returns a formatted date and time string                                                      |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetTransitionInProgress<Infinity_GetTransitionInProgress>`                   |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -1174,7 +1174,7 @@ Partial example of the CLUAConsole cheat text edit control being displayed and t
 Infinity_GetArea
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Returns the bounding rectangle (area) for the specified UI control name
+Returns the bounding rectangle (area) for the specified UI Control name
 
 ::
 
@@ -1182,7 +1182,7 @@ Returns the bounding rectangle (area) for the specified UI control name
 
 **Parameters**
 
-* ``string`` *element_name* - name of the UI control to return the bounding rectangle for
+* ``string`` *element_name* - name of the UI Control to return the bounding rectangle for
 
 **Return Value**
 
@@ -1193,7 +1193,7 @@ Returns as ``integer`` values: x, y, w, h - x coordinate, y coordinate, width an
 
 **Example**
 
-With a label control named ``messagesRect``:
+With a UI Label control named ``messagesRect``:
 
 ::
 
@@ -1470,6 +1470,11 @@ Returns the current page number of the ground inventory slots
 Returns an ``integer`` representing the page number of the ground inventory slots
 
 **Notes**
+
+A ground page is a series of inventory slots representing ground items available to pick up or empty slots for items to be dropped into.
+
+Ground pages are used to scroll through the groupings of those ground based inventory slots. See also :ref:`Infinity_GetMaxGroundPage<Infinity_GetMaxGroundPage>` and :ref:`Infinity_GetGroundItemDescription<Infinity_GetGroundItemDescription>`
+
 
 Calls the :ref:`CScreenInventory\:\:GetCurrentGroundPage<CScreenInventoryGetCurrentGroundPage>` method
 
@@ -1827,7 +1832,7 @@ Returns an integer value containing an ini section key value
 Infinity_GetListHeight
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns the height of the sepcified UI List control
 
 ::
 
@@ -1835,18 +1840,22 @@ Infinity_GetListHeight
 
 **Parameters**
 
-* *list_name* - 
+* ``string`` *list_name* - name of the UI List control
 
 **Return Value**
 
-``int``
+Returns an ``integer`` value of the specified list's height
 
 **Notes**
 
 
 **Example**
 
+Get the height of the ``worldPlayerDialogChoicesList`` list in ``UI.MENU``:
 
+::
+
+   local choicesHeight = Infinity_GetListHeight('worldPlayerDialogChoicesList')
 
 
 
@@ -1857,7 +1866,7 @@ Infinity_GetListHeight
 Infinity_GetMaxChapterPage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns the chapter number that the game campaign is at currently
 
 ::
 
@@ -1865,15 +1874,29 @@ Infinity_GetMaxChapterPage
 
 **Return Value**
 
-``int``
+Returns an ``integer`` containing the current chapter number
 
 **Notes**
 
+Returns the value of the ``CHAPTER`` token. Calls the :ref:`CVariableHash\:\:FindKey<CVariableHashFindKey>` method and reads offset ``0x28`` of :ref:`CVariable<CVariable>`: :ref:`CVariable<CVariable>`.m_cAreaVariable => :ref:`CAreaVariable<CAreaVariable>`.m_intValue, and pushes that value to the lua stack.
 
 **Example**
 
+Used in the ``JOURNAL`` menu in ``UI.MENU`` to update the current chapter number:
 
+::
 
+   menu
+   {
+       name 'JOURNAL'
+       align left top
+       offset 80 0
+       ignoreEsc
+       enabled "sidebarsGreyed ~= 1"
+       onopen "
+           reinitQuests()
+           buildQuestDisplay()
+           chapter = math.max(0,Infinity_GetMaxChapterPage());
 
 
 ----
@@ -1883,7 +1906,7 @@ Infinity_GetMaxChapterPage
 Infinity_GetMaxGroundPage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns maximum ground pages
 
 ::
 
@@ -1891,15 +1914,21 @@ Infinity_GetMaxGroundPage
 
 **Return Value**
 
-``int``
+Returns an ``integer`` value of the maximum ground pages
 
 **Notes**
 
+A ground page is a series of inventory slots representing ground items available to pick up or empty slots for items to be dropped into.
+
+Ground pages are used to scroll through the groupings of those ground based inventory slots. See also :ref:`Infinity_GetCurrentGroundPage<Infinity_GetCurrentGroundPage>` and :ref:`Infinity_GetGroundItemDescription<Infinity_GetGroundItemDescription>`
+
+Calls the :ref:`CScreenInventory\:\:GetMaxGroundPage<CScreenInventoryGetMaxGroundPage>` method and pushed the value to the lua stack.
 
 **Example**
 
+::
 
-
+   local maxPages = Infinity_GetMaxGroundPage()
 
 
 ----
@@ -1909,7 +1938,7 @@ Infinity_GetMaxGroundPage
 Infinity_GetMenuArea
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns the bounding rectangle (area) for the specified UI Menu name
 
 ::
 
@@ -1917,18 +1946,22 @@ Infinity_GetMenuArea
 
 **Parameters**
 
-* *menu_name* - name of the menu
+* ``string`` *menu_name* - name of the UI Menu to return the bounding rectangle for
 
 **Return Value**
 
-x,y,w,h
+Returns as ``integer`` values: x, y, w, h - x coordinate, y coordinate, width and height of rectangle
 
 **Notes**
 
 
 **Example**
 
+Get the area of the ``JOURNAL`` menu:
 
+::
+
+   local offsetX,offsetY,menuWidth,menuHeight = Infinity_GetMenuArea('JOURNAL')
 
 
 
@@ -1939,26 +1972,29 @@ x,y,w,h
 Infinity_GetMenuItemByName
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns the UI menu item that has the specified name
 
 ::
 
-   Infinity_GetMenuItemByName(???)
+   Infinity_GetMenuItemByName(item_name)
 
 **Parameters**
 
-???
+* ``string`` *item_name* - name of the menu item
 
 **Return Value**
 
-???
+Returns userdata version of the menu item (a pointer to the :ref:`uiItem<uiItem>` structure of the matched UI control or a lua ``NIL``)
 
 **Notes**
 
 
+
 **Example**
 
+::
 
+   MenuItem_InvSlot1 = Infinity_GetMenuItemByName("slot_inv_1")
 
 
 
@@ -1969,7 +2005,7 @@ Infinity_GetMenuItemByName
 Infinity_GetMousePosition
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns mouse position
 
 ::
 
@@ -1977,14 +2013,16 @@ Infinity_GetMousePosition
 
 **Return Value**
 
-x,y
+Returns as ``integer`` x,y = x coordinate and y cooordinate of mouse position
 
 **Notes**
 
 
 **Example**
 
+::
 
+   x,y = Infinity_GetMousePosition();
 
 
 
@@ -1995,7 +2033,7 @@ x,y
 Infinity_GetNumCharacters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns total number of characters currently in the party
 
 ::
 
@@ -2003,14 +2041,23 @@ Infinity_GetNumCharacters
 
 **Return Value**
 
-``int``
+Returns an ``integer`` value of the number of characters in the party
 
 **Notes**
 
 
 **Example**
 
+From ``UI.MENU`` - enable a portrait button for the 4th character, if there is greater than 3 characters in the party:
 
+::
+
+   button
+   {
+       area 11 290 64 90
+       portrait 3
+       bam GUIRSP10
+       enabled "Infinity_GetNumCharacters() > 3"
 
 
 
@@ -2021,7 +2068,7 @@ Infinity_GetNumCharacters
 Infinity_GetOffset
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Get the position of a menu on the screen
 
 ::
 
@@ -2029,18 +2076,20 @@ Infinity_GetOffset
 
 **Parameters**
 
-* *menu_name* - name of the menu
+* ``string`` *menu_name* - name of the menu to return the position for
 
 **Return Value**
 
-x,y
+Returns as ``integer`` values: x,y - x coordinate and y coordinate of the menu position
 
 **Notes**
 
 
 **Example**
 
+::
 
+   Infinity_GetOffset("JOURNAL")
 
 
 
@@ -2088,7 +2137,7 @@ Get the value of option id ``1`` in panel id ``8`` (``panelID`` = ``8``) to a va
 Infinity_GetPasswordRequired
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Updates the ``passwordReq`` lua variable with the password requirement
 
 ::
 
@@ -2096,14 +2145,53 @@ Infinity_GetPasswordRequired
 
 **Parameters**
 
-* *id* - 
+* ``integer`` *id* - ``1`` based index of the ``mp_sessions`` array entry to update
+
+**Returns**
+
+Special, see notes
 
 **Notes**
 
+Updates an existing multidimensional array named ``mp_sessions`` defined in the EE game executable and an existing lua variable ``passwordReq``.
+
+``passwordReq`` is defined  in ``UI.MENU``as:
+
+::
+
+   passwordReq = 0
+
+Each entry in ``mp_sessions`` has the following elements:
+
+* ``description``
+* ``flags``
+* ``max_players``
+* ``players``
+* ``port``
+* ``name``
+* ``password``
+
+After the ``mp_sessions`` array has been updated, the ``flags`` value (which contains amongst other things the password requirement) is placed into the ``passwordReq`` lua variable as a ``boolean`` value: ``1`` true or ``0`` false.
 
 **Example**
 
+The ``gameHasPassword`` function from ``UI.MENU``:
 
+::
+
+   function gameHasPassword(slot)
+       if(mp_sessions[mp_shownSessions[slot]["actualIndex"]] == nil) then
+           --if the session isn't loaded don't show anything.
+           return ""
+       end
+       Infinity_GetPasswordRequired(mp_shownSessions[slot]["actualIndex"])
+       if passwordReq ~= 0 then 
+           ret = t("YES")
+       else
+           ret = t("NO")
+       end
+       return ret
+   end
 
 
 
@@ -2122,7 +2210,7 @@ Returns a string containing the tooltip for a specified portrait index
 
 **Parameters**
 
-* ``integer`` *index* - a 0 based index of the portrait to return the tooltip text for
+* ``integer`` *index* - a ``0`` based index of the portrait to return the tooltip text for
 
 **Return Value**
 
@@ -2176,26 +2264,27 @@ Returns as ``integer``: w, h - width and height
 Infinity_GetScriptVarInt
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns the value of a script variable as an ``integer``
 
 ::
 
-   Infinity_GetScriptVarInt(name)
+   Infinity_GetScriptVarInt(ScriptVar)
 
 **Parameters**
 
-* *name* - 
+* ``string`` *ScriptVar* - the script variable to return the value of
 
 **Return Value**
 
-``int``
+Returns the value of a script variable as an ``integer``
 
 **Notes**
 
+Calls the :ref:`CVariableHash\:\:FindKey<CVariableHashFindKey>` method.
 
 **Example**
 
-
+No known example
 
 
 
@@ -2206,7 +2295,7 @@ Infinity_GetScriptVarInt
 Infinity_GetScrollIdentifyEnabled
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Determines if the specified item requires identification, and can be identified via an Indentify scroll
 
 ::
 
@@ -2214,18 +2303,39 @@ Infinity_GetScrollIdentifyEnabled
 
 **Parameters**
 
-* *item_id* - 
+* ``integer`` *item_id* - item id
 
 **Return Value**
 
-``bool``
+Returns a ``boolean`` value: ``1`` true, or ``0`` false
 
 **Notes**
 
+Calls the :ref:`CScreenInventory\:\:GetScrollIdentifyEnabled<CScreenInventoryGetScrollIdentifyEnabled>` method.
+
+See also :ref:`Infinity_GetSpellIdentifyEnabled<Infinity_GetSpellIdentifyEnabled>`
 
 **Example**
 
+The Indentify via a scroll button is enabled if the item requires identification (and there is an Identify scroll in the character's possession). Defined in ``UI.MENU`` as:
 
+::
+
+   button
+   {
+       area 52 214 302 44
+       bam GUIOSTCL
+       text style "button"
+       text "SCROLL_BUTTON"
+       
+       clickable lua "Infinity_GetScrollIdentifyEnabled(characters[id].equipment[selectedSlot].id)"
+       action 
+       "
+           Infinity_OnScrollIdentify(characters[id].equipment[selectedSlot].id)
+           Infinity_PopMenu()
+           itemDesc.item = characters[id].equipment[selectedSlot].item --update itemDesc item
+       "
+   }
 
 
 
@@ -2272,7 +2382,7 @@ Set a label UI control's text with the current characters name:
 Infinity_GetSpellIdentifyEnabled
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Determines if the specified item requires identification, and can be identified via an Indentify spell (or a magical item that can cast an Identify spell)
 
 ::
 
@@ -2280,19 +2390,39 @@ Infinity_GetSpellIdentifyEnabled
 
 **Parameters**
 
-* *item_id* - 
+* ``string`` *item_id* -  item id
 
 **Return Value**
 
-``bool``
+Returns a ``boolean`` value: ``1`` true, or ``0`` false
 
 **Notes**
 
+Calls the :ref:`CScreenInventory\:\:GetSpellIdentifyEnabled<CScreenInventoryGetSpellIdentifyEnabled>` method.
+
+See also :ref:`Infinity_GetScrollIdentifyEnabled<Infinity_GetScrollIdentifyEnabled>`
 
 **Example**
 
+The Indentify via a spell button is enabled if the item requires identification (and there is an Identify spell in the character's possession). Defined in ``UI.MENU`` as:
 
+::
 
+   button
+   {
+       area 52 258 302 44
+       bam GUIOSTCL
+       text style "button"
+       text "SPELL_BUTTON"
+       
+       clickable lua "Infinity_GetSpellIdentifyEnabled(characters[id].equipment[selectedSlot].id)"
+       action 
+       "
+           Infinity_OnSpellIdentify(characters[id].equipment[selectedSlot].id); 
+           Infinity_PopMenu()
+           itemDesc.item = characters[id].equipment[selectedSlot].item --update itemDesc item
+       "
+   }
 
 
 ----
@@ -2302,7 +2432,7 @@ Infinity_GetSpellIdentifyEnabled
 Infinity_GetTimeString
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns a formatted date and time string
 
 ::
 
@@ -2310,14 +2440,27 @@ Infinity_GetTimeString
 
 **Return Value**
 
-string
+Returns a ``string`` containing the date and time - a timestamp
 
 **Notes**
+
+Calls the :ref:`CTimerWorld\:\:GetCurrentTimeString<CTimerWorldGetCurrentTimeString>` method. 
 
 
 **Example**
 
+Editing a journal entry will automatically place a date time value, defined in ``UI.MENU`` as:
 
+::
+
+   label
+   {
+       enabled "journalMode == const.JOURNAL_MODE_EDIT"
+       area 58 144 382 42
+       text style "label"
+       text color 0 120 0 255
+       text lua "Infinity_GetTimeString()"
+   }
 
 
 
