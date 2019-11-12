@@ -1,0 +1,85 @@
+@echo off
+
+REM Delete temp files - does not delete any .rst files
+for /f "Tokens=*" %%a in ('dir *. /b/a-d') do (
+    del %%a
+)
+
+REM Specify the names of the functions to create .rst files for
+REM Do not add an extension to these entries
+REM Entries begin with: echo>
+REM Copy and paste or add each line manually
+REM Example line: echo.>EEex_Function
+
+echo.>EEex_Function1
+echo.>EEex_Function2
+echo.>EEex_Function3
+echo.>EEex_Function4
+echo.>EEex_Function5
+
+REM Convert files to .rst
+for /f "Tokens=*" %%a in ('dir *. /b/a-d') do (
+    echo... _%%a:>%%a.rst
+    echo.>>%%a.rst
+    echo ===================================>>%%a.rst
+    echo %%a >>%%a.rst
+    echo ===================================>>%%a.rst
+    echo.>>%%a.rst
+    echo... Delete this line and enter the function description>>%%a.rst
+    echo.>>%%a.rst
+    echo ::>>%%a.rst
+    echo.>>%%a.rst
+    echo    %%a^(^)>>%%a.rst
+    echo.>>%%a.rst
+    echo **Parameters**>>%%a.rst
+    echo.>>%%a.rst
+    echo... ###################################################################################>>%%a.rst
+    echo    Place any parameters between the ** so that they are shown in italics, for example:>>%%a.rst
+    echo    * *Param1*>>%%a.rst
+    echo    Enter parameter description after the ^'-^', for example:>>%%a.rst
+    echo    * *Param1* - this is parameter one and it does something cool>>%%a.rst
+    echo    Remove any unused/empty parameters lines: * ** - >>%%a.rst
+    echo    ###################################################################################>>%%a.rst
+    echo.>>%%a.rst
+    echo * **>>%%a.rst
+    echo * **>>%%a.rst
+    echo * **>>%%a.rst
+    echo * **>>%%a.rst
+    echo.>>%%a.rst
+    echo **Returns**>>%%a.rst
+    echo.>>%%a.rst
+    echo... Delete this line and enter return values if any>>%%a.rst
+    echo.>>%%a.rst
+    echo **Notes**>>%%a.rst
+    echo.>>%%a.rst
+    echo... Delete this line and enter notes and information>>%%a.rst
+    echo.>>%%a.rst
+    echo **Example**>>%%a.rst
+    echo.>>%%a.rst
+    echo... ###################################################################################>>%%a.rst
+    echo    If possible provide example usage. Make sure any code is after the ^'::^' and is>>%%a.rst
+    echo    idented by three spaces for it to appear in a code block format. The basic outline>>%%a.rst
+    echo    of the example function has been entered below for you to modify ^(after the ^'::^'^)>>%%a.rst
+    echo    ###################################################################################>>%%a.rst
+    echo.>>%%a.rst
+    echo ::>>%%a.rst
+    echo.>>%%a.rst
+    echo    %%a^(^)>>%%a.rst
+    echo.>>%%a.rst
+    echo **See Also**>>%%a.rst
+    echo.>>%%a.rst
+    echo... ###################################################################################>>%%a.rst
+    echo    If there are any other related functions then provide links to them. Links are in>>%%a.rst
+    echo    the format of :ref:`TextToDisplay<Link>` for example:>>%%a.rst
+    echo    :ref:`EEex_AnotherFunction<EEex_AnotherFunction>`>>%%a.rst
+    echo    ###################################################################################>>%%a.rst
+    echo.>>%%a.rst
+    echo :ref:^`^<^>^`, :ref:^`^<^>^`>>%%a.rst
+    echo.>>%%a.rst
+)
+
+REM Cleanup and delete temp files
+for /f "Tokens=*" %%a in ('dir *. /b/a-d') do (
+    del %%a > nul
+)
+del "%%a.rst" > nul

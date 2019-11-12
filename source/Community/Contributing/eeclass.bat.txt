@@ -1,0 +1,390 @@
+@echo off
+
+REM Define methods here and set count of them
+REM Add additonal array entries as required
+REM Note the 0 based index for count! 
+REM For example if methods ended at m[20] the count will be 21
+REM Classname and method should be seperated with '\:\:'
+REM For example: 
+REM m[0]=CClassName\:\:Method
+REM m[1]=CClassName\:\:AnotherMethod
+REM ...
+REM m[99]=CClassName\:\:AnyOtherMethod
+set methodcount=0
+set m[0]=
+set m[1]=
+set m[2]=
+set m[3]=
+set m[4]=
+set m[5]=
+set m[6]=
+set m[7]=
+set m[8]=
+set m[9]=
+set m[10]=
+set m[11]=
+set m[12]=
+set m[13]=
+set m[14]=
+set m[15]=
+set m[16]=
+set m[17]=
+set m[18]=
+set m[19]=
+set m[20]=
+set m[21]=
+set m[22]=
+set m[23]=
+set m[24]=
+set m[25]=
+set m[26]=
+set m[27]=
+set m[28]=
+set m[29]=
+set m[30]=
+set m[31]=
+set m[32]=
+set m[33]=
+set m[34]=
+set m[35]=
+set m[36]=
+set m[37]=
+set m[38]=
+set m[39]=
+set m[40]=
+set m[41]=
+set m[42]=
+set m[43]=
+set m[44]=
+set m[45]=
+set m[46]=
+set m[47]=
+set m[48]=
+set m[49]=
+set m[50]=
+set m[51]=
+set m[52]=
+set m[53]=
+set m[54]=
+set m[55]=
+set m[56]=
+set m[57]=
+set m[58]=
+set m[59]=
+set m[60]=
+set m[61]=
+set m[62]=
+set m[63]=
+set m[64]=
+set m[65]=
+set m[66]=
+set m[67]=
+set m[68]=
+set m[69]=
+set m[70]=
+set m[71]=
+set m[72]=
+set m[73]=
+set m[74]=
+set m[75]=
+set m[76]=
+set m[77]=
+set m[78]=
+set m[79]=
+set m[80]=
+set m[81]=
+set m[82]=
+set m[83]=
+set m[84]=
+set m[85]=
+set m[86]=
+set m[87]=
+set m[88]=
+set m[89]=
+set m[90]=
+set m[91]=
+set m[92]=
+set m[93]=
+set m[94]=
+set m[95]=
+set m[96]=
+set m[97]=
+set m[98]=
+set m[99]=
+set m[100]=
+set m[101]=
+set m[102]=
+set m[103]=
+set m[104]=
+set m[105]=
+set m[106]=
+set m[107]=
+set m[108]=
+set m[109]=
+set m[110]=
+set m[111]=
+set m[112]=
+set m[113]=
+set m[114]=
+set m[115]=
+set m[116]=
+set m[117]=
+set m[118]=
+set m[119]=
+set m[120]=
+set m[121]=
+set m[122]=
+set m[123]=
+set m[124]=
+set m[125]=
+set m[126]=
+set m[127]=
+set m[128]=
+set m[129]=
+set m[130]=
+set m[131]=
+set m[132]=
+set m[133]=
+set m[134]=
+set m[135]=
+set m[136]=
+set m[137]=
+set m[138]=
+set m[139]=
+set m[140]=
+set m[141]=
+set m[142]=
+set m[143]=
+set m[144]=
+set m[145]=
+set m[146]=
+set m[147]=
+set m[148]=
+set m[149]=
+set m[150]=
+set m[151]=
+set m[152]=
+set m[153]=
+set m[154]=
+set m[155]=
+set m[156]=
+set m[157]=
+set m[158]=
+set m[159]=
+set m[160]=
+
+
+REM Get default class name based on current folder's name
+:SetDefaultClassName
+for /f "delims=" %%A in ('cd') do (
+     set classname=%%~nxA
+    )
+goto CheckParameter1
+
+REM Output to specific file if passed as a parameter or newindex.rst otherwise
+:CheckParameter1
+IF "%1"=="" goto SetDefaultOutputFile
+set outputfile=%1
+goto OutputClassHeader
+
+:SetDefaultOutputFile
+set outputfile=newindex.rst
+goto OutputClassHeader
+
+REM Output the class header
+:OutputClassHeader
+ECHO ClassName = %classname%
+ECHO OutputFile = %outputfile%
+
+echo... _%classname% Class:>%outputfile%
+echo.>>%outputfile%
+echo ==========================>>%outputfile%
+echo %classname% Class>>%outputfile%
+echo ==========================>>%outputfile%
+echo.>>%outputfile%
+echo... toctree::>>%outputfile%
+echo    :maxdepth: 1>>%outputfile%
+echo.>>%outputfile%
+echo * :ref:^`Overview^<%classname%_Overview^>^`>>%outputfile%
+echo * :ref:^`Quick Reference^<%classname%_QuickRef^>^`>>%outputfile%
+echo * :ref:^`Constructors^<%classname%_Constructors^>^`>>%outputfile%
+echo * :ref:^`Methods^<%classname%_Methods^>^`>>%outputfile%
+echo.>>%outputfile%
+echo ---->>%outputfile%
+echo.>>%outputfile%
+echo... _%classname%_Overview:>>%outputfile%
+echo.>>%outputfile%
+echo Overview>>%outputfile%
+echo --------------->>%outputfile%
+echo.>>%outputfile%
+echo... note:: The **%classname%** class handles >>%outputfile%
+echo.>>%outputfile%
+echo The structure used for this class is :ref:^`%classname%^<%classname%^>^`>>%outputfile%
+echo.>>%outputfile%
+goto OutputClassQuickRef
+
+REM Output a quick reference table with 1 empty row for copy and pasting
+REM After file is generated you will have to manually add this information
+:OutputClassQuickRef
+echo ---->>%outputfile%
+echo.>>%outputfile%
+echo... _%classname%_QuickRef:>>%outputfile%
+echo.>>%outputfile%
+echo Quick Reference>>%outputfile%
+echo --------------->>%outputfile%
+echo.>>%outputfile%
+echo +-------------------------------------------------------------------------------------------------------------------------------------+>>%outputfile%
+echo ^| **Quick Ref**                                                                                                                       ^|>>%outputfile%
+echo +-------------------------------------------------------------------------------------------------------------------------------------+>>%outputfile%
+echo ^|                                                                                                                                     ^|>>%outputfile%
+echo +-------------------------------------------------------------------------------------------------------------------------------------+>>%outputfile%
+echo.>>%outputfile%
+goto OutputClassConstructors
+
+REM Output class constructors
+REM After file is generated you may need to add additional constructors or remove ones that dont exist
+REM May need to manually add parameters for constructors that have any
+REM By default assume one constructor and one destructor
+:OutputClassConstructors
+echo.>>%outputfile%
+echo ---->>%outputfile%
+echo.>>%outputfile%
+echo... _%classname%_Constructors:>>%outputfile%
+echo.>>%outputfile%
+echo Constructors>>%outputfile%
+echo --------------->>%outputfile%
+echo.>>%outputfile%
+echo +---------------------------------------------------------------+------------------------------------------------------+>>%outputfile%
+echo ^| **Name**                                                      ^| **Description**                                      ^|>>%outputfile%
+echo +---------------------------------------------------------------+------------------------------------------------------+>>%outputfile%
+echo ^| :ref:^`%classname%\:\:%classname%^<%classname%%classname%^>^`     ^| Constructs a ^`^`%classname%^`^` object                  ^|>>%outputfile%
+echo +---------------------------------------------------------------+------------------------------------------------------+>>%outputfile%
+echo ^| :ref:^`%classname%\:\:%classname%^<%classname%~%classname%^>^`    ^| Destroys a ^`^`%classname%^`^` object                    ^|>>%outputfile%
+echo +---------------------------------------------------------------+------------------------------------------------------+>>%outputfile%
+echo.>>%outputfile%
+echo... _%classname%%classname%:>>%outputfile%
+echo.>>%outputfile%
+echo %classname%\:\:%classname%>>%outputfile%
+echo ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^>>%outputfile%
+echo.>>%outputfile%
+echo Constructs a ^`^`%classname%^`^` object>>%outputfile%
+echo.>>%outputfile%
+echo ::>>%outputfile%
+echo.>>%outputfile%
+echo    void %classname%::%classname%();>>%outputfile%
+echo.>>%outputfile%
+echo **Remarks**>>%outputfile%
+echo.>>%outputfile%
+echo Constructs a ^`^`%classname%^`^` object>>%outputfile%
+echo.>>%outputfile%
+echo.>>%outputfile%
+echo ---->>%outputfile%
+echo.>>%outputfile%
+echo... _%classname%~%classname%:>>%outputfile%
+echo.>>%outputfile%
+echo %classname%\:\:~%classname%>>%outputfile%
+echo ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^>>%outputfile%
+echo.>>%outputfile%
+echo Destroys the ^`^`%classname%^`^` object>>%outputfile%
+echo.>>%outputfile%
+echo ::>>%outputfile%
+echo.>>%outputfile%
+echo    virtual void %classname%::~%classname%();>>%outputfile%
+echo.>>%outputfile%
+echo **Remarks**>>%outputfile%
+echo.>>%outputfile%
+echo Destroys the ^`^`%classname%^`^` object>>%outputfile%
+echo.>>%outputfile%
+goto OutputClassMethods
+
+REM Output class methods into a table
+REM After file is generated you will need to edit this table
+REM Replace '<classname\:\:' with just '<classname' (without the ' quote marks)
+REM Copy method name in table to end of '<classname' so that you have '<classnameMethod>' as the link
+REM Adjust spacing to align table
+:OutputClassMethods
+echo.>>%outputfile%
+echo ---->>%outputfile%
+echo.>>%outputfile%
+echo... _%classname%_Methods:>>%outputfile%
+echo.>>%outputfile%
+echo Methods>>%outputfile%
+echo --------------->>%outputfile%
+echo.>>%outputfile%
+echo +------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+>>%outputfile%
+echo ^| **Name**                                                                                                               ^| **Description**                                                                         ^|>>%outputfile%
+echo +------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+>>%outputfile%
+goto OutputClassMethodList
+
+:OutputClassMethodList
+set method=0
+goto OutputClassMethodListLoop
+
+:OutputClassMethodListLoop
+if %method% equ %methodcount% goto OutputClassMethodListEnd
+for /f "usebackq delims== tokens=2" %%j in (`set m[%method%]`) do (
+	echo ^| :ref:^`%%j^<%%j^>^` ^|                                                                                         ^|>>%outputfile%
+    echo +------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+>>%outputfile%
+)
+set /a method=%method%+1
+goto OutputClassMethodListLoop
+
+:OutputClassMethodListEnd
+echo.>>%outputfile%
+rem goto end
+goto OutputClassMethodDetails
+
+REM Output individual class methods sections
+REM After file is generated you will need to replace '.. _classname\:\:' with just '.. _classname' (without the ' quote marks)
+:OutputClassMethodDetails
+set method=0
+goto OutputClassMethodDetailsLoop
+
+:OutputClassMethodDetailsLoop
+if %method% equ %methodcount% goto OutputClassMethodDetailsEnd
+for /f "usebackq delims== tokens=2" %%j in (`set m[%method%]`) do (
+    echo.>>%outputfile%
+    echo ---->>%outputfile%
+    echo.>>%outputfile%
+    echo... _%%j:>>%outputfile%
+    echo.>>%outputfile%
+    echo %%j>>%outputfile%
+    echo ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^>>%outputfile%
+    echo.>>%outputfile%
+    echo.>>%outputfile%
+    echo.>>%outputfile%
+    echo ::>>%outputfile%
+    echo.>>%outputfile%
+    echo    x;>>%outputfile%
+    echo.>>%outputfile%
+    echo **Parameters**>>%outputfile%
+    echo.>>%outputfile%
+    echo *  * - >>%outputfile%
+    echo *  * - >>%outputfile%
+    echo *  * - >>%outputfile%
+    echo *  * - >>%outputfile%
+    echo.>>%outputfile%
+    echo **Return Value**>>%outputfile%
+    echo.>>%outputfile%
+    echo Returns >>%outputfile%
+    echo.>>%outputfile%
+    echo **Remarks**>>%outputfile%
+    echo.>>%outputfile%
+    echo.>>%outputfile%
+    echo.>>%outputfile%
+)
+set /a method=%method%+1
+goto OutputClassMethodDetailsLoop
+
+:OutputClassMethodDetailsEnd
+
+
+:end
+
+
+
+
+
+
+
+
