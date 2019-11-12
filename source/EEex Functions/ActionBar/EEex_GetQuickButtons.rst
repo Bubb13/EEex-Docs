@@ -1,26 +1,30 @@
-.. _EEex_GetActionbarButton:
+.. _EEex_GetQuickButtons:
 
 ===================================
-EEex_GetActionbarButton 
+EEex_GetQuickButtons 
 ===================================
 
+Returns a list of quick slot buttons
+    
 ::
 
-   EEex_GetActionbarButton(buttonIndex)
+   EEex_GetQuickButtons(m_CGameSprite, buttonType, existenceCheck)
 
-Retrieves the button type of a specific button on the actionbar
 
 **Parameters**
 
-* **buttonIndex** - the index of the button on the actionbar
+* *m_CGameSprite* - pointer to game sprite object
+* *buttonType* - type of button, see notes
+* *existenceCheck* - boolean ``true`` or ``false``
 
-**Return**
 
-Returns the type of the button, see :ref:`Actionbar button types<Get action bar button types>` for details
+**Returns**
 
-.. _Get action bar button types:
+Returns a list of quick buttons
 
-**Actionbar button types**
+**Notes**
+
+*buttonType* values can be one of the following:
 
 +--------------------+------------------------------------+
 | **Button Type ID** | **Button Type Notes**              |
@@ -99,13 +103,13 @@ Returns the type of the button, see :ref:`Actionbar button types<Get action bar 
 Note: other button types not listed may be available, but typically are used internally for spell buttons and other dynamic buttons for the game engine.
 
 
-
 **Example**
 
 ::
 
-   btnType = EEex_GetActionbarButton(1)
+   local m_CGameButtonList = EEex_GetQuickButtons(m_CGameSprite, 2, 0)
 
 **See Also**
 
-:ref:`EEex_SetActionbarButton<EEex_SetActionbarButton>`
+:ref:`EEex_UseCGameButtonList<EEex_UseCGameButtonList>` 
+

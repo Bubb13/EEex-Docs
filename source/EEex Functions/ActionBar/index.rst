@@ -25,6 +25,8 @@ ActionBar
 +-------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetLastActionbarState<EEex_GetLastActionbarState>`     | Returns the last state of the actionbar            |
 +-------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`EEex_GetQuickButtons<EEex_GetQuickButtons>`                 | Returns a list of quick slot buttons               |
++-------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_IsActionbarButtonDown<EEex_IsActionbarButtonDown>`     | Determines if an actionbar button is being clicked |
 +-------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_SetActionbarButton<EEex_SetActionbarButton>`           | Sets the type of an actionbar button               |
@@ -33,7 +35,8 @@ ActionBar
 +-------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_UpdateActionbar<EEex_UpdateActionbar>`                 | Forces the actionbar to refresh its state          |
 +-------------------------------------------------------------------+----------------------------------------------------+
-
+| :ref:`EEex_UseCGameButtonList<EEex_UseCGameButtonList>`           | Return the specified button's action data          |
++-------------------------------------------------------------------+----------------------------------------------------+
 
 **See Also**
 

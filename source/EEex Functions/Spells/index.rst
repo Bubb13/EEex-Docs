@@ -33,6 +33,8 @@ Spells
 +---------------------------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetMemorizedWizardSpells<EEex_GetMemorizedWizardSpells>`                   | Returns array of memorized wizard spells for actor |
 +---------------------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`EEex_GetSpellAbilityData<EEex_GetSpellAbilityData>`                             | Returns spell ability data for specified spell     |
++---------------------------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetSpellData<EEex_GetSpellData>`                                           | Returns a pointer to spell data                    |
 +---------------------------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_GetSpellDescription<EEex_GetSpellDescription>`                             | Returns a string containing spell description      |
@@ -55,6 +57,14 @@ Spells
 +---------------------------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_MemorizeWizardSpell<EEex_MemorizeWizardSpell>`                             | Memorize a wizard spell for an actor               |
 +---------------------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`EEex_PlayerCastResref<EEex_PlayerCastResref>`                                   | Casts the specified spell                          |
++---------------------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`EEex_PlayerCastResrefInternal<EEex_PlayerCastResrefInternal>`                   | Casts the specified spell from active Opcode #214  |
++---------------------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`EEex_PlayerCastResrefNoDec<EEex_PlayerCastResrefNoDec>`                         | Casts the specified spell with no prerequisites    |
++---------------------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`EEex_PlayerSetQuickSpellResref<EEex_PlayerSetQuickSpellResref>`                 | Sets the quick spell slot with the specified spell |
++---------------------------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_ProcessClericMemorization<EEex_ProcessClericMemorization>`                 | Iterate memorized cleric spells for an actor       |
 +---------------------------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_ProcessInnateMemorization<EEex_ProcessInnateMemorization>`                 | Iterate memorized innate spells for an actor       |
@@ -66,6 +76,8 @@ Spells
 | :ref:`EEex_ProcessKnownWizardSpells<EEex_ProcessKnownWizardSpells>`                   | Iterate known wizard spells for an actor           |
 +---------------------------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_ProcessWizardMemorization<EEex_ProcessWizardMemorization>`                 | Iterate memorized wizard spells for an actor       |
++---------------------------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`EEex_ReadySpell<EEex_ReadySpell>`                                               | Ready the spell associated with the button data    |
 +---------------------------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_UnlearnClericSpell<EEex_UnlearnClericSpell>`                               | Removes a spell from known spells for an actor     |
 +---------------------------------------------------------------------------------------+----------------------------------------------------+
