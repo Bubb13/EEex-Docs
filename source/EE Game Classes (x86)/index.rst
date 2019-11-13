@@ -48,6 +48,7 @@ EE Game Classes (x86)
    CGameSave/index
    CGameSound/index
    CGameSpawning/index
+   CGameSprite/index
    CGameStatic/index
    CGameStatsSprite/index
    CGameText/index
@@ -122,6 +123,7 @@ EE Game Classes (x86)
    CSpawnFile/index
    CSpawnList/index
    CSpawnPoint/index
+   CSpawnVar/index
    CSpell/index
    CSteam/index
    CStore/index

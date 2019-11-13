@@ -435,7 +435,6 @@ Once the ``newindex.rst`` file has been generated, it requires some editing befo
 Note: ``classname`` in the following steps is a placeholder for whatever the class name actually is:
 
 * In the methods table, replace all ``<classname\:\:`` with ``<classname``
-* Copy each method name in each row of the methods table to the end of ``<classname``, so that you have ``<classnameMethod>`` as the link reference
 * Adjust the cell spacing for each row in the methods table to properly align the methods table
 * For the individual method sections, replace all ``.. _classname\:\:`` with ``.. _classname``, so that you have ``.. _classnameMethod:`` as the internal link
 * Add in any method description; parameter types, names and descriptions; return values and any notes or other information as needed
