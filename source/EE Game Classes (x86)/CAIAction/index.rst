@@ -7,7 +7,28 @@ CAIAction Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CAIAction_Overview>`
+* :ref:`Quick Reference<CAIAction_QuickRef>`
+* :ref:`Constructors<CAIAction_Constructors>`
+* :ref:`Methods<CAIAction_Methods>`
+
+----
+
+.. _CAIAction_Overview:
+
+Overview
+---------------
+
+.. note:: The **CAIAction** class handles AI processing of creature actions
+
 The structure used for this class is :ref:`CAIAction<CAIAction>`
+
+----
+
+.. _CAIAction_QuickRef:
+
+Quick Reference
+---------------
 
 +---------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                               |
@@ -23,11 +44,10 @@ The structure used for this class is :ref:`CAIAction<CAIAction>`
 | void **CAIAction\:\:Read**\(:ref:`CString<CString>` data, :ref:`CString<CString>` source)   |
 +---------------------------------------------------------------------------------------------+
 
-
-
 ----
 
----------------
+.. _CAIAction_Constructors:
+
 Constructors
 ---------------
 
@@ -42,7 +62,7 @@ Constructors
 .. _CAIActionCAIAction:
 
 CAIAction\:\:CAIAction
-^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CAIAction`` object
 
@@ -60,7 +80,7 @@ Constructs a ``CAIAction`` object
 .. _CAIAction~CAIAction:
 
 CAIAction\:\:~CAIAction
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Destroys the ``CAIAction`` object
 
@@ -76,7 +96,8 @@ Destroys the ``CAIAction`` object
 
 ----
 
----------------
+.. _CAIAction_Methods:
+
 Methods
 ---------------
 
@@ -90,11 +111,12 @@ Methods
 | :ref:`CAIAction\:\:Read<CAIActionRead>`                  | Reads                                                                                   |
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
+----
 
 .. _CAIActionDecode:
 
 CAIAction\:\:Decode
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 
 Decode action
 
@@ -116,7 +138,7 @@ Decodes action
 .. _CAIActionOfType:
 
 CAIAction\:\:OfType
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 
 OfType
 
@@ -141,7 +163,7 @@ Returns as an ``unsigned char``
 .. _CAIActionRead:
 
 CAIAction\:\:Read
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 
 Reads the action
 

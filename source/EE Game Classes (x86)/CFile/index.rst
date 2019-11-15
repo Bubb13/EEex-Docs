@@ -7,6 +7,28 @@ CFile Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CFile_Overview>`
+* :ref:`Quick Reference<CFile_QuickRef>`
+* :ref:`Constructors<CFile_Constructors>`
+* :ref:`Methods<CFile_Methods>`
+
+----
+
+.. _CFile_Overview:
+
+Overview
+---------------
+
+.. note:: The **CFile** class handles basic file operations
+
+The structure used for this class is :ref:`CFile<CFile>`
+
+----
+
+.. _CFile_QuickRef:
+
+Quick Reference
+---------------
 
 +---------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                         |
@@ -54,7 +76,8 @@ CFile Class
 
 ----
 
----------------
+.. _CFile_Constructors:
+
 Constructors
 ---------------
 
@@ -103,7 +126,8 @@ Destroys the ``CFile`` object
 
 ----
 
----------------
+.. _CFile_Methods:
+
 Methods
 ---------------
 
@@ -145,6 +169,7 @@ Methods
 | :ref:`CFile\:\:Write<CFileWrite>`                        | Writes (unbuffered) data in a file to the current file position                         |
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
+----
 
 .. _CFileAbort:
 

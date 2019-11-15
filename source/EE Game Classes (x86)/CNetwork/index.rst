@@ -22,7 +22,8 @@ Overview
 .. note:: The **CNetwork** class handles network session management, messaging and information for multiplayer games
 
 The structure used for this class is :ref:`CNetwork<CNetwork>`
--
+
+----
 
 .. _CNetwork_QuickRef:
 

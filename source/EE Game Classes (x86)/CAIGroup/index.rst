@@ -7,12 +7,33 @@ CAIGroup Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<CAIGroup_Overview>`
+* :ref:`Quick Reference<CAIGroup_QuickRef>`
+* :ref:`Methods<CAIGroup_Methods>`
+
+----
+
+.. _CAIGroup_Overview:
+
+Overview
+---------------
+
+.. note:: The **CAIGroup** class handles group selection of party, characters and/or allied creatures
+
 The structure used for this class is :ref:`CAIGroup<CAIGroup>`
+
+
+----
+
+.. _CAIGroup_QuickRef:
+
+Quick Reference
+---------------
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                                      |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
-| __POSITION\* **CAIGroup\:\:Add**\(long spriteIndex)                                                                                                |
+| POSITION\* **CAIGroup\:\:Add**\(long spriteIndex)                                                                                                  |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **CAIGroup\:\:Add**\(:ref:`CGameSprite<CGameSprite>`\* pSprite)                                                                               |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -66,11 +87,10 @@ The structure used for this class is :ref:`CAIGroup<CAIGroup>`
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-
-
 ----
 
----------------
+.. _CAIGroup_Methods:
+
 Methods
 ---------------
 
@@ -119,8 +139,6 @@ Methods
 +-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CAIGroup\:\:Remove<CAIGroupRemove>`                       |                                                                                         |
 +-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| :ref:`CAIGroup\:\:Remove<CAIGroupRemove2>`                      |                                                                                         |
-+-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CAIGroup\:\:RemoveFromSearch<CAIGroupRemoveFromSearch>`   |                                                                                         |
 +-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | :ref:`CAIGroup\:\:RotateOffsets<CAIGroupRotateOffsets>`         |                                                                                         |
@@ -130,16 +148,18 @@ Methods
 | :ref:`CAIGroup\:\:Sort<CAIGroupSort>`                           |                                                                                         |
 +-----------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
+----
+
 .. _CAIGroupAdd:
 
 CAIGroup\:\:Add
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
 
 
 
 ::
 
-   __POSITION* CAIGroup::Add(long spriteIndex);
+   POSITION* CAIGroup::Add(long spriteIndex);
 
 **Parameters**
 
@@ -147,7 +167,7 @@ CAIGroup\:\:Add
 
 **Return Value**
 
-``__POSITION``
+``POSITION``
 
 **Remarks**
 
@@ -157,7 +177,7 @@ CAIGroup\:\:Add
 .. _CAIGroupAdd2:
 
 CAIGroup\:\:Add
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
 
 
 
@@ -177,7 +197,7 @@ CAIGroup\:\:Add
 .. _CAIGroupAddEffect:
 
 CAIGroup\:\:AddEffect
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -197,7 +217,7 @@ CAIGroup\:\:AddEffect
 .. _CAIGroupAddToSearch:
 
 CAIGroup\:\:AddToSearch
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -217,7 +237,7 @@ CAIGroup\:\:AddToSearch
 .. _CAIGroupAddTrigger:
 
 CAIGroup\:\:AddTrigger
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -237,7 +257,7 @@ CAIGroup\:\:AddTrigger
 .. _CAIGroupClearActions:
 
 CAIGroup\:\:ClearActions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -253,7 +273,7 @@ CAIGroup\:\:ClearActions
 .. _CAIGroupFollowLeader:
 
 CAIGroup\:\:FollowLeader
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -277,7 +297,7 @@ CAIGroup\:\:FollowLeader
 .. _CAIGroupGetFacings:
 
 CAIGroup\:\:GetFacings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -305,7 +325,7 @@ CAIGroup\:\:GetFacings
 .. _CAIGroupGetGroupLeader:
 
 CAIGroup\:\:GetGroupLeader
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -326,7 +346,7 @@ CAIGroup\:\:GetGroupLeader
 .. _CAIGroupGetGroupList:
 
 CAIGroup\:\:GetGroupList
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -347,7 +367,7 @@ CAIGroup\:\:GetGroupList
 .. _CAIGroupGetOffsets:
 
 CAIGroup\:\:GetOffsets
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -377,7 +397,7 @@ CAIGroup\:\:GetOffsets
 .. _CAIGroupGroupAction:
 
 CAIGroup\:\:GroupAction
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -407,7 +427,7 @@ CAIGroup\:\:GroupAction
 .. _CAIGroupGroupCancelMove:
 
 CAIGroup\:\:GroupCancelMove
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -424,7 +444,7 @@ CAIGroup\:\:GroupCancelMove
 .. _CAIGroupGroupDrawMove:
 
 CAIGroup\:\:GroupDrawMove
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -450,7 +470,7 @@ CAIGroup\:\:GroupDrawMove
 .. _CAIGroupGroupProtectPoint:
 
 CAIGroup\:\:GroupProtectPoint
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -478,7 +498,7 @@ CAIGroup\:\:GroupProtectPoint
 .. _CAIGroupGroupSetTarget:
 
 CAIGroup\:\:GroupSetTarget
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -499,7 +519,7 @@ CAIGroup\:\:GroupSetTarget
 .. _CAIGroupGroupSetTarget2:
 
 CAIGroup\:\:GroupSetTarget
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -527,7 +547,7 @@ CAIGroup\:\:GroupSetTarget
 .. _CAIGroupHandleFollowPath:
 
 CAIGroup\:\:HandleFollowPath
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -557,7 +577,7 @@ CAIGroup\:\:HandleFollowPath
 .. _CAIGroupInList:
 
 CAIGroup\:\:InList
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 
 
 
@@ -582,7 +602,7 @@ CAIGroup\:\:InList
 .. _CAIGroupIsPartyLeader:
 
 CAIGroup\:\:IsPartyLeader
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -603,7 +623,7 @@ CAIGroup\:\:IsPartyLeader
 .. _CAIGroupRemove:
 
 CAIGroup\:\:Remove
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 
 
 
@@ -621,10 +641,8 @@ CAIGroup\:\:Remove
 
 ----
 
-.. _CAIGroupRemove2:
-
 CAIGroup\:\:Remove
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 
 
 
@@ -645,7 +663,7 @@ CAIGroup\:\:Remove
 .. _CAIGroupRemoveFromSearch:
 
 CAIGroup\:\:RemoveFromSearch
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -666,7 +684,7 @@ CAIGroup\:\:RemoveFromSearch
 .. _CAIGroupRotateOffsets:
 
 CAIGroup\:\:RotateOffsets
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -692,7 +710,7 @@ CAIGroup\:\:RotateOffsets
 .. _CAIGroupSetGroupTriggerId:
 
 CAIGroup\:\:SetGroupTriggerId
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -713,7 +731,7 @@ CAIGroup\:\:SetGroupTriggerId
 .. _CAIGroupSort:
 
 CAIGroup\:\:Sort
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 
 
 

@@ -7,14 +7,33 @@ C2DArray Class
 .. toctree::
    :maxdepth: 1
 
+* :ref:`Overview<C2DArray_Overview>`
+* :ref:`Quick Reference<C2DArray_QuickRef>`
+* :ref:`Constructors<C2DArray_Constructors>`
+* :ref:`Methods<C2DArray_Methods>`
 
-Implements a 2D (two dimensional) array for handling ``.2da`` text files that store game data (typically rules etc) in columns and rows. See `2DA file format <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/2da.htm>`_ for details.
+----
+
+.. _C2DArray_Overview:
+
+Overview
+---------------
+
+.. note:: The **C2DArray** class handles 2D (two dimensional) arrays for handling ``.2da`` text files that store game data (typically rules etc) in columns and rows. See `2DA file format <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/2da.htm>`_ for details.
 
 The structure used for this class is :ref:`C2DArray<C2DArray>`
 
+----
+
+.. _C2DArray_QuickRef:
+
+Quick Reference
+---------------
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Quick Ref**                                                                                                                                                                   |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void **C2DArray\:\:~C2DArray**\()                                                                                                                                               |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | unsigned char **C2DArray\:\:Find**\(:ref:`CString<CString>`\& sSearchString, :ref:`CString<CString>`\& sXLabel, :ref:`CString<CString>`\& sYLabel, unsigned char bSearchLabels) |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -28,12 +47,11 @@ The structure used for this class is :ref:`C2DArray<C2DArray>`
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void **C2DArray\:\:LoadLines**\(:ref:`CResRef<CResRef>`\& res)                                                                                                                  |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| void **C2DArray\:\:~C2DArray**\()                                                                                                                                               |
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ----
 
----------------
+.. _C2DArray_Constructors:
+
 Constructors
 ---------------
 
@@ -61,7 +79,8 @@ Destroys the ``C2DArray`` object.
 
 ----
 
----------------
+.. _C2DArray_Methods:
+
 Methods
 ---------------
 
@@ -79,11 +98,12 @@ Methods
 | :ref:`C2DArray\:\:LoadLines<C2DArrayLoadLines>`          | Load a 2da resource into the C2DArray class                                             |
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
+----
 
 .. _C2DArrayFind:
 
 C2DArray\:\:Find
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 
 Locates a text value in the 2da array using column and row text headers to limit search.
 
@@ -114,7 +134,7 @@ Returns the result of the search as an unsigned char.
 ----
 
 C2DArray\:\:Find
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 
 Locate a text value in the 2da array using x and y coords to limit search
 
@@ -145,7 +165,7 @@ Returns the result of the search as an unsigned char.
 .. _C2DArrayGetAt:
 
 C2DArray\:\:GetAt
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 
 Get a text value from the specified x and y coordinates
 
@@ -193,7 +213,7 @@ Returns the numeric value as a long integer
 .. _C2DArrayLoad:
 
 C2DArray\:\:Load
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 
 Loads the specified 2da resource
 
