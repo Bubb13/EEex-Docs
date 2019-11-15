@@ -125,17 +125,17 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_GetTimeString<Infinity_GetTimeString>`                                       | Returns a formatted date and time string                                                      |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetTransitionInProgress<Infinity_GetTransitionInProgress>`                   |                                                                                               |
+| :ref:`Infinity_GetTransitionInProgress<Infinity_GetTransitionInProgress>`                   | Returns the transition value                                                                  |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GetUseButtonText<Infinity_GetUseButtonText>`                                 |                                                                                               |
+| :ref:`Infinity_GetUseButtonText<Infinity_GetUseButtonText>`                                 | Returns "Use x" button text of an item name for an item specified                             |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_GooglePlaySignedIn<Infinity_GooglePlaySignedIn>`                             |                                                                                               |
+| :ref:`Infinity_GooglePlaySignedIn<Infinity_GooglePlaySignedIn>`                             | Determines if signed into Google Play                                                         |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_HighlightJournalButton<Infinity_HighlightJournalButton>`                     |                                                                                               |
+| :ref:`Infinity_HighlightJournalButton<Infinity_HighlightJournalButton>`                     | Unknown purpose, returns false                                                                |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_HoverMouseOver<Infinity_HoverMouseOver>`                                     | Moves where your mouse cursor is in the game world                                            |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_HoverMouseOverObject<Infinity_HoverMouseOverObject>`                         |                                                                                               |
+| :ref:`Infinity_HoverMouseOverObject<Infinity_HoverMouseOverObject>`                         | Activate AI script file for object that mouse is hovering over                                |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_InstanceAnimation<Infinity_InstanceAnimation>`                               |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -2471,26 +2471,29 @@ Editing a journal entry will automatically place a date time value, defined in `
 Infinity_GetTransitionInProgress
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns the transition value
 
 ::
 
-   Infinity_GetTransitionInProgress(???)
+   Infinity_GetTransitionInProgress()
 
 **Parameters**
 
-???
+None
 
 **Return Value**
 
-???
+Pushes the ``transition`` variable value to the lua stack
 
 **Notes**
 
+``transition`` variable located at offset ``0x00986720`` in BG2EE
+
+``transition`` variable value set in :ref:`Infinity_TransitionMenu<Infinity_TransitionMenu>`, :ref:`drawTop<drawTop>`, and :ref:`eventMenu<eventMenu>` functions
 
 **Example**
 
-
+No known examples
 
 
 
@@ -2501,7 +2504,7 @@ Infinity_GetTransitionInProgress
 Infinity_GetUseButtonText
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Returns "Use x" button text of an item name for an item specified
 
 ::
 
@@ -2509,15 +2512,16 @@ Infinity_GetUseButtonText
 
 **Parameters**
 
-* *item_id* - 
-* *mode* - 
+* ``integer`` *item_id* - item id
+* ``integer`` *mode* - mode
 
 **Return Value**
 
-string
+Returns a ``string`` containing the "Use x" of the item specified
 
 **Notes**
 
+Calls the :ref:`CScreenInventory\:\:GetUseButtonText<CScreenInventoryGetUseButtonText>` method
 
 **Example**
 
@@ -2532,7 +2536,7 @@ string
 Infinity_GooglePlaySignedIn
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Determines if signed into Google Play
 
 ::
 
@@ -2540,14 +2544,29 @@ Infinity_GooglePlaySignedIn
 
 **Return Value**
 
-``int``
+Returns an ``integer`` value representing ``1`` true, or ``0`` false otherwise
 
 **Notes**
 
+Calls the :ref:`CPlatform\:\:IsPlatformServiceConnected<CPlatformIsPlatformServiceConnected>` function
+
+Reads :ref:`CChitin<CChitin>`.cSteam => :ref:`CSteam<CSteam>`.m_isSteamConnected
+
+On builds that are not android returns ``false``
 
 **Example**
 
+A Google Play sign in/out button from ``UI.MENU``:
 
+::
+
+   function getGooglePlaySignInText()
+       if(Infinity_GooglePlaySignedIn() == 1) then
+           return t("SIGN_OUT_BUTTON")
+       else
+           return t("SIGN_IN_BUTTON")
+       end
+   end
 
 
 
@@ -2558,7 +2577,7 @@ Infinity_GooglePlaySignedIn
 Infinity_HighlightJournalButton
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Unknown purpose
 
 ::
 
@@ -2566,10 +2585,15 @@ Infinity_HighlightJournalButton
 
 **Notes**
 
+Returns ``0`` false
+
+Called from highlightJournalButton function in ``UTIL.LUA``
 
 **Example**
 
+See highlightJournalButton function in ``UTIL.LUA``
 
+Unknown purpose
 
 
 
@@ -2626,26 +2650,27 @@ You can force a click in the game world like so:
 Infinity_HoverMouseOverObject
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Activate AI script file for object that mouse is hovering over (?) - not tested/verified
 
 ::
 
-   Infinity_HoverMouseOverObject(???)
+   Infinity_HoverMouseOverObject(objectname)
 
 **Parameters**
 
-??? 
+* ``string`` *objectname* - name of the object
 
 **Return Value**
 
-???
+??? - Unknown
 
 **Notes**
 
+Calls the :ref:`CAIScriptFile\:\:CAIScriptFile<CAIScriptFileCAIScriptFile>` method
 
 **Example**
 
-
+No known examples
 
 
 
@@ -3281,7 +3306,7 @@ Event action when a scroll identifies an item
 
 **Parameters**
 
-* *item_id* - id of the item being identified
+* ``integer`` *item_id* - id of the item being identified
 
 **Notes**
 
@@ -3334,7 +3359,7 @@ Event action when a spell identifies an item
 
 **Parameters**
 
-* *item_id* - id of the item being identified
+* ``integer`` *item_id* - id of the item being identified
 
 **Return Value**
 
@@ -3364,7 +3389,7 @@ Infinity_OnUseButtonClick
 
 **Parameters**
 
-* *item_id* - 
+* ``integer`` *item_id* - 
 * *mode* - 
 
 **Notes**
@@ -3728,7 +3753,7 @@ Infinity_SelectItemAbility
 
 * *ability_index* - 
 * *item_num* - 
-* *item_id* - 
+* ``integer`` *item_id* - 
 
 **Notes**
 
@@ -4358,7 +4383,7 @@ Infinity_SplitItemStack
 
 **Parameters**
 
-* *item_id* - 
+* ``integer`` *item_id* - 
 * *count* - 
 * *slot_name* - 
 
