@@ -40,6 +40,8 @@ EE Game Classes (x86)
    CGameDialogReply/index
    CGameDialogSprite/index
    CGameDoor/index
+   CGameEffect/index
+   CGameEffectEffect/index
    CGameFireball3d/index
    CGameJournal/index
    CGameObject/index
