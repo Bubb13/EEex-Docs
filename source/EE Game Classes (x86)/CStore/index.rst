@@ -124,9 +124,7 @@ Constructs a ``CStore`` object
 
 ----
 
-
-.. _CStoreCStore:
-
+CStore\:\:CStore
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CStore`` object

@@ -132,7 +132,7 @@ Adds an element (or all the elements in another list) to the head of the list (m
 
 **Return Value**
 
-The first version returns the ``POSITION`` value of the newly inserted element
+Returns ``POSITION``\*, the value of the newly inserted element
 
 **Remarks**
 

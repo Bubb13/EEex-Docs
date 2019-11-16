@@ -137,7 +137,7 @@ A list of all Infinity_XXX() lua functions found by scanning game executables an
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_HoverMouseOverObject<Infinity_HoverMouseOverObject>`                         | Activate AI script file for object that mouse is hovering over                                |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
-| :ref:`Infinity_InstanceAnimation<Infinity_InstanceAnimation>`                               |                                                                                               |
+| :ref:`Infinity_InstanceAnimation<Infinity_InstanceAnimation>`                               | Creates a temporary single instance animation of a bam                                        |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | :ref:`Infinity_IsItemEnabled<Infinity_IsItemEnabled>`                                       |                                                                                               |
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
@@ -2681,29 +2681,33 @@ No known examples
 Infinity_InstanceAnimation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+Creates a temporary single instance animation of a bam, based on the UI template provided. Once the animation has finished, the UI control that was created and based on the UI template provided, is no longer present or visible.
 
 ::
 
-   Infinity_InstanceAnimation(string,resref,x,y,w,h,list,list_index)
+   Infinity_InstanceAnimation(Template,BamResRef,x,y,w,h,list,list_index)
 
 **Parameters**
 
-* *string* - 
-* *resref* - 
-* *x* - 
-* *y* - 
-* *w* - 
-* *h* - 
-* *list* - 
-* *list_index* - 
+* ``string`` *Template* - UI template name
+* ``string`` *BamResRef* - resource reference of bam to show/animate
+* ``integer`` *x* - left position
+* ``integer`` *y* - top position
+* ``integer`` *w* - width
+* ``integer`` *h* - height
+* ``string`` *list* - list/array
+* ``integer`` *list_index* - 1 based index of entry in *list*
 
 **Notes**
 
+As defined in ``UI.MENU`` on memorizing a spell: is set to play the default ``GAM_24.WAV`` sound and to play the ``FLASHBR.BAM`` animation.
 
 **Example**
 
+Shows sparkle as user clicks on mage spell to memorize:
 
+::
+   Infinity_InstanceAnimation("TEMPLATE_mageMemorizationSparkle","FLASHBR",x,y,w,h,fromList,listIndex)
 
 
 
