@@ -5,7 +5,7 @@ CM Structures
 ==========================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
 
 * :ref:`CMachineState<CMachineState>`
@@ -23,6 +23,7 @@ CM Structures
 * :ref:`CMemINISection<CMemINISection>`
 * :ref:`CMemINIValue<CMemINIValue>`
 * :ref:`CMessage<CMessage>`
+* :ref:`CMessage Structures<CMessage Structures>`
 * :ref:`CMessageAddAction<CMessageAddAction>`
 * :ref:`CMessageAddClairvoyance<CMessageAddClairvoyance>`
 * :ref:`CMessageAddEffect<CMessageAddEffect>`
@@ -178,7 +179,7 @@ CM Structures
 .. _CMachineState:
 
 CMachineState
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -192,7 +193,7 @@ CMachineState
 .. _CMachineStates:
 
 CMachineStates
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 Used by the :ref:`CMachineStates Class<CMachineStates Class>`
 
@@ -208,7 +209,7 @@ Used by the :ref:`CMachineStates Class<CMachineStates Class>`
 .. _CMapStringToPtr:
 
 CMapStringToPtr
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 +------------+----------+-------------------------------------------------------------+------------------+
 | **Offset** | **Size** | **Type**                                                    | **Field**        |
@@ -234,7 +235,7 @@ CMapStringToPtr
 .. _CMapStringToPtrCAssoc:
 
 CMapStringToPtr\:\:CAssoc
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 +------------+----------+-------------------------------------------------------------+------------+
 | **Offset** | **Size** | **Type**                                                    | **Field**  |
@@ -254,7 +255,7 @@ CMapStringToPtr\:\:CAssoc
 .. _CMapStringToString:
 
 CMapStringToString
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 Used by the :ref:`CMapStringToString Class<CMapStringToString Class>`
 
@@ -282,7 +283,7 @@ Used by the :ref:`CMapStringToString Class<CMapStringToString Class>`
 .. _CMapStringToStringCAssoc:
 
 CMapStringToString\:\:CAssoc
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 +------------+----------+-----------------------------------------------------------------+------------+
 | **Offset** | **Size** | **Type**                                                        | **Field**  |
@@ -302,7 +303,7 @@ CMapStringToString\:\:CAssoc
 .. _CMapWordToPtr:
 
 CMapWordToPtr
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 +------------+----------+-------------------------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                                    | **Field**                     |
@@ -328,7 +329,7 @@ CMapWordToPtr
 .. _CMapWordToPtrCAssoc:
 
 CMapWordToPtr\:\:CAssoc
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 +------------+----------+-------------------------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                                    | **Field**                     |
@@ -348,7 +349,7 @@ CMapWordToPtr\:\:CAssoc
 .. _CMarker:
 
 CMarker
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 +------------+----------+---------------------------------------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                                                            | **Field**                     |
@@ -382,7 +383,7 @@ CMarker
 .. _CMemINI:
 
 CMemINI
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 Used by the :ref:`CMemINI Class<CMemINI Class>`
 
@@ -402,7 +403,7 @@ Used by the :ref:`CMemINI Class<CMemINI Class>`
 .. _CMemINIFile:
 
 CMemINIFile
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -424,7 +425,7 @@ CMemINIFile
 .. _CMemINIRes:
 
 CMemINIRes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -448,7 +449,7 @@ CMemINIRes
 .. _CMemINISection:
 
 CMemINISection
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 Used by the :ref:`CMemINI Class<CMemINI Class>`
 
@@ -466,7 +467,7 @@ Used by the :ref:`CMemINI Class<CMemINI Class>`
 .. _CMemINIValue:
 
 CMemINIValue
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 Used by the :ref:`CMemINI Class<CMemINI Class>`
 
@@ -486,7 +487,7 @@ Used by the :ref:`CMemINI Class<CMemINI Class>`
 .. _CMessage:
 
 CMessage
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 Used by the :ref:`CMessage Class<CMessage Class>`
 
@@ -499,6 +500,13 @@ Used by the :ref:`CMessage Class<CMessage Class>`
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x08       | 4        | long                                   | m_sourceId                    |
 +------------+----------+----------------------------------------+-------------------------------+
+
+----
+
+.. _CMessage Structures:
+
+CMessage Structures
+---------------------------------
 
 
 ----
@@ -3148,7 +3156,7 @@ CMessageUpdateScript
 .. _CMessageUpdateStoredPartyLocations:
 
 CMessageUpdateStoredPartyLocations
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -3264,7 +3272,7 @@ CMessageWeaponImmumityUpdate
 .. _CMoveList:
 
 CMoveList
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 Used by the :ref:`CMoveList Class<CMoveList Class>`
 
@@ -3280,7 +3288,7 @@ Used by the :ref:`CMoveList Class<CMoveList Class>`
 .. _CMoveListEntry:
 
 CMoveListEntry
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -3306,7 +3314,7 @@ CMoveListEntry
 .. _CMultiplayerSettings:
 
 CMultiplayerSettings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 Used by the :ref:`CMultiplayerSettings Class<CMultiplayerSettings Class>`
 
@@ -3374,7 +3382,7 @@ Used by the :ref:`CMultiplayerSettings Class<CMultiplayerSettings Class>`
 .. _CMusicPosition:
 
 CMusicPosition
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |

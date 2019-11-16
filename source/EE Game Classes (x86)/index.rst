@@ -79,6 +79,9 @@ EE Game Classes (x86)
    CMachineStates/index
    CMapStringToString/index
    CMemINI/index
+   CMessage/index
+   CMessageHandler/index
+   CMessageMessage/index
    CMoveList/index
    CMultiplayerSettings/index
    CNetwork/index
