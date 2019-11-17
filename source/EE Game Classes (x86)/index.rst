@@ -141,6 +141,8 @@ EE Game Classes (x86)
    CTlkTable/index
    CVariableHash/index
    CVEFVidCell/index
+   CVEFVidCellBase/index
+   CVEFVidCellFile/index
    CVidBitmap/index
    CVidCell/index
    CVidDrawable/index
