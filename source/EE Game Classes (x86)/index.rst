@@ -19,6 +19,7 @@ EE Game Classes (x86)
    CAITrigger/index
    CAIUtil/index
    CBaldurChitin/index
+   CBaldurEngine/index
    CBaldurMessage/index
    CBaldurProjector/index
    CBounceList/index
