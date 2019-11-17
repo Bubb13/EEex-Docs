@@ -9,6 +9,7 @@ EE Game Functions (x86)
 
 
    dimm/index
+   DLC/index
    Draw/index
    Ini/index
    music/index
