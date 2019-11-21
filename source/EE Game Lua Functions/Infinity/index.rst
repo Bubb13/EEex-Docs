@@ -1600,6 +1600,48 @@ An array of filenames that matched the specified file extension
 
 Converts extension to resource file type using the chExtToType function and fetches those filenames that match the resource type and stores them into an array.
 
+The following extensions are supported:
+
+* "bmp"
+* "mve"
+* "tga"
+* "wav"
+* "wfx"
+* "plt"
+* "bam"
+* "wed"
+* "chu"
+* "tis"
+* "spl"
+* "bcs"
+* "ids"
+* "cre"
+* "are"
+* "dlg"
+* "2da"
+* "gam"
+* "sto"
+* "wmp"
+* "chr"
+* "bs"
+* "eff"
+* "vvc"
+* "vef"
+* "pro"
+* "bio"
+* "wbm"
+* "gui"
+* "sql"
+* "pvrz"
+* "glsl"
+* "tot"
+* "toh"
+* "menu"
+* "lua"
+* "ttf"
+* "png"
+* "ini"
+
 **Example**
 
 ::
