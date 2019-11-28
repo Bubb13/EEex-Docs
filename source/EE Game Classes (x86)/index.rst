@@ -35,7 +35,9 @@ EE Game Classes (x86)
    CFileFind/index
    CFileView/index
    CGameAIBase/index
+   CGameAnimation/index
    CGameAreaNotes/index
+   CGameChunk/index
    CGameContainer/index
    CGameDialogEntry/index
    CGameDialogReply/index
@@ -52,6 +54,8 @@ EE Game Classes (x86)
    CGameSound/index
    CGameSpawning/index
    CGameSprite/index
+   CGameSpriteEquipment/index
+   CGameSpriteLastUpdate/index
    CGameStatic/index
    CGameStatsSprite/index
    CGameText/index
