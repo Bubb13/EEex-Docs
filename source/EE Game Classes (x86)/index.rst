@@ -83,6 +83,7 @@ EE Game Classes (x86)
    CLUAConsole/index
    CMachineStates/index
    CMapStringToString/index
+   CMarker/index
    CMemINI/index
    CMessage/index
    CMessageHandler/index
@@ -90,6 +91,7 @@ EE Game Classes (x86)
    CMoveList/index
    CMultiplayerSettings/index
    CNetwork/index
+   CObjectMarker/index
    CObList/index
    CParticle/index
    CPathSearch/index
