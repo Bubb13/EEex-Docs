@@ -19,7 +19,7 @@ CMarker Class
 Overview
 ---------------
 
-.. note:: The **CMarker** class handles 
+.. note:: The **CMarker** class handles markers
 
 The structure used for this class is :ref:`CMarker<CMarker>`
 

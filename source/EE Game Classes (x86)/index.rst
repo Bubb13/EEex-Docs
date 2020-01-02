@@ -36,6 +36,7 @@ EE Game Classes (x86)
    CFileView/index
    CGameAIBase/index
    CGameAnimation/index
+   CGameAnimationType/index
    CGameAreaNotes/index
    CGameChunk/index
    CGameContainer/index

@@ -19,5 +19,9 @@ Object
 +-------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_EvalObjectStringAsActor<EEex_EvalObjectStringAsActor>` | Evaluate an object string as an actor              |
 +-------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`EEex_GetTarget<EEex_GetTarget>`                             | Returns targetID stored in targetName on actorID   |
++-------------------------------------------------------------------+----------------------------------------------------+
 | :ref:`EEex_ParseObjectString<EEex_ParseObjectString>`             | Parse object string                                |
++-------------------------------------------------------------------+----------------------------------------------------+
+| :ref:`EEex_SetTarget<EEex_SetTarget>`                             | Stores targetID on actorID in targetName           |
 +-------------------------------------------------------------------+----------------------------------------------------+
