@@ -13,9 +13,6 @@ worldScreen\:OnPickPartyPortraitButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

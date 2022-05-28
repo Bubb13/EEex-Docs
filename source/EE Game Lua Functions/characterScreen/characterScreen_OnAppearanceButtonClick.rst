@@ -13,9 +13,6 @@ characterScreen\:OnAppearanceButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

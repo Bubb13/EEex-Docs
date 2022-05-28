@@ -13,9 +13,6 @@ worldMapScreen\:IsTravelButtonVisible
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

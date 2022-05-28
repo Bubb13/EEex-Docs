@@ -5,7 +5,7 @@ CVideo Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CVideo_Overview>`
 * :ref:`Quick Reference<CVideo_QuickRef>`

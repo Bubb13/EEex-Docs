@@ -13,9 +13,6 @@ storeScreen\:IsBuySpellButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

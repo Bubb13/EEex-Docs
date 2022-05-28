@@ -13,9 +13,6 @@ game\:CenterOnGroupLeader
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

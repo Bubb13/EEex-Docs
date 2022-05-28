@@ -13,9 +13,6 @@ buttonArray\:OnRButtonPressed
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

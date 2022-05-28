@@ -13,9 +13,6 @@ mageScreen\:SpellSwappedInContingency
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

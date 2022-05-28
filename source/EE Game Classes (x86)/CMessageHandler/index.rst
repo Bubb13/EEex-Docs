@@ -5,7 +5,7 @@ CMessageHandler Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CMessageHandler_Overview>`
 * :ref:`Quick Reference<CMessageHandler_QuickRef>`

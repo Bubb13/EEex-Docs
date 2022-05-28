@@ -13,9 +13,6 @@ dlcScreen\:DecrementDLCIndex
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

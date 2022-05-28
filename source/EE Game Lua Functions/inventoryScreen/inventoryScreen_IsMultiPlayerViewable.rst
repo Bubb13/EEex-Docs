@@ -13,9 +13,6 @@ inventoryScreen\:IsMultiPlayerViewable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

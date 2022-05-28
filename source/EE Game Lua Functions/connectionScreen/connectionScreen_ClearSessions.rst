@@ -13,9 +13,6 @@ connectionScreen\:ClearSessions
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

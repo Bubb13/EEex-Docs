@@ -13,9 +13,6 @@ storeScreen\:SelectSpellItem
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

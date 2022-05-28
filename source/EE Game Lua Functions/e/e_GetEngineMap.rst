@@ -13,9 +13,6 @@ e\:GetEngineMap
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

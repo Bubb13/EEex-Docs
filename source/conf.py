@@ -30,7 +30,7 @@
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.todo','recommonmark',
+    'sphinx.ext.todo','myst_parser',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -51,8 +51,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'EEex'
-copyright = u'2019, Bubb, fearless, CrevsDaak, GrammarSalad'
-author = u'Bubb, fearless, CrevsDaak, GrammarSalad'
+copyright = u'2022, Bubb, fearless, CrevsDaak'
+author = u'Bubb, fearless, CrevsDaak'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -268,7 +268,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'EEex.tex', u'EEex Documentation',
-     u'Bubb, fearless, CrevsDaak, GrammarSalad', 'manual'),
+     u'Bubb, fearless, CrevsDaak', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

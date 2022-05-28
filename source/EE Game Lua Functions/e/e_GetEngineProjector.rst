@@ -13,9 +13,6 @@ e\:GetEngineProjector
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

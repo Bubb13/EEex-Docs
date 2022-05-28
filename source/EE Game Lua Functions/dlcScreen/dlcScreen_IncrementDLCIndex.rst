@@ -13,9 +13,6 @@ dlcScreen\:IncrementDLCIndex
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

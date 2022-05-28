@@ -13,9 +13,6 @@ multiplayerScreen\:UpdateModifyCharacterPanel
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

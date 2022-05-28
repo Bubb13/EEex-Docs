@@ -5,7 +5,7 @@ CScreenLoad Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScreenLoad_Overview>`
 * :ref:`Quick Reference<CScreenLoad_QuickRef>`

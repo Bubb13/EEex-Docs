@@ -5,7 +5,7 @@ CVidMosaic Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CVidMosaic_Overview>`
 * :ref:`Quick Reference<CVidMosaic_QuickRef>`

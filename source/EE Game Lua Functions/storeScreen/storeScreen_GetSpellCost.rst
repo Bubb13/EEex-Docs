@@ -13,9 +13,6 @@ storeScreen\:GetSpellCost
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

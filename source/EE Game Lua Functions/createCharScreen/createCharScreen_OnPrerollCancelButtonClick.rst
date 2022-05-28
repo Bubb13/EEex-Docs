@@ -13,9 +13,6 @@ createCharScreen\:OnPrerollCancelButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

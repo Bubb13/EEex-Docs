@@ -13,9 +13,6 @@ mapScreen\:OnColorChoice
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

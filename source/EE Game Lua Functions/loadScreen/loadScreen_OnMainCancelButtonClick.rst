@@ -13,9 +13,6 @@ loadScreen\:OnMainCancelButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

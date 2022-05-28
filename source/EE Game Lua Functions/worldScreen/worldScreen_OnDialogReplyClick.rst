@@ -13,9 +13,6 @@ worldScreen\:OnDialogReplyClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

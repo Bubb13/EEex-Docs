@@ -13,9 +13,6 @@ multiplayerScreen\:OnKickPlayerButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

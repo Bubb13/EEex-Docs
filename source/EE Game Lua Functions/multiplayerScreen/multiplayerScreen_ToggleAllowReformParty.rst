@@ -13,9 +13,6 @@ multiplayerScreen\:ToggleAllowReformParty
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

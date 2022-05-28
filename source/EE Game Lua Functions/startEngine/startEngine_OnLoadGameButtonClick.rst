@@ -13,9 +13,6 @@ startEngine\:OnLoadGameButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

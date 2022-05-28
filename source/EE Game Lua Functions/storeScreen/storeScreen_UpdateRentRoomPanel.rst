@@ -13,9 +13,6 @@ storeScreen\:UpdateRentRoomPanel
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

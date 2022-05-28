@@ -5,7 +5,7 @@ CScreenCharacter Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScreenCharacter_Overview>`
 * :ref:`Quick Reference<CScreenCharacter_QuickRef>`

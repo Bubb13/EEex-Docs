@@ -13,9 +13,6 @@ mageScreen\:DoneSequencingSpells
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ characterScreen\:OnErrorButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

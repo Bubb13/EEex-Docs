@@ -13,9 +13,6 @@ worldScreen\:SwapPortraits
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

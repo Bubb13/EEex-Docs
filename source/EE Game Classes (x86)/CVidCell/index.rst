@@ -5,7 +5,7 @@ CVidCell Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CVidCell_Overview>`
 * :ref:`Quick Reference<CVidCell_QuickRef>`

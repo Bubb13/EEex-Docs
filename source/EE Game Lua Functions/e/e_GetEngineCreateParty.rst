@@ -13,9 +13,6 @@ e\:GetEngineCreateParty
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

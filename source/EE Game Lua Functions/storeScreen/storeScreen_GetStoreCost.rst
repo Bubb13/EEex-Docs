@@ -13,9 +13,6 @@ storeScreen\:GetStoreCost
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

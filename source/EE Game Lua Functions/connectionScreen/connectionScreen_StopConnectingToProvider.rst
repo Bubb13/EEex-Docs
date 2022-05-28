@@ -13,9 +13,6 @@ connectionScreen\:StopConnectingToProvider
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

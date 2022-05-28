@@ -13,9 +13,6 @@ buttonArray\:GetButtonBam
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ characterScreen\:OnExportButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

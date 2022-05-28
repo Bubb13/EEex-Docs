@@ -13,9 +13,6 @@ loadScreen\:LoadGame
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

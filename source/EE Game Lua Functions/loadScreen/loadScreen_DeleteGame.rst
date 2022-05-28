@@ -13,9 +13,6 @@ loadScreen\:DeleteGame
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ optionsScreen\:SetEngineState
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

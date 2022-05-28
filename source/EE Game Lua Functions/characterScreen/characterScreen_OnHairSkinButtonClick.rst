@@ -13,9 +13,6 @@ characterScreen\:OnHairSkinButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ storeScreen\:UpdateBuyDrinksPanel
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

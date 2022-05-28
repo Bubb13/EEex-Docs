@@ -13,9 +13,6 @@ mapScreen\:OnUserNoteDoneButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ startEngine\:OnCreatePartyButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

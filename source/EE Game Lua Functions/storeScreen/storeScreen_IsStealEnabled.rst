@@ -13,9 +13,6 @@ storeScreen\:IsStealEnabled
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ dlcScreen\:GetDLCState
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

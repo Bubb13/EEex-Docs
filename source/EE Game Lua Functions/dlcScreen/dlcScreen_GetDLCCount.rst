@@ -13,9 +13,6 @@ dlcScreen\:GetDLCCount
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

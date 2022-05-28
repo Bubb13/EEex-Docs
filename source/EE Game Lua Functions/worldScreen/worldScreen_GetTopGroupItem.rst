@@ -13,9 +13,6 @@ worldScreen\:GetTopGroupItem
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

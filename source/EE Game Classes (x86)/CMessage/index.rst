@@ -5,7 +5,7 @@ CMessage Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CMessage_Overview>`
 * :ref:`Quick Reference<CMessage_QuickRef>`

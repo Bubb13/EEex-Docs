@@ -13,9 +13,6 @@ worldMapScreen\:TravelToSelected
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

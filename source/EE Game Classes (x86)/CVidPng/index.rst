@@ -5,7 +5,7 @@ CVidPng Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CVidPng_Overview>`
 * :ref:`Quick Reference<CVidPng_QuickRef>`

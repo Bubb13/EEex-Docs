@@ -5,7 +5,7 @@ CStringList Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CStringList_Overview>`
 * :ref:`Quick Reference<CStringList_QuickRef>`

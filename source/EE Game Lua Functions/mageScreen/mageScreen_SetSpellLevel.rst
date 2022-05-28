@@ -13,9 +13,6 @@ mageScreen\:SetSpellLevel
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

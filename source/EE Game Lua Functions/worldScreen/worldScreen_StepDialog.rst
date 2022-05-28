@@ -13,9 +13,6 @@ worldScreen\:StepDialog
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

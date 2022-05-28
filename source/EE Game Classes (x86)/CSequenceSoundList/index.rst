@@ -5,7 +5,7 @@ CSequenceSoundList Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CSequenceSoundList_Overview>`
 * :ref:`Quick Reference<CSequenceSoundList_QuickRef>`

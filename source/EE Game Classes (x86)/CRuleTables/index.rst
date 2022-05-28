@@ -5,7 +5,7 @@ CRuleTables Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CRuleTables_Overview>`
 * :ref:`Quick Reference<CRuleTables_QuickRef>`

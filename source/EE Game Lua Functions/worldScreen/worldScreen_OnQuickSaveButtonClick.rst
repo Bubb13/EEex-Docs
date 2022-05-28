@@ -13,9 +13,6 @@ worldScreen\:OnQuickSaveButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

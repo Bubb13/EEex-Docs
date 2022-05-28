@@ -13,9 +13,6 @@ saveScreen\:RefreshGameSlots
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

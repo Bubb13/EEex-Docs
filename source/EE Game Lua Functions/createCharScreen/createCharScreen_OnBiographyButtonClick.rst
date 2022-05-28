@@ -13,9 +13,6 @@ createCharScreen\:OnBiographyButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

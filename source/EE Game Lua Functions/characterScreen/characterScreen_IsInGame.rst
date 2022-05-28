@@ -13,9 +13,6 @@ characterScreen\:IsInGame
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

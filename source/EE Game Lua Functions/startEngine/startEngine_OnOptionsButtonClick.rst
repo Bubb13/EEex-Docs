@@ -13,9 +13,6 @@ startEngine\:OnOptionsButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

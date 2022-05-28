@@ -13,9 +13,6 @@ mageScreen\:CancelSequencingSpells
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

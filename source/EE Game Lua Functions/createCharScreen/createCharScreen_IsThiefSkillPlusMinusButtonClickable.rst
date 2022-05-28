@@ -13,9 +13,6 @@ createCharScreen\:IsThiefSkillPlusMinusButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

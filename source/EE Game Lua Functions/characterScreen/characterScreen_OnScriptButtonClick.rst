@@ -13,9 +13,6 @@ characterScreen\:OnScriptButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

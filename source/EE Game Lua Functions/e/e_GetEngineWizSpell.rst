@@ -13,9 +13,6 @@ e\:GetEngineWizSpell
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

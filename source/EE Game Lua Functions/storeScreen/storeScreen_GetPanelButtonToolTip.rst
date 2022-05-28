@@ -13,9 +13,6 @@ storeScreen\:GetPanelButtonToolTip
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

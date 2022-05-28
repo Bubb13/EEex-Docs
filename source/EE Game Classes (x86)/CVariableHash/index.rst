@@ -5,7 +5,7 @@ CVariableHash Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CVariableHash_Overview>`
 * :ref:`Quick Reference<CVariableHash_QuickRef>`

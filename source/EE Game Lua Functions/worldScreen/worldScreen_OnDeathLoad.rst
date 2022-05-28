@@ -13,9 +13,6 @@ worldScreen\:OnDeathLoad
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

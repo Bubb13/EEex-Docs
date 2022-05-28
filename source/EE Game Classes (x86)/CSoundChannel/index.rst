@@ -5,7 +5,7 @@ CSoundChannel Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CSoundChannel_Overview>`
 * :ref:`Quick Reference<CSoundChannel_QuickRef>`

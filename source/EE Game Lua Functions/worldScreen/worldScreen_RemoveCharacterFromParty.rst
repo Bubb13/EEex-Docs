@@ -13,9 +13,6 @@ worldScreen\:RemoveCharacterFromParty
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

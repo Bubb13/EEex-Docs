@@ -46,7 +46,7 @@ Constructors
 +-------------------------------------------------------------------------------+------------------------------------------------------+
 | **Name**                                                                      | **Description**                                      |
 +-------------------------------------------------------------------------------+------------------------------------------------------+
-| :ref:`CGameStatsSprite\:\:CGameStatsSprite<CGameStatsSpriteCGameStatsSprite>` | Constructs a ``CGameStatsSprite`` object                            |
+| :ref:`CGameStatsSprite\:\:CGameStatsSprite<CGameStatsSpriteCGameStatsSprite>` | Constructs a ``CGameStatsSprite`` object             |
 +-------------------------------------------------------------------------------+------------------------------------------------------+
 
 .. _CGameStatsSpriteCGameStatsSprite:

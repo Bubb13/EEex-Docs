@@ -13,9 +13,6 @@ characterScreen\:OnDoneButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

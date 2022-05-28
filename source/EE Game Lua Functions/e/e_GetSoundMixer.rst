@@ -13,9 +13,6 @@ e\:GetSoundMixer
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

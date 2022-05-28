@@ -13,9 +13,6 @@ createCharScreen\:OnAbilityPlusMinusButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

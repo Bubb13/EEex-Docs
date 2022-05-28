@@ -13,9 +13,6 @@ storeScreen\:IsRoomTypeClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ priestScreen\:UnmemorizeSpell
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

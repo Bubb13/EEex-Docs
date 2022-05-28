@@ -13,9 +13,6 @@ moviesScreen\:OnPlayButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

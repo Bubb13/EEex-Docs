@@ -13,9 +13,6 @@ createCharScreen\:IsHighLevelAbilitiesButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

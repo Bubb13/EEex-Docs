@@ -13,9 +13,6 @@ e\:SetDisableBrightest
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

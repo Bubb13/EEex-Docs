@@ -5,7 +5,7 @@ CWeather Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CWeather_Overview>`
 * :ref:`Quick Reference<CWeather_QuickRef>`

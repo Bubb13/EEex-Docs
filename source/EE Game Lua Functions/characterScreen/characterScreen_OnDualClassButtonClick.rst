@@ -13,9 +13,6 @@ characterScreen\:OnDualClassButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

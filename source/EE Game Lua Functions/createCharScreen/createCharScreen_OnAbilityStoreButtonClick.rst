@@ -13,9 +13,6 @@ createCharScreen\:OnAbilityStoreButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

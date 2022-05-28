@@ -13,9 +13,6 @@ characterScreen\:OnCancelButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

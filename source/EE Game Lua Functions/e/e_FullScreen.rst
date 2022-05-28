@@ -13,9 +13,6 @@ e\:FullScreen
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

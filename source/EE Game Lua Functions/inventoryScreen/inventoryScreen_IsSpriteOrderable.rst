@@ -13,9 +13,6 @@ inventoryScreen\:IsSpriteOrderable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

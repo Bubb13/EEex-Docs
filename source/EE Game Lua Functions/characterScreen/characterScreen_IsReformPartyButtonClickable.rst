@@ -13,9 +13,6 @@ characterScreen\:IsReformPartyButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

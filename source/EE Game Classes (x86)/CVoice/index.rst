@@ -5,7 +5,7 @@ CVoice Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CVoice_Overview>`
 * :ref:`Quick Reference<CVoice_QuickRef>`

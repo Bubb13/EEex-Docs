@@ -13,9 +13,6 @@ worldScreen\:GroundScrollEnabled
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

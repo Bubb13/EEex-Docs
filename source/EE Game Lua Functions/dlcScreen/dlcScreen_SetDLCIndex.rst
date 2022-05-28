@@ -13,9 +13,6 @@ dlcScreen\:SetDLCIndex
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

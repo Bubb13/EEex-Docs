@@ -13,9 +13,6 @@ moviesScreen\:OnCreditsButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

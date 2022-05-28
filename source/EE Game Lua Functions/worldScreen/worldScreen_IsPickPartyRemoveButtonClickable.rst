@@ -13,9 +13,6 @@ worldScreen\:IsPickPartyRemoveButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

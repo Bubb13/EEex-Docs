@@ -13,9 +13,6 @@ characterScreen\:SetTempSmartScriptLocal
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ projector\:PlayMovie
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

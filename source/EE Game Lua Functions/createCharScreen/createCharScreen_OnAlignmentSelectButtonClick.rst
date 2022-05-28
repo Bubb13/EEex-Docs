@@ -13,9 +13,6 @@ createCharScreen\:OnAlignmentSelectButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

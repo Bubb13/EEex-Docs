@@ -5,7 +5,7 @@ CSpawn Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CSpawn_Overview>`
 * :ref:`Quick Reference<CSpawn_QuickRef>`

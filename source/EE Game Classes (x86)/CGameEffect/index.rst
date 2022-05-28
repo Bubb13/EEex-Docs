@@ -5,7 +5,7 @@ CGameEffect Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CGameEffect_Overview>`
 * :ref:`Quick Reference<CGameEffect_QuickRef>`

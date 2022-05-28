@@ -13,9 +13,6 @@ game\:IsClient
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

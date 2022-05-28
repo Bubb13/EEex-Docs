@@ -13,9 +13,6 @@ mageScreen\:UnmemorizeSpell
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

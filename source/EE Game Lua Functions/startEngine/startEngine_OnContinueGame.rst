@@ -13,9 +13,6 @@ startEngine\:OnContinueGame
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ createCharScreen\:OnMemorizePriestSpellButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

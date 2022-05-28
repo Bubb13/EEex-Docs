@@ -13,9 +13,6 @@ game\:GetOptions
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

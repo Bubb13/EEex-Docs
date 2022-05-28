@@ -13,9 +13,6 @@ storeScreen\:OnBuyDrinkButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

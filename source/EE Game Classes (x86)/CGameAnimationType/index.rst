@@ -5,7 +5,7 @@ CGameAnimationType Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CGameAnimationType_Overview>`
 * :ref:`Quick Reference<CGameAnimationType_QuickRef>`

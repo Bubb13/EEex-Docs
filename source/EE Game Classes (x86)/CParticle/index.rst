@@ -5,7 +5,7 @@ CParticle Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CParticle_Overview>`
 * :ref:`Quick Reference<CParticle_QuickRef>`

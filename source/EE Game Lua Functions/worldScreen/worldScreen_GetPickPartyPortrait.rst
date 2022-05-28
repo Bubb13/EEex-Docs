@@ -13,9 +13,6 @@ worldScreen\:GetPickPartyPortrait
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

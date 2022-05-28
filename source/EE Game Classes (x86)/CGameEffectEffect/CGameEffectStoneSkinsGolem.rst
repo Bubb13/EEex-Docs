@@ -5,7 +5,7 @@ CGameEffectStoneSkinsGolem Class
 ================================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 .. note:: See :ref:`CGameEffect\<Effect\> Methods<CGameEffectEffect_Methods>` for methods that are shared by all game effect classes. Only the additional methods specific to each class are documented here.
 

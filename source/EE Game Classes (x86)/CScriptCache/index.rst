@@ -5,7 +5,7 @@ CScriptCache Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScriptCache_Overview>`
 * :ref:`Quick Reference<CScriptCache_QuickRef>`

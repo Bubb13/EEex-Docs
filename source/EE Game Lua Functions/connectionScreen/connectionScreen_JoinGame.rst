@@ -13,9 +13,6 @@ connectionScreen\:JoinGame
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ worldScreen\:OnContainerButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

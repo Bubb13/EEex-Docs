@@ -13,9 +13,6 @@ startEngine_OnSoAButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

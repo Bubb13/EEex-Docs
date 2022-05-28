@@ -13,9 +13,6 @@ game\:GetPartyGold
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

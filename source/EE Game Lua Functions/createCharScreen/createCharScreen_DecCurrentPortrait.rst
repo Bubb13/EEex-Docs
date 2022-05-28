@@ -13,9 +13,6 @@ createCharScreen\:DecCurrentPortrait
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

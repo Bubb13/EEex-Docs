@@ -13,9 +13,6 @@ moviesScreen\:IsPlayButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ worldScreen\:SetHighlightEnabled
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ storeScreen\:SelectStoreItem
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

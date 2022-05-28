@@ -13,9 +13,6 @@ e\:GetEngineWorld
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

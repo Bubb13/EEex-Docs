@@ -13,9 +13,6 @@ createCharScreen\:OnRaceSelectButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

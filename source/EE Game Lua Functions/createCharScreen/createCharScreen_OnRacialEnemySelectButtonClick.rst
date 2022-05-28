@@ -13,9 +13,6 @@ createCharScreen\:OnRacialEnemySelectButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

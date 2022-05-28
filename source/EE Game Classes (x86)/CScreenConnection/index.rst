@@ -5,7 +5,7 @@ CScreenConnection Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScreenConnection_Overview>`
 * :ref:`Quick Reference<CScreenConnection_QuickRef>`

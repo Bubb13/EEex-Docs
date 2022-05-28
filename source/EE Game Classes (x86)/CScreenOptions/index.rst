@@ -5,7 +5,7 @@ CScreenOptions Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScreenOptions_Overview>`
 * :ref:`Quick Reference<CScreenOptions_QuickRef>`

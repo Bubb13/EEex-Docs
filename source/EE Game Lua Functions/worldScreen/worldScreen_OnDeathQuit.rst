@@ -13,9 +13,6 @@ worldScreen\:OnDeathQuit
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

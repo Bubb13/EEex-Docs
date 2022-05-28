@@ -13,9 +13,6 @@ worldScreen\:OnPickPartyDoneButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ mageScreen\:MemorizeSpell
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

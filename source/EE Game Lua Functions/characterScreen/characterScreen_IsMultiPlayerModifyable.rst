@@ -13,9 +13,6 @@ characterScreen\:IsMultiPlayerModifyable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

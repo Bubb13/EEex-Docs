@@ -13,9 +13,6 @@ e\:IsTouchUI
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

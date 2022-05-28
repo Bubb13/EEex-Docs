@@ -13,9 +13,6 @@ startEngine_OnNewGameButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

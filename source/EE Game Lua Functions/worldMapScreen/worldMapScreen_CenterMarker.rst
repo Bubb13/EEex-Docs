@@ -13,9 +13,6 @@ worldMapScreen\:CenterMarker
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -5,7 +5,7 @@ CTlkTable Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CTlkTable_Overview>`
 * :ref:`Quick Reference<CTlkTable_QuickRef>`

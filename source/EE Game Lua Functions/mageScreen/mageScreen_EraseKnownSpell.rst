@@ -13,9 +13,6 @@ mageScreen\:EraseKnownSpell
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

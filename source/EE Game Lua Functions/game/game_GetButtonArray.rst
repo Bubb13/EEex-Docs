@@ -13,9 +13,6 @@ game\:GetButtonArray
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

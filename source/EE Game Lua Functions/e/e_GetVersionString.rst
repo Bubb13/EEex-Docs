@@ -13,9 +13,6 @@ e\:GetVersionString
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

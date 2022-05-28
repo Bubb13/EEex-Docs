@@ -13,9 +13,6 @@ worldScreen\:OnGroundScroll
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

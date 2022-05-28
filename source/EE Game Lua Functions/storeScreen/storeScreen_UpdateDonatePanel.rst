@@ -13,9 +13,6 @@ storeScreen\:UpdateDonatePanel
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

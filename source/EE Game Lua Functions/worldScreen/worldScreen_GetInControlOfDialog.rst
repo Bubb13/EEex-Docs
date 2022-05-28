@@ -13,9 +13,6 @@ worldScreen\:GetInControlOfDialog
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

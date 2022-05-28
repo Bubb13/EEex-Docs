@@ -13,9 +13,6 @@ dlcScreen\:GetDownloadString
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

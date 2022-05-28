@@ -13,9 +13,6 @@ storeScreen\:OnDonateButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

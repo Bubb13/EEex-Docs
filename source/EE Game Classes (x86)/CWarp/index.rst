@@ -5,7 +5,7 @@ CWarp Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CWarp_Overview>`
 * :ref:`Quick Reference<CWarp_QuickRef>`

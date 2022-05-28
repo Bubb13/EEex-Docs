@@ -286,7 +286,7 @@ The full listing of a template that can be used for documenting EE classes follo
    ==========================
    
    .. toctree::
-      :maxdepth: 
+      :maxdepth: 1
    
    * :ref:`Overview<CClassName_Overview>`
    * :ref:`Quick Reference<CClassName_QuickRef>`

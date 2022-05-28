@@ -13,9 +13,6 @@ multiplayerScreen\:OnLogoutButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

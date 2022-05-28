@@ -13,9 +13,6 @@ game\:GetMissionPackInfo25
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

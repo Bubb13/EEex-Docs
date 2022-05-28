@@ -5,7 +5,7 @@ CVisibilityMap Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CVisibilityMap_Overview>`
 * :ref:`Quick Reference<CVisibilityMap_QuickRef>`

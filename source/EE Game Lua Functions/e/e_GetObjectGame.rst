@@ -13,9 +13,6 @@ e\:GetObjectGame
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

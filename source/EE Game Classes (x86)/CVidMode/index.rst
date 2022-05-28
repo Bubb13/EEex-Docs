@@ -5,7 +5,7 @@ CVidMode Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CVidMode_Overview>`
 * :ref:`Quick Reference<CVidMode_QuickRef>`

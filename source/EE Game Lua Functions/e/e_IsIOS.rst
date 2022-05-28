@@ -13,9 +13,6 @@ e\:IsIOS
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ characterScreen\:IsExportButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

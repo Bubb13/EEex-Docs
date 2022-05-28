@@ -5,7 +5,7 @@ CVisualEffect Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CVisualEffect_Overview>`
 * :ref:`Quick Reference<CVisualEffect_QuickRef>`

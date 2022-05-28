@@ -13,9 +13,6 @@ multiplayerScreen\:OnMainDoneButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

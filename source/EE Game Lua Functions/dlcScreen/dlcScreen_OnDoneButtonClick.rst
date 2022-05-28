@@ -13,9 +13,6 @@ dlcScreen\:OnDoneButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

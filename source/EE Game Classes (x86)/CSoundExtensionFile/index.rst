@@ -5,7 +5,7 @@ CSoundExtensionFile Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CSoundExtensionFile_Overview>`
 * :ref:`Quick Reference<CSoundExtensionFile_QuickRef>`

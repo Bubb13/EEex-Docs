@@ -13,9 +13,6 @@ worldScreen\:OnHelpButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

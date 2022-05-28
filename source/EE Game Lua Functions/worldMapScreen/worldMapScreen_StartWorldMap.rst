@@ -13,9 +13,6 @@ worldMapScreen\:StartWorldMap
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ game\:RestParty
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

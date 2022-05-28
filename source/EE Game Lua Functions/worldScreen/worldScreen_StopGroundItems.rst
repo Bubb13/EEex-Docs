@@ -13,9 +13,6 @@ worldScreen\:StopGroundItems
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ startEngine\:OnDLCImageClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

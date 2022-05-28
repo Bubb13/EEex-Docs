@@ -5,7 +5,7 @@ CScreenJournal Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScreenJournal_Overview>`
 * :ref:`Quick Reference<CScreenJournal_QuickRef>`

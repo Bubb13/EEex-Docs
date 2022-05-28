@@ -13,9 +13,6 @@ game\:GetCharacterOverflowCount
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

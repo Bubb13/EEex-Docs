@@ -13,9 +13,6 @@ storeScreen\:GetPanelButtonPanelId
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

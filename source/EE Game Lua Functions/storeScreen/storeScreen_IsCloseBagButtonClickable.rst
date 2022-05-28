@@ -13,9 +13,6 @@ storeScreen\:IsCloseBagButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

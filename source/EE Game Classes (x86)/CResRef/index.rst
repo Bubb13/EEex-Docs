@@ -5,7 +5,7 @@ CResRef Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CResRef_Overview>`
 * :ref:`Quick Reference<CResRef_QuickRef>`

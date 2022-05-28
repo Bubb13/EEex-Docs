@@ -13,9 +13,6 @@ e\:IsAndroid
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -5,7 +5,7 @@ CRect Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CRect_Overview>`
 * :ref:`Quick Reference<CRect_QuickRef>`

@@ -13,9 +13,6 @@ mapScreen\:OnMapAddNote
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

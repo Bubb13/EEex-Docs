@@ -13,9 +13,6 @@ worldScreen\:GetPickPartyRemoveCharacterId
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ storeScreen\:OnBuySpellButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

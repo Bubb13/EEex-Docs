@@ -13,9 +13,6 @@ connectionScreen\:CancelJoinGame
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

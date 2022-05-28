@@ -13,9 +13,6 @@ connectionScreen\:OnLoadGameButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

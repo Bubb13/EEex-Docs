@@ -13,9 +13,6 @@ createCharScreen\:AcceptCharacter
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

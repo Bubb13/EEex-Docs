@@ -13,9 +13,6 @@ startEngine\:OnImportCharacterButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

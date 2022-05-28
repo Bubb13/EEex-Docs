@@ -13,9 +13,6 @@ worldScreen\:GetTopGroundItem
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

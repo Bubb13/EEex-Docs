@@ -13,9 +13,6 @@ characterScreen\:OnPlayButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

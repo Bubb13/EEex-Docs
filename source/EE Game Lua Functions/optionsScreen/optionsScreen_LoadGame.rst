@@ -13,9 +13,6 @@ optionsScreen\:LoadGame
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

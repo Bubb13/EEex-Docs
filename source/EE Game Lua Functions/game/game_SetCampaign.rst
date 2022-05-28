@@ -13,9 +13,6 @@ game\:SetCampaign
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

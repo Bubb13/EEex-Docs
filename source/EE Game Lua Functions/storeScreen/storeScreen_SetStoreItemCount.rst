@@ -13,9 +13,6 @@ storeScreen\:SetStoreItemCount
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

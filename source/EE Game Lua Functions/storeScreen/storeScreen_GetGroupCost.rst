@@ -13,9 +13,6 @@ storeScreen\:GetGroupCost
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

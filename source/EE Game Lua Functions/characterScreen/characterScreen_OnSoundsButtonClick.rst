@@ -13,9 +13,6 @@ characterScreen\:OnSoundsButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

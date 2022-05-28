@@ -13,9 +13,6 @@ startEngine\:OnTBPButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

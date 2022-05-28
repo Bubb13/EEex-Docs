@@ -13,9 +13,6 @@ mageScreen\:SequenceSpell
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

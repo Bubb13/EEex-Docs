@@ -13,9 +13,6 @@ buttonArray\:GetButtonType
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

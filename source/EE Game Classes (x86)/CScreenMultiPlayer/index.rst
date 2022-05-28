@@ -5,7 +5,7 @@ CScreenMultiPlayer Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScreenMultiPlayer_Overview>`
 * :ref:`Quick Reference<CScreenMultiPlayer_QuickRef>`

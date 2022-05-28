@@ -13,9 +13,6 @@ createCharScreen\:OnAbilityReRollButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

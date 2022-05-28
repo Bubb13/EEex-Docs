@@ -13,9 +13,6 @@ dlcScreen\:OnErrorButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

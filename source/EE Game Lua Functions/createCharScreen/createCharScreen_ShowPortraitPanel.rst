@@ -13,9 +13,6 @@ createCharScreen\:ShowPortraitPanel
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

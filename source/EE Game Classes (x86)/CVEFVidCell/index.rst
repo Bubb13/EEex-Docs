@@ -5,7 +5,7 @@ CVEFVidCell Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CVEFVidCell_Overview>`
 * :ref:`Quick Reference<CVEFVidCell_QuickRef>`

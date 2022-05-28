@@ -13,9 +13,6 @@ createCharScreen\:OnThiefSkillPlusMinusButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

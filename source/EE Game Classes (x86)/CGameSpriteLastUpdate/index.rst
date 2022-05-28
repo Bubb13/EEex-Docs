@@ -5,7 +5,7 @@ CGameSpriteLastUpdate Class
 ===========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CGameSpriteLastUpdate_Overview>`
 * :ref:`Quick Reference<CGameSpriteLastUpdate_QuickRef>`

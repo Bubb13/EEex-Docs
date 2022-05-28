@@ -13,9 +13,6 @@ createCharScreen\:OnKitSelectButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

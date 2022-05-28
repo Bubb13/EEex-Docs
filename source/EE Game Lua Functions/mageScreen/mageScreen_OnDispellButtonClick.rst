@@ -13,9 +13,6 @@ mageScreen\:OnDispellButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

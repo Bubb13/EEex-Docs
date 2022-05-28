@@ -13,9 +13,6 @@ mixer\:StartSong
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

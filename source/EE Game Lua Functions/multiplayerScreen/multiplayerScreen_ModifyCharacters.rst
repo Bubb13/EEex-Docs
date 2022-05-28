@@ -13,9 +13,6 @@ multiplayerScreen\:ModifyCharacters
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

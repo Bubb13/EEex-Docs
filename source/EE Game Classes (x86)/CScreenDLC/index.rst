@@ -5,7 +5,7 @@ CScreenDLC Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScreenDLC_Overview>`
 * :ref:`Quick Reference<CScreenDLC_QuickRef>`

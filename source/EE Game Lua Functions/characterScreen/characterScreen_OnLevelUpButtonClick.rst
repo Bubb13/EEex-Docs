@@ -13,9 +13,6 @@ characterScreen\:OnLevelUpButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

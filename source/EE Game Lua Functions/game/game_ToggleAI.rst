@@ -13,9 +13,6 @@ game\:ToggleAI
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

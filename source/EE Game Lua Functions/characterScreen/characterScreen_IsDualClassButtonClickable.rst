@@ -13,9 +13,6 @@ characterScreen\:IsDualClassButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

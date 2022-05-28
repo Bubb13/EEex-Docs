@@ -13,9 +13,6 @@ worldScreen\:StartGroundItems
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

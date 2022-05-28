@@ -13,9 +13,6 @@ connectionScreen\:IsValidAddress
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

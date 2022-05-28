@@ -13,9 +13,6 @@ worldMapScreen\:OnMapMouseMove
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

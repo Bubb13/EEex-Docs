@@ -13,9 +13,6 @@ createCharScreen\:IsDoneButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

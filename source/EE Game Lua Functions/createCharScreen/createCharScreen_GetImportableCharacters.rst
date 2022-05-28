@@ -13,9 +13,6 @@ createCharScreen\:GetImportableCharacters
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

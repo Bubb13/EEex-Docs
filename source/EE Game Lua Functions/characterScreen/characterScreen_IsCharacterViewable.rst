@@ -13,9 +13,6 @@ characterScreen\:IsCharacterViewable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

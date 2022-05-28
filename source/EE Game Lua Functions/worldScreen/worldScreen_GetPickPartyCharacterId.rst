@@ -13,9 +13,6 @@ worldScreen\:GetPickPartyCharacterId
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

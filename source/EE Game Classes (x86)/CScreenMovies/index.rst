@@ -5,7 +5,7 @@ CScreenMovies Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScreenMovies_Overview>`
 * :ref:`Quick Reference<CScreenMovies_QuickRef>`

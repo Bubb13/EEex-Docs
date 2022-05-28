@@ -13,9 +13,6 @@ storeScreen\:IsDonateButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

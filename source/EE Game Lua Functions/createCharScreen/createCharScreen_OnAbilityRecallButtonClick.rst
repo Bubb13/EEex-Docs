@@ -13,9 +13,6 @@ createCharScreen\:OnAbilityRecallButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

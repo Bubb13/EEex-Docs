@@ -13,9 +13,6 @@ startEngine\:GetCampaign
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

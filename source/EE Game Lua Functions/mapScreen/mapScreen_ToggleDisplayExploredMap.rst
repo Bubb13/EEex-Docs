@@ -13,9 +13,6 @@ mapScreen\:ToggleDisplayExploredMap
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ e\:GetEngineSave
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

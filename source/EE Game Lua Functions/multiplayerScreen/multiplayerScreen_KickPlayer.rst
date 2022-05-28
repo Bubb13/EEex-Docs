@@ -13,9 +13,6 @@ multiplayerScreen\:KickPlayer
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

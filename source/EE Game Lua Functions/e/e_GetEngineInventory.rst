@@ -13,9 +13,6 @@ e\:GetEngineInventory
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

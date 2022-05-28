@@ -13,9 +13,6 @@ buttonArray\:GetButtonEnabled
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

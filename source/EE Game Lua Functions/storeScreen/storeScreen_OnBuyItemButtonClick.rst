@@ -13,9 +13,6 @@ storeScreen\:OnBuyItemButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

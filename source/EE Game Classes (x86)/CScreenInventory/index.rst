@@ -5,7 +5,7 @@ CScreenInventory Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScreenInventory_Overview>`
 * :ref:`Quick Reference<CScreenInventory_QuickRef>`

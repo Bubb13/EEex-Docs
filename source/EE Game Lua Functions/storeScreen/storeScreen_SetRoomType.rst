@@ -13,9 +13,6 @@ storeScreen\:SetRoomType
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ createCharScreen\:OnLearnMageSpellButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

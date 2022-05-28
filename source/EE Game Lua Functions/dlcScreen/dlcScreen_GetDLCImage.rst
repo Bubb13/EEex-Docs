@@ -13,9 +13,6 @@ dlcScreen\:GetDLCImage
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

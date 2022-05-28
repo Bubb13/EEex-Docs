@@ -13,9 +13,6 @@ worldScreen\:TogglePauseGame
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

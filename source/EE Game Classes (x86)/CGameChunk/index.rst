@@ -5,7 +5,7 @@ CGameChunk Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CGameChunk_Overview>`
 * :ref:`Quick Reference<CGameChunk_QuickRef>`

@@ -5,7 +5,7 @@ CScreenAI Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScreenAI_Overview>`
 * :ref:`Quick Reference<CScreenAI_QuickRef>`

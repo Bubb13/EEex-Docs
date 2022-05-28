@@ -13,9 +13,6 @@ createCharScreen\:IsAbilityRecallButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

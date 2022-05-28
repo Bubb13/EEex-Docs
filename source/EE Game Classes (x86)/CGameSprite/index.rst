@@ -5,7 +5,7 @@ CGameSprite Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CGameSprite_Overview>`
 * :ref:`Quick Reference<CGameSprite_QuickRef>`

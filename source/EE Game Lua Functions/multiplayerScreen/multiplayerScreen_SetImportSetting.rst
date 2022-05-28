@@ -13,9 +13,6 @@ multiplayerScreen\:SetImportSetting
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

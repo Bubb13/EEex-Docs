@@ -13,9 +13,6 @@ saveScreen\:OnMainCancelButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

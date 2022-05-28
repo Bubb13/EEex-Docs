@@ -13,9 +13,6 @@ storeScreen\:OnRentRoomButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

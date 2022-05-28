@@ -13,9 +13,6 @@ e\:GetActiveEngine
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

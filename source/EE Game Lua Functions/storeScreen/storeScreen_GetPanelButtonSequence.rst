@@ -13,9 +13,6 @@ storeScreen\:GetPanelButtonSequence
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

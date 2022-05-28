@@ -13,9 +13,6 @@ multiplayerScreen\:OnPermissionButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

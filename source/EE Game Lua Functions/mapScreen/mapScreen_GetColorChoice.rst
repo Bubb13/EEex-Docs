@@ -13,9 +13,6 @@ mapScreen\:GetColorChoice
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

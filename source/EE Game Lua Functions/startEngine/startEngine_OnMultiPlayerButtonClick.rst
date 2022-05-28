@@ -13,9 +13,6 @@ startEngine\:OnMultiPlayerButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

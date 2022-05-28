@@ -13,9 +13,6 @@ storeScreen\:GetIdentifyCost
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

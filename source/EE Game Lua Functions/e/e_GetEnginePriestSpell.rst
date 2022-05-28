@@ -13,9 +13,6 @@ e\:GetEnginePriestSpell
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -5,7 +5,7 @@ CVidBitmap Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CVidBitmap_Overview>`
 * :ref:`Quick Reference<CVidBitmap_QuickRef>`

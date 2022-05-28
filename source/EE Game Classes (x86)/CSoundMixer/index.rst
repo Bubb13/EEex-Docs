@@ -5,7 +5,7 @@ CSoundMixer Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CSoundMixer_Overview>`
 * :ref:`Quick Reference<CSoundMixer_QuickRef>`

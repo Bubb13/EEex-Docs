@@ -13,9 +13,6 @@ createCharScreen\:IsChargenComplete
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ createCharScreen\:OnHLAButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

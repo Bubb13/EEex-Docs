@@ -13,9 +13,6 @@ createCharScreen\:OnPlayButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ game\:GetPaletteSize
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

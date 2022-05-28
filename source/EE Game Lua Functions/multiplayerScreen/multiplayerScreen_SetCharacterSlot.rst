@@ -13,9 +13,6 @@ multiplayerScreen\:SetCharacterSlot
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ createCharScreen\:IsAdvancedButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

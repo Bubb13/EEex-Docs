@@ -13,9 +13,6 @@ characterScreen\:OnCustomizeButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

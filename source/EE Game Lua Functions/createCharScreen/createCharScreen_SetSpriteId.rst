@@ -13,9 +13,6 @@ createCharScreen\:SetSpriteId
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

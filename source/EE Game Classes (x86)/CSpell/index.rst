@@ -5,7 +5,7 @@ CSpell Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CSpell_Overview>`
 * :ref:`Quick Reference<CSpell_QuickRef>`

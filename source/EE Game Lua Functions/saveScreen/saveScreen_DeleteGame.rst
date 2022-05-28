@@ -13,9 +13,6 @@ saveScreen\:DeleteGame
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

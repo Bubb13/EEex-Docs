@@ -13,9 +13,6 @@ e\:GetEngineJournal
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

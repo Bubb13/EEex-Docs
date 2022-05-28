@@ -13,9 +13,6 @@ buttonArray\:GetButtonSequence
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

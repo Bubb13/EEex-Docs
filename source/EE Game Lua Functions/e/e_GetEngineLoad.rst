@@ -13,9 +13,6 @@ e\:GetEngineLoad
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

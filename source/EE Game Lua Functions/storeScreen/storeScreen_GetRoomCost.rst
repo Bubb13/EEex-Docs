@@ -13,9 +13,6 @@ storeScreen\:GetRoomCost
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

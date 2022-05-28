@@ -13,9 +13,6 @@ storeScreen\:GetMenuName
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

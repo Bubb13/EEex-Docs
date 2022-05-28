@@ -13,9 +13,6 @@ e\:GetEngineConnection
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

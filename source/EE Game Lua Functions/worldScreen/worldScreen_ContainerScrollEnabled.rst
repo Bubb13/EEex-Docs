@@ -13,9 +13,6 @@ worldScreen\:ContainerScrollEnabled
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

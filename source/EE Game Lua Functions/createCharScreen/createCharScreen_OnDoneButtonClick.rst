@@ -13,9 +13,6 @@ createCharScreen\:OnDoneButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ e\:CheckGUISong
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

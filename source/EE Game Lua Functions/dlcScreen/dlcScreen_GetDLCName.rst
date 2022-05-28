@@ -13,9 +13,6 @@ dlcScreen\:GetDLCName
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

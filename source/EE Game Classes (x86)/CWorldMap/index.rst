@@ -5,7 +5,7 @@ CWorldMap Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CWorldMap_Overview>`
 * :ref:`Quick Reference<CWorldMap_QuickRef>`

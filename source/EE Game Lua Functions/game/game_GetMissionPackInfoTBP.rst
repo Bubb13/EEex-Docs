@@ -13,9 +13,6 @@ game\:GetMissionPackInfoTBP
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

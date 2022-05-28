@@ -13,9 +13,6 @@ game\:SelectAll
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

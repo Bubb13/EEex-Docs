@@ -13,9 +13,6 @@ timer\:GetCurrentHour
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

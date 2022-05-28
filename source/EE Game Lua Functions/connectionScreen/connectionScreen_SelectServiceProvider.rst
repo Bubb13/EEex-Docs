@@ -13,9 +13,6 @@ connectionScreen\:SelectServiceProvider
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

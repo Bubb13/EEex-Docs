@@ -13,9 +13,6 @@ storeScreen\:OnStealItemButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

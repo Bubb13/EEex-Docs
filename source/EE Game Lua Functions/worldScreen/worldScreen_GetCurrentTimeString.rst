@@ -13,9 +13,6 @@ worldScreen\:GetCurrentTimeString
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

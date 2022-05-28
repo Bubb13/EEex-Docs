@@ -38,9 +38,9 @@ Constructors
 +----------------------------------------------------------+------------------------------------------------------+
 | **Name**                                                 | **Description**                                      |
 +----------------------------------------------------------+------------------------------------------------------+
-| :ref:`CAIIdList\:\:CAIIdList<CAIIdListCAIIdList>`        | Constructs a ``CAIIdList`` object                            |
+| :ref:`CAIIdList\:\:CAIIdList<CAIIdListCAIIdList>`        | Constructs a ``CAIIdList`` object                    |
 +----------------------------------------------------------+------------------------------------------------------+
-| :ref:`CAIIdList\:\:~CAIIdList<CAIIdList~CAIIdList>`      | Destroys a ``CAIIdList`` object                              |
+| :ref:`CAIIdList\:\:~CAIIdList<CAIIdList~CAIIdList>`      | Destroys a ``CAIIdList`` object                      |
 +----------------------------------------------------------+------------------------------------------------------+
 
 .. _CAIIdListCAIIdList:

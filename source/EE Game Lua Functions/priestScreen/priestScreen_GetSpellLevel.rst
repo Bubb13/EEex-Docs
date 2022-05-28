@@ -13,9 +13,6 @@ priestScreen\:GetSpellLevel
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

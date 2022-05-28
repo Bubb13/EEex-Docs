@@ -13,9 +13,6 @@ createCharScreen\:OnHighLevelAbilitiesButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -5,7 +5,7 @@ CSpawnList Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CSpawnList_Overview>`
 * :ref:`Quick Reference<CSpawnList_QuickRef>`
@@ -53,7 +53,7 @@ Constructors
 +---------------------------------------------------------------+------------------------------------------------------+
 | **Name**                                                      | **Description**                                      |
 +---------------------------------------------------------------+------------------------------------------------------+
-| :ref:`CSpawnList\:\:CSpawnList<CSpawnListCSpawnList>`         | Constructs a ``CSpawnList`` object                  |
+| :ref:`CSpawnList\:\:CSpawnList<CSpawnListCSpawnList>`         | Constructs a ``CSpawnList`` object                   |
 +---------------------------------------------------------------+------------------------------------------------------+
 
 .. _CSpawnListCSpawnList:

@@ -5,7 +5,7 @@ CGameEffectBase Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 .. note:: This class has no other methods, just a constructor.
 
@@ -20,7 +20,7 @@ Constructors
 +----------------------------------------------------------------------------+------------------------------------------------------+
 | **Name**                                                                   | **Description**                                      |
 +----------------------------------------------------------------------------+------------------------------------------------------+
-| :ref:`CGameEffectBase\:\:CGameEffectBase<CGameEffectBaseCGameEffectBase>`  | Constructs a ``CGameEffectBase`` object                  |
+| :ref:`CGameEffectBase\:\:CGameEffectBase<CGameEffectBaseCGameEffectBase>`  | Constructs a ``CGameEffectBase`` object              |
 +----------------------------------------------------------------------------+------------------------------------------------------+
 
 .. _CGameEffectBaseCGameEffectBase:

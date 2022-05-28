@@ -13,9 +13,6 @@ createCharScreen\:HasMoreMageLevels
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

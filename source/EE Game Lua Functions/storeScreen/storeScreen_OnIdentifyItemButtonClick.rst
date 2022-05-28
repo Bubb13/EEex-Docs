@@ -13,9 +13,6 @@ storeScreen\:OnIdentifyItemButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ createCharScreen\:OnCharacterExportItemSelect
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

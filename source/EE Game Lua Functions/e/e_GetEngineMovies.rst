@@ -13,9 +13,6 @@ e\:GetEngineMovies
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

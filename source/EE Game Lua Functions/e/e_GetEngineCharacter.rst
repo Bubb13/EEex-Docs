@@ -13,9 +13,6 @@ e\:GetEngineCharacter
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

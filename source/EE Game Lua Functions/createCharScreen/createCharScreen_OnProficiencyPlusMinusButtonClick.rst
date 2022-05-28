@@ -13,9 +13,6 @@ createCharScreen\:OnProficiencyPlusMinusButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

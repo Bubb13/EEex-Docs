@@ -5,7 +5,7 @@ CScreenWizSpell Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScreenWizSpell_Overview>`
 * :ref:`Quick Reference<CScreenWizSpell_QuickRef>`

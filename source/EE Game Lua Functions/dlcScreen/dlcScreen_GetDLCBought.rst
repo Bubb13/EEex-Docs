@@ -13,9 +13,6 @@ dlcScreen\:GetDLCBought
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

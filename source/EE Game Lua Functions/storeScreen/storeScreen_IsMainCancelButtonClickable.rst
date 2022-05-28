@@ -13,9 +13,6 @@ storeScreen\:IsMainCancelButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

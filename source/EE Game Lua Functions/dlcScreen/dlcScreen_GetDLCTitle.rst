@@ -13,9 +13,6 @@ dlcScreen\:GetDLCTitle
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

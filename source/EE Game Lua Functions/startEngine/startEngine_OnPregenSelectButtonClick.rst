@@ -13,9 +13,6 @@ startEngine_OnPregenSelectButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

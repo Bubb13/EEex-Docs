@@ -13,9 +13,6 @@ startEngine\:OnTutorialButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

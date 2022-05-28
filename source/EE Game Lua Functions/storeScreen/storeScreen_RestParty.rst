@@ -13,9 +13,6 @@ storeScreen\:RestParty
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

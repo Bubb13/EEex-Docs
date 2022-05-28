@@ -13,9 +13,6 @@ characterScreen\:OnReformPartyButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

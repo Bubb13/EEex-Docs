@@ -5,7 +5,7 @@ CSpawnVar Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CSpawnVar_Overview>`
 * :ref:`Quick Reference<CSpawnVar_QuickRef>`

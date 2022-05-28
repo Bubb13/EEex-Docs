@@ -5,7 +5,7 @@ CVidFont Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CVidFont_Overview>`
 * :ref:`Quick Reference<CVidFont_QuickRef>`

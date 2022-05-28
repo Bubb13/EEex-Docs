@@ -5,7 +5,7 @@ CTime Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CTime_Overview>`
 * :ref:`Quick Reference<CTime_QuickRef>`

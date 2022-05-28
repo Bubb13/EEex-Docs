@@ -13,9 +13,6 @@ multiplayerScreen\:OnPlayerSelection
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

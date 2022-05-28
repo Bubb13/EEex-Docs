@@ -5,7 +5,7 @@ CVidPoly Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CVidPoly_Overview>`
 * :ref:`Quick Reference<CVidPoly_QuickRef>`

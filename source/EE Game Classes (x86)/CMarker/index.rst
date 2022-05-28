@@ -5,7 +5,7 @@ CMarker Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CMarker_Overview>`
 * :ref:`Quick Reference<CMarker_QuickRef>`

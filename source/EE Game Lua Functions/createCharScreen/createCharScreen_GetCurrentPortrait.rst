@@ -13,9 +13,6 @@ createCharScreen\:GetCurrentPortrait
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

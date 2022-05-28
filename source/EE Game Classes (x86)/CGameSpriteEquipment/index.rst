@@ -5,7 +5,7 @@ CGameSpriteEquipment Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CGameSpriteEquipment_Overview>`
 * :ref:`Quick Reference<CGameSpriteEquipment_QuickRef>`

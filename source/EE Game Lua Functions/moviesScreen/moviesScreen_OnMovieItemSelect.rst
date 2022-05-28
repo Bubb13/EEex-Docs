@@ -13,9 +13,6 @@ moviesScreen\:OnMovieItemSelect
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

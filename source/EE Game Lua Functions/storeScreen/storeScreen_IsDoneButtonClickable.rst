@@ -13,9 +13,6 @@ storeScreen\:IsDoneButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

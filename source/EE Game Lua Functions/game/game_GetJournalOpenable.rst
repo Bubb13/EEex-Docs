@@ -13,9 +13,6 @@ game\:GetJournalOpenable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

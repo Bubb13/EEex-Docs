@@ -13,9 +13,6 @@ createCharScreen\:OnMainCancelButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

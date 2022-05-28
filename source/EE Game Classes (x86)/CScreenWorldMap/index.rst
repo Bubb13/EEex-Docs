@@ -5,7 +5,7 @@ CScreenWorldMap Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScreenWorldMap_Overview>`
 * :ref:`Quick Reference<CScreenWorldMap_QuickRef>`

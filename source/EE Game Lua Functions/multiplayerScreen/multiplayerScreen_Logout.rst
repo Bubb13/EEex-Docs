@@ -13,9 +13,6 @@ multiplayerScreen\:Logout
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

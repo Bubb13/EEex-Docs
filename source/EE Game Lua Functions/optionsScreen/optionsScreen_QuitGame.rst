@@ -13,9 +13,6 @@ optionsScreen\:QuitGame
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ createCharScreen\:OnSoundItemSelect
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

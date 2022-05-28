@@ -5,7 +5,7 @@ CSteam Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CSteam_Overview>`
 * :ref:`Quick Reference<CSteam_QuickRef>`
@@ -88,9 +88,9 @@ Constructors
 +---------------------------------------------------------------+------------------------------------------------------+
 | **Name**                                                      | **Description**                                      |
 +---------------------------------------------------------------+------------------------------------------------------+
-| :ref:`CSteam\:\:CSteam<CSteamCSteam>`     | Constructs a ``CSteam`` object                  |
+| :ref:`CSteam\:\:CSteam<CSteamCSteam>`     | Constructs a ``CSteam`` object                                           |
 +---------------------------------------------------------------+------------------------------------------------------+
-| :ref:`CSteam\:\:CSteam<CSteam~CSteam>`    | Destroys a ``CSteam`` object                    |
+| :ref:`CSteam\:\:CSteam<CSteam~CSteam>`    | Destroys a ``CSteam`` object                                             |
 +---------------------------------------------------------------+------------------------------------------------------+
 
 .. _CSteamCSteam:

@@ -13,9 +13,6 @@ game\:GetWorldTimer
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ storeScreen\:UpdateStealPanel
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

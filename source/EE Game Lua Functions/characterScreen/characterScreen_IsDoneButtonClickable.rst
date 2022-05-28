@@ -13,9 +13,6 @@ characterScreen\:IsDoneButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

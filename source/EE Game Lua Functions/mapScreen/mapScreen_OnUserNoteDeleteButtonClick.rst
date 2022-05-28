@@ -13,9 +13,6 @@ mapScreen\:OnUserNoteDeleteButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

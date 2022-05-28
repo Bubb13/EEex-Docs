@@ -13,9 +13,6 @@ storeScreen\:IsIdentifyItemButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

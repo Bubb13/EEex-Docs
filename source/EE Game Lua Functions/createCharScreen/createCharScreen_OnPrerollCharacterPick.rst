@@ -13,9 +13,6 @@ createCharScreen\:OnPrerollCharacterPick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

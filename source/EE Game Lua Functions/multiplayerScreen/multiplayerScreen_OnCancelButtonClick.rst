@@ -13,9 +13,6 @@ multiplayerScreen\:OnCancelButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

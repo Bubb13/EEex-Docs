@@ -13,9 +13,6 @@ dlcScreen\:OnBuyButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

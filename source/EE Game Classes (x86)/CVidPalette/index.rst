@@ -5,7 +5,7 @@ CVidPalette Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CVidPalette_Overview>`
 * :ref:`Quick Reference<CVidPalette_QuickRef>`

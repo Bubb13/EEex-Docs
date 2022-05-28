@@ -5,7 +5,7 @@ CObjectMarker Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CObjectMarker_Overview>`
 * :ref:`Quick Reference<CObjectMarker_QuickRef>`

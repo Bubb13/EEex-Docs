@@ -5,7 +5,7 @@ CClassName Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CClassName_Overview>`
 * :ref:`Quick Reference<CClassName_QuickRef>`

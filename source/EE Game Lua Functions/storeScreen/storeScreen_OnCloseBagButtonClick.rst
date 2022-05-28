@@ -13,9 +13,6 @@ storeScreen\:OnCloseBagButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

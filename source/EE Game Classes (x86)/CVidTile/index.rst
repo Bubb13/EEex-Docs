@@ -5,7 +5,7 @@ CVidTile Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CVidTile_Overview>`
 * :ref:`Quick Reference<CVidTile_QuickRef>`

@@ -13,9 +13,6 @@ timer\:AdvanceCurrentTime
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

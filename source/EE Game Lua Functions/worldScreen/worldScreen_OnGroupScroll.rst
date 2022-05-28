@@ -13,9 +13,6 @@ worldScreen\:OnGroupScroll
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

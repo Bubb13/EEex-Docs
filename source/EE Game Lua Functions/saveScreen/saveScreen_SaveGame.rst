@@ -13,9 +13,6 @@ saveScreen\:SaveGame
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

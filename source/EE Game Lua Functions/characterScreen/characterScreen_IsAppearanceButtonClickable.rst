@@ -13,9 +13,6 @@ characterScreen\:IsAppearanceButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

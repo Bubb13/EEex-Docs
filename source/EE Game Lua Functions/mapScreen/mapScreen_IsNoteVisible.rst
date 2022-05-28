@@ -13,9 +13,6 @@ mapScreen\:IsNoteVisible
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

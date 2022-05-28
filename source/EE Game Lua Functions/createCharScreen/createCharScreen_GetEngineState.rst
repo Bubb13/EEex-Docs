@@ -13,9 +13,6 @@ createCharScreen\:GetEngineState
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

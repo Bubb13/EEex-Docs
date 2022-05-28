@@ -13,9 +13,6 @@ storeScreen\:IsBuyItemButtonClickable
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ createCharScreen\:OnClassSelectButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

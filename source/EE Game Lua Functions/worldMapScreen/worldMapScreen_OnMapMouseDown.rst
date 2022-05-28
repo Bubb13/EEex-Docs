@@ -13,9 +13,6 @@ worldMapScreen\:OnMapMouseDown
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

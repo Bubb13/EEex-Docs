@@ -13,9 +13,6 @@ createCharScreen\:OnImportCharacterFileButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

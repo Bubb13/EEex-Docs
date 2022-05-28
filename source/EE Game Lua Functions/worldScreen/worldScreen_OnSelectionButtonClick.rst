@@ -13,9 +13,6 @@ worldScreen\:OnSelectionButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

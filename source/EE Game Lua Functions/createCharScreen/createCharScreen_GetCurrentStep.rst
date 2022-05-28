@@ -13,9 +13,6 @@ createCharScreen\:GetCurrentStep
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

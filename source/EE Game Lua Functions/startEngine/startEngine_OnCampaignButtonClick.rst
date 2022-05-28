@@ -13,9 +13,6 @@ startEngine\:OnCampaignButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

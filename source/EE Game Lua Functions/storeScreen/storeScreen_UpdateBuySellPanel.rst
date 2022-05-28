@@ -13,9 +13,6 @@ storeScreen\:UpdateBuySellPanel
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

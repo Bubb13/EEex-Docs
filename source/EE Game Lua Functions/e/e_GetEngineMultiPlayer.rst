@@ -13,9 +13,6 @@ e\:GetEngineMultiPlayer
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

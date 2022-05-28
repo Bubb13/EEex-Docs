@@ -13,9 +13,6 @@ e\:GetEngineCreateChar
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

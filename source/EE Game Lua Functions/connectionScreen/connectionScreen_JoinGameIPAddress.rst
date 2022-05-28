@@ -13,9 +13,6 @@ connectionScreen\:JoinGameIPAddress
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

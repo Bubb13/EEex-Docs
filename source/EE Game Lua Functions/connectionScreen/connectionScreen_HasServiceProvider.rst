@@ -13,9 +13,6 @@ connectionScreen\:HasServiceProvider
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

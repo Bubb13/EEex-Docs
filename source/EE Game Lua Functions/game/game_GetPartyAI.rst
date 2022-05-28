@@ -13,9 +13,6 @@ game\:GetPartyAI
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -5,7 +5,7 @@ CScreenPriestSpell Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScreenPriestSpell_Overview>`
 * :ref:`Quick Reference<CScreenPriestSpell_QuickRef>`

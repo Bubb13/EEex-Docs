@@ -13,9 +13,6 @@ worldMapScreen\:OnCancelButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

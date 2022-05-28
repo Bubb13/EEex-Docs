@@ -13,9 +13,6 @@ multiplayerScreen\:OnReadyButtonClick
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

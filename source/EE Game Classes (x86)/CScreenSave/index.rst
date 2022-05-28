@@ -5,7 +5,7 @@ CScreenSave Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScreenSave_Overview>`
 * :ref:`Quick Reference<CScreenSave_QuickRef>`

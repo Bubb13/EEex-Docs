@@ -5,7 +5,7 @@ CScreenMap Class
 ==========================
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 1
 
 * :ref:`Overview<CScreenMap_Overview>`
 * :ref:`Quick Reference<CScreenMap_QuickRef>`

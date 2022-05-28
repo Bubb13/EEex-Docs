@@ -13,9 +13,6 @@ createCharScreen\:OnCheatyMcCheaterson
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

@@ -13,9 +13,6 @@ mageScreen\:UnSequenceSpell
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**

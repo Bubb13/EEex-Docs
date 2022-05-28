@@ -13,9 +13,6 @@ connectionScreen\:SetPlayerName
 
 **Parameters**
 
-* **
-* **
-* **
 
 
 **Returns**
