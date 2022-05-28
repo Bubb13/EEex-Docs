@@ -108,7 +108,7 @@ Constructors
 .. _CMultiplayerSettingsCMultiplayerSettings:
 
 CMultiplayerSettings\:\:CMultiplayerSettings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CMultiplayerSettings`` object
 
@@ -127,7 +127,7 @@ Constructs a ``CMultiplayerSettings`` object
 .. _CMultiplayerSettings~CMultiplayerSettings:
 
 CMultiplayerSettings\:\:~CMultiplayerSettings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Destroys the ``CMultiplayerSettings`` object
 
@@ -205,7 +205,7 @@ Methods
 .. _CMultiplayerSettingsGetCharacterControlledByPlayer:
 
 CMultiplayerSettings\:\:GetCharacterControlledByPlayer
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -446,7 +446,7 @@ CMultiplayerSettings\:\:OnDropPlayer
 .. _CMultiplayerSettingsResetPermissionsForPlayer:
 
 CMultiplayerSettings\:\:ResetPermissionsForPlayer
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -471,7 +471,7 @@ CMultiplayerSettings\:\:ResetPermissionsForPlayer
 .. _CMultiplayerSettingsResetServerOnLoadGame:
 
 CMultiplayerSettings\:\:ResetServerOnLoadGame
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -489,7 +489,7 @@ CMultiplayerSettings\:\:ResetServerOnLoadGame
 .. _CMultiplayerSettingsSetAllowReformPartyOption:
 
 CMultiplayerSettings\:\:SetAllowReformPartyOption
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -514,7 +514,7 @@ CMultiplayerSettings\:\:SetAllowReformPartyOption
 .. _CMultiplayerSettingsSetArbitrationLockAllowInput:
 
 CMultiplayerSettings\:\:SetArbitrationLockAllowInput
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -536,7 +536,7 @@ CMultiplayerSettings\:\:SetArbitrationLockAllowInput
 .. _CMultiplayerSettingsSetArbitrationLockStatus:
 
 CMultiplayerSettings\:\:SetArbitrationLockStatus
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -559,7 +559,7 @@ CMultiplayerSettings\:\:SetArbitrationLockStatus
 .. _CMultiplayerSettingsSetCharacterControlledByPlayer:
 
 CMultiplayerSettings\:\:SetCharacterControlledByPlayer
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -589,7 +589,7 @@ CMultiplayerSettings\:\:SetCharacterControlledByPlayer
 .. _CMultiplayerSettingsSetCharacterCreationLocation:
 
 CMultiplayerSettings\:\:SetCharacterCreationLocation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -641,7 +641,7 @@ CMultiplayerSettings\:\:SetCharacterReady
 .. _CMultiplayerSettingsSetImportingCharacterOption:
 
 CMultiplayerSettings\:\:SetImportingCharacterOption
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -663,7 +663,7 @@ CMultiplayerSettings\:\:SetImportingCharacterOption
 .. _CMultiplayerSettingsSetListenToJoinOption:
 
 CMultiplayerSettings\:\:SetListenToJoinOption
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -745,7 +745,7 @@ CMultiplayerSettings\:\:SetPlayerReady
 .. _CMultiplayerSettingsSetRestrictStoreOption:
 
 CMultiplayerSettings\:\:SetRestrictStoreOption
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -768,7 +768,7 @@ CMultiplayerSettings\:\:SetRestrictStoreOption
 .. _CMultiplayerSettingsSetServerOnLoadGame:
 
 CMultiplayerSettings\:\:SetServerOnLoadGame
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -790,7 +790,7 @@ CMultiplayerSettings\:\:SetServerOnLoadGame
 .. _CMultiplayerSettingsSignalCharacterStatus:
 
 CMultiplayerSettings\:\:SignalCharacterStatus
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 

@@ -1,8 +1,8 @@
 .. _worldScreen_GetPickPartyCharacterId:
 
-===================================
+====================================
 worldScreen\:GetPickPartyCharacterId 
-===================================
+====================================
 
 .. description
     

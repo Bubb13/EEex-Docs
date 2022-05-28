@@ -1,8 +1,8 @@
 .. _connectionScreen_OnLoadGameButtonClick:
 
-===================================
+=======================================
 connectionScreen\:OnLoadGameButtonClick 
-===================================
+=======================================
 
 .. description
     

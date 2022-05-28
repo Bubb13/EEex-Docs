@@ -1,8 +1,8 @@
 .. _multiplayerScreen_ToggleAllowReformParty:
 
-===================================
+=========================================
 multiplayerScreen\:ToggleAllowReformParty 
-===================================
+=========================================
 
 .. description
     

@@ -1,8 +1,8 @@
 .. _characterScreen_OnDualClassButtonClick:
 
-===================================
+=======================================
 characterScreen\:OnDualClassButtonClick 
-===================================
+=======================================
 
 .. description
     

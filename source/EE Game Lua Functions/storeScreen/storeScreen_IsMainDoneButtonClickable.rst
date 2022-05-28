@@ -1,8 +1,8 @@
 .. _storeScreen_IsMainDoneButtonClickable:
 
-===================================
+======================================
 storeScreen\:IsMainDoneButtonClickable 
-===================================
+======================================
 
 .. description
     

@@ -1,8 +1,8 @@
 .. _journalScreen Functions:
 
-=====================
+=======================
 journalScreen Functions
-=====================
+=======================
 
 .. toctree::
    :maxdepth: 1

@@ -1,8 +1,8 @@
 .. _multiplayerScreen_OnMainDoneButtonClick:
 
-===================================
+========================================
 multiplayerScreen\:OnMainDoneButtonClick 
-===================================
+========================================
 
 .. description
     

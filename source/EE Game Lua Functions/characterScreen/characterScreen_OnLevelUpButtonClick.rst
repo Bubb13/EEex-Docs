@@ -1,8 +1,8 @@
 .. _characterScreen_OnLevelUpButtonClick:
 
-===================================
+=====================================
 characterScreen\:OnLevelUpButtonClick 
-===================================
+=====================================
 
 .. description
     

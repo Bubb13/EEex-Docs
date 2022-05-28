@@ -1,8 +1,8 @@
 .. _mageScreen_SpellAllowedForContingency:
 
-===================================
+======================================
 mageScreen\:SpellAllowedForContingency 
-===================================
+======================================
 
 .. description
     

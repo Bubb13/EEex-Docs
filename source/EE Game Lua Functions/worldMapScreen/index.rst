@@ -1,8 +1,8 @@
 .. _worldMapScreen Functions:
 
-=====================
+========================
 worldMapScreen Functions
-=====================
+========================
 
 .. toctree::
    :maxdepth: 1

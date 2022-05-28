@@ -1,8 +1,8 @@
 .. _createCharScreen_OnClassSelectButtonClick:
 
-===================================
+==========================================
 createCharScreen\:OnClassSelectButtonClick 
-===================================
+==========================================
 
 .. description
     

@@ -1,8 +1,8 @@
 .. _createCharScreen_OnAbilityStoreButtonClick:
 
-===================================
+===========================================
 createCharScreen\:OnAbilityStoreButtonClick 
-===================================
+===========================================
 
 .. description
     

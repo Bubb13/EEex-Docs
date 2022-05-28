@@ -1,8 +1,8 @@
 .. _createCharScreen_OnLearnMageSpellButtonClick:
 
-===================================
+=============================================
 createCharScreen\:OnLearnMageSpellButtonClick 
-===================================
+=============================================
 
 .. description
     

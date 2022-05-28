@@ -1,8 +1,8 @@
 .. _createCharScreen_OnHighLevelAbilitiesButtonClick:
 
-===================================
+=================================================
 createCharScreen\:OnHighLevelAbilitiesButtonClick 
-===================================
+=================================================
 
 .. description
     

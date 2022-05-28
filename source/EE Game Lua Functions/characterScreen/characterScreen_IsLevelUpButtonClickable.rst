@@ -1,8 +1,8 @@
 .. _characterScreen_IsLevelUpButtonClickable:
 
-===================================
+=========================================
 characterScreen\:IsLevelUpButtonClickable 
-===================================
+=========================================
 
 .. description
     

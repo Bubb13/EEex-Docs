@@ -1,8 +1,8 @@
 .. _createCharScreen_OnMainBackButtonClick:
 
-===================================
+=======================================
 createCharScreen\:OnMainBackButtonClick 
-===================================
+=======================================
 
 .. description
     

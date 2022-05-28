@@ -1,8 +1,8 @@
 .. _createCharScreen_GetImportableCharacters:
 
-===================================
+=========================================
 createCharScreen\:GetImportableCharacters 
-===================================
+=========================================
 
 .. description
     

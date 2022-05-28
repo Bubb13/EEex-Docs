@@ -1,8 +1,8 @@
 .. _characterScreen_OnCancelButtonClick:
 
-===================================
+====================================
 characterScreen\:OnCancelButtonClick 
-===================================
+====================================
 
 .. description
     

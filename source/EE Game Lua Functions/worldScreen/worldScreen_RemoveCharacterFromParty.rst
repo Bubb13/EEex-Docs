@@ -1,8 +1,8 @@
 .. _worldScreen_RemoveCharacterFromParty:
 
-===================================
+=====================================
 worldScreen\:RemoveCharacterFromParty 
-===================================
+=====================================
 
 .. description
     

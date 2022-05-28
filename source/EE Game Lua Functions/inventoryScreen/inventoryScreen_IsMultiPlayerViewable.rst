@@ -1,8 +1,8 @@
 .. _inventoryScreen_IsMultiPlayerViewable:
 
-===================================
+======================================
 inventoryScreen\:IsMultiPlayerViewable 
-===================================
+======================================
 
 .. description
     

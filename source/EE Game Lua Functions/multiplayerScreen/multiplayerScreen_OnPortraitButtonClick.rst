@@ -1,8 +1,8 @@
 .. _multiplayerScreen_OnPortraitButtonClick:
 
-===================================
+========================================
 multiplayerScreen\:OnPortraitButtonClick 
-===================================
+========================================
 
 .. description
     

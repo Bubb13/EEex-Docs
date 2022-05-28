@@ -1,8 +1,8 @@
 .. _createCharScreen_IsThiefSkillPlusMinusButtonClickable:
 
-===================================
+======================================================
 createCharScreen\:IsThiefSkillPlusMinusButtonClickable 
-===================================
+======================================================
 
 .. description
     

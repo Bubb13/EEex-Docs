@@ -1,8 +1,8 @@
 .. _createCharScreen_OnCancelButtonClick:
 
-===================================
+=====================================
 createCharScreen\:OnCancelButtonClick 
-===================================
+=====================================
 
 .. description
     

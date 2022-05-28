@@ -1,8 +1,8 @@
 .. _multiplayerScreen_ToggleListenToJoin:
 
-===================================
+=====================================
 multiplayerScreen\:ToggleListenToJoin 
-===================================
+=====================================
 
 .. description
     

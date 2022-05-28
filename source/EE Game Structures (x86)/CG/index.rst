@@ -2866,7 +2866,7 @@ CGameEffectApplyEffectEquipItem
 .. _CGameEffectApplyEffectEquipItemType:
 
 CGameEffectApplyEffectEquipItemType
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -3267,7 +3267,7 @@ CGameEffectBounceSecondaryType
 .. _CGameEffectBounceSecondaryTypeDecrement:
 
 CGameEffectBounceSecondaryTypeDecrement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -4849,7 +4849,7 @@ CGameEffectImmunitySecondaryType
 .. _CGameEffectImmunitySecondaryTypeDecrement:
 
 CGameEffectImmunitySecondaryTypeDecrement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
@@ -4905,7 +4905,7 @@ CGameEffectImmunityToBackstab
 .. _CGameEffectImmunityToDisplayString:
 
 CGameEffectImmunityToDisplayString
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |

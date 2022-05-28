@@ -4114,7 +4114,7 @@ Update timer asynchronously
 .. _CScreenCreateCharTimerSynchronousUpdate:
 
 CScreenCreateChar\:\:TimerSynchronousUpdate
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Update timer synchronously
 

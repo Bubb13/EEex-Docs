@@ -1,8 +1,8 @@
 .. _characterScreen_IsDualClassButtonClickable:
 
-===================================
+===========================================
 characterScreen\:IsDualClassButtonClickable 
-===================================
+===========================================
 
 .. description
     

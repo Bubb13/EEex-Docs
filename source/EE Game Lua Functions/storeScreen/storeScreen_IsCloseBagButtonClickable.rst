@@ -1,8 +1,8 @@
 .. _storeScreen_IsCloseBagButtonClickable:
 
-===================================
+======================================
 storeScreen\:IsCloseBagButtonClickable 
-===================================
+======================================
 
 .. description
     

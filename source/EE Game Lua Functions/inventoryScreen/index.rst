@@ -1,8 +1,8 @@
 .. _inventoryScreen Functions:
 
-=====================
+=========================
 inventoryScreen Functions
-=====================
+=========================
 
 .. toctree::
    :maxdepth: 1

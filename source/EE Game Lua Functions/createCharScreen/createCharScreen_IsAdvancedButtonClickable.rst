@@ -1,8 +1,8 @@
 .. _createCharScreen_IsAdvancedButtonClickable:
 
-===================================
+===========================================
 createCharScreen\:IsAdvancedButtonClickable 
-===================================
+===========================================
 
 .. description
     

@@ -1,8 +1,8 @@
 .. _moviesScreen Functions:
 
-=====================
+======================
 moviesScreen Functions
-=====================
+======================
 
 .. toctree::
    :maxdepth: 1

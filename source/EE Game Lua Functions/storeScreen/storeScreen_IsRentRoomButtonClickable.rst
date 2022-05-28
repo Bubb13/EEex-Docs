@@ -1,8 +1,8 @@
 .. _storeScreen_IsRentRoomButtonClickable:
 
-===================================
+======================================
 storeScreen\:IsRentRoomButtonClickable 
-===================================
+======================================
 
 .. description
     

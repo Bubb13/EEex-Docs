@@ -1,8 +1,8 @@
 .. _characterScreen_IsReformPartyButtonClickable:
 
-===================================
+=============================================
 characterScreen\:IsReformPartyButtonClickable 
-===================================
+=============================================
 
 .. description
     

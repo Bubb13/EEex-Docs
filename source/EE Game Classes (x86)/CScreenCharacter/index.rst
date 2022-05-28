@@ -1096,7 +1096,7 @@ Returns
 .. _CScreenCharacterIsAppearanceButtonClickable:
 
 CScreenCharacter\:\:IsAppearanceButtonClickable
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 

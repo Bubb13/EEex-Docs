@@ -1,8 +1,8 @@
 .. _multiplayerScreen_OnModifyCharacterDelete:
 
-===================================
+==========================================
 multiplayerScreen\:OnModifyCharacterDelete 
-===================================
+==========================================
 
 .. description
     

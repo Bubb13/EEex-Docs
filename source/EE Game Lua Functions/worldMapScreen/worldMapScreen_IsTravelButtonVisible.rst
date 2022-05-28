@@ -1,8 +1,8 @@
 .. _worldMapScreen_IsTravelButtonVisible:
 
-===================================
+=====================================
 worldMapScreen\:IsTravelButtonVisible 
-===================================
+=====================================
 
 .. description
     

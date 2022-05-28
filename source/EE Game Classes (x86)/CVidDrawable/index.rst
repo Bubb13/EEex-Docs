@@ -63,7 +63,7 @@ Constructors
 .. _CVidDrawableCVidDrawable:
 
 CVidDrawable\:\:CVidDrawable
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CVidDrawable`` object
 
@@ -81,7 +81,7 @@ Constructs a ``CVidDrawable`` object
 .. _CVidDrawable~CVidDrawable:
 
 CVidDrawable\:\:~CVidDrawable
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Destroys the ``CVidDrawable`` object
 

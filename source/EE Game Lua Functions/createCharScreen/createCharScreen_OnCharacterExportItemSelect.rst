@@ -1,8 +1,8 @@
 .. _createCharScreen_OnCharacterExportItemSelect:
 
-===================================
+=============================================
 createCharScreen\:OnCharacterExportItemSelect 
-===================================
+=============================================
 
 .. description
     

@@ -1,8 +1,8 @@
 .. _characterScreen_IsMultiPlayerModifyable:
 
-===================================
+========================================
 characterScreen\:IsMultiPlayerModifyable 
-===================================
+========================================
 
 .. description
     

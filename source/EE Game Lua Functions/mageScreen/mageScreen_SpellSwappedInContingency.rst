@@ -1,8 +1,8 @@
 .. _mageScreen_SpellSwappedInContingency:
 
-===================================
+=====================================
 mageScreen\:SpellSwappedInContingency 
-===================================
+=====================================
 
 .. description
     

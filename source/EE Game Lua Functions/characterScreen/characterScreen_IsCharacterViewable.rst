@@ -1,8 +1,8 @@
 .. _characterScreen_IsCharacterViewable:
 
-===================================
+====================================
 characterScreen\:IsCharacterViewable 
-===================================
+====================================
 
 .. description
     

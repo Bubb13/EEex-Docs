@@ -1,8 +1,8 @@
 .. _characterScreen_IsDoneButtonClickable:
 
-===================================
+======================================
 characterScreen\:IsDoneButtonClickable 
-===================================
+======================================
 
 .. description
     

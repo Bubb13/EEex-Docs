@@ -1,8 +1,8 @@
 .. _priestScreen Functions:
 
-=====================
+======================
 priestScreen Functions
-=====================
+======================
 
 .. toctree::
    :maxdepth: 1

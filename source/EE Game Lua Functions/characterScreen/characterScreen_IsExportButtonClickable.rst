@@ -1,8 +1,8 @@
 .. _characterScreen_IsExportButtonClickable:
 
-===================================
+========================================
 characterScreen\:IsExportButtonClickable 
-===================================
+========================================
 
 .. description
     

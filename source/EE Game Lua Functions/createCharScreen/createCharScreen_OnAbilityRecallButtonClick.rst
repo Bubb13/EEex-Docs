@@ -1,8 +1,8 @@
 .. _createCharScreen_OnAbilityRecallButtonClick:
 
-===================================
+============================================
 createCharScreen\:OnAbilityRecallButtonClick 
-===================================
+============================================
 
 .. description
     

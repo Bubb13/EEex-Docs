@@ -1,8 +1,8 @@
 .. _worldMapScreen_IsTravelButtonClickable:
 
-===================================
+=======================================
 worldMapScreen\:IsTravelButtonClickable 
-===================================
+=======================================
 
 .. description
     

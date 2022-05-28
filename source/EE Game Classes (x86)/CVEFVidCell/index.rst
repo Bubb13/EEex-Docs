@@ -83,7 +83,7 @@ Constructors
 .. _CVEFVidCellCVEFVidCell:
 
 CVEFVidCell\:\:CVEFVidCell
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CVEFVidCell`` object
 
@@ -101,7 +101,7 @@ Constructs a ``CVEFVidCell`` object
 .. _CVEFVidCell~CVEFVidCell:
 
 CVEFVidCell\:\:~CVEFVidCell
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Destroys the ``CVEFVidCell`` object
 

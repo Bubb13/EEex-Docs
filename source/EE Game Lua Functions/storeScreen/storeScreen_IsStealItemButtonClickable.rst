@@ -1,8 +1,8 @@
 .. _storeScreen_IsStealItemButtonClickable:
 
-===================================
+=======================================
 storeScreen\:IsStealItemButtonClickable 
-===================================
+=======================================
 
 .. description
     

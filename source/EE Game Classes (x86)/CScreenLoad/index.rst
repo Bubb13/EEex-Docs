@@ -113,7 +113,7 @@ Constructors
 .. _CScreenLoadCScreenLoad:
 
 CScreenLoad\:\:CScreenLoad
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CScreenLoad`` object
 

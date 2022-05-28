@@ -1,8 +1,8 @@
 .. _createCharScreen_OnAbilityPlusMinusButtonClick:
 
-===================================
+===============================================
 createCharScreen\:OnAbilityPlusMinusButtonClick 
-===================================
+===============================================
 
 .. description
     

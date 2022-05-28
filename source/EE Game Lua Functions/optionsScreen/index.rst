@@ -1,8 +1,8 @@
 .. _optionsScreen Functions:
 
-=====================
+=======================
 optionsScreen Functions
-=====================
+=======================
 
 .. toctree::
    :maxdepth: 1

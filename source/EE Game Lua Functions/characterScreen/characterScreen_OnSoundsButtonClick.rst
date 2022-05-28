@@ -1,8 +1,8 @@
 .. _characterScreen_OnSoundsButtonClick:
 
-===================================
+====================================
 characterScreen\:OnSoundsButtonClick 
-===================================
+====================================
 
 .. description
     

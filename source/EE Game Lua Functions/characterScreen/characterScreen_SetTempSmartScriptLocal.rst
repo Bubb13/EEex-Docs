@@ -1,8 +1,8 @@
 .. _characterScreen_SetTempSmartScriptLocal:
 
-===================================
+========================================
 characterScreen\:SetTempSmartScriptLocal 
-===================================
+========================================
 
 .. description
     

@@ -1,8 +1,8 @@
 .. _worldScreen_IsPickPartyRemoveButtonClickable:
 
-===================================
+=============================================
 worldScreen\:IsPickPartyRemoveButtonClickable 
-===================================
+=============================================
 
 .. description
     

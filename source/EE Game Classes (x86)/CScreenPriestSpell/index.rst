@@ -119,7 +119,7 @@ Constructors
 .. _CScreenPriestSpellCScreenPriestSpell:
 
 CScreenPriestSpell\:\:CScreenPriestSpell
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CScreenPriestSpell`` object
 
@@ -331,7 +331,7 @@ Returns
 .. _CScreenPriestSpellCheckMultiPlayerViewable:
 
 CScreenPriestSpell\:\:CheckMultiPlayerViewable
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1027,7 +1027,7 @@ Returns
 .. _CScreenPriestSpellTimerAsynchronousUpdate:
 
 CScreenPriestSpell\:\:TimerAsynchronousUpdate
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 

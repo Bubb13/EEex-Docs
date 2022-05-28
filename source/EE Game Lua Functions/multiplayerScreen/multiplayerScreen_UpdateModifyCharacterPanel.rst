@@ -1,8 +1,8 @@
 .. _multiplayerScreen_UpdateModifyCharacterPanel:
 
-===================================
+=============================================
 multiplayerScreen\:UpdateModifyCharacterPanel 
-===================================
+=============================================
 
 .. description
     

@@ -1,8 +1,8 @@
 .. _createCharScreen_OnProficiencyPlusMinusButtonClick:
 
-===================================
+===================================================
 createCharScreen\:OnProficiencyPlusMinusButtonClick 
-===================================
+===================================================
 
 .. description
     

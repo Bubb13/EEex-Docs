@@ -1,8 +1,8 @@
 .. _createCharScreen_OnThiefSkillPlusMinusButtonClick:
 
-===================================
+==================================================
 createCharScreen\:OnThiefSkillPlusMinusButtonClick 
-===================================
+==================================================
 
 .. description
     

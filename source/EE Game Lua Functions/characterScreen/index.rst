@@ -1,8 +1,8 @@
 .. _characterScreen Functions:
 
-=====================
+=========================
 characterScreen Functions
-=====================
+=========================
 
 .. toctree::
    :maxdepth: 1

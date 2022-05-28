@@ -1,8 +1,8 @@
 .. _connectionScreen_StopConnectingToProvider:
 
-===================================
+==========================================
 connectionScreen\:StopConnectingToProvider 
-===================================
+==========================================
 
 .. description
     

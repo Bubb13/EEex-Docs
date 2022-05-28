@@ -1,8 +1,8 @@
 .. _multiplayerScreen_OnPermissionButtonClick:
 
-===================================
+==========================================
 multiplayerScreen\:OnPermissionButtonClick 
-===================================
+==========================================
 
 .. description
     

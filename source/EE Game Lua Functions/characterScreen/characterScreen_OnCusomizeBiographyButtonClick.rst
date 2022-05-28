@@ -1,8 +1,8 @@
 .. _characterScreen_OnCusomizeBiographyButtonClick:
 
-===================================
+===============================================
 characterScreen\:OnCusomizeBiographyButtonClick 
-===================================
+===============================================
 
 .. description
     

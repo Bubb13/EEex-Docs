@@ -1,8 +1,8 @@
 .. _createCharScreen_GetCurrentPortrait:
 
-===================================
+====================================
 createCharScreen\:GetCurrentPortrait 
-===================================
+====================================
 
 .. description
     

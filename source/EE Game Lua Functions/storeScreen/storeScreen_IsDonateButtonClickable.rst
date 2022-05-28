@@ -1,8 +1,8 @@
 .. _storeScreen_IsDonateButtonClickable:
 
-===================================
+====================================
 storeScreen\:IsDonateButtonClickable 
-===================================
+====================================
 
 .. description
     

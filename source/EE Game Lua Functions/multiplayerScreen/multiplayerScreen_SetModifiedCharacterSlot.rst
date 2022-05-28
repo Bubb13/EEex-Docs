@@ -1,8 +1,8 @@
 .. _multiplayerScreen_SetModifiedCharacterSlot:
 
-===================================
+===========================================
 multiplayerScreen\:SetModifiedCharacterSlot 
-===================================
+===========================================
 
 .. description
     

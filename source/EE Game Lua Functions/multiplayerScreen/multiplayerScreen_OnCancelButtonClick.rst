@@ -1,8 +1,8 @@
 .. _multiplayerScreen_OnCancelButtonClick:
 
-===================================
+======================================
 multiplayerScreen\:OnCancelButtonClick 
-===================================
+======================================
 
 .. description
     

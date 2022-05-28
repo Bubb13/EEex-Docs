@@ -1,8 +1,8 @@
 .. _worldScreen_OnPickPartyDoneButtonClick:
 
-===================================
+=======================================
 worldScreen\:OnPickPartyDoneButtonClick 
-===================================
+=======================================
 
 .. description
     

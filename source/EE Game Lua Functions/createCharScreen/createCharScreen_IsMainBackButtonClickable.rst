@@ -1,8 +1,8 @@
 .. _createCharScreen_IsMainBackButtonClickable:
 
-===================================
+===========================================
 createCharScreen\:IsMainBackButtonClickable 
-===================================
+===========================================
 
 .. description
     

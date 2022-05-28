@@ -1,8 +1,8 @@
 .. _createCharScreen_OnMemorizePriestSpellButtonClick:
 
-===================================
+==================================================
 createCharScreen\:OnMemorizePriestSpellButtonClick 
-===================================
+==================================================
 
 .. description
     

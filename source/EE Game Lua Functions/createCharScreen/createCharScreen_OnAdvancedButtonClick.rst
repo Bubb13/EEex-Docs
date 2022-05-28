@@ -1,8 +1,8 @@
 .. _createCharScreen_OnAdvancedButtonClick:
 
-===================================
+=======================================
 createCharScreen\:OnAdvancedButtonClick 
-===================================
+=======================================
 
 .. description
     

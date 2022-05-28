@@ -1,8 +1,8 @@
 .. _connectionScreen_HasServiceProvider:
 
-===================================
+====================================
 connectionScreen\:HasServiceProvider 
-===================================
+====================================
 
 .. description
     

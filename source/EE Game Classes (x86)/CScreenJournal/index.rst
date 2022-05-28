@@ -113,7 +113,7 @@ Constructors
 .. _CScreenJournalCScreenJournal:
 
 CScreenJournal\:\:CScreenJournal
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CScreenJournal`` object
 

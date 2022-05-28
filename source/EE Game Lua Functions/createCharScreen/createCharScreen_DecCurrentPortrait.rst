@@ -1,8 +1,8 @@
 .. _createCharScreen_DecCurrentPortrait:
 
-===================================
+====================================
 createCharScreen\:DecCurrentPortrait 
-===================================
+====================================
 
 .. description
     

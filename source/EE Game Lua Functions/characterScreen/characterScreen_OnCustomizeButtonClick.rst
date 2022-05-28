@@ -1,8 +1,8 @@
 .. _characterScreen_OnCustomizeButtonClick:
 
-===================================
+=======================================
 characterScreen\:OnCustomizeButtonClick 
-===================================
+=======================================
 
 .. description
     

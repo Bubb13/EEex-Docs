@@ -1,8 +1,8 @@
 .. _createCharScreen_OnRacialEnemySelectButtonClick:
 
-===================================
+================================================
 createCharScreen\:OnRacialEnemySelectButtonClick 
-===================================
+================================================
 
 .. description
     

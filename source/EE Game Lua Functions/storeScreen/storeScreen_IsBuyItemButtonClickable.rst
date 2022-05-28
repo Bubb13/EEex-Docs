@@ -1,8 +1,8 @@
 .. _storeScreen_IsBuyItemButtonClickable:
 
-===================================
+=====================================
 storeScreen\:IsBuyItemButtonClickable 
-===================================
+=====================================
 
 .. description
     

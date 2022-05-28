@@ -1,8 +1,8 @@
 .. _characterScreen_OnScriptButtonClick:
 
-===================================
+====================================
 characterScreen\:OnScriptButtonClick 
-===================================
+====================================
 
 .. description
     

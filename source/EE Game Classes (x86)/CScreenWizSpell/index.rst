@@ -147,7 +147,7 @@ Constructors
 .. _CScreenWizSpellCScreenWizSpell:
 
 CScreenWizSpell\:\:CScreenWizSpell
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CScreenWizSpell`` object
 
@@ -790,7 +790,7 @@ Returns
 .. _CScreenWizSpellGetSelectedCharacterObject:
 
 CScreenWizSpell\:\:GetSelectedCharacterObject
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1370,7 +1370,7 @@ Returns
 .. _CScreenWizSpellSpellAllowedForContingency:
 
 CScreenWizSpell\:\:SpellAllowedForContingency
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 

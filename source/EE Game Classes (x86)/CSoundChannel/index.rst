@@ -63,7 +63,7 @@ Constructors
 .. _CSoundChannelCSoundChannel:
 
 CSoundChannel\:\:CSoundChannel
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CSoundChannel`` object
 

@@ -1,8 +1,8 @@
 .. _connectionScreen:
 
-=====================
+==========================
 connectionScreen Functions
-=====================
+==========================
 
 .. toctree::
    :maxdepth: 1

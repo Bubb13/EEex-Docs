@@ -1028,7 +1028,7 @@ Returns
 .. _CScreenMultiPlayerIsMainDoneButtonClickable:
 
 CScreenMultiPlayer\:\:IsMainDoneButtonClickable
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1057,7 +1057,7 @@ Returns
 .. _CScreenMultiPlayerIsModifyButtonClickable:
 
 CScreenMultiPlayer\:\:IsModifyButtonClickable
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1086,7 +1086,7 @@ Returns
 .. _CScreenMultiPlayerIsPortraitButtonClickable:
 
 CScreenMultiPlayer\:\:IsPortraitButtonClickable
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1289,7 +1289,7 @@ Returns
 .. _CScreenMultiPlayerOnKickPlayerButtonClick:
 
 CScreenMultiPlayer\:\:OnKickPlayerButtonClick
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1492,7 +1492,7 @@ Returns
 .. _CScreenMultiPlayerOnModifyCharacterDelete:
 
 CScreenMultiPlayer\:\:OnModifyCharacterDelete
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1550,7 +1550,7 @@ Returns
 .. _CScreenMultiPlayerOnPermissionButtonClick:
 
 CScreenMultiPlayer\:\:OnPermissionButtonClick
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1840,7 +1840,7 @@ Returns
 .. _CScreenMultiPlayerSetMultiplayerScreenInformation:
 
 CScreenMultiPlayer\:\:SetMultiplayerScreenInformation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1985,7 +1985,7 @@ Returns
 .. _CScreenMultiPlayerTimerAsynchronousUpdate:
 
 CScreenMultiPlayer\:\:TimerAsynchronousUpdate
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2159,7 +2159,7 @@ Returns
 .. _CScreenMultiPlayerUpdateMainPanelCharacter:
 
 CScreenMultiPlayer\:\:UpdateMainPanelCharacter
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2188,7 +2188,7 @@ Returns
 .. _CScreenMultiPlayerUpdateModifyCharacterPanel:
 
 CScreenMultiPlayer\:\:UpdateModifyCharacterPanel
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 

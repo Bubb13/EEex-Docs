@@ -1,8 +1,8 @@
 .. _createCharScreen_OnRaceSelectButtonClick:
 
-===================================
+=========================================
 createCharScreen\:OnRaceSelectButtonClick 
-===================================
+=========================================
 
 .. description
     

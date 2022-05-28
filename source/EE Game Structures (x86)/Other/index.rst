@@ -1533,7 +1533,7 @@ Related to `BAM v2 Frame Entries <https://gibberlings3.github.io/iesdp/file_form
 .. _frameTableEntry_stv2:
 
 frameTableEntry_st\:\:<unnamed-tag>\:\:<unnamed-type-v2
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |

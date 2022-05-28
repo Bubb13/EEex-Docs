@@ -125,7 +125,7 @@ Constructors
 .. _CScreenSaveCScreenSave:
 
 CScreenSave\:\:CScreenSave
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CScreenSave`` object
 

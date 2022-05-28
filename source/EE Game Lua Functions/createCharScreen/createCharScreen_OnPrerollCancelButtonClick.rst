@@ -1,8 +1,8 @@
 .. _createCharScreen_OnPrerollCancelButtonClick:
 
-===================================
+============================================
 createCharScreen\:OnPrerollCancelButtonClick 
-===================================
+============================================
 
 .. description
     

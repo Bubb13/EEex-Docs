@@ -1,8 +1,8 @@
 .. _storeScreen_IsMainCancelButtonClickable:
 
-===================================
+========================================
 storeScreen\:IsMainCancelButtonClickable 
-===================================
+========================================
 
 .. description
     

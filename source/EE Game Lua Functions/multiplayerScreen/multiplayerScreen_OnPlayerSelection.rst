@@ -1,8 +1,8 @@
 .. _multiplayerScreen_OnPlayerSelection:
 
-===================================
+====================================
 multiplayerScreen\:OnPlayerSelection 
-===================================
+====================================
 
 .. description
     

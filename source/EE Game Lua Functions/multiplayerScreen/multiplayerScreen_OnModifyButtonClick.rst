@@ -1,8 +1,8 @@
 .. _multiplayerScreen_OnModifyButtonClick:
 
-===================================
+======================================
 multiplayerScreen\:OnModifyButtonClick 
-===================================
+======================================
 
 .. description
     

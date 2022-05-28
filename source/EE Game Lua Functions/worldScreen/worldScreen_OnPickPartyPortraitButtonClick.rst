@@ -1,8 +1,8 @@
 .. _worldScreen_OnPickPartyPortraitButtonClick:
 
-===================================
+===========================================
 worldScreen\:OnPickPartyPortraitButtonClick 
-===================================
+===========================================
 
 .. description
     

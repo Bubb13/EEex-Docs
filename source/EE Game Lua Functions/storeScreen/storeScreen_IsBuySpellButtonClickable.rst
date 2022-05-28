@@ -1,8 +1,8 @@
 .. _storeScreen_IsBuySpellButtonClickable:
 
-===================================
+======================================
 storeScreen\:IsBuySpellButtonClickable 
-===================================
+======================================
 
 .. description
     

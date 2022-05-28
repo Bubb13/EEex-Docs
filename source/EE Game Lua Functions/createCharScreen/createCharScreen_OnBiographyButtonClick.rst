@@ -1,8 +1,8 @@
 .. _createCharScreen_OnBiographyButtonClick:
 
-===================================
+========================================
 createCharScreen\:OnBiographyButtonClick 
-===================================
+========================================
 
 .. description
     

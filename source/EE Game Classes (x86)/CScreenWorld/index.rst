@@ -2400,7 +2400,7 @@ Returns
 .. _CScreenWorldIsPickPartyDoneButtonClickable:
 
 CScreenWorld\:\:IsPickPartyDoneButtonClickable
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2429,7 +2429,7 @@ Returns
 .. _CScreenWorldIsPickPartyRemoveButtonClickable:
 
 CScreenWorld\:\:IsPickPartyRemoveButtonClickable
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3125,7 +3125,7 @@ Returns
 .. _CScreenWorldOnPickPartyPortraitButtonClick:
 
 CScreenWorld\:\:OnPickPartyPortraitButtonClick
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4285,7 +4285,7 @@ Returns
 .. _CScreenWorldStartReformPartyMultiplayerHost:
 
 CScreenWorld\:\:StartReformPartyMultiplayerHost
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 

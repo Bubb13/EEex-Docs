@@ -1,8 +1,8 @@
 .. _worldScreen_IsPickPartyDoneButtonClickable:
 
-===================================
+===========================================
 worldScreen\:IsPickPartyDoneButtonClickable 
-===================================
+===========================================
 
 .. description
     

@@ -1,8 +1,8 @@
 .. _createCharScreen_OnImportCharacterFileButtonClick:
 
-===================================
+==================================================
 createCharScreen\:OnImportCharacterFileButtonClick 
-===================================
+==================================================
 
 .. description
     

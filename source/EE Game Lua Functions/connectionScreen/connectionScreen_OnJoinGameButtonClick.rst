@@ -1,8 +1,8 @@
 .. _connectionScreen_OnJoinGameButtonClick:
 
-===================================
+=======================================
 connectionScreen\:OnJoinGameButtonClick 
-===================================
+=======================================
 
 .. description
     

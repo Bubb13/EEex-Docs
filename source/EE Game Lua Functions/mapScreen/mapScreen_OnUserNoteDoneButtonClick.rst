@@ -1,8 +1,8 @@
 .. _mapScreen_OnUserNoteDoneButtonClick:
 
-===================================
+====================================
 mapScreen\:OnUserNoteDoneButtonClick 
-===================================
+====================================
 
 .. description
     

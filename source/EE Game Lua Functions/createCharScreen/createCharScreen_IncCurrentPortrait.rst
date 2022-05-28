@@ -1,8 +1,8 @@
 .. _createCharScreen_IncCurrentPortrait:
 
-===================================
+====================================
 createCharScreen\:IncCurrentPortrait 
-===================================
+====================================
 
 .. description
     

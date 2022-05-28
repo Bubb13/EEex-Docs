@@ -1,8 +1,8 @@
 .. _connectionScreen_OnMainCancelButtonClick:
 
-===================================
+=========================================
 connectionScreen\:OnMainCancelButtonClick 
-===================================
+=========================================
 
 .. description
     

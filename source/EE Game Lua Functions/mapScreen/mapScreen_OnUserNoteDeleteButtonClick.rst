@@ -1,8 +1,8 @@
 .. _mapScreen_OnUserNoteDeleteButtonClick:
 
-===================================
+======================================
 mapScreen\:OnUserNoteDeleteButtonClick 
-===================================
+======================================
 
 .. description
     

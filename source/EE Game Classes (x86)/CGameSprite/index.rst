@@ -1011,7 +1011,7 @@ Constructors
 .. _CGameSpriteCGameSprite:
 
 CGameSprite\:\:CGameSprite
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CGameSprite`` object
 
@@ -1027,7 +1027,7 @@ Constructs a ``CGameSprite`` object
 ----
 
 CGameSprite\:\:CGameSprite
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CGameSprite`` object
 
@@ -1068,7 +1068,7 @@ Constructs a ``CGameSprite`` object
 .. _CGameSprite~CGameSprite:
 
 CGameSprite\:\:~CGameSprite
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Destroys the ``CGameSprite`` object
 
@@ -4597,7 +4597,7 @@ Returns
 .. _CGameSpriteCombineActiveInactiveProficiency:
 
 CGameSprite\:\:CombineActiveInactiveProficiency
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4626,7 +4626,7 @@ Returns
 .. _CGameSpriteCombineAllActiveInactiveProficiencies:
 
 CGameSprite\:\:CombineAllActiveInactiveProficiencies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -10870,7 +10870,7 @@ Returns
 .. _CGameSpritePostMoveCharacterFromOverflowToParty:
 
 CGameSprite\:\:PostMoveCharacterFromOverflowToParty
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -14541,7 +14541,7 @@ Returns
 .. _CGameSpriteSwapAllActiveInactiveProficiencies:
 
 CGameSprite\:\:SwapAllActiveInactiveProficiencies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 

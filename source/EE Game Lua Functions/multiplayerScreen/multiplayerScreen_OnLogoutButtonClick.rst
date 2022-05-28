@@ -1,8 +1,8 @@
 .. _multiplayerScreen_OnLogoutButtonClick:
 
-===================================
+======================================
 multiplayerScreen\:OnLogoutButtonClick 
-===================================
+======================================
 
 .. description
     

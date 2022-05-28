@@ -1,8 +1,8 @@
 .. _createCharScreen_OnGenderSelectButtonClick:
 
-===================================
+===========================================
 createCharScreen\:OnGenderSelectButtonClick 
-===================================
+===========================================
 
 .. description
     

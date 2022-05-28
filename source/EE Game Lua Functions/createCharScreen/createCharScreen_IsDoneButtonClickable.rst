@@ -1,8 +1,8 @@
 .. _createCharScreen_IsDoneButtonClickable:
 
-===================================
+=======================================
 createCharScreen\:IsDoneButtonClickable 
-===================================
+=======================================
 
 .. description
     

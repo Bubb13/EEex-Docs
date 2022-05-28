@@ -1,8 +1,8 @@
 .. _characterScreen_OnReformPartyButtonClick:
 
-===================================
+=========================================
 characterScreen\:OnReformPartyButtonClick 
-===================================
+=========================================
 
 .. description
     

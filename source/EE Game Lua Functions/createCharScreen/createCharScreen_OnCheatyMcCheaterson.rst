@@ -1,8 +1,8 @@
 .. _createCharScreen_OnCheatyMcCheaterson:
 
-===================================
+======================================
 createCharScreen\:OnCheatyMcCheaterson 
-===================================
+======================================
 
 .. description
     

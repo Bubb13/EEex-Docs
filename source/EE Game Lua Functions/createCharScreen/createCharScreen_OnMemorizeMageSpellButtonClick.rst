@@ -1,8 +1,8 @@
 .. _createCharScreen_OnMemorizeMageSpellButtonClick:
 
-===================================
+================================================
 createCharScreen\:OnMemorizeMageSpellButtonClick 
-===================================
+================================================
 
 .. description
     

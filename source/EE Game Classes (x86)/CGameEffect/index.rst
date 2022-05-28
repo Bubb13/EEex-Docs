@@ -54,7 +54,7 @@ Constructors
 .. _CGameEffectCGameEffect:
 
 CGameEffect\:\:CGameEffect
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CGameEffect`` object
 

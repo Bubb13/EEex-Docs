@@ -113,7 +113,7 @@ Returns ``int``
 .. _CImmunitiesSpellLevelDecrementingOnList:
 
 CImmunitiesSpellLevelDecrementing\:\:OnList
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 

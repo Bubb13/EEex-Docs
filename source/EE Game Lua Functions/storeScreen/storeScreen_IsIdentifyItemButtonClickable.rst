@@ -1,8 +1,8 @@
 .. _storeScreen_IsIdentifyItemButtonClickable:
 
-===================================
+==========================================
 storeScreen\:IsIdentifyItemButtonClickable 
-===================================
+==========================================
 
 .. description
     

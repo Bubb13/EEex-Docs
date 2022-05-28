@@ -1,8 +1,8 @@
 .. _connectionScreen_SelectServiceProvider:
 
-===================================
+=======================================
 connectionScreen\:SelectServiceProvider 
-===================================
+=======================================
 
 .. description
     

@@ -1,8 +1,8 @@
 .. _characterScreen_IsAppearanceButtonClickable:
 
-===================================
+============================================
 characterScreen\:IsAppearanceButtonClickable 
-===================================
+============================================
 
 .. description
     

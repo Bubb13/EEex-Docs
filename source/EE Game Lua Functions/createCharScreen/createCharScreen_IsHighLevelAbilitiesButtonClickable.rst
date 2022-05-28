@@ -1,8 +1,8 @@
 .. _createCharScreen_IsHighLevelAbilitiesButtonClickable:
 
-===================================
+=====================================================
 createCharScreen\:IsHighLevelAbilitiesButtonClickable 
-===================================
+=====================================================
 
 .. description
     

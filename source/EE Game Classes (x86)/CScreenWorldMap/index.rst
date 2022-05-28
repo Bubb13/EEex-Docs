@@ -1269,7 +1269,7 @@ Returns
 .. _CScreenWorldMapIsForcedRandomEncounterActive:
 
 CScreenWorldMap\:\:IsForcedRandomEncounterActive
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 

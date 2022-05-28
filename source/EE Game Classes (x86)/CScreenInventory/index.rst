@@ -193,7 +193,7 @@ Constructors
 .. _CScreenInventoryCScreenInventory:
 
 CScreenInventory\:\:CScreenInventory
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Constructs a ``CScreenInventory`` object
 
@@ -595,7 +595,7 @@ Returns
 .. _CScreenInventoryClearPortraitHighlighting:
 
 CScreenInventory\:\:ClearPortraitHighlighting
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 

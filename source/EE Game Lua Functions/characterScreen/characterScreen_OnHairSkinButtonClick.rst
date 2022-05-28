@@ -1,8 +1,8 @@
 .. _characterScreen_OnHairSkinButtonClick:
 
-===================================
+======================================
 characterScreen\:OnHairSkinButtonClick 
-===================================
+======================================
 
 .. description
     

@@ -1,8 +1,8 @@
 .. _multiplayerScreen:
 
-=====================
+===========================
 multiplayerScreen Functions
-=====================
+===========================
 
 .. toctree::
    :maxdepth: 1

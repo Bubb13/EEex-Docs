@@ -1,8 +1,8 @@
 .. _multiplayerScreen_OnKickPlayerButtonClick:
 
-===================================
+==========================================
 multiplayerScreen\:OnKickPlayerButtonClick 
-===================================
+==========================================
 
 .. description
     

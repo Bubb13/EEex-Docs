@@ -1,8 +1,8 @@
 .. _createCharScreen_OnPrerollCharacterPick:
 
-===================================
+========================================
 createCharScreen\:OnPrerollCharacterPick 
-===================================
+========================================
 
 .. description
     
