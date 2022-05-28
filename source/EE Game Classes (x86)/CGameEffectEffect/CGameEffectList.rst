@@ -624,7 +624,7 @@ CGameEffectList\:\:RemoveOneOfType
 * :ref:`CGameSprite<CGameSprite>`\* *pSprite* - pointer to game sprite object
 * ``unsigned short`` *effectId* - 
 * ``POSITION``\* *posLeave* - 
-* ``long *effectAmount* - 
+* ``long`` *effectAmount* - 
 * :ref:`CResRef<CResRef>` *res* - 
 
 **Return Value**

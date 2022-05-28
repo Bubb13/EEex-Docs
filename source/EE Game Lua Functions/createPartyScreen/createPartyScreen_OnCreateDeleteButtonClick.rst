@@ -23,7 +23,7 @@ None
 
 The selected character, that has been previously created, is deleted when this button is clicked
 
-Calls the :ref:`tolua_BaldurLUA_CScreenCreateParty_OnCreateDeleteButtonClick00<tolua_BaldurLUA_CScreenCreateParty_OnCreateDeleteButtonClick00>` function which calls the :ref:`CScreenCreateParty\:\:OnCreateDeleteButtonClick<CScreenCreatePartyOnCreateDeleteButtonClick>` method
+Calls the tolua_BaldurLUA_CScreenCreateParty_OnCreateDeleteButtonClick00 function which calls the :ref:`CScreenCreateParty\:\:OnCreateDeleteButtonClick<CScreenCreatePartyOnCreateDeleteButtonClick>` method
 
 **Example**
 

@@ -13,7 +13,7 @@ Sets the bit value to 1 as specified by *toSetIndex* in *original* value
 **Parameters**
 
 * **original** - original bits value
-* **toSetIndex* - bit index into the value to set to 1
+* **toSetIndex** - bit index into the value to set to 1
 
 **Return**
 

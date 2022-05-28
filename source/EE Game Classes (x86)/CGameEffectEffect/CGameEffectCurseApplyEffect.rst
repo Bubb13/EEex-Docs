@@ -1,8 +1,8 @@
 .. _CGameEffectCurseApplyEffect Class:
 
-==========================
+=================================
 CGameEffectCurseApplyEffect Class
-==========================
+=================================
 
 .. toctree::
    :maxdepth: 1

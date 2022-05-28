@@ -27,7 +27,7 @@ Assigns the strings loaded to UI elements.
 
 Loads chapter backgrounds, starts music and the scrolling text (? - to be confirmed)
 
-Calls the :ref:`tolua_BaldurLUA_CScreenChapter_StartTextScreen00<tolua_BaldurLUA_CScreenChapter_StartTextScreen00>` function which calls the :ref:`CScreenChapter\:\StartTextScreen<CScreenChapterStartTextScreen>` method
+Calls the tolua_BaldurLUA_CScreenChapter_StartTextScreen00 function which calls the :ref:`CScreenChapter\:\StartTextScreen<CScreenChapterStartTextScreen>` method
 
 **Example**
 

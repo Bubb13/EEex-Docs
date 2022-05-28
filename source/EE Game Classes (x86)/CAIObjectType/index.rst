@@ -217,7 +217,7 @@ Gets active and inactive classes
 **Parameters**
 
 * ``unsigned char``\& *nActiveClass* - 
-* ``unsigned char``& *nInactiveClass* - 
+* ``unsigned char``\& *nInactiveClass* - 
 
 **Remarks**
 

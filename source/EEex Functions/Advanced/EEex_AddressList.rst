@@ -18,7 +18,7 @@ None
 
 **Return**
 
-Return a lua table of function and or variable names and global addresses from the pattern database entries. For details on the pattern database used in the EEex loader please see `this wiki page <https://github.com/mrfearless/EEexLoader/wiki/EEex.db-Pattern-Database>`_
+Return a lua table of function and or variable names and global addresses from the pattern database entries. For details on the pattern database used in the EEex loader please see `this wiki page <https://github.com/mrfearless/EEexLoader/wiki/EEex.db-Pattern-Database>`__
 
 **Notes**
 

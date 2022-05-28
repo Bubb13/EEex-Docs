@@ -17,7 +17,7 @@ None
 
 **Notes**
 
-This doesn’t remove the fog of war; if a creature is out of your field of vision it will still remain hidden
+This doesn't remove the fog of war; if a creature is out of your field of vision it will still remain hidden
 
 **Example**
 

@@ -457,7 +457,7 @@ Returns a ``boolean`` value: ``true`` if cloud saves are supported on the platfo
 
 **Notes**
 
-Calls :ref:`CPlatform\:\:IsPlatformServiceConnected<CPlatformIsPlatformServiceConnected>` and reads :ref:`CBaldurChitin<CBaldurChitin>`.m_cChitin => :ref:`CChitin<CChitin>`.cSteam => :ref:`CSteam<CSteam>`.m_isSteamConnected
+Calls CPlatform\:\:IsPlatformServiceConnected and reads :ref:`CBaldurChitin<CBaldurChitin>`.m_cChitin => :ref:`CChitin<CChitin>`.cSteam => :ref:`CSteam<CSteam>`.m_isSteamConnected
 
 **Example**
 
@@ -531,7 +531,7 @@ Set the value of an option in a panel
 
 **Notes**
 
-Calls :ref:`CGameOptions\:\:SetOption<CGameOptionsSetOption>`
+Calls CGameOptions\:\:SetOption
 
 **Example**
 
@@ -783,7 +783,7 @@ None
 
 **Notes**
 
-Calls :ref:`uiRemoveFromTemplate<uiRemoveFromTemplate>` function, defined as:
+Calls uiRemoveFromTemplate function, defined as:
 
 ::
 
@@ -1144,7 +1144,7 @@ Set the keyboard focus to the specified text edit contol, so that typing will oc
 
 **Notes**
 
-Calls the :ref:`uiFocusTextEdit<uiFocusTextEdit>` function
+Calls the uiFocusTextEdit function
 
 **Example**
 
@@ -2197,7 +2197,7 @@ Special, see notes
 
 Updates an existing multidimensional array named ``mp_sessions`` defined in the EE game executable and an existing lua variable ``passwordReq``.
 
-``passwordReq`` is defined  in ``UI.MENU``as:
+``passwordReq`` is defined in ``UI.MENU`` as:
 
 ::
 
@@ -2531,7 +2531,7 @@ Pushes the ``transition`` variable value to the lua stack
 
 ``transition`` variable located at offset ``0x00986720`` in BG2EE
 
-``transition`` variable value set in :ref:`Infinity_TransitionMenu<Infinity_TransitionMenu>`, :ref:`drawTop<drawTop>`, and :ref:`eventMenu<eventMenu>` functions
+``transition`` variable value set in :ref:`Infinity_TransitionMenu<Infinity_TransitionMenu>`, drawTop, and eventMenu functions
 
 **Example**
 
@@ -2590,7 +2590,7 @@ Returns an ``integer`` value representing ``1`` true, or ``0`` false otherwise
 
 **Notes**
 
-Calls the :ref:`CPlatform\:\:IsPlatformServiceConnected<CPlatformIsPlatformServiceConnected>` function
+Calls the CPlatform\:\:IsPlatformServiceConnected function
 
 Reads :ref:`CChitin<CChitin>`.cSteam => :ref:`CSteam<CSteam>`.m_isSteamConnected
 

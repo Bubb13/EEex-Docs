@@ -25,7 +25,7 @@ Exits the chapter text screen when this button is clicked
 
 The lua ``action`` occurs if the button is enabled (clickable) and is clicked
 
-Calls the :ref:`tolua_BaldurLUA_CScreenChapter_OnDoneButtonClick00<tolua_BaldurLUA_CScreenChapter_OnDoneButtonClick00>` function which calls the :ref:`CScreenChapter\:\:OnDoneButtonClick<CScreenChapterOnDoneButtonClick>` method
+Calls the tolua_BaldurLUA_CScreenChapter_OnDoneButtonClick00 function which calls the :ref:`CScreenChapter\:\:OnDoneButtonClick<CScreenChapterOnDoneButtonClick>` method
 
 **Example**
 

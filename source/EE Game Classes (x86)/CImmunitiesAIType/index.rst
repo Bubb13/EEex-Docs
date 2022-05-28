@@ -121,8 +121,8 @@ Returns :ref:`CImmunitiesAIType<CImmunitiesAIType>`\&
 
 .. _CImmunitiesAITypeOpEquEqu:
 
-:ref:`CImmunitiesAIType\:\:operator==
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CImmunitiesAIType\:\:operator==
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 

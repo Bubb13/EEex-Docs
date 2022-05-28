@@ -1237,7 +1237,7 @@ Event action when a multiplayer game session opens
 .. _CBaldurChitinOnMultiplayerSessionToClose:
 
 CBaldurChitin\:\:OnMultiplayerSessionToClose
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Event action when a multiplayer game session is about to close
 

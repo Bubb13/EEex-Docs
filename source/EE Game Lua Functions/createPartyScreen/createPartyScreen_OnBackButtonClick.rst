@@ -23,7 +23,7 @@ None
 
 Returns to previous menu when the back button is clicked
 
-Calls the :ref:`tolua_BaldurLUA_CScreenCreateParty_OnBackButtonClick00<tolua_BaldurLUA_CScreenCreateParty_OnBackButtonClick00>` function which calls the :ref:`CScreenCreateParty\:\:OnBackButtonClick<CScreenCreatePartyOnBackButtonClick>` method
+Calls the tolua_BaldurLUA_CScreenCreateParty_OnBackButtonClick00 function which calls the :ref:`CScreenCreateParty\:\:OnBackButtonClick<CScreenCreatePartyOnBackButtonClick>` method
 
 **Example**
 

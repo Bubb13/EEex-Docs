@@ -1,8 +1,8 @@
 .. _CGameEffectColorGlowSolid Class:
 
-==========================
+===============================
 CGameEffectColorGlowSolid Class
-==========================
+===============================
 
 .. toctree::
    :maxdepth: 1

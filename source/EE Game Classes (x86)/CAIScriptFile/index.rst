@@ -456,7 +456,7 @@ Decompile a response set
 **Parameters**
 
 * :ref:`CAIResponseSet<CAIResponseSet>`\& *resSet* - address of response set to decompile
-* :ref:`CGameObject<CGameObject>`\* *pAIObj* -*pointer to game object
+* :ref:`CGameObject<CGameObject>`\* *pAIObj* - pointer to game object
 
 **Remarks**
 
@@ -580,6 +580,7 @@ CAIScriptFile\:\:GetIdLine
 
 * :ref:`CAIIdList<CAIIdList>`\& *ids* - 
 * :ref:`CString<CString>`\& *name* - 
+
 **Return Value**
 
 Returns a :ref:`CString<CString>`

@@ -27,7 +27,7 @@ Function
 EEex, when installed, directly modifies the game's executable in order to insert a loader. This loader is used to alter the game's code on startup; the modifications that are made depend on the version of EEex installed, and any installed mods that make use of EEex's capabilities. For more in depth information about what the EEex loader does and how it does it, see: `EEexLoader Technical Details <https://github.com/mrfearless/EEexLoader/wiki/Technical-Details>`_
 
 
-.. _Installation:
+.. _Overview_Installation:
 
 Installation
 ------------

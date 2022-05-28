@@ -25,7 +25,7 @@ Pushes onto lua stack a lua boolean ``true`` if button is clickable or a lua boo
 
 The lua ``action`` occurs if the button is enabled (clickable) and is clicked
 
-Calls the :ref:`tolua_BaldurLUA_CScreenChapter_IsReplayButtonClickable00<tolua_BaldurLUA_CScreenChapter_IsReplayButtonClickable00>` function which calls the :ref:`CScreenChapter\:\:IsReplayButtonClickable<CScreenChapterIsReplayButtonClickable>` method
+Calls the tolua_BaldurLUA_CScreenChapter_IsReplayButtonClickable00 function which calls the :ref:`CScreenChapter\:\:IsReplayButtonClickable<CScreenChapterIsReplayButtonClickable>` method
 
 **Example**
 

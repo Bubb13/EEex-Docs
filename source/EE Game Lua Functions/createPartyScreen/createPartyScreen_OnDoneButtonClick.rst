@@ -23,7 +23,7 @@ None
 
 Finishes the create party process
 
-Calls the :ref:`tolua_BaldurLUA_CScreenCreateParty_OnDoneButtonClick00<tolua_BaldurLUA_CScreenCreateParty_OnDoneButtonClick00>` function  which calls the :ref:`CScreenCreateParty\:\:OnDoneButtonClick<CScreenCreatePartyOnDoneButtonClick>` method
+Calls the tolua_BaldurLUA_CScreenCreateParty_OnDoneButtonClick00 function  which calls the :ref:`CScreenCreateParty\:\:OnDoneButtonClick<CScreenCreatePartyOnDoneButtonClick>` method
 
 **Example**
 

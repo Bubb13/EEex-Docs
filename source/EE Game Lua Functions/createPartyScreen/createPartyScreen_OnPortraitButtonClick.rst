@@ -25,7 +25,7 @@ Selects the character for the portrait that is clicked
 
 Lua arrays use 1 based index when accessing arrays
 
-Calls the :ref:`tolua_BaldurLUA_CScreenCreateParty_OnPortraitButtonClick00<tolua_BaldurLUA_CScreenCreateParty_OnPortraitButtonClick00>` function which calls the :ref:`CScreenCreateParty\:\:OnPortraitButtonClick<CScreenCreatePartyOnPortraitButtonClick>` method
+Calls the tolua_BaldurLUA_CScreenCreateParty_OnPortraitButtonClick00 function which calls the :ref:`CScreenCreateParty\:\:OnPortraitButtonClick<CScreenCreatePartyOnPortraitButtonClick>` method
 
 **Example**
 

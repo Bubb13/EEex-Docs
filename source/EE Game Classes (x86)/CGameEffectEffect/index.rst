@@ -481,7 +481,6 @@ Specific CGameEffect\<Effect\> Classes
    CGameEffectHoldCreatureSpell
    CGameEffectImmunityLevelDecrement
    CGameEffectImmunityToEffect
-   CGameEffectLevelDrain
    CGameEffectList
    CGameEffectMakeUnselectable
    CGameEffectMaze

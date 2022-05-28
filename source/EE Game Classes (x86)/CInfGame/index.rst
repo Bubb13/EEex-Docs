@@ -1038,7 +1038,7 @@ CInfGame\:\:ApplyVolumeSliders
 
 .. _CInfGameBuildGameSlot:
 
-`CInfGame\:\:BuildGameSlot
+`CInfGame\:\:BuildGameSlot`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -3905,7 +3905,7 @@ CInfGame\:\:RemoveDisposableItem
 
 **Parameters**
 
-* :ref:`CItem<CItem>`\* *pItem - 
+* :ref:`CItem<CItem>`\* *pItem* - 
 
 **Remarks**
 

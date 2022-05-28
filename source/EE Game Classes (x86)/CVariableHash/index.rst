@@ -221,7 +221,7 @@ Hash a token or variable name
 
 **Return Value**
 
-Returns ``int`
+Returns ``int``
 
 **Remarks**
 

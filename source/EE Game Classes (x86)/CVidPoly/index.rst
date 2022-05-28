@@ -430,6 +430,7 @@ CVidPoly\:\:DrawHLineShadedMirrored32
       unsigned long dwColor,
       CRect& rSurface, 
       CPoint& ptRef);
+
 **Parameters**
 
 * ``void``\* *pSurface* - 

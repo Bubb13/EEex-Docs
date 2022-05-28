@@ -7,9 +7,6 @@ Utility Functions
 .. toctree::
    :maxdepth: 1
    :hidden:
-   :glob:
-
-   C_*
 
 .. note:: Utility functions are located in the ``UTIL.LUA`` file. 
 

@@ -18,7 +18,7 @@ CA Structures
 * :ref:`CAIObjectType<CAIObjectType>`
 * :ref:`CAIPlayerScript<CAIPlayerScript>`
 * :ref:`CAIResponse<CAIResponse>`
-* :ref:`CAIResponseSet<CAIResponseSet>`
+* :ref:`CAIResponseSet<CAIResponseSet_Struct>`
 * :ref:`CAIScript<CAIScript>`
 * :ref:`CAIScriptFile<CAIScriptFile>`
 * :ref:`CAITrigger<CAITrigger>`
@@ -117,13 +117,13 @@ Used by the :ref:`CAICondition Class<CAICondition Class>`
 CAIConditionResponse
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+------------+----------+----------------------------------------+-------------------------------+
-| **Offset** | **Size** | **Type**                               | **Field**                     |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 28       | :ref:`CAICondition<CAICondition>`      | m_condition                   |
-+------------+----------+----------------------------------------+-------------------------------+
-| 0x1C       | 32       | :ref:`CAIResponseSet<CAIResponseSet>`  | m_responseSet                 |
-+------------+----------+----------------------------------------+-------------------------------+
++------------+----------+-----------------------------------------------+------------------------+
+| **Offset** | **Size** | **Type**                                      | **Field**              |
++------------+----------+-----------------------------------------------+------------------------+
+| 0x00       | 28       | :ref:`CAICondition<CAICondition>`             | m_condition            |
++------------+----------+-----------------------------------------------+------------------------+
+| 0x1C       | 32       | :ref:`CAIResponseSet<CAIResponseSet_Struct>`  | m_responseSet          |
++------------+----------+-----------------------------------------------+------------------------+
 
 
 ----
@@ -294,7 +294,7 @@ Used by the :ref:`CAIResponse Class<CAIResponse Class>`
 
 ----
 
-.. _CAIResponseSet:
+.. _CAIResponseSet_Struct:
 
 CAIResponseSet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -346,7 +346,7 @@ Used by the :ref:`CAIScriptFile Class<CAIScriptFile Class>`
 +------------+----------+-------------------------------------------------+-------------------------------+
 | 0x08       | 4        | :ref:`CAIScript<CAIScript>`\*                   | m_curScript                   |
 +------------+----------+-------------------------------------------------+-------------------------------+
-| 0x0C       | 4        | :ref:`CAIResponseSet<CAIResponseSet>`\*         | m_curResponseSet              |
+| 0x0C       | 4        | :ref:`CAIResponseSet<CAIResponseSet_Struct>`\*  | m_curResponseSet              |
 +------------+----------+-------------------------------------------------+-------------------------------+
 | 0x10       | 4        | :ref:`CAICondition<CAICondition>`\*             | m_curCondition                |
 +------------+----------+-------------------------------------------------+-------------------------------+

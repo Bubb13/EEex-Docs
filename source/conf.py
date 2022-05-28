@@ -82,7 +82,10 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build*', 'Thumbs.db', '.DS_Store', 'README.md', '.git', '*.bat']
+exclude_patterns = ['_build*', 'Thumbs.db', '.DS_Store', 'README.md', '.git', '*.bat',
+    'Community/Contributing/EE_Class_Template.rst',
+    'Community/Contributing/EEex_Function_Template.rst',
+]
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.

@@ -2251,7 +2251,7 @@ Returns ``short``
 
 .. _CGameAIBaseGetNextAction:
 
-`CGameAIBase\:\:GetNextAction
+CGameAIBase\:\:GetNextAction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 

@@ -358,7 +358,7 @@ Get the campaign
 
 **Return Value**
 
-Returns an ``int` value representing campaign id
+Returns an ``int`` value representing campaign id
 
 **Remarks**
 
@@ -404,7 +404,7 @@ Returns the engine state
 
 **Return Value**
 
-Returns an ``int` value representing the engine state
+Returns an ``int`` value representing the engine state
 
 **Remarks**
 
@@ -526,7 +526,7 @@ Optionally plays intro movie if *playIntro* parameter is ``true``. Loads 2da fil
 
 Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value under the ``Program Options`` section.
 
-:ref:`CScreenStart\:\:OnCampaignButtonClick<CScreenStartOnCampaignButtonClick>` is called from :ref:`CScreenStart\:\:TimerAsynchronousUpdate<CScreenStartTimerAsynchronousUpdate>` and :ref:`tolua_BaldurLUA_CScreenStart_OnCampaignButtonClick00<tolua_BaldurLUA_CScreenStart_OnCampaignButtonClick00>`
+:ref:`CScreenStart\:\:OnCampaignButtonClick<CScreenStartOnCampaignButtonClick>` is called from :ref:`CScreenStart\:\:TimerAsynchronousUpdate<CScreenStartTimerAsynchronousUpdate>` and tolua_BaldurLUA_CScreenStart_OnCampaignButtonClick00
 
 
 
@@ -781,7 +781,7 @@ Sets start area based on contents of ``STARTARE.2DA`` - using the ``START_AREA``
 
 Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value under the ``Program Options`` section.
 
-:ref:`CScreenStart\:\:OnSoAButtonClick<CScreenStartOnSoAButtonClick>` is called from :ref:`CScreenStart\:\:TimerAsynchronousUpdate<CScreenStartTimerAsynchronousUpdate>` and :ref:`tolua_BaldurLUA_CScreenStart_OnSoAButtonClick00<tolua_BaldurLUA_CScreenStart_OnSoAButtonClick00>`
+:ref:`CScreenStart\:\:OnSoAButtonClick<CScreenStartOnSoAButtonClick>` is called from :ref:`CScreenStart\:\:TimerAsynchronousUpdate<CScreenStartTimerAsynchronousUpdate>` and tolua_BaldurLUA_CScreenStart_OnSoAButtonClick00
 
 
 
@@ -810,7 +810,7 @@ Sets start area based on contents of ``STARTBP.2DA`` - using the START_AREA valu
 
 Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value under the ``Program Options`` section.
 
-:ref:`CScreenStart\:\:OnTBPButtonClick<CScreenStartOnTBPButtonClick>` is called from :ref:`CScreenStart\:\:TimerAsynchronousUpdate<CScreenStartTimerAsynchronousUpdate>` and :ref:`tolua_BaldurLUA_CScreenStart_OnTBPButtonClick00<tolua_BaldurLUA_CScreenStart_OnTBPButtonClick00>`
+:ref:`CScreenStart\:\:OnTBPButtonClick<CScreenStartOnTBPButtonClick>` is called from :ref:`CScreenStart\:\:TimerAsynchronousUpdate<CScreenStartTimerAsynchronousUpdate>` and tolua_BaldurLUA_CScreenStart_OnTBPButtonClick00
 
 
 
@@ -839,7 +839,7 @@ Sets start area based on contents of ``STARTARE.2DA`` - using the ``START_AREA_M
 
 Writes to Baldur.lua the active campaign id, the ``Active Campaign`` key value under the ``Program Options`` section.
 
-:ref:`CScreenStart\:\:OnToBButtonClick<CScreenStartOnToBButtonClick>` is called from :ref:`tolua_BaldurLUA_CScreenStart_OnToBButtonClick00<tolua_BaldurLUA_CScreenStart_OnToBButtonClick00>`
+:ref:`CScreenStart\:\:OnToBButtonClick<CScreenStartOnToBButtonClick>` is called from tolua_BaldurLUA_CScreenStart_OnToBButtonClick00
 
 
 
@@ -862,7 +862,7 @@ Sets start area based on contents of ``STARTARE.2DA`` - using the ``START_AREA_T
 
 Calls :ref:`CScreenStart\:\:OnNewGameButtonClick<CScreenStartOnNewGameButtonClick>` to start a new game begining with the tutorial.
 
-:ref:`CScreenStart\:\:OnTutorialButtonClick<CScreenStartOnTutorialButtonClick>` is called from :ref:`tolua_BaldurLUA_CScreenStart_OnTutorialButtonClick00<tolua_BaldurLUA_CScreenStart_OnTutorialButtonClick00>`
+:ref:`CScreenStart\:\:OnTutorialButtonClick<CScreenStartOnTutorialButtonClick>` is called from tolua_BaldurLUA_CScreenStart_OnTutorialButtonClick00
 
 
 

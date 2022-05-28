@@ -203,7 +203,7 @@ Locates and reads the sound for the string reference (StrRef) specified in *strI
 **Parameters**
 
 * ``unsigned long`` *strId* - string reference id to locate
-* :ref:`STR_RES<STR_RES>`\& *strRes - store the sound ResRef fetched, in the structure address
+* :ref:`STR_RES<STR_RES>`\& *strRes* - store the sound ResRef fetched, in the structure address
 
 **Return Value**
 

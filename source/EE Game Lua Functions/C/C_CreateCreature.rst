@@ -19,7 +19,7 @@ Creates the creature specified
 
 Creature resource reference (ResRef) used in *CreatureName* must be 8 characters or less and must be valid.
 
-This spawns a creature to the center of the screen (or nearest valid point). If you’re spawning a creature you know will be hostile, you may want to pause the game before entering this command for the safety of your party.
+This spawns a creature to the center of the screen (or nearest valid point). If you're spawning a creature you know will be hostile, you may want to pause the game before entering this command for the safety of your party.
 
 **Example**
 

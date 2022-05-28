@@ -622,7 +622,7 @@ Add and assign
 
 **Return Value**
 
-Returns :ref:`CResRef<CResRef>
+Returns :ref:`CResRef<CResRef>`
 
 **Remarks**
 

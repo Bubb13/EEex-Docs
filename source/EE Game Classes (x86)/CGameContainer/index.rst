@@ -875,7 +875,7 @@ CGameContainer\:\:Render
 **Parameters**
 
 * :ref:`CGameArea<CGameArea>`\* *pArea* - pointer to area
-* :ref:`CVidMode<CVidMode>\* *pVidMode* - pointer to vid mode
+* :ref:`CVidMode<CVidMode>`\* *pVidMode* - pointer to vid mode
 
 **Remarks**
 

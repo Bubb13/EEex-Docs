@@ -7,10 +7,6 @@ journalScreen Functions
 .. toctree::
    :maxdepth: 1
    :hidden:
-   :glob:
-
-   journalScreen_*
-
 
 ::
    

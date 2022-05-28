@@ -55,7 +55,7 @@ CG Structures
 * :ref:`CGameEffectAlignmentChange<CGameEffectAlignmentChange>`
 * :ref:`CGameEffectAlignmentReversal<CGameEffectAlignmentReversal>`
 * :ref:`CGameEffectAnimationChange<CGameEffectAnimationChange>`
-* :ref:`CGameEffectApplyEffect<CGameEffectApplyEffect>`
+* :ref:`CGameEffectApplyEffect<CGameEffectApplyEffect_Struct>`
 * :ref:`CGameEffectApplyEffectEquipItem<CGameEffectApplyEffectEquipItem>`
 * :ref:`CGameEffectApplyEffectEquipItemType<CGameEffectApplyEffectEquipItemType>`
 * :ref:`CGameEffectApplySpell<CGameEffectApplySpell>`
@@ -147,7 +147,7 @@ CG Structures
 * :ref:`CGameEffectDispelSchoolOne<CGameEffectDispelSchoolOne>`
 * :ref:`CGameEffectDispelSecondaryType<CGameEffectDispelSecondaryType>`
 * :ref:`CGameEffectDispelSecondaryTypeOne<CGameEffectDispelSecondaryTypeOne>`
-* :ref:`CGameEffectDisplayString<CGameEffectDisplayString>`
+* :ref:`CGameEffectDisplayString<CGameEffectDisplayString_Struct>`
 * :ref:`CGameEffectDither<CGameEffectDither>`
 * :ref:`CGameEffectDoNotDraw<CGameEffectDoNotDraw>`
 * :ref:`CGameEffectDrainChargeFromAllItems<CGameEffectDrainChargeFromAllItems>`
@@ -254,7 +254,7 @@ CG Structures
 * :ref:`CGameEffectPetrification<CGameEffectPetrification>`
 * :ref:`CGameEffectPhysicalSpeed<CGameEffectPhysicalSpeed>`
 * :ref:`CGameEffectPlayMovie<CGameEffectPlayMovie>`
-* :ref:`CGameEffectPlaySound<CGameEffectPlaySound>`
+* :ref:`CGameEffectPlaySound<CGameEffectPlaySound_Struct>`
 * :ref:`CGameEffectPoison<CGameEffectPoison>`
 * :ref:`CGameEffectPolymorph<CGameEffectPolymorph>`
 * :ref:`CGameEffectPortrait<CGameEffectPortrait>`
@@ -424,7 +424,7 @@ CG Structures
 * :ref:`CGameSpriteEquipment<CGameSpriteEquipment>`
 * :ref:`CGameSpriteLastUpdate<CGameSpriteLastUpdate>`
 * :ref:`CGameSprite\:\:GroundItem<CGameSpriteGroundItem>`
-* :ref:`CGameSprite\:\:RenderHealthBar<CGameSpriteRenderHealthBar>`
+* :ref:`CGameSprite\:\:RenderHealthBar<CGameSpriteRenderHealthBar_Struct>`
 * :ref:`CGameStatic<CGameStatic>`
 * :ref:`CGameStatsRes<CGameStatsRes>`
 * :ref:`CGameStatsSprite<CGameStatsSprite>`
@@ -2835,7 +2835,7 @@ CGameEffectAnimationChange
 
 ----
 
-.. _CGameEffectApplyEffect:
+.. _CGameEffectApplyEffect_Struct:
 
 CGameEffectApplyEffect
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -4202,7 +4202,7 @@ CGameEffectDispelSecondaryTypeOne
 
 ----
 
-.. _CGameEffectDisplayString:
+.. _CGameEffectDisplayString_Struct:
 
 CGameEffectDisplayString
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -5700,7 +5700,7 @@ CGameEffectPlayMovie
 
 ----
 
-.. _CGameEffectPlaySound:
+.. _CGameEffectPlaySound_Struct:
 
 CGameEffectPlaySound
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -9435,7 +9435,7 @@ CGameSprite\:\:GroundItem
 
 ----
 
-.. _CGameSpriteRenderHealthBar:
+.. _CGameSpriteRenderHealthBar_Struct:
 
 CGameSprite\:\:RenderHealthBar
 ---------------------------------
@@ -9443,7 +9443,7 @@ CGameSprite\:\:RenderHealthBar
 +------------+----------+----------------------------------------+-------------------------------+
 | **Offset** | **Size** | **Type**                               | **Field**                     |
 +------------+----------+----------------------------------------+-------------------------------+
-| 0x00       | 8        | :ref:`SDL_Point<SDL_Point>`            | pt                            |
+| 0x00       | 8        | SDL_Point                              | pt                            |
 +------------+----------+----------------------------------------+-------------------------------+
 | 0x08       | 4        | unsigned long                          | c                             |
 +------------+----------+----------------------------------------+-------------------------------+

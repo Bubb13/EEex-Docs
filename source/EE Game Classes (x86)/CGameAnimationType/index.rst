@@ -1324,7 +1324,7 @@ Returns
 .. _CGameAnimationTypeGetCurrentSequenceAndFrame:
 
 CGameAnimationType\:\:GetCurrentSequenceAndFrame
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
