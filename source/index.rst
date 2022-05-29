@@ -6,8 +6,6 @@
 Welcome to EEex's documentation!
 ================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 1
 
@@ -19,12 +17,3 @@ Contents:
    EE Game Classes (x86)/index
    EE Game Functions (x86)/index
    Community/index
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
