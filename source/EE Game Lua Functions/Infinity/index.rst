@@ -904,7 +904,7 @@ None
 
 Searches through all UI edit controls looking for one that has a string containing *oldText* and replaces it with the *newText* string.
 
-Reads :ref:`uiItem<uiItem>`.edit => :ref:`uiItem::edit<uiItemedit>`.var to compare against *oldText*, if it matches then it is replaced with *newText*
+Reads :ref:`uiItem<uiItem>`.edit => :ref:`uiItem::edit<uiItem::<unnamed-type-edit>>`.var to compare against *oldText*, if it matches then it is replaced with *newText*
 
 Not tested or verified
 
@@ -978,19 +978,19 @@ Searches through all UI controls from the main stack menu and linked list of UI 
 
 * Reads :ref:`uiMenu<uiMenu>`.items for an array of pointers. Each pointer in the array is a :ref:`uiItem<uiItem>` structure. 
 
-* Reads offset ``0x98``: :ref:`uiItem<uiItem>`.bam => :ref:`uiItem\:\:bam<uiItembam>`.resref
+* Reads offset ``0x98``: :ref:`uiItem<uiItem>`.bam => :ref:`uiItem\:\:bam<uiItem::<unnamed-type-bam>>`.resref
 
-* If the :ref:`uiItem\:\:bam<uiItembam>`.resref field is ``0`` then the process looks for next uiItem in the linked list to process: reads :ref:`uiItem<uiItem>`.next field (offset ``0x22C``) and repeats the same step above by reading the :ref:`uiItem\:\:bam<uiItembam>`.resref field. If the :ref:`uiItem<uiItem>`.next field is ``0`` then the next pointer in the array of pointers from :ref:`uiMenu<uiMenu>`.items is read and repeats the same step above by reading the :ref:`uiItem\:\:bam<uiItembam>`.resref field.
+* If the :ref:`uiItem\:\:bam<uiItem::<unnamed-type-bam>>`.resref field is ``0`` then the process looks for next uiItem in the linked list to process: reads :ref:`uiItem<uiItem>`.next field (offset ``0x22C``) and repeats the same step above by reading the :ref:`uiItem\:\:bam<uiItem::<unnamed-type-bam>>`.resref field. If the :ref:`uiItem<uiItem>`.next field is ``0`` then the next pointer in the array of pointers from :ref:`uiMenu<uiMenu>`.items is read and repeats the same step above by reading the :ref:`uiItem\:\:bam<uiItem::<unnamed-type-bam>>`.resref field.
 
-* If the :ref:`uiItem\:\:bam<uiItembam>`.resref field is not ``0`` then it converts the field value (a :ref:`uiVariant<uiVariant>` type field) to a string. This string is a ResRef. This is then used in comparison with the *BamResRef* ResRef  string parameter.
+* If the :ref:`uiItem\:\:bam<uiItem::<unnamed-type-bam>>`.resref field is not ``0`` then it converts the field value (a :ref:`uiVariant<uiVariant>` type field) to a string. This string is a ResRef. This is then used in comparison with the *BamResRef* ResRef  string parameter.
 
 * If the ResRef strings compared match, and the *Sequence* parameter is **not** specified, then the pointer the :ref:`uiItem<uiItem>` structure of the currently matched UI control, is pushed onto the lua stack and the function exits. 
 
-* If the ResRef strings compared match, and the *Sequence* parameter is specified and matches the value in the :ref:`uiItem::bam<uiItembam>`.sequence field, then the pointer to the :ref:`uiItem<uiItem>` structure of the currently matched UI control, is pushed onto the lua stack and the function exits. 
+* If the ResRef strings compared match, and the *Sequence* parameter is specified and matches the value in the :ref:`uiItem::bam<uiItem::<unnamed-type-bam>>`.sequence field, then the pointer to the :ref:`uiItem<uiItem>` structure of the currently matched UI control, is pushed onto the lua stack and the function exits. 
 
-* If the ResRef strings compared match, and the *Sequence* parameter does **not** match the value in the :ref:`uiItem::bam<uiItembam>`.sequence field, then the :ref:`uiItem<uiItem>`.slot => :ref:`uiItem::slot<uiItemslot>`.icon field (a :ref:`uiVariant<uiVariant>` type) is read, the value converted to a ResRef string and compared to the *BamResRef* string parameter. If this comparison matches then the pointer to the :ref:`uiItem<uiItem>` structure of the currently matched UI control, is pushed onto the lua stack and the function exits.
+* If the ResRef strings compared match, and the *Sequence* parameter does **not** match the value in the :ref:`uiItem::bam<uiItem::<unnamed-type-bam>>`.sequence field, then the :ref:`uiItem<uiItem>`.slot => :ref:`uiItem::slot<uiItem::<unnamed-type-slot>>`.icon field (a :ref:`uiVariant<uiVariant>` type) is read, the value converted to a ResRef string and compared to the *BamResRef* string parameter. If this comparison matches then the pointer to the :ref:`uiItem<uiItem>` structure of the currently matched UI control, is pushed onto the lua stack and the function exits.
 
-* If the ResRef strings compared do **not** match, then the :ref:`uiItem<uiItem>`.slot => :ref:`uiItem::slot<uiItemslot>`.icon field (a :ref:`uiVariant<uiVariant>` type) is read, the value converted to a ResRef string and compared to the *BamResRef* string parameter. If this comparison matches then the pointer to the :ref:`uiItem<uiItem>` structure of the currently matched UI control, is pushed onto the lua stack and the function exits.
+* If the ResRef strings compared do **not** match, then the :ref:`uiItem<uiItem>`.slot => :ref:`uiItem::slot<uiItem::<unnamed-type-slot>>`.icon field (a :ref:`uiVariant<uiVariant>` type) is read, the value converted to a ResRef string and compared to the *BamResRef* string parameter. If this comparison matches then the pointer to the :ref:`uiItem<uiItem>` structure of the currently matched UI control, is pushed onto the lua stack and the function exits.
 
 * If the ResRef strings compared do **not** match, and there is a valid :ref:`uiItem<uiItem>`.next then the search and comparison process continues.
 
@@ -1039,11 +1039,11 @@ Searches through all UI controls from the main stack menu and linked list of UI 
 
 * Reads :ref:`uiMenu<uiMenu>`.items for an array of pointers. Each pointer in the array is a :ref:`uiItem<uiItem>` structure. 
 
-* Reads 140 bytes of the :ref:`uiItem<uiItem>` structure into a local buffer and checks offset ``0x70`` of the local buffer, which corresponds to the :ref:`uiItem<uiItem>`.text => :ref:`uiItem\:\:text<uiItemtext>`.text field. 
+* Reads 140 bytes of the :ref:`uiItem<uiItem>` structure into a local buffer and checks offset ``0x70`` of the local buffer, which corresponds to the :ref:`uiItem<uiItem>`.text => :ref:`uiItem\:\:text<uiItem::<unnamed-type-text>>`.text field. 
 
-* If the :ref:`uiItem\:\:text<uiItemtext>`.text field is ``0`` then the process looks for next uiItem in the linked list to process: reads :ref:`uiItem<uiItem>`.next field (offset ``0x22C``) and repeats the same step above by reading the :ref:`uiItem\:\:text<uiItemtext>`.text field. If the :ref:`uiItem<uiItem>`.next field is ``0`` then the next pointer in the array of pointers from :ref:`uiMenu<uiMenu>`.items is read and repeats the same step above by reading the :ref:`uiItem\:\:text<uiItemtext>`.text field.
+* If the :ref:`uiItem\:\:text<uiItem::<unnamed-type-text>>`.text field is ``0`` then the process looks for next uiItem in the linked list to process: reads :ref:`uiItem<uiItem>`.next field (offset ``0x22C``) and repeats the same step above by reading the :ref:`uiItem\:\:text<uiItem::<unnamed-type-text>>`.text field. If the :ref:`uiItem<uiItem>`.next field is ``0`` then the next pointer in the array of pointers from :ref:`uiMenu<uiMenu>`.items is read and repeats the same step above by reading the :ref:`uiItem\:\:text<uiItem::<unnamed-type-text>>`.text field.
 
-* If the :ref:`uiItem\:\:text<uiItemtext>`.text field is not ``0`` then it converts the field value (a :ref:`uiVariant<uiVariant>` type field) to an integer. This integer is a string reference (StrRef) id from the TLK table. The (StrRef) string is loaded into a buffer and this is then used in comparison with the *OriginalText* string parameter.
+* If the :ref:`uiItem\:\:text<uiItem::<unnamed-type-text>>`.text field is not ``0`` then it converts the field value (a :ref:`uiVariant<uiVariant>` type field) to an integer. This integer is a string reference (StrRef) id from the TLK table. The (StrRef) string is loaded into a buffer and this is then used in comparison with the *OriginalText* string parameter.
 
 * If the strings compared match, then the pointer to the :ref:`uiItem<uiItem>` structure of the currently matched UI control, is pushed onto the lua stack and the function exits. 
 

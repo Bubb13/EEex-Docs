@@ -10,22 +10,22 @@ UI Structures
 
 * :ref:`uiColumn<uiColumn>`
 * :ref:`uiItem<uiItem>`
-* :ref:`uiItem\:\:bam<uiItembam>`
-* :ref:`uiItem\:\:bmp<uiItembmp>`
-* :ref:`uiItem\:\:button<uiItembutton>`
-* :ref:`uiItem\:\:edit<uiItemedit>`
-* :ref:`uiItem\:\:list<uiItemlist>`
-* :ref:`uiItem\:\:map<uiItemmap>`
-* :ref:`uiItem\:\:mosaic<uiItemmosaic>`
-* :ref:`uiItem\:\:movie<uiItemmovie>`
-* :ref:`uiItem\:\:progressBar<uiItemprogressBar>`
-* :ref:`uiItem\:\:rectangle<uiItemrectangle>`
-* :ref:`uiItem\:\:scrollbar<uiItemscrollbar>`
-* :ref:`uiItem\:\:slider<uiItemslider>`
-* :ref:`uiItem\:\:slot<uiItemslot>`
-* :ref:`uiItem\:\:text<uiItemtext>`
-* :ref:`uiItem\:\:tooltip<uiItemtooltip>`
-* :ref:`uiItem\:\:uiTemplate<uiItemuiTemplate>`
+* :ref:`uiItem\:\:bam<uiItem::<unnamed-type-bam>>`
+* :ref:`uiItem\:\:bmp<uiItem::<unnamed-type-bmp>>`
+* :ref:`uiItem\:\:button<uiItem::<unnamed-type-button>>`
+* :ref:`uiItem\:\:edit<uiItem::<unnamed-type-edit>>`
+* :ref:`uiItem\:\:list<uiItem::<unnamed-type-list>>`
+* :ref:`uiItem\:\:map<uiItem::<unnamed-type-map>>`
+* :ref:`uiItem\:\:mosaic<uiItem::<unnamed-type-mosaic>>`
+* :ref:`uiItem\:\:movie<uiItem::<unnamed-type-movie>>`
+* :ref:`uiItem\:\:progressBar<uiItem::<unnamed-type-progressBar>>`
+* :ref:`uiItem\:\:rectangle<uiItem::<unnamed-type-rectangle>>`
+* :ref:`uiItem\:\:scrollbar<uiItem::<unnamed-type-scrollbar>>`
+* :ref:`uiItem\:\:slider<uiItem::<unnamed-type-slider>>`
+* :ref:`uiItem\:\:slot<uiItem::<unnamed-type-slot>>`
+* :ref:`uiItem\:\:text<uiItem::<unnamed-type-text>>`
+* :ref:`uiItem\:\:tooltip<uiItem::<unnamed-type-tooltip>>`
+* :ref:`uiItem\:\:uiTemplate<uiItem::<unnamed-type-uiTemplate>>`
 * :ref:`uiMenu<uiMenu>`
 * :ref:`uiVariant<uiVariant>`
 * :ref:`UI_ControlTableEntry_st<UI_ControlTableEntry_st>`
@@ -97,35 +97,35 @@ uiItem
 +------------+----------+------------------------------------------------------------------+------------------+
 | 0x60       | 12       | int                                                              | overlayTint[3]   |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0x6C       | 40       | :ref:`uiItem\:\:text<uiItemtext>`                                | text             |
+| 0x6C       | 40       | :ref:`uiItem\:\:text<uiItem::<unnamed-type-text>>`               | text             |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0x94       | 4        | :ref:`uiItem\:\:uiTemplate<uiItemuiTemplate>`                    | uiTemplate       |
+| 0x94       | 4        | :ref:`uiItem\:\:uiTemplate<uiItem::<unnamed-type-uiTemplate>>`   | uiTemplate       |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0x98       | 28       | :ref:`uiItem\:\:bam<uiItembam>`                                  | bam              |
+| 0x98       | 28       | :ref:`uiItem\:\:bam<uiItem::<unnamed-type-bam>>`                 | bam              |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0xB4       | 24       | :ref:`uiItem\:\:bmp<uiItembmp>`                                  | bmp              |
+| 0xB4       | 24       | :ref:`uiItem\:\:bmp<uiItem::<unnamed-type-bmp>>`                 | bmp              |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0xCC       | 56       | :ref:`uiItem\:\:list<uiItemlist>`                                | list             |
+| 0xCC       | 56       | :ref:`uiItem\:\:list<uiItem::<unnamed-type-list>>`               | list             |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0x104      | 40       | :ref:`uiItem\:\:scrollbar<uiItemscrollbar>`                      | scrollbar        |
+| 0x104      | 40       | :ref:`uiItem\:\:scrollbar<uiItem::<unnamed-type-scrollbar>>`     | scrollbar        |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0x12C      | 20       | :ref:`uiItem\:\:slider<uiItemslider>`                            | slider           |
+| 0x12C      | 20       | :ref:`uiItem\:\:slider<uiItem::<unnamed-type-slider>>`           | slider           |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0x140      | 28       | :ref:`uiItem\:\:edit<uiItemedit>`                                | edit             |
+| 0x140      | 28       | :ref:`uiItem\:\:edit<uiItem::<unnamed-type-edit>>`               | edit             |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0x15C      | 8        | :ref:`uiItem\:\:mosaic<uiItemmosaic>`                            | mosaic           |
+| 0x15C      | 8        | :ref:`uiItem\:\:mosaic<uiItem::<unnamed-type-mosaic>>`           | mosaic           |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0x164      | 36       | :ref:`uiItem\:\:movie<uiItemmovie>`                              | movie            |
+| 0x164      | 36       | :ref:`uiItem\:\:movie<uiItem::<unnamed-type-movie>>`             | movie            |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0x188      | 44       | :ref:`uiItem\:\:button<uiItembutton>`                            | button           |
+| 0x188      | 44       | :ref:`uiItem\:\:button<uiItem::<unnamed-type-button>>`           | button           |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0x1B4      | 4        | :ref:`uiItem\:\:map<uiItemmap>`                                  | map              |
+| 0x1B4      | 4        | :ref:`uiItem\:\:map<uiItem::<unnamed-type-map>>`                 | map              |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0x1B8      | 12       | :ref:`uiItem\:\:progressBar<uiItemprogressBar>`                  | progressBar      |
+| 0x1B8      | 12       | :ref:`uiItem\:\:progressBar<uiItem::<unnamed-type-progressBar>>` | progressBar      |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0x1C4      | 20       | :ref:`uiItem\:\:slot<uiItemslot>`                                | slot             |
+| 0x1C4      | 20       | :ref:`uiItem\:\:slot<uiItem::<unnamed-type-slot>>`               | slot             |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0x1D8      | 8        | :ref:`uiItem\:\:rectangle<uiItemrectangle>`                      | rectangle        |
+| 0x1D8      | 8        | :ref:`uiItem\:\:rectangle<uiItem::<unnamed-type-rectangle>>`     | rectangle        |
 +------------+----------+------------------------------------------------------------------+------------------+
 | 0x1E0      | 4        | int                                                              | action           |
 +------------+----------+------------------------------------------------------------------+------------------+
@@ -151,7 +151,7 @@ uiItem
 +------------+----------+------------------------------------------------------------------+------------------+
 | 0x20C      | 4        | int                                                              | framesHeld       |
 +------------+----------+------------------------------------------------------------------+------------------+
-| 0x210      | 20       | :ref:`uiItem\:\:tooltip<uiItemtooltip>`                          | tooltip          |
+| 0x210      | 20       | :ref:`uiItem\:\:tooltip<uiItem::<unnamed-type-tooltip>>`         | tooltip          |
 +------------+----------+------------------------------------------------------------------+------------------+
 | 0x224      | 4        | :ref:`uiVariant<uiVariant>`\*                                    | glow             |
 +------------+----------+------------------------------------------------------------------+------------------+
@@ -190,7 +190,7 @@ uiItem
 
 ----
 
-.. _uiItembam:
+.. _uiItem\:\:<unnamed-type-bam>:
 
 uiItem\:\:bam
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -215,7 +215,7 @@ uiItem\:\:bam
 
 ----
 
-.. _uiItembmp:
+.. _uiItem\:\:<unnamed-type-bmp>:
 
 uiItem\:\:bmp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -228,7 +228,7 @@ uiItem\:\:bmp
 
 ----
 
-.. _uiItembutton:
+.. _uiItem\:\:<unnamed-type-button>:
 
 uiItem\:\:button
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -261,7 +261,7 @@ uiItem\:\:button
 
 ----
 
-.. _uiItemedit:
+.. _uiItem\:\:<unnamed-type-edit>:
 
 uiItem\:\:edit
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -286,7 +286,7 @@ uiItem\:\:edit
 
 ----
 
-.. _uiItemlist:
+.. _uiItem\:\:<unnamed-type-list>:
 
 uiItem\:\:list
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -325,7 +325,7 @@ uiItem\:\:list
 
 ----
 
-.. _uiItemmap:
+.. _uiItem\:\:<unnamed-type-map>:
 
 uiItem\:\:map
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -338,7 +338,7 @@ uiItem\:\:map
 
 ----
 
-.. _uiItemmosaic:
+.. _uiItem\:\:<unnamed-type-mosaic>:
 
 uiItem\:\:mosaic
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -353,7 +353,7 @@ uiItem\:\:mosaic
 
 ----
 
-.. _uiItemmovie:
+.. _uiItem\:\:<unnamed-type-movie>:
 
 uiItem\:\:movie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -376,7 +376,7 @@ uiItem\:\:movie
 
 ----
 
-.. _uiItemprogressBar:
+.. _uiItem\:\:<unnamed-type-progressBar>:
 
 uiItem\:\:progressBar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -393,7 +393,7 @@ uiItem\:\:progressBar
 
 ----
 
-.. _uiItemrectangle:
+.. _uiItem\:\:<unnamed-type-rectangle>:
 
 uiItem\:\:rectangle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -408,7 +408,7 @@ uiItem\:\:rectangle
 
 ----
 
-.. _uiItemscrollbar:
+.. _uiItem\:\:<unnamed-type-scrollbar>:
 
 uiItem\:\:scrollbar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -439,7 +439,7 @@ uiItem\:\:scrollbar
 
 ----
 
-.. _uiItemslider:
+.. _uiItem\:\:<unnamed-type-slider>:
 
 uiItem\:\:slider
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -460,7 +460,7 @@ uiItem\:\:slider
 
 ----
 
-.. _uiItemslot:
+.. _uiItem\:\:<unnamed-type-slot>:
 
 uiItem\:\:slot
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -481,7 +481,7 @@ uiItem\:\:slot
 
 ----
 
-.. _uiItemtext:
+.. _uiItem\:\:<unnamed-type-text>:
 
 uiItem\:\:text
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -512,7 +512,7 @@ uiItem\:\:text
 
 ----
 
-.. _uiItemtooltip:
+.. _uiItem\:\:<unnamed-type-tooltip>:
 
 uiItem\:\:tooltip
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -533,7 +533,7 @@ uiItem\:\:tooltip
 
 ----
 
-.. _uiItemuiTemplate:
+.. _uiItem\:\:<unnamed-type-uiTemplate>:
 
 uiItem\:\:uiTemplate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
