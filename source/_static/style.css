@@ -1,0 +1,10 @@
+
+/* Fill entire screen */
+.wy-nav-content {
+    max-width: none !important;
+}
+
+/* Tables should always auto-fit contents */
+table.docutils colgroup {
+    display: none !important;
+}
