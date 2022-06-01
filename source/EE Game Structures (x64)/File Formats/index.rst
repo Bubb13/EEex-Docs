@@ -167,7 +167,7 @@ PLT
 * :ref:`PLTHeader_st<PLTHeader_st>`
 * :ref:`CResPLT<CResPLT>`
 
-.._PRO:
+.. _PRO:
 
 PRO
 ^^^^^^^^^^^
