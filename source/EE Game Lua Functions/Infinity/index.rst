@@ -457,7 +457,7 @@ Returns a ``boolean`` value: ``true`` if cloud saves are supported on the platfo
 
 **Notes**
 
-Calls CPlatform\:\:IsPlatformServiceConnected and reads :ref:`CBaldurChitin<CBaldurChitin>`.m_cChitin => :ref:`CChitin<CChitin>`.cSteam => :ref:`CSteam<CSteam>`.m_isSteamConnected
+Calls CPlatform\:\:IsPlatformServiceConnected and reads :ref:`CBaldurChitin<CBaldurChitin>`.m_cChitin => :ref:`CChitin<CChitin>`.cSteam => CSteam.m_isSteamConnected
 
 **Example**
 
@@ -2592,7 +2592,7 @@ Returns an ``integer`` value representing ``1`` true, or ``0`` false otherwise
 
 Calls the CPlatform\:\:IsPlatformServiceConnected function
 
-Reads :ref:`CChitin<CChitin>`.cSteam => :ref:`CSteam<CSteam>`.m_isSteamConnected
+Reads :ref:`CChitin<CChitin>`.cSteam => CSteam.m_isSteamConnected
 
 On builds that are not android returns ``false``
 
