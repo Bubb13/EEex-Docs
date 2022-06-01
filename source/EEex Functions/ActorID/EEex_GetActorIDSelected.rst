@@ -26,9 +26,9 @@ Reads:
 * :ref:`CInfGame<CInfGame>`.m_group (m_group is :ref:`CAIGroup<CAIGroup>`\*)
 * :ref:`CAIGroup<CAIGroup>`.m_memberList (m_memberList is :ref:`CTypedPtrList<CTypedPtrList>`\*)
 * :ref:`CTypedPtrList<CTypedPtrList>`.m_cPtrList (m_cPtrList is :ref:`CPtrList<CPtrList>`\*)
-* :ref:`CPtrList<CPtrList>`.m_pNodeHead (m_pNodeHead is :ref:`CPtrList\:\:CNode<CPtrListCNode>`\*)
+* :ref:`CPtrList<CPtrList>`.m_pNodeHead (m_pNodeHead is :ref:`CPtrList\:\:CNode<CPtrList::CNode>`\*)
 
-If m_pNodeHead is not ``0`` then reads :ref:`CPtrList\:\:CNode<CPtrListCNode>`.data and returns the value as actor id otherwise returns ``0``
+If m_pNodeHead is not ``0`` then reads :ref:`CPtrList\:\:CNode<CPtrList::CNode>`.data and returns the value as actor id otherwise returns ``0``
 
 **Example**
 
