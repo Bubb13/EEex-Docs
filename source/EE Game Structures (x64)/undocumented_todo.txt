@@ -1,32 +1,30 @@
-$6368C00AFAF4300521072A185DB6F8DF
-$C3D261E28D53B12983426B9B0D118A61
-__POSITION
-_EAXPRESET
-_EdgeDescription
-_GUID
-_iobuf
-ALCcontext_struct
-ALCdevice_struct
-CAOEEntry::AOEType
-CGameArea::m_cWalkableRenderCache_t
-CGameJournalEntryFlag
-cnetworkwindow_queueentry_st
-CPARTICLE_POINT
-CScreenCreateCharStep
-CSpawn::ePMode
-CSteam
-CTypedPtrList::CNode
-CVIDMODE_RETICLE_DESCRIPTION
-DP_ProviderID
-DPWrapper
-file_t
+DONE - __POSITION
+DONE - _EAXPRESET
+DONE - _EdgeDescription
+DONE - _GUID
+DONE - _iobuf
+DONE - ALCcontext_struct
+DONE - ALCdevice_struct
+DONE - AOEEntry::AOEType
+DONE - CGameArea::m_cWalkableRenderCache_t
+DONE - CGameJournalEntryFlag
+DONE - cnetworkwindow_queueentry_st
+DONE - CPARTICLE_POINT
+DONE - CScreenCreateCharStep
+DONE - CSpawn::ePMode
+DONE - CSteam
+DONE - CTypedPtrList::CNode
+DONE - CVIDMODE_RETICLE_DESCRIPTION
+DONE - DP_ProviderID
+DONE - DPWrapper
+DONE - file_t
+frameTableEntry_st::$C3D261E28D53B12983426B9B0D118A61
 GCObject
 HWND__
 importStateType
 lua_State
 lua_TValue
 NECK_POINTS
-RES_CLASS
 SDL_Cursor
 SDL_Event
 SDL_Point
