@@ -1,8 +1,8 @@
-.. _EEex_Menu:
+.. _EEex_Resource:
 
-====
-Menu
-====
+========
+Resource
+========
 
 .. warning::
    This section is under construction.

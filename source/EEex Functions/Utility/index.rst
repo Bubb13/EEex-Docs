@@ -1,8 +1,8 @@
-.. _EEex_Menu:
+.. _EEex_Utility:
 
-====
-Menu
-====
+=======
+Utility
+=======
 
 .. warning::
    This section is under construction.

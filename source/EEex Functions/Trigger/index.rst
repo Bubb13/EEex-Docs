@@ -1,8 +1,8 @@
-.. _EEex_Menu:
+.. _EEex_Trigger:
 
-====
-Menu
-====
+=======
+Trigger
+=======
 
 .. warning::
    This section is under construction.

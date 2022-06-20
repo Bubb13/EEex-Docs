@@ -1,8 +1,8 @@
-.. _EEex_Menu:
+.. _EEex_Sprite:
 
-====
-Menu
-====
+======
+Sprite
+======
 
 .. warning::
    This section is under construction.

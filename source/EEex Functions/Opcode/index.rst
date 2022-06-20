@@ -1,8 +1,8 @@
-.. _EEex_Menu:
+.. _EEex_Opcode:
 
-====
-Menu
-====
+======
+Opcode
+======
 
 .. warning::
    This section is under construction.

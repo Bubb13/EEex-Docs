@@ -1,8 +1,8 @@
-.. _EEex_Menu:
+.. _EEex_Assembly:
 
-====
-Menu
-====
+========
+Assembly
+========
 
 .. warning::
    This section is under construction.

@@ -1,8 +1,8 @@
-.. _EEex_Menu:
+.. _EEex_GameObject:
 
-====
-Menu
-====
+==========
+GameObject
+==========
 
 .. warning::
    This section is under construction.

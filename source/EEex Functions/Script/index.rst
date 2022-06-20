@@ -1,8 +1,8 @@
-.. _EEex_Menu:
+.. _EEex_Script:
 
-====
-Menu
-====
+======
+Script
+======
 
 .. warning::
    This section is under construction.

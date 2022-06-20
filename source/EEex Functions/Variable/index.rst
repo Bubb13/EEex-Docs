@@ -1,8 +1,8 @@
-.. _EEex_Menu:
+.. _EEex_Variable:
 
-====
-Menu
-====
+========
+Variable
+========
 
 .. warning::
    This section is under construction.
