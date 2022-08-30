@@ -1,22 +1,16 @@
-.. _EEex_Stats:
+.. role:: raw-html(raw)
+   :format: html
+
+.. role:: underline
+   :class: underline
 
 =====
 Stats
 =====
 
+:underline:`EEex_Stats_Register`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. warning::
-   This section is under construction.
+   This function is currently undocumented.
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :glob:
-   
-   EEex*
-
-
-+--------------+-----------------+
-| **Function** | **Description** |
-+--------------+-----------------+
-|              |                 |
-+--------------+-----------------+

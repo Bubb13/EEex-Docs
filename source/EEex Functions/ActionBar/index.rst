@@ -1,22 +1,52 @@
-.. _EEex_Actionbar:
+.. role:: raw-html(raw)
+   :format: html
+
+.. role:: underline
+   :class: underline
 
 =========
 Actionbar
 =========
 
+:underline:`EEex_Actionbar_AddListener`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. warning::
-   This section is under construction.
+   This function is currently undocumented.
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :glob:
-   
-   EEex*
+:underline:`EEex_Actionbar_GetArray`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. warning::
+   This function is currently undocumented.
 
-+--------------+-----------------+
-| **Function** | **Description** |
-+--------------+-----------------+
-|              |                 |
-+--------------+-----------------+
+:underline:`EEex_Actionbar_GetLastState`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+:underline:`EEex_Actionbar_GetState`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+:underline:`EEex_Actionbar_RestoreLastState`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+:underline:`EEex_Actionbar_SetButton`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+:underline:`EEex_Actionbar_SetState`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+

@@ -1,22 +1,34 @@
-.. _EEex_AIBase:
+.. role:: raw-html(raw)
+   :format: html
+
+.. role:: underline
+   :class: underline
 
 ======
 AIBase
 ======
 
+:underline:`EEex_AIBase_GetScriptLevel`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. warning::
-   This section is under construction.
+   This function is currently undocumented.
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :glob:
-   
-   EEex*
+:underline:`EEex_AIBase_GetScriptLevelResRef`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. warning::
+   This function is currently undocumented.
 
-+--------------+-----------------+
-| **Function** | **Description** |
-+--------------+-----------------+
-|              |                 |
-+--------------+-----------------+
+:underline:`EEex_AIBase_SetScriptLevel`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+:underline:`EEex_AIBase_SetScriptLevelResRef`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+

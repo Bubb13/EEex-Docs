@@ -1,22 +1,46 @@
-.. _EEex_Key:
+.. role:: raw-html(raw)
+   :format: html
+
+.. role:: underline
+   :class: underline
 
 ===
 Key
 ===
 
+:underline:`EEex_Key_AddPressedListener`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. warning::
-   This section is under construction.
+   This function is currently undocumented.
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :glob:
-   
-   EEex*
+:underline:`EEex_Key_AddReleasedListener`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. warning::
+   This function is currently undocumented.
 
-+--------------+-----------------+
-| **Function** | **Description** |
-+--------------+-----------------+
-|              |                 |
-+--------------+-----------------+
+:underline:`EEex_Key_GetFromName`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+:underline:`EEex_Key_IsDown`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+:underline:`EEex_Key_OnPressed`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+:underline:`EEex_Key_OnReleased`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+

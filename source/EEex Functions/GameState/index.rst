@@ -1,22 +1,46 @@
-.. _EEex_GameState:
+.. role:: raw-html(raw)
+   :format: html
+
+.. role:: underline
+   :class: underline
 
 =========
 GameState
 =========
 
+:underline:`EEex_GameState_AddDestroyedListener`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. warning::
-   This section is under construction.
+   This function is currently undocumented.
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :glob:
-   
-   EEex*
+:underline:`EEex_GameState_AddInitializedListener`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. warning::
+   This function is currently undocumented.
 
-+--------------+-----------------+
-| **Function** | **Description** |
-+--------------+-----------------+
-|              |                 |
-+--------------+-----------------+
+:underline:`EEex_GameState_GetGlobalInt`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+:underline:`EEex_GameState_GetGlobalString`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+:underline:`EEex_GameState_SetGlobalInt`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+:underline:`EEex_GameState_SetGlobalString`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+

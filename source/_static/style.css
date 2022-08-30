@@ -8,3 +8,7 @@
 table.docutils colgroup {
     display: none !important;
 }
+
+.underline {
+    text-decoration: underline;
+}
