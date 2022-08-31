@@ -21,9 +21,9 @@ GameObject
 +----------+-------------+-------------------+-----------------------------------------------+
 | **Name** | **Type**    | **Default Value** | **Description**                               |
 +----------+-------------+-------------------+-----------------------------------------------+
-| object   | CGameObject | ``nil``           | The object to apply the effect to.            |
+| object   | CGameObject |                   | The object to apply the effect to.            |
 +----------+-------------+-------------------+-----------------------------------------------+
-| args     | table       | ``nil``           | The table that describes the effect to apply. |
+| args     | table       |                   | The table that describes the effect to apply. |
 +----------+-------------+-------------------+-----------------------------------------------+
 
 Valid keys for the ``args`` table are as follows:
@@ -134,7 +134,7 @@ Valid keys for the ``args`` table are as follows:
 +----------+-------------+-------------------+---------------------+
 | **Name** | **Type**    | **Default Value** | **Description**     |
 +----------+-------------+-------------------+---------------------+
-| object   | CGameObject | ``nil``           | The object to cast. |
+| object   | CGameObject |                   | The object to cast. |
 +----------+-------------+-------------------+---------------------+
 
 **Return Values:**
@@ -158,7 +158,7 @@ Valid keys for the ``args`` table are as follows:
 +----------+----------+-------------------+--------------------------------+
 | **Name** | **Type** | **Default Value** | **Description**                |
 +----------+----------+-------------------+--------------------------------+
-| objectID | number   | ``nil``           | The id of the object to fetch. |
+| objectID | number   |                   | The id of the object to fetch. |
 +----------+----------+-------------------+--------------------------------+
 
 **Return Values:**
@@ -253,7 +253,7 @@ Valid keys for the ``args`` table are as follows:
 +-----------+-------------+-------------------+------------------------------------------------------+
 | **Name**  | **Type**    | **Default Value** | **Description**                                      |
 +-----------+-------------+-------------------+------------------------------------------------------+
-| object    | CGameObject | ``nil``           | The object to check.                                 |
+| object    | CGameObject |                   | The object to check.                                 |
 +-----------+-------------+-------------------+------------------------------------------------------+
 | allowDead | boolean     | ``false``         | Determines whether ``object`` is allowed to be dead. |
 +-----------+-------------+-------------------+------------------------------------------------------+
@@ -279,7 +279,7 @@ Valid keys for the ``args`` table are as follows:
 +-----------+----------+-------------------+-----------------------------------------------------------------------------------+
 | **Name**  | **Type** | **Default Value** | **Description**                                                                   |
 +-----------+----------+-------------------+-----------------------------------------------------------------------------------+
-| objectID  | number   | ``nil``           | The object id to check.                                                           |
+| objectID  | number   |                   | The object id to check.                                                           |
 +-----------+----------+-------------------+-----------------------------------------------------------------------------------+
 | allowDead | boolean  | ``false``         | Determines whether the sprite associated with ``objectID`` is allowed to be dead. |
 +-----------+----------+-------------------+-----------------------------------------------------------------------------------+
