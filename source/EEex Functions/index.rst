@@ -10,7 +10,7 @@ EEex Functions
    :maxdepth: 2
    
    Action/index
-   ActionBar/index
+   Actionbar/index
    AIBase/index
    Area/index
    Assembly/index
