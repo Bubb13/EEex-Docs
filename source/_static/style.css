@@ -12,3 +12,8 @@ table.docutils colgroup {
 .underline {
     text-decoration: underline;
 }
+
+.bold-italic {
+    font-weight: bold;
+    font-style: italic;
+}
