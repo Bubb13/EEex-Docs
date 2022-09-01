@@ -173,13 +173,6 @@ Valid keys for the ``args`` table are as follows:
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 
 
-:underline:`EEex_GameObject_GetAllSelectedIDs`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   **Deprecated:** Use ``EEex_Sprite_GetAllSelectedIDs()`` instead.
-
-
 :underline:`EEex_GameObject_GetClass`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -203,20 +196,6 @@ Valid keys for the ``args`` table are as follows:
 +----------+-----------------+
 | number   | See summary.    |
 +----------+-----------------+
-
-
-:underline:`EEex_GameObject_GetSelected`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   **Deprecated:** Use ``EEex_Sprite_GetSelected()`` instead.
-
-
-:underline:`EEex_GameObject_GetSelectedID`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   **Deprecated:** Use ``EEex_Sprite_GetSelectedID()`` instead.
 
 
 :underline:`EEex_GameObject_GetUnderCursor`
@@ -302,19 +281,5 @@ Valid keys for the ``args`` table are as follows:
 +----------+-----------------+
 | boolean  | See summary.    |
 +----------+-----------------+
-
-
-:underline:`EEex_GameObject_IterateSelected`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   **Deprecated:** Use ``EEex_Sprite_IterateSelected()`` instead.
-
-
-:underline:`EEex_GameObject_IterateSelectedIDs`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   **Deprecated:** Use ``EEex_Sprite_IterateSelectedIDs()`` instead.
 
 
