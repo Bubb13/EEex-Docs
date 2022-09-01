@@ -4,6 +4,9 @@
 .. role:: underline
    :class: underline
 
+.. role:: bold-italic
+   :class: bold-italic
+
 ======
 Action
 ======
@@ -11,36 +14,134 @@ Action
 :underline:`EEex_Action_ExecuteResponseStringOnAIBaseInstantly`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-   This function is currently undocumented.
+
+.. note::
+   **Summary:** Has ``pGameAIBase`` instantly execute the actions contained in ``responseStr``
+   without interrupting ``pGameAIBase``'s current action / readying ``pGameAIBase``.
+   
+   ``EEex_Action_ParseResponseString()`` is used to compile ``responseStr``; prefer using this function
+   in conjunction with ``EEex_Action_ExecuteScriptFileResponseAsAIBaseInstantly()`` when efficiency is required.
+   
+   :bold-italic:`Running this function with actions not defined in INSTANT.IDS is undefined behavior.`
+
+**Parameters:**
+
++-------------+-------------+-------------------+--------------------------------------------+
+| **Name**    | **Type**    | **Default Value** | **Description**                            |
++-------------+-------------+-------------------+--------------------------------------------+
+| responseStr | string      |                   | The string to parse.                       |
++-------------+-------------+-------------------+--------------------------------------------+
+| pGameAIBase | CGameAIBase |                   | The AI base that will execute the actions. |
++-------------+-------------+-------------------+--------------------------------------------+
+
 
 :underline:`EEex_Action_ExecuteScriptFileResponseAsAIBaseInstantly`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-   This function is currently undocumented.
+**Instance Name:** ``executeResponseAsAIBaseInstantly``
+
+.. note::
+   **Summary:** Has ``pGameAIBase`` instantly execute compiled actions returned by ``EEex_Action_ParseResponseString()``
+   without interrupting ``pGameAIBase``'s current action / readying ``pGameAIBase``.
+   
+   :bold-italic:`Running this function with actions not defined in INSTANT.IDS is undefined behavior.`
+
+**Parameters:**
+
++-------------+---------------+-------------------+-----------------------------------------------------------------------+
+| **Name**    | **Type**      | **Default Value** | **Description**                                                       |
++-------------+---------------+-------------------+-----------------------------------------------------------------------+
+| pScriptFile | CAIScriptFile |                   | The AI script file returned by ``EEex_Action_ParseResponseString()``. |
++-------------+---------------+-------------------+-----------------------------------------------------------------------+
+| pGameAIBase | CGameAIBase   |                   | The AI base that will execute the actions.                            |
++-------------+---------------+-------------------+-----------------------------------------------------------------------+
+
 
 :underline:`EEex_Action_FreeScriptFile`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-   This function is currently undocumented.
+**Instance Name:** ``free``
+
+.. note::
+   **Summary:** Frees the value returned by ``EEex_Action_ParseResponseString()``.
+   
+   :bold-italic:`Attempting to use` ``pScriptFile`` :bold-italic:`after calling` ``:free()`` :bold-italic:`will result in a crash.`
+
+**Parameters:**
+
++-------------+---------------+-------------------+-----------------------------+
+| **Name**    | **Type**      | **Default Value** | **Description**             |
++-------------+---------------+-------------------+-----------------------------+
+| pScriptFile | CAIScriptFile |                   | The AI script file to free. |
++-------------+---------------+-------------------+-----------------------------+
+
 
 :underline:`EEex_Action_ParseResponseString`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-   This function is currently undocumented.
+
+.. note::
+   **Summary:** Parses ``responseStr`` as if it was fed through ``C:Eval()`` and
+   returns the compiled script object, (only filled with actions).
+   
+   :bold-italic:`Remember to call` ``:free()`` :bold-italic:`on the returned value when it is no longer being used.`
+
+**Parameters:**
+
++-------------+----------+-------------------+----------------------+
+| **Name**    | **Type** | **Default Value** | **Description**      |
++-------------+----------+-------------------+----------------------+
+| responseStr | string   |                   | The string to parse. |
++-------------+----------+-------------------+----------------------+
+
+**Return Values:**
+
++---------------+-----------------+
+| **Type**      | **Description** |
++---------------+-----------------+
+| CAIScriptFile | See summary.    |
++---------------+-----------------+
+
 
 :underline:`EEex_Action_QueueResponseStringOnAIBase`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-   This function is currently undocumented.
+
+.. note::
+   **Summary:** Adds the actions contained in ``responseStr`` to the end of ``pGameAIBase``'s action queue.
+   Behavior identical to ``C:Eval()``.
+   
+   ``EEex_Action_ParseResponseString()`` is used to compile ``responseStr``; prefer using this function
+   in conjunction with ``EEex_Action_QueueScriptFileResponseOnAIBase()`` when efficiency is required.
+
+**Parameters:**
+
++-------------+-------------+-------------------+--------------------------------------+
+| **Name**    | **Type**    | **Default Value** | **Description**                      |
++-------------+-------------+-------------------+--------------------------------------+
+| responseStr | string      |                   | The string to parse.                 |
++-------------+-------------+-------------------+--------------------------------------+
+| pGameAIBase | CGameAIBase |                   | The AI base to queue the actions on. |
++-------------+-------------+-------------------+--------------------------------------+
+
 
 :underline:`EEex_Action_QueueScriptFileResponseOnAIBase`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-   This function is currently undocumented.
+**Instance Name:** ``queueResponseOnAIBase``
+
+.. note::
+   **Summary:** Adds compiled actions returned by ``EEex_Action_ParseResponseString()`` to the end of ``pGameAIBase``'s action queue.
+   Behavior identical to ``C:Eval()``.
+
+**Parameters:**
+
++-------------+---------------+-------------------+-----------------------------------------------------------------------+
+| **Name**    | **Type**      | **Default Value** | **Description**                                                       |
++-------------+---------------+-------------------+-----------------------------------------------------------------------+
+| pScriptFile | CAIScriptFile |                   | The AI script file returned by ``EEex_Action_ParseResponseString()``. |
++-------------+---------------+-------------------+-----------------------------------------------------------------------+
+| pGameAIBase | CGameAIBase   |                   | The AI base to queue the actions on.                                  |
++-------------+---------------+-------------------+-----------------------------------------------------------------------+
+
 

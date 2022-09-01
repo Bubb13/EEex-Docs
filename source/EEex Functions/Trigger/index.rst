@@ -4,6 +4,9 @@
 .. role:: underline
    :class: underline
 
+.. role:: bold-italic
+   :class: bold-italic
+
 =======
 Trigger
 =======

@@ -4,6 +4,9 @@
 .. role:: underline
    :class: underline
 
+.. role:: bold-italic
+   :class: bold-italic
+
 ======
 Sprite
 ======
@@ -167,6 +170,14 @@ Sprite
    **Summary:** Returns the given ``sprite``'s active stats structure. If the creature is in the middle of an effects list process,
    using this function ensures that the work-in-progress stats structure isn't used.
 
+**Parameters:**
+
++----------+-------------+-------------------+----------------------------------------------------+
+| **Name** | **Type**    | **Default Value** | **Description**                                    |
++----------+-------------+-------------------+----------------------------------------------------+
+| sprite   | CGameSprite |                   | The sprite whose stats structure is being fetched. |
++----------+-------------+-------------------+----------------------------------------------------+
+
 **Return Values:**
 
 +---------------+-----------------+
@@ -317,11 +328,11 @@ Sprite
 
 **Return Values:**
 
-+-----------------+-----------------+
-| **Type**        | **Description** |
-+-----------------+-----------------+
-| CGameSprite|nil | See summary.    |
-+-----------------+-----------------+
++-------------------+-----------------+
+| **Type**          | **Description** |
++-------------------+-----------------+
+| CGameSprite | nil | See summary.    |
++-------------------+-----------------+
 
 
 :underline:`EEex_Sprite_GetInPortraitID`
@@ -408,6 +419,14 @@ Sprite
 .. note::
    **Summary:** Returns the given ``sprite``'s portrait index, or ``-1`` if it isn't a party member.
 
+**Parameters:**
+
++----------+-------------+-------------------+---------------------------------------------------+
+| **Name** | **Type**    | **Default Value** | **Description**                                   |
++----------+-------------+-------------------+---------------------------------------------------+
+| sprite   | CGameSprite |                   | The sprite whose portrait index is being fetched. |
++----------+-------------+-------------------+---------------------------------------------------+
+
 **Return Values:**
 
 +----------+-----------------+
@@ -431,11 +450,11 @@ Sprite
 
 **Return Values:**
 
-+-----------------+-----------------+
-| **Type**        | **Description** |
-+-----------------+-----------------+
-| CGameSprite|nil | See summary.    |
-+-----------------+-----------------+
++-------------------+-----------------+
+| **Type**          | **Description** |
++-------------------+-----------------+
+| CGameSprite | nil | See summary.    |
++-------------------+-----------------+
 
 
 :underline:`EEex_Sprite_GetSelectedID`

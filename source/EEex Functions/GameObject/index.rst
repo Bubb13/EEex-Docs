@@ -4,6 +4,9 @@
 .. role:: underline
    :class: underline
 
+.. role:: bold-italic
+   :class: bold-italic
+
 ==========
 GameObject
 ==========
@@ -185,6 +188,14 @@ Valid keys for the ``args`` table are as follows:
 .. note::
    **Summary:** Returns the given ``object``'s class.
 
+**Parameters:**
+
++----------+-------------+-------------------+------------------------------------------+
+| **Name** | **Type**    | **Default Value** | **Description**                          |
++----------+-------------+-------------------+------------------------------------------+
+| object   | CGameObject |                   | The object whose class is being fetched. |
++----------+-------------+-------------------+------------------------------------------+
+
 **Return Values:**
 
 +----------+-----------------+
@@ -217,11 +228,11 @@ Valid keys for the ``args`` table are as follows:
 
 **Return Values:**
 
-+-------------------------------------------------------+-----------------+
-| **Type**                                              | **Description** |
-+-------------------------------------------------------+-----------------+
-| CGameContainer|CGameDoor|CGameSprite|CGameTrigger|nil | See summary.    |
-+-------------------------------------------------------+-----------------+
++---------------------------------------------------------------+-----------------+
+| **Type**                                                      | **Description** |
++---------------------------------------------------------------+-----------------+
+| CGameContainer | CGameDoor | CGameSprite | CGameTrigger | nil | See summary.    |
++---------------------------------------------------------------+-----------------+
 
 
 :underline:`EEex_GameObject_GetUnderCursorID`
