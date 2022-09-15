@@ -11,6 +11,8 @@
 Area
 ====
 
+.. _EEex_Area_CountAllOfTypeInRange:
+
 :underline:`EEex_Area_CountAllOfTypeInRange`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -50,6 +52,8 @@ Area
 | number   | See summary.    |
 +----------+-----------------+
 
+
+.. _EEex_Area_CountAllOfTypeStringInRange:
 
 :underline:`EEex_Area_CountAllOfTypeStringInRange`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -91,6 +95,8 @@ Area
 +----------+-----------------+
 
 
+.. _EEex_Area_ForAllOfTypeInRange:
+
 :underline:`EEex_Area_ForAllOfTypeInRange`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -125,6 +131,8 @@ Area
 +----------------------+----------------+-----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
+.. _EEex_Area_ForAllOfTypeStringInRange:
+
 :underline:`EEex_Area_ForAllOfTypeStringInRange`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -158,6 +166,8 @@ Area
 | terrainTable         | Array<byte,16> | ``CGameObject.DEFAULT_VISIBLE_TERRAIN_TABLE`` | The terrain table to use for determining LOS.                                                                                                                                                  |
 +----------------------+----------------+-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+
+.. _EEex_Area_GetAllOfTypeInRange:
 
 :underline:`EEex_Area_GetAllOfTypeInRange`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -199,6 +209,8 @@ Area
 +----------+-----------------+
 
 
+.. _EEex_Area_GetAllOfTypeStringInRange:
+
 :underline:`EEex_Area_GetAllOfTypeStringInRange`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -239,11 +251,15 @@ Area
 +----------+-----------------+
 
 
+.. _EEex_Area_GetVariableInt:
+
 :underline:`EEex_Area_GetVariableInt`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Area_GetVariableString:
 
 :underline:`EEex_Area_GetVariableString`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -251,17 +267,23 @@ Area
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Area_GetVisible:
+
 :underline:`EEex_Area_GetVisible`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Area_SetVariableInt:
+
 :underline:`EEex_Area_SetVariableInt`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Area_SetVariableString:
 
 :underline:`EEex_Area_SetVariableString`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

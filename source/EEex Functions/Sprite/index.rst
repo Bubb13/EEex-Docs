@@ -11,11 +11,15 @@
 Sprite
 ======
 
+.. _EEex_Sprite_AddMarshalHandlers:
+
 :underline:`EEex_Sprite_AddMarshalHandlers`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Sprite_AddQuickListCountsResetListener:
 
 :underline:`EEex_Sprite_AddQuickListCountsResetListener`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -23,11 +27,15 @@ Sprite
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Sprite_AddQuickListsCheckedListener:
+
 :underline:`EEex_Sprite_AddQuickListsCheckedListener`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Sprite_CountAllOfTypeInRange:
 
 :underline:`EEex_Sprite_CountAllOfTypeInRange`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -65,6 +73,8 @@ Sprite
 +----------+-----------------+
 
 
+.. _EEex_Sprite_CountAllOfTypeStringInRange:
+
 :underline:`EEex_Sprite_CountAllOfTypeStringInRange`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -101,6 +111,8 @@ Sprite
 +----------+-----------------+
 
 
+.. _EEex_Sprite_ForAllOfTypeInRange:
+
 :underline:`EEex_Sprite_ForAllOfTypeInRange`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -130,6 +142,8 @@ Sprite
 | terrainTable         | Array<byte,16> | ``sprite:virtual_GetVisibleTerrainTable()`` | The terrain table to use for determining LOS.                                                                                                                                 |
 +----------------------+----------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+
+.. _EEex_Sprite_ForAllOfTypeStringInRange:
 
 :underline:`EEex_Sprite_ForAllOfTypeStringInRange`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -161,6 +175,8 @@ Sprite
 +----------------------+----------------+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
+.. _EEex_Sprite_GetActiveStats:
+
 :underline:`EEex_Sprite_GetActiveStats`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -186,6 +202,8 @@ Sprite
 | CDerivedStats | See summary.    |
 +---------------+-----------------+
 
+
+.. _EEex_Sprite_GetAllOfTypeInRange:
 
 :underline:`EEex_Sprite_GetAllOfTypeInRange`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -223,6 +241,8 @@ Sprite
 +----------+-----------------+
 
 
+.. _EEex_Sprite_GetAllOfTypeStringInRange:
+
 :underline:`EEex_Sprite_GetAllOfTypeStringInRange`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -259,6 +279,8 @@ Sprite
 +----------+-----------------+
 
 
+.. _EEex_Sprite_GetAllSelectedIDs:
+
 :underline:`EEex_Sprite_GetAllSelectedIDs`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -275,11 +297,15 @@ Sprite
 +----------+-----------------+
 
 
+.. _EEex_Sprite_GetCastTimer:
+
 :underline:`EEex_Sprite_GetCastTimer`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Sprite_GetCastTimerPercentage:
 
 :underline:`EEex_Sprite_GetCastTimerPercentage`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -287,11 +313,15 @@ Sprite
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Sprite_GetCasterLevelForSpell:
+
 :underline:`EEex_Sprite_GetCasterLevelForSpell`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Sprite_GetContingencyTimer:
 
 :underline:`EEex_Sprite_GetContingencyTimer`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -299,17 +329,23 @@ Sprite
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Sprite_GetContingencyTimerPercentage:
+
 :underline:`EEex_Sprite_GetContingencyTimerPercentage`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Sprite_GetExtendedStat:
+
 :underline:`EEex_Sprite_GetExtendedStat`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Sprite_GetInPortrait:
 
 :underline:`EEex_Sprite_GetInPortrait`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -335,6 +371,8 @@ Sprite
 +-------------------+-----------------+
 
 
+.. _EEex_Sprite_GetInPortraitID:
+
 :underline:`EEex_Sprite_GetInPortraitID`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -359,11 +397,15 @@ Sprite
 +----------+-----------------+
 
 
+.. _EEex_Sprite_GetLocalInt:
+
 :underline:`EEex_Sprite_GetLocalInt`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Sprite_GetLocalString:
 
 :underline:`EEex_Sprite_GetLocalString`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -371,11 +413,15 @@ Sprite
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Sprite_GetModalState:
+
 :underline:`EEex_Sprite_GetModalState`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Sprite_GetModalTimer:
 
 :underline:`EEex_Sprite_GetModalTimer`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -383,17 +429,23 @@ Sprite
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Sprite_GetModalTimerPercentage:
+
 :underline:`EEex_Sprite_GetModalTimerPercentage`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Sprite_GetName:
+
 :underline:`EEex_Sprite_GetName`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Sprite_GetNumCharacters:
 
 :underline:`EEex_Sprite_GetNumCharacters`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -410,6 +462,8 @@ Sprite
 | number   | See summary.    |
 +----------+-----------------+
 
+
+.. _EEex_Sprite_GetPortraitIndex:
 
 :underline:`EEex_Sprite_GetPortraitIndex`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -436,6 +490,8 @@ Sprite
 +----------+-----------------+
 
 
+.. _EEex_Sprite_GetSelected:
+
 :underline:`EEex_Sprite_GetSelected`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -456,6 +512,8 @@ Sprite
 | CGameSprite | nil | See summary.    |
 +-------------------+-----------------+
 
+
+.. _EEex_Sprite_GetSelectedID:
 
 :underline:`EEex_Sprite_GetSelectedID`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -478,17 +536,23 @@ Sprite
 +----------+-----------------+
 
 
+.. _EEex_Sprite_GetSpellState:
+
 :underline:`EEex_Sprite_GetSpellState`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Sprite_GetState:
+
 :underline:`EEex_Sprite_GetState`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Sprite_IterateSelected:
 
 :underline:`EEex_Sprite_IterateSelected`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -507,6 +571,8 @@ Sprite
 +----------+----------+-------------------+-----------------------+
 
 
+.. _EEex_Sprite_IterateSelectedIDs:
+
 :underline:`EEex_Sprite_IterateSelectedIDs`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -524,11 +590,15 @@ Sprite
 +----------+----------+-------------------+-----------------------+
 
 
+.. _EEex_Sprite_SetLocalInt:
+
 :underline:`EEex_Sprite_SetLocalInt`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Sprite_SetLocalString:
 
 :underline:`EEex_Sprite_SetLocalString`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

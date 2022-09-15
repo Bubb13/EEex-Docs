@@ -11,6 +11,8 @@
 Stats
 =====
 
+.. _EEex_Stats_Register:
+
 :underline:`EEex_Stats_Register`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

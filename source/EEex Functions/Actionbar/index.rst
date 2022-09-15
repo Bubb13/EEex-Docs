@@ -11,11 +11,15 @@
 Actionbar
 =========
 
+.. _EEex_Actionbar_AddListener:
+
 :underline:`EEex_Actionbar_AddListener`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Actionbar_GetArray:
 
 :underline:`EEex_Actionbar_GetArray`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -23,11 +27,15 @@ Actionbar
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Actionbar_GetLastState:
+
 :underline:`EEex_Actionbar_GetLastState`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Actionbar_GetState:
 
 :underline:`EEex_Actionbar_GetState`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -35,17 +43,23 @@ Actionbar
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Actionbar_RestoreLastState:
+
 :underline:`EEex_Actionbar_RestoreLastState`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Actionbar_SetButton:
+
 :underline:`EEex_Actionbar_SetButton`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Actionbar_SetState:
 
 :underline:`EEex_Actionbar_SetState`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

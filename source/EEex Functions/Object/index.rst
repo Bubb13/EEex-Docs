@@ -11,17 +11,23 @@
 Object
 ======
 
+.. _EEex_Object_EvalAsAIBase:
+
 :underline:`EEex_Object_EvalAsAIBase`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Object_EvalStringAsAIBase:
+
 :underline:`EEex_Object_EvalStringAsAIBase`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Object_ParseString:
 
 :underline:`EEex_Object_ParseString`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

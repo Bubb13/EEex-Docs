@@ -16,4 +16,5 @@ Welcome to EEex's documentation!
    EE Game Structures (x64)/index
    EE Game Classes (x86)/index
    EE Game Functions (x86)/index
+   Modder Tutorials/index
    Community/index

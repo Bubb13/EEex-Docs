@@ -11,11 +11,15 @@
 Opcode
 ======
 
+.. _EEex_Opcode_AddListsResolvedListener:
+
 :underline:`EEex_Opcode_AddListsResolvedListener`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Opcode_GenDecode:
 
 :underline:`EEex_Opcode_GenDecode`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

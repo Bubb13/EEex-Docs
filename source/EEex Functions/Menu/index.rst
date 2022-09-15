@@ -11,11 +11,15 @@
 Menu
 ====
 
+.. _EEex_Menu_AddAfterMainFileReloadedListener:
+
 :underline:`EEex_Menu_AddAfterMainFileReloadedListener`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Menu_AddBeforeListRendersItemListener:
 
 :underline:`EEex_Menu_AddBeforeListRendersItemListener`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -23,11 +27,15 @@ Menu
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Menu_AddBeforeMainFileReloadedListener:
+
 :underline:`EEex_Menu_AddBeforeMainFileReloadedListener`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Menu_AddMainFileLoadedListener:
 
 :underline:`EEex_Menu_AddMainFileLoadedListener`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -35,11 +43,15 @@ Menu
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Menu_DestroyInjectedTemplate:
+
 :underline:`EEex_Menu_DestroyInjectedTemplate`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Menu_Find:
 
 :underline:`EEex_Menu_Find`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -47,11 +59,15 @@ Menu
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Menu_GetArea:
+
 :underline:`EEex_Menu_GetArea`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Menu_GetItemFunction:
 
 :underline:`EEex_Menu_GetItemFunction`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -59,11 +75,15 @@ Menu
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Menu_GetItemVariant:
+
 :underline:`EEex_Menu_GetItemVariant`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Menu_GetMousePos:
 
 :underline:`EEex_Menu_GetMousePos`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -71,11 +91,15 @@ Menu
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Menu_InjectTemplate:
+
 :underline:`EEex_Menu_InjectTemplate`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Menu_IsCursorWithin:
 
 :underline:`EEex_Menu_IsCursorWithin`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -83,11 +107,15 @@ Menu
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Menu_IsCursorWithinRect:
+
 :underline:`EEex_Menu_IsCursorWithinRect`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Menu_IsNative:
 
 :underline:`EEex_Menu_IsNative`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -95,11 +123,15 @@ Menu
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Menu_LoadFile:
+
 :underline:`EEex_Menu_LoadFile`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Menu_SetForceScrollbarRender:
 
 :underline:`EEex_Menu_SetForceScrollbarRender`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -107,11 +139,15 @@ Menu
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Menu_SetItemFunction:
+
 :underline:`EEex_Menu_SetItemFunction`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Menu_SetItemVariant:
 
 :underline:`EEex_Menu_SetItemVariant`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -119,17 +155,23 @@ Menu
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Menu_SetTemplateArea:
+
 :underline:`EEex_Menu_SetTemplateArea`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Menu_StoreTemplateInstance:
+
 :underline:`EEex_Menu_StoreTemplateInstance`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Menu_TranslateXYFromGame:
 
 :underline:`EEex_Menu_TranslateXYFromGame`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

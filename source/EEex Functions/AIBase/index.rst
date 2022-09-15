@@ -11,11 +11,15 @@
 AIBase
 ======
 
+.. _EEex_AIBase_GetScriptLevel:
+
 :underline:`EEex_AIBase_GetScriptLevel`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_AIBase_GetScriptLevelResRef:
 
 :underline:`EEex_AIBase_GetScriptLevelResRef`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -23,11 +27,15 @@ AIBase
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_AIBase_SetScriptLevel:
+
 :underline:`EEex_AIBase_SetScriptLevel`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_AIBase_SetScriptLevelResRef:
 
 :underline:`EEex_AIBase_SetScriptLevelResRef`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

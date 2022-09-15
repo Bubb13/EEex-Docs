@@ -11,6 +11,8 @@
 Action
 ======
 
+.. _EEex_Action_ExecuteResponseStringOnAIBaseInstantly:
+
 :underline:`EEex_Action_ExecuteResponseStringOnAIBaseInstantly`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -35,6 +37,8 @@ Action
 +-------------+-------------+-------------------+--------------------------------------------+
 
 
+.. _EEex_Action_ExecuteScriptFileResponseAsAIBaseInstantly:
+
 :underline:`EEex_Action_ExecuteScriptFileResponseAsAIBaseInstantly`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -57,6 +61,8 @@ Action
 +-------------+---------------+-------------------+-----------------------------------------------------------------------+
 
 
+.. _EEex_Action_FreeScriptFile:
+
 :underline:`EEex_Action_FreeScriptFile`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -75,6 +81,8 @@ Action
 | pScriptFile | CAIScriptFile |                   | The AI script file to free. |
 +-------------+---------------+-------------------+-----------------------------+
 
+
+.. _EEex_Action_ParseResponseString:
 
 :underline:`EEex_Action_ParseResponseString`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -103,6 +111,8 @@ Action
 +---------------+-----------------+
 
 
+.. _EEex_Action_QueueResponseStringOnAIBase:
+
 :underline:`EEex_Action_QueueResponseStringOnAIBase`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -124,6 +134,8 @@ Action
 | pGameAIBase | CGameAIBase |                   | The AI base to queue the actions on. |
 +-------------+-------------+-------------------+--------------------------------------+
 
+
+.. _EEex_Action_QueueScriptFileResponseOnAIBase:
 
 :underline:`EEex_Action_QueueScriptFileResponseOnAIBase`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
