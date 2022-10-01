@@ -11,6 +11,14 @@
 Opcode_Hook
 ===========
 
+.. _EEex_Opcode_Hook_ApplySpell_ShouldFlipSplprotSourceAndTarget:
+
+:underline:`EEex_Opcode_Hook_ApplySpell_ShouldFlipSplprotSourceAndTarget`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Opcode_Hook_SetTemporaryAIScript_ApplyEffect:
 
 :underline:`EEex_Opcode_Hook_SetTemporaryAIScript_ApplyEffect`
