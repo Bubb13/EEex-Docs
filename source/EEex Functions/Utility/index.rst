@@ -43,6 +43,14 @@ Utility
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Utility_Default:
+
+:underline:`EEex_Utility_Default`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Utility_DumpSprite:
 
 :underline:`EEex_Utility_DumpSprite`
@@ -103,6 +111,14 @@ Utility
 
 :underline:`EEex_Utility_KeyPressed`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Utility_Ternary:
+
+:underline:`EEex_Utility_Ternary`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
