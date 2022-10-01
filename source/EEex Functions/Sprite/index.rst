@@ -544,6 +544,14 @@ Sprite
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Sprite_GetStat:
+
+:underline:`EEex_Sprite_GetStat`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Sprite_GetState:
 
 :underline:`EEex_Sprite_GetState`
