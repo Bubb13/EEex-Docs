@@ -10,4 +10,5 @@ Introduction
    overview
    getting started
    Installation/index
+   components
    faq
