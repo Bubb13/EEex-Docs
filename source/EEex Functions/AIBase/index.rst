@@ -43,3 +43,11 @@ AIBase
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_AIBase_SetStoredScriptingTarget:
+
+:underline:`EEex_AIBase_SetStoredScriptingTarget`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
