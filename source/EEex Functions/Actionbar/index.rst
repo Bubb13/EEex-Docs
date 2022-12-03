@@ -43,6 +43,14 @@ Actionbar
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Actionbar_IsThievingHotkeyOpeningSpecialAbilities:
+
+:underline:`EEex_Actionbar_IsThievingHotkeyOpeningSpecialAbilities`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Actionbar_RestoreLastState:
 
 :underline:`EEex_Actionbar_RestoreLastState`
