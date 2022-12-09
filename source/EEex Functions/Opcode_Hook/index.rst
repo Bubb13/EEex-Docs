@@ -19,6 +19,14 @@ Opcode_Hook
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Opcode_Hook_ProjectileMutator_ApplyEffect:
+
+:underline:`EEex_Opcode_Hook_ProjectileMutator_ApplyEffect`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Opcode_Hook_SetTemporaryAIScript_ApplyEffect:
 
 :underline:`EEex_Opcode_Hook_SetTemporaryAIScript_ApplyEffect`
