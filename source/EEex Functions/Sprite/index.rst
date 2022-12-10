@@ -297,6 +297,14 @@ Sprite
 +----------+-----------------+
 
 
+.. _EEex_Sprite_GetCasterLevelForSpell:
+
+:underline:`EEex_Sprite_GetCasterLevelForSpell`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Sprite_GetCastTimer:
 
 :underline:`EEex_Sprite_GetCastTimer`
@@ -308,14 +316,6 @@ Sprite
 .. _EEex_Sprite_GetCastTimerPercentage:
 
 :underline:`EEex_Sprite_GetCastTimerPercentage`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Sprite_GetCasterLevelForSpell:
-
-:underline:`EEex_Sprite_GetCasterLevelForSpell`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
