@@ -19,6 +19,8 @@ Script
 .. warning::
    This function is currently undocumented.
 
+==========================================================================================================================================================================================================
+
 .. _EEex_Script_IsPlayerScript:
 
 :underline:`EEex_Script_IsPlayerScript`

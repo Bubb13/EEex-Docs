@@ -19,6 +19,8 @@ GameState
 .. warning::
    This function is currently undocumented.
 
+==========================================================================================================================================================================================================
+
 .. _EEex_GameState_AddInitializedListener:
 
 :underline:`EEex_GameState_AddInitializedListener`
@@ -26,6 +28,8 @@ GameState
 
 .. warning::
    This function is currently undocumented.
+
+==========================================================================================================================================================================================================
 
 .. _EEex_GameState_GetGlobalInt:
 
@@ -35,6 +39,8 @@ GameState
 .. warning::
    This function is currently undocumented.
 
+==========================================================================================================================================================================================================
+
 .. _EEex_GameState_GetGlobalString:
 
 :underline:`EEex_GameState_GetGlobalString`
@@ -43,6 +49,8 @@ GameState
 .. warning::
    This function is currently undocumented.
 
+==========================================================================================================================================================================================================
+
 .. _EEex_GameState_SetGlobalInt:
 
 :underline:`EEex_GameState_SetGlobalInt`
@@ -50,6 +58,8 @@ GameState
 
 .. warning::
    This function is currently undocumented.
+
+==========================================================================================================================================================================================================
 
 .. _EEex_GameState_SetGlobalString:
 

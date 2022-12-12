@@ -19,6 +19,8 @@ Trigger
 .. warning::
    This function is currently undocumented.
 
+==========================================================================================================================================================================================================
+
 .. _EEex_Trigger_EvalScriptFileConditionalAsAIBase:
 
 :underline:`EEex_Trigger_EvalScriptFileConditionalAsAIBase`
@@ -26,6 +28,8 @@ Trigger
 
 .. warning::
    This function is currently undocumented.
+
+==========================================================================================================================================================================================================
 
 .. _EEex_Trigger_ParseConditionalString:
 
