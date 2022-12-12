@@ -168,7 +168,7 @@ Projectile
 **The Mutator Table**
 *********************
 
-A mutator table can contain can contain three optional keys, each of which should be assigned a respective mutator function.
+A mutator table can contain three optional keys, each of which should be assigned a respective mutator function.
 
 The valid function keys are: ``typeMutator``, ``projectileMutator``, and ``effectMutator``:
 
