@@ -1,10 +1,7 @@
 
-.. role:: underline
-   :class: underline
-
-==============================
-:underline:`The Basics - EEex`
-==============================
+=================
+The Basics - EEex
+=================
 
 Working with Userdata Objects
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

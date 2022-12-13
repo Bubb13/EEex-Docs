@@ -1,10 +1,7 @@
 
-.. role:: underline
-   :class: underline
-
-=============================
-:underline:`The Basics - Lua`
-=============================
+================
+The Basics - Lua
+================
 
 The Lua Environment
 ^^^^^^^^^^^^^^^^^^^
