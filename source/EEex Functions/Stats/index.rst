@@ -13,8 +13,8 @@ Stats
 
 .. _EEex_Stats_Register:
 
-:underline:`EEex_Stats_Register`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+EEex_Stats_Register
+^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.

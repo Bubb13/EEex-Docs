@@ -9,6 +9,36 @@ table.docutils colgroup {
     display: none !important;
 }
 
+/* Change table headers to a darker color */
+table.docutils > thead > tr.row-odd > th.head {
+    background-color:#e9ecec;
+}
+
+/* Flip table even / odd row colors so the lighter color appears first */
+table.docutils > tbody > tr.row-even > td {
+    background-color:#fcfcfc !important;
+}
+
+/* Flip table even / odd row colors so the lighter color appears first */
+table.docutils > tbody > tr.row-odd > td {
+    background-color:#f3f6f6 !important;
+}
+
+/* Indent main-header content */
+div[itemprop=articleBody] > section > section {
+    margin-left: 2%;
+}
+
+/* Unindent main-header h2 so it's not indented with its contents */
+div[itemprop=articleBody] > section > section > h2 {
+    margin-left: -2%;
+}
+
+/* Unindent main-header h2 so it's not indented with its contents */
+div.admonition {
+    width: fit-content;
+}
+
 .underline {
     text-decoration: underline;
 }
