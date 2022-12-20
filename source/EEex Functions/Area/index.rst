@@ -256,38 +256,126 @@ EEex_Area_GetAllOfTypeStringInRange
 EEex_Area_GetVariableInt
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-   This function is currently undocumented.
+**Instance Name:** ``getVariableInt``
+
+.. note::
+   **Summary:** Returns the integer value of the ``variableName`` Global that is stored in ``area``'s scope.
+   If no variable named ``variableName`` exists, returns ``0``.
+
+**Parameters:**
+
++--------------+-----------+-------------------+--------------------------------------------------------+
+| **Name**     | **Type**  | **Default Value** | **Description**                                        |
++==============+===========+===================+========================================================+
+| area         | CGameArea |                   | The area that the variable being fetched is scoped to. |
++--------------+-----------+-------------------+--------------------------------------------------------+
+| variableName | string    |                   | The name of the variable to fetch.                     |
++--------------+-----------+-------------------+--------------------------------------------------------+
+
+**Return Values:**
+
++----------+-----------------+
+| **Type** | **Description** |
++==========+=================+
+| number   | See summary.    |
++----------+-----------------+
+
 
 .. _EEex_Area_GetVariableString:
 
 EEex_Area_GetVariableString
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-   This function is currently undocumented.
+**Instance Name:** ``getVariableString``
+
+.. note::
+   **Summary:** Returns the string value of the ``variableName`` Global that is stored in ``area``'s scope.
+   If no variable named ``variableName`` exists, returns ``""``.
+   
+   **Note:** Global string values can only be accessed through EEex functions.
+
+**Parameters:**
+
++--------------+-----------+-------------------+--------------------------------------------------------+
+| **Name**     | **Type**  | **Default Value** | **Description**                                        |
++==============+===========+===================+========================================================+
+| area         | CGameArea |                   | The area that the variable being fetched is scoped to. |
++--------------+-----------+-------------------+--------------------------------------------------------+
+| variableName | string    |                   | The name of the variable to fetch.                     |
++--------------+-----------+-------------------+--------------------------------------------------------+
+
+**Return Values:**
+
++----------+-----------------+
+| **Type** | **Description** |
++==========+=================+
+| string   | See summary.    |
++----------+-----------------+
+
 
 .. _EEex_Area_GetVisible:
 
 EEex_Area_GetVisible
 ^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-   This function is currently undocumented.
+
+.. note::
+   **Summary:** Returns the currently-visible ``CGameArea``, or ``nil`` if the worldscreen is not initialized.
+
+**Return Values:**
+
++-----------------+-----------------+
+| **Type**        | **Description** |
++=================+=================+
+| CGameArea | nil | See summary.    |
++-----------------+-----------------+
+
 
 .. _EEex_Area_SetVariableInt:
 
 EEex_Area_SetVariableInt
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-   This function is currently undocumented.
+**Instance Name:** ``setVariableInt``
+
+.. note::
+   **Summary:** Sets the integer value of the ``variableName`` Global that is stored in ``area``'s scope to ``value``.
+
+**Parameters:**
+
++--------------+-----------+-------------------+----------------------------------------------------+
+| **Name**     | **Type**  | **Default Value** | **Description**                                    |
++==============+===========+===================+====================================================+
+| area         | CGameArea |                   | The area that the variable being set is scoped to. |
++--------------+-----------+-------------------+----------------------------------------------------+
+| variableName | string    |                   | The name of the variable to set.                   |
++--------------+-----------+-------------------+----------------------------------------------------+
+| value        | number    |                   | The value to set the variable to.                  |
++--------------+-----------+-------------------+----------------------------------------------------+
+
 
 .. _EEex_Area_SetVariableString:
 
 EEex_Area_SetVariableString
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-   This function is currently undocumented.
+**Instance Name:** ``setVariableString``
+
+.. note::
+   **Summary:** Sets the string value of the ``variableName`` Global that is stored in ``area``'s scope to ``value``.
+   
+   **Note:** Global string values can only be accessed through EEex functions.
+
+**Parameters:**
+
++--------------+-----------+-------------------+----------------------------------------------------+
+| **Name**     | **Type**  | **Default Value** | **Description**                                    |
++==============+===========+===================+====================================================+
+| area         | CGameArea |                   | The area that the variable being set is scoped to. |
++--------------+-----------+-------------------+----------------------------------------------------+
+| variableName | string    |                   | The name of the variable to set.                   |
++--------------+-----------+-------------------+----------------------------------------------------+
+| value        | string    |                   | The value to set the variable to.                  |
++--------------+-----------+-------------------+----------------------------------------------------+
+
 
