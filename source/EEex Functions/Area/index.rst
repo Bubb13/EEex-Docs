@@ -18,8 +18,9 @@ EEex_Area_CountAllOfTypeInRange
 
 **Instance Name:** ``countAllOfTypeInRange``
 
-.. note::
-   **Summary:** Returns the number of creatures that match ``aiObjectType`` around (``centerX``, ``centerY``)
+.. admonition:: Summary
+
+   Returns the number of creatures that match ``aiObjectType`` around (``centerX``, ``centerY``)
    in the given ``range``, as per the ``NumCreature()`` trigger.
 
 **Parameters:**
@@ -60,8 +61,9 @@ EEex_Area_CountAllOfTypeStringInRange
 
 **Instance Name:** ``countAllOfTypeStringInRange``
 
-.. note::
-   **Summary:** Returns the number of creatures that match ``aiObjectTypeString`` around (``centerX``, ``centerY``)
+.. admonition:: Summary
+
+   Returns the number of creatures that match ``aiObjectTypeString`` around (``centerX``, ``centerY``)
    in the given ``range``, as per the ``NumCreature()`` trigger.
 
 **Parameters:**
@@ -102,8 +104,9 @@ EEex_Area_ForAllOfTypeInRange
 
 **Instance Name:** ``forAllOfTypeInRange``
 
-.. note::
-   **Summary:** Calls ``func`` for every creature that matches ``aiObjectType`` around (``centerX``, ``centerY``)
+.. admonition:: Summary
+
+   Calls ``func`` for every creature that matches ``aiObjectType`` around (``centerX``, ``centerY``)
    in the given ``range``, as per the ``NumCreature()`` trigger.
 
 **Parameters:**
@@ -138,8 +141,9 @@ EEex_Area_ForAllOfTypeStringInRange
 
 **Instance Name:** ``forAllOfTypeStringInRange``
 
-.. note::
-   **Summary:** Calls ``func`` for every creature that matches ``aiObjectTypeString`` around (``centerX``, ``centerY``)
+.. admonition:: Summary
+
+   Calls ``func`` for every creature that matches ``aiObjectTypeString`` around (``centerX``, ``centerY``)
    in the given ``range``, as per the ``NumCreature()`` trigger.
 
 **Parameters:**
@@ -174,8 +178,9 @@ EEex_Area_GetAllOfTypeInRange
 
 **Instance Name:** ``getAllOfTypeInRange``
 
-.. note::
-   **Summary:** Returns a table populated by every creature that matches ``aiObjectType`` around (``centerX``, ``centerY``)
+.. admonition:: Summary
+
+   Returns a table populated by every creature that matches ``aiObjectType`` around (``centerX``, ``centerY``)
    in the given ``range``, as per the ``NumCreature()`` trigger.
 
 **Parameters:**
@@ -216,8 +221,9 @@ EEex_Area_GetAllOfTypeStringInRange
 
 **Instance Name:** ``getAllOfTypeStringInRange``
 
-.. note::
-   **Summary:** Returns a table populated by every creature that matches ``aiObjectTypeString`` around (``centerX``, ``centerY``)
+.. admonition:: Summary
+
+   Returns a table populated by every creature that matches ``aiObjectTypeString`` around (``centerX``, ``centerY``)
    in the given ``range``, as per the ``NumCreature()`` trigger.
 
 **Parameters:**
@@ -258,8 +264,9 @@ EEex_Area_GetVariableInt
 
 **Instance Name:** ``getVariableInt``
 
-.. note::
-   **Summary:** Returns the integer value of the ``variableName`` Global that is stored in ``area``'s scope.
+.. admonition:: Summary
+
+   Returns the integer value of the ``variableName`` Global that is stored in ``area``'s scope.
    If no variable named ``variableName`` exists, returns ``0``.
 
 **Parameters:**
@@ -288,11 +295,14 @@ EEex_Area_GetVariableString
 
 **Instance Name:** ``getVariableString``
 
-.. note::
-   **Summary:** Returns the string value of the ``variableName`` Global that is stored in ``area``'s scope.
+.. admonition:: Summary
+
+   Returns the string value of the ``variableName`` Global that is stored in ``area``'s scope.
    If no variable named ``variableName`` exists, returns ``""``.
-   
-   **Note:** Global string values can only be accessed through EEex functions.
+
+
+.. note::
+   Global string values can only be accessed through EEex functions.
 
 **Parameters:**
 
@@ -319,8 +329,9 @@ EEex_Area_GetVisible
 ^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Returns the currently-visible ``CGameArea``, or ``nil`` if the worldscreen is not initialized.
+.. admonition:: Summary
+
+   Returns the currently-visible ``CGameArea``, or ``nil`` if the worldscreen is not initialized.
 
 **Return Values:**
 
@@ -338,8 +349,9 @@ EEex_Area_SetVariableInt
 
 **Instance Name:** ``setVariableInt``
 
-.. note::
-   **Summary:** Sets the integer value of the ``variableName`` Global that is stored in ``area``'s scope to ``value``.
+.. admonition:: Summary
+
+   Sets the integer value of the ``variableName`` Global that is stored in ``area``'s scope to ``value``.
 
 **Parameters:**
 
@@ -361,10 +373,18 @@ EEex_Area_SetVariableString
 
 **Instance Name:** ``setVariableString``
 
+.. admonition:: Summary
+
+   Sets the string value of the ``variableName`` Global that is stored in ``area``'s scope to ``value``.
+
+
 .. note::
-   **Summary:** Sets the string value of the ``variableName`` Global that is stored in ``area``'s scope to ``value``.
-   
-   **Note:** Global string values can only be accessed through EEex functions.
+   Global string values can only be accessed through EEex functions.
+
+
+.. warning::
+   Global string values can be a maximum of 32 characters. Attempting to set a value
+   that is longer than 32 characters will result in the value being truncated.
 
 **Parameters:**
 

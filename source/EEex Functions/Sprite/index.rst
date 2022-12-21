@@ -42,8 +42,9 @@ EEex_Sprite_CountAllOfTypeInRange
 
 **Instance Name:** ``countAllOfTypeInRange``
 
-.. note::
-   **Summary:** Returns the number of creatures that match ``aiObjectType`` around
+.. admonition:: Summary
+
+   Returns the number of creatures that match ``aiObjectType`` around
    ``sprite`` in the given ``range``, as per the ``NumCreature()`` trigger.
 
 **Parameters:**
@@ -80,8 +81,9 @@ EEex_Sprite_CountAllOfTypeStringInRange
 
 **Instance Name:** ``countAllOfTypeStringInRange``
 
-.. note::
-   **Summary:** Returns the number of creatures that match ``aiObjectTypeString`` around
+.. admonition:: Summary
+
+   Returns the number of creatures that match ``aiObjectTypeString`` around
    ``sprite`` in the given ``range``, as per the ``NumCreature()`` trigger.
 
 **Parameters:**
@@ -118,8 +120,9 @@ EEex_Sprite_ForAllOfTypeInRange
 
 **Instance Name:** ``forAllOfTypeInRange``
 
-.. note::
-   **Summary:** Calls ``func`` for every creature that matches ``aiObjectType`` around
+.. admonition:: Summary
+
+   Calls ``func`` for every creature that matches ``aiObjectType`` around
    ``sprite`` in the given ``range``, as per the ``NumCreature()`` trigger.
 
 **Parameters:**
@@ -150,8 +153,9 @@ EEex_Sprite_ForAllOfTypeStringInRange
 
 **Instance Name:** ``forAllOfTypeStringInRange``
 
-.. note::
-   **Summary:** Calls ``func`` for every creature that matches ``aiObjectTypeString`` around
+.. admonition:: Summary
+
+   Calls ``func`` for every creature that matches ``aiObjectTypeString`` around
    ``sprite`` in the given ``range``, as per the ``NumCreature()`` trigger.
 
 **Parameters:**
@@ -182,8 +186,9 @@ EEex_Sprite_GetActiveStats
 
 **Instance Name:** ``getActiveStats``
 
-.. note::
-   **Summary:** Returns the given ``sprite``'s active stats structure. If the creature is in the middle of an effects list process,
+.. admonition:: Summary
+
+   Returns the given ``sprite``'s active stats structure. If the creature is in the middle of an effects list process,
    using this function ensures that the work-in-progress stats structure isn't used.
 
 **Parameters:**
@@ -210,8 +215,9 @@ EEex_Sprite_GetAllOfTypeInRange
 
 **Instance Name:** ``getAllOfTypeInRange``
 
-.. note::
-   **Summary:** Returns a table populated by every creature that matches ``aiObjectType`` around
+.. admonition:: Summary
+
+   Returns a table populated by every creature that matches ``aiObjectType`` around
    ``sprite`` in the given ``range``, as per the ``NumCreature()`` trigger.
 
 **Parameters:**
@@ -248,8 +254,9 @@ EEex_Sprite_GetAllOfTypeStringInRange
 
 **Instance Name:** ``getAllOfTypeStringInRange``
 
-.. note::
-   **Summary:** Returns a table populated by every creature that matches ``aiObjectTypeString`` around
+.. admonition:: Summary
+
+   Returns a table populated by every creature that matches ``aiObjectTypeString`` around
    ``sprite`` in the given ``range``, as per the ``NumCreature()`` trigger.
 
 **Parameters:**
@@ -285,8 +292,9 @@ EEex_Sprite_GetAllSelectedIDs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Returns a table populated with the object ids of all the sprites the player currently has selected and is controlling.
+.. admonition:: Summary
+
+   Returns a table populated with the object ids of all the sprites the player currently has selected and is controlling.
 
 **Return Values:**
 
@@ -351,8 +359,9 @@ EEex_Sprite_GetInPortrait
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Returns the sprite of the party member in the given ``portraitIndex``, or ``nil`` if none exists.
+.. admonition:: Summary
+
+   Returns the sprite of the party member in the given ``portraitIndex``, or ``nil`` if none exists.
 
 **Parameters:**
 
@@ -377,8 +386,9 @@ EEex_Sprite_GetInPortraitID
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Returns the object id of the party member in the given ``portraitIndex``, or ``-1`` if none exists.
+.. admonition:: Summary
+
+   Returns the object id of the party member in the given ``portraitIndex``, or ``-1`` if none exists.
 
 **Parameters:**
 
@@ -451,8 +461,9 @@ EEex_Sprite_GetNumCharacters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Returns the number of characters currently in the party.
+.. admonition:: Summary
+
+   Returns the number of characters currently in the party.
 
 **Return Values:**
 
@@ -470,8 +481,9 @@ EEex_Sprite_GetPortraitIndex
 
 **Instance Name:** ``getPortraitIndex``
 
-.. note::
-   **Summary:** Returns the given ``sprite``'s portrait index, or ``-1`` if it isn't a party member.
+.. admonition:: Summary
+
+   Returns the given ``sprite``'s portrait index, or ``-1`` if it isn't a party member.
 
 **Parameters:**
 
@@ -496,8 +508,9 @@ EEex_Sprite_GetSelected
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Returns the sprite that is the "leader" of the sprites the player currently has selected and is controlling.
+.. admonition:: Summary
+
+   Returns the sprite that is the "leader" of the sprites the player currently has selected and is controlling.
    
    The leader is the party member with the highest portrait slot, (lowest index), or the creature
    that was selected first.
@@ -519,8 +532,9 @@ EEex_Sprite_GetSelectedID
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Returns the object id associated with the "leader" of the sprites the player currently has selected and is controlling.
+.. admonition:: Summary
+
+   Returns the object id associated with the "leader" of the sprites the player currently has selected and is controlling.
    
    The leader is the party member with the highest portrait slot, (lowest index), or the creature
    that was selected first.
@@ -566,8 +580,9 @@ EEex_Sprite_IterateSelected
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Calls ``func`` for every sprite the player currently has selected and is controlling, (passing the sprite).
+.. admonition:: Summary
+
+   Calls ``func`` for every sprite the player currently has selected and is controlling, (passing the sprite).
    Return ``true`` from ``func`` to stop iteration.
 
 **Parameters:**
@@ -585,8 +600,9 @@ EEex_Sprite_IterateSelectedIDs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Calls ``func`` for every sprite the player currently has selected and is controlling, (passing the sprite's object id).
+.. admonition:: Summary
+
+   Calls ``func`` for every sprite the player currently has selected and is controlling, (passing the sprite's object id).
    Return ``true`` from ``func`` to stop iteration.
 
 **Parameters:**

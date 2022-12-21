@@ -18,8 +18,9 @@ EEex_GameObject_ApplyEffect
 
 **Instance Name:** ``applyEffect``
 
-.. note::
-   **Summary:** Applies an effect to the given ``object`` based on the ``args`` table.
+.. admonition:: Summary
+
+   Applies an effect to the given ``object`` based on the ``args`` table.
 
 **Parameters:**
 
@@ -131,8 +132,9 @@ EEex_GameObject_CastUserType
 
 **Aliases:** ``EEex_GameObject_CastUT``
 
-.. note::
-   **Summary:** Takes the given ``object`` and returns a cast userdata that represents ``object``'s true type.
+.. admonition:: Summary
+
+   Takes the given ``object`` and returns a cast userdata that represents ``object``'s true type.
    
    Most EEex functions will call this function before passing an object to the modder API.
 
@@ -159,8 +161,9 @@ EEex_GameObject_Get
 ^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Returns the object associated with ``objectID``, or ``nil`` if ``objectID`` is invalid.
+.. admonition:: Summary
+
+   Returns the object associated with ``objectID``, or ``nil`` if ``objectID`` is invalid.
 
 **Parameters:**
 
@@ -195,8 +198,9 @@ EEex_GameObject_GetClass
 
 **Instance Name:** ``getClass``
 
-.. note::
-   **Summary:** Returns the given ``object``'s class.
+.. admonition:: Summary
+
+   Returns the given ``object``'s class.
 
 **Parameters:**
 
@@ -239,8 +243,9 @@ EEex_GameObject_GetUnderCursor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Returns the interactable object currently under the cursor, or ``nil`` if none exists.
+.. admonition:: Summary
+
+   Returns the interactable object currently under the cursor, or ``nil`` if none exists.
 
 **Return Values:**
 
@@ -257,8 +262,9 @@ EEex_GameObject_GetUnderCursorID
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Returns the id of the interactable object currently under the cursor, or ``-1`` if none exists.
+.. admonition:: Summary
+
+   Returns the id of the interactable object currently under the cursor, or ``-1`` if none exists.
 
 **Return Values:**
 
@@ -276,8 +282,9 @@ EEex_GameObject_IsSprite
 
 **Instance Name:** ``isSprite``
 
-.. note::
-   **Summary:** Returns whether the given ``object`` is a sprite.
+.. admonition:: Summary
+
+   Returns whether the given ``object`` is a sprite.
 
 **Parameters:**
 
@@ -304,8 +311,9 @@ EEex_GameObject_IsSpriteID
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Returns whether the given ``objectID`` is associated with a sprite.
+.. admonition:: Summary
+
+   Returns whether the given ``objectID`` is associated with a sprite.
 
 **Parameters:**
 

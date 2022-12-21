@@ -17,8 +17,9 @@ EEex_Actionbar_AddListener
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Registers a function as an actionbar listener. Actionbar listeners are called whenever the actionbar changes state.
+.. admonition:: Summary
+
+   Registers a function as an actionbar listener. Actionbar listeners are called whenever the actionbar changes state.
    See :ref:`EEex_Actionbar_GetState` for more details.
 
 **Parameters:**
@@ -120,8 +121,9 @@ EEex_Actionbar_GetArray
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Returns the actionbar button array. This structure holds the current state of the actionbar.
+.. admonition:: Summary
+
+   Returns the actionbar button array. This structure holds the current state of the actionbar.
 
 **Return Values:**
 
@@ -138,8 +140,9 @@ EEex_Actionbar_GetLastState
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Returns the previous actionbar state. See :ref:`EEex_Actionbar_GetState` for more details.
+.. admonition:: Summary
+
+   Returns the previous actionbar state. See :ref:`EEex_Actionbar_GetState` for more details.
 
 **Return Values:**
 
@@ -156,8 +159,9 @@ EEex_Actionbar_GetState
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Returns the current actionbar state, which is a number that represents what the actionbar is displaying.
+.. admonition:: Summary
+
+   Returns the current actionbar state, which is a number that represents what the actionbar is displaying.
 
 **Return Values:**
 
@@ -250,8 +254,9 @@ EEex_Actionbar_IsThievingHotkeyOpeningSpecialAbilities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Returns ``true`` if the thieving hotkey is currently in the middle of opening the special abilities menu.
+.. admonition:: Summary
+
+   Returns ``true`` if the thieving hotkey is currently in the middle of opening the special abilities menu.
    It does this if the thieving button is not a part of the character's main actionbar state.
    This function allows actionbar listeners to differentiate between a user opening the special abilities menu,
    and the hotkey automatically doing so.
@@ -271,8 +276,9 @@ EEex_Actionbar_RestoreLastState
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Restores the previous actionbar state. This is useful for exiting sub-states, such as the spell list.
+.. admonition:: Summary
+
+   Restores the previous actionbar state. This is useful for exiting sub-states, such as the spell list.
 
 
 .. _EEex_Actionbar_SetButton:
@@ -281,8 +287,9 @@ EEex_Actionbar_SetButton
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Changes the button at the given ``index`` to the given ``buttonType``.
+.. admonition:: Summary
+
+   Changes the button at the given ``index`` to the given ``buttonType``.
    Use this function in combination with an actionbar listener to permanently
    change a button on the actionbar.
 
@@ -357,8 +364,9 @@ EEex_Actionbar_SetState
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Sets the current actionbar state. See :ref:`EEex_Actionbar_GetState` for more details.
+.. admonition:: Summary
+
+   Sets the current actionbar state. See :ref:`EEex_Actionbar_GetState` for more details.
 
 **Parameters:**
 

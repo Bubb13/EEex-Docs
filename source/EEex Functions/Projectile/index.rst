@@ -18,8 +18,9 @@ EEex_Projectile_CastUserType
 
 **Aliases:** ``EEex_Projectile_CastUT``
 
-.. note::
-   **Summary:** Takes the given ``projectile`` and returns a cast userdata that represents ``projectile``'s true type.
+.. admonition:: Summary
+
+   Takes the given ``projectile`` and returns a cast userdata that represents ``projectile``'s true type.
    
    Most EEex functions will call this function before passing a projectile to the modder API.
 
@@ -47,8 +48,9 @@ EEex_Projectile_GetType
 
 **Instance Name:** ``getType``
 
-.. note::
-   **Summary:** Returns the ``EEex_Projectile_Type`` of the given ``projectile``.
+.. admonition:: Summary
+
+   Returns the ``EEex_Projectile_Type`` of the given ``projectile``.
 
 **Parameters:**
 
@@ -121,8 +123,9 @@ EEex_Projectile_IsOfType
 
 **Instance Name:** ``isOfType``
 
-.. note::
-   **Summary:** Returns ``true`` if ``projectile`` has the type ``checkType`` or is a derivative thereof.
+.. admonition:: Summary
+
+   Returns ``true`` if ``projectile`` has the type ``checkType`` or is a derivative thereof.
    
    This is useful to ensure that a projectile is of a certain type before accessing members
    it may or may not have.
@@ -152,8 +155,9 @@ EEex_Projectile_RegisterGlobalMutator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Registers a global Lua table as a global (always processed) projectile mutator.
+.. admonition:: Summary
+
+   Registers a global Lua table as a global (always processed) projectile mutator.
 
 **Parameters:**
 

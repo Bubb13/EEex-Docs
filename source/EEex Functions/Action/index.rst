@@ -17,8 +17,9 @@ EEex_Action_ExecuteResponseStringOnAIBaseInstantly
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Has ``pGameAIBase`` instantly execute the actions contained in ``responseStr``
+.. admonition:: Summary
+
+   Has ``pGameAIBase`` instantly execute the actions contained in ``responseStr``
    without interrupting ``pGameAIBase``'s current action / readying ``pGameAIBase``.
    
    ``EEex_Action_ParseResponseString()`` is used to compile ``responseStr``; prefer using this function
@@ -44,8 +45,9 @@ EEex_Action_ExecuteScriptFileResponseAsAIBaseInstantly
 
 **Instance Name:** ``executeResponseAsAIBaseInstantly``
 
-.. note::
-   **Summary:** Has ``pGameAIBase`` instantly execute compiled actions returned by ``EEex_Action_ParseResponseString()``
+.. admonition:: Summary
+
+   Has ``pGameAIBase`` instantly execute compiled actions returned by ``EEex_Action_ParseResponseString()``
    without interrupting ``pGameAIBase``'s current action / readying ``pGameAIBase``.
    
    :bold-italic:`Running this function with actions not defined in INSTANT.IDS is undefined behavior.`
@@ -68,8 +70,9 @@ EEex_Action_FreeScriptFile
 
 **Instance Name:** ``free``
 
-.. note::
-   **Summary:** Frees the value returned by ``EEex_Action_ParseResponseString()``.
+.. admonition:: Summary
+
+   Frees the value returned by ``EEex_Action_ParseResponseString()``.
    
    :bold-italic:`Attempting to use` ``pScriptFile`` :bold-italic:`after calling` ``:free()`` :bold-italic:`will result in a crash.`
 
@@ -88,8 +91,9 @@ EEex_Action_ParseResponseString
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Parses ``responseStr`` as if it was fed through ``C:Eval()`` and
+.. admonition:: Summary
+
+   Parses ``responseStr`` as if it was fed through ``C:Eval()`` and
    returns the compiled script object, (only filled with actions).
    
    :bold-italic:`Remember to call` ``:free()`` :bold-italic:`on the returned value when it is no longer being used.`
@@ -117,8 +121,9 @@ EEex_Action_QueueResponseStringOnAIBase
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. note::
-   **Summary:** Adds the actions contained in ``responseStr`` to the end of ``pGameAIBase``'s action queue.
+.. admonition:: Summary
+
+   Adds the actions contained in ``responseStr`` to the end of ``pGameAIBase``'s action queue.
    Behavior identical to ``C:Eval()``.
    
    ``EEex_Action_ParseResponseString()`` is used to compile ``responseStr``; prefer using this function
@@ -142,8 +147,9 @@ EEex_Action_QueueScriptFileResponseOnAIBase
 
 **Instance Name:** ``queueResponseOnAIBase``
 
-.. note::
-   **Summary:** Adds compiled actions returned by ``EEex_Action_ParseResponseString()`` to the end of ``pGameAIBase``'s action queue.
+.. admonition:: Summary
+
+   Adds compiled actions returned by ``EEex_Action_ParseResponseString()`` to the end of ``pGameAIBase``'s action queue.
    Behavior identical to ``C:Eval()``.
 
 **Parameters:**

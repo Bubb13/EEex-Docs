@@ -18,8 +18,9 @@ EEex_AIBase_GetScriptLevel
 
 **Instance Name:** ``getScriptLevel``
 
-.. note::
-   **Summary:** Returns the ``aiBase``'s ``CAIScript`` for the given ``scriptLevel``.
+.. admonition:: Summary
+
+   Returns the ``aiBase``'s ``CAIScript`` for the given ``scriptLevel``.
 
 **Parameters:**
 
@@ -69,8 +70,9 @@ EEex_AIBase_GetScriptLevelResRef
 
 **Instance Name:** ``getScriptLevelResRef``
 
-.. note::
-   **Summary:** Returns a string that represents the ``aiBase``'s ``CResRef`` for the given ``scriptLevel``.
+.. admonition:: Summary
+
+   Returns a string that represents the ``aiBase``'s ``CResRef`` for the given ``scriptLevel``.
    If the given ``scriptLevel`` is not populated, returns ``""``.
 
 **Parameters:**
@@ -99,8 +101,9 @@ EEex_AIBase_SetScriptLevel
 
 **Instance Name:** ``setScriptLevel``
 
-.. note::
-   **Summary:** Sets the ``aiBase``'s ``CAIScript`` for the given ``scriptLevel`` to ``script``.
+.. admonition:: Summary
+
+   Sets the ``aiBase``'s ``CAIScript`` for the given ``scriptLevel`` to ``script``.
 
 **Parameters:**
 
@@ -122,8 +125,9 @@ EEex_AIBase_SetScriptLevelResRef
 
 **Instance Name:** ``setScriptLevelResRef``
 
-.. note::
-   **Summary:** Loads the script with the given ``resref`` and sets the ``aiBase``'s ``CAIScript`` for the given ``scriptLevel`` to it.
+.. admonition:: Summary
+
+   Loads the script with the given ``resref`` and sets the ``aiBase``'s ``CAIScript`` for the given ``scriptLevel`` to it.
 
 **Parameters:**
 
@@ -147,8 +151,9 @@ EEex_AIBase_SetStoredScriptingTarget
 
 **Instance Name:** ``setStoredScriptingTarget``
 
-.. note::
-   **Summary:** Stores ``target`` on ``aiBase`` for use with the ``EEex_Target`` scripting object.
+.. admonition:: Summary
+
+   Stores ``target`` on ``aiBase`` for use with the ``EEex_Target`` scripting object.
 
 **Parameters:**
 
