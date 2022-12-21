@@ -34,9 +34,24 @@ div[itemprop=articleBody] > section > section > h2 {
     margin-left: -2%;
 }
 
-/* Unindent main-header h2 so it's not indented with its contents */
+/* Have admonitions auto-fit contents */
 div.admonition {
     width: fit-content;
+}
+
+/* Have code-blocks auto-fit contents */
+div[class^="highlight-"] {
+    width: fit-content;
+}
+
+/* Custom lavender theme for summary admonitions */
+div.admonition-summary > p.admonition-title {
+    background: #967BB6;
+}
+
+/* Custom lavender theme for summary admonitions */
+div.admonition-summary.admonition {
+    background: #EEEAF3;
 }
 
 .underline {
