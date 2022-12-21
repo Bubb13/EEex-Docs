@@ -9,6 +9,11 @@ table.docutils colgroup {
     display: none !important;
 }
 
+/* Table contents should have a line-height large enough that literal segments don't clip */
+table.docutils p {
+    line-height: 20px !important;
+}
+
 /* Change table headers to a darker color */
 table.docutils > thead > tr.row-odd > th.head {
     background-color:#e9ecec;
