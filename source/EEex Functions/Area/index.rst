@@ -266,7 +266,7 @@ EEex_Area_GetVariableInt
 
 .. admonition:: Summary
 
-   Returns the integer value of the ``variableName`` Global that is stored in ``area``'s scope.
+   Returns the integer value of the ``variableName`` Global scoped to ``area``.
    If no variable named ``variableName`` exists, returns ``0``.
 
 **Parameters:**
@@ -297,7 +297,7 @@ EEex_Area_GetVariableString
 
 .. admonition:: Summary
 
-   Returns the string value of the ``variableName`` Global that is stored in ``area``'s scope.
+   Returns the string value of the ``variableName`` Global scoped to ``area``.
    If no variable named ``variableName`` exists, returns ``""``.
 
 
@@ -351,7 +351,7 @@ EEex_Area_SetVariableInt
 
 .. admonition:: Summary
 
-   Sets the integer value of the ``variableName`` Global that is stored in ``area``'s scope to ``value``.
+   Sets the integer value of the ``variableName`` Global scoped to ``area`` to ``value``.
 
 **Parameters:**
 
@@ -375,7 +375,7 @@ EEex_Area_SetVariableString
 
 .. admonition:: Summary
 
-   Sets the string value of the ``variableName`` Global that is stored in ``area``'s scope to ``value``.
+   Sets the string value of the ``variableName`` Global scoped to ``area`` to ``value``.
 
 
 .. note::
