@@ -115,6 +115,14 @@ EEex_Utility_KeyPressed
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Utility_Switch:
+
+EEex_Utility_Switch
+^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Utility_Ternary:
 
 EEex_Utility_Ternary
