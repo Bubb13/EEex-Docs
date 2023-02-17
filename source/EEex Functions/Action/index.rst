@@ -11,6 +11,22 @@
 Action
 ======
 
+.. _EEex_Action_AddSpriteStartedActionListener:
+
+EEex_Action_AddSpriteStartedActionListener
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Action_AddSpriteStartedNextActionListener:
+
+EEex_Action_AddSpriteStartedNextActionListener
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Action_ExecuteResponseStringOnAIBaseInstantly:
 
 EEex_Action_ExecuteResponseStringOnAIBaseInstantly
@@ -84,6 +100,14 @@ EEex_Action_FreeScriptFile
 | pScriptFile | CAIScriptFile |                   | The AI script file to free. |
 +-------------+---------------+-------------------+-----------------------------+
 
+
+.. _EEex_Action_NextSpellToPoint:
+
+EEex_Action_NextSpellToPoint
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
 
 .. _EEex_Action_ParseResponseString:
 
