@@ -281,6 +281,14 @@ EEex_Actionbar_RestoreLastState
    Restores the previous actionbar state. This is useful for exiting sub-states, such as the spell list.
 
 
+.. _EEex_Actionbar_RunWithListenersSuppressed:
+
+EEex_Actionbar_RunWithListenersSuppressed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Actionbar_SetButton:
 
 EEex_Actionbar_SetButton
@@ -376,4 +384,12 @@ EEex_Actionbar_SetState
 | state    | number   |                   | The state to set. |
 +----------+----------+-------------------+-------------------+
 
+
+.. _EEex_Actionbar_SuppressListeners:
+
+EEex_Actionbar_SuppressListeners
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
 
