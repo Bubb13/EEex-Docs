@@ -91,14 +91,6 @@ EEex_Utility_GetOrCreateTable
 .. warning::
    This function is currently undocumented.
 
-.. _EEex_Utility_InitListeners:
-
-EEex_Utility_InitListeners
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
 .. _EEex_Utility_IterateCPtrList:
 
 EEex_Utility_IterateCPtrList
