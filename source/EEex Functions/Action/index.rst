@@ -11,6 +11,14 @@
 Action
 ======
 
+.. _EEex_Action_AddEnabledSpriteStartedActionListener:
+
+EEex_Action_AddEnabledSpriteStartedActionListener
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Action_AddSpriteStartedActionListener:
 
 EEex_Action_AddSpriteStartedActionListener
