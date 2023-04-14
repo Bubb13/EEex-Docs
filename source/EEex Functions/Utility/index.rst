@@ -99,6 +99,14 @@ EEex_Utility_IterateCPtrList
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Utility_IterateMapAsSorted:
+
+EEex_Utility_IterateMapAsSorted
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Utility_KeyPressed:
 
 EEex_Utility_KeyPressed
