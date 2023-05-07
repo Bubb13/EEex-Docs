@@ -1,8 +1,6 @@
 
 myst_parser==1.0.0
 readthedocs-sphinx-search==0.3.1
-sphinx==5.3.0                    # Latest that doesn't require Python  >= 3.8   (build environment error)
+sphinx==6.2.1                    # Latest supported by rtd
 sphinx_rtd_theme==1.2.0
-sphinxcontrib-applehelp==1.0.2   # Latest that doesn't require Python  >= 3.8   (build environment error)
-sphinxcontrib-htmlhelp==2.0.0    # Latest that doesn't require Python  >= 3.8   (build environment error)
 urllib3==1.26.15                 # Latest that doesn't require OpenSSL >= 1.1.1 (build environment error)
