@@ -2,5 +2,4 @@
 myst_parser==1.0.0
 readthedocs-sphinx-search==0.3.1
 sphinx==6.2.1                    # Latest supported by rtd
-sphinx_rtd_theme==1.2.0
-urllib3==1.26.15                 # Latest that doesn't require OpenSSL >= 1.1.1 (build environment error)
+sphinx_rtd_theme==1.2.1
