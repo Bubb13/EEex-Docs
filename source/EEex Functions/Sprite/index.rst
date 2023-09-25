@@ -407,6 +407,54 @@ EEex_Sprite_GetInPortraitID
 +----------+-----------------+
 
 
+.. _EEex_Sprite_GetKnownInnateSpellsIterator:
+
+EEex_Sprite_GetKnownInnateSpellsIterator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_GetKnownInnateSpellsWithAbilityIterator:
+
+EEex_Sprite_GetKnownInnateSpellsWithAbilityIterator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_GetKnownMageSpellsIterator:
+
+EEex_Sprite_GetKnownMageSpellsIterator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_GetKnownMageSpellsWithAbilityIterator:
+
+EEex_Sprite_GetKnownMageSpellsWithAbilityIterator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_GetKnownPriestSpellsIterator:
+
+EEex_Sprite_GetKnownPriestSpellsIterator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_GetKnownPriestSpellsWithAbilityIterator:
+
+EEex_Sprite_GetKnownPriestSpellsWithAbilityIterator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Sprite_GetLocalInt:
 
 EEex_Sprite_GetLocalInt
@@ -550,6 +598,14 @@ EEex_Sprite_GetSelectedID
 +----------+-----------------+
 
 
+.. _EEex_Sprite_GetSpellButtonDataIteratorFrom2DA:
+
+EEex_Sprite_GetSpellButtonDataIteratorFrom2DA
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Sprite_GetSpellState:
 
 EEex_Sprite_GetSpellState
@@ -570,6 +626,30 @@ EEex_Sprite_GetStat
 
 EEex_Sprite_GetState
 ^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_GetValidKnownInnateSpellsIterator:
+
+EEex_Sprite_GetValidKnownInnateSpellsIterator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_GetValidKnownMageSpellsIterator:
+
+EEex_Sprite_GetValidKnownMageSpellsIterator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_GetValidKnownPriestSpellsIterator:
+
+EEex_Sprite_GetValidKnownPriestSpellsIterator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
@@ -613,6 +693,14 @@ EEex_Sprite_IterateSelectedIDs
 | func     | function |                   | The function to call. |
 +----------+----------+-------------------+-----------------------+
 
+
+.. _EEex_Sprite_OpenOp214Interface:
+
+EEex_Sprite_OpenOp214Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
 
 .. _EEex_Sprite_SetLocalInt:
 
