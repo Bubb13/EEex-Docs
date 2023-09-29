@@ -614,6 +614,14 @@ EEex_Sprite_GetSpellState
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Sprite_GetSpellsWithAbilityIterator:
+
+EEex_Sprite_GetSpellsWithAbilityIterator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Sprite_GetStat:
 
 EEex_Sprite_GetStat
@@ -649,6 +657,14 @@ EEex_Sprite_GetValidKnownMageSpellsIterator
 .. _EEex_Sprite_GetValidKnownPriestSpellsIterator:
 
 EEex_Sprite_GetValidKnownPriestSpellsIterator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_GetValidSpellsWithAbilityIterator:
+
+EEex_Sprite_GetValidSpellsWithAbilityIterator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::

@@ -83,6 +83,22 @@ EEex_Utility_ChainIteratorsTable
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Utility_CollectIteratorValue:
+
+EEex_Utility_CollectIteratorValue
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Utility_CollectIteratorValues:
+
+EEex_Utility_CollectIteratorValues
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Utility_DeepCopy:
 
 EEex_Utility_DeepCopy
@@ -171,10 +187,26 @@ EEex_Utility_KeyPressed
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Utility_MapIteratorValues:
+
+EEex_Utility_MapIteratorValues
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Utility_MutateIterator:
 
 EEex_Utility_MutateIterator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Utility_ProcessIteratorValues:
+
+EEex_Utility_ProcessIteratorValues
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
