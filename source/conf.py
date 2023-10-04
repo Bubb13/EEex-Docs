@@ -30,7 +30,10 @@
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.todo','sphinx_search.extension','myst_parser',
+    'sphinx.ext.todo',
+    'sphinx_search.extension',
+    'sphinxcontrib.jquery', # Workaround (sphinx-rtd-theme issue #1452)
+    'myst_parser',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
