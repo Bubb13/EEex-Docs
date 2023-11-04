@@ -111,6 +111,14 @@ EEex_GameState_GetGlobalString
 +----------+-----------------+
 
 
+.. _EEex_GameState_LuaHook_OnInitialized:
+
+EEex_GameState_LuaHook_OnInitialized
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_GameState_SetGlobalInt:
 
 EEex_GameState_SetGlobalInt

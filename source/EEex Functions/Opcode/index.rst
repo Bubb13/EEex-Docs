@@ -19,3 +19,11 @@ EEex_Opcode_AddListsResolvedListener
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Opcode_LuaHook_AfterListsResolved:
+
+EEex_Opcode_LuaHook_AfterListsResolved
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+

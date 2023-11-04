@@ -350,8 +350,31 @@ EEex_Sprite_GetContingencyTimerPercentage
 EEex_Sprite_GetExtendedStat
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+**Instance Name:** ``getExtendedStat``
 .. warning::
-   This function is currently undocumented.
+   **Deprecated:** Use ``EEex_Sprite_GetStat()`` instead.
+
+
+.. admonition:: Summary
+
+   Returns the value of the extended stat on the given ``sprite``.
+
+**Parameters:**
+
++----------+-------------+-------------------+--------------------------------------------------------+
+| **Name** | **Type**    | **Default Value** | **Description**                                        |
++==========+=============+===================+========================================================+
+| sprite   | CGameSprite |                   | The sprite whose extended stat value is being fetched. |
++----------+-------------+-------------------+--------------------------------------------------------+
+
+**Return Values:**
+
++----------+-----------------+
+| **Type** | **Description** |
++==========+=================+
+| number   | See summary.    |
++----------+-----------------+
+
 
 .. _EEex_Sprite_GetInPortrait:
 

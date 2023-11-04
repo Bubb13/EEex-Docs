@@ -105,7 +105,8 @@ EEex_Utility_DeepCopy
 ^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
-   This function is currently undocumented.
+   **Deprecated:** Use ``EEex.DeepCopy`` instead.
+
 
 .. _EEex_Utility_Default:
 
