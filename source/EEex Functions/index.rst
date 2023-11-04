@@ -23,6 +23,7 @@ EEex Functions
    Resource/index
    Script/index
    Sprite/index
+   Stats/index
    Trigger/index
    Utility/index
    Variable/index

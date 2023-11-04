@@ -109,14 +109,6 @@ EEex_Action_FreeScriptFile
 +-------------+---------------+-------------------+-----------------------------+
 
 
-.. _EEex_Action_LuaHook_OnAfterSpriteStartedAction:
-
-EEex_Action_LuaHook_OnAfterSpriteStartedAction
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
 .. _EEex_Action_NextSpellToPoint:
 
 EEex_Action_NextSpellToPoint

@@ -7,14 +7,14 @@
 .. role:: bold-italic
    :class: bold-italic
 
-======
-Opcode
-======
+=====
+Stats
+=====
 
-.. _EEex_Opcode_AddListsResolvedListener:
+.. _EEex_Stats_Register:
 
-EEex_Opcode_AddListsResolvedListener
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+EEex_Stats_Register
+^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
