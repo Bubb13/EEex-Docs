@@ -153,30 +153,6 @@ EEex_Actionbar_GetLastState
 +----------+-----------------+
 
 
-.. _EEex_Actionbar_GetOp214ButtonDataIterator:
-
-EEex_Actionbar_GetOp214ButtonDataIterator
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Actionbar_GetSpellButtonData:
-
-EEex_Actionbar_GetSpellButtonData
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Actionbar_GetSpellButtonDataIterator:
-
-EEex_Actionbar_GetSpellButtonDataIterator
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
 .. _EEex_Actionbar_GetState:
 
 EEex_Actionbar_GetState

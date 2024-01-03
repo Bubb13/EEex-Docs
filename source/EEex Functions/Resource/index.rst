@@ -115,42 +115,10 @@ EEex_Resource_Get2DADimensions
 .. warning::
    This function is currently undocumented.
 
-.. _EEex_Resource_Get2DARowColumnsByLabelIterator:
-
-EEex_Resource_Get2DARowColumnsByLabelIterator
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Resource_Get2DARowColumnsIterator:
-
-EEex_Resource_Get2DARowColumnsIterator
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
 .. _EEex_Resource_Get2DARowLabel:
 
 EEex_Resource_Get2DARowLabel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Resource_Get2DARowTableIterator:
-
-EEex_Resource_Get2DARowTableIterator
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Resource_Get2DARowValuesIterator:
-
-EEex_Resource_Get2DARowValuesIterator
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
@@ -215,14 +183,6 @@ EEex_Resource_GetSpellAbility
 
 EEex_Resource_GetSpellAbilityForLevel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Resource_GetValidSpellsIterator:
-
-EEex_Resource_GetValidSpellsIterator
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
