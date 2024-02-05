@@ -30,7 +30,10 @@
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.todo','myst_parser',
+    'sphinx.ext.todo',
+    'sphinx_search.extension',
+    'sphinxcontrib.jquery', # Workaround (sphinx-rtd-theme issue #1452)
+    'myst_parser',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -51,7 +54,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'EEex'
-copyright = u'2022, Bubb, fearless, CrevsDaak'
+copyright = u'2024, Bubb, fearless, CrevsDaak'
 author = u'Bubb, fearless, CrevsDaak'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -68,7 +71,7 @@ release = u'1.0'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
