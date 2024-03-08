@@ -40,7 +40,8 @@ EEex_GameState_AddInitializedListener
 .. admonition:: Summary
 
    Registers a listener function that is called immediately after the engine's Lua environment has been initialized.
-   This only occurs once during the engine's early start up process.
+   This only occurs once during the engine's early start up process. If the engine has already been initialized,
+   ``listener`` is called immediately.
 
 **Parameters:**
 

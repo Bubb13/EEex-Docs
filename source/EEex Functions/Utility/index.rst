@@ -196,10 +196,26 @@ EEex_Utility_MapIteratorValues
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Utility_MapToSortedTable:
+
+EEex_Utility_MapToSortedTable
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Utility_MutateIterator:
 
 EEex_Utility_MutateIterator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Utility_NewScope:
+
+EEex_Utility_NewScope
+^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.

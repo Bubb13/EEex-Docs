@@ -35,6 +35,14 @@ EEex_Menu_AddBeforeMainFileReloadedListener
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Menu_AddBeforeUIItemRenderListener:
+
+EEex_Menu_AddBeforeUIItemRenderListener
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Menu_AddMainFileLoadedListener:
 
 EEex_Menu_AddMainFileLoadedListener
@@ -67,6 +75,14 @@ EEex_Menu_GetArea
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Menu_GetItemArea:
+
+EEex_Menu_GetItemArea
+^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Menu_GetItemFunction:
 
 EEex_Menu_GetItemFunction
@@ -87,6 +103,22 @@ EEex_Menu_GetItemVariant
 
 EEex_Menu_GetMousePos
 ^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Menu_GetUIItemArea:
+
+EEex_Menu_GetUIItemArea
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Menu_GetUIMenuArea:
+
+EEex_Menu_GetUIMenuArea
+^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.

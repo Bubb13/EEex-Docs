@@ -197,8 +197,25 @@ EEex_Resource_Free2DA
 EEex_Resource_FreeIDS
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-   This function is currently undocumented.
+**Instance Name:** ``free``
+
+.. admonition:: Summary
+
+   Frees the memory associated with ``ids``. :bold-italic:`Only use this if you know what you are doing!`
+
+
+.. note::
+   ``CAIIdList`` objects returned by ``EEex_Resource_LoadIDS()`` are subject to garbage-collection
+   – meaning ``EEex_Resource_FreeIDS()`` should :bold-italic:`not` be called on these instances.
+
+**Parameters:**
+
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+| **Name** | **Type**  | **Default Value** | **Description**                                                                                      |
++==========+===========+===================+======================================================================================================+
+| ids      | CAIIdList |                   | The .IDS file being operated on. This is usually the object returned by ``EEex_Resource_LoadIDS()``. |
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+
 
 .. _EEex_Resource_Get2DAColumnLabel:
 
@@ -431,37 +448,186 @@ EEex_Resource_GetAt2DAPoint
 +----------+-----------------+
 
 
+.. _EEex_Resource_GetCItemAbility:
+
+EEex_Resource_GetCItemAbility
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Resource_GetIDSCount:
 
 EEex_Resource_GetIDSCount
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+**Instance Name:** ``getCount``
+
+.. admonition:: Summary
+
+   Returns the size of ``ids``'s backing cache array.
+
+
 .. warning::
-   This function is currently undocumented.
+   This function is only valid if the .IDS was loaded with ``cacheAsArray=true``.
+
+**Parameters:**
+
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+| **Name** | **Type**  | **Default Value** | **Description**                                                                                      |
++==========+===========+===================+======================================================================================================+
+| ids      | CAIIdList |                   | The .IDS file being operated on. This is usually the object returned by ``EEex_Resource_LoadIDS()``. |
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+
+**Return Values:**
+
++----------+-----------------+
+| **Type** | **Description** |
++==========+=================+
+| number   | See summary.    |
++----------+-----------------+
+
 
 .. _EEex_Resource_GetIDSEntry:
 
 EEex_Resource_GetIDSEntry
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-   This function is currently undocumented.
+**Instance Name:** ``getEntry``
+
+.. admonition:: Summary
+
+   Returns the ``CAIId`` entry with the given ``id``, or ``nil`` if ``id`` is not present in the .IDS.
+
+
+.. note::
+   This function performs a linear search unless the .IDS was loaded with ``cacheAsArray=true``.
+
+**Parameters:**
+
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+| **Name** | **Type**  | **Default Value** | **Description**                                                                                      |
++==========+===========+===================+======================================================================================================+
+| ids      | CAIIdList |                   | The .IDS file being operated on. This is usually the object returned by ``EEex_Resource_LoadIDS()``. |
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+| id       | number    |                   | The id of the entry to be fetched.                                                                   |
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+
+**Return Values:**
+
++----------+-----------------+
+| **Type** | **Description** |
++==========+=================+
+| CAIId    | See summary.    |
++----------+-----------------+
+
 
 .. _EEex_Resource_GetIDSLine:
 
 EEex_Resource_GetIDSLine
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-   This function is currently undocumented.
+**Instance Name:** ``getLine``
+
+.. admonition:: Summary
+
+   Returns the symbol associated with the given ``id``, or ``nil`` if ``id`` is not present in the .IDS.
+
+
+.. note::
+   This function performs a linear search unless the .IDS was loaded with ``cacheAsArray=true``.
+
+**Parameters:**
+
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+| **Name** | **Type**  | **Default Value** | **Description**                                                                                      |
++==========+===========+===================+======================================================================================================+
+| ids      | CAIIdList |                   | The .IDS file being operated on. This is usually the object returned by ``EEex_Resource_LoadIDS()``. |
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+| id       | number    |                   | The id of the symbol to be fetched.                                                                  |
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+
+**Return Values:**
+
++----------+-----------------+
+| **Type** | **Description** |
++==========+=================+
+| string   | See summary.    |
++----------+-----------------+
+
 
 .. _EEex_Resource_GetIDSStart:
 
 EEex_Resource_GetIDSStart
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+**Instance Name:** ``getStart``
+
+.. admonition:: Summary
+
+   Returns the symbol value associated with the given ``id`` up until (and not including)
+   the first '(' character, or ``nil`` if ``id`` is not present in the .IDS.
+
+
+.. note::
+   This function performs a linear search unless the .IDS was loaded with ``cacheAsArray=true``.
+
+**Parameters:**
+
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+| **Name** | **Type**  | **Default Value** | **Description**                                                                                      |
++==========+===========+===================+======================================================================================================+
+| ids      | CAIIdList |                   | The .IDS file being operated on. This is usually the object returned by ``EEex_Resource_LoadIDS()``. |
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+| id       | number    |                   | The id of the symbol to be fetched.                                                                  |
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+
+**Return Values:**
+
++----------+-----------------+
+| **Type** | **Description** |
++==========+=================+
+| string   | See summary.    |
++----------+-----------------+
+
+
+.. _EEex_Resource_GetItemAbility:
+
+EEex_Resource_GetItemAbility
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Resource_GetMax2DAIndices:
+
+EEex_Resource_GetMax2DAIndices
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Instance Name:** ``getMaxIndices``
+
+.. admonition:: Summary
+
+   Returns the maximum x and y indices of the .2DA. That is the maximum indexable column, and the maximum indexable row respectively.
+
+**Parameters:**
+
++----------+----------+-------------------+------------------------------------------------------------------------------------------------------+
+| **Name** | **Type** | **Default Value** | **Description**                                                                                      |
++==========+==========+===================+======================================================================================================+
+| array    | C2DArray |                   | The .2DA file being operated on. This is usually the object returned by ``EEex_Resource_Load2DA()``. |
++----------+----------+-------------------+------------------------------------------------------------------------------------------------------+
+
+**Return Values:**
+
++----------+-------------------------------+
+| **Type** | **Description**               |
++==========+===============================+
+| number   | The .2DA's maximum 'x' index. |
++----------+-------------------------------+
+| number   | The .2DA's maximum 'y' index. |
++----------+-------------------------------+
+
 
 .. _EEex_Resource_GetSpellAbility:
 
@@ -491,6 +657,48 @@ EEex_Resource_GetValidSpellsIterator
 
 EEex_Resource_IDSHasID
 ^^^^^^^^^^^^^^^^^^^^^^
+
+**Instance Name:** ``hasID``
+
+.. admonition:: Summary
+
+   Returns ``true`` if the given ``id`` is present in the .IDS.
+
+
+.. note::
+   This function performs a linear search unless the .IDS was loaded with ``cacheAsArray=true``.
+
+**Parameters:**
+
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+| **Name** | **Type**  | **Default Value** | **Description**                                                                                      |
++==========+===========+===================+======================================================================================================+
+| ids      | CAIIdList |                   | The .IDS file being operated on. This is usually the object returned by ``EEex_Resource_LoadIDS()``. |
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+| id       | number    |                   | The id to search for.                                                                                |
++----------+-----------+-------------------+------------------------------------------------------------------------------------------------------+
+
+**Return Values:**
+
++----------+-----------------+
+| **Type** | **Description** |
++==========+=================+
+| boolean  | See summary.    |
++----------+-----------------+
+
+
+.. _EEex_Resource_ItemCategoryIDSToSymbol:
+
+EEex_Resource_ItemCategoryIDSToSymbol
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Resource_ItemCategorySymbolToIDS:
+
+EEex_Resource_ItemCategorySymbolToIDS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
@@ -591,6 +799,67 @@ EEex_Resource_Iterate2DARowLabel
 +----------+------------------------------------+-------------------+------------------------------------------------------------------------------------------------------+
 
 
+.. _EEex_Resource_IterateIDSEntries:
+
+EEex_Resource_IterateIDSEntries
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Instance Name:** ``iterateEntries``
+
+.. admonition:: Summary
+
+   Calls ``func`` for every ``CAIId`` entry of the .IDS. If ``func`` returns ``true`` the iteration ends early.
+
+**Parameters:**
+
++----------+-----------------------------------+-------------------+------------------------------------------------------------------------------------------------------+
+| **Name** | **Type**                          | **Default Value** | **Description**                                                                                      |
++==========+===================================+===================+======================================================================================================+
+| ids      | CAIIdList                         |                   | The .IDS file being operated on. This is usually the object returned by ``EEex_Resource_LoadIDS()``. |
++----------+-----------------------------------+-------------------+------------------------------------------------------------------------------------------------------+
+| func     | function(entry: CAIId) -> boolean |                   | The function to be called.                                                                           |
++----------+-----------------------------------+-------------------+------------------------------------------------------------------------------------------------------+
+
+
+.. _EEex_Resource_IterateUnpackedIDSEntries:
+
+EEex_Resource_IterateUnpackedIDSEntries
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Instance Name:** ``iterateUnpackedEntries``
+
+.. admonition:: Summary
+
+   Calls ``func`` for every ``CAIId`` entry of the .IDS, unpacking the entry's members for convenience.
+   If ``func`` returns ``true`` the iteration ends early.
+
+**Parameters:**
+
++----------+--------------------------------------------------------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Name** | **Type**                                                     | **Default Value** | **Description**                                                                                                                                                                                                                                                                    |
++==========+==============================================================+===================+====================================================================================================================================================================================================================================================================================+
+| ids      | CAIIdList                                                    |                   | The .IDS file being operated on. This is usually the object returned by ``EEex_Resource_LoadIDS()``.                                                                                                                                                                               |
++----------+--------------------------------------------------------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| func     | function(id: number, line: string, start: string) -> boolean |                   | The function to be called. :raw-html:`<br/>`  :raw-html:`<br/>` ``id`` – the entry's numerical value. :raw-html:`<br/>` ``line`` – the entry's complete symbol value. :raw-html:`<br/>` ``start`` – the entry's symbol value up until (and not including) the first '(' character. |
++----------+--------------------------------------------------------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+.. _EEex_Resource_KitIDSToSymbol:
+
+EEex_Resource_KitIDSToSymbol
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Resource_KitSymbolToIDS:
+
+EEex_Resource_KitSymbolToIDS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Resource_Load2DA:
 
 EEex_Resource_Load2DA
@@ -623,6 +892,27 @@ EEex_Resource_Load2DA
 EEex_Resource_LoadIDS
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-   This function is currently undocumented.
+
+.. admonition:: Summary
+
+   Returns a ``CAIIdList`` instance that represents the .IDS with ``resref``.
+
+**Parameters:**
+
++--------------+----------+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Name**     | **Type** | **Default Value** | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
++==============+==========+===================+==========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+
+| resref       | string   |                   | The resref of the .IDS to be loaded – (should omit the file extension).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
++--------------+----------+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| cacheAsArray | boolean  | ``false``         | If ``true``, internally builds an array that maps every id of the .IDS to its corresponding ``CAIId`` entry in the :raw-html:`<br/>` range [0, <max id in .IDS>]. :raw-html:`<br/>`  :raw-html:`<br/>` Setting this parameter to ``true`` can speed up entry lookups for the returned ``CAIIdList`` instance – :bold-italic:`however`\, :raw-html:`<br/>` care must be taken that the given .IDS does not have a large max id value. :raw-html:`<br/>`  :raw-html:`<br/>` For example, it would be a bad idea to load ``KIT.IDS`` with ``cacheAsArray=true``, as the max id of ``KIT.IDS``, :raw-html:`<br/>` ``0x80000000``, would cause the ``CAIIdList`` instance to attempt to allocate an array that has a size of :raw-html:`<br/>` ``(0x80000000 + 1) * 8 bytes`` :bold-italic:`= ~16 gigabytes!` |
++--------------+----------+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+**Return Values:**
+
++-----------+-----------------+
+| **Type**  | **Description** |
++===========+=================+
+| CAIIdList | See summary.    |
++-----------+-----------------+
+
 

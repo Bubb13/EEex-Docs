@@ -27,10 +27,26 @@ EEex_Sprite_AddQuickListCountsResetListener
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Sprite_AddQuickListNotifyRemovedListener:
+
+EEex_Sprite_AddQuickListNotifyRemovedListener
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Sprite_AddQuickListsCheckedListener:
 
 EEex_Sprite_AddQuickListsCheckedListener
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_AddSpellDisableStateChangedListener:
+
+EEex_Sprite_AddSpellDisableStateChangedListener
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
@@ -478,6 +494,14 @@ EEex_Sprite_GetKnownPriestSpellsWithAbilityIterator
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Sprite_GetLauncher:
+
+EEex_Sprite_GetLauncher
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Sprite_GetLocalInt:
 
 EEex_Sprite_GetLocalInt
@@ -732,6 +756,14 @@ EEex_Sprite_IterateSelectedIDs
 | func     | function |                   | The function to call. |
 +----------+----------+-------------------+-----------------------+
 
+
+.. _EEex_Sprite_LuaHook_OnSpellDisableStateChanged:
+
+EEex_Sprite_LuaHook_OnSpellDisableStateChanged
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
 
 .. _EEex_Sprite_OpenOp214Interface:
 
