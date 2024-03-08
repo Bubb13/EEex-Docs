@@ -51,6 +51,14 @@ EEex_Menu_AddMainFileLoadedListener
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Menu_AddWindowSizeChangedListener:
+
+EEex_Menu_AddWindowSizeChangedListener
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Menu_DestroyInjectedTemplate:
 
 EEex_Menu_DestroyInjectedTemplate
