@@ -1,10 +1,11 @@
 * text eol=crlf
-*.exe binary
+*.bmp binary
 *.dll binary
-*.zip binary
+*.exe binary
+*.gif binary
+*.ico binary
+*.jpg binary
+*.png binary
 *.rar binary
 *.ttf binary
-*.ico binary
-*.bmp binary
-*.png binary
-*.jpg binary
+*.zip binary
