@@ -12,7 +12,8 @@ EEex's core component does **not** make any gameplay changes itself – it merel
 * :ref:`Compatibility<Compatibility>`
 * :ref:`Download<Download>`
 * :ref:`Installation<Overview_Installation>`
-* :ref:`How EEex works<How EEex works>`
+* :ref:`Stability<Stability>`
+* :ref:`How EEex Works<How EEex Works>`
 * :ref:`Documentation<Documentation>`
 
 .. _Compatibility:
