@@ -29,6 +29,10 @@ table.docutils > tbody > tr.row-odd > td {
     background-color:#f3f6f6 !important;
 }
 
+.indent {
+    margin-left: 2%;
+}
+
 /* Indent main-header content */
 div[itemprop=articleBody] > section > section {
     margin-left: 2%;

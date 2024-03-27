@@ -5,9 +5,13 @@
 Overview
 ========
 
-EEex is an executable extender for Beamdog's Enhanced Edition of the Infinity Engine. Its goal is to externalize certain parts of the engine to grant modders a greater degree of control over otherwise hardcoded mechanics.
+.. rst-class:: indent
 
-EEex's core component does **not** make any gameplay changes itself – it merely enables other mods to do so. The installer provides additional :ref:`components<Components>` that make gameplay changes.
+   EEex is an executable extender for Beamdog's Enhanced Edition of the Infinity Engine. Its goal is to externalize certain parts of the engine to grant modders a greater degree of control over otherwise hardcoded mechanics.
+
+   EEex's core component does **not** make any gameplay changes itself – it merely enables other mods to do so. The installer provides additional :ref:`components<Components>` that make gameplay changes.
+
+----
 
 * :ref:`Compatibility<Compatibility>`
 * :ref:`Download<Download>`
