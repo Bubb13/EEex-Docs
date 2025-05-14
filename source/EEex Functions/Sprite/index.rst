@@ -717,6 +717,14 @@ EEex_Sprite_GetState
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Sprite_GetUUID:
+
+EEex_Sprite_GetUUID
+^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Sprite_GetValidKnownInnateSpellsIterator:
 
 EEex_Sprite_GetValidKnownInnateSpellsIterator
