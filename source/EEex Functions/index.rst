@@ -13,6 +13,7 @@ EEex Functions
    Actionbar/index
    AIBase/index
    Area/index
+   Debug/index
    GameObject/index
    GameState/index
    Key/index

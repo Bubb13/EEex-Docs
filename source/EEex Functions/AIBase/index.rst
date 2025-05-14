@@ -11,6 +11,14 @@
 AIBase
 ======
 
+.. _EEex_AIBase_AddScriptingObjectUpdatedListener:
+
+EEex_AIBase_AddScriptingObjectUpdatedListener
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_AIBase_GetScriptLevel:
 
 EEex_AIBase_GetScriptLevel
@@ -93,6 +101,14 @@ EEex_AIBase_GetScriptLevelResRef
 | string   | See summary.    |
 +----------+-----------------+
 
+
+.. _EEex_AIBase_LuaHook_OnScriptingObjectUpdated:
+
+EEex_AIBase_LuaHook_OnScriptingObjectUpdated
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
 
 .. _EEex_AIBase_SetScriptLevel:
 

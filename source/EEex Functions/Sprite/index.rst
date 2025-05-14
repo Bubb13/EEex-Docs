@@ -11,6 +11,30 @@
 Sprite
 ======
 
+.. _EEex_Sprite_AddAlterBaseWeaponDamageListener:
+
+EEex_Sprite_AddAlterBaseWeaponDamageListener
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_AddBlockWeaponHitListener:
+
+EEex_Sprite_AddBlockWeaponHitListener
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_AddLoadedListener:
+
+EEex_Sprite_AddLoadedListener
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Sprite_AddMarshalHandlers:
 
 EEex_Sprite_AddMarshalHandlers
@@ -392,6 +416,14 @@ EEex_Sprite_GetExtendedStat
 +----------+-----------------+
 
 
+.. _EEex_Sprite_GetFromUUID:
+
+EEex_Sprite_GetFromUUID
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Sprite_GetInPortrait:
 
 EEex_Sprite_GetInPortrait
@@ -756,6 +788,30 @@ EEex_Sprite_IterateSelectedIDs
 | func     | function |                   | The function to call. |
 +----------+----------+-------------------+-----------------------+
 
+
+.. _EEex_Sprite_LoadedWithUUIDCallback:
+
+EEex_Sprite_LoadedWithUUIDCallback
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_LuaHook_AlterBaseWeaponDamage:
+
+EEex_Sprite_LuaHook_AlterBaseWeaponDamage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_LuaHook_OnAfterEffectListUnmarshalled:
+
+EEex_Sprite_LuaHook_OnAfterEffectListUnmarshalled
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
 
 .. _EEex_Sprite_LuaHook_OnSpellDisableStateChanged:
 
