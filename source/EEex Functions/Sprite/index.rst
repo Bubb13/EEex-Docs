@@ -829,6 +829,14 @@ EEex_Sprite_LuaHook_OnSpellDisableStateChanged
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Sprite_LuaHook_ReadExtraEffectListUnmarshal:
+
+EEex_Sprite_LuaHook_ReadExtraEffectListUnmarshal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Sprite_OpenOp214Interface:
 
 EEex_Sprite_OpenOp214Interface
