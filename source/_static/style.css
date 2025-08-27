@@ -71,3 +71,7 @@ div.admonition-summary.admonition {
     font-weight: bold;
     font-style: italic;
 }
+
+.no-margin {
+    margin-bottom: 0 !important;
+}
