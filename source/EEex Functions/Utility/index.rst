@@ -7,19 +7,9 @@
 .. role:: bold-italic
    :class: bold-italic
 
-.. |rarr| unicode:: U+2192
-
 =======
 Utility
 =======
-
-.. _EEex_Utility_AlphanumericCompare:
-
-EEex_Utility_AlphanumericCompare
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
 
 .. _EEex_Utility_AlphanumericSortTable:
 
@@ -126,6 +116,14 @@ EEex_Utility_Default
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Utility_DumpSprite:
+
+EEex_Utility_DumpSprite
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Utility_Eval:
 
 EEex_Utility_Eval
@@ -138,14 +136,6 @@ EEex_Utility_Eval
 
 EEex_Utility_FilterIterator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Utility_Find:
-
-EEex_Utility_Find
-^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
@@ -190,6 +180,14 @@ EEex_Utility_IterateMapAsSorted
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Utility_KeyPressed:
+
+EEex_Utility_KeyPressed
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Utility_MapIteratorValues:
 
 EEex_Utility_MapIteratorValues
@@ -202,14 +200,6 @@ EEex_Utility_MapIteratorValues
 
 EEex_Utility_MapToSortedTable
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Utility_Merge:
-
-EEex_Utility_Merge
-^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
@@ -254,14 +244,6 @@ EEex_Utility_SelectIterator
 .. warning::
    This function is currently undocumented.
 
-.. _EEex_Utility_Split:
-
-EEex_Utility_Split
-^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
 .. _EEex_Utility_Switch:
 
 EEex_Utility_Switch
@@ -282,14 +264,6 @@ EEex_Utility_TableIterator
 
 EEex_Utility_Ternary
 ^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Utility_TryFinally:
-
-EEex_Utility_TryFinally
-^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.

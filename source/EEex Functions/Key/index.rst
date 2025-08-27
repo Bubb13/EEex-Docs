@@ -7,8 +7,6 @@
 .. role:: bold-italic
    :class: bold-italic
 
-.. |rarr| unicode:: U+2192
-
 ===
 Key
 ===
@@ -74,22 +72,6 @@ The listener function
 +======+=============+============================+
 | key  | SDL_Keycode | The key that was released. |
 +------+-------------+----------------------------+
-
-.. _EEex_Key_EnterCaptureMode:
-
-EEex_Key_EnterCaptureMode
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Key_ExitCaptureMode:
-
-EEex_Key_ExitCaptureMode
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
 
 .. _EEex_Key_GetFromName:
 
@@ -479,30 +461,6 @@ Additionally, the following table provides a list of all the specially-recognize
 +---------------------+
 | Sleep               |
 +---------------------+
-
-.. _EEex_Key_GetName:
-
-EEex_Key_GetName
-^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Key_GetPressedCount:
-
-EEex_Key_GetPressedCount
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Key_GetPressedStack:
-
-EEex_Key_GetPressedStack
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
 
 .. _EEex_Key_IsDown:
 

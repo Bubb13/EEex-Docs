@@ -17,11 +17,9 @@ EEex Functions
    GameObject/index
    GameState/index
    Key/index
-   Keybinds/index
    Menu/index
    Object/index
    Opcode/index
-   Options/index
    Projectile/index
    Resource/index
    Script/index

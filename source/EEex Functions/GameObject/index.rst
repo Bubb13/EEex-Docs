@@ -7,8 +7,6 @@
 .. role:: bold-italic
    :class: bold-italic
 
-.. |rarr| unicode:: U+2192
-
 ==========
 GameObject
 ==========
@@ -51,10 +49,10 @@ Valid keys for the ``args`` table are as follows:
 +------------------+-------------------+------------------------------------------------------------------------------------------------+
 | effectID         | ``<ERROR>``       | As per offset [+0x10] of .EFF v2.0.                                                            |
 +------------------+-------------------+------------------------------------------------------------------------------------------------+
-| effectList       | ``1``             | If 1, adds the effect to the sprite's timed list. :raw-html:`<br/>`                            |
+| effectList       | ``0``             | If 1, adds the effect to the sprite's timed list. :raw-html:`<br/>`                            |
 |                  |                   | If 2, adds the effect to the sprite's equipped list.                                           |
 +------------------+-------------------+------------------------------------------------------------------------------------------------+
-| immediateResolve | ``1``             | Determines whether the engine immediately applies the effect during the :raw-html:`<br/>`      |
+| immediateResolve | ``0``             | Determines whether the engine immediately applies the effect during the :raw-html:`<br/>`      |
 |                  |                   | function call, or the next time the sprite's effect list is processed.                         |
 +------------------+-------------------+------------------------------------------------------------------------------------------------+
 | m_casterLevel    | ``0``             | As per offset [+0xC8] of .EFF v2.0.                                                            |
@@ -126,14 +124,6 @@ Valid keys for the ``args`` table are as follows:
 +------------------+-------------------+------------------------------------------------------------------------------------------------+
 | targetY          | ``-1``            | As per offset [+0x8C] of .EFF v2.0.                                                            |
 +------------------+-------------------+------------------------------------------------------------------------------------------------+
-
-.. _EEex_GameObject_AttachVisualEffect:
-
-EEex_GameObject_AttachVisualEffect
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
 
 .. _EEex_GameObject_CastUserType:
 

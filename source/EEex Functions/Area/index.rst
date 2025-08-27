@@ -7,8 +7,6 @@
 .. role:: bold-italic
    :class: bold-italic
 
-.. |rarr| unicode:: U+2192
-
 ====
 Area
 ====
@@ -98,14 +96,6 @@ EEex_Area_CountAllOfTypeStringInRange
 | number   | See summary.    |
 +----------+-----------------+
 
-
-.. _EEex_Area_CreateVisualEffect:
-
-EEex_Area_CreateVisualEffect
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
 
 .. _EEex_Area_ForAllOfTypeInRange:
 
@@ -266,14 +256,6 @@ EEex_Area_GetAllOfTypeStringInRange
 | table    | See summary.    |
 +----------+-----------------+
 
-
-.. _EEex_Area_GetNearestOpenPosition:
-
-EEex_Area_GetNearestOpenPosition
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
 
 .. _EEex_Area_GetVariableInt:
 

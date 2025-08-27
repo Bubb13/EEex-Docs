@@ -7,27 +7,9 @@
 .. role:: bold-italic
    :class: bold-italic
 
-.. |rarr| unicode:: U+2192
-
 =========
 GameState
 =========
-
-.. _EEex_GameState_AddAfterIncludesListener:
-
-EEex_GameState_AddAfterIncludesListener
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_GameState_AddBeforeIncludesListener:
-
-EEex_GameState_AddBeforeIncludesListener
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
 
 .. _EEex_GameState_AddDestroyedListener:
 
@@ -69,14 +51,6 @@ EEex_GameState_AddInitializedListener
 | listener | function |                   | The listener to register. |
 +----------+----------+-------------------+---------------------------+
 
-
-.. _EEex_GameState_AddShutdownListener:
-
-EEex_GameState_AddShutdownListener
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
 
 .. _EEex_GameState_GetGlobalInt:
 
@@ -137,6 +111,14 @@ EEex_GameState_GetGlobalString
 | string   | See summary.    |
 +----------+-----------------+
 
+
+.. _EEex_GameState_LuaHook_OnInitialized:
+
+EEex_GameState_LuaHook_OnInitialized
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
 
 .. _EEex_GameState_SetGlobalInt:
 

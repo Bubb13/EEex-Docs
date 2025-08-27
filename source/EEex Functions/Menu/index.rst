@@ -7,19 +7,9 @@
 .. role:: bold-italic
    :class: bold-italic
 
-.. |rarr| unicode:: U+2192
-
 ====
 Menu
 ====
-
-.. _EEex_Menu_AddAfterMainFileLoadedListener:
-
-EEex_Menu_AddAfterMainFileLoadedListener
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
 
 .. _EEex_Menu_AddAfterMainFileReloadedListener:
 
@@ -33,14 +23,6 @@ EEex_Menu_AddAfterMainFileReloadedListener
 
 EEex_Menu_AddBeforeListRendersItemListener
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Menu_AddBeforeMainFileLoadedListener:
-
-EEex_Menu_AddBeforeMainFileLoadedListener
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
@@ -67,15 +49,6 @@ EEex_Menu_AddMainFileLoadedListener
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
-   **Deprecated:** Use ``EEex_Menu_AddAfterMainFileLoadedListener()`` instead.
-
-
-.. _EEex_Menu_AddTranslationLoadedListener:
-
-EEex_Menu_AddTranslationLoadedListener
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
    This function is currently undocumented.
 
 .. _EEex_Menu_AddWindowSizeChangedListener:
@@ -86,26 +59,10 @@ EEex_Menu_AddWindowSizeChangedListener
 .. warning::
    This function is currently undocumented.
 
-.. _EEex_Menu_DestroyAllTemplates:
-
-EEex_Menu_DestroyAllTemplates
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
 .. _EEex_Menu_DestroyInjectedTemplate:
 
 EEex_Menu_DestroyInjectedTemplate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Menu_Eval:
-
-EEex_Menu_Eval
-^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
@@ -121,14 +78,6 @@ EEex_Menu_Find
 .. _EEex_Menu_GetArea:
 
 EEex_Menu_GetArea
-^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Menu_GetItem:
-
-EEex_Menu_GetItem
 ^^^^^^^^^^^^^^^^^
 
 .. warning::
@@ -190,14 +139,6 @@ EEex_Menu_InjectTemplate
 .. warning::
    This function is currently undocumented.
 
-.. _EEex_Menu_InjectTemplateInstance:
-
-EEex_Menu_InjectTemplateInstance
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
 .. _EEex_Menu_IsCursorWithin:
 
 EEex_Menu_IsCursorWithin
@@ -234,14 +175,6 @@ EEex_Menu_LoadFile
 
 EEex_Menu_SetForceScrollbarRender
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Menu_SetItemExtraScrollbarPad:
-
-EEex_Menu_SetItemExtraScrollbarPad
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.

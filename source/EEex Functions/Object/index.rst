@@ -7,19 +7,9 @@
 .. role:: bold-italic
    :class: bold-italic
 
-.. |rarr| unicode:: U+2192
-
 ======
 Object
 ======
-
-.. _EEex_Object_AddToArea:
-
-EEex_Object_AddToArea
-^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
 
 .. _EEex_Object_EvalAsAIBase:
 

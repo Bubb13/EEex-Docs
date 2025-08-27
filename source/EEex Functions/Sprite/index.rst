@@ -7,8 +7,6 @@
 .. role:: bold-italic
    :class: bold-italic
 
-.. |rarr| unicode:: U+2192
-
 ======
 Sprite
 ======
@@ -154,30 +152,6 @@ EEex_Sprite_CountAllOfTypeStringInRange
 | number   | See summary.    |
 +----------+-----------------+
 
-
-.. _EEex_Sprite_CreateCopy:
-
-EEex_Sprite_CreateCopy
-^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Sprite_CreateFromResref:
-
-EEex_Sprite_CreateFromResref
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Sprite_DisplayTextRef:
-
-EEex_Sprite_DisplayTextRef
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
 
 .. _EEex_Sprite_ForAllOfTypeInRange:
 
@@ -395,14 +369,6 @@ EEex_Sprite_GetCastTimerPercentage
 .. warning::
    This function is currently undocumented.
 
-.. _EEex_Sprite_GetCharacterIndex:
-
-EEex_Sprite_GetCharacterIndex
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
 .. _EEex_Sprite_GetContingencyTimer:
 
 EEex_Sprite_GetContingencyTimer
@@ -616,14 +582,6 @@ EEex_Sprite_GetName
 .. warning::
    This function is currently undocumented.
 
-.. _EEex_Sprite_GetNameRef:
-
-EEex_Sprite_GetNameRef
-^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
 .. _EEex_Sprite_GetNumCharacters:
 
 EEex_Sprite_GetNumCharacters
@@ -642,14 +600,6 @@ EEex_Sprite_GetNumCharacters
 | number   | See summary.    |
 +----------+-----------------+
 
-
-.. _EEex_Sprite_GetPersonalSpace:
-
-EEex_Sprite_GetPersonalSpace
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
 
 .. _EEex_Sprite_GetPortraitIndex:
 
@@ -851,6 +801,38 @@ EEex_Sprite_IterateSelectedIDs
 
 EEex_Sprite_LoadedWithUUIDCallback
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_LuaHook_AlterBaseWeaponDamage:
+
+EEex_Sprite_LuaHook_AlterBaseWeaponDamage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_LuaHook_OnAfterEffectListUnmarshalled:
+
+EEex_Sprite_LuaHook_OnAfterEffectListUnmarshalled
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_LuaHook_OnSpellDisableStateChanged:
+
+EEex_Sprite_LuaHook_OnSpellDisableStateChanged
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
+.. _EEex_Sprite_LuaHook_ReadExtraEffectListUnmarshal:
+
+EEex_Sprite_LuaHook_ReadExtraEffectListUnmarshal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.

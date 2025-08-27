@@ -7,8 +7,6 @@
 .. role:: bold-italic
    :class: bold-italic
 
-.. |rarr| unicode:: U+2192
-
 ==========
 Projectile
 ==========
@@ -42,22 +40,6 @@ EEex_Projectile_CastUserType
 | :raw-html:`<pre>` CProjectile                    | CProjectileAmbiant             | CProjectileArea                | :raw-html:`<br/>` \CProjectileBAM                 | CProjectileCallLightning       | CProjectileCastingGlow         | :raw-html:`<br/>` \CProjectileChain               | CProjectileColorSpray          | CProjectileConeOfCold          | :raw-html:`<br/>` \CProjectileFall                | CProjectileFireHands           | CProjectileInstant             | :raw-html:`<br/>` \CProjectileInvisibleTravelling | CProjectileLightningBolt       | CProjectileLightningBoltGround | :raw-html:`<br/>` \CProjectileLightningBounce     | CProjectileLightningStorm      | CProjectileMagicMissileMulti   | :raw-html:`<br/>` \CProjectileMulti               | CProjectileMushroom            | CProjectileNewScorcher         | :raw-html:`<br/>` \CProjectileScorcher            | CProjectileSegment             | CProjectileSkyStrike           | :raw-html:`<br/>` \CProjectileSkyStrikeBAM        | CProjectileSpellHit            | CProjectileTravelDoor          | nil :raw-html:`</pre>` | See summary.    |
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 
-
-.. _EEex_Projectile_GetStartingPos:
-
-EEex_Projectile_GetStartingPos
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
-
-.. _EEex_Projectile_GetStartingPosForID:
-
-EEex_Projectile_GetStartingPosForID
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-   This function is currently undocumented.
 
 .. _EEex_Projectile_GetType:
 

@@ -7,8 +7,6 @@
 .. role:: bold-italic
    :class: bold-italic
 
-.. |rarr| unicode:: U+2192
-
 ======
 Action
 ======
@@ -110,6 +108,14 @@ EEex_Action_FreeScriptFile
 | pScriptFile | CAIScriptFile |                   | The AI script file to free. |
 +-------------+---------------+-------------------+-----------------------------+
 
+
+.. _EEex_Action_LuaHook_OnAfterSpriteStartedAction:
+
+EEex_Action_LuaHook_OnAfterSpriteStartedAction
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
 
 .. _EEex_Action_NextSpellToPoint:
 
