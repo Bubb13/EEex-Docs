@@ -100,8 +100,8 @@ Known values for 'Mode' are:
 
 * 0 item restricted if condition holds ('Not usable by' mode), parameters use IDS targets
 * 1 item restricted if condition fails ('Usable by' mode), parameters use IDS targets
-* 2 like 1 but parameters use splprot.2da
-* 3 like 0 but parameters use splprot.2da
+* 2 like 0 but parameters use splprot.2da
+* 3 like 1 but parameters use splprot.2da
 
 If 'Mode' is set to 2 or 3, then the creature type specified by the 'Stat Type' field will be affected by this opcode. See opcode #324 for more information.
 
