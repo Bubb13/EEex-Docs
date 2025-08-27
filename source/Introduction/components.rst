@@ -87,7 +87,7 @@ Holding the keybind for half a second makes time flow until it is released.
 Enable timer module
 -------------------
 
-This module enables visual indicators next to party member portraits that display various timer information.
+This component enables visual indicators next to party member portraits that display various timer information.
 
 ===========================================================================================================================
 
