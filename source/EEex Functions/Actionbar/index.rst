@@ -7,6 +7,8 @@
 .. role:: bold-italic
    :class: bold-italic
 
+.. |rarr| unicode:: U+2192
+
 =========
 Actionbar
 =========

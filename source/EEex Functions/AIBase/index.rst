@@ -7,6 +7,8 @@
 .. role:: bold-italic
    :class: bold-italic
 
+.. |rarr| unicode:: U+2192
+
 ======
 AIBase
 ======
@@ -102,10 +104,10 @@ EEex_AIBase_GetScriptLevelResRef
 +----------+-----------------+
 
 
-.. _EEex_AIBase_LuaHook_OnScriptingObjectUpdated:
+.. _EEex_AIBase_GetStoredScriptingTarget:
 
-EEex_AIBase_LuaHook_OnScriptingObjectUpdated
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+EEex_AIBase_GetStoredScriptingTarget
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
    This function is currently undocumented.
