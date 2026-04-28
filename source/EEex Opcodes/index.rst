@@ -1,3 +1,7 @@
+
+.. role:: raw-html(raw)
+   :format: html
+
 .. _EEex Opcodes:
 
 EEex Opcodes
@@ -34,6 +38,8 @@ Opcode Listing
 +-------------------------------------+----------------------------------------------+
 | :ref:`Opcode #402<Opcode #402>`\*   | Invoke Lua                                   |
 +-------------------------------------+----------------------------------------------+
+| :ref:`Opcode #403<Opcode #403>`\*   | Screen Effects                               |
++-------------------------------------+----------------------------------------------+
 
 \* `indicates new opcodes added via EEex`
 
@@ -50,6 +56,8 @@ Wizard Spell Slots Modifier
 
 * Special: Force the slot modification - If Special parameter is non-zero, the slot modification ignores access to particular spell level requirement.
 
+-----------------------------------------------------------------------------------------------------------------------
+
 .. _Opcode #62:
 
 Opcode #62
@@ -61,6 +69,8 @@ Priest Spell Slots Modifier
 
 If Special parameter is non-zero, the slot modification ignores access to particular spell level requirement.
 
+-----------------------------------------------------------------------------------------------------------------------
+
 .. _Opcode #218:
 
 Opcode #218
@@ -71,6 +81,8 @@ Protection: Stoneskin
 * Resource Key: Fire spell
 
 Spell specified in resource key is fired when all layers are lost.
+
+-----------------------------------------------------------------------------------------------------------------------
 
 .. _Opcode #280:
 
@@ -84,6 +96,8 @@ Spell Effect: Wild Magic
 
 'Surge Roll' field allows to force particular wild surge roll to occur if it is set to non-zero.
 If Special parameter is non-zero, all hardcoded wild surge graphical effects are suppressed.
+
+-----------------------------------------------------------------------------------------------------------------------
 
 .. _Opcode #319:
 
@@ -105,6 +119,8 @@ Known values for 'Mode' are:
 
 If 'Mode' is set to 2 or 3, then the creature type specified by the 'Stat Type' field will be affected by this opcode. See opcode #324 for more information.
 
+-----------------------------------------------------------------------------------------------------------------------
+
 .. _Opcode #324:
 
 Opcode #324
@@ -122,50 +138,135 @@ New Opcodes
 
 .. _Opcode #400:
 
-Opcode #400
-^^^^^^^^^^^
+Opcode #400 (Set Temporary AI Script)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Set Temporary AI Script
+.. admonition:: Summary
 
-* Parameter #1: Irrelevant
-* Parameter #2: Type
-* Description: Works exactly like Opcode #82 except:
+   .. rst-class:: immediate-list
 
-A null resref can null a script slot
-The original script is restored when the duration runs out or the effect otherwise ends.
+      Works exactly like `Opcode #82`_, except:
+
+      - The original script is restored when the duration runs out or the effect otherwise ends.
+      - An empty resref can null a script slot.
+
+.. _Opcode #82: https://gibberlings3.github.io/iesdp/opcodes/bgee.htm#op82
+
+.. warning::
+
+   Any changes made to the script level after this opcode has taken effect will be lost when the effect expires.
+
++--------------+---------------+-------------------------------------------------+
+| Opcode Field | Name          | Description                                     |
++==============+===============+=================================================+
+| Parameter #2 | Script Level  | The script level to set. :raw-html:`<br/><br/>` |
+|              |               |                                                 |
+|              |               | .. rst-class:: monospaced-list                  |
+|              |               |                                                 |
+|              |               |    Values correspond to ``SCRLEV.IDS``:         |
+|              |               |                                                 |
+|              |               |    - 0 -> OVERRIDE                              |
+|              |               |    - 1 -> AREA                                  |
+|              |               |    - 2 -> SPECIFICS                             |
+|              |               |    - 4 -> CLASS                                 |
+|              |               |    - 5 -> RACE                                  |
+|              |               |    - 6 -> GENERAL                               |
+|              |               |    - 7 -> DEFAULT                               |
++--------------+---------------+-------------------------------------------------+
+| Resource     | Script Resref | The resref to set the script level to.          |
++--------------+---------------+-------------------------------------------------+
+
+-----------------------------------------------------------------------------------------------------------------------
 
 .. _Opcode #401:
 
-Opcode #401
-^^^^^^^^^^^
+Opcode #401 (Set Extended Stat)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Set Extended Stat
+.. admonition:: Summary
 
-* Parameter #1: Statistic Modifier
-* Parameter #2: Type
-* Special: Stat
-* Description: Applies the modifier value specified by the 'Statistic Modifier' field in the style specified by the 'Type' field.
+   Modifies the value of an extended stat. Extended stats are those with ids outside of the vanilla range in ``STATS.IDS``.
 
-Known values for 'Type' are:
+.. note::
 
-* 0 Cumulative Modifier -> Stat = Stat+ 'Statistic Modifier' value
-* 1 Flat Value Modifier -> Stat= 'Statistic Modifier' value
-* 2 Percentage Modifier -> Stat = (Stat* 'Statistic Modifier' value) / 100
+   All operations are clamped such that results outside of the stat's range will resolve to the exceeded extrema.
 
-Values for 'Stat' are taken from stats.ids (Note: EEex expands number of usable stats.ids entries to 65737).
++--------------+------------------+---------------------------------------------------------------------------------+
+| Opcode Field | Name             | Description                                                                     |
++==============+==================+=================================================================================+
+| Parameter #1 | Operand Value    | The value used to modify the stat via the method defined by ``Operation Type``. |
++--------------+------------------+---------------------------------------------------------------------------------+
+| Parameter #2 | Operation Type   | The method used to modify the stat:                                             |
+|              |                  |                                                                                 |
+|              |                  | .. rst-class:: monospaced-list                                                  |
+|              |                  |                                                                                 |
+|              |                  |    - 0 (Sum)     -> Stat = Stat + Operand Value                                 |
+|              |                  |    - 1 (Set)     -> Stat = Operand Value                                        |
+|              |                  |    - 2 (Percent) -> Stat = (Stat * Operand Value) / 100                         |
++--------------+------------------+---------------------------------------------------------------------------------+
+| Special      | Extended Stat ID | The id of the extended stat to modify.                                          |
++--------------+------------------+---------------------------------------------------------------------------------+
+
+.. rst-class:: immediate-list
+
+   To register an extended stat:
+
+   - Append ``STATS.IDS`` with a unique id greater than ``202``.
+   - Define the stat's minimum, maximum, and default values by appending ``X-STATS.2DA``.
+
+-----------------------------------------------------------------------------------------------------------------------
 
 .. _Opcode #402:
 
-Opcode #402
-^^^^^^^^^^^
+Opcode #402 (Invoke Lua)
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-Invoke Lua
+.. admonition:: Summary
 
-* Parameter #1: Lua Value 1
-* Parameter #2: Lua Value 2
-* Special: Lua Value 3
-* Description: The targeted creature(s) calls a Lua function specified by the resource key. Maximum function name length is 8, and function names must be completely upper-case.
+   Invokes a global Lua function.
 
-Object that invoked the effect and values passed by the opcode can be used in the called Lua function.
+.. note::
 
-Example: Click Here or see below
+   The function name must be 8 characters or less, and be ALL UPPERCASE.
+
++--------------+-------------------+-----------------------------------------------------------------------------+
+| Opcode Field | Name              | Description                                                                 |
++==============+===================+=============================================================================+
+| Resource     | Lua Callback Name | The all-uppercase name of the Lua function callback. :raw-html:`<br/><br/>` |
+|              |                   |                                                                             |
+|              |                   | Function signature:                                                         |
+|              |                   |                                                                             |
+|              |                   | .. code-block:: python                                                      |
+|              |                   |    :class: immediate-code                                                   |
+|              |                   |                                                                             |
+|              |                   |    FUNC(op402: CGameEffect, sprite: CGameSprite)                            |
++--------------+-------------------+-----------------------------------------------------------------------------+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+.. _Opcode #403:
+
+Opcode #403 (Screen Effects)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. admonition:: Summary
+
+   Registers a global Lua function that is called whenever an effect is added to the target creature.
+   If this function returns ``true`` the effect being added is blocked.
+
+.. note::
+
+   The function name must be 8 characters or less, and be ALL UPPERCASE.
+
++--------------+-------------------+----------------------------------------------------------------------------------+
+| Opcode Field | Name              | Description                                                                      |
++==============+===================+==================================================================================+
+| Resource     | Lua Callback Name | The all-uppercase name of the Lua function callback. :raw-html:`<br/><br/>`      |
+|              |                   |                                                                                  |
+|              |                   | Function signature:                                                              |
+|              |                   |                                                                                  |
+|              |                   | .. code-block:: python                                                           |
+|              |                   |    :class: immediate-code                                                        |
+|              |                   |                                                                                  |
+|              |                   |    FUNC(op403: CGameEffect, effect: CGameEffect, sprite: CGameSprite) -> boolean |
++--------------+-------------------+----------------------------------------------------------------------------------+

@@ -75,3 +75,28 @@ div.admonition-summary.admonition {
 .no-margin {
     margin-bottom: 0 !important;
 }
+
+.monospaced-list {
+    margin-bottom: 0 !important;
+}
+
+.monospaced-list ul, ul.monospaced-list {
+    font-family: "Courier New", monospace;
+    margin-top: 2px !important;
+}
+
+p.immediate-list {
+    margin-bottom: 0 !important;
+}
+
+ul.immediate-list.immediate-list {
+    margin-top: 2px !important;
+}
+
+.immediate-code {
+    margin-top: 2px !important;
+}
+
+.immediate-code > div {
+    margin-bottom: 0 !important;
+}
