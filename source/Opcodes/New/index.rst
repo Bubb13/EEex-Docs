@@ -2,139 +2,20 @@
 .. role:: raw-html(raw)
    :format: html
 
-.. _EEex Opcodes:
-
 EEex Opcodes
 ============
 
-.. note:: Opcodes are used in **.eff** (effect) files - and in embedded versions in **.itm** (item) and **.spl** (spell) files - and provide additional features and functionality in all the Infinity Engine games. The ``effect type`` field of the `EFF V1.0 <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/eff_v1.htm#effv1_Header>`_ files and the ``Opcode number`` field of the `EFF v2.0 <https://gibberlings3.github.io/iesdp/file_formats/ie_formats/eff_v2.htm>`_ files indicates the opcode in use for a particular **.eff** file. Modifying existing **.eff** files to change opcodes used, or creating new effects is usually done with modding tools such as `WeiDU <http://www.weidu.org>`_ or `NearInfinity <https://github.com/Argent77/NearInfinity>`_. For details on the different opcodes (effects) available in the Infinity Engine games, see the `Infinity Engine Structures Description Project <https://gibberlings3.github.io/iesdp/index.htm>`_
-
-
-EEex expands on the capability of some existing opcodes, and adds new opcodes for mod makers to make use of.
-
-
----------------
-Opcode Listing
----------------
-
-+-------------------------------------+----------------------------------------------+
-| **Opcode**                          | **Description**                              |
-+-------------------------------------+----------------------------------------------+
-| :ref:`Opcode #42<Opcode #42>`       | Wizard Spell Slots Modifier                  |
-+-------------------------------------+----------------------------------------------+
-| :ref:`Opcode #62<Opcode #62>`       | Priest Spell Slots Modifier                  |
-+-------------------------------------+----------------------------------------------+
-| :ref:`Opcode #218<Opcode #218>`     | Protection: Stoneskin                        |
-+-------------------------------------+----------------------------------------------+
-| :ref:`Opcode #280<Opcode #280>`     | Spell Effect: Wild Magic                     |
-+-------------------------------------+----------------------------------------------+
-| :ref:`Opcode #319<Opcode #319>`     | Item Usability                               |
-+-------------------------------------+----------------------------------------------+
-| :ref:`Opcode #324<Opcode #324>`     | Immunity from Spell and Message              |
-+-------------------------------------+----------------------------------------------+
-| :ref:`Opcode #400<Opcode #400>`\*   | Set Temporary AI Script                      |
-+-------------------------------------+----------------------------------------------+
-| :ref:`Opcode #401<Opcode #401>`\*   | Set Extended Stat                            |
-+-------------------------------------+----------------------------------------------+
-| :ref:`Opcode #402<Opcode #402>`\*   | Invoke Lua                                   |
-+-------------------------------------+----------------------------------------------+
-| :ref:`Opcode #403<Opcode #403>`\*   | Screen Effects                               |
-+-------------------------------------+----------------------------------------------+
-
-\* `indicates new opcodes added via EEex`
-
----------------
-Updated Opcodes
----------------
-
-.. _Opcode #42:
-
-Opcode #42
-^^^^^^^^^^^
-
-Wizard Spell Slots Modifier
-
-* Special: Force the slot modification - If Special parameter is non-zero, the slot modification ignores access to particular spell level requirement.
-
------------------------------------------------------------------------------------------------------------------------
-
-.. _Opcode #62:
-
-Opcode #62
-^^^^^^^^^^^
-
-Priest Spell Slots Modifier
-
-* Special: Force the slot modification
-
-If Special parameter is non-zero, the slot modification ignores access to particular spell level requirement.
-
------------------------------------------------------------------------------------------------------------------------
-
-.. _Opcode #218:
-
-Opcode #218
-^^^^^^^^^^^
-
-Protection: Stoneskin
-
-* Resource Key: Fire spell
-
-Spell specified in resource key is fired when all layers are lost.
-
------------------------------------------------------------------------------------------------------------------------
-
-.. _Opcode #280:
-
-Opcode #280
-^^^^^^^^^^^
-
-Spell Effect: Wild Magic
-
-* Parameter #1: Surge Roll
-* Special: Show hardcoded graphical effects
-
-'Surge Roll' field allows to force particular wild surge roll to occur if it is set to non-zero.
-If Special parameter is non-zero, all hardcoded wild surge graphical effects are suppressed.
-
------------------------------------------------------------------------------------------------------------------------
-
-.. _Opcode #319:
-
-Opcode #319
-^^^^^^^^^^^
-
-Item Usability
-
-* Power: Mode
-* Parameter #1: IDS Entry / Value
-* Parameter #2: IDS File / Stat Type
-
-Known values for 'Mode' are:
-
-* 0 item restricted if condition holds ('Not usable by' mode), parameters use IDS targets
-* 1 item restricted if condition fails ('Usable by' mode), parameters use IDS targets
-* 2 like 0 but parameters use splprot.2da
-* 3 like 1 but parameters use splprot.2da
-
-If 'Mode' is set to 2 or 3, then the creature type specified by the 'Stat Type' field will be affected by this opcode. See opcode #324 for more information.
-
------------------------------------------------------------------------------------------------------------------------
-
-.. _Opcode #324:
-
-Opcode #324
-^^^^^^^^^^^
-
-Immunity from Spell and Message
-
-* Special: Strref
-
-Hardcoded enginest.2da strref can be optionally overridden by strref specified in Special field.
-
------------
-New Opcodes
------------
++---------------------------------+-------------------------+
+| Opcode                          | Name                    |
++=================================+=========================+
+| :ref:`Opcode #400<Opcode #400>` | Set Temporary AI Script |
++---------------------------------+-------------------------+
+| :ref:`Opcode #401<Opcode #401>` | Set Extended Stat       |
++---------------------------------+-------------------------+
+| :ref:`Opcode #402<Opcode #402>` | Invoke Lua              |
++---------------------------------+-------------------------+
+| :ref:`Opcode #403<Opcode #403>` | Screen Effects          |
++---------------------------------+-------------------------+
 
 .. _Opcode #400:
 

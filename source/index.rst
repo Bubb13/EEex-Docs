@@ -13,7 +13,7 @@ Welcome to EEex's documentation!
 
    Introduction/index
    EEex Functions/index
-   EEex Opcodes/index
+   Opcodes/index
    EE Game Lua Functions/index
    EE Game Structures (x64)/index
    EE Game Classes (x86)/index
