@@ -81,9 +81,9 @@ Opcode #401 (Set Extended Stat)
 |              |                  |                                                                                 |
 |              |                  | .. rst-class:: monospaced-list                                                  |
 |              |                  |                                                                                 |
-|              |                  |    - 0 (Sum)     -> Stat = Stat + Operand Value                                 |
-|              |                  |    - 1 (Set)     -> Stat = Operand Value                                        |
-|              |                  |    - 2 (Percent) -> Stat = (Stat * Operand Value) / 100                         |
+|              |                  |    - 0 (Sum) -----> Stat = Stat + Operand Value                                 |
+|              |                  |    - 1 (Set) -----> Stat = Operand Value                                        |
+|              |                  |    - 2 (Percent) -> Stat = (Stat * Operand Value) / 100                         |
 +--------------+------------------+---------------------------------------------------------------------------------+
 | Special      | Extended Stat ID | The id of the extended stat to modify.                                          |
 +--------------+------------------+---------------------------------------------------------------------------------+
