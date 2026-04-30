@@ -58,6 +58,12 @@ div.admonition-summary > p.admonition-title {
     background: #967BB6;
 }
 
+/* Remove the exclamation mark from the lavender theme for summary admonitions */
+div.admonition-summary > p.admonition-title::before {
+    content: "";
+    margin-right: 0;
+}
+
 /* Custom lavender theme for summary admonitions */
 div.admonition-summary.admonition {
     background: #EEEAF3;
@@ -74,6 +80,18 @@ div.admonition-summary.admonition {
 
 .no-margin {
     margin-bottom: 0 !important;
+}
+
+.no-margin-unindented {
+    margin-bottom: 0 !important;
+}
+
+.no-margin-unindented > li {
+    margin-left: 16px !important;
+}
+
+.mono {
+    font-family: "Courier New", monospace;
 }
 
 .monospaced-list {
