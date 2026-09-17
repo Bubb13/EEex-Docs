@@ -24,8 +24,8 @@ The main component of EEex. This includes most functionality required by mods th
 
 .. _attack_info_module:
 
-Attack info module
-------------------
+Enable attack info module
+-------------------------
 
 This component enables the attack information popup, which opens and displays various attack information when hovering an attack cursor over a creature.
 
