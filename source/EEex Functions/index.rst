@@ -9,3 +9,25 @@ EEex Functions
 .. toctree::
    :maxdepth: 2
 
+   Action/index
+   Actionbar/index
+   AIBase/index
+   Area/index
+   Debug/index
+   GameObject/index
+   GameState/index
+   Key/index
+   Keybinds/index
+   Menu/index
+   Object/index
+   Opcode/index
+   Options/index
+   Projectile/index
+   Resource/index
+   Script/index
+   Sprite/index
+   Test/index
+   Trigger/index
+   UncapFPS/index
+   Utility/index
+   Variable/index
