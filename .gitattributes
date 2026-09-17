@@ -5,6 +5,7 @@
 *.gif binary
 *.ico binary
 *.jpg binary
+*.mp4 binary
 *.png binary
 *.rar binary
 *.ttf binary

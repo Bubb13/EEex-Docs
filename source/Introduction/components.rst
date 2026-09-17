@@ -6,13 +6,14 @@ Components
 ==========
 
 * :ref:`EEex<EEex>`
-* :ref:`Experimental - Use LuaJIT<LuaJIT_component>`
+* :ref:`Enable attack info module<attack_info_module>`
 * :ref:`Enable effect menu module<effect_menu_module>`
 * :ref:`Enable empty container module<empty_container_module>`
 * :ref:`Enable hotkey module<hotkey_module>`
 * :ref:`Enable scale module<scale_module>`
 * :ref:`Enable time step module<time_step_module>`
 * :ref:`Enable timer module<timer_module>`
+* :ref:`Experimental - Use LuaJIT<LuaJIT_component>`
 
 .. _EEex:
 
@@ -21,18 +22,27 @@ EEex
 
 The main component of EEex. This includes most functionality required by mods that depend on EEex. There are no user-side effects of this component.
 
-.. _LuaJIT_component:
+.. _attack_info_module:
 
-Experimental - Use LuaJIT
--------------------------
+Attack info module
+------------------
 
-This component replaces the Lua version used by the engine with `LuaJIT <https://luajit.org/luajit.html>`_.
+This component enables the attack information popup, which opens and displays various attack information when hovering an attack cursor over a creature.
 
-LuaJIT is a faster implementation of Lua; replacing the engine's Lua version with LuaJIT can help alleviate performance issues.
+.. rst-class:: immediate-list
 
-.. warning::
-   The engine was **not designed** to use LuaJIT. This component is currently experimental, and may introduce crashes / errors in mod-introduced
-   Lua code that otherwise works under the engine's normal Lua version.
+   This information includes:
+
+   - The to-hit probabilities each selected party member has against the target.
+   - And optionally, whether the target is immune to the weapon of each selected party member.
+
+The attack direction can be reversed by holding a keybind, (by default 'Left Alt'). Reversing the attack direction causes the popup to display attack information for the creature under the cursor, as if it was attacking each selected party member.
+
+.. video:: attack_info.mp4
+   :align: default
+   :autoplay:
+   :loop:
+   :width: 720
 
 .. _effect_menu_module:
 
@@ -110,3 +120,16 @@ Note that some mods add contingency effects behind-the-scenes to implement certa
 A cyan bar indicates the cooldown for using spells / items.
 
 .. image:: cast_bar.gif
+
+.. _LuaJIT_component:
+
+Experimental - Use LuaJIT
+-------------------------
+
+This component replaces the Lua version used by the engine with `LuaJIT <https://luajit.org/luajit.html>`_.
+
+LuaJIT is a faster implementation of Lua; replacing the engine's Lua version with LuaJIT can help alleviate performance issues.
+
+.. warning::
+   The engine was **not designed** to use LuaJIT. This component is currently experimental, and may introduce crashes / errors in mod-introduced
+   Lua code that otherwise works under the engine's normal Lua version.

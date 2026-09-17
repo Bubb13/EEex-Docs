@@ -118,3 +118,7 @@ ul.immediate-list.immediate-list {
 .immediate-code > div {
     margin-bottom: 0 !important;
 }
+
+video {
+    margin-bottom: 24px;
+}
