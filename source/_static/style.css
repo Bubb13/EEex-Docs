@@ -121,4 +121,6 @@ ul.immediate-list.immediate-list {
 
 video {
     margin-bottom: 24px;
+    width: 100%;
+    max-width: 720px;
 }
