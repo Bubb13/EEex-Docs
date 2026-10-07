@@ -306,6 +306,91 @@ EEex_Menu_LoadFile
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Menu_ScaleX:
+
+EEex_Menu_ScaleX
+^^^^^^^^^^^^^^^^
+
+
+.. admonition:: Summary
+
+   Scales ``screenX`` from the raw screen coordinate space to the scaled UI coordinate space.
+
+**Parameters:**
+
++----------+----------+-------------------+----------------------------+
+| **Name** | **Type** | **Default Value** | **Description**            |
++==========+==========+===================+============================+
+| screenX  | number   |                   | The x coordinate to scale. |
++----------+----------+-------------------+----------------------------+
+
+**Return Values:**
+
++----------+-----------------+
+| **Type** | **Description** |
++==========+=================+
+| number   | See summary.    |
++----------+-----------------+
+
+
+.. _EEex_Menu_ScaleXY:
+
+EEex_Menu_ScaleXY
+^^^^^^^^^^^^^^^^^
+
+
+.. admonition:: Summary
+
+   Scales ``screenX`` and ``screenY`` from the raw screen coordinate space to the scaled UI coordinate space.
+
+**Parameters:**
+
++----------+----------+-------------------+----------------------------+
+| **Name** | **Type** | **Default Value** | **Description**            |
++==========+==========+===================+============================+
+| screenX  | number   |                   | The x coordinate to scale. |
++----------+----------+-------------------+----------------------------+
+| screenY  | number   |                   | The y coordinate to scale. |
++----------+----------+-------------------+----------------------------+
+
+**Return Values:**
+
++----------+--------------------------+
+| **Type** | **Description**          |
++==========+==========================+
+| number   | The scaled x coordinate. |
++----------+--------------------------+
+| number   | The scaled y coordinate. |
++----------+--------------------------+
+
+
+.. _EEex_Menu_ScaleY:
+
+EEex_Menu_ScaleY
+^^^^^^^^^^^^^^^^
+
+
+.. admonition:: Summary
+
+   Scales ``screenY`` from the raw screen coordinate space to the scaled UI coordinate space.
+
+**Parameters:**
+
++----------+----------+-------------------+----------------------------+
+| **Name** | **Type** | **Default Value** | **Description**            |
++==========+==========+===================+============================+
+| screenY  | number   |                   | The y coordinate to scale. |
++----------+----------+-------------------+----------------------------+
+
+**Return Values:**
+
++----------+-----------------+
+| **Type** | **Description** |
++==========+=================+
+| number   | See summary.    |
++----------+-----------------+
+
+
 .. _EEex_Menu_SetForceScrollbarRender:
 
 EEex_Menu_SetForceScrollbarRender
@@ -369,4 +454,89 @@ EEex_Menu_TranslateXYFromGame
 
 .. warning::
    This function is currently undocumented.
+
+.. _EEex_Menu_UnscaleX:
+
+EEex_Menu_UnscaleX
+^^^^^^^^^^^^^^^^^^
+
+
+.. admonition:: Summary
+
+   Unscales ``uiX`` from the scaled UI coordinate space to the raw screen coordinate space.
+
+**Parameters:**
+
++----------+----------+-------------------+------------------------------+
+| **Name** | **Type** | **Default Value** | **Description**              |
++==========+==========+===================+==============================+
+| uiX      | number   |                   | The x coordinate to unscale. |
++----------+----------+-------------------+------------------------------+
+
+**Return Values:**
+
++----------+-----------------+
+| **Type** | **Description** |
++==========+=================+
+| number   | See summary.    |
++----------+-----------------+
+
+
+.. _EEex_Menu_UnscaleXY:
+
+EEex_Menu_UnscaleXY
+^^^^^^^^^^^^^^^^^^^
+
+
+.. admonition:: Summary
+
+   Unscales ``uiX`` and ``uiY`` from the scaled UI coordinate space to the raw screen coordinate space.
+
+**Parameters:**
+
++----------+----------+-------------------+------------------------------+
+| **Name** | **Type** | **Default Value** | **Description**              |
++==========+==========+===================+==============================+
+| uiX      | number   |                   | The x coordinate to unscale. |
++----------+----------+-------------------+------------------------------+
+| uiY      | number   |                   | The y coordinate to unscale. |
++----------+----------+-------------------+------------------------------+
+
+**Return Values:**
+
++----------+----------------------------+
+| **Type** | **Description**            |
++==========+============================+
+| number   | The unscaled x coordinate. |
++----------+----------------------------+
+| number   | The unscaled y coordinate. |
++----------+----------------------------+
+
+
+.. _EEex_Menu_UnscaleY:
+
+EEex_Menu_UnscaleY
+^^^^^^^^^^^^^^^^^^
+
+
+.. admonition:: Summary
+
+   Unscales ``uiY`` from the scaled UI coordinate space to the raw screen coordinate space.
+
+**Parameters:**
+
++----------+----------+-------------------+------------------------------+
+| **Name** | **Type** | **Default Value** | **Description**              |
++==========+==========+===================+==============================+
+| uiY      | number   |                   | The y coordinate to unscale. |
++----------+----------+-------------------+------------------------------+
+
+**Return Values:**
+
++----------+-----------------+
+| **Type** | **Description** |
++==========+=================+
+| number   | See summary.    |
++----------+-----------------+
+
 

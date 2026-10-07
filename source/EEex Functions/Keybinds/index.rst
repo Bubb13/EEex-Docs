@@ -94,19 +94,25 @@ EEex_Keybinds_Get
 **The Keybind Table**
 *********************
 
-+--------------+------------------------+-------------------------------------------------------------------------------------------------------------------------+
-| Key          | Value Type             | Description                                                                                                             |
-+==============+========================+=========================================================================================================================+
-| callback     | function               | Function that is called when the conditions required by ``fireType`` are satisfied.                                     |
-+--------------+------------------------+-------------------------------------------------------------------------------------------------------------------------+
-| fireType     | EEex_Keybinds_FireType | The situation in which ``callback`` is invoked.                                                                         |
-+--------------+------------------------+-------------------------------------------------------------------------------------------------------------------------+
-| keys         | table                  | Table of keycodes defining the keybind's main sequence of keys.                                       :raw-html:`<br/>` |
-|              |                        | These keys must be pressed in the defined order for the keybind to be satisfied.                                        |
-+--------------+------------------------+-------------------------------------------------------------------------------------------------------------------------+
-| modifierKeys | table                  | Table of keycodes defining the keys that are required to be down when the main sequence is satisfied. :raw-html:`<br/>` |
-|              |                        | Allowed keys include the left / right variants of Ctrl, Shift, and Alt.                                                 |
-+--------------+------------------------+-------------------------------------------------------------------------------------------------------------------------+
++----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| Key            | Value Type             | Description                                                                                                                            |
++================+========================+========================================================================================================================================+
+| allowOtherKeys | boolean                | If ``true``, the keybind will not fail to match if unrelated keys are pressed.                                                         |
++----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| callback       | function               | Function that is called when the conditions required by ``fireType`` are satisfied.                                                    |
++----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| fireType       | EEex_Keybinds_FireType | The situation in which ``callback`` is invoked.                                                                                        |
++----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| keys           | table                  | Table of keycodes defining the keybind's main sequence of keys.                                       :raw-html:`<br/>`                |
+|                |                        | These keys must be pressed in the defined order for the keybind to be satisfied.                                                       |
++----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| modifierKeys   | table                  | Table of keycodes defining the keys that are required to be down when the main sequence is satisfied. :raw-html:`<br/>`                |
+|                |                        | Allowed keys include the left / right variants of Ctrl, Shift, and Alt.                                                                |
++----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| onSatisfied    | function               | Called when the keybind is satisfied, including both the initial trigger, and during a state rebuild after releasing a subsequent key. |
++----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| onUnsatisfied  | function               | Called when the keybind is unsatisfied, which occurs after releasing a key in its sequence.                                            |
++----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
 
 ==========================================================================================================================================================================================================
 
@@ -121,6 +127,57 @@ EEex_Keybinds_Get
 +--------------+----------------------------------------------------------------------------------------+
 | DOWN         | Fires when the keybind has been satisfied.                                             |
 +--------------+----------------------------------------------------------------------------------------+
+
+.. _EEex_Keybinds_IsSatisfied:
+
+EEex_Keybinds_IsSatisfied
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. admonition:: Summary
+
+   Returns whether the keybind with the given ``id`` is satisfied.
+
+
+.. note::
+   If the key stack is currently being replayed this returns the current satisfaction state,
+   which might be `false` even if the keybind is satisfied later on in the sequence.
+
+**Parameters:**
+
++----------+----------+-------------------+------------------------------------------+
+| **Name** | **Type** | **Default Value** | **Description**                          |
++==========+==========+===================+==========================================+
+| id       | string   |                   | The unique id of the associated keybind. |
++----------+----------+-------------------+------------------------------------------+
+
+**Return Values:**
+
++----------+-----------------+
+| **Type** | **Description** |
++==========+=================+
+| boolean  | See summary.    |
++----------+-----------------+
+
+
+.. _EEex_Keybinds_Reset:
+
+EEex_Keybinds_Reset
+^^^^^^^^^^^^^^^^^^^
+
+
+.. admonition:: Summary
+
+   Resets the keybind with the given ``id``, such that it can immediately start matching keys again from the beginning of its sequence.
+
+**Parameters:**
+
++----------+----------+-------------------+------------------------------------------+
+| **Name** | **Type** | **Default Value** | **Description**                          |
++==========+==========+===================+==========================================+
+| id       | string   |                   | The unique id of the associated keybind. |
++----------+----------+-------------------+------------------------------------------+
+
 
 .. _EEex_Keybinds_SelectPortrait:
 

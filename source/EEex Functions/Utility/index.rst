@@ -265,6 +265,14 @@ EEex_Utility_RangeIterator
 .. warning::
    This function is currently undocumented.
 
+.. _EEex_Utility_RemoveValue:
+
+EEex_Utility_RemoveValue
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+   This function is currently undocumented.
+
 .. _EEex_Utility_SelectIterator:
 
 EEex_Utility_SelectIterator
